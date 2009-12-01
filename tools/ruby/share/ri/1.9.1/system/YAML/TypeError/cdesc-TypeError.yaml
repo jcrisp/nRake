@@ -1,0 +1,15 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+constants: []
+
+full_name: YAML::TypeError
+includes: []
+
+instance_methods: []
+
+name: TypeError
+superclass: StandardError

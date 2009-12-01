@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: TRUE if the task name is already defined.
+full_name: Rake::Task::task_defined?
+is_singleton: true
+name: task_defined?
+params: (task_name)
+visibility: public

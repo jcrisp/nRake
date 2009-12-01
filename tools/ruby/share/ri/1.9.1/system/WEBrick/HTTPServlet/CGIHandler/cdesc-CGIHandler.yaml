@@ -1,0 +1,26 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: Ruby
+  value: File::join(RbConfig::CONFIG['bindir'],                         RbConfig::CONFIG['ruby_install_name'])
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: CGIRunner
+  value: "\"\\\"#{Ruby}\\\" \\\"#{WEBrick::Config::LIBDIR}/httpservlet/cgi_runner.rb\\\"\""
+full_name: WEBrick::HTTPServlet::CGIHandler
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: do_GET
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: do_POST
+name: CGIHandler
+superclass: WEBrick::HTTPServlet::AbstractServlet

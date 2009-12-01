@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Check public_methods
+full_name: RDoc::Parser::F95#check_public_methods
+is_singleton: false
+name: check_public_methods
+params: (method, parent)
+visibility: private

@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: See IO#readline.
+full_name: StringIO#readline
+is_singleton: false
+name: readline
+params: |
+  strio.readline(sep=$/)     -> string
+  strio.readline(limit)      -> string or nil
+  strio.readline(sep, limit) -> string or nil
+
+visibility: public

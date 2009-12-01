@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Alias for #cd"
+full_name: FileUtils::chdir
+is_singleton: true
+name: chdir
+params: (dir, options = {})
+visibility: public

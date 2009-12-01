@@ -1,0 +1,18 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Represents an SMTP authentication error.
+constants: []
+
+full_name: Net::SMTPAuthenticationError
+includes: 
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: SMTPError
+instance_methods: []
+
+name: SMTPAuthenticationError
+superclass: ProtoAuthError

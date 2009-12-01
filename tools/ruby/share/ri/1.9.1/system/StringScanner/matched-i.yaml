@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the last matched string.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  s = StringScanner.new('test string')\n  s.match?(/\\w+/)     # -&gt; 4\n  s.matched           # -&gt; &quot;test&quot;\n"
+full_name: StringScanner#matched
+is_singleton: false
+name: matched
+params: ()
+visibility: public

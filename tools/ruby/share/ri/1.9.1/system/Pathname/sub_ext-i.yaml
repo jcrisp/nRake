@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Return a pathname which the extension of the basename is substituted by <em>repl</em>.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: If self has no extension part, <em>repl</em> is appended.
+full_name: Pathname#sub_ext
+is_singleton: false
+name: sub_ext
+params: (repl)
+visibility: public

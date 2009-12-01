@@ -1,0 +1,18 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the int itself.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   ?a.ord    #=&gt; 97\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: This method is intended for compatibility to character constant in Ruby 1.9. For example, ?a.ord returns 97 both in 1.8 and 1.9.
+full_name: Integer#ord
+is_singleton: false
+name: ord
+params: |
+  int.ord    => int
+
+visibility: public

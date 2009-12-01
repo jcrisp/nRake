@@ -1,0 +1,13 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: 
+- !ruby/object:RDoc::RI::AliasName 
+  name: try_mon_enter
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Attempts to enter exclusive section. Returns <tt>false</tt> if lock fails.
+full_name: MonitorMixin#mon_try_enter
+is_singleton: false
+name: mon_try_enter
+params: ()
+visibility: public

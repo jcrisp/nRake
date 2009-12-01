@@ -1,0 +1,15 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+constants: []
+
+full_name: RSS::Maker::RSS20::Items
+includes: []
+
+instance_methods: []
+
+name: Items
+superclass: RSS09::Items

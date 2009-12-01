@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Returns a new Tms object obtained by memberwise division of the individual times for this Tms object by <em>x</em>. This method and #+() are useful for taking statistics."
+full_name: Benchmark::Tms#/
+is_singleton: false
+name: /
+params: (x)
+visibility: public

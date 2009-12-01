@@ -1,0 +1,24 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the path from an FTP URI.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "RFC 1738 specifically states that the path for an FTP URI does not include the / which separates the URI path from the URI host. Example:"
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "    ftp://ftp.example.com/pub/ruby\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The above URI indicates that the client should connect to ftp.example.com then cd pub/ruby from the initial login directory.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "If you want to cd to an absolute directory, you must include an escaped / (%2F) in the path. Example:"
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "    ftp://ftp.example.com/%2Fpub/ruby\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: This method will then return &quot;/pub/ruby&quot;
+full_name: URI::FTP#path
+is_singleton: false
+name: path
+params: ()
+visibility: public

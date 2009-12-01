@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Pushes back one character (passed as a parameter) onto <em>ios</em>, such that a subsequent buffered read will return it. Only one character may be pushed back before a subsequent read operation (that is, you will be able to read only the last of several characters that have been pushed back). Has no effect with unbuffered reads (such as <tt>IO#sysread</tt>).
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   f = File.new(&quot;testfile&quot;)   #=&gt; #&lt;File:testfile&gt;\n   c = f.getc                 #=&gt; &quot;8&quot;\n   f.ungetc(c)                #=&gt; nil\n   f.getc                     #=&gt; &quot;8&quot;\n"
+full_name: IO#ungetc
+is_singleton: false
+name: ungetc
+params: |
+  ios.ungetc(string)   => nil
+
+visibility: public

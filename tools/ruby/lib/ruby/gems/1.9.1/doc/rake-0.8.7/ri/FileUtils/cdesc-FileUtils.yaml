@@ -1,0 +1,34 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: This a FileUtils extension that defines several additional commands to be added to the FileUtils utility functions.
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: RUBY_EXT
+  value: "((Config::CONFIG['ruby_install_name'] =~ /\\.(com|cmd|exe|bat|rb|sh)$/) ?     \"\" :     Config::CONFIG['EXEEXT'])"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: RUBY
+  value: File.join(     Config::CONFIG['bindir'],     Config::CONFIG['ruby_install_name'] + RUBY_EXT).     sub(/.*\s.*/m, '"\&"')
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: LN_SUPPORTED
+  value: "[true]"
+full_name: FileUtils
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: ruby
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: safe_ln
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: sh
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: split_all
+name: FileUtils

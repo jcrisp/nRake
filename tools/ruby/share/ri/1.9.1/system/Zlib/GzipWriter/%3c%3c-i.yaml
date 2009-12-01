@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Document-method: &lt;&lt; Same as IO."
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Same as IO.
+full_name: Zlib::GzipWriter#<<
+is_singleton: false
+name: "<<"
+params: (p1)
+visibility: public

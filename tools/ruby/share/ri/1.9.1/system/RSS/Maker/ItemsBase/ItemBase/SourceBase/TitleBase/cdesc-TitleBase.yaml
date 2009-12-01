@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+constants: []
+
+full_name: RSS::Maker::ItemsBase::ItemBase::SourceBase::TitleBase
+includes: 
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: AtomTextConstructBase
+instance_methods: []
+
+name: TitleBase
+superclass: RSS::Maker::Base

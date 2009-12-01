@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the value of <em>flt</em>*(2**<em>int</em>).
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   fraction, exponent = Math.frexp(1234)\n   Math.ldexp(fraction, exponent)   #=&gt; 1234.0\n"
+full_name: Math::ldexp
+is_singleton: true
+name: ldexp
+params: |
+  Math.ldexp(flt, int) -> float
+
+visibility: public

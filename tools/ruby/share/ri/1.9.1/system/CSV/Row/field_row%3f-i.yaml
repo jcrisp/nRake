@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns <tt>true</tt> if this is a field row.
+full_name: CSV::Row#field_row?
+is_singleton: false
+name: field_row?
+params: ()
+visibility: public

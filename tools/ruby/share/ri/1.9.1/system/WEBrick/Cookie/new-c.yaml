@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: attr_accessor :comment_url, :discard, :port
+full_name: WEBrick::Cookie::new
+is_singleton: true
+name: new
+params: (name, value)
+visibility: public

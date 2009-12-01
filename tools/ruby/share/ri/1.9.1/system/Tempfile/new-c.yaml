@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Creates a temporary file of mode 0600 in the temporary directory, opens it with mode &quot;w+&quot;, and returns a Tempfile object which represents the created temporary file. A Tempfile object can be treated just like a normal File object.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The basename parameter is used to determine the name of a temporary file. If an Array is given, the first element is used as prefix string and the second as suffix string, respectively. Otherwise it is treated as prefix string.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: If tmpdir is omitted, the temporary directory is determined by Dir::tmpdir provided by 'tmpdir.rb'. When $SAFE &gt; 0 and the given tmpdir is tainted, it uses /tmp. (Note that ENV values are tainted by default)
+full_name: Tempfile::new
+is_singleton: true
+name: new
+params: (basename, *rest)
+visibility: public

@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Search for YPath entry and return transformed nodes.
+full_name: YAML::BaseNode#select!
+is_singleton: false
+name: select!
+params: ( ypath_str )
+visibility: public

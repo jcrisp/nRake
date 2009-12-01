@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Concatenation---Returns a new array built by concatenating the two arrays together to produce a third array.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   [ 1, 2, 3 ] + [ 4, 5 ]    #=&gt; [ 1, 2, 3, 4, 5 ]\n"
+full_name: Array#+
+is_singleton: false
+name: +
+params: |
+  array + other_array   -> an_array
+
+visibility: public

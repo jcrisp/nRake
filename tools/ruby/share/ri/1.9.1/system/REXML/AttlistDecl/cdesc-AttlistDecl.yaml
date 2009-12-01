@@ -1,0 +1,46 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: 
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: What is this? Got me.
+  name: element_name
+  rw: R
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "This class needs:"
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: Documentation
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: Work! Not all types of attlists are intelligently parsed, so we just
+  type: :BULLET
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: spew back out what we get in. This works, but it would be better if we formatted the output ourselves.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: AttlistDecls provide <b>just</b> enough support to allow namespace declarations. If you need some sort of generalized support, or have an interesting idea about how to map the hideous, terrible design of DTD AttlistDecls onto an intuitive Ruby interface, let me know. I'm desperate for anything to make DTDs more palateable.
+constants: []
+
+full_name: REXML::AttlistDecl
+includes: 
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: Enumerable
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: "[]"
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: each
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: include?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: node_type
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: write
+name: AttlistDecl
+superclass: REXML::Child

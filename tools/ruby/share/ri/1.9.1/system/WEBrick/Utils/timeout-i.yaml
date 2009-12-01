@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: if seconds.nil? or seconds.zero?
+comment: 
+full_name: WEBrick::Utils#timeout
+is_singleton: false
+name: timeout
+params: (seconds, exception=Timeout::Error) {|if seconds.nil? or seconds.zero?| ...}
+visibility: private

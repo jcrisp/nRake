@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Iterates over each option, passing the option to the <tt>block</tt>.
+full_name: List#each_option
+is_singleton: false
+name: each_option
+params: (&block)
+visibility: public

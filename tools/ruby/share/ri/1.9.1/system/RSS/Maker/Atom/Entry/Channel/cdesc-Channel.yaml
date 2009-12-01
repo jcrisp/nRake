@@ -1,0 +1,38 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: Categories
+  value: Feed::Channel::Categories
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: Links
+  value: Feed::Channel::Links
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: Authors
+  value: Feed::Channel::Authors
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: Contributors
+  value: Feed::Channel::Contributors
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: Copyright
+  value: Feed::Channel::Copyright
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: Title
+  value: Feed::Channel::Title
+full_name: RSS::Maker::Atom::Entry::Channel
+includes: []
+
+instance_methods: []
+
+name: Channel
+superclass: RSS::Maker::ChannelBase

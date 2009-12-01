@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: accept non space, then all following spaces
+full_name: RDoc::RI::AttributeFormatter::AttributeString#next_word
+is_singleton: false
+name: next_word
+params: ()
+visibility: public

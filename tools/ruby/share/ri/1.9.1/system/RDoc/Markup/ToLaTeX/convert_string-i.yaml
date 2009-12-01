@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: some of these patterns are taken from SmartyPants...
+full_name: RDoc::Markup::ToLaTeX#convert_string
+is_singleton: false
+name: convert_string
+params: (item)
+visibility: private

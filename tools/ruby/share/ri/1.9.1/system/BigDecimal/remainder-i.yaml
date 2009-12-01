@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the remainder from dividing by the value.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: If the values divided are of the same sign, the remainder is the same as the modulus (see divmod).
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Otherwise, the remainder is the modulus minus the value divided by.
+full_name: BigDecimal#remainder
+is_singleton: false
+name: remainder
+params: (p1)
+visibility: public

@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Process the template using <tt>values</tt>, writing the result to <tt>io</tt>.
+full_name: RDoc::TemplatePage#write_html_on
+is_singleton: false
+name: write_html_on
+params: (io, values)
+visibility: public

@@ -1,0 +1,26 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Construct a new CSV::Table from <tt>array_of_rows</tt>, which are expected to be CSV::Row objects. All rows are assumed to have the same headers.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "A CSV::Table object supports the following Array methods through delegation:"
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: empty?()
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: length()
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: size()
+  type: :BULLET
+full_name: CSV::Table::new
+is_singleton: true
+name: new
+params: (array_of_rows)
+visibility: public

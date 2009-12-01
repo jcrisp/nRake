@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Allocate blank object
+full_name: YAML::object_maker
+is_singleton: true
+name: object_maker
+params: ( obj_class, val )
+visibility: public

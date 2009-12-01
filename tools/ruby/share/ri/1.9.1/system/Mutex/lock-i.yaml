@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Attempts to grab the lock and waits if it isn't available. Raises <tt>ThreadError</tt> if <tt>mutex</tt> was locked by the current thread.
+full_name: Mutex#lock
+is_singleton: false
+name: lock
+params: |
+  mutex.lock  => true or false
+
+visibility: public

@@ -1,0 +1,71 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Turn off floating point exceptions for overflow, etc.
+constants: []
+
+full_name: Numeric
+includes: 
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: Comparable
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: +@
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: -@
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: <=>
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: abs
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: ceil
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: coerce
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: div
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: divmod
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: eql?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: fdiv
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: floor
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: im
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: integer?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: magnitude
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: modulo
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: nonzero?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: numerator
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: quo
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: real
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: real?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: remainder
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: round
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: singleton_method_added
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: step
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: to_int
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: truncate
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: zero?
+name: Numeric
+superclass: Object

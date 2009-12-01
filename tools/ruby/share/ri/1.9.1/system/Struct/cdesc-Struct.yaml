@@ -1,0 +1,68 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: yaml_new
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: yaml_tag_class_name
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: yaml_tag_read_class
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: A <tt>Struct</tt> is a convenient way to bundle a number of attributes together, using accessor methods, without having to write an explicit class.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The <tt>Struct</tt> class is a generator of specific classes, each one of which is defined to hold a set of variables and their accessors. In these examples, we'll call the generated class ``<em>Customer</em>Class,'' and we'll show an example instance of that class as ``<em>Customer</em>Inst.''
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: In the descriptions that follow, the parameter <em>symbol</em> refers to a symbol, which is either a quoted string or a <tt>Symbol</tt> (such as <tt>:name</tt>).
+constants: []
+
+full_name: Struct
+includes: 
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: Enumerable
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: ==
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: "[]"
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: "[]="
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: each
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: each_pair
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: eql?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: hash
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: inspect
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: length
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: members
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: pretty_print
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: pretty_print_cycle
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: select
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: size
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: to_a
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: to_s
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: to_yaml
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: values
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: values_at
+name: Struct
+superclass: Object

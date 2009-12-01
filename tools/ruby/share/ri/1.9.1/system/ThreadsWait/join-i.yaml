@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Waits for specified threads to terminate.
+full_name: ThreadsWait#join
+is_singleton: false
+name: join
+params: (*threads)
+visibility: public

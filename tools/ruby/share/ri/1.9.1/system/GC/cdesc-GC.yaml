@@ -1,0 +1,32 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: count
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: disable
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: enable
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: malloc_allocated_size
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: malloc_allocations
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: start
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: stress
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: stress=
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The <tt>GC</tt> module provides an interface to Ruby's mark and sweep garbage collection mechanism. Some of the underlying methods are also available via the <tt>ObjectSpace</tt> module.
+constants: []
+
+full_name: GC
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: garbage_collect
+name: GC

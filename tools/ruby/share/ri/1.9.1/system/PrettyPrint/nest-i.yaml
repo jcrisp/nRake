@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: ""
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Increases left margin after newline with <tt>indent</tt> for line breaks added in the block.
+full_name: PrettyPrint#nest
+is_singleton: false
+name: nest
+params: (indent) {|| ...}
+visibility: public

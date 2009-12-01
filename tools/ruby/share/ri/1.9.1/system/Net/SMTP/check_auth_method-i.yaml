@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: Net::SMTP#check_auth_method
+is_singleton: false
+name: check_auth_method
+params: (type)
+visibility: private

@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: locking
+full_name: Mutex_m#mu_synchronize
+is_singleton: false
+name: mu_synchronize
+params: (&block)
+visibility: public

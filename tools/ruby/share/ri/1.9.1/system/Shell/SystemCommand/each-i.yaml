@@ -1,0 +1,11 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: 
+- !ruby/object:RDoc::RI::AliasName 
+  name: super_each
+block_params: l
+comment: 
+full_name: Shell::SystemCommand#each
+is_singleton: false
+name: each
+params: (rs = nil) {|l| ...}
+visibility: public

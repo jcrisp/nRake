@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Builds a command line string from an argument list <tt>array</tt> joining all elements escaped for Bourne shell and separated by a space. See +Shellwords::shelljoin+ for details.
+full_name: Array#shelljoin
+is_singleton: false
+name: shelljoin
+params: |
+  array.shelljoin => string
+
+visibility: public

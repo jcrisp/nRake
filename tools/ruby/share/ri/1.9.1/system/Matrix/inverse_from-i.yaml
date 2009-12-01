@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Not for public consumption?
+full_name: Matrix#inverse_from
+is_singleton: false
+name: inverse_from
+params: (src)
+visibility: public

@@ -1,0 +1,15 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Iterates the given block for each element with an index, which start from 0. If no block is given, returns an enumerator.
+full_name: Enumerator#with_index
+is_singleton: false
+name: with_index
+params: |
+  e.with_index {|(*args), idx| ... }
+  e.with_index
+
+visibility: public

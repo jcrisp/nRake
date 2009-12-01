@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Query the changed state of this object.
+full_name: Observable#changed?
+is_singleton: false
+name: changed?
+params: ()
+visibility: public

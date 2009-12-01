@@ -1,0 +1,24 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns true if <tt>value</tt> is prime, false for a composite.
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 2
+  :text: Parameters
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "+value+:"
+    :body: an arbitrary integer to be checked.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "+generator+:"
+    :body: optional. A pseudo-prime generator.
+  type: :NOTE
+full_name: Prime#prime?
+is_singleton: false
+name: prime?
+params: (value, generator = Prime::Generator23.new)
+visibility: public

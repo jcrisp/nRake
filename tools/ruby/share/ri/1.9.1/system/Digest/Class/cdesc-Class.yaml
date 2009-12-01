@@ -1,0 +1,21 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: digest
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: hexdigest
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: This module stands as a base class for digest implementation classes.
+constants: []
+
+full_name: Digest::Class
+includes: 
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: Digest::Instance
+instance_methods: []
+
+name: Class
+superclass: Object

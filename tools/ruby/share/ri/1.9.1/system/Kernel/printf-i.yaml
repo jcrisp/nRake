@@ -1,0 +1,21 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Equivalent to:"
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   io.write(sprintf(string, obj, ...)\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: or
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   $stdout.write(sprintf(string, obj, ...)\n"
+full_name: Kernel#printf
+is_singleton: false
+name: printf
+params: |
+  printf(io, string [, obj ... ] )    => nil
+  printf(string [, obj ... ] )        => nil
+
+visibility: public

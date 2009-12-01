@@ -1,0 +1,18 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns true if vi mode is active. Returns false if not.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Raises NotImplementedError if the using readline library does not support.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Raises SecurityError exception if $SAFE is 4.
+full_name: Readline::vi_editing_mode?
+is_singleton: true
+name: vi_editing_mode?
+params: |
+  Readline.vi_editing_mode? -> bool
+
+visibility: public

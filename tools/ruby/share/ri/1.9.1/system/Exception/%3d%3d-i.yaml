@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Equality---If <em>obj</em> is not an <tt>Exception</tt>, returns <tt>false</tt>. Otherwise, returns <tt>true</tt> if <em>exc</em> and <em>obj</em> share same class, messages, and backtrace.
+full_name: Exception#==
+is_singleton: false
+name: ==
+params: |
+  exc == obj   => true or false
+
+visibility: public

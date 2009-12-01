@@ -1,0 +1,47 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: 
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: Track the last comment made in the Rakefile.
+  name: last_description
+  rw: RW
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The TaskManager module is a mixin for managing tasks.
+constants: []
+
+full_name: Rake::TaskManager
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: "[]"
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: clear
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: create_rule
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: current_scope
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: define_task
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: enhance_with_matching_rule
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: in_namespace
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: intern
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: lookup
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: resolve_args
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: synthesize_file_task
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: tasks
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: tasks_in_scope
+name: TaskManager

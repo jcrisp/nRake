@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the regexp.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "    m = /a.*b/.match(&quot;abc&quot;)\n    m.regexp #=&gt; /a.*b/\n"
+full_name: MatchData#regexp
+is_singleton: false
+name: regexp
+params: |
+  mtch.regexp   => regexp
+
+visibility: public

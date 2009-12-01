@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Alias for #unique_id"
+full_name: Net::POPMail#uidl
+is_singleton: false
+name: uidl
+params: ()
+visibility: public

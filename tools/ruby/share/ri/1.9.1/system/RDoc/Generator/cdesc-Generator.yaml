@@ -1,0 +1,31 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: Name of sub-directory that holds file descriptions
+  name: FILE_DIR
+  value: "\"files\""
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: Name of sub-directory that holds class descriptions
+  name: CLASS_DIR
+  value: "\"classes\""
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: Name of the RDoc CSS file
+  name: CSS_NAME
+  value: "\"rdoc-style.css\""
+full_name: RDoc::Generator
+includes: []
+
+instance_methods: []
+
+name: Generator

@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Explode a path into individual components. Used by <tt>pathmap</tt>.
+full_name: String#pathmap_explode
+is_singleton: false
+name: pathmap_explode
+params: ()
+visibility: public

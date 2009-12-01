@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns <tt>true</tt> if <em>big</em> is an odd number.
+full_name: Bignum#odd?
+is_singleton: false
+name: odd?
+params: |
+  big.odd? -> true or false
+
+visibility: public

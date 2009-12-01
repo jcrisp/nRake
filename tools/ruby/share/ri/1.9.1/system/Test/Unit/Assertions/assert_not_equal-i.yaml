@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: Test::Unit::Assertions#assert_not_equal
+is_singleton: false
+name: assert_not_equal
+params: (exp, act, msg=nil)
+visibility: public

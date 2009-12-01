@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The provided <tt>block</tt> is passed a header and field for each pair in the row and expected to return <tt>true</tt> or <tt>false</tt>, depending on whether the pair should be deleted.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: This method returns the row for chaining.
+full_name: CSV::Row#delete_if
+is_singleton: false
+name: delete_if
+params: (&block)
+visibility: public

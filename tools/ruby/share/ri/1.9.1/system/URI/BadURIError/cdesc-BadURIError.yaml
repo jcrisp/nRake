@@ -1,0 +1,17 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: URI is valid, bad usage is not.
+constants: []
+
+full_name: URI::BadURIError
+includes: []
+
+instance_methods: []
+
+name: BadURIError
+superclass: URI::Error

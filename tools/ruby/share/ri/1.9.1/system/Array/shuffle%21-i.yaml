@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Shuffles elements in <em>self</em> in place.
+full_name: Array#shuffle!
+is_singleton: false
+name: shuffle!
+params: |
+  array.shuffle!        -> array
+
+visibility: public

@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: REXML::Functions::variables=
+is_singleton: true
+name: variables=
+params: (x)
+visibility: public

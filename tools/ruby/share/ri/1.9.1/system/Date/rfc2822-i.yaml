@@ -1,0 +1,13 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: 
+- !ruby/object:RDoc::RI::AliasName 
+  name: rfc822
+- !ruby/object:RDoc::RI::AliasName 
+  name: rfc822
+block_params: 
+comment: 
+full_name: Date#rfc2822
+is_singleton: false
+name: rfc2822
+params: ()
+visibility: public

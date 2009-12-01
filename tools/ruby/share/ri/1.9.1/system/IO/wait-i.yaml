@@ -1,0 +1,15 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Waits until input is available or times out and returns self or nil when EOF is reached.
+full_name: IO#wait
+is_singleton: false
+name: wait
+params: |
+  io.wait          -> IO, true, false or nil
+  io.wait(timeout) -> IO, true, false or nil
+
+visibility: public

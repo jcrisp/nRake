@@ -1,0 +1,15 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Equivalent to <tt>$_.sub(<em>args</em>)</tt>, except that <tt>$_</tt> will be updated if substitution occurs. Available only when -p/-n command line option specified.
+full_name: Kernel#sub
+is_singleton: false
+name: sub
+params: |
+  sub(pattern, replacement)   => $_
+  sub(pattern) { block }      => $_
+
+visibility: public

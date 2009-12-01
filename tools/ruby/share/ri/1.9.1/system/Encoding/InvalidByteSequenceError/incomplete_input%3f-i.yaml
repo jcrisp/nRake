@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns true if the invalid byte sequence error is caused by premature end of string.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: " ec = Encoding::Converter.new(&quot;EUC-JP&quot;, &quot;ISO-8859-1&quot;)\n\n begin\n   ec.convert(&quot;abc\\xA1z&quot;)\n rescue Encoding::InvalidByteSequenceError\n   p $!      #=&gt; #&lt;Encoding::InvalidByteSequenceError: &quot;\\xA1&quot; followed by &quot;z&quot; on EUC-JP&gt;\n   p $!.incomplete_input?    #=&gt; false\n end\n\n begin\n   ec.convert(&quot;abc\\xA1&quot;)\n   ec.finish\n rescue Encoding::InvalidByteSequenceError\n   p $!      #=&gt; #&lt;Encoding::InvalidByteSequenceError: incomplete &quot;\\xA1&quot; on EUC-JP&gt;\n   p $!.incomplete_input?    #=&gt; true\n end\n"
+full_name: Encoding::InvalidByteSequenceError#incomplete_input?
+is_singleton: false
+name: incomplete_input?
+params: |
+  ecerr.incomplete_input?         -> true or false
+
+visibility: public

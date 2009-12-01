@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Convert <tt>str</tt> to UTF-16
+full_name: Kconv::toutf16
+is_singleton: true
+name: toutf16
+params: |
+  Kconv.toutf16(str)   => string
+
+visibility: public

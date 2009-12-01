@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns <tt>true</tt> if <em>int</em> is an odd number.
+full_name: Integer#odd?
+is_singleton: false
+name: odd?
+params: |
+  int.odd? -> true or false
+
+visibility: public

@@ -1,0 +1,21 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Manage several publishers as a single entity.
+constants: []
+
+full_name: Rake::CompositePublisher
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: add
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: upload
+name: CompositePublisher
+superclass: Object

@@ -1,0 +1,17 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Private CLASS
+constants: []
+
+full_name: Matrix::Scalar
+includes: []
+
+instance_methods: []
+
+name: Scalar
+superclass: Numeric

@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns true if the ipaddr is an IPv4 address.
+full_name: IPAddr#ipv4?
+is_singleton: false
+name: ipv4?
+params: ()
+visibility: public

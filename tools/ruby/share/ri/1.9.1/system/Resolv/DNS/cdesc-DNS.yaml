@@ -1,0 +1,75 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: open
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Resolv::DNS is a DNS stub resolver.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Information taken from the following places:"
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: STD0013
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: RFC 1035
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: ftp://ftp.isi.edu/in-notes/iana/assignments/dns-parameters
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: etc.
+  type: :BULLET
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: Default DNS Port
+  name: Port
+  value: "53"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: Default DNS UDP packet size
+  name: UDPSize
+  value: "512"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: RequestID
+  value: "{}"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: RequestIDMutex
+  value: Mutex.new
+full_name: Resolv::DNS
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: close
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: each_address
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: each_name
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: each_resource
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: getaddress
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: getaddresses
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: getname
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: getnames
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: getresource
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: getresources
+name: DNS
+superclass: Object

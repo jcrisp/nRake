@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: YAML::Store#marshal_dump_supports_canonical_option?
+is_singleton: false
+name: marshal_dump_supports_canonical_option?
+params: ()
+visibility: public

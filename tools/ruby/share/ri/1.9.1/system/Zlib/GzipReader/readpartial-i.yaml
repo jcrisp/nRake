@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Reads at most <em>maxlen</em> bytes from the gziped stream but it blocks only if <em>gzipreader</em> has no data immediately available. If the optional <em>outbuf</em> argument is present, it must reference a String, which will receive the data. It raises <tt>EOFError</tt> on end of file.
+full_name: Zlib::GzipReader#readpartial
+is_singleton: false
+name: readpartial
+params: |
+  gzipreader.readpartial(maxlen [, outbuf]) => string, outbuf
+
+visibility: public

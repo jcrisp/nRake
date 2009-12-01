@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: See IO#ungetbyte
+full_name: StringIO#ungetbyte
+is_singleton: false
+name: ungetbyte
+params: |
+  strio.ungetbyte(fixnum)   -> nil
+
+visibility: public

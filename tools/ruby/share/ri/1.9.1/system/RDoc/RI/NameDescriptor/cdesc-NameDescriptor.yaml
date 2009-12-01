@@ -1,0 +1,32 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: 
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  name: class_names
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: true and false have the obvious meaning. nil means we don't care
+  name: is_class_method
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  name: method_name
+  rw: R
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Break argument into its constituent class or module names, an optional method type, and a method name
+constants: []
+
+full_name: RDoc::RI::NameDescriptor
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: full_class_name
+name: NameDescriptor
+superclass: Object

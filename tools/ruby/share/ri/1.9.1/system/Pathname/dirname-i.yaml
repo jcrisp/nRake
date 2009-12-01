@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: See <tt>File.dirname</tt>. Returns all but the last component of the path.
+full_name: Pathname#dirname
+is_singleton: false
+name: dirname
+params: ()
+visibility: public

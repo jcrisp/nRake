@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Look up <tt>symbol</tt>. If <tt>method</tt> is non-nil, then we assume the symbol references a module that contains that method.
+full_name: RDoc::Context#find_symbol
+is_singleton: false
+name: find_symbol
+params: (symbol, method = nil)
+visibility: public

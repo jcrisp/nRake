@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: ""
+comment: 
+full_name: Test::Unit::Assertions#assert_nothing_thrown
+is_singleton: false
+name: assert_nothing_thrown
+params: (msg=nil) {|| ...}
+visibility: public

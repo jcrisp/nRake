@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Splits the given string into a directory and a file component and returns them in a two-element array. See also <tt>File::dirname</tt> and <tt>File::basename</tt>.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   File.split(&quot;/home/gumby/.profile&quot;)   #=&gt; [&quot;/home/gumby&quot;, &quot;.profile&quot;]\n"
+full_name: File::split
+is_singleton: true
+name: split
+params: |
+  File.split(file_name)   => array
+
+visibility: public

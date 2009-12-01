@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "% &lt;flag&gt; [#0- +] &lt;minimum field width&gt; (*|*[1-9][0-9]*\\$|[1-9][0-9]*) &lt;precision&gt;.(*|*[1-9][0-9]*\\$|[1-9][0-9]*|)? #&lt;length modifier&gt;(hh|h|l|ll|L|q|j|z|t) &lt;conversion specifier&gt;[diouxXeEfgGcsb%]"
+full_name: IRB::OutputMethod#parse_printf_format
+is_singleton: false
+name: parse_printf_format
+params: (format, opts)
+visibility: public

@@ -1,0 +1,27 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: node element
+constants: []
+
+full_name: RDoc::DOT::Node
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: "<<"
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: each_port
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: pop
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: push
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: to_s
+name: Node
+superclass: RDoc::DOT::Element

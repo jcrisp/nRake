@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the array of WIN32OLE_TYPE object which is implemented by the WIN32OLE_TYPE object.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   tobj = WIN32OLE_TYPE.new('Microsoft Excel 9.0 Object Library', 'Worksheet')\n   p tobj.implemented_ole_types # =&gt; [_Worksheet, DocEvents]\n"
+full_name: WIN32OLE_TYPE#implemented_ole_types
+is_singleton: false
+name: implemented_ole_types
+params: |
+  WIN32OLE_TYPE#implemented_ole_types
+
+visibility: public

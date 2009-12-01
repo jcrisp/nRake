@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Convert <tt>str</tt> to Shift_JIS
+full_name: Kconv#tosjis
+is_singleton: false
+name: tosjis
+params: |
+  Kconv.tosjis(str)   => string
+
+visibility: private

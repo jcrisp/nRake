@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: And the reverse operation
+full_name: RDoc::RI::Writer::external_to_internal
+is_singleton: true
+name: external_to_internal
+params: (name)
+visibility: public

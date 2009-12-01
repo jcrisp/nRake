@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: process management
+full_name: Shell#jobs
+is_singleton: false
+name: jobs
+params: ()
+visibility: public

@@ -1,0 +1,13 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: 
+- !ruby/object:RDoc::RI::AliasName 
+  name: map!
+block_params: (o)
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Replaces the elements with ones returned by collect().
+full_name: Set#collect!
+is_singleton: false
+name: collect!
+params: () {|o| ...}
+visibility: public

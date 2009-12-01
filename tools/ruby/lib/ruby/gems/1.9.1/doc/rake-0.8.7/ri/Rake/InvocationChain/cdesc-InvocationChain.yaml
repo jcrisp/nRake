@@ -1,0 +1,28 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: append
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: InvocationChain tracks the chain of task invocations to detect circular dependencies.
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: EMPTY
+  value: EmptyInvocationChain.new
+full_name: Rake::InvocationChain
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: append
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: member?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: to_s
+name: InvocationChain
+superclass: Object

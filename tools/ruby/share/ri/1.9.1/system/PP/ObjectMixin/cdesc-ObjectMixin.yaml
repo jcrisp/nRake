@@ -1,0 +1,21 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+constants: []
+
+full_name: PP::ObjectMixin
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: pretty_print
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: pretty_print_cycle
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: pretty_print_inspect
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: pretty_print_instance_variables
+name: ObjectMixin

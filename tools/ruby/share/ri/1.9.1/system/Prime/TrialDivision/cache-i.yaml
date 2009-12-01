@@ -1,0 +1,15 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: 
+- !ruby/object:RDoc::RI::AliasName 
+  name: primes
+- !ruby/object:RDoc::RI::AliasName 
+  name: primes_so_far
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the cached prime numbers.
+full_name: Prime::TrialDivision#cache
+is_singleton: false
+name: cache
+params: ()
+visibility: public

@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Iterates over all hostnames for <tt>address</tt> retrieved from the hosts file.
+full_name: Resolv::Hosts#each_name
+is_singleton: false
+name: each_name
+params: (address, &proc)
+visibility: public

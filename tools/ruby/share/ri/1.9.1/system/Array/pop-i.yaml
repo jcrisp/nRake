@@ -1,0 +1,19 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Removes the last element from <em>self</em> and returns it, or <tt>nil</tt> if the array is empty.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: If a number <em>n</em> is given, returns an array of the last n elements (or less) just like <tt>array.slice!(-n, n)</tt> does.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   a = [ &quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot; ]\n   a.pop     #=&gt; &quot;d&quot;\n   a.pop(2)  #=&gt; [&quot;b&quot;, &quot;c&quot;]\n   a         #=&gt; [&quot;a&quot;]\n"
+full_name: Array#pop
+is_singleton: false
+name: pop
+params: |
+  array.pop    -> obj or nil
+  array.pop(n) -> array
+
+visibility: public

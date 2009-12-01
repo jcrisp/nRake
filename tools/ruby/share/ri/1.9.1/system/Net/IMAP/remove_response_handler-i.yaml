@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Removes the response handler.
+full_name: Net::IMAP#remove_response_handler
+is_singleton: false
+name: remove_response_handler
+params: (handler)
+visibility: public

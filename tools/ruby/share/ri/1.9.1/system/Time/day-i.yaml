@@ -1,0 +1,17 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the day of the month (1..n) for <em>time</em>.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   t = Time.now   #=&gt; 2007-11-19 08:27:03 -0600\n   t.day          #=&gt; 19\n   t.mday         #=&gt; 19\n"
+full_name: Time#day
+is_singleton: false
+name: day
+params: |
+  time.day  => fixnum
+  time.mday => fixnum
+
+visibility: public

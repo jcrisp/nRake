@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Appends the elements in other_array to <em>self</em>.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   [ &quot;a&quot;, &quot;b&quot; ].concat( [&quot;c&quot;, &quot;d&quot;] ) #=&gt; [ &quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot; ]\n"
+full_name: Array#concat
+is_singleton: false
+name: concat
+params: |
+  array.concat(other_array)   ->  array
+
+visibility: public

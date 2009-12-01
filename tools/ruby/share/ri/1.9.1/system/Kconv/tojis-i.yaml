@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Convert <tt>str</tt> to ISO-2022-JP
+full_name: Kconv#tojis
+is_singleton: false
+name: tojis
+params: |
+  Kconv.tojis(str)   => string
+
+visibility: private

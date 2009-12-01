@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Return <tt>true</tt> if <tt>fix</tt> equals <tt>other</tt> numerically.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  1 == 2      #=&gt; false\n  1 == 1.0    #=&gt; true\n"
+full_name: Fixnum#==
+is_singleton: false
+name: ==
+params: |
+  fix == other
+
+visibility: public

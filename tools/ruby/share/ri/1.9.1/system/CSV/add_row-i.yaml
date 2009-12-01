@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Alias for #&lt;&lt;"
+full_name: CSV#add_row
+is_singleton: false
+name: add_row
+params: (row)
+visibility: public

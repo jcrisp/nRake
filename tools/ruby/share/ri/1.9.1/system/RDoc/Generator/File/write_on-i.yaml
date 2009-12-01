@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: RDoc::Generator::File#write_on
+is_singleton: false
+name: write_on
+params: (f, file_list, class_list, method_list, overrides = {})
+visibility: public

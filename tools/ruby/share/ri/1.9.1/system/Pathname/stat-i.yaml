@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: See <tt>File.stat</tt>. Returns a <tt>File::Stat</tt> object.
+full_name: Pathname#stat
+is_singleton: false
+name: stat
+params: ()
+visibility: public

@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns a copy of <em>str</em> with the characters in <em>from_str</em> replaced by the corresponding characters in <em>to_str</em>. If <em>to_str</em> is shorter than <em>from_str</em>, it is padded with its last character. Both strings may use the c1--c2 notation to denote ranges of characters, and <em>from_str</em> may start with a <tt>^</tt>, which denotes all characters except those listed.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   &quot;hello&quot;.tr('aeiou', '*')    #=&gt; &quot;h*ll*&quot;\n   &quot;hello&quot;.tr('^aeiou', '*')   #=&gt; &quot;<b>e</b>*o&quot;\n   &quot;hello&quot;.tr('el', 'ip')      #=&gt; &quot;hippo&quot;\n   &quot;hello&quot;.tr('a-y', 'b-z')    #=&gt; &quot;ifmmp&quot;\n"
+full_name: String#tr
+is_singleton: false
+name: tr
+params: |
+  str.tr(from_str, to_str)   => new_str
+
+visibility: public

@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: RSS::ITunesChannelModel::ITunesOwner#setup_maker_element
+is_singleton: false
+name: setup_maker_element
+params: (owner)
+visibility: private

@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the next object in the enumerator, and move the internal position forward. When the position reached at the end, internal position is rewound then StopIteration is raised.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Note that enumeration sequence by next method does not affect other non-external enumeration methods, unless underlying iteration methods itself has side-effect, e.g. IO#each_line.
+full_name: Enumerator#next
+is_singleton: false
+name: next
+params: |
+  e.next   => object
+
+visibility: public

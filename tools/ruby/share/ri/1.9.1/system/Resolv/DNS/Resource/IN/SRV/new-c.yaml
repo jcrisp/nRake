@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Create a SRV resource record.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "See the documentation for #priority, #weight, #port and #target for <tt>priority</tt>, <tt>weight</tt>, +port and <tt>target</tt> respectively."
+full_name: Resolv::DNS::Resource::IN::SRV::new
+is_singleton: true
+name: new
+params: (priority, weight, port, target)
+visibility: public

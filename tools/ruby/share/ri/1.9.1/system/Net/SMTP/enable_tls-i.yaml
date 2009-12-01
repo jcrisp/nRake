@@ -1,0 +1,13 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: 
+- !ruby/object:RDoc::RI::AliasName 
+  name: enable_ssl
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Enables SMTP/TLS (SMTPS: SMTP over direct TLS connection) for this object. Must be called before the connection is established to have any effect. <tt>context</tt> is a OpenSSL::SSL::SSLContext object."
+full_name: Net::SMTP#enable_tls
+is_singleton: false
+name: enable_tls
+params: (context = SMTP.default_ssl_context)
+visibility: public

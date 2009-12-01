@@ -1,0 +1,18 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Constructor
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "parent:"
+    :body: the parent Element
+  type: :NOTE
+full_name: REXML::Elements::new
+is_singleton: true
+name: new
+params: (parent)
+visibility: public

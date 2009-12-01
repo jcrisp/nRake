@@ -1,0 +1,18 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The coerce method provides support for Ruby type coercion. It is not enabled by default.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: This means that binary operations like + * / or - can often be performed on a BigDecimal and an object of another type, if the other object can be coerced into a BigDecimal value.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: e.g. a = BigDecimal.new(&quot;1.0&quot;) b = a / 2.0 -&gt; 0.5
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Note that coercing a String to a BigDecimal is not supported by default; it requires a special compile-time option when building Ruby.
+full_name: BigDecimal#coerce
+is_singleton: false
+name: coerce
+params: (p1)
+visibility: public

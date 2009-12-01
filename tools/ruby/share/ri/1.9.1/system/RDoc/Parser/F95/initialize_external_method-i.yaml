@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Create method for external alias
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: If argument &quot;internal&quot; is true, file is ignored.
+full_name: RDoc::Parser::F95#initialize_external_method
+is_singleton: false
+name: initialize_external_method
+params: (new, old, params, file, comment, token=nil, internal=nil, nolink=nil)
+visibility: private

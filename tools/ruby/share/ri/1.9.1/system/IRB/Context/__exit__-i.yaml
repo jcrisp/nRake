@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Alias for #exit"
+full_name: IRB::Context#__exit__
+is_singleton: false
+name: __exit__
+params: (ret = 0)
+visibility: public

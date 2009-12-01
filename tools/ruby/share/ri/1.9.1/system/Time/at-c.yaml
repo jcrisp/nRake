@@ -1,0 +1,18 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Creates a new time object with the value given by <em>time</em>, the given number of <em>seconds_with_frac</em>, or <em>seconds</em> and <em>microseconds_with_frac</em> from the Epoch. <em>seconds_with_frac</em> and <em>microseconds_with_frac</em> can be Integer, Float, Rational, or other Numeric. non-portable feature allows the offset to be negative on some systems.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   Time.at(0)            #=&gt; 1969-12-31 18:00:00 -0600\n   Time.at(Time.at(0))   #=&gt; 1969-12-31 18:00:00 -0600\n   Time.at(946702800)    #=&gt; 1999-12-31 23:00:00 -0600\n   Time.at(-284061600)   #=&gt; 1960-12-31 00:00:00 -0600\n   Time.at(946684800.2).usec #=&gt; 200000\n   Time.at(946684800, 123456.789).nsec #=&gt; 123456789\n"
+full_name: Time::at
+is_singleton: true
+name: at
+params: |
+  Time.at(time) => time
+  Time.at(seconds_with_frac) => time
+  Time.at(seconds, microseconds_with_frac) => time
+
+visibility: public

@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: ""
+comment: 
+full_name: PStore::DummyMutex#synchronize
+is_singleton: false
+name: synchronize
+params: () {|| ...}
+visibility: public

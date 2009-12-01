@@ -1,0 +1,40 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the factorization of <tt>value</tt>.
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 2
+  :text: Parameters
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "+value+:"
+    :body: An arbitrary integer.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "+generator+:"
+    :body: Optional. A pseudo-prime generator. <tt>generator</tt>.succ must return the next pseudo-prime number in the ascendent order. It must generate all prime numbers, but may generate non prime numbers.
+  type: :NOTE
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 3
+  :text: Exceptions
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "+ZeroDivisionError+:"
+    :body: when <tt>value</tt> is zero.
+  type: :NOTE
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 2
+  :text: Example
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: For an arbitrary integer n = p_1**e_1 * p_2**e_2 * .... * p_n**e_n, prime_division(n) returns [[p_1, e_1], [p_2, e_2], ...., [p_n, e_n]].
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: " Prime.prime_division(12) #=&gt; [[2,2], [3,1]]\n"
+full_name: Prime#prime_division
+is_singleton: false
+name: prime_division
+params: (value, generator= Prime::Generator23.new)
+visibility: public

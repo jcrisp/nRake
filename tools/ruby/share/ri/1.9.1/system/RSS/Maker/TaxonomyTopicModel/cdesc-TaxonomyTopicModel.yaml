@@ -1,0 +1,17 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: append_features
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: install_taxo_topic
+comment: 
+constants: []
+
+full_name: RSS::Maker::TaxonomyTopicModel
+includes: []
+
+instance_methods: []
+
+name: TaxonomyTopicModel

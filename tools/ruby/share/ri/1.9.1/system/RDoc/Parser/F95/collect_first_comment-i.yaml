@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Collect comment for file entity
+full_name: RDoc::Parser::F95#collect_first_comment
+is_singleton: false
+name: collect_first_comment
+params: (body)
+visibility: private

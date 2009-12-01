@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Tests whether the given <tt>pattern</tt> is matched from the current scan pointer. Advances the scan pointer if <tt>advance_pointer_p</tt> is true. Returns the matched string if <tt>return_string_p</tt> is true. The match register is affected.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "&quot;full&quot; means &quot;#scan with full parameters&quot;."
+full_name: StringScanner#scan_full
+is_singleton: false
+name: scan_full
+params: " scan_full(pattern, advance_pointer_p, return_string_p)\n"
+visibility: public

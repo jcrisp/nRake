@@ -1,0 +1,20 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: append_features
+comment: 
+constants: []
+
+full_name: RSS::Atom::ContentModel
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: maker_target
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: setup_maker_element
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: setup_maker_element_writer
+name: ContentModel

@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Thiw methods injects an instance variable <tt>unconverted_fields</tt> into <tt>row</tt> and an accessor method for it called unconverted_fields(). The variable is set to the contents of <tt>fields</tt>.
+full_name: CSV#add_unconverted_fields
+is_singleton: false
+name: add_unconverted_fields
+params: (row, fields)
+visibility: private

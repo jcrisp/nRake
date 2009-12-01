@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Guesses the type of the data which have been inputed into the stream. The returned value is either <tt>Zlib::BINARY</tt>, <tt>Zlib::ASCII</tt>, or <tt>Zlib::UNKNOWN</tt>.
+full_name: Zlib::ZStream#data_type
+is_singleton: false
+name: data_type
+params: ()
+visibility: public

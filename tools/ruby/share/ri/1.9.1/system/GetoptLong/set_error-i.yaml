@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Set an error (a protected method).
+full_name: GetoptLong#set_error
+is_singleton: false
+name: set_error
+params: (type, message)
+visibility: protected

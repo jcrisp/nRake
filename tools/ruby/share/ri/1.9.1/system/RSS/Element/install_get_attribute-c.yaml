@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: RSS::Element::install_get_attribute
+is_singleton: true
+name: install_get_attribute
+params: (name, uri, required=true, type=nil, disp_name=nil, element_name=nil)
+visibility: public

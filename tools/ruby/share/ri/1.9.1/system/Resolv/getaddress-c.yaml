@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Looks up the first IP address for <tt>name</tt>.
+full_name: Resolv::getaddress
+is_singleton: true
+name: getaddress
+params: (name)
+visibility: public

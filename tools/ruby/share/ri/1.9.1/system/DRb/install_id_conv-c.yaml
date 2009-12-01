@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Set the default id conv object.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: See DRbServer#default_id_conv.
+full_name: DRb::install_id_conv
+is_singleton: true
+name: install_id_conv
+params: (idconv)
+visibility: public

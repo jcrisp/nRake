@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Log a <tt>DEBUG</tt> message.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "See #info for more information."
+full_name: Logger#debug
+is_singleton: false
+name: debug
+params: (progname = nil, &block)
+visibility: public

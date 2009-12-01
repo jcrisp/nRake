@@ -1,0 +1,17 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Flattens <em>self</em> in place. Returns <tt>nil</tt> if no modifications were made (i.e., <em>array</em> contains no subarrays.) If the optional <em>level</em> argument determines the level of recursion to flatten.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   a = [ 1, 2, [3, [4, 5] ] ]\n   a.flatten!   #=&gt; [1, 2, 3, 4, 5]\n   a.flatten!   #=&gt; nil\n   a            #=&gt; [1, 2, 3, 4, 5]\n   a = [ 1, 2, [3, [4, 5] ] ]\n   a.flatten!(1) #=&gt; [1, 2, 3, [4, 5]]\n"
+full_name: Array#flatten!
+is_singleton: false
+name: flatten!
+params: |
+  array.flatten! -> array or nil
+  array.flatten!(level) -> array or nil
+
+visibility: public

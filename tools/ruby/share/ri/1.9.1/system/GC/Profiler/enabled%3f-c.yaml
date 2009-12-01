@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: returns current status of GC profile mode.
+full_name: GC::Profiler::enabled?
+is_singleton: true
+name: enabled?
+params: |
+  GC::Profiler.enable?                 => true or false
+
+visibility: public

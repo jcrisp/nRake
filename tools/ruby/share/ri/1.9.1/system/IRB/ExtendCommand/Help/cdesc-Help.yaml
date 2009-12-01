@@ -1,0 +1,15 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: execute
+comment: 
+constants: []
+
+full_name: IRB::ExtendCommand::Help
+includes: []
+
+instance_methods: []
+
+name: Help

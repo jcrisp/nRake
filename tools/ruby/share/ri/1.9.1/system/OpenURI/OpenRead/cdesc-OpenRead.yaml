@@ -1,0 +1,19 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Mixin for HTTP and FTP URIs.
+constants: []
+
+full_name: OpenURI::OpenRead
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: open
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: read
+name: OpenRead

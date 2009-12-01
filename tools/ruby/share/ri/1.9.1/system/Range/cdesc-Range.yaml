@@ -1,0 +1,58 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: yaml_new
+comment: 
+constants: []
+
+full_name: Range
+includes: 
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: Enumerable
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: ==
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: ===
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: begin
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: cover?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: each
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: end
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: eql?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: exclude_end?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: first
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: hash
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: include?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: inspect
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: last
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: max
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: member?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: min
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: pretty_print
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: step
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: to_s
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: to_yaml
+name: Range
+superclass: Object

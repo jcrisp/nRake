@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Alias for #ole_method"
+full_name: WIN32OLE#ole_method_help
+is_singleton: false
+name: ole_method_help
+params: (p1)
+visibility: public

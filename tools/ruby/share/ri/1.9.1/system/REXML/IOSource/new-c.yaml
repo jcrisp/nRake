@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: block_size has been deprecated
+full_name: REXML::IOSource::new
+is_singleton: true
+name: new
+params: (arg, block_size=500, encoding=nil)
+visibility: public

@@ -1,0 +1,20 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns <tt>true</tt> if <em>obj</em> is an element of <em>rng</em>, <tt>false</tt> otherwise. Conveniently, <tt>===</tt> is the comparison operator used by <tt>case</tt> statements.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   case 79\n   when 1..50   then   print &quot;low\\n&quot;\n   when 51..75  then   print &quot;medium\\n&quot;\n   when 76..100 then   print &quot;high\\n&quot;\n   end\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: <em>produces:</em>
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   high\n"
+full_name: Range#===
+is_singleton: false
+name: ===
+params: |
+  rng === obj       =>  true or false
+
+visibility: public

@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: RDoc::Generator::Method#aref
+is_singleton: false
+name: aref
+params: ()
+visibility: public

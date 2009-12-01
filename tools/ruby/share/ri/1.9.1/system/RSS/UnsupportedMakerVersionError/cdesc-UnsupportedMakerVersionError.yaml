@@ -1,0 +1,19 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: 
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  name: version
+  rw: R
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+constants: []
+
+full_name: RSS::UnsupportedMakerVersionError
+includes: []
+
+instance_methods: []
+
+name: UnsupportedMakerVersionError
+superclass: RSS::Error

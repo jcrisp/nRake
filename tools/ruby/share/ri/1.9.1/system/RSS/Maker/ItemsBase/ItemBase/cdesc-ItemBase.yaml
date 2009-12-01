@@ -1,0 +1,54 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: CategoriesBase
+  value: ChannelBase::CategoriesBase
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: AuthorsBase
+  value: ChannelBase::AuthorsBase
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: LinksBase
+  value: ChannelBase::LinksBase
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: ContributorsBase
+  value: ChannelBase::ContributorsBase
+full_name: RSS::Maker::ItemsBase::ItemBase
+includes: 
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: SetupDefaultDate
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: ContentModel
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: DublinCoreModel
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: Maker::ImageItemModel
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: Maker::ITunesItemModel
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: SlashModel
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: TaxonomyTopicsModel
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: TrackBackModel
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: <=>
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: pubDate
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: pubDate=
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: updated
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: updated=
+name: ItemBase
+superclass: RSS::Maker::Base

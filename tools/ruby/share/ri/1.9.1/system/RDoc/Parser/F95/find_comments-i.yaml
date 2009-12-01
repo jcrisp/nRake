@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Comments just after module or subprogram, or arguments are returned. If &quot;COMMENTS_ARE_UPPER&quot; is true, comments just before modules or subprograms are returnd
+full_name: RDoc::Parser::F95#find_comments
+is_singleton: false
+name: find_comments
+params: (text)
+visibility: private

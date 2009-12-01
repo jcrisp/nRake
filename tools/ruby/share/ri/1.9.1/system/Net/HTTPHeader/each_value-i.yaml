@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: +value+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Iterates for each header values.
+full_name: Net::HTTPHeader#each_value
+is_singleton: false
+name: each_value
+params: ( {|+value+| ...}
+visibility: public

@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: Net::SMTP#mailfrom
+is_singleton: false
+name: mailfrom
+params: (from_addr)
+visibility: public

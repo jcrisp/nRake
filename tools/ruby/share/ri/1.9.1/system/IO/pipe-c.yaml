@@ -1,0 +1,27 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Creates a pair of pipe endpoints (connected to each other) and returns them as a two-element array of <tt>IO</tt> objects: <tt>[</tt> <em>read_io</em>, <em>write_io</em> <tt>]</tt>. Not available on all platforms."
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: If an encoding (encoding name or encoding object) is specified as an optional argument, read string from pipe is tagged with the encoding specified. If the argument is a colon separated two encoding names &quot;A:B&quot;, the read string is converted from encoding A (external encoding) to encoding B (internal encoding), then tagged with B. If two optional arguments are specified, those must be encoding objects or encoding names, and the first one is the external encoding, and the second one is the internal encoding. If the external encoding and the internal encoding is specified, optional hash argument specify the conversion option.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: In the example below, the two processes close the ends of the pipe that they are not using. This is not just a cosmetic nicety. The read end of a pipe will not generate an end of file condition if there are any writers with the pipe still open. In the case of the parent process, the <tt>rd.read</tt> will never return if it does not first issue a <tt>wr.close</tt>.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   rd, wr = IO.pipe\n\n   if fork\n     wr.close\n     puts &quot;Parent got: &lt;#{rd.read}&gt;&quot;\n     rd.close\n     Process.wait\n   else\n     rd.close\n     puts &quot;Sending message to parent&quot;\n     wr.write &quot;Hi Dad&quot;\n     wr.close\n   end\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: <em>produces:</em>
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   Sending message to parent\n   Parent got: &lt;Hi Dad&gt;\n"
+full_name: IO::pipe
+is_singleton: true
+name: pipe
+params: |
+  IO.pipe                            -> [read_io, write_io]
+  IO.pipe(ext_enc)                   -> [read_io, write_io]
+  IO.pipe("ext_enc:int_enc" [, opt]) -> [read_io, write_io]
+  IO.pipe(ext_enc, int_enc [, opt])  -> [read_io, write_io]
+
+visibility: public

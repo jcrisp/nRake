@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Unary Minus---Returns the receiver's value, negated.
+full_name: Numeric#-@
+is_singleton: false
+name: -@
+params: |
+  -num    => numeric
+
+visibility: public

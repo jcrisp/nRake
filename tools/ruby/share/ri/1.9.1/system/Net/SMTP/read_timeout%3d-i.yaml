@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Set the number of seconds to wait until timing-out a read(2) call.
+full_name: Net::SMTP#read_timeout=
+is_singleton: false
+name: read_timeout=
+params: (sec)
+visibility: public

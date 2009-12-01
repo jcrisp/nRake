@@ -1,0 +1,36 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: <tt>WIN32OLE_PARAM</tt> objects represent param information of the OLE method.
+constants: []
+
+full_name: WIN32OLE_PARAM
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: default
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: input?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: inspect
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: name
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: ole_type
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: ole_type_detail
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: optional?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: output?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: retval?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: to_s
+name: WIN32OLE_PARAM
+superclass: Object

@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "@CONF default setting"
+full_name: IRB::init_config
+is_singleton: true
+name: init_config
+params: (ap_path)
+visibility: public

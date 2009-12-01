@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the type library major version.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   tlib = WIN32OLE_TYPELIB.new('Microsoft Excel 9.0 Object Library')\n   puts tlib.major_version # -&gt; 1\n"
+full_name: WIN32OLE_TYPELIB#major_version
+is_singleton: false
+name: major_version
+params: |
+  WIN32OLE_TYPELIB#major_version -> The type library major version. 
+
+visibility: public

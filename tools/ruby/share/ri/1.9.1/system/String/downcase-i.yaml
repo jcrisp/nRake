@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Returns a copy of <em>str</em> with all uppercase letters replaced with their lowercase counterparts. The operation is locale insensitive---only characters ``A'' to ``Z'' are affected. Note: case replacement is effective only in ASCII region."
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   &quot;hEllO&quot;.downcase   #=&gt; &quot;hello&quot;\n"
+full_name: String#downcase
+is_singleton: false
+name: downcase
+params: |
+  str.downcase   => new_str
+
+visibility: public

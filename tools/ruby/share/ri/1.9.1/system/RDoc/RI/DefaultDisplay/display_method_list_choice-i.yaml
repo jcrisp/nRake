@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Display a list of <tt>methods</tt> and allow the user to select one of them.
+full_name: RDoc::RI::DefaultDisplay#display_method_list_choice
+is_singleton: false
+name: display_method_list_choice
+params: (methods)
+visibility: public

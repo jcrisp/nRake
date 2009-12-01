@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Add indent to the buffer
+full_name: YAML::BaseEmitter#indent!
+is_singleton: false
+name: indent!
+params: ()
+visibility: public

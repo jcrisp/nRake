@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: For internal use.
+full_name: Vector::new
+is_singleton: true
+name: new
+params: (method, array, copy)
+visibility: public

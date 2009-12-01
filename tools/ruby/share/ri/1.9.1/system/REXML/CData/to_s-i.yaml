@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the content of this CData object
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: <em>Examples</em>
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: " c = CData.new( &quot;Some text&quot; )\n c.to_s        # -&gt; &quot;Some text&quot;\n"
+full_name: REXML::CData#to_s
+is_singleton: false
+name: to_s
+params: ()
+visibility: public

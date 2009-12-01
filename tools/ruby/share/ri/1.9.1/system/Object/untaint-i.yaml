@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Removes the taint from <em>obj</em>.
+full_name: Object#untaint
+is_singleton: false
+name: untaint
+params: |
+  obj.untaint    => obj
+
+visibility: public

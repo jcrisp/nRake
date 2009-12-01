@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns a string containing the character represented by the receiver's value according to <tt>encoding</tt>.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   65.chr    #=&gt; &quot;A&quot;\n   230.chr   #=&gt; &quot;\\346&quot;\n   255.chr(Encoding::UTF_8)   #=&gt; &quot;\\303\\277&quot;\n"
+full_name: Integer#chr
+is_singleton: false
+name: chr
+params: |
+  int.chr([encoding])    => string
+
+visibility: public

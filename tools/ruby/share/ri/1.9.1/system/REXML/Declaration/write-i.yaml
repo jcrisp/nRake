@@ -1,0 +1,15 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 2
+  :text: DEPRECATED
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: See REXML::Formatters
+full_name: REXML::Declaration#write
+is_singleton: false
+name: write
+params: ( output, indent )
+visibility: public

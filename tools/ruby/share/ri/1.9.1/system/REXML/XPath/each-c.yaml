@@ -1,0 +1,29 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Iterates over nodes that match the given path, calling the supplied block with the match.
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "element:"
+    :body: The context element
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "path:"
+    :body: The xpath to search for. If not supplied or nil, defaults to '*'
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "namespaces:"
+    :body: If supplied, a Hash which defines a namespace mapping
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "variables:"
+    :body: If supplied, a Hash which maps $variables in the query to values. This can be used to avoid XPath injection attacks or to automatically handle escaping string values.
+  type: :NOTE
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: " XPath.each( node ) { |el| ... }\n XPath.each( node, '/*[@attr='v']' ) { |el| ... }\n XPath.each( node, 'ancestor::x' ) { |el| ... }\n XPath.each( node, '/book/publisher/text()=$publisher', {}, {&quot;publisher&quot;=&gt;&quot;O'Reilly&quot;})      #    {|el| ... }\n"
+full_name: REXML::XPath::each
+is_singleton: true
+name: each
+params: (element, path=nil, namespaces=nil, variables={})
+visibility: public

@@ -1,0 +1,22 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: 
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  name: label
+  rw: RW
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: this is used when we build nodes that have shape=record ports don't have options :)
+constants: []
+
+full_name: RDoc::DOT::Port
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: to_s
+name: Port
+superclass: RDoc::DOT::SimpleElement

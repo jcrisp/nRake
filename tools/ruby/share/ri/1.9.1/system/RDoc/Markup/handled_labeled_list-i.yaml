@@ -1,0 +1,18 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Handle labeled list entries, We have a special case to deal with. Because the labels can be long, they force the remaining block of text over the to right:"
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  this is a long label that I wrote:: and here is the\n                                      block of text with\n                                      a silly margin\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: So we allow the special case. If the label is followed by nothing, and if the following line is indented, then we take the indent of that line as the new margin.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  this is a long label that I wrote::\n      here is a more reasonably indented block which\n      will be attached to the label.\n"
+full_name: RDoc::Markup#handled_labeled_list
+is_singleton: false
+name: handled_labeled_list
+params: (line, level, margin, offset, prefix)
+visibility: private

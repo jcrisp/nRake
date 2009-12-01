@@ -1,0 +1,23 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+constants: []
+
+full_name: REXML::Validation::OneOrMore
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: expected
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: matches?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: next
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: reset
+name: OneOrMore
+superclass: REXML::Validation::State

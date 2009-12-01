@@ -1,0 +1,17 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Iterates the given block for each element with an arbitrary object given, and returns the initially given object.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: If no block is given, returns an enumerator.
+full_name: Enumerator#with_object
+is_singleton: false
+name: with_object
+params: |
+  e.with_object(obj) {|(*args), memo_obj| ... }
+  e.with_object(obj)
+
+visibility: public

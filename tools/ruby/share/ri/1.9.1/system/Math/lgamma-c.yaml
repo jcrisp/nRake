@@ -1,0 +1,20 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Calculates the logarithmic gamma of x and the sign of gamma of x.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Math.lgamma(x) is same as
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: " [Math.log(Math.gamma(x).abs), Math.gamma(x) &lt; 0 ? -1 : 1]\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: but avoid overflow by Math.gamma(x) for large x.
+full_name: Math::lgamma
+is_singleton: true
+name: lgamma
+params: |
+  Math.lgamma(x)  => [float, -1 or 1]
+
+visibility: public

@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: RDoc::RI::Description::deserialize
+is_singleton: true
+name: deserialize
+params: (from)
+visibility: public

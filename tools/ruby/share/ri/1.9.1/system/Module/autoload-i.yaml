@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Registers <em>filename</em> to be loaded (using <tt>Kernel::require</tt>) the first time that <em>module</em> (which may be a <tt>String</tt> or a symbol) is accessed in the namespace of <em>mod</em>.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   module A\n   end\n   A.autoload(:B, &quot;b&quot;)\n   A::B.doit            # autoloads &quot;b&quot;\n"
+full_name: Module#autoload
+is_singleton: false
+name: autoload
+params: |
+  mod.autoload(name, filename)   => nil
+
+visibility: public

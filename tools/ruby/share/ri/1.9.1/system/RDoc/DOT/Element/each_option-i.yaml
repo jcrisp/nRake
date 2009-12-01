@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: i
+comment: 
+full_name: RDoc::DOT::Element#each_option
+is_singleton: false
+name: each_option
+params: () {|i| ...}
+visibility: public

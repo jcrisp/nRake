@@ -1,0 +1,17 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Calls <em>block</em> for each element repeatedly <em>n</em> times or forever if none or nil is given. If a non-positive number is given or the array is empty, does nothing. Returns nil if the loop has finished without getting interrupted.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   a = [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;]\n   a.cycle {|x| puts x }  # print, a, b, c, a, b, c,.. forever.\n   a.cycle(2) {|x| puts x }  # print, a, b, c, a, b, c.\n"
+full_name: Array#cycle
+is_singleton: false
+name: cycle
+params: |
+  ary.cycle {|obj| block }
+  ary.cycle(n) {|obj| block }
+
+visibility: public

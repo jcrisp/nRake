@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns true if a is greater than or equal to b. Values may be coerced to perform the comparison (see ==, coerce)
+full_name: BigDecimal#>=
+is_singleton: false
+name: ">="
+params: |
+  a >= b
+
+visibility: public

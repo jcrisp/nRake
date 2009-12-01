@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: (o)
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Equivalent to Set#delete_if, but returns nil if no changes were made.
+full_name: Set#reject!
+is_singleton: false
+name: reject!
+params: () {|o| ...}
+visibility: public

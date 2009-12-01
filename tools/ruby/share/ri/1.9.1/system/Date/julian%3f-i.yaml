@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Is the current date old-style (Julian Calendar)?
+full_name: Date#julian?
+is_singleton: false
+name: julian?
+params: ()
+visibility: public

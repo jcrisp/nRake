@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: We need to record the html path of our caller so we can generate correct relative paths for any hyperlinks that we find
+full_name: RDoc::Markup::ToHtmlCrossref::new
+is_singleton: true
+name: new
+params: (from_path, context, show_hash)
+visibility: public

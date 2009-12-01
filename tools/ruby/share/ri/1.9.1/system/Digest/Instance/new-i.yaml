@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns a new, initialized copy of the digest object. Equivalent to digest_obj.clone().reset().
+full_name: Digest::Instance#new
+is_singleton: false
+name: new
+params: |
+  digest_obj.new -> another_digest_obj
+
+visibility: public

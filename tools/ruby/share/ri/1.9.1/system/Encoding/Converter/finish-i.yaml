@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Finishes the converter. It returns the last part of the converted string.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  ec = Encoding::Converter.new(&quot;utf-8&quot;, &quot;iso-2022-jp&quot;)\n  p ec.convert(&quot;\\u3042&quot;)     #=&gt; &quot;\\e$B$\\&quot;&quot;\n  p ec.finish                #=&gt; &quot;\\e(B&quot;\n"
+full_name: Encoding::Converter#finish
+is_singleton: false
+name: finish
+params: |
+  ec.finish -> string
+
+visibility: public

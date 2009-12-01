@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Enables SSL for this instance. Must be called before the connection is established to have any effect. +params[:port]+ is port to establish the SSL connection on; Defaults to 995. <tt>params</tt> (except :port) is passed to OpenSSL::SSLContext#set_params.
+full_name: Net::POP3#enable_ssl
+is_singleton: false
+name: enable_ssl
+params: |
+  Net::POP#enable_ssl(params = {})
+
+visibility: public

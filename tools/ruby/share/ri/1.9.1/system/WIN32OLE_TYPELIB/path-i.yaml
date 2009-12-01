@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the type library file path.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   tlib = WIN32OLE_TYPELIB.new('Microsoft Excel 9.0 Object Library')\n   puts tlib.path #-&gt; 'C:\\...\\EXCEL9.OLB'\n"
+full_name: WIN32OLE_TYPELIB#path
+is_singleton: false
+name: path
+params: |
+  WIN32OLE_TYPELIB#path -> The type library file path. 
+
+visibility: public

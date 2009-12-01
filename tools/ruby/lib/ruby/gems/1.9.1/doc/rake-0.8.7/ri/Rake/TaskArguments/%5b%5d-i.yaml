@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Find an argument value by name or index.
+full_name: Rake::TaskArguments#[]
+is_singleton: false
+name: "[]"
+params: (index)
+visibility: public

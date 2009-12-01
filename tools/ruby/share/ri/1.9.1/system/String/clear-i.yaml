@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Makes string empty.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   a = &quot;abcde&quot;\n   a.clear    #=&gt; &quot;&quot;\n"
+full_name: String#clear
+is_singleton: false
+name: clear
+params: |
+  string.clear    ->  string
+
+visibility: public

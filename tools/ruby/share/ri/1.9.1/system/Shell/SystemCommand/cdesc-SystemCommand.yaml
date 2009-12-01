@@ -1,0 +1,42 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: 
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  name: command
+  rw: R
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+constants: []
+
+full_name: Shell::SystemCommand
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: active?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: each
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: flush
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: input=
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: kill
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: notify
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: start
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: start_export
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: start_import
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: super_each
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: terminate
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: wait?
+name: SystemCommand
+superclass: Shell::Filter

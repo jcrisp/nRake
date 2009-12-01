@@ -1,0 +1,17 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Non-authentication POP3 protocol error (reply code &quot;-ERR&quot;, except authentication).
+constants: []
+
+full_name: Net::POPError
+includes: []
+
+instance_methods: []
+
+name: POPError
+superclass: ProtocolError

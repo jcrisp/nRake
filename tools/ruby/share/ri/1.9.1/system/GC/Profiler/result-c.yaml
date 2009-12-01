@@ -1,0 +1,18 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Report profile data to string.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "It returns a string as:"
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: " GC 1 invokes.\n Index    Invoke Time(sec)       Use Size(byte)     Total Size(byte)         Total Object                    GC time(ms)\n     1               0.012               159240               212940                10647         0.00000000000001530000\n"
+full_name: GC::Profiler::result
+is_singleton: true
+name: result
+params: |
+  GC::Profiler.result -> string
+
+visibility: public

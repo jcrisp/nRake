@@ -1,0 +1,21 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: 
+- !ruby/object:RDoc::RI::AliasName 
+  name: escape
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Escapes a string so that it can be safely used in a Bourne shell command line.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Note that a resulted string should be used unquoted and is not intended for use in double quotes nor in single quotes.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  open(&quot;| grep #{Shellwords.escape(pattern)} file&quot;) { |pipe|\n    # ...\n  }\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: +String#shellescape+ is a shorthand for this function.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  open(&quot;| grep #{pattern.shellescape} file&quot;) { |pipe|\n    # ...\n  }\n"
+full_name: Shellwords::shellescape
+is_singleton: true
+name: shellescape
+params: (str)
+visibility: public

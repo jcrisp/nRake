@@ -1,0 +1,417 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: guess
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: nkf
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: NKF - Ruby extension for Network Kanji Filter
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 2
+  :text: Description
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: This is a Ruby Extension version of nkf (Network Kanji Filter). It converts the first argument and returns converted result. Conversion details are specified by flags as the first argument.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: <b>Nkf</b> is a yet another kanji code converter among networks, hosts and terminals. It converts input kanji code to designated kanji code such as ISO-2022-JP, Shift_JIS, EUC-JP, UTF-8 or UTF-16.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: One of the most unique faculty of <b>nkf</b> is the guess of the input kanji encodings. It currently recognizes ISO-2022-JP, Shift_JIS, EUC-JP, UTF-8 and UTF-16. So users needn't set the input kanji code explicitly.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: By default, X0201 kana is converted into X0208 kana. For X0201 kana, SO/SI, SSO and ESC-(-I methods are supported. For automatic code detection, nkf assumes no X0201 kana in Shift_JIS. To accept X0201 in Shift_JIS, use <b>-X</b>, <b>-x</b> or <b>-S</b>.
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 2
+  :text: Flags
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 3
+  :text: -b -u
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Output is buffered (DEFAULT), Output is unbuffered.
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 3
+  :text: -j -s -e -w -w16 -w32
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Output code is ISO-2022-JP (7bit JIS), Shift_JIS, EUC-JP, UTF-8N, UTF-16BE, UTF-32BE. Without this option and compile option, ISO-2022-JP is assumed.
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 3
+  :text: -J -S -E -W -W16 -W32
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Input assumption is JIS 7 bit, Shift_JIS, EUC-JP, UTF-8, UTF-16, UTF-32.
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 4
+  :text: -J
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Assume JIS input. It also accepts EUC-JP. This is the default. This flag does not exclude Shift_JIS.
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 4
+  :text: -S
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Assume Shift_JIS and X0201 kana input. It also accepts JIS. EUC-JP is recognized as X0201 kana. Without <b>-x</b> flag, X0201 kana (halfwidth kana) is converted into X0208.
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 4
+  :text: -E
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Assume EUC-JP input. It also accepts JIS. Same as -J.
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 3
+  :text: -t
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: No conversion.
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 3
+  :text: -i_
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Output sequence to designate JIS-kanji. (DEFAULT B)
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 3
+  :text: -o_
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Output sequence to designate ASCII. (DEFAULT B)
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 3
+  :text: -r
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "{de/en}crypt ROT13/47"
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 3
+  :text: -h[123] --hiragana --katakana --katakana-hiragana
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: -h1 --hiragana
+    :body: Katakana to Hiragana conversion.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: -h2 --katakana
+    :body: Hiragana to Katakana conversion.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: -h3 --katakana-hiragana
+    :body: Katakana to Hiragana and Hiragana to Katakana conversion.
+  type: :LABELED
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 3
+  :text: -T
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Text mode output (MS-DOS)
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 3
+  :text: -l
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: ISO8859-1 (Latin-1) support
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 3
+  :text: -f[<tt>m</tt> [- <tt>n</tt>]]
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Folding on <tt>m</tt> length with <tt>n</tt> margin in a line. Without this option, fold length is 60 and fold margin is 10.
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 3
+  :text: -F
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: New line preserving line folding.
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 3
+  :text: -Z[0-3]
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Convert X0208 alphabet (Fullwidth Alphabets) to ASCII.
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: -Z -Z0
+    :body: Convert X0208 alphabet to ASCII.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: -Z1
+    :body: Converts X0208 kankaku to single ASCII space.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: -Z2
+    :body: Converts X0208 kankaku to double ASCII spaces.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: -Z3
+    :body: Replacing Fullwidth &gt;, &lt;, &quot;, &amp; into '&amp;gt;', '&amp;lt;', '&amp;quot;', '&amp;amp;' as in HTML.
+  type: :LABELED
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 3
+  :text: -X -x
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Assume X0201 kana in MS-Kanji. With <b>-X</b> or without this option, X0201 is converted into X0208 Kana. With <b>-x</b>, try to preserve X0208 kana and do not convert X0201 kana to X0208. In JIS output, ESC-(-I is used. In EUC output, SSO is used.
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 3
+  :text: -B[0-2]
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Assume broken JIS-Kanji input, which lost ESC. Useful when your site is using old B-News Nihongo patch.
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: -B1
+    :body: allows any char after ESC-( or ESC-$.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: -B2
+    :body: forces ASCII after NL.
+  type: :LABELED
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 3
+  :text: -I
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Replacing non iso-2022-jp char into a geta character (substitute character in Japanese).
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 3
+  :text: -d -c
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Delete \r in line feed, Add \r in line feed.
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 3
+  :text: -m[BQN0]
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: MIME ISO-2022-JP/ISO8859-1 decode. (DEFAULT) To see ISO8859-1 (Latin-1) -l is necessary.
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: -mB
+    :body: Decode MIME base64 encoded stream. Remove header or other part before
+  type: :LABELED
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: conversion.
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: -mQ
+    :body: Decode MIME quoted stream. '_' in quoted stream is converted to space.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: -mN
+    :body: Non-strict decoding.
+  type: :LABELED
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: It allows line break in the middle of the base64 encoding.
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: -m0
+    :body: No MIME decode.
+  type: :LABELED
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 3
+  :text: -M
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: MIME encode. Header style. All ASCII code and control characters are intact. Kanji conversion is performed before encoding, so this cannot be used as a picture encoder.
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: -MB
+    :body: MIME encode Base64 stream.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: -MQ
+    :body: Perfome quoted encoding.
+  type: :LABELED
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 3
+  :text: -l
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Input and output code is ISO8859-1 (Latin-1) and ISO-2022-JP. <b>-s</b>, <b>-e</b> and <b>-x</b> are not compatible with this option.
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 3
+  :text: -L[uwm]
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: new line mode Without this option, nkf doesn't convert line breaks.
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: -Lu
+    :body: unix (LF)
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: -Lw
+    :body: windows (CRLF)
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: -Lm
+    :body: mac (CR)
+  type: :LABELED
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 3
+  :text: --fj --unix --mac --msdos --windows
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: convert for these system
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 3
+  :text: --jis --euc --sjis --mime --base64
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: convert for named code
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 3
+  :text: --jis-input --euc-input --sjis-input --mime-input --base64-input
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: assume input system
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 3
+  :text: --ic=<tt>input codeset</tt> --oc=<tt>output codeset</tt>
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Set the input or output codeset. NKF supports following codesets and those codeset name are case insensitive.
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: ISO-2022-JP
+    :body: a.k.a. RFC1468, 7bit JIS, JUNET
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: EUC-JP (eucJP-nkf)
+    :body: a.k.a. AT&amp;T JIS, Japanese EUC, UJIS
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: eucJP-ascii
+    :body: a.k.a. x-eucjp-open-19970715-ascii
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: eucJP-ms
+    :body: a.k.a. x-eucjp-open-19970715-ms
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: CP51932
+    :body: Microsoft Version of EUC-JP.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: Shift_JIS
+    :body: SJIS, MS-Kanji
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: Windows-31J
+    :body: a.k.a. CP932
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: UTF-8
+    :body: same as UTF-8N
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: UTF-8N
+    :body: UTF-8 without BOM
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: UTF-8-BOM
+    :body: UTF-8 with BOM
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: UTF-16
+    :body: same as UTF-16BE
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: UTF-16BE
+    :body: UTF-16 Big Endian without BOM
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: UTF-16BE-BOM
+    :body: UTF-16 Big Endian with BOM
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: UTF-16LE
+    :body: UTF-16 Little Endian without BOM
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: UTF-16LE-BOM
+    :body: UTF-16 Little Endian with BOM
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: UTF-32
+    :body: same as UTF-32BE
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: UTF-32BE
+    :body: UTF-32 Big Endian without BOM
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: UTF-32BE-BOM
+    :body: UTF-32 Big Endian with BOM
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: UTF-32LE
+    :body: UTF-32 Little Endian without BOM
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: UTF-32LE-BOM
+    :body: UTF-32 Little Endian with BOM
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: UTF8-MAC
+    :body: NKDed UTF-8, a.k.a. UTF8-NFD (input only)
+  type: :LABELED
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 3
+  :text: --fb-{skip, html, xml, perl, java, subchar}
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Specify the way that nkf handles unassigned characters. Without this option, --fb-skip is assumed.
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 3
+  :text: --prefix= <tt>escape character</tt> <tt>target character</tt> ..
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: When nkf converts to Shift_JIS, nkf adds a specified escape character to specified 2nd byte of Shift_JIS characters. 1st byte of argument is the escape character and following bytes are target characters.
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 3
+  :text: --no-cp932ext
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Handle the characters extended in CP932 as unassigned characters.
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 2
+  :text: --no-best-fit-chars
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: When Unicode to Encoded byte conversion, don't convert characters which is not round trip safe. When Unicode to Unicode conversion, with this and -x option, nkf can be used as UTF converter. (In other words, without this and -x option, nkf doesn't save some characters)
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: When nkf convert string which related to path, you should use this opion.
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 3
+  :text: --cap-input
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Decode hex encoded characters.
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 3
+  :text: --url-input
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Unescape percent escaped characters.
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 3
+  :text: --
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Ignore rest of -option.
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: AUTO
+  value: Qnil
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: NOCONV
+  value: Qnil
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: UNKNOWN
+  value: Qnil
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: BINARY
+  value: rb_enc_from_encoding(rb_nkf_enc_get("BINARY"))
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: ASCII
+  value: rb_enc_from_encoding(rb_nkf_enc_get("US-ASCII"))
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: JIS
+  value: rb_enc_from_encoding(rb_nkf_enc_get("ISO-2022-JP"))
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: EUC
+  value: rb_enc_from_encoding(rb_nkf_enc_get("EUC-JP"))
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: SJIS
+  value: rb_enc_from_encoding(rb_nkf_enc_get("Shift_JIS"))
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: UTF8
+  value: rb_enc_from_encoding(rb_utf8_encoding())
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: UTF16
+  value: rb_enc_from_encoding(rb_nkf_enc_get("UTF-16BE"))
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: UTF32
+  value: rb_enc_from_encoding(rb_nkf_enc_get("UTF-32BE"))
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: Full version string of nkf
+  name: VERSION
+  value: rb_str_new2(RUBY_NKF_VERSION)
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: Version of nkf
+  name: NKF_VERSION
+  value: rb_str_new2(NKF_VERSION)
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: Release date of nkf
+  name: NKF_RELEASE_DATE
+  value: rb_str_new2(NKF_RELEASE_DATE)
+full_name: NKF
+includes: []
+
+instance_methods: []
+
+name: NKF

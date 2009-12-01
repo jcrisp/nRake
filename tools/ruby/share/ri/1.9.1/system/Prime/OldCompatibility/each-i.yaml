@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: succ
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Overwrites Prime#each.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Iterates the given block over all prime numbers. Note that enumeration starts from the current position of internal pointer, not rewound.
+full_name: Prime::OldCompatibility#each
+is_singleton: false
+name: each
+params: (&block) {|succ| ...}
+visibility: public

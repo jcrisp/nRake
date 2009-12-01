@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Return this SystemCallError's error number.
+full_name: SystemCallError#errno
+is_singleton: false
+name: errno
+params: |
+  system_call_error.errno   => fixnum
+
+visibility: public

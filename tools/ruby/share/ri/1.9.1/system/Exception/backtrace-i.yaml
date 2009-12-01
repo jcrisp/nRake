@@ -1,0 +1,20 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Returns any backtrace associated with the exception. The backtrace is an array of strings, each containing either ``filename:lineNo: in `method''' or ``filename:lineNo.''"
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   def a\n     raise &quot;boom&quot;\n   end\n\n   def b\n     a()\n   end\n\n   begin\n     b()\n   rescue =&gt; detail\n     print detail.backtrace.join(&quot;\\n&quot;)\n   end\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: <em>produces:</em>
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   prog.rb:2:in `a'\n   prog.rb:6:in `b'\n   prog.rb:10\n"
+full_name: Exception#backtrace
+is_singleton: false
+name: backtrace
+params: |
+  exception.backtrace    => array
+
+visibility: public

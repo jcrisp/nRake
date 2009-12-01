@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: RDoc::RI::Driver#create_class_cache
+is_singleton: false
+name: create_class_cache
+params: ()
+visibility: public

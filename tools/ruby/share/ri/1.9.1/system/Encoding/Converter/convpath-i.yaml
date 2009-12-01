@@ -1,0 +1,22 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the conversion path of ec.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The result is an array of conversions.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  ec = Encoding::Converter.new(&quot;ISo-8859-1&quot;, &quot;EUC-JP&quot;, crlf_newline: true)\n  p ec.convpath\n  #=&gt; [[#&lt;Encoding:ISO-8859-1&gt;, #&lt;Encoding:UTF-8&gt;],\n  #    [#&lt;Encoding:UTF-8&gt;, #&lt;Encoding:EUC-JP&gt;],\n  #    &quot;crlf_newline&quot;]\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Each element of the array is a pair of encodings or a string. A pair means an encoding conversion. A string means a decorator.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "In the above example, [#&lt;Encoding:ISO-8859-1&gt;, #&lt;Encoding:UTF-8&gt;] means a converter from ISO-8859-1 to UTF-8. &quot;crlf_newline&quot; means newline converter from LF to CRLF."
+full_name: Encoding::Converter#convpath
+is_singleton: false
+name: convpath
+params: |
+  ec.convpath        -> ary
+
+visibility: public

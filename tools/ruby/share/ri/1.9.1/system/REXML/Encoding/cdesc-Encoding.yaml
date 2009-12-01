@@ -1,0 +1,104 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: 
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: ID ---&gt; Encoding name
+  name: encoding
+  rw: R
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: apply
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: encoding_method
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: register
+comment: 
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: Native, default format is UTF-8, so it is declared here rather than in an encodings/ definition.
+  name: UTF_8
+  value: "'UTF-8'"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: UTF_16
+  value: "'UTF-16'"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: UNILE
+  value: "'UNILE'"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: EUCTOU8
+  value: "'-Ewm0'"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: U8TOEUC
+  value: "'-Wem0'"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: SJISTOU8
+  value: "'-Swm0x'"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: U8TOSJIS
+  value: "'-Wsm0x'"
+full_name: REXML::Encoding
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: check_encoding
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: decode
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: decode_ascii
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: decode_cp1252
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: decode_eucjp
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: decode_eucjp
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: decode_iconv
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: decode_sjis
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: decode_sjis
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: decode_unile
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: decode_utf16
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: decode_utf8
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: encode
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: encode_ascii
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: encode_cp1252
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: encode_eucjp
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: encode_eucjp
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: encode_iconv
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: encode_sjis
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: encode_sjis
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: encode_unile
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: encode_utf16
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: encode_utf8
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: encoding=
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: from_iso_8859_15
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: to_iso_8859_15
+name: Encoding

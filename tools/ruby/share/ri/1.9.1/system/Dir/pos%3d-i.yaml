@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Synonym for <tt>Dir#seek</tt>, but returns the position parameter.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   d = Dir.new(&quot;testdir&quot;)   #=&gt; #&lt;Dir:0x401b3c40&gt;\n   d.read                   #=&gt; &quot;.&quot;\n   i = d.pos                #=&gt; 12\n   d.read                   #=&gt; &quot;..&quot;\n   d.pos = i                #=&gt; 12\n   d.read                   #=&gt; &quot;..&quot;\n"
+full_name: Dir#pos=
+is_singleton: false
+name: pos=
+params: |
+  dir.pos( integer ) => integer
+
+visibility: public

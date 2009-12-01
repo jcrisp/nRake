@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: RDoc::RI::Formatter#display_flow
+is_singleton: false
+name: display_flow
+params: (flow)
+visibility: public

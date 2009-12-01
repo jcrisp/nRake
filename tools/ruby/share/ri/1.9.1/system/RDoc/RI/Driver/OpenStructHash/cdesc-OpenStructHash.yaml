@@ -1,0 +1,21 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: convert
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: This class offers both Hash and OpenStruct functionality. We convert from the Core Hash to this before calling any of the display methods, in order to give the display methods a cleaner API for accessing the data.
+constants: []
+
+full_name: RDoc::RI::Driver::OpenStructHash
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: merge_enums
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: method_missing
+name: OpenStructHash
+superclass: Hash

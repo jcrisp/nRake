@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Coerce an object to a string, providing our own representation if to_s is not defined for the object.
+full_name: DRb::DRbServer#any_to_s
+is_singleton: false
+name: any_to_s
+params: (obj)
+visibility: private

@@ -1,0 +1,175 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: 
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The primary local dRuby server.
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: "This is the server created by the #start_service call."
+  name: primary_server
+  rw: RW
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The primary local dRuby server.
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: "This is the server created by the #start_service call."
+  name: primary_server
+  rw: RW
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: config
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: current_server
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: fetch_server
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: front
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: here?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: install_acl
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: install_id_conv
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: mutex
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: regist_server
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: remove_server
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: start_service
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: stop_service
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: thread
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: to_id
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: to_obj
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: uri
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 2
+  :text: Overview
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: dRuby is a distributed object system for Ruby. It is written in pure Ruby and uses its own protocol. No add-in services are needed beyond those provided by the Ruby runtime, such as TCP sockets. It does not rely on or interoperate with other distributed object systems such as CORBA, RMI, or .NET.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: dRuby allows methods to be called in one Ruby process upon a Ruby object located in another Ruby process, even on another machine. References to objects can be passed between processes. Method arguments and return values are dumped and loaded in marshalled format. All of this is done transparently to both the caller of the remote method and the object that it is called upon.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: An object in a remote process is locally represented by a DRb::DRbObject instance. This acts as a sort of proxy for the remote object. Methods called upon this DRbObject instance are forwarded to its remote object. This is arranged dynamically at run time. There are no statically declared interfaces for remote objects, such as CORBA's IDL.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: dRuby calls made into a process are handled by a DRb::DRbServer instance within that process. This reconstitutes the method call, invokes it upon the specified local object, and returns the value to the remote caller. Any object can receive calls over dRuby. There is no need to implement a special interface, or mixin special functionality. Nor, in the general case, does an object need to explicitly register itself with a DRbServer in order to receive dRuby calls.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: One process wishing to make dRuby calls upon another process must somehow obtain an initial reference to an object in the remote process by some means other than as the return value of a remote method call, as there is initially no remote object reference it can invoke a method upon. This is done by attaching to the server by URI. Each DRbServer binds itself to a URI such as 'druby://example.com:8787'. A DRbServer can have an object attached to it that acts as the server's <b>front</b> <b>object</b>. A DRbObject can be explicitly created from the server's URI. This DRbObject's remote object will be the server's front object. This front object can then return references to other Ruby objects in the DRbServer's process.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Method calls made over dRuby behave largely the same as normal Ruby method calls made within a process. Method calls with blocks are supported, as are raising exceptions. In addition to a method's standard errors, a dRuby call may also raise one of the dRuby-specific errors, all of which are subclasses of DRb::DRbError.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Any type of object can be passed as an argument to a dRuby call or returned as its return value. By default, such objects are dumped or marshalled at the local end, then loaded or unmarshalled at the remote end. The remote end therefore receives a copy of the local object, not a distributed reference to it; methods invoked upon this copy are executed entirely in the remote process, not passed on to the local original. This has semantics similar to pass-by-value.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: However, if an object cannot be marshalled, a dRuby reference to it is passed or returned instead. This will turn up at the remote end as a DRbObject instance. All methods invoked upon this remote proxy are forwarded to the local object, as described in the discussion of DRbObjects. This has semantics similar to the normal Ruby pass-by-reference.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The easiest way to signal that we want an otherwise marshallable object to be passed or returned as a DRbObject reference, rather than marshalled and sent as a copy, is to include the DRb::DRbUndumped mixin module.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: dRuby supports calling remote methods with blocks. As blocks (or rather the Proc objects that represent them) are not marshallable, the block executes in the local, not the remote, context. Each value yielded to the block is passed from the remote object to the local block, then the value returned by each block invocation is passed back to the remote execution context to be collected, before the collected values are finally returned to the local context as the return value of the method invocation.
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 2
+  :text: Examples of usage
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: For more dRuby samples, see the <tt>samples</tt> directory in the full dRuby distribution.
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 3
+  :text: dRuby in client/server mode
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: This illustrates setting up a simple client-server drb system. Run the server and client code in different terminals, starting the server code first.
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 4
+  :text: Server code
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  require 'drb/drb'\n\n  # The URI for the server to connect to\n  URI=&quot;druby://localhost:8787&quot;\n\n  class TimeServer\n\n    def get_current_time\n      return Time.now\n    end\n\n  end\n\n  # The object that handles requests on the server\n  FRONT_OBJECT=TimeServer.new\n\n  $SAFE = 1   # disable eval() and friends\n\n  DRb.start_service(URI, FRONT_OBJECT)\n  # Wait for the drb server thread to finish before exiting.\n  DRb.thread.join\n"
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 4
+  :text: Client code
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  require 'drb/drb'\n\n  # The URI to connect to\n  SERVER_URI=&quot;druby://localhost:8787&quot;\n\n  # Start a local DRbServer to handle callbacks.\n  #\n  # Not necessary for this small example, but will be required\n  # as soon as we pass a non-marshallable object as an argument\n  # to a dRuby call.\n  DRb.start_service\n\n  timeserver = DRbObject.new_with_uri(SERVER_URI)\n  puts timeserver.get_current_time\n"
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 3
+  :text: Remote objects under dRuby
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: This example illustrates returning a reference to an object from a dRuby call. The Logger instances live in the server process. References to them are returned to the client process, where methods can be invoked upon them. These methods are executed in the server process.
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 4
+  :text: Server code
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  require 'drb/drb'\n\n  URI=&quot;druby://localhost:8787&quot;\n\n  class Logger\n\n      # Make dRuby send Logger instances as dRuby references,\n      # not copies.\n      include DRb::DRbUndumped\n\n      def initialize(n, fname)\n          @name = n\n          @filename = fname\n      end\n\n      def log(message)\n          File.open(@filename, &quot;a&quot;) do |f|\n              f.puts(&quot;#{Time.now}: #{@name}: #{message}&quot;)\n          end\n      end\n\n  end\n\n  # We have a central object for creating and retrieving loggers.\n  # This retains a local reference to all loggers created.  This\n  # is so an existing logger can be looked up by name, but also\n  # to prevent loggers from being garbage collected.  A dRuby\n  # reference to an object is not sufficient to prevent it being\n  # garbage collected!\n  class LoggerFactory\n\n      def initialize(bdir)\n          @basedir = bdir\n          @loggers = {}\n      end\n\n      def get_logger(name)\n          if !@loggers.has_key? name\n              # make the filename safe, then declare it to be so\n              fname = name.gsub(/[.\\/]/, &quot;_&quot;).untaint\n              @loggers[name] = Logger.new(name, @basedir + &quot;/&quot; + fname)\n          end\n          return @loggers[name]\n      end\n\n  end\n\n  FRONT_OBJECT=LoggerFactory.new(&quot;/tmp/dlog&quot;)\n\n  $SAFE = 1   # disable eval() and friends\n\n  DRb.start_service(URI, FRONT_OBJECT)\n  DRb.thread.join\n"
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 4
+  :text: Client code
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  require 'drb/drb'\n\n  SERVER_URI=&quot;druby://localhost:8787&quot;\n\n  DRb.start_service\n\n  log_service=DRbObject.new_with_uri(SERVER_URI)\n\n  [&quot;loga&quot;, &quot;logb&quot;, &quot;logc&quot;].each do |logname|\n\n      logger=log_service.get_logger(logname)\n\n      logger.log(&quot;Hello, world!&quot;)\n      logger.log(&quot;Goodbye, world!&quot;)\n      logger.log(&quot;=== EOT ===&quot;)\n\n  end\n"
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 2
+  :text: Security
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "As with all network services, security needs to be considered when using dRuby. By allowing external access to a Ruby object, you are not only allowing outside clients to call the methods you have defined for that object, but by default to execute arbitrary Ruby code on your server. Consider the following:"
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   # !!! UNSAFE CODE !!!\n   ro = DRbObject::new_with_uri(&quot;druby://your.server.com:8989&quot;)\n   class &lt;&lt; ro\n     undef :instance_eval  # force call to be passed to remote object\n   end\n   ro.instance_eval(&quot;`rm -rf *`&quot;)\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The dangers posed by instance_eval and friends are such that a DRbServer should generally be run with $SAFE set to at least level 1. This will disable eval() and related calls on strings passed across the wire. The sample usage code given above follows this practice.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: A DRbServer can be configured with an access control list to selectively allow or deny access from specified IP addresses. The main druby distribution provides the ACL class for this purpose. In general, this mechanism should only be used alongside, rather than as a replacement for, a good firewall.
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 2
+  :text: dRuby internals
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "dRuby is implemented using three main components: a remote method call marshaller/unmarshaller; a transport protocol; and an ID-to-object mapper. The latter two can be directly, and the first indirectly, replaced, in order to provide different behaviour and capabilities."
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Marshalling and unmarshalling of remote method calls is performed by a DRb::DRbMessage instance. This uses the Marshal module to dump the method call before sending it over the transport layer, then reconstitute it at the other end. There is normally no need to replace this component, and no direct way is provided to do so. However, it is possible to implement an alternative marshalling scheme as part of an implementation of the transport layer.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The transport layer is responsible for opening client and server network connections and forwarding dRuby request across them. Normally, it uses DRb::DRbMessage internally to manage marshalling and unmarshalling. The transport layer is managed by DRb::DRbProtocol. Multiple protocols can be installed in DRbProtocol at the one time; selection between them is determined by the scheme of a dRuby URI. The default transport protocol is selected by the scheme 'druby:', and implemented by DRb::DRbTCPSocket. This uses plain TCP/IP sockets for communication. An alternative protocol, using UNIX domain sockets, is implemented by DRb::DRbUNIXSocket in the file drb/unix.rb, and selected by the scheme 'drbunix:'. A sample implementation over HTTP can be found in the samples accompanying the main dRuby distribution.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The ID-to-object mapping component maps dRuby object ids to the objects they refer to, and vice versa. The implementation to use can be specified as part of a DRb::DRbServer's configuration. The default implementation is provided by DRb::DRbIdConv. It uses an object's ObjectSpace id as its dRuby id. This means that the dRuby reference to that object only remains meaningful for the lifetime of the object's process and the lifetime of the object within that process. A modified implementation is provided by DRb::TimerIdConv in the file drb/timeridconv.rb. This implementation retains a local reference to all objects exported over dRuby for a configurable period of time (defaulting to ten minutes), to prevent them being garbage-collected within this time. Another sample implementation is provided in sample/name.rb in the main dRuby distribution. This allows objects to specify their own id or &quot;name&quot;. A dRuby reference can be made persistent across processes by having each process register an object using the same dRuby name.
+- !ruby/struct:RDoc::Markup::Flow::RULE 
+  :width: 1
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: for ruby-1.8.0
+constants: []
+
+full_name: DRb
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: config
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: current_server
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: fetch_server
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: front
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: here?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: install_acl
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: install_id_conv
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: mutex
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: regist_server
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: remove_server
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: start_service
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: stop_service
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: thread
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: to_id
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: to_obj
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: uri
+name: DRb

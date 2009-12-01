@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Return hash value corresponding to proc body.
+full_name: Proc#hash
+is_singleton: false
+name: hash
+params: |
+  prc.hash   =>  integer
+
+visibility: public

@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: RSS::ListenerMixin#setup_next_element
+is_singleton: false
+name: setup_next_element
+params: (tag_name, klass, attributes)
+visibility: private

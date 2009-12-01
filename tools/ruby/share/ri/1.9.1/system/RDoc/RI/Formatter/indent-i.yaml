@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: ""
+comment: 
+full_name: RDoc::RI::Formatter#indent
+is_singleton: false
+name: indent
+params: () {|| ...}
+visibility: public

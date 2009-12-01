@@ -1,0 +1,223 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: binread
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: copy_stream
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: for_fd
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: foreach
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: open
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: pipe
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: popen
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: read
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: readlines
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: select
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: sysopen
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: try_convert
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Class <tt>IO</tt> is the basis for all input and output in Ruby. An I/O stream may be <em>duplexed</em> (that is, bidirectional), and so may use more than one native operating system stream.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Many of the examples in this section use class <tt>File</tt>, the only standard subclass of <tt>IO</tt>. The two classes are closely associated.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: As used in this section, <em>portname</em> may take any of the following forms.
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: A plain string represents a filename suitable for the underlying operating system.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: A string starting with ``<tt>|</tt>'' indicates a subprocess. The remainder of the string following the ``<tt>|</tt>'' is invoked as a process with appropriate input/output channels connected to it.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: A string equal to ``<tt>|-</tt>'' will create another Ruby instance as a subprocess.
+  type: :BULLET
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Ruby will convert pathnames between different operating system conventions if possible. For instance, on a Windows system the filename ``<tt>/gumby/ruby/test.rb</tt>'' will be opened as ``<tt>\\gumby\\ruby\\test.rb</tt>''. When specifying a Windows-style filename in a Ruby string, remember to escape the backslashes:"
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   &quot;c:\\gumby\\ruby\\test.rb&quot;\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Our examples here will use the Unix-style forward slashes; <tt>File::SEPARATOR</tt> can be used to get the platform-specific separator character.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: I/O ports may be opened in any one of several different modes, which are shown in this section as <em>mode</em>. The mode may either be a Fixnum or a String. If numeric, it should be one of the operating system specific constants (O_RDONLY, O_WRONLY, O_RDWR, O_APPEND and so on). See man open(2) for more information.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: If the mode is given as a String, it must be one of the values listed in the following table.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  Mode |  Meaning\n  -----+--------------------------------------------------------\n  &quot;r&quot;  |  Read-only, starts at beginning of file  (default mode).\n  -----+--------------------------------------------------------\n  &quot;r+&quot; |  Read-write, starts at beginning of file.\n  -----+--------------------------------------------------------\n  &quot;w&quot;  |  Write-only, truncates existing file\n       |  to zero length or creates a new file for writing.\n  -----+--------------------------------------------------------\n  &quot;w+&quot; |  Read-write, truncates existing file to zero length\n       |  or creates a new file for reading and writing.\n  -----+--------------------------------------------------------\n  &quot;a&quot;  |  Write-only, starts at end of file if file exists,\n       |  otherwise creates a new file for writing.\n  -----+--------------------------------------------------------\n  &quot;a+&quot; |  Read-write, starts at end of file if file exists,\n       |  otherwise creates a new file for reading and\n       |  writing.\n  -----+--------------------------------------------------------\n   &quot;b&quot; |  Binary file mode (may appear with\n       |  any of the key letters listed above).\n       |  Suppresses EOL &lt;-&gt; CRLF conversion on Windows. And\n       |  sets external encoding to ASCII-8BIT unless explicitly\n       |  specified.\n  -----+--------------------------------------------------------\n   &quot;t&quot; |  Text file mode (may appear with\n       |  any of the key letters listed above except &quot;b&quot;).\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The global constant ARGF (also accessible as $&lt;) provides an IO-like stream which allows access to all files mentioned on the command line (or STDIN if no files are mentioned). ARGF provides the methods <tt>#path</tt> and <tt>#filename</tt> to access the name of the file currently being read.
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: SEEK_SET
+  value: INT2FIX(SEEK_SET)
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: SEEK_CUR
+  value: INT2FIX(SEEK_CUR)
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: SEEK_END
+  value: INT2FIX(SEEK_END)
+full_name: IO
+includes: 
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: File::Constants
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: Enumerable
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: "<<"
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: binmode
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: binmode?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: block_scanf
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: bytes
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: chars
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: close
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: close_on_exec=
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: close_on_exec?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: close_read
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: close_write
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: closed?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: each
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: each_byte
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: each_char
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: each_line
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: eof
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: eof?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: external_encoding
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: fcntl
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: fileno
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: flush
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: fsync
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: getbyte
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: getc
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: gets
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: inspect
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: internal_encoding
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: ioctl
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: isatty
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: lineno
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: lineno=
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: lines
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: pid
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: pos
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: pos=
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: print
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: printf
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: putc
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: puts
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: read
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: read_nonblock
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: readbyte
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: readchar
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: readline
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: readlines
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: readpartial
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: ready?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: reopen
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: rewind
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: scanf
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: seek
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: set_encoding
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: soak_up_spaces
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: stat
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: sync
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: sync=
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: sysread
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: sysseek
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: syswrite
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: tell
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: to_i
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: to_io
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: tty?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: ungetbyte
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: ungetc
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: wait
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: write
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: write_nonblock
+name: IO
+superclass: Object

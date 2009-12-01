@@ -1,0 +1,18 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Base class for Task Libraries.
+constants: []
+
+full_name: Rake::TaskLib
+includes: 
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: Cloneable
+instance_methods: []
+
+name: TaskLib
+superclass: Object

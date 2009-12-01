@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Stores the indicated separators for later use.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: If auto-discovery was requested for <tt>@row_sep</tt>, this method will read ahead in the <tt>@io</tt> and try to find one. <tt>ARGF</tt>, <tt>STDIN</tt>, <tt>STDOUT</tt>, <tt>STDERR</tt> and any stream open for output only with a default <tt>@row_sep</tt> of <tt>$INPUT_RECORD_SEPARATOR</tt> (<tt>$/</tt>).
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: This method also establishes the quoting rules used for CSV output.
+full_name: CSV#init_separators
+is_singleton: false
+name: init_separators
+params: (options)
+visibility: private

@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns true if <tt>self</tt> is a prime number, false for a composite.
+full_name: Integer#prime?
+is_singleton: false
+name: prime?
+params: ()
+visibility: public

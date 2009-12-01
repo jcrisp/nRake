@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns Ruby object wrapping OLE variant. The first argument specifies Ruby object to convert OLE variant variable. The second argument specifies VARIANT type. In some situation, you need the WIN32OLE_VARIANT object to pass OLE method
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   shell = WIN32OLE.new(&quot;Shell.Application&quot;)\n   folder = shell.NameSpace(&quot;C:\\Windows&quot;)\n   item = folder.ParseName(&quot;tmp.txt&quot;)\n   # You can't use Ruby String object to call FolderItem.InvokeVerb.\n   # Instead, you have to use WIN32OLE_VARIANT object to call the method.\n   shortcut = WIN32OLE_VARIANT.new(&quot;Create Shortcut(\\&amp;S)&quot;)\n   item.invokeVerb(shortcut)\n"
+full_name: WIN32OLE_VARIANT::new
+is_singleton: true
+name: new
+params: |
+  WIN32OLE_VARIANT.new(val, vartype) #=> WIN32OLE_VARIANT object.
+
+visibility: public

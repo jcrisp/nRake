@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns an array for all elements of <em>enum</em> for which <em>block</em> is false (see also <tt>Enumerable#find_all</tt>).
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   (1..10).reject {|i|  i % 3 == 0 }   #=&gt; [1, 2, 4, 5, 7, 8, 10]\n"
+full_name: Enumerable#reject
+is_singleton: false
+name: reject
+params: |
+  enum.reject {| obj | block }  => array
+
+visibility: public

@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: RSS::Maker::RSS20::Items::Item::Categories#to_feed
+is_singleton: false
+name: to_feed
+params: (rss, item)
+visibility: public

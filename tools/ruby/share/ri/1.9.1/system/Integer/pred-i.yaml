@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the <tt>Integer</tt> equal to <em>int</em> - 1.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   1.pred      #=&gt; 0\n   (-1).pred   #=&gt; -2\n"
+full_name: Integer#pred
+is_singleton: false
+name: pred
+params: |
+  int.pred    => integer
+
+visibility: public

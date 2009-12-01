@@ -1,0 +1,19 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Publish an entire directory to an existing remote directory using SSH.
+constants: []
+
+full_name: Rake::SshDirPublisher
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: upload
+name: SshDirPublisher
+superclass: Object

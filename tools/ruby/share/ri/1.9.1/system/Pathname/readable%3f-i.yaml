@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: See <tt>FileTest.readable?</tt>.
+full_name: Pathname#readable?
+is_singleton: false
+name: readable?
+params: ()
+visibility: public

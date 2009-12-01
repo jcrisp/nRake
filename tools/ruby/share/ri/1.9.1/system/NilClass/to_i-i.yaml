@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Always returns zero.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   nil.to_i   #=&gt; 0\n"
+full_name: NilClass#to_i
+is_singleton: false
+name: to_i
+params: |
+  nil.to_i => 0
+
+visibility: public

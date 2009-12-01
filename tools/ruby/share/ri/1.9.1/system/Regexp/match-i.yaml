@@ -1,0 +1,27 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns a <tt>MatchData</tt> object describing the match, or <tt>nil</tt> if there was no match. This is equivalent to retrieving the value of the special variable <tt>$~</tt> following a normal match. If the second parameter is present, it specifies the position in the string to begin the search.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   /(.)(.)(.)/.match(&quot;abc&quot;)[2]   #=&gt; &quot;b&quot;\n   /(.)(.)/.match(&quot;abc&quot;, 1)[2]   #=&gt; &quot;c&quot;\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: If a block is given, invoke the block with MatchData if match succeed, so that you can write
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   pat.match(str) {|m| ...}\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: instead of
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   if m = pat.match(str)\n     ...\n   end\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The return value is a value from block execution in this case.
+full_name: Regexp#match
+is_singleton: false
+name: match
+params: |
+  rxp.match(str)       => matchdata or nil
+  rxp.match(str,pos)   => matchdata or nil
+
+visibility: public

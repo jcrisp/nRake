@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns whether <tt>self</tt>'s encoding is EUC-JP or not.
+full_name: String#iseuc
+is_singleton: false
+name: iseuc
+params: |
+  String#iseuc   => true or false
+
+visibility: public

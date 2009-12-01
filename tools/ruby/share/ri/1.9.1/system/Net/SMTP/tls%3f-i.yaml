@@ -1,0 +1,13 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: 
+- !ruby/object:RDoc::RI::AliasName 
+  name: ssl?
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: true if this object uses SMTP/TLS (SMTPS).
+full_name: Net::SMTP#tls?
+is_singleton: false
+name: tls?
+params: ()
+visibility: public

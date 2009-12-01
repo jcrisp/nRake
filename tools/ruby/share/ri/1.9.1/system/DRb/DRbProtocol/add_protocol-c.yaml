@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Add a new protocol to the DRbProtocol module.
+full_name: DRb::DRbProtocol::add_protocol
+is_singleton: true
+name: add_protocol
+params: (prot)
+visibility: public

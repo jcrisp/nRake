@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: Net::POP3::use_ssl?
+is_singleton: true
+name: use_ssl?
+params: ()
+visibility: public

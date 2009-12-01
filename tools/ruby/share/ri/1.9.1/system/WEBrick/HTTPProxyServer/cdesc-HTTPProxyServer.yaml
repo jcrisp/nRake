@@ -1,0 +1,56 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: Some header fields should not be transferred.
+  name: HopByHop
+  value: "%w( connection keep-alive proxy-authenticate upgrade                    proxy-authorization te trailers transfer-encoding )"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: ShouldNotTransfer
+  value: "%w( set-cookie proxy-connection )"
+full_name: WEBrick::HTTPProxyServer
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: choose_header
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: do_CONNECT
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: do_GET
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: do_HEAD
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: do_OPTIONS
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: do_POST
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: perform_proxy_request
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: proxy_auth
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: proxy_service
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: proxy_uri
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: service
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: set_cookie
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: set_via
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: setup_proxy_header
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: setup_upstream_proxy_authentication
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: split_field
+name: HTTPProxyServer
+superclass: WEBrick::HTTPServer

@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Alias for #-"
+full_name: Set#difference
+is_singleton: false
+name: difference
+params: (enum)
+visibility: public

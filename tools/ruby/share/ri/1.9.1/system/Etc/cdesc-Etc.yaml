@@ -1,0 +1,50 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: endgrent
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: endpwent
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: getgrent
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: getgrgid
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: getgrnam
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: getlogin
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: getpwent
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: getpwnam
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: getpwuid
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: group
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: passwd
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: setgrent
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: setpwent
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The etc module provides access to information from the /etc/passwd and /etc/group files on Linux and Unix systems.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Documented by mathew &lt;meta@pobox.com&gt;.
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: Passwd
+  value: sPasswd
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: Group
+  value: sGroup
+full_name: Etc
+includes: []
+
+instance_methods: []
+
+name: Etc

@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: RSS::Maker::ITunesBaseModel#def_class_accessor
+is_singleton: false
+name: def_class_accessor
+params: (klass, name, type, *args)
+visibility: public

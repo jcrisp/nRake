@@ -1,0 +1,21 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Evaluates the given block in the context of the class/module. The method defined in the block will belong to the receiver.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   class Thing\n   end\n   Thing.class_exec{\n     def hello() &quot;Hello there!&quot; end\n   }\n   puts Thing.new.hello()\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: <em>produces:</em>
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   Hello there!\n"
+full_name: Module#module_exec
+is_singleton: false
+name: module_exec
+params: |
+  mod.module_exec(arg...) {|var...| block }       => obj
+  mod.class_exec(arg...) {|var...| block }        => obj
+
+visibility: public

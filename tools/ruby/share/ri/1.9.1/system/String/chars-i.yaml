@@ -1,0 +1,17 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns an enumerator that gives each character in the string. If a block is given, it iterates over each character in the string.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   &quot;foo&quot;.chars.to_a   #=&gt; [&quot;f&quot;,&quot;o&quot;,&quot;o&quot;]\n"
+full_name: String#chars
+is_singleton: false
+name: chars
+params: |
+  str.chars                   => anEnumerator
+  str.chars {|substr| block } => str
+
+visibility: public

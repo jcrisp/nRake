@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: returns the next pseudo-prime number, and move the internal position forward.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: <tt>PseudoPrimeGenerator</tt>#succ raises <tt>NotImplementedError</tt>.
+full_name: Prime::PseudoPrimeGenerator#succ
+is_singleton: false
+name: succ
+params: ()
+visibility: public

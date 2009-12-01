@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: RDoc::Generator::HTML::KilmerFactory#get_BLANK
+is_singleton: false
+name: get_BLANK
+params: ()
+visibility: public

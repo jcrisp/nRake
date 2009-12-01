@@ -1,0 +1,11 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: 
+- !ruby/object:RDoc::RI::AliasName 
+  name: real_inspect
+block_params: 
+comment: 
+full_name: IRB::History#inspect
+is_singleton: false
+name: inspect
+params: ()
+visibility: public

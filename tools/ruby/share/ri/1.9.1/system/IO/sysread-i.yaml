@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Reads <em>integer</em> bytes from <em>ios</em> using a low-level read and returns them as a string. Do not mix with other methods that read from <em>ios</em> or you may get unpredictable results. If the optional <em>outbuf</em> argument is present, it must reference a String, which will receive the data. Raises <tt>SystemCallError</tt> on error and <tt>EOFError</tt> at end of file.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   f = File.new(&quot;testfile&quot;)\n   f.sysread(16)   #=&gt; &quot;This is line one&quot;\n"
+full_name: IO#sysread
+is_singleton: false
+name: sysread
+params: |
+  ios.sysread(integer[, outbuf])    => string
+
+visibility: public

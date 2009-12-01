@@ -1,0 +1,23 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Evaluates to <tt>true</tt> if whitespace is respected for this element. This is the case if:"
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "1."
+    :body: Neither :<tt>respect_whitespace</tt> nor :<tt>compress_whitespace</tt> has any value
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "2."
+    :body: The context has :<tt>respect_whitespace</tt> set to :<tt>all</tt> or an array containing the name of this element, and :<tt>compress_whitespace</tt> isn't set to :<tt>all</tt> or an array containing the name of this element.
+  type: :NUMBER
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The evaluation is tested against <tt>expanded_name</tt>, and so is namespace sensitive.
+full_name: REXML::Element#whitespace
+is_singleton: false
+name: whitespace
+params: ()
+visibility: public

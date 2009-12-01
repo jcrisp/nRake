@@ -1,0 +1,15 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+constants: []
+
+full_name: Resolv::DNS::Requester::TCP
+includes: []
+
+instance_methods: []
+
+name: TCP
+superclass: Resolv::DNS::Requester

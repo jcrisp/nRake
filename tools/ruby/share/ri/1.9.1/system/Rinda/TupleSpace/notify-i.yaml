@@ -1,0 +1,28 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Registers for notifications of <tt>event</tt>. Returns a NotifyTemplateEntry. See NotifyTemplateEntry for examples of how to listen for notifications.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "<tt>event</tt> can be:"
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "'write':"
+    :body: A tuple was added
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "'take':"
+    :body: A tuple was taken or moved
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "'delete':"
+    :body: A tuple was lost after being overwritten or expiring
+  type: :NOTE
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The TupleSpace will also notify you of the 'close' event when the NotifyTemplateEntry has expired.
+full_name: Rinda::TupleSpace#notify
+is_singleton: false
+name: notify
+params: (event, tuple, sec=nil)
+visibility: public

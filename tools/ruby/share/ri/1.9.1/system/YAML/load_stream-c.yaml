@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Loads all documents from the current <em>io</em> stream, returning a +YAML::Stream+ object containing all loaded documents.
+full_name: YAML::load_stream
+is_singleton: true
+name: load_stream
+params: ( io )
+visibility: public

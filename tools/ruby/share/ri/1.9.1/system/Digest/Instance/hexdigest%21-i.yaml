@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the resulting hash value and resets the digest to the initial state.
+full_name: Digest::Instance#hexdigest!
+is_singleton: false
+name: hexdigest!
+params: |
+  digest_obj.hexdigest! -> string
+
+visibility: public

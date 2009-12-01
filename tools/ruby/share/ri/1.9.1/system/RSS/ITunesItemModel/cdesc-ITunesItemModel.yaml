@@ -1,0 +1,19 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: append_features
+comment: 
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: ELEMENT_INFOS
+  value: ITunesBaseModel::ELEMENT_INFOS +       [["duration", :element, "content"]]
+full_name: RSS::ITunesItemModel
+includes: 
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: ITunesBaseModel
+instance_methods: []
+
+name: ITunesItemModel

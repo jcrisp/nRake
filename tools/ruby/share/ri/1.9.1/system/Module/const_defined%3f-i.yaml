@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns <tt>true</tt> if a constant with the given name is defined by <em>mod</em>, or its ancestors if <tt>inherit</tt> is not false.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   Math.const_defined? &quot;PI&quot;   #=&gt; true\n   IO.const_defined? &quot;SYNC&quot;   #=&gt; true\n   IO.const_defined? &quot;SYNC&quot;, false   #=&gt; false\n"
+full_name: Module#const_defined?
+is_singleton: false
+name: const_defined?
+params: |
+  mod.const_defined?(sym, inherit=true)   => true or false
+
+visibility: public

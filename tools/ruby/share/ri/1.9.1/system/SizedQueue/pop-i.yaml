@@ -1,0 +1,15 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: 
+- !ruby/object:RDoc::RI::AliasName 
+  name: shift
+- !ruby/object:RDoc::RI::AliasName 
+  name: deq
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Retrieves data from the queue and runs a waiting thread, if any.
+full_name: SizedQueue#pop
+is_singleton: false
+name: pop
+params: (*args)
+visibility: public

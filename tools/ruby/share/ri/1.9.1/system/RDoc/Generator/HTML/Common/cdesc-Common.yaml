@@ -1,0 +1,37 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The templates require further refactoring. In particular,
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: Some kind of HTML generation library should be used.
+  type: :BULLET
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Also, all of the templates require some TLC from a designer.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Right now, this file contains some constants that are used by all of the templates.
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: XHTML_STRICT_PREAMBLE
+  value: <<-EOF <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> EOF
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: XHTML_FRAME_PREAMBLE
+  value: <<-EOF <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd"> EOF
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: HTML_ELEMENT
+  value: <<-EOF <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> EOF
+full_name: RDoc::Generator::HTML::Common
+includes: []
+
+instance_methods: []
+
+name: Common

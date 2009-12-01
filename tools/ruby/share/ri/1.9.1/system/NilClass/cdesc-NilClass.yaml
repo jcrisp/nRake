@@ -1,0 +1,36 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The class of the singleton object <tt>nil</tt>.
+constants: []
+
+full_name: NilClass
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: "&"
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: ^
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: inspect
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: nil?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: to_a
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: to_f
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: to_i
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: to_s
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: to_yaml
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: "|"
+name: NilClass
+superclass: Object

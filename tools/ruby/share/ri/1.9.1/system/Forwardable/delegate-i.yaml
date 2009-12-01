@@ -1,0 +1,15 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Takes a hash as its argument. The key is a symbol or an array of symbols. These symbols correspond to method names. The value is the accessor to which the methods will be delegated.
+full_name: Forwardable#delegate
+is_singleton: false
+name: delegate
+params: |
+  delegate method => accessor
+  delegate [method, method, ...] => accessor
+
+visibility: public

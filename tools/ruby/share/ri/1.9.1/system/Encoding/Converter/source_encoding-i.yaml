@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the source encoding as an Encoding object.
+full_name: Encoding::Converter#source_encoding
+is_singleton: false
+name: source_encoding
+params: |
+  ec.source_encoding -> encoding
+
+visibility: public

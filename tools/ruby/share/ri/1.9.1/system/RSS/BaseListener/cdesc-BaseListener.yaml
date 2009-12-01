@@ -1,0 +1,36 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: available_tags
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: class_name
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: def_get_text_element
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: getter
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: install_accessor_base
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: install_class_name
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: install_get_text_element
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: raise_for_undefined_entity?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: register_uri
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: setter
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: uri_registered?
+comment: 
+constants: []
+
+full_name: RSS::BaseListener
+includes: []
+
+instance_methods: []
+
+name: BaseListener
+superclass: Object

@@ -1,0 +1,37 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: required_prefix
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: required_uri
+comment: 
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: AVAILABLE_SIZES
+  value: "%w(small medium large)"
+full_name: RSS::ImageFaviconModel::ImageFavicon
+includes: 
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: RSS10
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: DublinCoreModel
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: full_name
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: image_size=
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: maker_target
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: set_size
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: setup_maker_attributes
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: size=
+name: ImageFavicon
+superclass: RSS::Element

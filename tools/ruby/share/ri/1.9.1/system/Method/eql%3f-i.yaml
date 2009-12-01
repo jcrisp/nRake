@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Two method objects are equal if that are bound to the same object and contain the same body.
+full_name: Method#eql?
+is_singleton: false
+name: eql?
+params: |
+  meth == other_meth  => true or false
+
+visibility: public

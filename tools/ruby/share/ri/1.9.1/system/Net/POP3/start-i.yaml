@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: pop
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Starts a POP3 session.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: When called with block, gives a POP3 object to the block and closes the session after block call finishes.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: This method raises a POPAuthenticationError if authentication fails.
+full_name: Net::POP3#start
+is_singleton: false
+name: start
+params: (account, password) {|pop| ...}
+visibility: public

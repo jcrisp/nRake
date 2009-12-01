@@ -1,0 +1,35 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+constants: []
+
+full_name: RDoc::RI::Reader
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: all_names
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: find_class_by_name
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: find_classes_in
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: find_methods
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: find_names_in
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: full_class_names
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: get_class
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: get_method
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: lookup_namespace_in
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: top_level_namespace
+name: Reader
+superclass: Object

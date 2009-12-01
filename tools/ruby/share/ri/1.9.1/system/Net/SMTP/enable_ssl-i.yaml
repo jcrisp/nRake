@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Alias for #enable_tls"
+full_name: Net::SMTP#enable_ssl
+is_singleton: false
+name: enable_ssl
+params: (context = SMTP.default_ssl_context)
+visibility: public

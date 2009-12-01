@@ -1,0 +1,20 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Extensions to time to allow comparisons with an early time class.
+constants: []
+
+full_name: Time
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: <=>
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: rake_original_time_compare
+name: Time
+superclass: Object

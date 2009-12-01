@@ -1,0 +1,23 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: EarlyTime is a fake timestamp that occurs <em>before</em> any other time value.
+constants: []
+
+full_name: Rake::EarlyTime
+includes: 
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: Comparable
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: Singleton
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: <=>
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: to_s
+name: EarlyTime
+superclass: Object

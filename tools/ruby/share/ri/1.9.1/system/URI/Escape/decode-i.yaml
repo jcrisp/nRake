@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Alias for #unescape"
+full_name: URI::Escape#decode
+is_singleton: false
+name: decode
+params: (*arg)
+visibility: public

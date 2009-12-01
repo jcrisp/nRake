@@ -1,0 +1,13 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: 
+- !ruby/object:RDoc::RI::AliasName 
+  name: length
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the size of the temporary file. As a side effect, the IO buffer is flushed before determining the size.
+full_name: Tempfile#size
+is_singleton: false
+name: size
+params: ()
+visibility: public

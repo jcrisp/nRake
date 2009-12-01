@@ -1,0 +1,19 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: 
+- !ruby/object:RDoc::RI::AliasName 
+  name: rmtree
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Options: noop verbose secure"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Equivalent to
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  #rm_r(list, :force =&gt; true)\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "WARNING: This method causes local vulnerability. Read the documentation of #rm_r first."
+full_name: FileUtils#rm_rf
+is_singleton: false
+name: rm_rf
+params: (list, options = {})
+visibility: private

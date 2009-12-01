@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Include a file, indenting it correctly.
+full_name: RDoc::Markup::PreProcess#include_file
+is_singleton: false
+name: include_file
+params: (name, indent)
+visibility: private

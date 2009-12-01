@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: Date::valid_commercial?
+is_singleton: true
+name: valid_commercial?
+params: (y, w, d, sg=ITALY)
+visibility: public

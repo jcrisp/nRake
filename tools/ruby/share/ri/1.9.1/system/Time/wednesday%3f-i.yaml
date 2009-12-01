@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns <tt>true</tt> if <em>time</em> represents Wednesday.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   t = Time.local(1993, 2, 24)      #=&gt; 1993-02-24 00:00:00 -0600\n   p t.wednesday?                   #=&gt; true\n"
+full_name: Time#wednesday?
+is_singleton: false
+name: wednesday?
+params: |
+  time.wednesday? => true or false
+
+visibility: public

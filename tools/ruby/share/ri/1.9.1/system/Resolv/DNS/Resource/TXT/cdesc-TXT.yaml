@@ -1,0 +1,24 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: 
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: Returns an Array of Strings for this TXT record.
+  name: strings
+  rw: R
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Unstructured text resource.
+constants: []
+
+full_name: Resolv::DNS::Resource::TXT
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: data
+name: TXT
+superclass: Resolv::DNS::Resource

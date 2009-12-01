@@ -1,0 +1,101 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The <tt>Enumerable</tt> mixin provides collection classes with several traversal and searching methods, and with the ability to sort. The class must provide a method <tt>each</tt>, which yields successive members of the collection. If <tt>Enumerable#max</tt>, <tt>#min</tt>, or <tt>#sort</tt> is used, the objects in the collection must also implement a meaningful <tt>&lt;=&gt;</tt> operator, as these methods rely on an ordering between members of the collection.
+constants: []
+
+full_name: Enumerable
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: all?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: any?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: collect
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: count
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: cycle
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: detect
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: drop
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: drop_while
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: each_cons
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: each_slice
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: each_with_index
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: each_with_object
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: entries
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: find
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: find_all
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: find_index
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: first
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: grep
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: group_by
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: include?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: inject
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: map
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: max
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: max_by
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: member?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: min
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: min_by
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: minmax
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: minmax_by
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: none?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: one?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: partition
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: reduce
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: reject
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: reverse_each
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: select
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: sort
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: sort_by
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: take
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: take_while
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: to_a
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: to_set
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: zip
+name: Enumerable

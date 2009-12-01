@@ -1,0 +1,15 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+constants: []
+
+full_name: GetoptLong::NeedlessArgument
+includes: []
+
+instance_methods: []
+
+name: NeedlessArgument
+superclass: GetoptLong::Error

@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+constants: []
+
+full_name: RDoc::RI::Driver::NotFoundError
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: message
+name: NotFoundError
+superclass: RDoc::RI::Driver::Error

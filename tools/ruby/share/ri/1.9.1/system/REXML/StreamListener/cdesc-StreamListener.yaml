@@ -1,0 +1,43 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: A template for stream parser listeners. Note that the declarations (attlistdecl, elementdecl, etc) are trivially processed; REXML doesn't yet handle doctype entity declarations, so you have to parse them out yourself.
+constants: []
+
+full_name: REXML::StreamListener
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: attlistdecl
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: cdata
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: comment
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: doctype
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: doctype_end
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: elementdecl
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: entity
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: entitydecl
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: instruction
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: notationdecl
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: tag_end
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: tag_start
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: text
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: xmldecl
+name: StreamListener

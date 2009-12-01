@@ -1,0 +1,17 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns <tt>true</tt> if <em>obj</em> is an element of <em>rng</em>, <tt>false</tt> otherwise. If beg and end are numeric, comparison is done according magnitude of values.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   (&quot;a&quot;..&quot;z&quot;).include?(&quot;g&quot;)  # =&gt; true\n   (&quot;a&quot;..&quot;z&quot;).include?(&quot;A&quot;)  # =&gt; false\n"
+full_name: Range#include?
+is_singleton: false
+name: include?
+params: |
+  rng.member?(val)  =>  true or false
+  rng.include?(val) =>  true or false
+
+visibility: public

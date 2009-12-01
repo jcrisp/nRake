@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Ends the process of scanning through the /etc/passwd file begun with getpwent, and closes the file.
+full_name: Etc::endpwent
+is_singleton: true
+name: endpwent
+params: ()
+visibility: public

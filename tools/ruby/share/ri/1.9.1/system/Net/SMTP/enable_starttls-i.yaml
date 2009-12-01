@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Enables SMTP/TLS (STARTTLS) for this object. <tt>context</tt> is a OpenSSL::SSL::SSLContext object.
+full_name: Net::SMTP#enable_starttls
+is_singleton: false
+name: enable_starttls
+params: (context = SMTP.default_ssl_context)
+visibility: public

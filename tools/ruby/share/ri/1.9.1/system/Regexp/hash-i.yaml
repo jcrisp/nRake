@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Produce a hash based on the text and options of this regular expression.
+full_name: Regexp#hash
+is_singleton: false
+name: hash
+params: |
+  rxp.hash   => fixnum
+
+visibility: public

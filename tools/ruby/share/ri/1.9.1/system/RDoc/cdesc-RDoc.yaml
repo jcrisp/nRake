@@ -1,0 +1,329 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 1
+  :text: \RDoc - Ruby Documentation System
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: This package contains RDoc and RDoc::Markup. RDoc is an application that produces documentation for one or more Ruby source files. It works similarly to JavaDoc, parsing the source, and extracting the definition for classes, modules, and methods (along with includes and requires). It associates with these optional documentation contained in the immediately preceding comment block, and then renders the result using a pluggable output formatter. RDoc::Markup is a library that converts plain text into various output formats. The markup library is used to interpret the comment blocks that RDoc uses to document methods, classes, and so on.
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 2
+  :text: Roadmap
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: If you want to use RDoc to create documentation for your Ruby source files, read on.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: If you want to include extensions written in C, see RDoc::Parser::C
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: If you want to drive RDoc programmatically, see RDoc::RDoc.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: If you want to use the library to format text blocks into HTML, have a look at RDoc::Markup.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: If you want to try writing your own HTML output template, see RDoc::Generator::HTML
+  type: :BULLET
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 2
+  :text: Summary
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Once installed, you can create documentation using the <tt>rdoc</tt> command
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  % rdoc [options] [names...]\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: For an up-to-date option summary, type
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  % rdoc --help\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: A typical use might be to generate documentation for a package of Ruby source (such as RDoc itself).
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  % rdoc\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: This command generates documentation for all the Ruby and C source files in and below the current directory. These will be stored in a documentation tree starting in the subdirectory <tt>doc</tt>.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: You can make this slightly more useful for your readers by having the index page contain the documentation for the primary file. In our case, we could type
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  % rdoc --main rdoc.rb\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: You'll find information on the various formatting tricks you can use in comment blocks in the documentation this generates.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: RDoc uses file extensions to determine how to process each file. File names ending <tt>.rb</tt> and <tt>.rbw</tt> are assumed to be Ruby source. Files ending <tt>.c</tt> are parsed as C files. All other files are assumed to contain just Markup-style markup (with or without leading '#' comment markers). If directory names are passed to RDoc, they are scanned recursively for C and Ruby source files only.
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 2
+  :text: \Options
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: rdoc can be passed a variety of command-line options. In addition, options can be specified via the <tt>RDOCOPT</tt> environment variable, which functions similarly to the <tt>RUBYOPT</tt> environment variable.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  % export RDOCOPT=&quot;-S&quot;\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: will make rdoc default to inline method source code. Command-line options always will override those in <tt>RDOCOPT</tt>.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Run
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  % rdoc --help\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: for full details on rdoc's options.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Here are some of the most commonly used options.
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: -d, --diagram
+    :body: Generate diagrams showing modules and classes. You need dot V1.8.6 or later to use the --diagram option correctly. Dot is available from http://graphviz.org
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: -S, --inline-source
+    :body: Show method source code inline, rather than via a popup link.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: -T, --template=NAME
+    :body: Set the template used when generating output.
+  type: :LABELED
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 2
+  :text: Documenting Source Code
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Comment blocks can be written fairly naturally, either using +#+ on successive lines of the comment, or by including the comment in a =begin/=end block. If you use the latter form, the =begin line must be flagged with an RDoc tag:"
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  =begin rdoc\n  Documentation to be processed by RDoc.\n\n  ...\n  =end\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: RDoc stops processing comments if it finds a comment line containing a <tt>--</tt>. This can be used to separate external from internal comments, or to stop a comment being associated with a method, class, or module. Commenting can be turned back on with a line that starts with a <tt>++</tt>.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  ##\n  # Extract the age and calculate the date-of-birth.\n  #--\n  # FIXME: fails if the birthday falls on February 29th\n  #++\n  # The DOB is returned as a Time object.\n\n  def get_dob(person)\n    # ...\n  end\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Names of classes, files, and any method names containing an underscore or preceded by a hash character are automatically hyperlinked from comment text to their description.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Method parameter lists are extracted and displayed with the method description. If a method calls <tt>yield</tt>, then the parameters passed to yield will also be displayed:"
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  def fred\n    ...\n    yield line, address\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "This will get documented as:"
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  fred() { |line, address| ... }\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "You can override this using a comment containing ':yields: ...' immediately after the method definition"
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  def fred # :yields: index, position\n    # ...\n\n    yield line, address\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: which will get documented as
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   fred() { |index, position| ... }\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: <tt>:yields:</tt> is an example of a documentation directive. These appear immediately after the start of the document element they are modifying.
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 2
+  :text: \Markup
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: The markup engine looks for a document's natural left margin. This is used as the initial margin for the document.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: Consecutive lines starting at this margin are considered to be a paragraph.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: "If a paragraph starts with a &quot;*&quot;, &quot;-&quot;, or with &quot;&lt;digit&gt;.&quot;, then it is taken to be the start of a list. The margin in increased to be the first non-space following the list start flag. Subsequent lines should be indented to this new margin until the list ends. For example:"
+  - !ruby/struct:RDoc::Markup::Flow::VERB 
+    :body: "   * this is a list with three paragraphs in\n     the first item.  This is the first paragraph.\n\n     And this is the second paragraph.\n\n     1. This is an indented, numbered list.\n     2. This is the second item in that list\n\n     This is the third conventional paragraph in the\n     first list item.\n\n   * This is the second item in the original list\n"
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: "You can also construct labeled lists, sometimes called description or definition lists. Do this by putting the label in square brackets and indenting the list body:"
+  - !ruby/struct:RDoc::Markup::Flow::VERB 
+    :body: "    [cat]  a small furry mammal\n           that seems to sleep a lot\n\n    [ant]  a little insect that is known\n           to enjoy picnics\n"
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: "A minor variation on labeled lists uses two colons to separate the label from the list body:"
+  - !ruby/struct:RDoc::Markup::Flow::VERB 
+    :body: "    cat::  a small furry mammal\n           that seems to sleep a lot\n\n    ant::  a little insect that is known\n           to enjoy picnics\n"
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: "This latter style guarantees that the list bodies' left margins are aligned: think of them as a two column table."
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: Any line that starts to the right of the current margin is treated as verbatim text. This is useful for code listings. The example of a list above is also verbatim text.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: A line starting with an equals sign (=) is treated as a heading. Level one headings have one equals sign, level two headings have two,and so on.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: A line starting with three or more hyphens (at the current indent) generates a horizontal rule. The more hyphens, the thicker the rule (within reason, and if supported by the output device)
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: You can use markup within text (except verbatim) to change the appearance of parts of that text. Out of the box, RDoc::Markup supports word-based and general markup.
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: "Word-based markup uses flag characters around individual words:"
+  - !ruby/object:RDoc::Markup::Flow::LIST 
+    contents: 
+    - !ruby/struct:RDoc::Markup::Flow::LI 
+      :label: \*word*
+      :body: displays word in a <b>bold</b> font
+    - !ruby/struct:RDoc::Markup::Flow::LI 
+      :label: \_word_
+      :body: displays word in an <em>emphasized</em> font
+    - !ruby/struct:RDoc::Markup::Flow::LI 
+      :label: \+word+
+      :body: displays word in a <tt>code</tt> font
+    type: :LABELED
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: General markup affects text between a start delimiter and and end delimiter. Not surprisingly, these delimiters look like HTML markup.
+  - !ruby/object:RDoc::Markup::Flow::LIST 
+    contents: 
+    - !ruby/struct:RDoc::Markup::Flow::LI 
+      :label: \<b>text...</b>
+      :body: displays word in a <b>bold</b> font
+    - !ruby/struct:RDoc::Markup::Flow::LI 
+      :label: \<em>text...</em>
+      :body: displays word in an <em>emphasized</em> font
+    - !ruby/struct:RDoc::Markup::Flow::LI 
+      :label: \\<i>text...</i>
+      :body: displays word in an <em>italicized</em> font
+    - !ruby/struct:RDoc::Markup::Flow::LI 
+      :label: \<tt>text...</tt>
+      :body: displays word in a <tt>code</tt> font
+    type: :LABELED
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: Unlike conventional Wiki markup, general markup can cross line boundaries. You can turn off the interpretation of markup by preceding the first character with a backslash. This only works for simple markup, not HTML-style markup.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: Hyperlinks to the web starting http:, mailto:, ftp:, or www. are recognized. An HTTP url that references an external image file is converted into an inline &lt;IMG..&gt;. Hyperlinks starting 'link:' are assumed to refer to local files whose path is relative to the --op directory.
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: "Hyperlinks can also be of the form <tt>label</tt>[url], in which case the label is used in the displayed text, and <tt>url</tt> is used as the target. If <tt>label</tt> contains multiple words, put it in braces: <em>{multi word label}[</em>url<em>]</em>."
+  type: :BULLET
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 2
+  :text: Directives
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: +:nodoc:+ / +:nodoc:+ all
+    :body: This directive prevents documentation for the element from being generated. For classes and modules, the methods, aliases, constants, and attributes directly within the affected class or module also will be omitted. By default, though, modules and classes within that class of module <em>will</em> be documented. This is turned off by adding the <tt>all</tt> modifier.
+  - !ruby/struct:RDoc::Markup::Flow::VERB 
+    :body: "  module MyModule # :nodoc:\n    class Input\n    end\n  end\n\n  module OtherModule # :nodoc: all\n    class Output\n    end\n  end\n"
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: In the above code, only class <tt>MyModule::Input</tt> will be documented. The <tt>:nodoc:</tt> directive is global across all files for the class or module to which it applies, so use <tt>:stopdoc:</tt>/<tt>:startdoc:</tt> to suppress documentation only for a particular set of methods, etc.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: +:doc:+
+    :body: Forces a method or attribute to be documented even if it wouldn't be otherwise. Useful if, for example, you want to include documentation of a particular private method.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: +:notnew:+
+    :body: Only applicable to the <tt>initialize</tt> instance method. Normally RDoc assumes that the documentation and parameters for <tt>initialize</tt> are actually for the <tt>new</tt> method, and so fakes out a <tt>new</tt> for the class. The <tt>:notnew:</tt> modifier stops this. Remember that <tt>initialize</tt> is private, so you won't see the documentation unless you use the <tt>-a</tt> command line option.
+  type: :LABELED
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Comment blocks can contain other directives:"
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "<tt>:section: title</tt>"
+    :body: "Starts a new section in the output. The title following <tt>:section:</tt> is used as the section heading, and the remainder of the comment containing the section is used as introductory text. Subsequent methods, aliases, attributes, and classes will be documented in this section. A :section: comment block may have one or more lines before the :section: directive. These will be removed, and any identical lines at the end of the block are also removed. This allows you to add visual cues such as:"
+  - !ruby/struct:RDoc::Markup::Flow::VERB 
+    :body: "  # ----------------------------------------\n  # :section: My Section\n  # This is the section that I wrote.\n  # See it glisten in the noon-day sun.\n  # ----------------------------------------\n"
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: +:call-seq:+
+    :body: Lines up to the next blank line in the comment are treated as the method's calling sequence, overriding the default parsing of method parameters and yield arguments.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: +:include:+ _filename_
+    :body: "\\Include the contents of the named file at this point. The file will be searched for in the directories listed by the <tt>--include</tt> option, or in the current directory by default. The contents of the file will be shifted to have the same indentation as the ':' at the start of the :include: directive."
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: +:title:+ _text_
+    :body: "Sets the title for the document. Equivalent to the <tt>--title</tt> command line parameter. (The command line parameter overrides any :title: directive in the source)."
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: +:enddoc:+
+    :body: Document nothing further at the current level.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: +:main:+ _name_
+    :body: Equivalent to the <tt>--main</tt> command line parameter.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: +:stopdoc:+ / +:startdoc:+
+    :body: Stop and start adding new documentation elements to the current container. For example, if a class has a number of constants that you don't want to document, put a <tt>:stopdoc:</tt> before the first, and a <tt>:startdoc:</tt> after the last. If you don't specify a <tt>:startdoc:</tt> by the end of the container, disables documentation for the entire class or module.
+  type: :LABELED
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 2
+  :text: Other stuff
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: RDoc is currently being maintained by Eric Hodel &lt;drbrain@segment7.net&gt;
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Dave Thomas &lt;dave@pragmaticprogrammer.com&gt; is the original author of RDoc.
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 2
+  :text: Credits
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: The Ruby parser in rdoc/parse.rb is based heavily on the outstanding work of Keiju ISHITSUKA of Nippon Rational Inc, who produced the Ruby parser for irb and the rtags package.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: Code to diagram classes and modules was written by Sergey A Yanovitsky (Jah) of Enticla.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: Charset patch from MoonWolf.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: Rich Kilmer wrote the kilmer.rb output template.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: Dan Brickley led the design of the RDF format.
+  type: :BULLET
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 2
+  :text: License
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: RDoc is Copyright (c) 2001-2003 Dave Thomas, The Pragmatic Programmers. It is free software, and may be redistributed under the terms specified in the README file of the Ruby distribution.
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 2
+  :text: Warranty
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: This software is provided &quot;as is&quot; and without any express or implied warranties, including, without limitation, the implied warranties of merchantibility and fitness for a particular purpose.
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: RDocError
+  value: "Error # :nodoc:"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: RDoc version you are using
+  name: VERSION
+  value: "\"2.2.2\""
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: Name of the dotfile that contains the description of files to be processed in the current directory
+  name: DOT_DOC_FILENAME
+  value: "\".document\""
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: GENERAL_MODIFIERS
+  value: "%w[nodoc].freeze"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: CLASS_MODIFIERS
+  value: GENERAL_MODIFIERS
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: ATTR_MODIFIERS
+  value: GENERAL_MODIFIERS
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: CONSTANT_MODIFIERS
+  value: GENERAL_MODIFIERS
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: METHOD_MODIFIERS
+  value: GENERAL_MODIFIERS +     %w[arg args yield yields notnew not-new not_new doc]
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: Ruby's built-in classes, modules and exceptions
+  name: KNOWN_CLASSES
+  value: "{     \"rb_cArray\"            => \"Array\",     \"rb_cBignum\"           => \"Bignum\",     \"rb_cClass\"            => \"Class\",     \"rb_cData\"             => \"Data\",     \"rb_cDir\"              => \"Dir\",     \"rb_cFalseClass\"       => \"FalseClass\",     \"rb_cFile\"             => \"File\",     \"rb_cFixnum\"           => \"Fixnum\",     \"rb_cFloat\"            => \"Float\",     \"rb_cHash\"             => \"Hash\",     \"rb_cIO\"               => \"IO\",     \"rb_cInteger\"          => \"Integer\",     \"rb_cModule\"           => \"Module\",     \"rb_cNilClass\"         => \"NilClass\",     \"rb_cNumeric\"          => \"Numeric\",     \"rb_cObject\"           => \"Object\",     \"rb_cProc\"             => \"Proc\",     \"rb_cRange\"            => \"Range\",     \"rb_cRegexp\"           => \"Regexp\",     \"rb_cRubyVM\"           => \"RubyVM\",     \"rb_cString\"           => \"String\",     \"rb_cStruct\"           => \"Struct\",     \"rb_cSymbol\"           => \"Symbol\",     \"rb_cThread\"           => \"Thread\",     \"rb_cTime\"             => \"Time\",     \"rb_cTrueClass\"        => \"TrueClass\",      \"rb_eArgError\"         => \"ArgError\",     \"rb_eEOFError\"         => \"EOFError\",     \"rb_eException\"        => \"Exception\",     \"rb_eFatal\"            => \"Fatal\",     \"rb_eFloatDomainError\" => \"FloatDomainError\",     \"rb_eIOError\"          => \"IOError\",     \"rb_eIndexError\"       => \"IndexError\",     \"rb_eInterrupt\"        => \"Interrupt\",     \"rb_eLoadError\"        => \"LoadError\",     \"rb_eNameError\"        => \"NameError\",     \"rb_eNoMemError\"       => \"NoMemError\",     \"rb_eNotImpError\"      => \"NotImpError\",     \"rb_eRangeError\"       => \"RangeError\",     \"rb_eRuntimeError\"     => \"RuntimeError\",     \"rb_eScriptError\"      => \"ScriptError\",     \"rb_eSecurityError\"    => \"SecurityError\",     \"rb_eSignal\"           => \"Signal\",     \"rb_eStandardError\"    => \"StandardError\",     \"rb_eSyntaxError\"      => \"SyntaxError\",     \"rb_eSystemCallError\"  => \"SystemCallError\",     \"rb_eSystemExit\"       => \"SystemExit\",     \"rb_eTypeError\"        => \"TypeError\",     \"rb_eZeroDivError\"     => \"ZeroDivError\",      \"rb_mComparable\"       => \"Comparable\",     \"rb_mEnumerable\"       => \"Enumerable\",     \"rb_mErrno\"            => \"Errno\",     \"rb_mFileTest\"         => \"FileTest\",     \"rb_mGC\"               => \"GC\",     \"rb_mKernel\"           => \"Kernel\",     \"rb_mMath\"             => \"Math\",     \"rb_mProcess\"          => \"Process\"   }"
+full_name: RDoc
+includes: []
+
+instance_methods: []
+
+name: RDoc

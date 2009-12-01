@@ -1,0 +1,18 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Sets a list of characters that cause a filename to be quoted by the completer when they appear in a completed filename. The default is nil.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Raises NotImplementedError if the using readline library does not support.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Raises SecurityError exception if $SAFE is 4.
+full_name: Readline::filename_quote_characters=
+is_singleton: true
+name: filename_quote_characters=
+params: |
+  Readline.filename_quote_characters = string
+
+visibility: public

@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Copies stream <tt>src</tt> to <tt>dest</tt>. <tt>src</tt> must respond to #read(n) and <tt>dest</tt> must respond to #write(str)."
+full_name: FileUtils::copy_stream
+is_singleton: true
+name: copy_stream
+params: (src, dest)
+visibility: public

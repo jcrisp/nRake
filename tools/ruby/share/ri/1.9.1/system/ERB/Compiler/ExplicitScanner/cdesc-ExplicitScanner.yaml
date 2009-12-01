@@ -1,0 +1,15 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+constants: []
+
+full_name: ERB::Compiler::ExplicitScanner
+includes: []
+
+instance_methods: []
+
+name: ExplicitScanner
+superclass: ERB::Compiler::Scanner

@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Get the URI of the remote object.
+full_name: DRb::DRbObject#__drburi
+is_singleton: false
+name: __drburi
+params: ()
+visibility: public

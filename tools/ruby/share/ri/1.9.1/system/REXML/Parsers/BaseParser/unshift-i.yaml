@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Push an event back on the head of the stream. This method has (theoretically) infinite depth.
+full_name: REXML::Parsers::BaseParser#unshift
+is_singleton: false
+name: unshift
+params: (token)
+visibility: public

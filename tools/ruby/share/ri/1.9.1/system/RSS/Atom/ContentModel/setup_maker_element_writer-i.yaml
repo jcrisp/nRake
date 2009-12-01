@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: RSS::Atom::ContentModel#setup_maker_element_writer
+is_singleton: false
+name: setup_maker_element_writer
+params: ()
+visibility: private

@@ -1,0 +1,18 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Set the element of WIN32OLE_VARIANT object(OLE array) to val. This method is available only when the variant type of WIN32OLE_VARIANT object is VT_ARRAY.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "REMARK:"
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   The all indicies should be 0 or natural number and\n   lower than or equal to max indicies.\n   (This point is different with Ruby Array indicies.)\n\n   obj = WIN32OLE_VARIANT.new([[1,2,3],[4,5,6]])\n   obj[0,0] = 7\n   obj[1,0] = 8\n   p obj.value # =&gt; [[7,2,3], [8,5,6]]\n   obj[2,0] = 9 # =&gt; WIN32OLERuntimeError\n   obj[0, -1] = 9 # =&gt; WIN32OLERuntimeError\n"
+full_name: WIN32OLE_VARIANT#[]=
+is_singleton: false
+name: "[]="
+params: |
+  WIN32OLE_VARIANT[i,j,...] = val #=> set the element of OLE array
+
+visibility: public

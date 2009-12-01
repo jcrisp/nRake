@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Tagged with the encoding specified.
+full_name: StringIO#set_encoding
+is_singleton: false
+name: set_encoding
+params: |
+  strio.set_encoding(ext_enc)                => strio
+
+visibility: public

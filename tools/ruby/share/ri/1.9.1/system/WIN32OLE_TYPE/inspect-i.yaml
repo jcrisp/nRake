@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the type name with class name.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   ie = WIN32OLE.new('InternetExplorer.Application')\n   ie.ole_type.inspect =&gt; #&lt;WIN32OLE_TYPE:IWebBrowser2&gt;\n"
+full_name: WIN32OLE_TYPE#inspect
+is_singleton: false
+name: inspect
+params: |
+  WIN32OLE_TYPE#inspect -> String
+
+visibility: public

@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Remove &quot;Alias for&quot; in end of comments
+full_name: RDoc::Parser::F95#remove_trailing_alias
+is_singleton: false
+name: remove_trailing_alias
+params: (text)
+visibility: private

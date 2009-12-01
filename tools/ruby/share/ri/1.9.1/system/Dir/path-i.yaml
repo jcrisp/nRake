@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the path parameter passed to <em>dir</em>'s constructor.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   d = Dir.new(&quot;..&quot;)\n   d.path   #=&gt; &quot;..&quot;\n"
+full_name: Dir#path
+is_singleton: false
+name: path
+params: |
+  dir.path => string or nil
+
+visibility: public

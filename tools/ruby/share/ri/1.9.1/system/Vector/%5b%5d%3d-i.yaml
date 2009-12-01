@@ -1,0 +1,13 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: 
+- !ruby/object:RDoc::RI::AliasName 
+  name: set_element
+- !ruby/object:RDoc::RI::AliasName 
+  name: set_component
+block_params: 
+comment: 
+full_name: Vector#[]=
+is_singleton: false
+name: "[]="
+params: (i, v)
+visibility: public

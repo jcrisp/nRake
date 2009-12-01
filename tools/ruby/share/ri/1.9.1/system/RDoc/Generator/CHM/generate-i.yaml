@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Generate the html as normal, then wrap it in a help project
+full_name: RDoc::Generator::CHM#generate
+is_singleton: false
+name: generate
+params: (info)
+visibility: public

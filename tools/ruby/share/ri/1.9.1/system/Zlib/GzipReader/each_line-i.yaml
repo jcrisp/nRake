@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: See Zlib::GzipReader documentation for a description.
+full_name: Zlib::GzipReader#each_line
+is_singleton: false
+name: each_line
+params: (...)
+visibility: public

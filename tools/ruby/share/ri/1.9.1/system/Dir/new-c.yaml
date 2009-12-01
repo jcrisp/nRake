@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns a new directory object for the named directory.
+full_name: Dir::new
+is_singleton: true
+name: new
+params: |
+  Dir.new( string ) -> aDir
+
+visibility: public

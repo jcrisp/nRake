@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the +index+th prime number.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: <tt>index</tt> is a 0-based index.
+full_name: Prime::TrialDivision#[]
+is_singleton: false
+name: "[]"
+params: (index)
+visibility: public

@@ -1,0 +1,23 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: create
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: A representation of a DNS name.
+constants: []
+
+full_name: Resolv::DNS::Name
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: absolute?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: subdomain_of?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: to_s
+name: Name
+superclass: Object

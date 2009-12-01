@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: RSS::Maker::Base::def_classed_element_without_accessor
+is_singleton: true
+name: def_classed_element_without_accessor
+params: (name, class_name=nil)
+visibility: public

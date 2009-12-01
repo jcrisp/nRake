@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: This method must be overridden by subclasses and change the object delegate to <em>obj</em>.
+full_name: Delegator#__setobj__
+is_singleton: false
+name: __setobj__
+params: (obj)
+visibility: public

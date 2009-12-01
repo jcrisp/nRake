@@ -1,0 +1,68 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: 
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The element to which this attribute belongs
+  name: element
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The normalized value of this attribute. That is, the attribute with entities intact.
+  name: normalized
+  rw: W
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Defines an Element Attribute; IE, a attribute=value pair, as in: &lt;element attribute=&quot;value&quot;/&gt;. Attributes can be in their own namespaces. General users of REXML will not interact with the Attribute class much."
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: PATTERN
+  value: /\s*(#{NAME_STR})\s*=\s*(["'])(.*?)\2/um
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: NEEDS_A_SECOND_CHECK
+  value: /(<|&((#{Entity::NAME});|(#0*((?:\d+)|(?:x[a-fA-F0-9]+)));)?)/um
+full_name: REXML::Attribute
+includes: 
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: Node
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: Namespace
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: ==
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: clone
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: doctype
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: element=
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: hash
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: inspect
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: namespace
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: node_type
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: prefix
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: remove
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: to_s
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: to_string
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: value
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: write
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: xpath
+name: Attribute
+superclass: Object

@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Gets the next 8-bit byte (0..255) from <em>ios</em>. Returns <tt>nil</tt> if called at end of file.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   f = File.new(&quot;testfile&quot;)\n   f.getbyte   #=&gt; 84\n   f.getbyte   #=&gt; 104\n"
+full_name: IO#getbyte
+is_singleton: false
+name: getbyte
+params: |
+  ios.getbyte   => fixnum or nil
+
+visibility: public

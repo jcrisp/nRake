@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Sets default external encoding.
+full_name: Encoding::default_external=
+is_singleton: true
+name: default_external=
+params: |
+  Encoding.default_external = enc
+
+visibility: public

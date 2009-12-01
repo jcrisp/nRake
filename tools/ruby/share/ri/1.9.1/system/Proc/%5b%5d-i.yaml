@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Invokes the block, with <em>obj</em> as the block's parameter. It is to allow a proc object to be a target of when clause in the case statement.
+full_name: Proc#[]
+is_singleton: false
+name: "[]"
+params: |
+  prc === obj   => obj
+
+visibility: public

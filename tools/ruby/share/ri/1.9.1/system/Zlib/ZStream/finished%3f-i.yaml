@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns true if the stream is finished.
+full_name: Zlib::ZStream#finished?
+is_singleton: false
+name: finished?
+params: ()
+visibility: public

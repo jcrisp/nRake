@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Get the entity expansion limit. By default the limit is set to 10000.
+full_name: REXML::Document::entity_expansion_limit
+is_singleton: true
+name: entity_expansion_limit
+params: ()
+visibility: public

@@ -1,0 +1,18 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Provides a convenient Ruby iterator which executes a block for each entry in the /etc/passwd file.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The code block is passed an Struct::Passwd struct; see getpwent above for details.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Example:"
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "    require 'etc'\n\n    Etc.passwd {|u|\n      puts u.name + &quot; = &quot; + u.gecos\n    }\n"
+full_name: Etc::passwd
+is_singleton: true
+name: passwd
+params: ()
+visibility: public

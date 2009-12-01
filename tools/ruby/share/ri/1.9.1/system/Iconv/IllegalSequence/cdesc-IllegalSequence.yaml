@@ -1,0 +1,18 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Input conversion stopped due to an input byte that does not belong to the input codeset, or the output codeset does not contain the character.
+constants: []
+
+full_name: Iconv::IllegalSequence
+includes: 
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: Iconv::Failure
+instance_methods: []
+
+name: IllegalSequence
+superclass: ArgError

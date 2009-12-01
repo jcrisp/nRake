@@ -1,0 +1,65 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: instance
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The set of all prime numbers.
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 2
+  :text: Example
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: " Prime.each(100) do |prime|\n   p prime  #=&gt; 2, 3, 5, 7, 11, ...., 97\n end\n"
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 2
+  :text: Retrieving the instance
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: <tt>Prime</tt>.new is obsolete. Now <tt>Prime</tt> has the default instance and you can access it as <tt>Prime</tt>.instance.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: For convenience, each instance method of <tt>Prime</tt>.instance can be accessed as a class method of <tt>Prime</tt>.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: e.g.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: " Prime.instance.prime?(2)  #=&gt; true\n Prime.prime?(2)           #=&gt; true\n"
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 2
+  :text: Generators
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: A &quot;generator&quot; provides an implementation of enumerating pseudo-prime numbers and it remembers the position of enumeration and upper bound. Futhermore, it is a external iterator of prime enumeration which is compatible to an Enumerator.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: <tt>Prime</tt>::<tt>PseudoPrimeGenerator</tt> is the base class for generators. There are few implementations of generator.
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: +Prime+::+EratosthenesGenerator+
+    :body: Uses eratosthenes's sieve.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: +Prime+::+TrialDivisionGenerator+
+    :body: Uses the trial division method.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: +Prime+::+Generator23+
+    :body: Generates all positive integers which is not divided by 2 nor 3. This sequence is very bad as a pseudo-prime sequence. But this is faster and uses much less memory than other generators. So, it is suitable for factorizing an integer which is not large but has many prime factors. e.g. for Prime#prime? .
+  type: :LABELED
+constants: []
+
+full_name: Prime
+includes: 
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: Enumerable
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: Enumerable
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: each
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: int_from_prime_division
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: prime?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: prime_division
+name: Prime
+superclass: Object

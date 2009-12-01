@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Synonym for <tt>Time.new</tt>. Returns a <tt>Time</tt> object initialized to the current system time.
+full_name: Time::now
+is_singleton: true
+name: now
+params: (...)
+visibility: public

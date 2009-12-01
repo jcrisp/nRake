@@ -1,0 +1,17 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: A Query type requesting any RR.
+constants: []
+
+full_name: Resolv::DNS::Resource::ANY
+includes: []
+
+instance_methods: []
+
+name: ANY
+superclass: Resolv::DNS::Query

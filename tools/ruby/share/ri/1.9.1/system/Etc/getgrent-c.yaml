@@ -1,0 +1,31 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns an entry from the /etc/group file. The first time it is called it opens the file and returns the first entry; each successive call returns the next entry, or nil if the end of the file has been reached.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: To close the file when processing is complete, call endgrent.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Each entry is returned as a Struct::Group:"
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "-"
+    :body: Group#name contains the name of the group as a String.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "-"
+    :body: Group#passwd contains the encrypted password as a String. An 'x' is returned if password access to the group is not available; an empty string is returned if no password is needed to obtain membership of the group.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "-"
+    :body: Group#gid contains the group's numeric ID as an integer.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "-"
+    :body: Group#mem is an Array of Strings containing the short login names of the members of the group.
+  type: :BULLET
+full_name: Etc::getgrent
+is_singleton: true
+name: getgrent
+params: ()
+visibility: public

@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Options: mode noop verbose"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Creates one or more directories.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  FileUtils.mkdir 'test'\n  FileUtils.mkdir %w( tmp data )\n  FileUtils.mkdir 'notexist', :noop =&gt; true  # Does not really create.\n  FileUtils.mkdir 'tmp', :mode =&gt; 0700\n"
+full_name: FileUtils#mkdir
+is_singleton: false
+name: mkdir
+params: (list, options = {})
+visibility: private

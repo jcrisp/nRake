@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Set options. Takes the same argument as GetoptLong.new.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Raises a RuntimeError if option processing has already started.
+full_name: GetoptLong#set_options
+is_singleton: false
+name: set_options
+params: (*arguments)
+visibility: public

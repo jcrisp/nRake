@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: date
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Step forward one day at a time until we reach <tt>max</tt> (inclusive), yielding each date as we go.
+full_name: Date#upto
+is_singleton: false
+name: upto
+params: (max) {|date| ...}
+visibility: public

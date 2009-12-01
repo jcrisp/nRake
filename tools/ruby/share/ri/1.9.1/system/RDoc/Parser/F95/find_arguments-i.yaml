@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Return comments of definitions of arguments
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: If &quot;all&quot; argument is true, information of all arguments are returned.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: If &quot;modified_params&quot; is true, list of arguments are decorated, for example, optional arguments are parenthetic as &quot;[arg]&quot;.
+full_name: RDoc::Parser::F95#find_arguments
+is_singleton: false
+name: find_arguments
+params: (args, text, all=nil, indent=nil, modified_params=nil)
+visibility: private

@@ -1,0 +1,50 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: 
+- !ruby/object:RDoc::RI::AliasName 
+  name: send_mail
+- !ruby/object:RDoc::RI::AliasName 
+  name: sendmail
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Sends <tt>msgstr</tt> as a message. Single CR (&quot;\r&quot;) and LF (&quot;\n&quot;) found in the <tt>msgstr</tt>, are converted into the CR LF pair. You cannot send a binary message with this method. <tt>msgstr</tt> should include both the message headers and body.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: <tt>from_addr</tt> is a String representing the source mail address.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: <tt>to_addr</tt> is a String or Strings or Array of Strings, representing the destination mail address or addresses.
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 3
+  :text: Example
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "    Net::SMTP.start('smtp.example.com') do |smtp|\n      smtp.send_message msgstr,\n                        'from@example.com',\n                        ['dest@example.com', 'dest2@example.com']\n    end\n"
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 3
+  :text: Errors
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "This method may raise:"
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: Net::SMTPServerBusy
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: Net::SMTPSyntaxError
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: Net::SMTPFatalError
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: Net::SMTPUnknownError
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: IOError
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: TimeoutError
+  type: :BULLET
+full_name: Net::SMTP#send_message
+is_singleton: false
+name: send_message
+params: (msgstr, from_addr, *to_addrs)
+visibility: public

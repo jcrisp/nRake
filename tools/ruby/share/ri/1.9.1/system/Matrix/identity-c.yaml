@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Creates an <tt>n</tt> by <tt>n</tt> identity matrix.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  Matrix.identity(2)\n    =&gt; 1 0\n       0 1\n"
+full_name: Matrix::identity
+is_singleton: true
+name: identity
+params: (n)
+visibility: public

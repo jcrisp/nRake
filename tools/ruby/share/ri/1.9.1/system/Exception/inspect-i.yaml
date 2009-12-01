@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Return this exception's class name an message
+full_name: Exception#inspect
+is_singleton: false
+name: inspect
+params: |
+  exception.inspect   => string
+
+visibility: public

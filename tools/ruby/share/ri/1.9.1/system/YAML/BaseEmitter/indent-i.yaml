@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Write a current indent
+full_name: YAML::BaseEmitter#indent
+is_singleton: false
+name: indent
+params: ( mod = nil )
+visibility: public

@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Removes a key-value pair from <em>hsh</em> and returns it as the two-item array <tt>[</tt> <em>key, value</em> <tt>]</tt>, or the hash's default value if the hash is empty.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   h = { 1 =&gt; &quot;a&quot;, 2 =&gt; &quot;b&quot;, 3 =&gt; &quot;c&quot; }\n   h.shift   #=&gt; [1, &quot;a&quot;]\n   h         #=&gt; {2=&gt;&quot;b&quot;, 3=&gt;&quot;c&quot;}\n"
+full_name: Hash#shift
+is_singleton: false
+name: shift
+params: |
+  hsh.shift -> anArray or obj
+
+visibility: public

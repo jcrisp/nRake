@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: REXML::Encoding::apply
+is_singleton: true
+name: apply
+params: (obj, enc)
+visibility: public

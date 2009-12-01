@@ -1,0 +1,27 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Adds <tt>sw</tt> according to <tt>sopts</tt>, <tt>lopts</tt> and <tt>nlopts</tt>.
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "+sw+:"
+    :body: OptionParser::Switch instance to be added.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "+sopts+:"
+    :body: Short style option list.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "+lopts+:"
+    :body: Long style option list.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "+nlopts+:"
+    :body: Negated long style options list.
+  type: :NOTE
+full_name: List#update
+is_singleton: false
+name: update
+params: (sw, sopts, lopts, nsw = nil, nlopts = nil)
+visibility: private

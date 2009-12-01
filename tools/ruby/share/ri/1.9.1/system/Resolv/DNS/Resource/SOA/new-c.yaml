@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Creates a new SOA record. See the attr documentation for the details of each argument.
+full_name: Resolv::DNS::Resource::SOA::new
+is_singleton: true
+name: new
+params: (mname, rname, serial, refresh, retry_, expire, minimum)
+visibility: public

@@ -1,0 +1,21 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Provides a <tt>Prime</tt> object with compatibility to Ruby 1.8 when instanciated via <tt>Prime</tt>.<tt>new</tt>.
+constants: []
+
+full_name: Prime::OldCompatibility
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: each
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: next
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: succ
+name: OldCompatibility

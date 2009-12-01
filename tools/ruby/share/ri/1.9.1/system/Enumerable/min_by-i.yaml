@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the object in <em>enum</em> that gives the minimum value from the given block.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   a = %w(albatross dog horse)\n   a.min_by {|x| x.length }   #=&gt; &quot;dog&quot;\n"
+full_name: Enumerable#min_by
+is_singleton: false
+name: min_by
+params: |
+  enum.min_by {| obj| block }   => obj
+
+visibility: public

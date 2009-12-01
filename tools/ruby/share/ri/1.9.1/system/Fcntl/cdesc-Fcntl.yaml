@@ -1,0 +1,201 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Fcntl loads the constants defined in the system's &lt;fcntl.h&gt; C header file, and used with both the fcntl(2) and open(2) POSIX system calls.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Copyright (C) 1997-2001 Yukihiro Matsumoto
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Documented by mathew &lt;meta@pobox.com&gt;
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 1
+  :text: Usage
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: To perform a fcntl(2) operation, use IO::fcntl in the core classes.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: To perform an open(2) operation, use IO::sysopen.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The set of operations and constants available depends upon specific OS platform. Some values listed below may not be supported on your system.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "The constants supported by Ruby for use with IO::fcntl are:"
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "-"
+    :body: F_DUPFD - duplicate a close-on-exec file handle to a non-close-on-exec file handle.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "-"
+    :body: F_GETFD - read the close-on-exec flag of a file handle.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "-"
+    :body: F_SETFD - set the close-on-exec flag of a file handle.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "-"
+    :body: FD_CLOEXEC - the value of the close-on-exec flag.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "-"
+    :body: F_GETFL - get file descriptor flags.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "-"
+    :body: F_SETFL - set file descriptor flags.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "-"
+    :body: O_APPEND, O_NONBLOCK, etc (see below) - file descriptor flag values for the above.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "-"
+    :body: F_GETLK - determine whether a given region of a file is locked.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "-"
+    :body: F_SETLK - acquire a lock on a region of a file.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "-"
+    :body: F_SETLKW - acquire a lock on a region of a file, waiting if necessary.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "-"
+    :body: F_RDLCK, F_WRLCK, F_UNLCK - types of lock for the above.
+  type: :BULLET
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "The constants supported by Ruby for use with IO::sysopen are:"
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "-"
+    :body: O_APPEND - open file in append mode.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "-"
+    :body: O_NOCTTY - open tty without it becoming controlling tty.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "-"
+    :body: O_CREAT - create file if it doesn't exist.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "-"
+    :body: O_EXCL - used with O_CREAT, fail if file exists.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "-"
+    :body: O_TRUNC - truncate file on open.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "-"
+    :body: O_NONBLOCK / O_NDELAY - open in non-blocking mode.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "-"
+    :body: O_RDONLY - open read-only.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "-"
+    :body: O_WRONLY - open write-only.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "-"
+    :body: O_RDWR - open read-write.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "-"
+    :body: O_ACCMODE - mask to extract read/write flags.
+  type: :BULLET
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Example:"
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  require 'fcntl'\n\n  fd = IO::sysopen('/tmp/tempfile',\n       Fcntl::O_WRONLY | Fcntl::O_EXCL | Fcntl::O_CREAT)\n  f = IO.open(fd)\n  f.syswrite(&quot;TEMP DATA&quot;)\n  f.close\n"
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: F_DUPFD
+  value: INT2NUM(F_DUPFD)
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: F_GETFD
+  value: INT2NUM(F_GETFD)
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: F_GETLK
+  value: INT2NUM(F_GETLK)
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: F_SETFD
+  value: INT2NUM(F_SETFD)
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: F_GETFL
+  value: INT2NUM(F_GETFL)
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: F_SETFL
+  value: INT2NUM(F_SETFL)
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: F_SETLK
+  value: INT2NUM(F_SETLK)
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: F_SETLKW
+  value: INT2NUM(F_SETLKW)
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: FD_CLOEXEC
+  value: INT2NUM(FD_CLOEXEC)
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: F_RDLCK
+  value: INT2NUM(F_RDLCK)
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: F_UNLCK
+  value: INT2NUM(F_UNLCK)
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: F_WRLCK
+  value: INT2NUM(F_WRLCK)
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: O_CREAT
+  value: INT2NUM(O_CREAT)
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: O_EXCL
+  value: INT2NUM(O_EXCL)
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: O_NOCTTY
+  value: INT2NUM(O_NOCTTY)
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: O_TRUNC
+  value: INT2NUM(O_TRUNC)
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: O_APPEND
+  value: INT2NUM(O_APPEND)
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: O_NONBLOCK
+  value: INT2NUM(O_NONBLOCK)
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: O_NDELAY
+  value: INT2NUM(O_NDELAY)
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: O_RDONLY
+  value: INT2NUM(O_RDONLY)
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: O_RDWR
+  value: INT2NUM(O_RDWR)
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: O_WRONLY
+  value: INT2NUM(O_WRONLY)
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: O_ACCMODE
+  value: INT2FIX(O_ACCMODE)
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: O_ACCMODE
+  value: INT2FIX(O_RDONLY | O_WRONLY | O_RDWR)
+full_name: Fcntl
+includes: []
+
+instance_methods: []
+
+name: Fcntl

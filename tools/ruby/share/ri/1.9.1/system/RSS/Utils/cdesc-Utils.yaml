@@ -1,0 +1,25 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+constants: []
+
+full_name: RSS::Utils
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: element_initialize_arguments?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: get_file_and_line_from_caller
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: h
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: html_escape
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new_with_value_if_need
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: to_class_name
+name: Utils

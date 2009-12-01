@@ -1,0 +1,27 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: 
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  name: proj_id
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  name: project
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  name: user
+  rw: R
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+constants: []
+
+full_name: Rake::RubyForgePublisher
+includes: []
+
+instance_methods: []
+
+name: RubyForgePublisher
+superclass: Rake::SshDirPublisher

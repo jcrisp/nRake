@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: RDoc::RI::Formatter::for
+is_singleton: true
+name: for
+params: (name)
+visibility: public

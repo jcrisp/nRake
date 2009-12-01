@@ -1,0 +1,60 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: 
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  name: conversion
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  name: matched
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  name: matched_string
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  name: re_string
+  rw: R
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+constants: []
+
+full_name: Scanf::FormatSpecifier
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: count_space?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: extract_decimal
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: extract_float
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: extract_hex
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: extract_integer
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: extract_octal
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: extract_plain
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: letter
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: match
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: mid_match?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: nil_proc
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: skip
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: to_re
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: to_s
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: width
+name: FormatSpecifier
+superclass: Object

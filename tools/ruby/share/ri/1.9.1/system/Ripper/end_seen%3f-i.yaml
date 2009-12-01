@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Return if parsed source ended by +__END__+. This number starts from 1.
+full_name: Ripper#end_seen?
+is_singleton: false
+name: end_seen?
+params: |
+  ripper#end_seen?   -> Boolean
+
+visibility: public

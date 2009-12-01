@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The number of times GC occured.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: It returns the number of times GC occured since the process started.
+full_name: GC::count
+is_singleton: true
+name: count
+params: |
+  GC.count -> Integer
+
+visibility: public

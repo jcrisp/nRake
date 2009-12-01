@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: Net::HTTPHeader#connection_keep_alive?
+is_singleton: false
+name: connection_keep_alive?
+params: ()
+visibility: public

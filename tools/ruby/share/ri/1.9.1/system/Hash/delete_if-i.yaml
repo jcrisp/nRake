@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Deletes every key-value pair from <em>hsh</em> for which <em>block</em> evaluates to <tt>true</tt>.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   h = { &quot;a&quot; =&gt; 100, &quot;b&quot; =&gt; 200, &quot;c&quot; =&gt; 300 }\n   h.delete_if {|key, value| key &gt;= &quot;b&quot; }   #=&gt; {&quot;a&quot;=&gt;100}\n"
+full_name: Hash#delete_if
+is_singleton: false
+name: delete_if
+params: |
+  hsh.delete_if {| key, value | block }  -> hsh
+
+visibility: public

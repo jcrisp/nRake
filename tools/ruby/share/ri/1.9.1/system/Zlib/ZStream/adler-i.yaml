@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the adler-32 checksum.
+full_name: Zlib::ZStream#adler
+is_singleton: false
+name: adler
+params: ()
+visibility: public

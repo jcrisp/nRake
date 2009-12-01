@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The <tt>get_attribute_ns</tt> method retrieves a method by its namespace and name. Thus it is possible to reliably identify an attribute even if an XML processor has changed the prefix.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Method contributed by Henrik Martensson
+full_name: REXML::Attributes#get_attribute_ns
+is_singleton: false
+name: get_attribute_ns
+params: (namespace, name)
+visibility: public

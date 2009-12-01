@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the freeze status of <em>obj</em>.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   a = [ &quot;a&quot;, &quot;b&quot;, &quot;c&quot; ]\n   a.freeze    #=&gt; [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;]\n   a.frozen?   #=&gt; true\n"
+full_name: Object#frozen?
+is_singleton: false
+name: frozen?
+params: |
+  obj.frozen?    => true or false
+
+visibility: public

@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "CRAM-MD5: [RFC2195]"
+full_name: Net::SMTP#cram_md5_response
+is_singleton: false
+name: cram_md5_response
+params: (secret, challenge)
+visibility: private

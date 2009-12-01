@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Accept some options
+full_name: RDoc::Generator::TEXINFO::new
+is_singleton: true
+name: new
+params: (options)
+visibility: public

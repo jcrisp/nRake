@@ -1,0 +1,20 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns true if completion ignores case. If no, returns false.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "NOTE: Returns the same object that is specified by Readline.completion_case_fold= method."
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  require &quot;readline&quot;\n\n  Readline.completion_case_fold = &quot;This is a String.&quot;\n  p Readline.completion_case_fold # =&gt; &quot;This is a String.&quot;\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Raises SecurityError exception if $SAFE is 4.
+full_name: Readline::completion_case_fold
+is_singleton: true
+name: completion_case_fold
+params: |
+  Readline.completion_case_fold -> bool
+
+visibility: public

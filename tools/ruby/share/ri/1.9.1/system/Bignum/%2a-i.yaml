@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Multiplies big and other, returning the result.
+full_name: Bignum#*
+is_singleton: false
+name: "*"
+params: |
+  big * other  => Numeric
+
+visibility: public

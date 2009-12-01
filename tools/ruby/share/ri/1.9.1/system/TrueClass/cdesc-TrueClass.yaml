@@ -1,0 +1,26 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The global value <tt>true</tt> is the only instance of class <tt>TrueClass</tt> and represents a logically true value in boolean expressions. The class provides operators allowing <tt>true</tt> to be used in logical expressions.
+constants: []
+
+full_name: TrueClass
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: "&"
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: ^
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: to_s
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: to_yaml
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: "|"
+name: TrueClass
+superclass: Object

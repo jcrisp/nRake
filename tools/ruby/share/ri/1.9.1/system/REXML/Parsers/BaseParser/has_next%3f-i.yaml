@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns true if there are more events. Synonymous with !empty?
+full_name: REXML::Parsers::BaseParser#has_next?
+is_singleton: false
+name: has_next?
+params: ()
+visibility: public

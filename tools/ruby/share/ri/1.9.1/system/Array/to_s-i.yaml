@@ -1,0 +1,15 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Create a printable version of <em>array</em>.
+full_name: Array#to_s
+is_singleton: false
+name: to_s
+params: |
+  array.to_s -> string
+  array.inspect  -> string
+
+visibility: public

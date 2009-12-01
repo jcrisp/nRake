@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: RDoc::RI::Formatter#display_flow_item
+is_singleton: false
+name: display_flow_item
+params: (item, prefix = @indent)
+visibility: public

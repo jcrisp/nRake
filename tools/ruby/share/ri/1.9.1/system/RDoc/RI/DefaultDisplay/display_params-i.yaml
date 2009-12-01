@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Display the params for <tt>method</tt>.
+full_name: RDoc::RI::DefaultDisplay#display_params
+is_singleton: false
+name: display_params
+params: (method)
+visibility: public

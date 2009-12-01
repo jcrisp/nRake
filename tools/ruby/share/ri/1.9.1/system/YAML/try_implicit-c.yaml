@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Apply any implicit a node may qualify for
+full_name: YAML::try_implicit
+is_singleton: true
+name: try_implicit
+params: ( obj )
+visibility: public

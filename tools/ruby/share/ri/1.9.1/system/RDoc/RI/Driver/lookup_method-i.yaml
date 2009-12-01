@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Finds the method
+full_name: RDoc::RI::Driver#lookup_method
+is_singleton: false
+name: lookup_method
+params: (name, klass)
+visibility: public

@@ -1,0 +1,29 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 2
+  :text: Synopsis
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  Application.new(appname = '')\n"
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 2
+  :text: Args
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "+appname+:"
+    :body: Name of the application.
+  type: :NOTE
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 2
+  :text: Description
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Create an instance. Log device is <tt>STDERR</tt> by default. This can be changed with #set_log."
+full_name: Logger::Application::new
+is_singleton: true
+name: new
+params: (appname = nil)
+visibility: public

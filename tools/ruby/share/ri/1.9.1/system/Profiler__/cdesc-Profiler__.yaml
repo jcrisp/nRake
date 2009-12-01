@@ -1,0 +1,17 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: PROFILE_PROC
+  value: proc{|event, file, line, id, binding, klass|     case event
+full_name: Profiler__
+includes: []
+
+instance_methods: []
+
+name: Profiler__

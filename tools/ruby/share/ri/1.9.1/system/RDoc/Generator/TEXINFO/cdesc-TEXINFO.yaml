@@ -1,0 +1,25 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: This generates Texinfo files for viewing with GNU Info or Emacs from RDoc extracted from Ruby source files.
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: What should the .info file be named by default?
+  name: DEFAULT_INFO_FILENAME
+  value: "'rdoc.info'"
+full_name: RDoc::Generator::TEXINFO
+includes: 
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: Generator::MarkUp
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: generate
+name: TEXINFO
+superclass: Object

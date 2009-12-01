@@ -1,0 +1,17 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Raised when gzip file footer is not found.
+constants: []
+
+full_name: Zlib::GzipFile::NoFooter
+includes: []
+
+instance_methods: []
+
+name: NoFooter
+superclass: Zlib::GzipFile::Error

@@ -1,0 +1,19 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Mixin for creating easily cloned objects.
+constants: []
+
+full_name: Rake::Cloneable
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: clone
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: dup
+name: Cloneable

@@ -1,0 +1,13 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: 
+- !ruby/object:RDoc::RI::AliasName 
+  name: delete
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Unlinks the file. On UNIX-like systems, it is often a good idea to unlink a temporary file immediately after creating and opening it, because it leaves other programs zero chance to access the file.
+full_name: Tempfile#unlink
+is_singleton: false
+name: unlink
+params: ()
+visibility: public

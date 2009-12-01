@@ -1,0 +1,25 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Create a new BigDecimal object.
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "initial:"
+    :body: The initial value, as a String. Spaces are ignored, unrecognized characters terminate the value.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "digits:"
+    :body: The number of significant digits, as a Fixnum. If omitted or 0, the number of significant digits is determined from the initial value.
+  type: :NOTE
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The actual number of significant digits used in computation is usually larger than the specified number.
+full_name: BigDecimal::new
+is_singleton: true
+name: new
+params: |
+  new(initial, digits)
+
+visibility: public

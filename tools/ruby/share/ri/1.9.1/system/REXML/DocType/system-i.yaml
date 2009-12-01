@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: This method retrieves the system identifier identifying the document's DTD
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Method contributed by Henrik Martensson
+full_name: REXML::DocType#system
+is_singleton: false
+name: system
+params: ()
+visibility: public

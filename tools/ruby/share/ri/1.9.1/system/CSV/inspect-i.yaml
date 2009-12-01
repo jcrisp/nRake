@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns a simplified description of the key FasterCSV attributes in an ASCII compatible String.
+full_name: CSV#inspect
+is_singleton: false
+name: inspect
+params: ()
+visibility: public

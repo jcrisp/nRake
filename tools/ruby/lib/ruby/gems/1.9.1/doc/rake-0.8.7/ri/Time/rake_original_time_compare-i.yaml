@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Alias for #&lt;=&gt;"
+full_name: Time#rake_original_time_compare
+is_singleton: false
+name: rake_original_time_compare
+params: (other)
+visibility: public

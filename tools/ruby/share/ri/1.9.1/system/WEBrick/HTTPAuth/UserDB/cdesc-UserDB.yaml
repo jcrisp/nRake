@@ -1,0 +1,22 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: 
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  name: auth_type
+  rw: RW
+class_methods: []
+
+comment: 
+constants: []
+
+full_name: WEBrick::HTTPAuth::UserDB
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: get_passwd
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: make_passwd
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: set_passwd
+name: UserDB

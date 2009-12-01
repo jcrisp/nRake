@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: append_features
+comment: 
+constants: []
+
+full_name: RSS::Atom::PersonConstruct
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: maker_target
+name: PersonConstruct

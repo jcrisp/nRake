@@ -1,0 +1,31 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Shorthand for
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  Iconv.open(to, from) { |cd|\n    (strs + [nil]).collect { |s| cd.iconv(s) }\n  }\n"
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 3
+  :text: Parameters
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "<tt>to, from</tt>:"
+    :body: see Iconv.new
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "<tt>strs</tt>:"
+    :body: strings to be converted
+  type: :NOTE
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 3
+  :text: Exceptions
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Exceptions thrown by Iconv.new, Iconv.open and Iconv#iconv.
+full_name: Iconv#iconv
+is_singleton: false
+name: iconv
+params: " Iconv.iconv(to, from, *strs)\n"
+visibility: public

@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Re-composes a prime factorization and returns the product.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: See Prime#int_from_prime_division for more details.
+full_name: Integer::from_prime_division
+is_singleton: true
+name: from_prime_division
+params: (pd)
+visibility: public

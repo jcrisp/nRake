@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Equivalent to <tt>CSV::parse_line(self, options)</tt>.
+full_name: String#parse_csv
+is_singleton: false
+name: parse_csv
+params: (options = Hash.new)
+visibility: public

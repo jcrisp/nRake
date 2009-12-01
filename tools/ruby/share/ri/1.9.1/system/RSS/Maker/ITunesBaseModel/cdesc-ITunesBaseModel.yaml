@@ -1,0 +1,23 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+constants: []
+
+full_name: RSS::Maker::ITunesBaseModel
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: def_class_accessor
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: def_csv_accessor
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: def_elements_class_accessor
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: def_yes_clean_other_accessor
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: def_yes_other_accessor
+name: ITunesBaseModel

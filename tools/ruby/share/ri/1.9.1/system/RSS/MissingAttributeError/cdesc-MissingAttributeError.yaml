@@ -1,0 +1,23 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: 
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  name: attribute
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  name: tag
+  rw: R
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+constants: []
+
+full_name: RSS::MissingAttributeError
+includes: []
+
+instance_methods: []
+
+name: MissingAttributeError
+superclass: RSS::InvalidRSSError

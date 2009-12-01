@@ -1,0 +1,53 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: 
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: Accessor for statistics. Available after each call to parse_files
+  name: stats
+  rw: R
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Encapsulate the production of rdoc documentation. Basically you can use this as you would invoke rdoc from the command line:"
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  rdoc = RDoc::RDoc.new\n  rdoc.document(args)\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Where <tt>args</tt> is an array of strings, each corresponding to an argument you'd give rdoc on the command line. See rdoc/rdoc.rb for details.
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: Generator
+  value: Struct.new(:file_name, :class_name, :key)
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: This is the list of output generator that we support
+  name: GENERATORS
+  value: "{}"
+full_name: RDoc::RDoc
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: document
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: error
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: list_files_in_directory
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: normalized_file_list
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: output_flag_file
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: parse_dot_doc_file
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: parse_files
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: setup_output_dir
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: update_output_dir
+name: RDoc
+superclass: Object

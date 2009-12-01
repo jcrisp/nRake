@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Override the inspection method.
+full_name: Process::Status#inspect
+is_singleton: false
+name: inspect
+params: |
+  stat.inspect   => string
+
+visibility: public

@@ -1,0 +1,23 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+constants: []
+
+full_name: IRB::IrbLoader
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: irb_load
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: load_file
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: old
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: search_file_from_ruby_path
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: source_file
+name: IrbLoader

@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The string representation of <tt>true</tt> is &quot;true&quot;.
+full_name: TrueClass#to_s
+is_singleton: false
+name: to_s
+params: |
+  true.to_s   =>  "true"
+
+visibility: public

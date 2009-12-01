@@ -1,0 +1,50 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: <tt>Process::Status</tt> encapsulates the information on the status of a running or terminated system process. The built-in variable <tt>$?</tt> is either <tt>nil</tt> or a <tt>Process::Status</tt> object.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   fork { exit 99 }   #=&gt; 26557\n   Process.wait       #=&gt; 26557\n   $?.class           #=&gt; Process::Status\n   $?.to_i            #=&gt; 25344\n   $? &gt;&gt; 8            #=&gt; 99\n   $?.stopped?        #=&gt; false\n   $?.exited?         #=&gt; true\n   $?.exitstatus      #=&gt; 99\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Posix systems record information on processes using a 16-bit integer. The lower bits record the process status (stopped, exited, signaled) and the upper bits possibly contain additional information (for example the program's return code in the case of exited processes). Pre Ruby 1.8, these bits were exposed directly to the Ruby program. Ruby now encapsulates these in a <tt>Process::Status</tt> object. To maximize compatibility, however, these objects retain a bit-oriented interface. In the descriptions that follow, when we talk about the integer value of <em>stat</em>, we're referring to this 16 bit value.
+constants: []
+
+full_name: Process::Status
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: "&"
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: ==
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: ">>"
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: coredump?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: exited?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: exitstatus
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: inspect
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: pid
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: signaled?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: stopped?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: stopsig
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: success?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: termsig
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: to_i
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: to_s
+name: Status
+superclass: Object

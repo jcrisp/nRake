@@ -1,0 +1,38 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: DEBUG_LAST_CMD
+  value: "[]"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: USE_READLINE
+  value: "false"
+full_name: DEBUGGER__::Context
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: check_suspend
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: clear_suspend
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: readline
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: readline
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: resume_all
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: set_suspend
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: stop_next
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: suspend_all
+name: Context
+superclass: Object

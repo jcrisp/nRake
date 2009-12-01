@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Alias for #xml_content="
+full_name: RSS::Maker::ItemsBase::ItemBase::ContentBase#xml=
+is_singleton: false
+name: xml=
+params: (content)
+visibility: public

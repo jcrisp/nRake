@@ -1,0 +1,89 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 1
+  :text: CSS2 RDoc HTML template
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: This is a template for RDoc that uses XHTML 1.0 Strict and dictates a bit more of the appearance of the output to cascading stylesheets than the default. It was designed for clean inline code display, and uses DHTMl to toggle the visbility of each method's source with each click on the '[source]' link.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Frameless basically is the html template without frames.
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 2
+  :text: Authors
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: Michael Granger &lt;ged@FaerieMUD.org&gt;
+  type: :BULLET
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Copyright (c) 2002, 2003 The FaerieMUD Consortium. Some rights reserved.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: This work is licensed under the Creative Commons Attribution License. To view a copy of this license, visit http://creativecommons.org/licenses/by/1.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: FRAMELESS
+  value: "true"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: FONTS
+  value: RDoc::Generator::HTML::HTML::FONTS
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: STYLE
+  value: RDoc::Generator::HTML::HTML::STYLE
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: HEADER
+  value: RDoc::Generator::HTML::HTML::HEADER
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: FOOTER
+  value: <<-EOF   <div id="popupmenu" class="index">     <br />     <h1 class="index-entries section-bar">Files</h1>       <ul> <% values["file_list"].each do |file| %>         <li><a href="<%= file["href"] %>"><%= file["name"] %></a></li> <% end %>       </ul>      <br />     <h1 class="index-entries section-bar">Classes</h1>       <ul> <% values["class_list"].each do |klass| %>         <li><a href="<%= klass["href"] %>"><%= klass["name"] %></a></li> <% end %>       </ul>      <br />     <h1 class="index-entries section-bar">Methods</h1>       <ul> <% values["method_list"].each do |method| %>         <li><a href="<%= method["href"] %>"><%= method["name"] %></a></li> <% end %>       </ul>   </div> </body> </html>   EOF
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: FILE_PAGE
+  value: RDoc::Generator::HTML::HTML::FILE_PAGE
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: CLASS_PAGE
+  value: RDoc::Generator::HTML::HTML::CLASS_PAGE
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: METHOD_LIST
+  value: RDoc::Generator::HTML::HTML::METHOD_LIST
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: BODY
+  value: HEADER + %{  <%= template_include %>  <!-- banner header -->    <div id="bodyContent">  } +  METHOD_LIST + %{    </div>  } + FOOTER
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: SRC_PAGE
+  value: RDoc::Generator::HTML::HTML::SRC_PAGE
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: FR_INDEX_BODY
+  value: RDoc::Generator::HTML::HTML::FR_INDEX_BODY
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: FILE_INDEX
+  value: RDoc::Generator::HTML::HTML::FILE_INDEX
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: CLASS_INDEX
+  value: RDoc::Generator::HTML::HTML::CLASS_INDEX
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: METHOD_INDEX
+  value: RDoc::Generator::HTML::HTML::METHOD_INDEX
+full_name: RDoc::Generator::HTML::FRAMELESS
+includes: []
+
+instance_methods: []
+
+name: FRAMELESS

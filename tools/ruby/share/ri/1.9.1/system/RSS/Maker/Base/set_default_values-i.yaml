@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: if @default_values_are_set
+comment: 
+full_name: RSS::Maker::Base#set_default_values
+is_singleton: false
+name: set_default_values
+params: (&block) {|if @default_values_are_set| ...}
+visibility: private

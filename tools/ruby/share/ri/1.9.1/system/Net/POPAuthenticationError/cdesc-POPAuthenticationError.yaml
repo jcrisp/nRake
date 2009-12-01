@@ -1,0 +1,17 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: POP3 authentication error.
+constants: []
+
+full_name: Net::POPAuthenticationError
+includes: []
+
+instance_methods: []
+
+name: POPAuthenticationError
+superclass: ProtoAuthError

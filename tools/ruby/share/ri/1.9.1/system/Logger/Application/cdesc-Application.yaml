@@ -1,0 +1,62 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: 
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: Name of the application given at initialize.
+  name: appname
+  rw: R
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 2
+  :text: Description
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Application -- Add logging support to your application.
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 2
+  :text: Usage
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "1."
+    :body: Define your application class as a sub-class of this class.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "2."
+    :body: Override 'run' method in your class to do many things.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "3."
+    :body: Instantiate it and invoke 'start'.
+  type: :NUMBER
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 2
+  :text: Example
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  class FooApp &lt; Application\n    def initialize(foo_app, application_specific, arguments)\n      super('FooApp') # Name of the application.\n    end\n\n    def run\n      ...\n      log(WARN, 'warning', 'my_method1')\n      ...\n      @log.error('my_method2') { 'Error!' }\n      ...\n    end\n  end\n\n  status = FooApp.new(....).start\n"
+constants: []
+
+full_name: Logger::Application
+includes: 
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: Logger::Severity
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: level=
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: log
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: log=
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: logger
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: logger=
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: run
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: set_log
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: start
+name: Application
+superclass: Object

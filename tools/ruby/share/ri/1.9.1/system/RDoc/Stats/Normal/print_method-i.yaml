@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: RDoc::Stats::Normal#print_method
+is_singleton: false
+name: print_method
+params: (method)
+visibility: public

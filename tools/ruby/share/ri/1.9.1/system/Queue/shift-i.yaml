@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Alias for #pop"
+full_name: Queue#shift
+is_singleton: false
+name: shift
+params: (non_block=false)
+visibility: public

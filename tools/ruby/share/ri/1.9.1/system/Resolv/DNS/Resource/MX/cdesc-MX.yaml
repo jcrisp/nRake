@@ -1,0 +1,29 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: 
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The host of this MX.
+  name: exchange
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The preference for this MX.
+  name: preference
+  rw: R
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Mail Exchanger resource.
+constants: []
+
+full_name: Resolv::DNS::Resource::MX
+includes: []
+
+instance_methods: []
+
+name: MX
+superclass: Resolv::DNS::Resource

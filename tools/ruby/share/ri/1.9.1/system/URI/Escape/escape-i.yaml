@@ -1,0 +1,38 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: 
+- !ruby/object:RDoc::RI::AliasName 
+  name: encode
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 2
+  :text: Synopsis
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  URI.escape(str [, unsafe])\n"
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 2
+  :text: Args
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "+str+:"
+    :body: String to replaces in.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "+unsafe+:"
+    :body: Regexp that matches all symbols that must be replaced with codes. By default uses <tt>REGEXP::UNSAFE</tt>. When this argument is a String, it represents a character set.
+  type: :NOTE
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 2
+  :text: Description
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Escapes the string, replacing all unsafe characters with codes.
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 2
+  :text: Usage
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  require 'uri'\n\n  enc_uri = URI.escape(&quot;http://example.com/?a=\\11\\15&quot;)\n  p enc_uri\n  # =&gt; &quot;http://example.com/?a=%09%0D&quot;\n\n  p URI.unescape(enc_uri)\n  # =&gt; &quot;http://example.com/?a=\\t\\r&quot;\n\n  p URI.escape(&quot;@?@!&quot;, &quot;!?&quot;)\n  # =&gt; &quot;@%3F@%21&quot;\n"
+full_name: URI::Escape#escape
+is_singleton: false
+name: escape
+params: (*arg)
+visibility: public

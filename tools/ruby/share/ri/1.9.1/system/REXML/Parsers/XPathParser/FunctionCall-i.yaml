@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "| FUNCTION_NAME '(' ( expr ( ',' expr )* )? ')'"
+full_name: REXML::Parsers::XPathParser#FunctionCall
+is_singleton: false
+name: FunctionCall
+params: (rest, parsed)
+visibility: private

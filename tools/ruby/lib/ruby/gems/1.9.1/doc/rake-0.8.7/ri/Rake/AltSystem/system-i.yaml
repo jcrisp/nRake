@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: Rake::AltSystem#system
+is_singleton: false
+name: system
+params: (cmd, *args)
+visibility: public

@@ -1,0 +1,122 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: 
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: Name of the package (from the GEM Spec).
+  name: name
+  rw: RW
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: True if a gzipped tar file (tgz) should be produced (default is false).
+  name: need_tar
+  rw: RW
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: True if a bzip2'd tar file (tar.bz2) should be produced (default is false).
+  name: need_tar_bz2
+  rw: RW
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: True if a gzipped tar file (tar.gz) should be produced (default is false).
+  name: need_tar_gz
+  rw: RW
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: True if a zip file should be produced (default is false)
+  name: need_zip
+  rw: RW
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: Directory used to store the package files (default is 'pkg').
+  name: package_dir
+  rw: RW
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: List of files to be included in the package.
+  name: package_files
+  rw: RW
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: Tar command for gzipped or bzip2ed archives. The default is 'tar'.
+  name: tar_command
+  rw: RW
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: Version of the package (e.g. '1.3.2').
+  name: version
+  rw: RW
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: Zip command for zipped archives. The default is 'zip'.
+  name: zip_command
+  rw: RW
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Create a packaging task that will package the project into distributable files (e.g zip archive or tar files).
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "The PackageTask will create the following targets:"
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: <b>:package</b>
+    :body: Create all the requested package files.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: <b>:clobber_package</b>
+    :body: Delete all the package files. This target is automatically added to the main clobber target.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: <b>:repackage</b>
+    :body: Rebuild the package files from scratch, even if they are not out of date.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: <b>"<em>package_dir</em>/<em>name</em>-<em>version</em>.tgz"</b>
+    :body: Create a gzipped tar package (if <em>need_tar</em> is true).
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: <b>"<em>package_dir</em>/<em>name</em>-<em>version</em>.tar.gz"</b>
+    :body: Create a gzipped tar package (if <em>need_tar_gz</em> is true).
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: <b>"<em>package_dir</em>/<em>name</em>-<em>version</em>.tar.bz2"</b>
+    :body: Create a bzip2'd tar package (if <em>need_tar_bz2</em> is true).
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: <b>"<em>package_dir</em>/<em>name</em>-<em>version</em>.zip"</b>
+    :body: Create a zip package archive (if <em>need_zip</em> is true).
+  type: :LABELED
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Example:"
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  Rake::PackageTask.new(&quot;rake&quot;, &quot;1.2.3&quot;) do |p|\n    p.need_tar = true\n    p.package_files.include(&quot;lib/*<b>/</b>.rb&quot;)\n  end\n"
+constants: []
+
+full_name: Rake::PackageTask
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: define
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: init
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: package_dir_path
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: package_name
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: tar_bz2_file
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: tar_gz_file
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: tgz_file
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: zip_file
+name: PackageTask
+superclass: Rake::TaskLib

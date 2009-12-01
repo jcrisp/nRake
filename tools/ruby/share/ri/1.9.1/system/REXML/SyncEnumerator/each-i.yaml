@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: "@gens.collect {|x| x[i]"
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Enumerates rows of the Enumerable objects.
+full_name: REXML::SyncEnumerator#each
+is_singleton: false
+name: each
+params: () {|@gens.collect {|x| x[i]| ...}
+visibility: public

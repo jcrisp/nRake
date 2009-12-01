@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: MonitorMixin::ConditionVariable#wait
+is_singleton: false
+name: wait
+params: (timeout = nil)
+visibility: public

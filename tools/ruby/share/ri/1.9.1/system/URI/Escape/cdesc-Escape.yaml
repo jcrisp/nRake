@@ -1,0 +1,21 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+constants: []
+
+full_name: URI::Escape
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: decode
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: encode
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: escape
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: unescape
+name: Escape

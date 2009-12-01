@@ -1,0 +1,23 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Removes an attribute
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "key:"
+    :body: either an Attribute or a String. In either case, the attribute is found by matching the attribute name to the argument, and then removed. If no attribute is found, no action is taken.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "Returns:"
+    :body: the attribute removed, or nil if this Element did not contain a matching attribute
+  type: :NOTE
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: " e = Element.new('E')\n e.add_attribute( 'name', 'Sean' )             #-&gt; &lt;E name='Sean'/&gt;\n r = e.add_attribute( 'sur:name', 'Russell' )  #-&gt; &lt;E name='Sean' sur:name='Russell'/&gt;\n e.delete_attribute( 'name' )                  #-&gt; &lt;E sur:name='Russell'/&gt;\n e.delete_attribute( r )                       #-&gt; &lt;E/&gt;\n"
+full_name: REXML::Element#delete_attribute
+is_singleton: false
+name: delete_attribute
+params: (key)
+visibility: public

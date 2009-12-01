@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Called when a comment is encountered. @p comment The content of the comment
+full_name: REXML::SAX2Listener#comment
+is_singleton: false
+name: comment
+params: (comment)
+visibility: public

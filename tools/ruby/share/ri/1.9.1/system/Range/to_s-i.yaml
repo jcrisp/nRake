@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Convert this range object to a printable form.
+full_name: Range#to_s
+is_singleton: false
+name: to_s
+params: |
+  rng.to_s   => string
+
+visibility: public

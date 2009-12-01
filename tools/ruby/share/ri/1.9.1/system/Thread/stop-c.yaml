@@ -1,0 +1,20 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Stops execution of the current thread, putting it into a ``sleep'' state, and schedules execution of another thread.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   a = Thread.new { print &quot;a&quot;; Thread.stop; print &quot;c&quot; }\n   Thread.pass\n   print &quot;b&quot;\n   a.run\n   a.join\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: <em>produces:</em>
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   abc\n"
+full_name: Thread::stop
+is_singleton: true
+name: stop
+params: |
+  Thread.stop   => nil
+
+visibility: public

@@ -1,0 +1,28 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: 
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  name: level_notifier
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  name: notifiers
+  rw: R
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+constants: []
+
+full_name: IRB::Notifier::CompositeNotifier
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: def_notifier
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: level=
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: level_notifier=
+name: CompositeNotifier
+superclass: IRB::Notifier::AbstructNotifier

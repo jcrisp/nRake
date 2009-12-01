@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the cube root of <em>numeric</em>.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  -9.upto(9) {|x|\n    p [x, Math.cbrt(x), Math.cbrt(x)**3]\n  }\n  #=&gt;\n  [-9, -2.0800838230519, -9.0]\n  [-8, -2.0, -8.0]\n  [-7, -1.91293118277239, -7.0]\n  [-6, -1.81712059283214, -6.0]\n  [-5, -1.7099759466767, -5.0]\n  [-4, -1.5874010519682, -4.0]\n  [-3, -1.44224957030741, -3.0]\n  [-2, -1.25992104989487, -2.0]\n  [-1, -1.0, -1.0]\n  [0, 0.0, 0.0]\n  [1, 1.0, 1.0]\n  [2, 1.25992104989487, 2.0]\n  [3, 1.44224957030741, 3.0]\n  [4, 1.5874010519682, 4.0]\n  [5, 1.7099759466767, 5.0]\n  [6, 1.81712059283214, 6.0]\n  [7, 1.91293118277239, 7.0]\n  [8, 2.0, 8.0]\n  [9, 2.0800838230519, 9.0]\n"
+full_name: Math::cbrt
+is_singleton: true
+name: cbrt
+params: |
+  Math.cbrt(numeric)    => float
+
+visibility: public

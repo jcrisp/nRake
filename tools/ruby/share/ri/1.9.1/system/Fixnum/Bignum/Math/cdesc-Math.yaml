@@ -1,0 +1,20 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: rsqrt
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: sqrt
+comment: 
+constants: []
+
+full_name: Fixnum::Bignum::Math
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: rsqrt
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: sqrt
+name: Math

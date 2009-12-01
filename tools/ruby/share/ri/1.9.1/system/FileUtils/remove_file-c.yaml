@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Removes a file <tt>path</tt>. This method ignores StandardError if <tt>force</tt> is true.
+full_name: FileUtils::remove_file
+is_singleton: true
+name: remove_file
+params: (path, force = false)
+visibility: public

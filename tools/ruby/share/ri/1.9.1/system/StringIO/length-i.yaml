@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the size of the buffer string.
+full_name: StringIO#length
+is_singleton: false
+name: length
+params: |
+  strio.size   -> integer
+
+visibility: public

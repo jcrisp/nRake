@@ -1,0 +1,17 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: 
+- !ruby/object:RDoc::RI::AliasName 
+  name: gets
+- !ruby/object:RDoc::RI::AliasName 
+  name: readline
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The primary read method for wrapped Strings and IOs, a single row is pulled from the data source, parsed and returned as an Array of fields (if header rows are not used) or a CSV::Row (when header rows are used).
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The data source must be open for reading.
+full_name: CSV#shift
+is_singleton: false
+name: shift
+params: ()
+visibility: public

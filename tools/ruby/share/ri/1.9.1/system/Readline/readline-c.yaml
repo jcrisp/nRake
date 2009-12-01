@@ -1,0 +1,57 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Shows the <tt>prompt</tt> and reads the inputted line with line editing. The inputted line is added to the history if <tt>add_hist</tt> is true.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns nil when the inputted line is empty and user inputs EOF (Presses ^D on UNIX).
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Raises IOError exception if below conditions are satisfied.
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "1."
+    :body: stdin is not tty.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "2."
+    :body: stdin was closed. (errno is EBADF after called isatty(2).)
+  type: :NUMBER
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: This method supports thread. Switchs the thread context when waits inputting line.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Supports line edit when inputs line. Provides VI and Emacs editing mode. Default is Emacs editing mode.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "NOTE: Terminates ruby interpreter and does not return the terminal status after user pressed '^C' when wait inputting line. Give 3 examples that avoid it."
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: "Catches the Interrupt exception by pressed ^C after returns terminal status:"
+  - !ruby/struct:RDoc::Markup::Flow::VERB 
+    :body: "  require &quot;readline&quot;\n\n  stty_save = `stty -g`.chomp\n  begin\n    while buf = Readline.readline\n        p buf\n        end\n      rescue Interrupt\n        system(&quot;stty&quot;, stty_save)\n        exit\n      end\n    end\n  end\n"
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: "Catches the INT signal by pressed ^C after returns terminal status:"
+  - !ruby/struct:RDoc::Markup::Flow::VERB 
+    :body: "  require &quot;readline&quot;\n\n  stty_save = `stty -g`.chomp\n  trap(&quot;INT&quot;) { system &quot;stty&quot;, stty_save; exit }\n\n  while buf = Readline.readline\n    p buf\n  end\n"
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: "Ignores pressing ^C:"
+  - !ruby/struct:RDoc::Markup::Flow::VERB 
+    :body: "  require &quot;readline&quot;\n\n  trap(&quot;INT&quot;, &quot;SIG_IGN&quot;)\n\n  while buf = Readline.readline\n    p buf\n  end\n"
+  type: :BULLET
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Can make as follows with Readline::HISTORY constant. It does not record to the history if the inputted line is empty or the same it as last one.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  require &quot;readline&quot;\n\n  while buf = Readline.readline(&quot;&gt; &quot;, true)\n    # p Readline::HISTORY.to_a\n    Readline::HISTORY.pop if /^\\s*$/ =~ buf\n\n    begin\n      if Readline::HISTORY[Readline::HISTORY.length-2] == buf\n        Readline::HISTORY.pop\n      end\n    rescue IndexError\n    end\n\n    # p Readline::HISTORY.to_a\n    print &quot;-&gt; &quot;, buf, &quot;\\n&quot;\n  end\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Raises SecurityError exception if $SAFE is 4.
+full_name: Readline::readline
+is_singleton: true
+name: readline
+params: |
+  Readline.readline(prompt = "", add_hist = false) -> string or nil
+
+visibility: public

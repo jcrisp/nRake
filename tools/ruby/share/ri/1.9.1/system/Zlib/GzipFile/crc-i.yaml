@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns CRC value of the uncompressed data.
+full_name: Zlib::GzipFile#crc
+is_singleton: false
+name: crc
+params: ()
+visibility: public

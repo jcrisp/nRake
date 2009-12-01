@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Equivalent to <tt>($_.dup).chop!</tt>, except <tt>nil</tt> is never returned. See <tt>String#chop!</tt>. Available only when -p/-n command line option specified.
+full_name: Kernel#chop
+is_singleton: false
+name: chop
+params: |
+  chop   => string
+
+visibility: public

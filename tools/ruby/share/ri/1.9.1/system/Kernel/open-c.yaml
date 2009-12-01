@@ -1,0 +1,62 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: 
+- !ruby/object:RDoc::RI::AliasName 
+  name: open_uri_original_open
+- !ruby/object:RDoc::RI::AliasName 
+  name: open_uri_original_open
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Creates an <tt>IO</tt> object connected to the given stream, file, or subprocess.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: If <em>path</em> does not start with a pipe character (``<tt>|</tt>''), treat it as the name of a file to open using the specified mode (defaulting to ``<tt>r</tt>'').
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "The mode_enc is either a string or an integer. If it is an integer, it must be bitwise-or of open(2) flags, such as File::RDWR or File::EXCL. If it is a string, it is either &quot;mode&quot;, &quot;mode:ext_enc&quot;, or &quot;mode:ext_enc:int_enc&quot;. The mode is one of the following:"
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: " r: read (default)\n w: write\n a: append\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The mode can be followed by &quot;b&quot; (means binary-mode), or &quot;+&quot; (means both reading and writing allowed) or both. If ext_enc (external encoding) is specified, read string will be tagged by the encoding in reading, and output string will be converted to the specified encoding in writing. If two encoding names, ext_enc and int_enc (external encoding and internal encoding), are specified, the read string is converted from ext_enc to int_enc then tagged with the int_enc in read mode, and in write mode, the output string will be converted from int_enc to ext_enc before writing.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: If a file is being created, its initial permissions may be set using the integer third parameter.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: If a block is specified, it will be invoked with the <tt>File</tt> object as a parameter, and the file will be automatically closed when the block terminates. The call returns the value of the block.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: If <em>path</em> starts with a pipe character, a subprocess is created, connected to the caller by a pair of pipes. The returned <tt>IO</tt> object may be used to write to the standard input and read from the standard output of this subprocess. If the command following the ``<tt>|</tt>'' is a single minus sign, Ruby forks, and this subprocess is connected to the parent. In the subprocess, the <tt>open</tt> call returns <tt>nil</tt>. If the command is not ``<tt>-</tt>'', the subprocess runs the command. If a block is associated with an <tt>open(&quot;|-&quot;)</tt> call, that block will be run twice---once in the parent and once in the child. The block parameter will be an <tt>IO</tt> object in the parent and <tt>nil</tt> in the child. The parent's <tt>IO</tt> object will be connected to the child's <tt>$stdin</tt> and <tt>$stdout</tt>. The subprocess will be terminated at the end of the block.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   open(&quot;testfile&quot;) do |f|\n     print f.gets\n   end\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: <em>produces:</em>
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   This is line one\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Open a subprocess and read its output:"
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   cmd = open(&quot;|date&quot;)\n   print cmd.gets\n   cmd.close\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: <em>produces:</em>
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   Wed Apr  9 08:56:31 CDT 2003\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Open a subprocess running the same Ruby program:"
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   f = open(&quot;|-&quot;, &quot;w+&quot;)\n   if f == nil\n     puts &quot;in Child&quot;\n     exit\n   else\n     puts &quot;Got: #{f.gets}&quot;\n   end\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: <em>produces:</em>
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   Got: in Child\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Open a subprocess using a block to receive the I/O object:"
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   open(&quot;|-&quot;) do |f|\n     if f == nil\n       puts &quot;in Child&quot;\n     else\n       puts &quot;Got: #{f.gets}&quot;\n     end\n   end\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: <em>produces:</em>
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   Got: in Child\n"
+full_name: Kernel::open
+is_singleton: true
+name: open
+params: |
+  open(path [, mode_enc [, perm]] [, opt] )                => io or nil
+  open(path [, mode_enc [, perm]] [, opt] ) {|io| block }  => obj
+
+visibility: private

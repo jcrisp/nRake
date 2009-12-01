@@ -1,0 +1,18 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   mtch.values_at([index]*)   =&gt; array\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Uses each <em>index</em> to access the matching values, returning an array of the corresponding matches.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   m = /(.)(.)(\\d+)(\\d)/.match(&quot;THX1138: The Movie&quot;)\n   m.to_a               #=&gt; [&quot;HX1138&quot;, &quot;H&quot;, &quot;X&quot;, &quot;113&quot;, &quot;8&quot;]\n   m.values_at(0, 2, -2)   #=&gt; [&quot;HX1138&quot;, &quot;X&quot;, &quot;113&quot;]\n"
+full_name: MatchData#values_at
+is_singleton: false
+name: values_at
+params: |
+  
+
+visibility: public

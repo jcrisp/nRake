@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: We rely on the fact that the first line of a source code listing has
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   # File xxxxx, line dddd\n"
+full_name: RDoc::Generator::Method#add_line_numbers
+is_singleton: false
+name: add_line_numbers
+params: (src)
+visibility: public

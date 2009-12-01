@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Switches the mode of this table to row mode. All calls to indexing and iteration methods will work with rows until the mode is changed again.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: This method returns the table and is safe to chain.
+full_name: CSV::Table#by_row!
+is_singleton: false
+name: by_row!
+params: ()
+visibility: public

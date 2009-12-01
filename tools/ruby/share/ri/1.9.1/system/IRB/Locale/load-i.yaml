@@ -1,0 +1,11 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: 
+- !ruby/object:RDoc::RI::AliasName 
+  name: toplevel_load
+block_params: 
+comment: 
+full_name: IRB::Locale#load
+is_singleton: false
+name: load
+params: (file, priv=nil)
+visibility: public

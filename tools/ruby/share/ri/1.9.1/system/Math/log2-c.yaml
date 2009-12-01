@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the base 2 logarithm of <em>numeric</em>.
+full_name: Math::log2
+is_singleton: true
+name: log2
+params: |
+  Math.log2(numeric)    => float
+
+visibility: public

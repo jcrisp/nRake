@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns <tt>true</tt> always.
+full_name: StringIO#sync
+is_singleton: false
+name: sync
+params: |
+  strio.sync    -> true
+
+visibility: public

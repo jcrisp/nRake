@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Alias for #to_iso_8859_15"
+full_name: REXML::Encoding#encode
+is_singleton: false
+name: encode
+params: (content)
+visibility: public

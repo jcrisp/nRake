@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "| AndExpr S 'and' S EqualityExpr | EqualityExpr"
+full_name: REXML::Parsers::XPathParser#AndExpr
+is_singleton: false
+name: AndExpr
+params: (path, parsed)
+visibility: private

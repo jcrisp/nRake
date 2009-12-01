@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: RubyLex#identify_number
+is_singleton: false
+name: identify_number
+params: ()
+visibility: public

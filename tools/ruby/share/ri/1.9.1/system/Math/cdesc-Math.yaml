@@ -1,0 +1,82 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: acos
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: acosh
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: asin
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: asinh
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: atan
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: atan2
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: atanh
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: cbrt
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: cos
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: cosh
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: erf
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: erfc
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: exp
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: frexp
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: gamma
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: hypot
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: ldexp
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: lgamma
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: log
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: log10
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: log2
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: sin
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: sinh
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: sqrt
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: tan
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: tanh
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The <tt>Math</tt> module contains module functions for basic trigonometric and transcendental functions. See class <tt>Float</tt> for a list of constants that define Ruby's floating point accuracy.
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: PI
+  value: DBL2NUM(M_PI)
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: PI
+  value: DBL2NUM(atan(1.0)*4.0)
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: E
+  value: DBL2NUM(M_E)
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: E
+  value: DBL2NUM(exp(1.0))
+full_name: Math
+includes: []
+
+instance_methods: []
+
+name: Math

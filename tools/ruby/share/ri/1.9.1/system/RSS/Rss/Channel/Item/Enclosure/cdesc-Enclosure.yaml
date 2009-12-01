@@ -1,0 +1,20 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+constants: []
+
+full_name: RSS::Rss::Channel::Item::Enclosure
+includes: 
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: RSS09
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: maker_target
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: setup_maker_attributes
+name: Enclosure
+superclass: RSS::Element

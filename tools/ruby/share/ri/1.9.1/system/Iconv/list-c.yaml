@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Iterates each alias sets.
+full_name: Iconv::list
+is_singleton: true
+name: list
+params: " Iconv.list {|*aliases| ... }\n"
+visibility: public

@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Creates a matrix using <tt>columns</tt> as an array of column vectors.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  Matrix.columns([[25, 93], [-1, 66]])\n     =&gt;  25 -1\n         93 66\n"
+full_name: Matrix::columns
+is_singleton: true
+name: columns
+params: (columns)
+visibility: public

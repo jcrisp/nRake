@@ -1,0 +1,17 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns just the number of microseconds for <em>time</em>.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   t = Time.now        #=&gt; 2007-11-19 08:03:26 -0600\n   &quot;%10.6f&quot; % t.to_f   #=&gt; &quot;1195481006.775195&quot;\n   t.usec              #=&gt; 775195\n"
+full_name: Time#tv_usec
+is_singleton: false
+name: tv_usec
+params: |
+  time.usec    => int
+  time.tv_usec => int
+
+visibility: public

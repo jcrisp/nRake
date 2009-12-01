@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Sets a close-on-exec flag.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   f = open(&quot;/dev/null&quot;)\n   f.close_on_exec = true\n   system(&quot;cat&quot;, &quot;/proc/self/fd/#{f.fileno}&quot;) # cat: /proc/self/fd/3: No such file or directory\n   f.closed?                #=&gt; false\n"
+full_name: IO#close_on_exec=
+is_singleton: false
+name: close_on_exec=
+params: |
+  ios.close_on_exec = bool    => true or false
+
+visibility: public

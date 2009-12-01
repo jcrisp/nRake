@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns whether <tt>self</tt>'s encoding is ISO-2022-JP or not.
+full_name: String#isjis
+is_singleton: false
+name: isjis
+params: |
+  String#isjis   => true or false
+
+visibility: public

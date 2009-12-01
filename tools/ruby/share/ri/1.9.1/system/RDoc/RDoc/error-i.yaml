@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Report an error message and exit
+full_name: RDoc::RDoc#error
+is_singleton: false
+name: error
+params: (msg)
+visibility: public

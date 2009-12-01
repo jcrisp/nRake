@@ -1,0 +1,29 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: raise_for_undefined_entity?
+comment: 
+constants: []
+
+full_name: RSS::BaseParser
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: do_validate
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: do_validate=
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: ignore_unknown_element
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: ignore_unknown_element=
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: parse
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: rss
+name: BaseParser
+superclass: Object

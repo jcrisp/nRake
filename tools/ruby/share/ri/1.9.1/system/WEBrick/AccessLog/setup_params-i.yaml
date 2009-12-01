@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: This format specification is a subset of mod_log_config of Apache.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  http://httpd.apache.org/docs/mod/mod_log_config.html#formats\n"
+full_name: WEBrick::AccessLog#setup_params
+is_singleton: false
+name: setup_params
+params: (config, req, res)
+visibility: public

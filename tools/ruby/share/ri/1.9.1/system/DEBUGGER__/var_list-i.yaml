@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: DEBUGGER__#var_list
+is_singleton: false
+name: var_list
+params: (ary, binding)
+visibility: public

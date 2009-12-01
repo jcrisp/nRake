@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the class or module that defines the method.
+full_name: UnboundMethod#owner
+is_singleton: false
+name: owner
+params: |
+  meth.owner    => class_or_module
+
+visibility: public

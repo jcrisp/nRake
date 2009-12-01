@@ -1,0 +1,54 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: 32bit
+  name: PointerMask
+  value: "0xffffffff"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: 64bit
+  name: PointerMask
+  value: "0xffffffffffffffff"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: PointerFormat
+  value: "\"%0#{$1.length}x\""
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: PointerFormat
+  value: "\"%x\""
+full_name: PP::PPMethods
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: check_inspect_key
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: comma_breakable
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: guard_inspect_key
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: object_address_group
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: object_group
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: pop_inspect_key
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: pp
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: pp_hash
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: pp_object
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: push_inspect_key
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: seplist
+name: PPMethods

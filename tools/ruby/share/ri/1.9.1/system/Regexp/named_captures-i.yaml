@@ -1,0 +1,22 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns a hash representing information about named captures of <em>rxp</em>.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: A key of the hash is a name of the named captures. A value of the hash is an array which is list of indexes of corresponding named captures.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   /(?&lt;foo&gt;.)(?&lt;bar&gt;.)/.named_captures\n   #=&gt; {&quot;foo&quot;=&gt;[1], &quot;bar&quot;=&gt;[2]}\n\n   /(?&lt;foo&gt;.)(?&lt;foo&gt;.)/.named_captures\n   #=&gt; {&quot;foo&quot;=&gt;[1, 2]}\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: If there are no named captures, an empty hash is returned.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   /(.)(.)/.named_captures\n   #=&gt; {}\n"
+full_name: Regexp#named_captures
+is_singleton: false
+name: named_captures
+params: |
+  rxp.named_captures  => hash
+
+visibility: public

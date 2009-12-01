@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the value of the given class variable (or throws a <tt>NameError</tt> exception). The <tt>@@</tt> part of the variable name should be included for regular class variables
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   class Fred\n     @@foo = 99\n   end\n   Fred.class_variable_get(:@@foo)     #=&gt; 99\n"
+full_name: Module#class_variable_get
+is_singleton: false
+name: class_variable_get
+params: |
+  mod.class_variable_get(symbol)    => obj
+
+visibility: public

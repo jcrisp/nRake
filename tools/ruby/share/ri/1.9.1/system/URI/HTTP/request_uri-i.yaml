@@ -1,0 +1,17 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 2
+  :text: Description
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the full path for an HTTP request, as required by Net::HTTP::Get.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: If the URI contains a query, the full path is URI#path + '?' + URI#query. Otherwise, the path is simply URI#path.
+full_name: URI::HTTP#request_uri
+is_singleton: false
+name: request_uri
+params: ()
+visibility: public

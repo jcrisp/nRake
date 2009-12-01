@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: RDoc::RI::Formatter#wrap
+is_singleton: false
+name: wrap
+params: (txt, prefix=@indent, linelen=@width)
+visibility: public

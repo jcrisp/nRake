@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns an an array of the names of the thread-local variables (as Symbols).
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   thr = Thread.new do\n     Thread.current[:cat] = 'meow'\n     Thread.current[&quot;dog&quot;] = 'woof'\n   end\n   thr.join   #=&gt; #&lt;Thread:0x401b3f10 dead&gt;\n   thr.keys   #=&gt; [:dog, :cat]\n"
+full_name: Thread#keys
+is_singleton: false
+name: keys
+params: |
+  thr.keys   => array
+
+visibility: public

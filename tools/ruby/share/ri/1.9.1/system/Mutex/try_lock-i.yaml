@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Attempts to obtain the lock and returns immediately. Returns <tt>true</tt> if the lock was granted.
+full_name: Mutex#try_lock
+is_singleton: false
+name: try_lock
+params: |
+  mutex.try_lock  => true or false
+
+visibility: public

@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Convert markup into display form
+full_name: RDoc::RI::Formatter#conv_markup
+is_singleton: false
+name: conv_markup
+params: (txt)
+visibility: public

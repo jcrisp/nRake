@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Set the scan pointer to the previous position. Only one previous position is remembered, and it changes with each scanning operation.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  s = StringScanner.new('test string')\n  s.scan(/\\w+/)        # =&gt; &quot;test&quot;\n  s.unscan\n  s.scan(/../)         # =&gt; &quot;te&quot;\n  s.scan(/\\d/)         # =&gt; nil\n  s.unscan             # ScanError: unscan failed: previous match record not exist\n"
+full_name: StringScanner#unscan
+is_singleton: false
+name: unscan
+params: ()
+visibility: public

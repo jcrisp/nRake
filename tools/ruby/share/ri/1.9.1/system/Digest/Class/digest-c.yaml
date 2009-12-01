@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Returns the hash value of a given <em>string</em>. This is equivalent to Digest::Class.new(*parameters).digest(string), where extra <em>parameters</em>, if any, are passed through to the constructor and the <em>string</em> is passed to #digest()."
+full_name: Digest::Class::digest
+is_singleton: true
+name: digest
+params: |
+  Digest::Class.digest(string, *parameters) -> hash_string
+
+visibility: public

@@ -1,0 +1,13 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: 
+- !ruby/object:RDoc::RI::AliasName 
+  name: kind_of?
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Lie about our class.
+full_name: Rake::FileList#is_a?
+is_singleton: false
+name: is_a?
+params: (klass)
+visibility: public

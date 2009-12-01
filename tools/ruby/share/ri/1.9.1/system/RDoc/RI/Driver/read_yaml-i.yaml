@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: RDoc::RI::Driver#read_yaml
+is_singleton: false
+name: read_yaml
+params: (path)
+visibility: public

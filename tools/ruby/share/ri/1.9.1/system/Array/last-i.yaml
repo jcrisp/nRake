@@ -1,0 +1,17 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the last element(s) of <em>self</em>. If the array is empty, the first form returns <tt>nil</tt>.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   a = [ &quot;w&quot;, &quot;x&quot;, &quot;y&quot;, &quot;z&quot; ]\n   a.last     #=&gt; &quot;z&quot;\n   a.last(2)  #=&gt; [&quot;y&quot;, &quot;z&quot;]\n"
+full_name: Array#last
+is_singleton: false
+name: last
+params: |
+  array.last     ->  obj or nil
+  array.last(n)  ->  an_array
+
+visibility: public

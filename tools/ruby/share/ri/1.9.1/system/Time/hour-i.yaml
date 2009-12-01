@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the hour of the day (0..23) for <em>time</em>.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   t = Time.now   #=&gt; 2007-11-19 08:26:20 -0600\n   t.hour         #=&gt; 8\n"
+full_name: Time#hour
+is_singleton: false
+name: hour
+params: |
+  time.hour => fixnum
+
+visibility: public

@@ -1,0 +1,38 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "A RingServer allows a Rinda::TupleSpace to be located via UDP broadcasts. Service location uses the following steps:"
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "1."
+    :body: A RingServer begins listening on the broadcast UDP address.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "2."
+    :body: A RingFinger sends a UDP packet containing the DRb URI where it will listen for a reply.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "3."
+    :body: The RingServer receives the UDP packet and connects back to the provided DRb URI with the DRb service.
+  type: :NUMBER
+constants: []
+
+full_name: Rinda::RingServer
+includes: 
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: DRbUndumped
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: do_reply
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: do_write
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: reply_service
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: write_service
+name: RingServer
+superclass: Object

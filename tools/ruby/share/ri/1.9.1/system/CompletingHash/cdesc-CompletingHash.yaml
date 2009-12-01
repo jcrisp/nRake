@@ -1,0 +1,19 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Hash with completion search feature. See OptionParser::Completion.
+constants: []
+
+full_name: CompletingHash
+includes: 
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: Completion
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: match
+name: CompletingHash
+superclass: Hash

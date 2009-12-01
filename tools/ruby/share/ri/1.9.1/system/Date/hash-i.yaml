@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Calculate a hash value for this date.
+full_name: Date#hash
+is_singleton: false
+name: hash
+params: ()
+visibility: public

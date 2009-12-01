@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Create unnamed module, define <em>methodname</em> as instance method of it, and return it.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "example:"
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  filename = 'example.rhtml'   # 'arg1' and 'arg2' are used in example.rhtml\n  erb = ERB.new(File.read(filename))\n  erb.filename = filename\n  MyModule = erb.def_module('render(arg1, arg2)')\n  class MyClass\n    include MyModule\n  end\n"
+full_name: ERB#def_module
+is_singleton: false
+name: def_module
+params: (methodname='erb')
+visibility: public

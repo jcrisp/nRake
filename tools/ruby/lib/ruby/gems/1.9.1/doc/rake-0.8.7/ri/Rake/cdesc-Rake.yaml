@@ -1,0 +1,18 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::RULE 
+  :width: 1
+- !ruby/struct:RDoc::Markup::Flow::RULE 
+  :width: 1
+constants: []
+
+full_name: Rake
+includes: []
+
+instance_methods: []
+
+name: Rake

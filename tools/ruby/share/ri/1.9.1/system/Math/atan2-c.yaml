@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Computes the arc tangent given <em>y</em> and <em>x</em>. Returns -PI..PI.
+full_name: Math::atan2
+is_singleton: true
+name: atan2
+params: |
+  Math.atan2(y, x)  => float
+
+visibility: public

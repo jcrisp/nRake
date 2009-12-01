@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: initialize tracing function
+full_name: IRB::initialize_tracer
+is_singleton: true
+name: initialize_tracer
+params: ()
+visibility: public

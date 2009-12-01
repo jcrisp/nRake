@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: RSS::Maker::ITunesChannelModel::ITunesOwnerBase#to_feed
+is_singleton: false
+name: to_feed
+params: (feed, current)
+visibility: public

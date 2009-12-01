@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: RSS::RootElementMixin#to_atom
+is_singleton: false
+name: to_atom
+params: (type, &block)
+visibility: public

@@ -1,0 +1,17 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: With no arguments, sets the default visibility for subsequently defined methods to private. With arguments, sets the named methods to have private visibility.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   module Mod\n     def a()  end\n     def b()  end\n     private\n     def c()  end\n     private :a\n   end\n   Mod.private_instance_methods   #=&gt; [:a, :c]\n"
+full_name: Module#private
+is_singleton: false
+name: private
+params: |
+  private                 => self
+  private(symbol, ...)    => self
+
+visibility: public

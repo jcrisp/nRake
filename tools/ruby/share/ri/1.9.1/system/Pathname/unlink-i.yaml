@@ -1,0 +1,13 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: 
+- !ruby/object:RDoc::RI::AliasName 
+  name: delete
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Removes a file or directory, using <tt>File.unlink</tt> or <tt>Dir.unlink</tt> as necessary.
+full_name: Pathname#unlink
+is_singleton: false
+name: unlink
+params: ()
+visibility: public

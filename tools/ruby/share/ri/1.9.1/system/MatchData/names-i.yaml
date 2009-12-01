@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns a list of names of captures as an array of strings. It is same as mtch.regexp.names.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "    /(?&lt;foo&gt;.)(?&lt;bar&gt;.)(?&lt;baz&gt;.)/.match(&quot;hoge&quot;).names\n    #=&gt; [&quot;foo&quot;, &quot;bar&quot;, &quot;baz&quot;]\n\n    m = /(?&lt;x&gt;.)(?&lt;y&gt;.)?/.match(&quot;a&quot;) #=&gt; #&lt;MatchData &quot;a&quot; x:&quot;a&quot; y:nil&gt;\n    m.names                          #=&gt; [&quot;x&quot;, &quot;y&quot;]\n"
+full_name: MatchData#names
+is_singleton: false
+name: names
+params: |
+  mtch.names   => [name1, name2, ...]
+
+visibility: public

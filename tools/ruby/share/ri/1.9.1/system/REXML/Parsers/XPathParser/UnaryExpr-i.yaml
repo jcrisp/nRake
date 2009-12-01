@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "| '-' UnaryExpr | UnionExpr"
+full_name: REXML::Parsers::XPathParser#UnaryExpr
+is_singleton: false
+name: UnaryExpr
+params: (path, parsed)
+visibility: private

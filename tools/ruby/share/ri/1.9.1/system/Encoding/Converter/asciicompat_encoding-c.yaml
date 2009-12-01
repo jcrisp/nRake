@@ -1,0 +1,21 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the corresponding ASCII compatible encoding.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns nil if the argument is an ASCII compatible encoding.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "&quot;corresponding ASCII compatible encoding&quot; is a ASCII compatible encoding which can represents exactly the same characters as the given ASCII incompatible encoding. So, no conversion undefined error occurs when converting between the two encodings."
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  Encoding::Converter.asciicompat_encoding(&quot;ISO-2022-JP&quot;) #=&gt; #&lt;Encoding:stateless-ISO-2022-JP&gt;\n  Encoding::Converter.asciicompat_encoding(&quot;UTF-16BE&quot;) #=&gt; #&lt;Encoding:UTF-8&gt;\n  Encoding::Converter.asciicompat_encoding(&quot;UTF-8&quot;) #=&gt; nil\n"
+full_name: Encoding::Converter::asciicompat_encoding
+is_singleton: true
+name: asciicompat_encoding
+params: |
+  Encoding::Converter.asciicompat_encoding(string) => encoding or nil
+  Encoding::Converter.asciicompat_encoding(encoding) => encoding or nil
+
+visibility: public

@@ -1,0 +1,17 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Invokes the method identified by <em>symbol</em>, passing it any arguments specified. You can use <tt><em>send</em></tt> if the name <tt>send</tt> clashes with an existing method in <em>obj</em>.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   class Klass\n     def hello(*args)\n       &quot;Hello &quot; + args.join(' ')\n     end\n   end\n   k = Klass.new\n   k.send :hello, &quot;gentle&quot;, &quot;readers&quot;   #=&gt; &quot;Hello gentle readers&quot;\n"
+full_name: Object#send
+is_singleton: false
+name: send
+params: |
+  obj.send(symbol [, args...])        => obj
+  obj.__send__(symbol [, args...])      => obj
+
+visibility: public

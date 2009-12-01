@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: RSS::Atom::Feed::Entry::Content::xml_setter
+is_singleton: true
+name: xml_setter
+params: ()
+visibility: public

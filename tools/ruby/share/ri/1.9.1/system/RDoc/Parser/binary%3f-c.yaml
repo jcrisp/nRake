@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Shamelessly stolen from the ptools gem (since RDoc cannot depend on the gem).
+full_name: RDoc::Parser::binary?
+is_singleton: true
+name: binary?
+params: (file)
+visibility: private

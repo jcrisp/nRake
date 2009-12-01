@@ -1,0 +1,18 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Reads all of the lines in <em>ios</em>, and returns them in <em>anArray</em>. Lines are separated by the optional <em>sep</em>. If <em>sep</em> is <tt>nil</tt>, the rest of the stream is returned as a single record. If the first argument is an integer, or optional second argument is given, the returning string would not be longer than the given value in bytes. The stream must be opened for reading or an <tt>IOError</tt> will be raised.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   f = File.new(&quot;testfile&quot;)\n   f.readlines[0]   #=&gt; &quot;This is line one\\n&quot;\n"
+full_name: IO#readlines
+is_singleton: false
+name: readlines
+params: |
+  ios.readlines(sep=$/)     => array
+  ios.readlines(limit)      => array
+  ios.readlines(sep, limit) => array
+
+visibility: public

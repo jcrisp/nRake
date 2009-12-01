@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Fetches item <tt>k</tt> from the tuple.
+full_name: Rinda::Tuple#fetch
+is_singleton: false
+name: fetch
+params: (k)
+visibility: public

@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the absolute value.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: BigDecimal('5').abs -&gt; 5
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: BigDecimal('-3').abs -&gt; 3
+full_name: BigDecimal#abs
+is_singleton: false
+name: abs
+params: ()
+visibility: public

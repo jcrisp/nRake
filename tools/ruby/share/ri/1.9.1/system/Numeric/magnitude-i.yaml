@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the absolute value of <em>num</em>.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   12.abs         #=&gt; 12\n   (-34.56).abs   #=&gt; 34.56\n   -34.56.abs     #=&gt; 34.56\n"
+full_name: Numeric#magnitude
+is_singleton: false
+name: magnitude
+params: |
+  num.abs   => num or numeric
+
+visibility: public

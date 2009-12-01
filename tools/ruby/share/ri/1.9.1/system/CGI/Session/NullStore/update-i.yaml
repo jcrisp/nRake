@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Update session state.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: A no-op.
+full_name: CGI::Session::NullStore#update
+is_singleton: false
+name: update
+params: ()
+visibility: public

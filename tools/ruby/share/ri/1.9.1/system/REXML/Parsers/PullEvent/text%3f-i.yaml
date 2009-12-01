@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Content: [ String raw_text, String unnormalized_text ]"
+full_name: REXML::Parsers::PullEvent#text?
+is_singleton: false
+name: text?
+params: ()
+visibility: public

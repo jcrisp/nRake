@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Sets up a pager program to pass output through.
+full_name: RDoc::RI::DefaultDisplay#setup_pager
+is_singleton: false
+name: setup_pager
+params: ()
+visibility: public

@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Set the logging threshold, just like <tt>Logger#level=</tt>.
+full_name: Logger::Application#level=
+is_singleton: false
+name: level=
+params: (level)
+visibility: public

@@ -1,0 +1,34 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 2
+  :text: Synopsis
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  URI::join(str[, str, ...])\n"
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 2
+  :text: Args
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "+str+:"
+    :body: String(s) to work with
+  type: :NOTE
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 2
+  :text: Description
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Joins URIs.
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 2
+  :text: Usage
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  require 'uri'\n\n  p URI.join(&quot;http://localhost/&quot;,&quot;main.rbx&quot;)\n  # =&gt; #&lt;URI::HTTP:0x2022ac02 URL:http://localhost/main.rbx&gt;\n"
+full_name: URI::join
+is_singleton: true
+name: join
+params: (*str)
+visibility: public

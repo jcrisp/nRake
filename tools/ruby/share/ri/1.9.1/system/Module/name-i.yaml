@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the name of the module <em>mod</em>. Returns nil for anonymous modules.
+full_name: Module#name
+is_singleton: false
+name: name
+params: |
+  mod.name    => string
+
+visibility: public

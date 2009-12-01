@@ -1,0 +1,21 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Writes the node to some output.
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "node:"
+    :body: The node to write
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "output:"
+    :body: A class implementing <tt>&amp;lt;&amp;lt;</tt>. Pass in an Output object to change the output encoding.
+  type: :NOTE
+full_name: REXML::Formatters::Default#write
+is_singleton: false
+name: write
+params: ( node, output )
+visibility: public

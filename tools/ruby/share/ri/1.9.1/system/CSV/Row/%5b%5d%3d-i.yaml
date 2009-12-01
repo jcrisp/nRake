@@ -1,0 +1,18 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Looks up the field by the semantics described in CSV::Row.field() and assigns the <tt>value</tt>.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Assigning past the end of the row with an index will set all pairs between to <tt>[nil, nil]</tt>. Assigning to an unused header appends the new pair.
+full_name: CSV::Row#[]=
+is_singleton: false
+name: "[]="
+params: |
+  []=( header, value )
+  []=( header, offset, value )
+  []=( index, value )
+
+visibility: public

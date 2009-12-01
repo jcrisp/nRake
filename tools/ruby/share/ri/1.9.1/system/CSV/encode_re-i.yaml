@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Builds a regular expression in <tt>@encoding</tt>. All <tt>chunks</tt> will be transcoded to that encoding.
+full_name: CSV#encode_re
+is_singleton: false
+name: encode_re
+params: (*chunks)
+visibility: private

@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: RSS::Atom::Feed::Entry#have_required_elements?
+is_singleton: false
+name: have_required_elements?
+params: ()
+visibility: private

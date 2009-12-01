@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Equivalent to <tt>Proc.new</tt>, except the resulting Proc objects check the number of parameters passed when called.
+full_name: Kernel#lambda
+is_singleton: false
+name: lambda
+params: |
+  lambda { |...| block }  => a_proc
+
+visibility: public

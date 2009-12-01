@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns <tt>true</tt> if the next row read will be a header row.
+full_name: CSV#header_row?
+is_singleton: false
+name: header_row?
+params: ()
+visibility: public

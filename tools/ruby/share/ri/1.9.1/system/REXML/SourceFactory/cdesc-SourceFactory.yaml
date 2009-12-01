@@ -1,0 +1,18 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: create_from
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Generates Source-s. USE THIS CLASS.
+constants: []
+
+full_name: REXML::SourceFactory
+includes: []
+
+instance_methods: []
+
+name: SourceFactory
+superclass: Object

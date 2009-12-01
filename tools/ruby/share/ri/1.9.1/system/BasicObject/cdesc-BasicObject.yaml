@@ -1,0 +1,29 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+constants: []
+
+full_name: BasicObject
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: "!"
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: "!="
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: ==
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: equal?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: singleton_method_added
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: singleton_method_removed
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: singleton_method_undefined
+name: BasicObject
+superclass: 

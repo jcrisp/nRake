@@ -1,0 +1,42 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: 
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  name: current_job
+  rw: RW
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: job management class
+constants: []
+
+full_name: IRB::JobManager
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: delete
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: insert
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: inspect
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: irb
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: kill
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: main_irb
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: main_thread
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: n_jobs
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: search
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: switch
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: thread
+name: JobManager
+superclass: Object

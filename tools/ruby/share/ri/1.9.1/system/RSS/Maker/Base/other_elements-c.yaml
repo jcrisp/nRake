@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: RSS::Maker::Base::other_elements
+is_singleton: true
+name: other_elements
+params: ()
+visibility: public

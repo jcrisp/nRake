@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: Rinda::TupleBag#bin_for_find
+is_singleton: false
+name: bin_for_find
+params: (template)
+visibility: private

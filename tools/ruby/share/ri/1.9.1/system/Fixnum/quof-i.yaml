@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Alias for #fdiv"
+full_name: Fixnum#quof
+is_singleton: false
+name: quof
+params: (p1)
+visibility: public

@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns information about the group with specified String name, as found in /etc/group.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The information is returned as a Struct::Group; see getgrent above for details.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "e.g. Etc.getgrnam('users') -&gt; #&lt;struct Struct::Group name=&quot;users&quot;, passwd=&quot;x&quot;, gid=100, mem=[&quot;meta&quot;, &quot;root&quot;]&gt;"
+full_name: Etc::getgrnam
+is_singleton: true
+name: getgrnam
+params: (p1)
+visibility: public

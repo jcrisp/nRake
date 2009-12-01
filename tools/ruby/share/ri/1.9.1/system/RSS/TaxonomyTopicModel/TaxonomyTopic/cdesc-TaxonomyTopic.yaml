@@ -1,0 +1,28 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: required_prefix
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: required_uri
+comment: 
+constants: []
+
+full_name: RSS::TaxonomyTopicModel::TaxonomyTopic
+includes: 
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: RSS10
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: DublinCoreModel
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: TaxonomyTopicsModel
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: full_name
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: maker_target
+name: TaxonomyTopic
+superclass: RSS::Element

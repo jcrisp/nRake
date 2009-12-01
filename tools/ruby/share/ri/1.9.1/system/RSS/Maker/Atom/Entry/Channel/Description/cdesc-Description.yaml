@@ -1,0 +1,15 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+constants: []
+
+full_name: RSS::Maker::Atom::Entry::Channel::Description
+includes: []
+
+instance_methods: []
+
+name: Description
+superclass: DescriptionBase

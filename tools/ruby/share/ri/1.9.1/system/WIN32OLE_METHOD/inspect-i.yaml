@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the method name with class name.
+full_name: WIN32OLE_METHOD#inspect
+is_singleton: false
+name: inspect
+params: |
+  WIN32OLE_METHOD#inspect -> String
+
+visibility: public

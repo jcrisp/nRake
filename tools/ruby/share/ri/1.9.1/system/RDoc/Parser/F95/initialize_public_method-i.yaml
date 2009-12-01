@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Create method for internal alias
+full_name: RDoc::Parser::F95#initialize_public_method
+is_singleton: false
+name: initialize_public_method
+params: (method, parent)
+visibility: private

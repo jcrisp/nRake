@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Gets the hostname for <tt>address</tt> from the DNS resolver.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: <tt>address</tt> must be a Resolv::IPv4, Resolv::IPv6 or a String. Retrieved name will be a Resolv::DNS::Name.
+full_name: Resolv::DNS#getname
+is_singleton: false
+name: getname
+params: (address)
+visibility: public

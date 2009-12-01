@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: And---Returns <tt>false</tt> if <em>obj</em> is <tt>nil</tt> or <tt>false</tt>, <tt>true</tt> otherwise.
+full_name: TrueClass#&
+is_singleton: false
+name: "&"
+params: |
+  true & obj    => true or false
+
+visibility: public

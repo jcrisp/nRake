@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: RDoc::TopLevel#file_base_name
+is_singleton: false
+name: file_base_name
+params: ()
+visibility: public

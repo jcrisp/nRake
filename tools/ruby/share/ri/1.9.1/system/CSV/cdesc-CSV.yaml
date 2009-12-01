@@ -1,0 +1,353 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: 
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The encoded <tt>:col_sep</tt> used in parsing and writing. See CSV::new for details.
+  name: col_sep
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The Encoding CSV is parsing or writing in. This will be the Encoding you receive parsed data in and/or the Encoding data will be written in.
+  name: encoding
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The limit for field size, if any. See CSV::new for details.
+  name: field_size_limit
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The line number of the last row read from this file. Fields with nested line-end characters will not affect this count.
+  name: lineno
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The encoded <tt>:quote_char</tt> used in parsing and writing. See CSV::new for details.
+  name: quote_char
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The encoded <tt>:row_sep</tt> used in parsing and writing. See CSV::new for details.
+  name: row_sep
+  rw: R
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: dump
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: filter
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: foreach
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: generate
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: generate_line
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: instance
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: load
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: open
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: parse
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: parse_line
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: read
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: readlines
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: table
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: This class provides a complete interface to CSV files and data. It offers tools to enable you to read and write to and from Strings or IO objects, as needed.
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 2
+  :text: Reading
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 3
+  :text: From a File
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 4
+  :text: A Line at a Time
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  CSV.foreach(&quot;path/to/file.csv&quot;) do |row|\n    # use row here...\n  end\n"
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 4
+  :text: All at Once
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  arr_of_arrs = CSV.read(&quot;path/to/file.csv&quot;)\n"
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 3
+  :text: From a String
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 4
+  :text: A Line at a Time
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  CSV.parse(&quot;CSV,data,String&quot;) do |row|\n    # use row here...\n  end\n"
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 4
+  :text: All at Once
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  arr_of_arrs = CSV.parse(&quot;CSV,data,String&quot;)\n"
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 2
+  :text: Writing
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 3
+  :text: To a File
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  CSV.open(&quot;path/to/file.csv&quot;, &quot;wb&quot;) do |csv|\n    csv &lt;&lt; [&quot;row&quot;, &quot;of&quot;, &quot;CSV&quot;, &quot;data&quot;]\n    csv &lt;&lt; [&quot;another&quot;, &quot;row&quot;]\n    # ...\n  end\n"
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 3
+  :text: To a String
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  csv_string = CSV.generate do |csv|\n    csv &lt;&lt; [&quot;row&quot;, &quot;of&quot;, &quot;CSV&quot;, &quot;data&quot;]\n    csv &lt;&lt; [&quot;another&quot;, &quot;row&quot;]\n    # ...\n  end\n"
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 2
+  :text: Convert a Single Line
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  csv_string = [&quot;CSV&quot;, &quot;data&quot;].to_csv   # to CSV\n  csv_array  = &quot;CSV,String&quot;.parse_csv   # from CSV\n"
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 2
+  :text: Shortcut Interface
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  CSV             { |csv_out| csv_out &lt;&lt; %w{my data here} }  # to $stdout\n  CSV(csv = &quot;&quot;)   { |csv_str| csv_str &lt;&lt; %w{my data here} }  # to a String\n  CSV($stderr)    { |csv_err| csv_err &lt;&lt; %w{my data here} }  # to $stderr\n"
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 2
+  :text: CSV and Character Encodings (M17n or Multilingualization)
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: This new CSV parser is m17n savvy. The parser works in the Encoding of the IO or String object being read from or written to. Your data is never transcoded (unless you ask Ruby to transcode it for you) and will literally be parsed in the Encoding it is in. Thus CSV will return Arrays or Rows of Strings in the Encoding of your data. This is accomplished by transcoding the parser itself into your Encoding.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Some transcoding must take place, of course, to accomplish this multiencoding support. For example, <tt>:col_sep</tt>, <tt>:row_sep</tt>, and <tt>:quote_char</tt> must be transcoded to match your data. Hopefully this makes the entire process feel transparent, since CSV's defaults should just magically work for you data. However, you can set these values manually in the target Encoding to avoid the translation.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: It's also important to note that while all of CSV's core parser is now Encoding agnostic, some features are not. For example, the built-in converters will try to transcode data to UTF-8 before making conversions. Again, you can provide custom converters that are aware of your Encodings to avoid this translation. It's just too hard for me to support native conversions in all of Ruby's Encodings.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Anyway, the practical side of this is simple: make sure IO and String objects passed into CSV have the proper Encoding set and everything should just work. CSV methods that allow you to open IO objects (CSV::foreach(), CSV::open(), CSV::read(), and CSV::readlines()) do allow you to specify the Encoding."
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: One minor exception comes when generating CSV into a String with an Encoding that is not ASCII compatible. There's no existing data for CSV to use to prepare itself and thus you will probably need to manually specify the desired Encoding for most of those cases. It will try to guess using the fields in a row of output though, when using CSV::generate_line() or Array#to_csv().
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: I try to point out any other Encoding issues in the documentation of methods as they come up.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: This has been tested to the best of my ability with all non-&quot;dummy&quot; Encodings Ruby ships with. However, it is brave new code and may have some bugs. Please feel free to {report}[mailto:james@grayproductions.net] any issues you find with it.
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The version of the installed library.
+  name: VERSION
+  value: "\"2.4.5\".freeze"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: A FieldInfo Struct contains details about a field's position in the data source it was read from. CSV will pass this Struct to some blocks that make decisions based on field structure. See CSV.convert_fields() for an example.
+  - !ruby/object:RDoc::Markup::Flow::LIST 
+    contents: 
+    - !ruby/struct:RDoc::Markup::Flow::LI 
+      :label: "<b><tt>index</tt></b>:"
+      :body: The zero-based index of the field in its row.
+    - !ruby/struct:RDoc::Markup::Flow::LI 
+      :label: "<b><tt>line</tt></b>:"
+      :body: The line of the data source this row is from.
+    - !ruby/struct:RDoc::Markup::Flow::LI 
+      :label: "<b><tt>header</tt></b>:"
+      :body: The header for the column, when available.
+    type: :NOTE
+  name: FieldInfo
+  value: Struct.new(:index, :line, :header)
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: A Regexp used to find and convert some common Date formats.
+  name: DateMatcher
+  value: "/ \\A(?: (\\w+,?\\s+)?\\w+\\s+\\d{1,2},?\\s+\\d{2,4} |                             \\d{4}-\\d{2}-\\d{2} )\\z /x"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: A Regexp used to find and convert some common DateTime formats.
+  name: DateTimeMatcher
+  value: "/ \\A(?: (\\w+,?\\s+)?\\w+\\s+\\d{1,2}\\s+\\d{1,2}:\\d{1,2}:\\d{1,2},?\\s+\\d{2,4} |             \\d{4}-\\d{2}-\\d{2}\\s\\d{2}:\\d{2}:\\d{2} )\\z /x"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The encoding used by all converters.
+  name: ConverterEncoding
+  value: Encoding.find("UTF-8")
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: This Hash holds the built-in converters of CSV that can be accessed by name. You can select Converters with CSV.convert() or through the <tt>options</tt> Hash passed to CSV::new().
+  - !ruby/object:RDoc::Markup::Flow::LIST 
+    contents: 
+    - !ruby/struct:RDoc::Markup::Flow::LI 
+      :label: "<b><tt>:integer</tt></b>:"
+      :body: Converts any field Integer() accepts.
+    - !ruby/struct:RDoc::Markup::Flow::LI 
+      :label: "<b><tt>:float</tt></b>:"
+      :body: Converts any field Float() accepts.
+    - !ruby/struct:RDoc::Markup::Flow::LI 
+      :label: "<b><tt>:numeric</tt></b>:"
+      :body: A combination of <tt>:integer</tt> and <tt>:float</tt>.
+    - !ruby/struct:RDoc::Markup::Flow::LI 
+      :label: "<b><tt>:date</tt></b>:"
+      :body: Converts any field Date::parse() accepts.
+    - !ruby/struct:RDoc::Markup::Flow::LI 
+      :label: "<b><tt>:date_time</tt></b>:"
+      :body: Converts any field DateTime::parse() accepts.
+    - !ruby/struct:RDoc::Markup::Flow::LI 
+      :label: "<b><tt>:all</tt></b>:"
+      :body: All built-in converters. A combination of <tt>:date_time</tt> and <tt>:numeric</tt>.
+    type: :NOTE
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: All built-in converters transcode field data to UTF-8 before attempting a conversion. If your data cannot be transcoded to UTF-8 the conversion will fail and the field will remain unchanged.
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: This Hash is intentionally left unfrozen and users should feel free to add values to it that can be accessed by all CSV objects.
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: To add a combo field, the value should be an Array of names. Combo fields can be nested with other combo fields.
+  name: Converters
+  value: "{ integer:   lambda { |f|                     Integer(f.encode(ConverterEncoding)) rescue f                   },                   float:     lambda { |f|                     Float(f.encode(ConverterEncoding)) rescue f"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: This Hash holds the built-in header converters of CSV that can be accessed by name. You can select HeaderConverters with CSV.header_convert() or through the <tt>options</tt> Hash passed to CSV::new().
+  - !ruby/object:RDoc::Markup::Flow::LIST 
+    contents: 
+    - !ruby/struct:RDoc::Markup::Flow::LI 
+      :label: "<b><tt>:downcase</tt></b>:"
+      :body: Calls downcase() on the header String.
+    - !ruby/struct:RDoc::Markup::Flow::LI 
+      :label: "<b><tt>:symbol</tt></b>:"
+      :body: The header String is downcased, spaces are replaced with underscores, non-word characters are dropped, and finally to_sym() is called.
+    type: :NOTE
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: All built-in header converters transcode header data to UTF-8 before attempting a conversion. If your data cannot be transcoded to UTF-8 the conversion will fail and the header will remain unchanged.
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: This Hash is intetionally left unfrozen and users should feel free to add values to it that can be accessed by all CSV objects.
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: To add a combo field, the value should be an Array of names. Combo fields can be nested with other combo fields.
+  name: HeaderConverters
+  value: "{     downcase: lambda { |h| h.encode(ConverterEncoding).downcase },     symbol:   lambda { |h|       h.encode(ConverterEncoding).downcase.gsub(/\\s+/, \"_\").                                            gsub(/\\W+/, \"\").to_sym"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: "The options used when no overrides are given by calling code. They are:"
+  - !ruby/object:RDoc::Markup::Flow::LIST 
+    contents: 
+    - !ruby/struct:RDoc::Markup::Flow::LI 
+      :label: "<b><tt>:col_sep</tt></b>:"
+      :body: <tt>&quot;,&quot;</tt>
+    - !ruby/struct:RDoc::Markup::Flow::LI 
+      :label: "<b><tt>:row_sep</tt></b>:"
+      :body: <tt>:auto</tt>
+    - !ruby/struct:RDoc::Markup::Flow::LI 
+      :label: "<b><tt>:quote_char</tt></b>:"
+      :body: <tt>'&quot;'</tt>
+    - !ruby/struct:RDoc::Markup::Flow::LI 
+      :label: "<b><tt>:field_size_limit</tt></b>:"
+      :body: <tt>nil</tt>
+    - !ruby/struct:RDoc::Markup::Flow::LI 
+      :label: "<b><tt>:converters</tt></b>:"
+      :body: <tt>nil</tt>
+    - !ruby/struct:RDoc::Markup::Flow::LI 
+      :label: "<b><tt>:unconverted_fields</tt></b>:"
+      :body: <tt>nil</tt>
+    - !ruby/struct:RDoc::Markup::Flow::LI 
+      :label: "<b><tt>:headers</tt></b>:"
+      :body: <tt>false</tt>
+    - !ruby/struct:RDoc::Markup::Flow::LI 
+      :label: "<b><tt>:return_headers</tt></b>:"
+      :body: <tt>false</tt>
+    - !ruby/struct:RDoc::Markup::Flow::LI 
+      :label: "<b><tt>:header_converters</tt></b>:"
+      :body: <tt>nil</tt>
+    - !ruby/struct:RDoc::Markup::Flow::LI 
+      :label: "<b><tt>:skip_blanks</tt></b>:"
+      :body: <tt>false</tt>
+    - !ruby/struct:RDoc::Markup::Flow::LI 
+      :label: "<b><tt>:force_quotes</tt></b>:"
+      :body: <tt>false</tt>
+    type: :NOTE
+  name: DEFAULT_OPTIONS
+  value: "{ col_sep:            \",\",                       row_sep:            :auto,                       quote_char:         '\"',                        field_size_limit:   nil,                       converters:         nil,                       unconverted_fields: nil,                       headers:            false,                       return_headers:     false,                       header_converters:  nil,                       skip_blanks:        false,                       force_quotes:       false }.freeze"
+full_name: CSV
+includes: 
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: Enumerable
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: "<<"
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: add_converter
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: add_row
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: add_unconverted_fields
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: convert
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: convert_fields
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: converters
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: each
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: encode_re
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: encode_str
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: escape_re
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: force_quotes?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: gets
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: header_convert
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: header_converters
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: header_row?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: headers
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: init_converters
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: init_headers
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: init_parsers
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: init_separators
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: inspect
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: parse_headers
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: puts
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: read
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: read_to_char
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: readline
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: readlines
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: return_headers?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: rewind
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: shift
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: skip_blanks?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: unconverted_fields?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: write_headers?
+name: CSV
+superclass: Object

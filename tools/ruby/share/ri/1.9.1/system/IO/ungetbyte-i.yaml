@@ -1,0 +1,17 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Pushes back bytes (passed as a parameter) onto <em>ios</em>, such that a subsequent buffered read will return it. Only one byte may be pushed back before a subsequent read operation (that is, you will be able to read only the last of several bytes that have been pushed back). Has no effect with unbuffered reads (such as <tt>IO#sysread</tt>).
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   f = File.new(&quot;testfile&quot;)   #=&gt; #&lt;File:testfile&gt;\n   b = f.getbyte              #=&gt; 0x38\n   f.ungetbyte(b)             #=&gt; nil\n   f.getbyte                  #=&gt; 0x38\n"
+full_name: IO#ungetbyte
+is_singleton: false
+name: ungetbyte
+params: |
+  ios.ungetbyte(string)   => nil
+  ios.ungetbyte(integer)   => nil
+
+visibility: public

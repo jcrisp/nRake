@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: RSS::Element::add_need_initialize_variable
+is_singleton: true
+name: add_need_initialize_variable
+params: (variable_name)
+visibility: public

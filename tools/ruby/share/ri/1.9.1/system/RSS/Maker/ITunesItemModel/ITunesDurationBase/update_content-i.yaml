@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: RSS::Maker::ITunesItemModel::ITunesDurationBase#update_content
+is_singleton: false
+name: update_content
+params: ()
+visibility: private

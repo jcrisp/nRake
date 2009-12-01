@@ -1,0 +1,74 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: write_extra_pages
+comment: 
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: FONTS
+  value: "\"Verdana, Arial, Helvetica, sans-serif\""
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: CENTRAL_STYLE
+  value: "<<-EOF body,p { font-family: <%= values[\"fonts\"] %>;        color: #000040; background: #BBBBBB; }  td { font-family: <%= values[\"fonts\"] %>;        color: #000040; }  .attr-rw { font-size: small; color: #444488 }  .title-row {color:      #eeeeff;             background: #BBBBDD; }  .big-title-font { color: white;                   font-family: <%= values[\"fonts\"] %>;                   font-size: large;                   height: 50px}  .small-title-font { color: purple;                     font-family: <%= values[\"fonts\"] %>;                     font-size: small; }  .aqua { color: purple }  #diagram img {   border: 0; }  .method-name, attr-name {       font-family: monospace; font-weight: bold; }  .tablesubtitle {    width: 100%;    margin-top: 1ex;    margin-bottom: .5ex;    padding: 5px 0px 5px 20px;    font-size: large;    color: purple;    background: #BBBBCC; }  .tablesubsubtitle {    width: 100%;    margin-top: 1ex;    margin-bottom: .5ex;    padding: 5px 0px 5px 20px;    font-size: medium;    color: white;    background: #BBBBCC; }  .name-list {   font-family: monospace;   margin-left: 40px;   margin-bottom: 2ex;   line-height: 140%; }  .description {   margin-left: 40px;   margin-bottom: 2ex;   line-height: 140%; }  .methodtitle {   font-size: medium;   text_decoration: none;   padding: 3px 3px 3px 20px;   color: #0000AA; }  .ruby-comment    { color: green; font-style: italic } .ruby-constant   { color: #4433aa; font-weight: bold; } .ruby-identifier { color: #222222;  } .ruby-ivar       { color: #2233dd; } .ruby-keyword    { color: #3333FF; font-weight: bold } .ruby-node       { color: #777777; } .ruby-operator   { color: #111111;  } .ruby-regexp     { color: #662222; } .ruby-value      { color: #662222; font-style: italic }  .srcbut { float: right }   EOF"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: INDEX_STYLE
+  value: "<<-EOF body {   background-color: #bbbbbb;   font-family: #{FONTS};   font-size: 11px;   font-style: normal;   line-height: 14px;   color: #000040; }  div.banner {   background: #bbbbcc;   color: white;   padding: 1;   margin: 0;   font-size: 90%;   font-weight: bold;   line-height: 1.1;   text-align: center;   width: 100%; } EOF"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: FACTORY
+  value: "RDoc::Generator::HTML::     KilmerFactory.new(:central_css => CENTRAL_STYLE,                       :index_css => INDEX_STYLE,                       :method_list_heading => \"Subroutines and Functions\",                       :class_and_module_list_heading => \"Classes and Modules\",                       :attribute_list_heading => \"Arguments\")"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: STYLE
+  value: FACTORY.get_STYLE()
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: METHOD_LIST
+  value: FACTORY.get_METHOD_LIST()
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: BODY
+  value: FACTORY.get_BODY()
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: FILE_PAGE
+  value: FACTORY.get_FILE_PAGE()
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: CLASS_PAGE
+  value: FACTORY.get_CLASS_PAGE()
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: SRC_PAGE
+  value: FACTORY.get_SRC_PAGE()
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: FR_INDEX_BODY
+  value: FACTORY.get_FR_INDEX_BODY()
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: FILE_INDEX
+  value: FACTORY.get_FILE_INDEX()
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: CLASS_INDEX
+  value: FACTORY.get_CLASS_INDEX()
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: METHOD_INDEX
+  value: FACTORY.get_METHOD_INDEX()
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: INDEX
+  value: FACTORY.get_INDEX()
+full_name: RDoc::Generator::HTML::HEFSS
+includes: []
+
+instance_methods: []
+
+name: HEFSS

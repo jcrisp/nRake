@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns whether input encoding is Shift_JIS or not.
+full_name: Kconv::issjis
+is_singleton: true
+name: issjis
+params: |
+  Kconv.issjis(str)   => true or false
+
+visibility: public

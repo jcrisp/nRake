@@ -1,0 +1,19 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: 
+- !ruby/object:RDoc::RI::AliasName 
+  name: join
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Builds a command line string from an argument list <tt>array</tt> joining all elements escaped for Bourne shell and separated by a space.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  open('|' + Shellwords.join(['grep', pattern, *files])) { |pipe|\n    # ...\n  }\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: +Array#shelljoin+ is a shorthand for this function.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  open('|' + ['grep', pattern, *files].shelljoin) { |pipe|\n    # ...\n  }\n"
+full_name: Shellwords::shelljoin
+is_singleton: true
+name: shelljoin
+params: (array)
+visibility: public

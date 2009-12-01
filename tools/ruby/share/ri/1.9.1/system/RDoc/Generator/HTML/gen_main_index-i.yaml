@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The main index page is mostly a template frameset, but includes the initial page. If the <tt>--main</tt> option was given, we use this as our main page, otherwise we use the first file specified on the command line.
+full_name: RDoc::Generator::HTML#gen_main_index
+is_singleton: false
+name: gen_main_index
+params: ()
+visibility: private

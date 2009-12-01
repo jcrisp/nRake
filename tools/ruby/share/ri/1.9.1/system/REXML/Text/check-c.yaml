@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: check for illegal characters
+full_name: REXML::Text::check
+is_singleton: true
+name: check
+params: (string, pattern, doctype)
+visibility: public

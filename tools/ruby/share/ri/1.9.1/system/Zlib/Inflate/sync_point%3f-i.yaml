@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Quoted verbatim from original documentation:"
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  What is this?\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: <tt>:)</tt>
+full_name: Zlib::Inflate#sync_point?
+is_singleton: false
+name: sync_point?
+params: ()
+visibility: public

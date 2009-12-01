@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: modifies the <em>index</em>th byte as <em>int</em>.
+full_name: String#setbyte
+is_singleton: false
+name: setbyte
+params: |
+  str.setbyte(index, int) => int
+
+visibility: public

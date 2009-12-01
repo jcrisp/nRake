@@ -1,0 +1,34 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: append_features
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: define_aliases
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: extend_object
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+constants: []
+
+full_name: Mutex_m
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: mu_extended
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: mu_initialize
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: mu_lock
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: mu_locked?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: mu_synchronize
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: mu_try_lock
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: mu_unlock
+name: Mutex_m

@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: Date#jisx0301
+is_singleton: false
+name: jisx0301
+params: ()
+visibility: public

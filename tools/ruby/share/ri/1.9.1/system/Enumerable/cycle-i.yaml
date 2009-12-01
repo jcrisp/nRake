@@ -1,0 +1,19 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Calls <em>block</em> for each element of <em>enum</em> repeatedly <em>n</em> times or forever if none or nil is given. If a non-positive number is given or the collection is empty, does nothing. Returns nil if the loop has finished without getting interrupted.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Enumerable#cycle saves elements in an internal array so changes to <em>enum</em> after the first pass have no effect.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   a = [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;]\n   a.cycle {|x| puts x }  # print, a, b, c, a, b, c,.. forever.\n   a.cycle(2) {|x| puts x }  # print, a, b, c, a, b, c.\n"
+full_name: Enumerable#cycle
+is_singleton: false
+name: cycle
+params: |
+  enum.cycle {|obj| block }
+  enum.cycle(n) {|obj| block }
+
+visibility: public

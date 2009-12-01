@@ -1,0 +1,29 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: open
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: open_server
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: parse_uri
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: uri_option
+comment: 
+constants: []
+
+full_name: DRb::DRbSSLSocket
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: accept
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: close
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: stream
+name: DRbSSLSocket
+superclass: DRb::DRbTCPSocket

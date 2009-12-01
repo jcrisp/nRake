@@ -1,0 +1,35 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Accepts an incoming connection using accept(2) after O_NONBLOCK is set for the underlying file descriptor. It returns an accepted UNIXSocket for the incoming connection.
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 3
+  :text: Example
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "     require 'socket'\n     serv = UNIXServer.new(&quot;/tmp/sock&quot;)\n     begin # emulate blocking accept\n       sock = serv.accept_nonblock\n     rescue Errno::EAGAIN, Errno::EWOULDBLOCK, Errno::ECONNABORTED, Errno::EPROTO, Errno::EINTR\n       IO.select([serv])\n       retry\n     end\n     # sock is an accepted socket.\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Refer to Socket#accept for the exceptions that may be thrown if the call to UNIXServer#accept_nonblock fails.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: UNIXServer#accept_nonblock may raise any error corresponding to accept(2) failure, including Errno::EWOULDBLOCK.
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 3
+  :text: See
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: UNIXServer#accept
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: Socket#accept
+  type: :BULLET
+full_name: UNIXServer#accept_nonblock
+is_singleton: false
+name: accept_nonblock
+params: |
+  unixserver.accept_nonblock => unixsocket
+
+visibility: public

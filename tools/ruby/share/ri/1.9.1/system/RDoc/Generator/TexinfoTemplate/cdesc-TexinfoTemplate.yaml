@@ -1,0 +1,30 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Basically just a wrapper around ERB. Should probably use RDoc::TemplatePage instead
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: BASE_DIR
+  value: "::File.expand_path(::File.dirname(__FILE__))"
+full_name: RDoc::Generator::TexinfoTemplate
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: href
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: method_prefix
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: render
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: target
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: template
+name: TexinfoTemplate
+superclass: Object

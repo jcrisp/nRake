@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Stores header row settings and loads header converters, if needed.
+full_name: CSV#init_headers
+is_singleton: false
+name: init_headers
+params: (options)
+visibility: private

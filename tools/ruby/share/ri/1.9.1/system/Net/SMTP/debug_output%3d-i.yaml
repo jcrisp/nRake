@@ -1,0 +1,17 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: 
+- !ruby/object:RDoc::RI::AliasName 
+  name: set_debug_output
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "WARNING: This method causes serious security holes. Use this method for only debugging."
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Set an output stream for debug logging. You must call this before #start."
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  # example\n  smtp = Net::SMTP.new(addr, port)\n  smtp.set_debug_output $stderr\n  smtp.start do |smtp|\n    ....\n  end\n"
+full_name: Net::SMTP#debug_output=
+is_singleton: false
+name: debug_output=
+params: (arg)
+visibility: public

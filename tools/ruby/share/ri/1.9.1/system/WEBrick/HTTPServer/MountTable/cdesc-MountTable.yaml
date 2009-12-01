@@ -1,0 +1,27 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+constants: []
+
+full_name: WEBrick::HTTPServer::MountTable
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: "[]"
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: "[]="
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: compile
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: delete
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: normalize
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: scan
+name: MountTable
+superclass: Object

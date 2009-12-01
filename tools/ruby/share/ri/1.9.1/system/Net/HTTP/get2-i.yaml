@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Alias for #request_get"
+full_name: Net::HTTP#get2
+is_singleton: false
+name: get2
+params: (path, initheader = nil)
+visibility: public

@@ -1,0 +1,17 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Error raised when a response from the server is non-parseable.
+constants: []
+
+full_name: Net::IMAP::ResponseParseError
+includes: []
+
+instance_methods: []
+
+name: ResponseParseError
+superclass: Net::IMAP::Error

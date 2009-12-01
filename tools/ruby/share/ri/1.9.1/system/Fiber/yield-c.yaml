@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Yields control back to the context that resumed the fiber, passing along any arguments that were passed to it. The fiber will resume processing at this point when <tt>resume</tt> is called next. Any arguments passed to the next <tt>resume</tt> will be the value that this <tt>Fiber.yield</tt> expression evaluates to.
+full_name: Fiber::yield
+is_singleton: true
+name: yield
+params: |
+  Fiber.yield(args, ...) -> obj
+
+visibility: public

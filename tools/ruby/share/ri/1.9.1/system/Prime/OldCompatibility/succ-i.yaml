@@ -1,0 +1,13 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: 
+- !ruby/object:RDoc::RI::AliasName 
+  name: next
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the next prime number and forwards internal pointer.
+full_name: Prime::OldCompatibility#succ
+is_singleton: false
+name: succ
+params: ()
+visibility: public

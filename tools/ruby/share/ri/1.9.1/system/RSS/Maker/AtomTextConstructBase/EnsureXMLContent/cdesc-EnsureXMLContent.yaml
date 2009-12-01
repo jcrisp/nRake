@@ -1,0 +1,22 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: included
+comment: 
+constants: []
+
+full_name: RSS::Maker::AtomTextConstructBase::EnsureXMLContent
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: ensure_xml_content
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: set_xhtml_uri_as_default_uri
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: xhtml=
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: xml_content=
+name: EnsureXMLContent

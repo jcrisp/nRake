@@ -1,0 +1,20 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the original string of the pattern.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "    /ab+c/ix.source #=&gt; &quot;ab+c&quot;\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Note that escape sequences are retained as is.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   /\\x20+/.source  #=&gt; &quot;\\x20\\+&quot;\n"
+full_name: Regexp#source
+is_singleton: false
+name: source
+params: |
+  rxp.source   => str
+
+visibility: public

@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Deletes the given object from the set and returns self. Use <tt>subtract</tt> to delete many items at once.
+full_name: Set#delete
+is_singleton: false
+name: delete
+params: (o)
+visibility: public

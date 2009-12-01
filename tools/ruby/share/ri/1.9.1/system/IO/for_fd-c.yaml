@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Synonym for <tt>IO.new</tt>.
+full_name: IO::for_fd
+is_singleton: true
+name: for_fd
+params: |
+  IO.for_fd(fd, mode [, opt])    => io
+
+visibility: public

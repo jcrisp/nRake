@@ -1,0 +1,26 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Sets an element, replacing any previous matching element. If no existing element is found ,the element is added.
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "index:"
+    :body: Used to find a matching element to replace. See []().
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "element:"
+    :body: The element to replace the existing element with the previous element
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "Returns:"
+    :body: nil if no previous element was found.
+  type: :NOTE
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: " doc = Document.new '&lt;a/&gt;'\n doc.root.elements[10] = Element.new('b')    #-&gt; &lt;a&gt;&lt;b/&gt;&lt;/a&gt;\n doc.root.elements[1]                        #-&gt; &lt;b/&gt;\n doc.root.elements[1] = Element.new('c')     #-&gt; &lt;a&gt;&lt;c/&gt;&lt;/a&gt;\n doc.root.elements['c'] = Element.new('d')   #-&gt; &lt;a&gt;&lt;d/&gt;&lt;/a&gt;\n"
+full_name: REXML::Elements#[]=
+is_singleton: false
+name: "[]="
+params: ( index, element )
+visibility: public

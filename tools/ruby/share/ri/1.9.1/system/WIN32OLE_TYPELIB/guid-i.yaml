@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns guid string which specifies type library.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   tlib = WIN32OLE_TYPELIB.new('Microsoft Excel 9.0 Object Library')\n   guid = tlib.guid # -&gt; '{00020813-0000-0000-C000-000000000046}'\n"
+full_name: WIN32OLE_TYPELIB#guid
+is_singleton: false
+name: guid
+params: |
+  WIN32OLE_TYPELIB#guid -> The guid string.
+
+visibility: public

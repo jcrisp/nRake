@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Split a file path into individual directory names.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Example:"
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  split_all(&quot;a/b/c&quot;) =&gt;  ['a', 'b', 'c']\n"
+full_name: FileUtils#split_all
+is_singleton: false
+name: split_all
+params: (path)
+visibility: public

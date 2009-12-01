@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the operating system's temporary file path.
+full_name: Dir::tmpdir
+is_singleton: true
+name: tmpdir
+params: ()
+visibility: public

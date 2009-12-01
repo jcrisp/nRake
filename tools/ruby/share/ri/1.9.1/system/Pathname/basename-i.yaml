@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: See <tt>File.basename</tt>. Returns the last component of the path.
+full_name: Pathname#basename
+is_singleton: false
+name: basename
+params: (*args)
+visibility: public

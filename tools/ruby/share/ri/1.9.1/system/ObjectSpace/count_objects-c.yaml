@@ -1,0 +1,22 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Counts objects for each type.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "It returns a hash as: {:TOTAL=&gt;10000, :FREE=&gt;3011, :T_OBJECT=&gt;6, :T_CLASS=&gt;404, ...}"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: If the optional argument, result_hash, is given, it is overwritten and returned. This is intended to avoid probe effect.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The contents of the returned hash is implementation defined. It may be changed in future.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: This method is not expected to work except C Ruby.
+full_name: ObjectSpace::count_objects
+is_singleton: true
+name: count_objects
+params: |
+  ObjectSpace.count_objects([result_hash]) -> hash
+
+visibility: public

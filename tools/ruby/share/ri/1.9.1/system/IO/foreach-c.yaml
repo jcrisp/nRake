@@ -1,0 +1,24 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Executes the block for every line in the named I/O port, where lines are separated by <em>sep</em>.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   IO.foreach(&quot;testfile&quot;) {|x| print &quot;GOT &quot;, x }\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: <em>produces:</em>
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   GOT This is line one\n   GOT This is line two\n   GOT This is line three\n   GOT And so on...\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: If the last argument is a hash, it's the keyword argument to open. See <tt>IO.read</tt> for detail.
+full_name: IO::foreach
+is_singleton: true
+name: foreach
+params: |
+  IO.foreach(name, sep=$/ [, open_args]) {|line| block }     => nil
+  IO.foreach(name, limit [, open_args]) {|line| block }      => nil
+  IO.foreach(name, sep, limit [, open_args]) {|line| block } => nil
+
+visibility: public

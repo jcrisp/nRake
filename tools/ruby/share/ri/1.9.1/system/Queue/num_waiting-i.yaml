@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the number of threads waiting on the queue.
+full_name: Queue#num_waiting
+is_singleton: false
+name: num_waiting
+params: ()
+visibility: public

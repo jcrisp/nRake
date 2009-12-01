@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the string representation of the path
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   File.path(&quot;/dev/null&quot;)          #=&gt; &quot;/dev/null&quot;\n   File.path(Pathname.new(&quot;/tmp&quot;)) #=&gt; &quot;/tmp&quot;\n"
+full_name: File::path
+is_singleton: true
+name: path
+params: |
+  File.path(path) -> string
+
+visibility: public

@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Search for YPath entry and return a list of qualified paths.
+full_name: YAML::BaseNode#search
+is_singleton: false
+name: search
+params: ( ypath_str )
+visibility: public

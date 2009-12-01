@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the offset of the character immediately following the end of the <em>n</em>th element of the match array in the string. <em>n</em> can be a string or symbol to reference a named capture.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   m = /(.)(.)(\\d+)(\\d)/.match(&quot;THX1138.&quot;)\n   m.end(0)         #=&gt; 7\n   m.end(2)         #=&gt; 3\n\n   m = /(?&lt;foo&gt;.)(.)(?&lt;bar&gt;.)/.match(&quot;hoge&quot;)\n   p m.end(:foo)    #=&gt; 1\n   p m.end(:bar)    #=&gt; 3\n"
+full_name: MatchData#end
+is_singleton: false
+name: end
+params: |
+  mtch.end(n)   => integer
+
+visibility: public

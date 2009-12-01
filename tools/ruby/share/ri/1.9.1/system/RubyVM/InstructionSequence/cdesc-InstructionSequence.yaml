@@ -1,0 +1,17 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: declare ::VM::InstructionSequence
+constants: []
+
+full_name: RubyVM::InstructionSequence
+includes: []
+
+instance_methods: []
+
+name: InstructionSequence
+superclass: Object

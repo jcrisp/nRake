@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the object that defines the end of <em>rng</em>.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   (1..10).end    #=&gt; 10\n   (1...10).end   #=&gt; 10\n"
+full_name: Range#end
+is_singleton: false
+name: end
+params: |
+  rng.end    => obj
+
+visibility: public

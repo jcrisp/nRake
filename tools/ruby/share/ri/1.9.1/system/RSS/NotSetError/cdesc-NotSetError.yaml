@@ -1,0 +1,23 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: 
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  name: name
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  name: variables
+  rw: R
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+constants: []
+
+full_name: RSS::NotSetError
+includes: []
+
+instance_methods: []
+
+name: NotSetError
+superclass: RSS::Error

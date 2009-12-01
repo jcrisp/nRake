@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Time stamp for file task.
+full_name: Rake::FileTask#timestamp
+is_singleton: false
+name: timestamp
+params: ()
+visibility: public

@@ -1,0 +1,21 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Sets the parent of this child to the supplied argument.
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "other:"
+    :body: Must be a Parent object. If this object is the same object as the existing parent of this child, no action is taken. Otherwise, this child is removed from the current parent (if one exists), and is added to the new parent.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "Returns:"
+    :body: The parent added
+  type: :NOTE
+full_name: REXML::Child#parent=
+is_singleton: false
+name: parent=
+params: ( other )
+visibility: public

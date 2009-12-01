@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the /etc/passwd information for the user with specified login name.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The information is returned as a Struct::Passwd; see getpwent above for details.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "e.g. * Etc.getpwnam('root') -&gt; #&lt;struct Struct::Passwd name=&quot;root&quot;, passwd=&quot;x&quot;, uid=0, gid=0, gecos=&quot;root&quot;,dir=&quot;/root&quot;, shell=&quot;/bin/bash&quot;&gt;"
+full_name: Etc::getpwnam
+is_singleton: true
+name: getpwnam
+params: (p1)
+visibility: public

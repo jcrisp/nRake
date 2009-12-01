@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Perform a block with $verbose enabled.
+full_name: Sys#verbose
+is_singleton: false
+name: verbose
+params: (&block)
+visibility: public

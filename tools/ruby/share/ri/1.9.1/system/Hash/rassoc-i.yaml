@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Searches through the hash comparing <em>obj</em> with the value using <tt>==</tt>. Returns the first key-value pair (two elements array) that matches. See also <tt>Array#rassoc</tt>.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   a = {1=&gt; &quot;one&quot;, 2 =&gt; &quot;two&quot;, 3 =&gt; &quot;three&quot;, &quot;ii&quot; =&gt; &quot;two&quot;}\n   a.rassoc(&quot;two&quot;)    #=&gt; [2, &quot;two&quot;]\n   a.rassoc(&quot;four&quot;)   #=&gt; nil\n"
+full_name: Hash#rassoc
+is_singleton: false
+name: rassoc
+params: |
+  hash.rassoc(key) -> an_array or nil
+
+visibility: public

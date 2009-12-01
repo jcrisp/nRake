@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Iterates the given block using the object and the method specified in the first place. If no block is given, returns self.
+full_name: Enumerator#each
+is_singleton: false
+name: each
+params: |
+  enum.each {...}
+
+visibility: public

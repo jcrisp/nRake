@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Sends a UNLOCK request to the <tt>path</tt> and gets a response, as an HTTPResponse object.
+full_name: Net::HTTP#unlock
+is_singleton: false
+name: unlock
+params: (path, body, initheader = nil)
+visibility: public

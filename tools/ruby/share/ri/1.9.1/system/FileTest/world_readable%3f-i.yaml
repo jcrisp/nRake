@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: If <em>file_name</em> is readable by others, returns an integer representing the file permission bits of <em>file_name</em>. Returns <tt>nil</tt> otherwise. The meaning of the bits is platform dependent; on Unix systems, see <tt>stat(2)</tt>.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   File.world_readable?(&quot;/etc/passwd&quot;)           # =&gt; 420\n   m = File.world_readable?(&quot;/etc/passwd&quot;)\n   sprintf(&quot;%o&quot;, m)                              # =&gt; &quot;644&quot;\n"
+full_name: FileTest#world_readable?
+is_singleton: false
+name: world_readable?
+params: |
+  File.world_readable?(file_name)   => fixnum or nil
+
+visibility: public

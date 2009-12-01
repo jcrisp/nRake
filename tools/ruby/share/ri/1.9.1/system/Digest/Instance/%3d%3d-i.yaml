@@ -1,0 +1,15 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: If a string is given, checks whether it is equal to the hex-encoded hash value of the digest object. If another digest instance is given, checks whether they have the same hash value. Otherwise returns false.
+full_name: Digest::Instance#==
+is_singleton: false
+name: ==
+params: |
+  digest_obj == another_digest_obj -> boolean
+  digest_obj == string -> boolean
+
+visibility: public

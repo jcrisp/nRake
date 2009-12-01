@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Clear the task list. This cause rake to immediately forget all the tasks that have been assigned. (Normally used in the unit tests.)
+full_name: Rake::Task::clear
+is_singleton: true
+name: clear
+params: ()
+visibility: public

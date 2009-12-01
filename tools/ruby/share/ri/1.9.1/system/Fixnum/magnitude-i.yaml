@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the absolute value of <em>fix</em>.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   -12345.abs   #=&gt; 12345\n   12345.abs    #=&gt; 12345\n"
+full_name: Fixnum#magnitude
+is_singleton: false
+name: magnitude
+params: |
+  fix.abs -> aFixnum
+
+visibility: public

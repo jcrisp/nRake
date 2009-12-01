@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns supported authentication methods on this server. You cannot get valid value before opening SMTP session.
+full_name: Net::SMTP#capable_auth_types
+is_singleton: false
+name: capable_auth_types
+params: ()
+visibility: public

@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Returns inspected string like as: #&lt;<em>class</em>: <em>success</em>, <em>failed</em>&gt;"
+full_name: Iconv::Failure#inspect
+is_singleton: false
+name: inspect
+params: " inspect\n"
+visibility: public

@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: <tt>true</tt> if the TupleBag to see if it has any expired entries.
+full_name: Rinda::TupleBag#has_expires?
+is_singleton: false
+name: has_expires?
+params: ()
+visibility: public

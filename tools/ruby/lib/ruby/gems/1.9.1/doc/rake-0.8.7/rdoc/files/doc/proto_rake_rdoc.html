@@ -1,0 +1,222 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>File: proto_rake.rdoc [Rake -- Ruby Make]</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <link rel="stylesheet" href="../.././rdoc-style.css" type="text/css" media="screen" />
+  <script type="text/javascript">
+  // <![CDATA[
+
+  function popupCode( url ) {
+    window.open(url, "Code", "resizable=yes,scrollbars=yes,toolbar=no,status=no,height=150,width=400")
+  }
+
+  function toggleCode( id ) {
+    if ( document.getElementById )
+      elem = document.getElementById( id );
+    else if ( document.all )
+      elem = eval( "document.all." + id );
+    else
+      return false;
+
+    elemStyle = elem.style;
+
+    if ( elemStyle.display != "block" ) {
+      elemStyle.display = "block"
+    } else {
+      elemStyle.display = "none"
+    }
+
+    return true;
+  }
+
+  // Make codeblocks hidden by default
+  document.writeln( "<style type=\"text/css\">div.method-source-code { display: none }<\/style>" )
+
+  // ]]>
+  </script>
+
+</head>
+<body>
+
+
+  <div id="fileHeader">
+    <h1>proto_rake.rdoc</h1>
+    <table class="header-table">
+    <tr class="top-aligned-row">
+      <td><strong>Path:</strong></td>
+      <td>doc/proto_rake.rdoc
+
+      </td>
+    </tr>
+    <tr class="top-aligned-row">
+      <td><strong>Last Update:</strong></td>
+      <td>2009-12-01 17:07:09 +1000</td>
+    </tr>
+    </table>
+  </div>
+  <!-- banner header -->
+
+  <div id="bodyContent">
+
+  <div id="contextContent">
+
+    <div id="description">
+      <h1>Original Prototype Rake</h1>
+<p>
+This is the original 100 line prototype rake program.
+</p>
+<hr size="1"></hr><pre>
+ #!/usr/bin/env ruby
+
+ require 'ftools'
+
+ class Task
+   TASKS = Hash.new
+
+   attr_reader :prerequisites
+
+   def initialize(task_name)
+     @name = task_name
+     @prerequisites = []
+     @actions = []
+   end
+
+   def enhance(deps=nil, &amp;block)
+     @prerequisites |= deps if deps
+     @actions &lt;&lt; block if block_given?
+     self
+   end
+
+   def name
+     @name.to_s
+   end
+
+   def invoke
+     @prerequisites.each { |n| Task[n].invoke }
+     execute if needed?
+   end
+
+   def execute
+     return if @triggered
+     @triggered = true
+     @actions.collect { |act| result = act.call(self) }.last
+   end
+
+   def needed?
+     true
+   end
+
+   def timestamp
+     Time.now
+   end
+
+   class &lt;&lt; self
+     def [](task_name)
+       TASKS[intern(task_name)] or fail &quot;Don't know how to rake #{task_name}&quot;
+     end
+
+     def define_task(args, &amp;block)
+       case args
+       when Hash
+        fail &quot;Too Many Target Names: #{args.keys.join(' ')}&quot; if args.size &gt; 1
+        fail &quot;No Task Name Given&quot; if args.size &lt; 1
+        task_name = args.keys[0]
+        deps = args[task_name]
+       else
+        task_name = args
+        deps = []
+       end
+       deps = deps.collect {|d| intern(d) }
+       get(task_name).enhance(deps, &amp;block)
+     end
+
+     def get(task_name)
+       name = intern(task_name)
+       TASKS[name] ||= self.new(name)
+     end
+
+     def intern(task_name)
+       (Symbol === task_name) ? task_name : task_name.intern
+     end
+   end
+ end
+
+ class FileTask &lt; Task
+   def needed?
+     return true unless File.exist?(name)
+     latest_prereq = @prerequisites.collect{|n| Task[n].timestamp}.max
+     return false if latest_prereq.nil?
+     timestamp &lt; latest_prereq
+   end
+
+   def timestamp
+     File.new(name.to_s).mtime
+   end
+ end
+
+ def task(args, &amp;block)
+   Task.define_task(args, &amp;block)
+ end
+
+ def file(args, &amp;block)
+   FileTask.define_task(args, &amp;block)
+ end
+
+ def sys(cmd)
+   puts cmd
+   system(cmd) or fail &quot;Command Failed: [#{cmd}]&quot;
+ end
+
+ def rake
+   begin
+     here = Dir.pwd
+     while ! File.exist?(&quot;Rakefile&quot;)
+       Dir.chdir(&quot;..&quot;)
+       fail &quot;No Rakefile found&quot; if Dir.pwd == here
+       here = Dir.pwd
+     end
+     puts &quot;(in #{Dir.pwd})&quot;
+     load &quot;./Rakefile&quot;
+     ARGV.push(&quot;default&quot;) if ARGV.size == 0
+     ARGV.each { |task_name| Task[task_name].invoke }
+   rescue Exception =&gt; ex
+     puts &quot;rake aborted ... #{ex.message}&quot;
+     puts ex.backtrace.find {|str| str =~ /Rakefile/ } || &quot;&quot;
+   end
+ end
+
+ if __FILE__ == $0 then
+   rake
+ end
+</pre>
+
+    </div>
+
+   </div>
+
+
+  </div>
+
+    <!-- if includes -->
+
+    <div id="section">
+
+
+
+
+    <!-- if method_list -->
+
+
+
+
+  </div>
+
+<div id="validator-badges">
+  <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the value raised to the power of n. Note that n must be an Integer.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Also available as the operator **
+full_name: BigDecimal#**
+is_singleton: false
+name: "**"
+params: |
+  power(n)
+
+visibility: public

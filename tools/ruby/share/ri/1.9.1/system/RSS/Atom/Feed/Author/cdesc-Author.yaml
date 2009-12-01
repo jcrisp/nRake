@@ -1,0 +1,18 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+constants: []
+
+full_name: RSS::Atom::Feed::Author
+includes: 
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: CommonModel
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: PersonConstruct
+instance_methods: []
+
+name: Author
+superclass: RSS::Element

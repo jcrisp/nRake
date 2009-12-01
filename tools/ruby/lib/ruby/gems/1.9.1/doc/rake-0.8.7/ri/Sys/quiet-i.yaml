@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Perform a block with $verbose disabled.
+full_name: Sys#quiet
+is_singleton: false
+name: quiet
+params: (&block)
+visibility: public

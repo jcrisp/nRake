@@ -1,0 +1,35 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+constants: []
+
+full_name: REXML::Validation::State
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: "<<"
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: add_event_to_arry
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: expand_ref_in
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: expected
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: generate_event
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: inspect
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: next
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: previous=
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: reset
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: to_s
+name: State
+superclass: Object

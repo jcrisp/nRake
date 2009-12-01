@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The default port for POP3 connections, port 110
+full_name: Net::POP3::default_pop3_port
+is_singleton: true
+name: default_pop3_port
+params: ()
+visibility: public

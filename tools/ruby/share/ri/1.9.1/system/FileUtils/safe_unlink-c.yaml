@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Alias for #rm_f"
+full_name: FileUtils::safe_unlink
+is_singleton: true
+name: safe_unlink
+params: (list, options = {})
+visibility: public

@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the value as an integer (Fixnum or Bignum).
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: If the BigNumber is infinity or NaN, returns nil.
+full_name: BigDecimal#to_i
+is_singleton: false
+name: to_i
+params: ()
+visibility: public

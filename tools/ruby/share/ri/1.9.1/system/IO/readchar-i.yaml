@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Reads a one-character string from <em>ios</em>. Raises an <tt>EOFError</tt> on end of file.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   f = File.new(&quot;testfile&quot;)\n   f.readchar   #=&gt; &quot;h&quot;\n   f.readchar   #=&gt; &quot;e&quot;\n"
+full_name: IO#readchar
+is_singleton: false
+name: readchar
+params: |
+  ios.readchar   => string
+
+visibility: public

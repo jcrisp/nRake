@@ -1,0 +1,45 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: getegid
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: geteuid
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: getgid
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: getuid
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: issetugid
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: setegid
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: seteuid
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: setgid
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: setregid
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: setresgid
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: setresuid
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: setreuid
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: setrgid
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: setruid
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: setuid
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The <tt>Process::Sys</tt> module contains UID and GID functions which provide direct bindings to the system calls of the same names instead of the more-portable versions of the same functionality found in the <tt>Process</tt>, <tt>Process::UID</tt>, and <tt>Process::GID</tt> modules.
+constants: []
+
+full_name: Process::Sys
+includes: []
+
+instance_methods: []
+
+name: Sys

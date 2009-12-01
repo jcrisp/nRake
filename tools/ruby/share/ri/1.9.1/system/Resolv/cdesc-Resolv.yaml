@@ -1,0 +1,72 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: each_address
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: each_name
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: getaddress
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: getaddresses
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: getname
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: getnames
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Resolv is a thread-aware DNS resolver library written in Ruby. Resolv can handle multiple DNS requests concurrently without blocking. The ruby interpreter.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "See also resolv-replace.rb to replace the libc resolver with # Resolv."
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Resolv can look up various DNS resources using the DNS module directly.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Examples:"
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  p Resolv.getaddress &quot;www.ruby-lang.org&quot;\n  p Resolv.getname &quot;210.251.121.214&quot;\n\n  Resolv::DNS.open do |dns|\n    ress = dns.getresources &quot;www.ruby-lang.org&quot;, Resolv::DNS::Resource::IN::A\n    p ress.map { |r| r.address }\n    ress = dns.getresources &quot;ruby-lang.org&quot;, Resolv::DNS::Resource::IN::MX\n    p ress.map { |r| [r.exchange.to_s, r.preference] }\n  end\n"
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 2
+  :text: Bugs
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: NIS is not supported.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: /etc/nsswitch.conf is not supported.
+  type: :BULLET
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: Default resolver to use for Resolv class methods.
+  name: DefaultResolver
+  value: self.new
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: Address Regexp to use for matching IP addresses.
+  name: AddressRegex
+  value: /(?:#{IPv4::Regex})|(?:#{IPv6::Regex})/
+full_name: Resolv
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: each_address
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: each_name
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: getaddress
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: getaddresses
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: getname
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: getnames
+name: Resolv
+superclass: Object

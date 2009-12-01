@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Load the pending list of imported files.
+full_name: Rake::Application#load_imports
+is_singleton: false
+name: load_imports
+params: ()
+visibility: public

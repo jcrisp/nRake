@@ -1,0 +1,21 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+constants: []
+
+full_name: Rinda::TupleBag::TupleBin
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: add
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: delete
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: find
+name: TupleBin
+superclass: Object

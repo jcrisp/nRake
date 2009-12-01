@@ -1,0 +1,17 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Return a <tt>Regexp</tt> object that is the union of the given <em>pattern</em>s, i.e., will match any of its parts. The <em>pattern</em>s can be Regexp objects, in which case their options will be preserved, or Strings. If no patterns are given, returns <tt>/(?!)/</tt>.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   Regexp.union                         #=&gt; /(?!)/\n   Regexp.union(&quot;penzance&quot;)             #=&gt; /penzance/\n   Regexp.union(&quot;a+b*c&quot;)                #=&gt; /a+b*c/\n   Regexp.union(&quot;skiing&quot;, &quot;sledding&quot;)   #=&gt; /skiing|sledding/\n   Regexp.union([&quot;skiing&quot;, &quot;sledding&quot;]) #=&gt; /skiing|sledding/\n   Regexp.union(/dogs/, /cats/i)        #=&gt; /(?-mix:dogs)|(?i-mx:cats)/\n"
+full_name: Regexp::union
+is_singleton: true
+name: union
+params: |
+  Regexp.union(pat1, pat2, ...)            => new_regexp
+  Regexp.union(pats_ary)                   => new_regexp
+
+visibility: public

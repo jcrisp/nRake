@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: This methods is used to turn a finished <tt>row</tt> into a CSV::Row. Header rows are also dealt with here, either by returning a CSV::Row with identical headers and fields (save that the fields do not go through the converters) or by reading past them to return a field row. Headers are also saved in <tt>@headers</tt> for use in future rows.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: When <tt>nil</tt>, <tt>row</tt> is assumed to be a header row not based on an actual row of the stream.
+full_name: CSV#parse_headers
+is_singleton: false
+name: parse_headers
+params: (row = nil)
+visibility: private

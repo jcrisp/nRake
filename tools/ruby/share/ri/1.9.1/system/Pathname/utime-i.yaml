@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: See <tt>File.utime</tt>. Update the access and modification times.
+full_name: Pathname#utime
+is_singleton: false
+name: utime
+params: (atime, mtime)
+visibility: public

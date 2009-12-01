@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the type library name with class name.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   tlib = WIN32OLE_TYPELIB.new('Microsoft Excel 9.0 Object Library')\n   tlib.inspect # =&gt; &quot;&lt;#WIN32OLE_TYPELIB:Microsoft Excel 9.0 Object Library&gt;&quot;\n"
+full_name: WIN32OLE_TYPELIB#inspect
+is_singleton: false
+name: inspect
+params: |
+  WIN32OLE_TYPELIB#inspect -> String
+
+visibility: public

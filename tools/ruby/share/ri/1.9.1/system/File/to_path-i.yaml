@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the pathname used to create <em>file</em> as a string. Does not normalize the name.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   File.new(&quot;testfile&quot;).path               #=&gt; &quot;testfile&quot;\n   File.new(&quot;/tmp/../tmp/xxx&quot;, &quot;w&quot;).path   #=&gt; &quot;/tmp/../tmp/xxx&quot;\n"
+full_name: File#to_path
+is_singleton: false
+name: to_path
+params: |
+  file.path -> filename
+
+visibility: public

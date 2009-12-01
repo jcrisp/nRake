@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: DEBUGGER__#display_expression
+is_singleton: false
+name: display_expression
+params: (exp, binding)
+visibility: public

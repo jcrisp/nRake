@@ -1,0 +1,26 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: IO.copy_stream copies <em>src</em> to <em>dst</em>. <em>src</em> and <em>dst</em> is either a filename or an IO.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: This method returns the number of bytes copied.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: If optional arguments are not given, the start position of the copy is the beginning of the filename or the current file offset of the IO. The end position of the copy is the end of file.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: If <em>copy_length</em> is given, No more than <em>copy_length</em> bytes are copied.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: If <em>src_offset</em> is given, it specifies the start position of the copy.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: When <em>src_offset</em> is specified and <em>src</em> is an IO, IO.copy_stream doesn't move the current file offset.
+full_name: IO::copy_stream
+is_singleton: true
+name: copy_stream
+params: |
+  IO.copy_stream(src, dst)
+  IO.copy_stream(src, dst, copy_length)
+  IO.copy_stream(src, dst, copy_length, src_offset)
+
+visibility: public

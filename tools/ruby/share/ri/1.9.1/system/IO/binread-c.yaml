@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Opens the file, optionally seeks to the given offset, then returns <em>length</em> bytes (defaulting to the rest of the file). <tt>read</tt> ensures the file is closed before returning. The open mode would be &quot;rb:ASCII-8BIT&quot;.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   IO.binread(&quot;testfile&quot;)           #=&gt; &quot;This is line one\\nThis is line two\\nThis is line three\\nAnd so on...\\n&quot;\n   IO.binread(&quot;testfile&quot;, 20)       #=&gt; &quot;This is line one\\nThi&quot;\n   IO.binread(&quot;testfile&quot;, 20, 10)   #=&gt; &quot;ne one\\nThis is line &quot;\n"
+full_name: IO::binread
+is_singleton: true
+name: binread
+params: |
+  IO.binread(name, [length [, offset]] )   => string
+
+visibility: public

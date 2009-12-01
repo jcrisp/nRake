@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "call_seq:"
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  nil.nil?               =&gt; true\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Only the object <em>nil</em> responds <tt>true</tt> to <tt>nil?</tt>.
+full_name: NilClass#nil?
+is_singleton: false
+name: nil?
+params: ()
+visibility: public

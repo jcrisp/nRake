@@ -1,0 +1,21 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: ELEMENTS
+  value: "[]"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: ELEMENT_INFOS
+  value: "[[\"author\"],                      [\"block\", :yes_other],                      [\"explicit\", :yes_clean_other],                      [\"keywords\", :csv],                      [\"subtitle\"],                      [\"summary\"]]"
+full_name: RSS::ITunesBaseModel
+includes: []
+
+instance_methods: []
+
+name: ITunesBaseModel

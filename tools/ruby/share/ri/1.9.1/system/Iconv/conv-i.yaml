@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Shorthand for
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  Iconv.iconv(to, from, str).join\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: See Iconv.iconv.
+full_name: Iconv#conv
+is_singleton: false
+name: conv
+params: " Iconv.conv(to, from, str)\n"
+visibility: public

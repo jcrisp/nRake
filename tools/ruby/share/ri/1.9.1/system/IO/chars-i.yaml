@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns an enumerator that gives each character in <em>ios</em>. The stream must be opened for reading or an <tt>IOError</tt> will be raised.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   f = File.new(&quot;testfile&quot;)\n   f.chars.to_a  #=&gt; [&quot;h&quot;, &quot;e&quot;, &quot;l&quot;, &quot;l&quot;, &quot;o&quot;]\n   f.rewind\n   f.chars.sort  #=&gt; [&quot;e&quot;, &quot;h&quot;, &quot;l&quot;, &quot;l&quot;, &quot;o&quot;]\n"
+full_name: IO#chars
+is_singleton: false
+name: chars
+params: |
+  ios.chars   => anEnumerator
+
+visibility: public

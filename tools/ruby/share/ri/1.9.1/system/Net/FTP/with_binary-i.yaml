@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: ""
+comment: 
+full_name: Net::FTP#with_binary
+is_singleton: false
+name: with_binary
+params: (newmode) {|| ...}
+visibility: private

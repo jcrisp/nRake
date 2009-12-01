@@ -1,0 +1,104 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Objects of class <tt>File::Stat</tt> encapsulate common status information for <tt>File</tt> objects. The information is recorded at the moment the <tt>File::Stat</tt> object is created; changes made to the file after that point will not be reflected. <tt>File::Stat</tt> objects are returned by <tt>IO#stat</tt>, <tt>File::stat</tt>, <tt>File#lstat</tt>, and <tt>File::lstat</tt>. Many of these methods return platform-specific values, and not all values are meaningful on all systems. See also <tt>Kernel#test</tt>.
+constants: []
+
+full_name: File::Stat
+includes: 
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: Comparable
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: <=>
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: atime
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: blksize
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: blockdev?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: blocks
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: chardev?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: ctime
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: dev
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: dev_major
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: dev_minor
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: directory?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: executable?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: executable_real?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: file?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: ftype
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: gid
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: grpowned?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: ino
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: inspect
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: mode
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: mtime
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: nlink
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: owned?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: pipe?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: pretty_print
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: rdev
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: rdev_major
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: rdev_minor
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: readable?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: readable_real?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: setgid?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: setuid?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: size
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: size?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: socket?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: sticky?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: symlink?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: uid
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: world_readable?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: world_writable?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: writable?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: writable_real?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: zero?
+name: Stat
+superclass: Object

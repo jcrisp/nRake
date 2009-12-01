@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Display information about <tt>method</tt>.
+full_name: RDoc::RI::DefaultDisplay#display_method_info
+is_singleton: false
+name: display_method_info
+params: (method)
+visibility: public

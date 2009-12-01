@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: User name for accessing proxy. If self does not use a proxy, nil.
+full_name: Net::HTTP#proxy_user
+is_singleton: false
+name: proxy_user
+params: ()
+visibility: public

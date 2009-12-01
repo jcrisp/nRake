@@ -1,0 +1,47 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: <tt>Proc</tt> objects are blocks of code that have been bound to a set of local variables. Once bound, the code may be called in different contexts and still access those variables.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   def gen_times(factor)\n     return Proc.new {|n| n*factor }\n   end\n\n   times3 = gen_times(3)\n   times5 = gen_times(5)\n\n   times3.call(12)               #=&gt; 36\n   times5.call(5)                #=&gt; 25\n   times3.call(times5.call(4))   #=&gt; 60\n"
+constants: []
+
+full_name: Proc
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: ==
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: ===
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: "[]"
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: arity
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: binding
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: call
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: curry
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: eql?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: hash
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: lambda?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: source_location
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: to_proc
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: to_s
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: yield
+name: Proc
+superclass: Object

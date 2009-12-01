@@ -1,0 +1,39 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: 
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  name: names
+  rw: R
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: TaskAguments manage the arguments passed to a task.
+constants: []
+
+full_name: Rake::TaskArguments
+includes: 
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: Enumerable
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: "[]"
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: each
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: inspect
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: lookup
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: method_missing
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new_scope
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: to_hash
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: to_s
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: with_defaults
+name: TaskArguments
+superclass: Object

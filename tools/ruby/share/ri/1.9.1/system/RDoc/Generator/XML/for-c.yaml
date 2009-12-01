@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Standard generator factory
+full_name: RDoc::Generator::XML::for
+is_singleton: true
+name: for
+params: (options)
+visibility: public

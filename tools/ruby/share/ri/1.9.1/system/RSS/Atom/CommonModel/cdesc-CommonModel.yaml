@@ -1,0 +1,26 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: append_features
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: need_parent?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: required_uri
+comment: 
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: NSPOOL
+  value: "{}"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: ELEMENTS
+  value: "[]"
+full_name: RSS::Atom::CommonModel
+includes: []
+
+instance_methods: []
+
+name: CommonModel

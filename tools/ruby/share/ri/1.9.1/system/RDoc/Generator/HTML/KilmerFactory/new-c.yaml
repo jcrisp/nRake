@@ -1,0 +1,24 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 4
+  :text: "Description:"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: This method constructs a KilmerFactory instance, which can be used to build Kilmer-style template classes. The <tt>style_attributes</tt> argument is a Hash that contains the values of the classes attributes (Symbols mapped to Strings).
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 4
+  :text: "Parameters:"
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: style_attributes
+    :body: A Hash describing the appearance of the Kilmer-style.
+  type: :LABELED
+full_name: RDoc::Generator::HTML::KilmerFactory::new
+is_singleton: true
+name: new
+params: (style_attributes)
+visibility: public

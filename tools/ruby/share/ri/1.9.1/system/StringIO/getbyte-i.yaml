@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: See IO#getbyte.
+full_name: StringIO#getbyte
+is_singleton: false
+name: getbyte
+params: |
+  strio.getbyte   -> fixnum or nil
+
+visibility: public

@@ -1,0 +1,34 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: An abstract class for enumerating pseudo-prime numbers.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Concrete subclasses should override succ, next, rewind.
+constants: []
+
+full_name: Prime::PseudoPrimeGenerator
+includes: 
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: Enumerable
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: each
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: next
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: rewind
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: succ
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: upper_bound
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: upper_bound=
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: with_object
+name: PseudoPrimeGenerator
+superclass: Object

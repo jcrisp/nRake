@@ -1,0 +1,18 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Document-method: directory?"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns <tt>true</tt> if the named file is a directory, <tt>false</tt> otherwise.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   File.directory?(&quot;.&quot;)\n"
+full_name: Dir::exist?
+is_singleton: true
+name: exist?
+params: |
+  File.directory?(file_name)   =>  true or false
+
+visibility: public

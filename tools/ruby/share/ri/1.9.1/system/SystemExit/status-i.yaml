@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Return the status value associated with this system exit.
+full_name: SystemExit#status
+is_singleton: false
+name: status
+params: |
+  system_exit.status   => fixnum
+
+visibility: public

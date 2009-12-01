@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns guessed encoding of <em>str</em> by nkf routine.
+full_name: NKF::guess
+is_singleton: true
+name: guess
+params: |
+  NKF.guess(str)  => encoding
+
+visibility: public

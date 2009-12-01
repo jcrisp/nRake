@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Set the default value of the :verbose option.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "See #new(). The initial default value is false."
+full_name: DRb::DRbServer::verbose=
+is_singleton: true
+name: verbose=
+params: (on)
+visibility: public

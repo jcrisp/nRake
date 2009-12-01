@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: RSS::Maker::Atom::Feed::Channel#to_feed
+is_singleton: false
+name: to_feed
+params: (feed)
+visibility: public

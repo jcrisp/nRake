@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Convert <tt>self</tt> to ISO-2022-JP
+full_name: String#tojis
+is_singleton: false
+name: tojis
+params: |
+  String#tojis   => string
+
+visibility: public

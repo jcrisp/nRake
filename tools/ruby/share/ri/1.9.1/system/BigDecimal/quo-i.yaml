@@ -1,0 +1,29 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Divide by the specified value.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: e.g.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  c = a.div(b,n)\n"
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "digits:"
+    :body: If specified and less than the number of significant digits of the result, the result is rounded to that number of digits, according to BigDecimal.mode.
+  type: :NOTE
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: If digits is 0, the result is the same as the / operator. If not, the result is an integer BigDecimal, by analogy with Float#div.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The alias quo is provided since div(value, 0) is the same as computing the quotient; see divmod.
+full_name: BigDecimal#quo
+is_singleton: false
+name: quo
+params: |
+  div(value, digits)
+  quo(value)
+
+visibility: public

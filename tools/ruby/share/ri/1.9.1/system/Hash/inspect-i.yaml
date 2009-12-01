@@ -1,0 +1,17 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Return the contents of this hash as a string.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "    h = { &quot;c&quot; =&gt; 300, &quot;a&quot; =&gt; 100, &quot;d&quot; =&gt; 400, &quot;c&quot; =&gt; 300  }\n    h.to_s   #=&gt; &quot;{\\&quot;c\\&quot;=&gt;300, \\&quot;a\\&quot;=&gt;100, \\&quot;d\\&quot;=&gt;400}&quot;\n"
+full_name: Hash#inspect
+is_singleton: false
+name: inspect
+params: |
+  hsh.to_s   => string
+  hsh.inspect  => string
+
+visibility: public

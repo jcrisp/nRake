@@ -1,0 +1,64 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: 
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  name: typecode
+  rw: R
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: build
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new2
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: FTP URI syntax is defined by RFC1738 section 3.2.
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: DEFAULT_PORT
+  value: "21"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: COMPONENT
+  value: "[       :scheme,        :userinfo, :host, :port,       :path, :typecode     ].freeze"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: Typecode is &quot;a&quot;, &quot;i&quot; or &quot;d&quot;.
+  - !ruby/object:RDoc::Markup::Flow::LIST 
+    contents: 
+    - !ruby/struct:RDoc::Markup::Flow::LI 
+      :label: "*"
+      :body: "&quot;a&quot; indicates a text file (the FTP command was ASCII)"
+    - !ruby/struct:RDoc::Markup::Flow::LI 
+      :label: "*"
+      :body: "&quot;i&quot; indicates a binary file (FTP command IMAGE)"
+    - !ruby/struct:RDoc::Markup::Flow::LI 
+      :label: "*"
+      :body: "&quot;d&quot; indicates the contents of a directory should be displayed"
+    type: :BULLET
+  name: TYPECODE
+  value: "['a', 'i', 'd'].freeze"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: TYPECODE_PREFIX
+  value: "';type='.freeze"
+full_name: URI::FTP
+includes: 
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: OpenURI::OpenRead
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: check_typecode
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: path
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: set_typecode
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: to_s
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: typecode=
+name: FTP
+superclass: URI::Generic

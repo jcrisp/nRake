@@ -1,0 +1,15 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The first form transcodes the contents of <em>str</em> from str.encoding to <tt>encoding</tt>. The second form transcodes the contents of <em>str</em> from src_encoding to dst_encoding. The options Hash gives details for conversion. See String#encode for details. Returns the string even if no changes were made.
+full_name: String#encode!
+is_singleton: false
+name: encode!
+params: |
+  str.encode!(encoding [, options] )   => str
+  str.encode!(dst_encoding, src_encoding [, options] )   => str
+
+visibility: public

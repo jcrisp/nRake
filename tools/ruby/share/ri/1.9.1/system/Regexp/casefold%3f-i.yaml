@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the value of the case-insensitive flag.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "    /a/.casefold?           #=&gt; false\n    /a/i.casefold?          #=&gt; true\n    /(?i:a)/.casefold?      #=&gt; false\n"
+full_name: Regexp#casefold?
+is_singleton: false
+name: casefold?
+params: |
+  rxp.casefold?   => true or false
+
+visibility: public

@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: returns the least odd prime number which is greater than <tt>n</tt>.
+full_name: Prime::EratosthenesSieve#next_to
+is_singleton: false
+name: next_to
+params: (n)
+visibility: public

@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Create a list of Method objects for each method in the corresponding context object. If the @options.show_all variable is set (corresponding to the <tt>--all</tt> option, we include all methods, otherwise just the public ones.
+full_name: RDoc::Generator::Context#collect_methods
+is_singleton: false
+name: collect_methods
+params: ()
+visibility: public

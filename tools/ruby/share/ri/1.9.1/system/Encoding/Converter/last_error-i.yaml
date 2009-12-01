@@ -1,0 +1,18 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns an exception object for the last conversion. Returns nil if the last conversion did not produce an error.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "&quot;error&quot; means that Encoding::InvalidByteSequenceError and Encoding::UndefinedConversionError for Encoding::Converter#convert and :invalid_byte_sequence, :incomplete_input and :undefined_conversion for Encoding::Converter#primitive_convert."
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: " ec = Encoding::Converter.new(&quot;utf-8&quot;, &quot;iso-8859-1&quot;)\n p ec.primitive_convert(src=&quot;\\xf1abcd&quot;, dst=&quot;&quot;)       #=&gt; :invalid_byte_sequence\n p ec.last_error      #=&gt; #&lt;Encoding::InvalidByteSequenceError: &quot;\\xF1&quot; followed by &quot;a&quot; on UTF-8&gt;\n p ec.primitive_convert(src, dst, nil, 1)             #=&gt; :destination_buffer_full\n p ec.last_error      #=&gt; nil\n"
+full_name: Encoding::Converter#last_error
+is_singleton: false
+name: last_error
+params: |
+  ec.last_error -> exception or nil
+
+visibility: public

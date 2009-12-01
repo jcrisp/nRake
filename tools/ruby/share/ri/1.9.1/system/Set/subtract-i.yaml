@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Deletes every element that appears in the given enumerable object and returns self.
+full_name: Set#subtract
+is_singleton: false
+name: subtract
+params: (enum)
+visibility: public

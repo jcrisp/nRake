@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Defines the callback event. If argument is omitted, this method defines the callback of all events. If you want to modify reference argument in callback, return hash in callback. If you want to return value to OLE server as result of callback use `return' or :return.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  ie = WIN32OLE.new('InternetExplorer.Application')\n  ev = WIN32OLE_EVENT.new(ie)\n  ev.on_event(&quot;NavigateComplete&quot;) {|url| puts url}\n  ev.on_event() {|ev, *args| puts &quot;#{ev} fired&quot;}\n\n  ev.on_event(&quot;BeforeNavigate2&quot;) {|*args|\n    ...\n    # set true to BeforeNavigate reference argument `Cancel'.\n    # Cancel is 7-th argument of BeforeNavigate,\n    # so you can use 6 as key of hash instead of 'Cancel'.\n    # The argument is counted from 0.\n    # The hash key of 0 means first argument.)\n    {:Cancel =&gt; true}  # or {'Cancel' =&gt; true} or {6 =&gt; true}\n  }\n\n  ev.on_event(...) {|*args|\n    {:return =&gt; 1, :xxx =&gt; yyy}\n  }\n"
+full_name: WIN32OLE_EVENT#on_event
+is_singleton: false
+name: on_event
+params: |
+  WIN32OLE_EVENT#on_event([event]){...}
+
+visibility: public

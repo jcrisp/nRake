@@ -1,0 +1,17 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: 
+- !ruby/object:RDoc::RI::AliasName 
+  name: remove
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Options: force noop verbose"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Remove file(s) specified in <tt>list</tt>. This method cannot remove directories. All StandardErrors are ignored when the :force option is set.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  FileUtils.rm %w( junk.txt dust.txt )\n  FileUtils.rm Dir.glob('*.so')\n  FileUtils.rm 'NotExistFile', :force =&gt; true   # never raises exception\n"
+full_name: FileUtils::rm
+is_singleton: true
+name: rm
+params: (list, options = {})
+visibility: public

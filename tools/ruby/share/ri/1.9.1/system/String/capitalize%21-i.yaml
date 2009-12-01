@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Modifies <em>str</em> by converting the first character to uppercase and the remainder to lowercase. Returns <tt>nil</tt> if no changes are made. Note: case conversion is effective only in ASCII region."
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   a = &quot;hello&quot;\n   a.capitalize!   #=&gt; &quot;Hello&quot;\n   a               #=&gt; &quot;Hello&quot;\n   a.capitalize!   #=&gt; nil\n"
+full_name: String#capitalize!
+is_singleton: false
+name: capitalize!
+params: |
+  str.capitalize!   => str or nil
+
+visibility: public

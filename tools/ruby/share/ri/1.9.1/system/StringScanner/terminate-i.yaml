@@ -1,0 +1,15 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Set the scan pointer to the end of the string and clear matching data.
+full_name: StringScanner#terminate
+is_singleton: false
+name: terminate
+params: |
+  terminate
+  clear
+
+visibility: public

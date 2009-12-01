@@ -1,0 +1,23 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: append_features
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: This is a kind of 'flag' module. If you want to write your own 'ri' display module (perhaps because you're writing an IDE), you write a class which implements the various 'display' methods in RDoc::RI::DefaultDisplay, and include the RDoc::RI::Display module in that class.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: To access your class from the command line, you can do
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   ruby -r &lt;your source file&gt;  ../ri ....\n"
+constants: []
+
+full_name: RDoc::RI::Display
+includes: []
+
+instance_methods: []
+
+name: Display

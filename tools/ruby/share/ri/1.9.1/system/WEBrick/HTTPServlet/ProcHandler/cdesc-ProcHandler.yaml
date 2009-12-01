@@ -1,0 +1,21 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+constants: []
+
+full_name: WEBrick::HTTPServlet::ProcHandler
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: do_GET
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: do_POST
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: get_instance
+name: ProcHandler
+superclass: WEBrick::HTTPServlet::AbstractServlet

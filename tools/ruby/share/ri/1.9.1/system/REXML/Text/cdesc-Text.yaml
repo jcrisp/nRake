@@ -1,0 +1,110 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: 
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: If <tt>raw</tt> is true, then REXML leaves the value alone
+  name: raw
+  rw: RW
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: check
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: normalize
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: read_with_substitution
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: unnormalize
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Represents text nodes in an XML document
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The order in which the substitutions occur
+  name: SPECIALS
+  value: "[ /&(?!#?[\\w-]+;)/u, /</u, />/u, /\"/u, /'/u, /\\r/u ]"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: SUBSTITUTES
+  value: "['&amp;', '&lt;', '&gt;', '&quot;', '&apos;', '&#13;']"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: Characters which are substituted in written strings
+  name: SLAICEPS
+  value: "[ '<', '>', '\"', \"'\", '&' ]"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: SETUTITSBUS
+  value: "[ /&lt;/u, /&gt;/u, /&quot;/u, /&apos;/u, /&amp;/u ]"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: NEEDS_A_SECOND_CHECK
+  value: /(<|&((#{Entity::NAME});|(#0*((?:\d+)|(?:x[a-fA-F0-9]+)));)?)/um
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: NUMERICENTITY
+  value: /&#0*((?:\d+)|(?:x[a-fA-F0-9]+));/
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: VALID_CHAR
+  value: "[       0x9, 0xA, 0xD,       (0x20..0xD7FF),       (0xE000..0xFFFD),       (0x10000..0x10FFFF)     ]"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: VALID_XML_CHARS
+  value: Regexp.new('^['+         VALID_CHAR.map { |item|           case item           when Fixnum             [item].pack('U').force_encoding('utf-8')           when Range             [item.first, '-'.ord, item.last].pack('UUU').force_encoding('utf-8')           end
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: VALID_XML_CHARS
+  value: "/^(            [\\x09\\x0A\\x0D\\x20-\\x7E]            # ASCII          | [\\xC2-\\xDF][\\x80-\\xBF]             # non-overlong 2-byte          |  \\xE0[\\xA0-\\xBF][\\x80-\\xBF]        # excluding overlongs          | [\\xE1-\\xEC\\xEE][\\x80-\\xBF]{2}      # straight 3-byte          |  \\xEF[\\x80-\\xBE]{2}                #          |  \\xEF\\xBF[\\x80-\\xBD]               # excluding U+fffe and U+ffff          |  \\xED[\\x80-\\x9F][\\x80-\\xBF]        # excluding surrogates          |  \\xF0[\\x90-\\xBF][\\x80-\\xBF]{2}     # planes 1-3          | [\\xF1-\\xF3][\\x80-\\xBF]{3}          # planes 4-15          |  \\xF4[\\x80-\\x8F][\\x80-\\xBF]{2}     # plane 16        )*$/nx;"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: REFERENCE
+  value: /#{Entity::REFERENCE}/
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: EREFERENCE
+  value: /&(?!#{Entity::NAME};)/
+full_name: REXML::Text
+includes: 
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: Comparable
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: "<<"
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: <=>
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: clone
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: doctype
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: empty?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: indent_text
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: inspect
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: node_type
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: parent=
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: to_s
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: value
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: value=
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: wrap
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: write
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: write_with_substitution
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: xpath
+name: Text
+superclass: REXML::Child

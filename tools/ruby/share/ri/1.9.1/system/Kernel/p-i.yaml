@@ -1,0 +1,22 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: For each object, directly writes <em>obj</em>.<tt>inspect</tt> followed by the current output record separator to the program's standard output.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   S = Struct.new(:name, :state)\n   s = S['dave', 'TX']\n   p s\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: <em>produces:</em>
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   #&lt;S name=&quot;dave&quot;, state=&quot;TX&quot;&gt;\n"
+full_name: Kernel#p
+is_singleton: false
+name: p
+params: |
+  p(obj)              => obj
+  p(obj1, obj2, ...)  => [obj, ...]
+  p()                 => nil
+
+visibility: public

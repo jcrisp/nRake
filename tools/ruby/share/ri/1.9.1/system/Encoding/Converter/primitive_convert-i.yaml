@@ -1,0 +1,71 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "possible opt elements:"
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  hash form:\n    :partial_input =&gt; true           # source buffer may be part of larger source\n    :after_output =&gt; true            # stop conversion after output before input\n  integer form:\n    Encoding::Converter::PARTIAL_INPUT\n    Encoding::Converter::AFTER_OUTPUT\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "possible results:"
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   :invalid_byte_sequence\n   :incomplete_input\n   :undefined_conversion\n   :after_output\n   :destination_buffer_full\n   :source_buffer_empty\n   :finished\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: primitive_convert converts source_buffer into destination_buffer.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: source_buffer should be a string or nil. nil means a empty string.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: destination_buffer should be a string.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: destination_byteoffset should be an integer or nil. nil means the end of destination_buffer. If it is omitted, nil is assumed.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: destination_bytesize should be an integer or nil. nil means unlimited. If it is omitted, nil is assumed.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: opt should be nil, a hash or an integer. nil means no flags. If it is omitted, nil is assumed.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: primitive_convert converts the content of source_buffer from beginning and store the result into destination_buffer.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: destination_byteoffset and destination_bytesize specify the region which the converted result is stored. destination_byteoffset specifies the start position in destination_buffer in bytes. If destination_byteoffset is nil, destination_buffer.bytesize is used for appending the result. destination_bytesize specifies maximum number of bytes. If destination_bytesize is nil, destination size is unlimited. After conversion, destination_buffer is resized to destination_byteoffset + actually produced number of bytes. Also destination_buffer's encoding is set to destination_encoding.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: primitive_convert drops the converted part of source_buffer. the dropped part is converted in destination_buffer or buffered in Encoding::Converter object.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: primitive_convert stops conversion when one of following condition met.
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "-"
+    :body: invalid byte sequence found in source buffer (:invalid_byte_sequence)
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "-"
+    :body: unexpected end of source buffer (:incomplete_input) this occur only when :partial_input is not specified.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "-"
+    :body: character not representable in output encoding (:undefined_conversion)
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "-"
+    :body: after some output is generated, before input is done (:after_output) this occur only when :after_output is specified.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "-"
+    :body: destination buffer is full (:destination_buffer_full) this occur only when destination_bytesize is non-nil.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "-"
+    :body: source buffer is empty (:source_buffer_empty) this occur only when :partial_input is specified.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "-"
+    :body: conversion is finished (:finished)
+  type: :BULLET
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "example:"
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  ec = Encoding::Converter.new(&quot;UTF-8&quot;, &quot;UTF-16BE&quot;)\n  ret = ec.primitive_convert(src=&quot;pi&quot;, dst=&quot;&quot;, 100)\n  p [ret, src, dst] #=&gt; [:finished, &quot;&quot;, &quot;\\x00p\\x00i&quot;]\n\n  ec = Encoding::Converter.new(&quot;UTF-8&quot;, &quot;UTF-16BE&quot;)\n  ret = ec.primitive_convert(src=&quot;pi&quot;, dst=&quot;&quot;, 1)\n  p [ret, src, dst] #=&gt; [:destination_buffer_full, &quot;i&quot;, &quot;\\x00&quot;]\n  ret = ec.primitive_convert(src, dst=&quot;&quot;, 1)\n  p [ret, src, dst] #=&gt; [:destination_buffer_full, &quot;&quot;, &quot;p&quot;]\n  ret = ec.primitive_convert(src, dst=&quot;&quot;, 1)\n  p [ret, src, dst] #=&gt; [:destination_buffer_full, &quot;&quot;, &quot;\\x00&quot;]\n  ret = ec.primitive_convert(src, dst=&quot;&quot;, 1)\n  p [ret, src, dst] #=&gt; [:finished, &quot;&quot;, &quot;i&quot;]\n"
+full_name: Encoding::Converter#primitive_convert
+is_singleton: false
+name: primitive_convert
+params: |
+  ec.primitive_convert(source_buffer, destination_buffer) -> symbol
+  ec.primitive_convert(source_buffer, destination_buffer, destination_byteoffset) -> symbol
+  ec.primitive_convert(source_buffer, destination_buffer, destination_byteoffset, destination_bytesize) -> symbol
+  ec.primitive_convert(source_buffer, destination_buffer, destination_byteoffset, destination_bytesize, opt) -> symbol
+
+visibility: public

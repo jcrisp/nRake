@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Specifies a File object <tt>input</tt> that is input stream for Readline.readline method.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Raises SecurityError exception if $SAFE is 4.
+full_name: Readline::input=
+is_singleton: true
+name: input=
+params: |
+  Readline.input = input
+
+visibility: public

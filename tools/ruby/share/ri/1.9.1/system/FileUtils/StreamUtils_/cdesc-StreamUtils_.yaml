@@ -1,0 +1,21 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+constants: []
+
+full_name: FileUtils::StreamUtils_
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: fu_blksize
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: fu_default_blksize
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: fu_stream_blksize
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: fu_windows?
+name: StreamUtils_

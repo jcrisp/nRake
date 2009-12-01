@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns an integer representing the day of the year, 1..366.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   t = Time.now   #=&gt; 2007-11-19 08:32:31 -0600\n   t.yday         #=&gt; 323\n"
+full_name: Time#yday
+is_singleton: false
+name: yday
+params: |
+  time.yday => fixnum
+
+visibility: public

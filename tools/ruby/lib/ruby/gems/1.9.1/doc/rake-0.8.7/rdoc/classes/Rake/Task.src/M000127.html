@@ -1,0 +1,17 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>enhance (Rake::Task)</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="../../.././rdoc-style.css" type="text/css" media="screen" />
+</head>
+<body class="standalone-code">
+  <pre>     <span class="ruby-comment cmt"># File lib/rake.rb, line 525</span>
+525:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">enhance</span>(<span class="ruby-identifier">deps</span>=<span class="ruby-keyword kw">nil</span>, <span class="ruby-operator">&amp;</span><span class="ruby-identifier">block</span>)
+526:       <span class="ruby-ivar">@prerequisites</span> <span class="ruby-operator">|=</span> <span class="ruby-identifier">deps</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">deps</span>
+527:       <span class="ruby-ivar">@actions</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">block</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">block_given?</span>
+528:       <span class="ruby-keyword kw">self</span>
+529:     <span class="ruby-keyword kw">end</span></pre>
+</body>
+</html>

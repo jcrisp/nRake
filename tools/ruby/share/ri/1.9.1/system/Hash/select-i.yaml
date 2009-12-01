@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns a new hash consisting of entries which the block returns true.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   h = { &quot;a&quot; =&gt; 100, &quot;b&quot; =&gt; 200, &quot;c&quot; =&gt; 300 }\n   h.select {|k,v| k &gt; &quot;a&quot;}  #=&gt; {&quot;b&quot; =&gt; 200, &quot;c&quot; =&gt; 300}\n   h.select {|k,v| v &lt; 200}  #=&gt; {&quot;a&quot; =&gt; 100}\n"
+full_name: Hash#select
+is_singleton: false
+name: select
+params: |
+  hsh.select {|key, value| block}   => a_hash
+
+visibility: public

@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the first object in <em>rng</em>.
+full_name: Range#begin
+is_singleton: false
+name: begin
+params: |
+  rng.begin    => obj
+
+visibility: public

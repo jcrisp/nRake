@@ -1,0 +1,13 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: 
+- !ruby/object:RDoc::RI::AliasName 
+  name: proxyaddr
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Address of proxy host. If self does not use a proxy, nil.
+full_name: Net::HTTP#proxy_address
+is_singleton: false
+name: proxy_address
+params: ()
+visibility: public

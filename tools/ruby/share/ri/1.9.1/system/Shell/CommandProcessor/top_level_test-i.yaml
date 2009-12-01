@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Alias for #test"
+full_name: Shell::CommandProcessor#top_level_test
+is_singleton: false
+name: top_level_test
+params: (command, file1, file2=nil)
+visibility: public

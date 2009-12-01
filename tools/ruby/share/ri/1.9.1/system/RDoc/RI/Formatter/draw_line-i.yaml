@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: RDoc::RI::Formatter#draw_line
+is_singleton: false
+name: draw_line
+params: (label=nil)
+visibility: public

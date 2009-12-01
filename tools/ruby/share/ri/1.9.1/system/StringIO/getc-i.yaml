@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: See IO#getc.
+full_name: StringIO#getc
+is_singleton: false
+name: getc
+params: |
+  strio.getc   -> string or nil
+
+visibility: public

@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns <tt>true</tt> if <tt>data</tt> matches a field in this row, and <tt>false</tt> otherwise.
+full_name: CSV::Row#field?
+is_singleton: false
+name: field?
+params: (data)
+visibility: public

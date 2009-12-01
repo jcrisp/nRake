@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: YAML::Store#empty_marshal_checksum
+is_singleton: false
+name: empty_marshal_checksum
+params: ()
+visibility: public

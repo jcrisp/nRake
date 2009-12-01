@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "MISSING: documentation"
+full_name: Module#autoload?
+is_singleton: false
+name: autoload?
+params: (p1)
+visibility: public

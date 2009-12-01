@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: (o)
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Calls the given block once for each element in the set, passing the element as parameter. Returns an enumerator if no block is given.
+full_name: Set#each
+is_singleton: false
+name: each
+params: () {|o| ...}
+visibility: public

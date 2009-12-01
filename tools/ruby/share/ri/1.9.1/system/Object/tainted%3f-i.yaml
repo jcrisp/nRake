@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns <tt>true</tt> if the object is tainted.
+full_name: Object#tainted?
+is_singleton: false
+name: tainted?
+params: |
+  obj.tainted?    => true or false
+
+visibility: public

@@ -1,0 +1,58 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: An ERb wrapper that allows nesting of one ERb template inside another.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: This TemplatePage operates similarly to RDoc 1.x's TemplatePage, but uses ERb instead of a custom template language.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Converting from a RDoc 1.x template to an RDoc 2.x template is fairly easy.
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: "%blah% becomes &lt;%= values[&quot;blah&quot;] %&gt;"
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: "!INCLUDE! becomes &lt;%= template_include %&gt;"
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: HREF:aref:name becomes &lt;%= href values[&quot;aref&quot;], values[&quot;name&quot;] %&gt;
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: IF:blah becomes &lt;% if values[&quot;blah&quot;] then %&gt;
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: IFNOT:blah becomes &lt;% unless values[&quot;blah&quot;] then %&gt;
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: ENDIF:blah becomes &lt;% end %&gt;
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: START:blah becomes &lt;% values[&quot;blah&quot;].each do |blah| %&gt;
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: END:blah becomes &lt;% end %&gt;
+  type: :BULLET
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "To make nested loops easier to convert, start by converting START statements to:"
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  &lt;% values[&quot;blah&quot;].each do |blah| $stderr.puts blah.keys %&gt;\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: So you can see what is being used inside which loop.
+constants: []
+
+full_name: RDoc::TemplatePage
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: href
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: write_html_on
+name: TemplatePage
+superclass: Object

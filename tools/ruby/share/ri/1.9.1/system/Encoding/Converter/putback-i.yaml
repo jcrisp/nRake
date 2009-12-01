@@ -1,0 +1,20 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: call-seq
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  ec.putback                    =&gt; string\n  ec.putback(max_numbytes)      =&gt; string\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Put back the bytes which will be converted.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The bytes are caused by invalid_byte_sequence error. When invalid_byte_sequence error, some bytes are discarded and some bytes are buffered to be converted later. The latter bytes can be put back. It can be observed by Encoding::InvalidByteSequenceError#readagain_bytes and Encoding::Converter#primitive_errinfo.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  ec = Encoding::Converter.new(&quot;utf-16le&quot;, &quot;iso-8859-1&quot;)\n  src = &quot;\\x00\\xd8\\x61\\x00&quot;\n  dst = &quot;&quot;\n  p ec.primitive_convert(src, dst)   #=&gt; :invalid_byte_sequence\n  p ec.primitive_errinfo     #=&gt; [:invalid_byte_sequence, &quot;UTF-16LE&quot;, &quot;UTF-8&quot;, &quot;\\x00\\xD8&quot;, &quot;a\\x00&quot;]\n  p ec.putback               #=&gt; &quot;a\\x00&quot;\n  p ec.putback               #=&gt; &quot;&quot;          # no more bytes to put back\n"
+full_name: Encoding::Converter#putback
+is_singleton: false
+name: putback
+params: (...)
+visibility: public

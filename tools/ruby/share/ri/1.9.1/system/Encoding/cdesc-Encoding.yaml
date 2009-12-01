@@ -1,0 +1,45 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: aliases
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: compatible?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: default_external
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: default_external=
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: default_internal
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: default_internal=
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: find
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: list
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: locale_charmap
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: name_list
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: include &quot;ruby/ruby.h&quot; include &quot;ruby/encoding.h&quot; include &quot;transcode_data.h&quot; include &lt;ctype.h&gt;
+constants: []
+
+full_name: Encoding
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: dummy?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: inspect
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: name
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: names
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: to_s
+name: Encoding
+superclass: Object

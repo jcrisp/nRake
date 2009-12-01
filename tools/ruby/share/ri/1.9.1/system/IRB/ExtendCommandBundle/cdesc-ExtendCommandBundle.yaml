@@ -1,0 +1,47 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: def_extend_command
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: extend_object
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: install_extend_commands
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: irb_original_method_name
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: IRB extended command
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: EXCB
+  value: ExtendCommandBundle
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: NO_OVERRIDE
+  value: "0"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: OVERRIDE_PRIVATE_ONLY
+  value: "0x01"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: OVERRIDE_ALL
+  value: "0x02"
+full_name: IRB::ExtendCommandBundle
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: install_alias_method
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: irb_context
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: irb_exit
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: irb_load
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: irb_require
+name: ExtendCommandBundle

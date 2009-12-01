@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the one-character string which cause Encoding::UndefinedConversionError.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: " ec = Encoding::Converter.new(&quot;ISO-8859-1&quot;, &quot;EUC-JP&quot;)\n begin\n   ec.convert(&quot;\\xa0&quot;)\n rescue Encoding::UndefinedConversionError\n   puts $!.error_char.dump   #=&gt; &quot;\\xC2\\xA0&quot;\n   p $!.error_char.encoding  #=&gt; #&lt;Encoding:UTF-8&gt;\n end\n"
+full_name: Encoding::UndefinedConversionError#error_char
+is_singleton: false
+name: error_char
+params: |
+  ecerr.error_char         -> string
+
+visibility: public

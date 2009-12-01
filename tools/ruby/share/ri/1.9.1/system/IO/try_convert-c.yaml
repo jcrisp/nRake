@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Try to convert <em>obj</em> into an IO, using to_io method. Returns converted IO or nil if <em>obj</em> cannot be converted for any reason.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   IO.try_convert(STDOUT)     # =&gt; STDOUT\n   IO.try_convert(&quot;STDOUT&quot;)   # =&gt; nil\n\n   require 'zlib'\n   f = open(&quot;/tmp/zz.gz&quot;)       # =&gt; #&lt;File:/tmp/zz.gz&gt;\n   z = Zlib::GzipReader.open(f) # =&gt; #&lt;Zlib::GzipReader:0x81d8744&gt;\n   IO.try_convert(z)            # =&gt; #&lt;File:/tmp/zz.gz&gt;\n"
+full_name: IO::try_convert
+is_singleton: true
+name: try_convert
+params: |
+  IO.try_convert(obj) -> io or nil
+
+visibility: public

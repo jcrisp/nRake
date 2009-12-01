@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Checks the compatibility of two strings. If they are compatible, means concatenatable, returns an encoding which the concatinated string will be. If they are not compatible, nil is returned.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  Encoding.compatible?(&quot;\\xa1&quot;.force_encoding(&quot;iso-8859-1&quot;), &quot;b&quot;)\n  =&gt; #&lt;Encoding:ISO-8859-1&gt;\n\n  Encoding.compatible?(\n    &quot;\\xa1&quot;.force_encoding(&quot;iso-8859-1&quot;),\n    &quot;\\xa1\\xa1&quot;.force_encoding(&quot;euc-jp&quot;))\n  =&gt; nil\n"
+full_name: Encoding::compatible?
+is_singleton: true
+name: compatible?
+params: |
+  Encoding.compatible?(str1, str2) => enc or nil
+
+visibility: public

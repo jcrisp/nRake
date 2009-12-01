@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Alias for #connect"
+full_name: UDPSocket#original_resolv_connect
+is_singleton: false
+name: original_resolv_connect
+params: (host, port)
+visibility: public

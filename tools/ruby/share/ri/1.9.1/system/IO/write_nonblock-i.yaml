@@ -1,0 +1,26 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Writes the given string to <em>ios</em> using the write(2) system call after O_NONBLOCK is set for the underlying file descriptor.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: It returns the number of bytes written.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "write_nonblock just calls the write(2) system call. It causes all errors the write(2) system call causes: Errno::EWOULDBLOCK, Errno::EINTR, etc. The result may also be smaller than string.length (partial write). The caller should care such errors and partial write."
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: If the write buffer is not empty, it is flushed at first.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: When write_nonblock raises EWOULDBLOCK, write_nonblock should not be called until io is writable for avoiding busy loop. This can be done as follows.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  begin\n    result = io.write_nonblock(string)\n  rescue Errno::EWOULDBLOCK, Errno::EAGAIN, Errno::EINTR\n    IO.select(nil, [io])\n    retry\n  end\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Note that this doesn't guarantee to write all data in string. The length written is reported as result and it should be checked later.
+full_name: IO#write_nonblock
+is_singleton: false
+name: write_nonblock
+params: |
+  ios.write_nonblock(string)   => integer
+
+visibility: public

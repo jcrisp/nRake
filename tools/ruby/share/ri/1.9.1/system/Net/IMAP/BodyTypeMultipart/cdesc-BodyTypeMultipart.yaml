@@ -1,0 +1,50 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Net::IMAP::BodyTypeMultipart represents multipart body structures of messages.
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 4
+  :text: "Fields:"
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "media_type:"
+    :body: Returns the content media type name as defined in [MIME-IMB].
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "subtype:"
+    :body: Returns the content subtype name as defined in [MIME-IMB].
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "parts:"
+    :body: Returns multiple parts.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "param:"
+    :body: Returns a hash that represents parameters as defined in [MIME-IMB].
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "disposition:"
+    :body: Returns a Net::IMAP::ContentDisposition object giving the content disposition.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "language:"
+    :body: Returns a string or an array of strings giving the body language value as defined in [LANGUAGE-TAGS].
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "extension:"
+    :body: Returns extension data.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "multipart?:"
+    :body: Returns true.
+  type: :NOTE
+constants: []
+
+full_name: Net::IMAP::BodyTypeMultipart
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: media_subtype
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: multipart?
+name: BodyTypeMultipart
+superclass: Struct.new(:media_type, :subtype,                                          :parts,                                          :param, :disposition, :language,                                          :extension)

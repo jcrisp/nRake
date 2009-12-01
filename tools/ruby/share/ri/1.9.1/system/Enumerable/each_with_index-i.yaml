@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Calls <em>block</em> with two arguments, the item and its index, for each item in <em>enum</em>. Given arguments are passed through to #each()."
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   hash = Hash.new\n   %w(cat dog wombat).each_with_index {|item, index|\n     hash[item] = index\n   }\n   hash   #=&gt; {&quot;cat&quot;=&gt;0, &quot;dog&quot;=&gt;1, &quot;wombat&quot;=&gt;2}\n"
+full_name: Enumerable#each_with_index
+is_singleton: false
+name: each_with_index
+params: |
+  enum.each_with_index {|obj, i| block }  -> enum
+
+visibility: public

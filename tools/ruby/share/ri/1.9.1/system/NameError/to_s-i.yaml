@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Produce a nicely-formatted string representing the <tt>NameError</tt>.
+full_name: NameError#to_s
+is_singleton: false
+name: to_s
+params: |
+  name_error.to_s   => string
+
+visibility: public

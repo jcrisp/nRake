@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: define default builtin commands
+full_name: Shell::CommandProcessor::install_builtin_commands
+is_singleton: true
+name: install_builtin_commands
+params: ()
+visibility: public

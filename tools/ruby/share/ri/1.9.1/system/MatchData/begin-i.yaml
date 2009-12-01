@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the offset of the start of the <em>n</em>th element of the match array in the string. <em>n</em> can be a string or symbol to reference a named capture.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   m = /(.)(.)(\\d+)(\\d)/.match(&quot;THX1138.&quot;)\n   m.begin(0)       #=&gt; 1\n   m.begin(2)       #=&gt; 2\n\n   m = /(?&lt;foo&gt;.)(.)(?&lt;bar&gt;.)/.match(&quot;hoge&quot;)\n   p m.begin(:foo)  #=&gt; 0\n   p m.begin(:bar)  #=&gt; 2\n"
+full_name: MatchData#begin
+is_singleton: false
+name: begin
+params: |
+  mtch.begin(n)   => integer
+
+visibility: public

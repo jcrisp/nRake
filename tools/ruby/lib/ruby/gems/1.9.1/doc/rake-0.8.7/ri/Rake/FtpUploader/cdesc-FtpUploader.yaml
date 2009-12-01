@@ -1,0 +1,30 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: 
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: Log uploads to standard output when true.
+  name: verbose
+  rw: RW
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: connect
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Manage the uploading of files to an FTP account.
+constants: []
+
+full_name: Rake::FtpUploader
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: close
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: makedirs
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: upload_files
+name: FtpUploader
+superclass: Object

@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: Net::SMTP::Response#status_type_char
+is_singleton: false
+name: status_type_char
+params: ()
+visibility: public

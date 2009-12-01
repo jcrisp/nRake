@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns a list of signal names mapped to the corresponding underlying signal numbers.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  Signal.list   #=&gt; {&quot;EXIT&quot;=&gt;0, &quot;HUP&quot;=&gt;1, &quot;INT&quot;=&gt;2, &quot;QUIT&quot;=&gt;3, &quot;ILL&quot;=&gt;4, &quot;TRAP&quot;=&gt;5, &quot;IOT&quot;=&gt;6, &quot;ABRT&quot;=&gt;6, &quot;FPE&quot;=&gt;8, &quot;KILL&quot;=&gt;9, &quot;BUS&quot;=&gt;7, &quot;SEGV&quot;=&gt;11, &quot;SYS&quot;=&gt;31, &quot;PIPE&quot;=&gt;13, &quot;ALRM&quot;=&gt;14, &quot;TERM&quot;=&gt;15, &quot;URG&quot;=&gt;23, &quot;STOP&quot;=&gt;19, &quot;TSTP&quot;=&gt;20, &quot;CONT&quot;=&gt;18, &quot;CHLD&quot;=&gt;17, &quot;CLD&quot;=&gt;17, &quot;TTIN&quot;=&gt;21, &quot;TTOU&quot;=&gt;22, &quot;IO&quot;=&gt;29, &quot;XCPU&quot;=&gt;24, &quot;XFSZ&quot;=&gt;25, &quot;VTALRM&quot;=&gt;26, &quot;PROF&quot;=&gt;27, &quot;WINCH&quot;=&gt;28, &quot;USR1&quot;=&gt;10, &quot;USR2&quot;=&gt;12, &quot;PWR&quot;=&gt;30, &quot;POLL&quot;=&gt;29}\n"
+full_name: Signal::list
+is_singleton: true
+name: list
+params: |
+  Signal.list => a_hash
+
+visibility: public

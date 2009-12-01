@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Alias for #debug_output="
+full_name: Net::SMTP#set_debug_output
+is_singleton: false
+name: set_debug_output
+params: (arg)
+visibility: public

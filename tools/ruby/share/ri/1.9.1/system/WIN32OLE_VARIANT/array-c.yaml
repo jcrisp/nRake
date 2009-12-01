@@ -1,0 +1,18 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns Ruby object wrapping OLE variant whose variant type is VT_ARRAY. The first argument should be Array object which specifies dimensions and each size of dimensions of OLE array. The second argument specifies variant type of the element of OLE array.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The following create 2 dimensions OLE array. The first dimensions size is 3, and the second is 4.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   ole_ary = WIN32OLE_VARIANT.array([3,4], VT_I4)\n   ruby_ary = ole_ary.value # =&gt; [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]\n"
+full_name: WIN32OLE_VARIANT::array
+is_singleton: true
+name: array
+params: |
+  WIN32OLE_VARIANT.array(ary, vt)
+
+visibility: public

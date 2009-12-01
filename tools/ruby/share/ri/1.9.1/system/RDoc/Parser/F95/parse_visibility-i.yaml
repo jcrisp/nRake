@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Parse visibility
+full_name: RDoc::Parser::F95#parse_visibility
+is_singleton: false
+name: parse_visibility
+params: (code, default, container)
+visibility: private

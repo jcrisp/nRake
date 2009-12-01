@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Patterns used to parse URI's
+constants: []
+
+full_name: URI::REGEXP::PATTERN
+includes: []
+
+instance_methods: []
+
+name: PATTERN

@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: RDoc::Generator::File#filename_to_label
+is_singleton: false
+name: filename_to_label
+params: ()
+visibility: public

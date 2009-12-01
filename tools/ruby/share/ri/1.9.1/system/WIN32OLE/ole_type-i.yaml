@@ -1,0 +1,17 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: 
+- !ruby/object:RDoc::RI::AliasName 
+  name: ole_obj_help
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns WIN32OLE_TYPE object.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   excel = WIN32OLE.new('Excel.Application')\n   tobj = excel.ole_type\n"
+full_name: WIN32OLE#ole_type
+is_singleton: false
+name: ole_type
+params: |
+  WIN32OLE#ole_type
+
+visibility: public

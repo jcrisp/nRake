@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Set the user ID of the current process to <em>integer</em>. Not available on all platforms.
+full_name: Process::Sys::setuid
+is_singleton: true
+name: setuid
+params: |
+  Process::Sys.setuid(integer)   => nil
+
+visibility: public

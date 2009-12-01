@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: return the setter for the uri, tag_name pair, or nil.
+full_name: RSS::BaseListener::setter
+is_singleton: true
+name: setter
+params: (uri, tag_name)
+visibility: public

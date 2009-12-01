@@ -1,0 +1,18 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Sets a list of quote characters which can cause a word break.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Raises NotImplementedError if the using readline library does not support.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Raises SecurityError exception if $SAFE is 4.
+full_name: Readline::basic_quote_characters=
+is_singleton: true
+name: basic_quote_characters=
+params: |
+  Readline.basic_quote_characters = string
+
+visibility: public

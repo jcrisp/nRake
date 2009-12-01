@@ -1,0 +1,46 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: 
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  name: aliases
+  rw: RW
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  name: block_params
+  rw: RW
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  name: is_alias_for
+  rw: RW
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  name: is_class_method
+  rw: RW
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  name: is_singleton
+  rw: RW
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  name: params
+  rw: RW
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  name: source_path
+  rw: RW
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  name: visibility
+  rw: RW
+class_methods: []
+
+comment: 
+constants: []
+
+full_name: RDoc::RI::MethodDescription
+includes: []
+
+instance_methods: []
+
+name: MethodDescription
+superclass: RDoc::RI::Description

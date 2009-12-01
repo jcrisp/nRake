@@ -1,0 +1,23 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: 
+- !ruby/object:RDoc::RI::AliasName 
+  name: iso8601
+- !ruby/object:RDoc::RI::AliasName 
+  name: iso8601
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Returns a string which represents the time as dateTime defined by XML Schema:"
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  CCYY-MM-DDThh:mm:ssTZD\n  CCYY-MM-DDThh:mm:ss.sssTZD\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: where TZD is Z or [+-]hh:mm.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: If self is a UTC time, Z is used as TZD. [+-]hh:mm is used otherwise.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: <tt>fractional_seconds</tt> specifies a number of digits of fractional seconds. Its default value is 0.
+full_name: Time#xmlschema
+is_singleton: false
+name: xmlschema
+params: (fraction_digits=0)
+visibility: public

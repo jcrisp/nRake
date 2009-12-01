@@ -1,0 +1,194 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: <tt>BasicObject</tt> is the parent class of all classes in Ruby. It's an explicit blank class. <tt>Object</tt>, the root of Ruby's class hierarchy is a direct subclass of <tt>BasicObject</tt>. Its methods are therefore available to all objects unless explicitly overridden.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: <tt>Object</tt> mixes in the <tt>Kernel</tt> module, making the built-in kernel functions globally accessible. Although the instance methods of <tt>Object</tt> are defined by the <tt>Kernel</tt> module, we have chosen to document them here for clarity.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: In the descriptions of Object's methods, the parameter <em>symbol</em> refers to a symbol, which is either a quoted string or a <tt>Symbol</tt> (such as <tt>:name</tt>).
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: ENV
+  value: envtbl
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: constants to hold original stdin/stdout/stderr
+  name: STDIN
+  value: rb_stdin
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: STDOUT
+  value: rb_stdout
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: STDERR
+  value: rb_stderr
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: ARGF
+  value: argf
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: NIL
+  value: Qnil
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: "TRUE"
+  value: Qtrue
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: "FALSE"
+  value: Qfalse
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: DATA
+  value: f
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: ARGV
+  value: rb_argv
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: RUBY_VERSION
+  value: MKSTR(version)
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: RUBY_RELEASE_DATE
+  value: MKSTR(release_date)
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: RUBY_PLATFORM
+  value: MKSTR(platform)
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: RUBY_PATCHLEVEL
+  value: INT2FIX(RUBY_PATCHLEVEL)
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: RUBY_REVISION
+  value: INT2FIX(RUBY_REVISION)
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: RUBY_DESCRIPTION
+  value: MKSTR(description)
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: RUBY_COPYRIGHT
+  value: MKSTR(copyright)
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: RUBY_ENGINE
+  value: MKSTR(engine)
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: TOPLEVEL_BINDING
+  value: rb_binding_new()
+full_name: Object
+includes: 
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: Kernel
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: PP::ObjectMixin
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: "!~"
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: ===
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: =~
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: __id__
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: class
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: clone
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: dclone
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: display
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: dup
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: enum_for
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: eql?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: extend
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: freeze
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: frozen?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: hash
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: inspect
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: instance_of?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: instance_variable_defined?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: instance_variable_get
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: instance_variable_set
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: instance_variables
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: is_a?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: kind_of?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: method
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: methods
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: nil?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: object_id
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: private_methods
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: protected_methods
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: public_methods
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: public_send
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: remove_instance_variable
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: respond_to?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: send
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: singleton_methods
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: taint
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: tainted?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: tap
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: to_enum
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: to_s
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: to_yaml
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: to_yaml_properties
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: to_yaml_style
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: trust
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: untaint
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: untrust
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: untrusted?
+name: Object
+superclass: BasicObject

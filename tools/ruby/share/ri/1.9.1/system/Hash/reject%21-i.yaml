@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Equivalent to <tt>Hash#delete_if</tt>, but returns <tt>nil</tt> if no changes were made.
+full_name: Hash#reject!
+is_singleton: false
+name: reject!
+params: |
+  hsh.reject! {| key, value | block }  -> hsh or nil
+
+visibility: public

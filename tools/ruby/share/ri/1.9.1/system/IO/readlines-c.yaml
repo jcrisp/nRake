@@ -1,0 +1,20 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Reads the entire file specified by <em>name</em> as individual lines, and returns those lines in an array. Lines are separated by <em>sep</em>.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   a = IO.readlines(&quot;testfile&quot;)\n   a[0]   #=&gt; &quot;This is line one\\n&quot;\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: If the last argument is a hash, it's the keyword argument to open. See <tt>IO.read</tt> for detail.
+full_name: IO::readlines
+is_singleton: true
+name: readlines
+params: |
+  IO.readlines(name, sep=$/ [, open_args])     => array
+  IO.readlines(name, limit [, open_args])      => array
+  IO.readlines(name, sep, limit [, open_args]) => array
+
+visibility: public

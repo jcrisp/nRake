@@ -1,0 +1,20 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Prevents threads from being added to or removed from the receiving <tt>ThreadGroup</tt>. New threads can still be started in an enclosed <tt>ThreadGroup</tt>.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   ThreadGroup::Default.enclose        #=&gt; #&lt;ThreadGroup:0x4029d914&gt;\n   thr = Thread::new { Thread.stop }   #=&gt; #&lt;Thread:0x402a7210 sleep&gt;\n   tg = ThreadGroup::new               #=&gt; #&lt;ThreadGroup:0x402752d4&gt;\n   tg.add thr\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: <em>produces:</em>
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   ThreadError: can't move from the enclosed thread group\n"
+full_name: ThreadGroup#enclose
+is_singleton: false
+name: enclose
+params: |
+  thgrp.enclose   => thgrp
+
+visibility: public

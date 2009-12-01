@@ -1,0 +1,15 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+constants: []
+
+full_name: GetoptLong::AmbiguousOption
+includes: []
+
+instance_methods: []
+
+name: AmbiguousOption
+superclass: GetoptLong::Error

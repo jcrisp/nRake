@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Upload the local directory to the remote directory.
+full_name: Rake::SshFilePublisher#upload
+is_singleton: false
+name: upload
+params: ()
+visibility: public

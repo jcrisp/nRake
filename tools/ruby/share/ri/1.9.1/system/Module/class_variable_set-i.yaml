@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Sets the class variable names by <em>symbol</em> to <em>object</em>.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   class Fred\n     @@foo = 99\n     def foo\n       @@foo\n     end\n   end\n   Fred.class_variable_set(:@@foo, 101)     #=&gt; 101\n   Fred.new.foo                             #=&gt; 101\n"
+full_name: Module#class_variable_set
+is_singleton: false
+name: class_variable_set
+params: |
+  obj.class_variable_set(symbol, obj)    => obj
+
+visibility: public

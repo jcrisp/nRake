@@ -1,0 +1,17 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: YAML Error classes
+constants: []
+
+full_name: YAML::Error
+includes: []
+
+instance_methods: []
+
+name: Error
+superclass: StandardError

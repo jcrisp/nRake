@@ -1,0 +1,44 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The Tuplespace manages access to the tuples it contains, ensuring mutual exclusion requirements are met.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The <tt>sec</tt> option for the write, take, move, read and notify methods may either be a number of seconds or a Renewer object.
+constants: []
+
+full_name: Rinda::TupleSpace
+includes: 
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: DRbUndumped
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: MonitorMixin
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: create_entry
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: keep_clean
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: move
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: need_keeper?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: notify
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: notify_event
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: read
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: read_all
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: start_keeper
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: take
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: write
+name: TupleSpace
+superclass: Object

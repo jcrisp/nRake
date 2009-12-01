@@ -1,0 +1,18 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the source encoding as an encoding object.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Note that the result may not be equal to the source encoding of the encoding converter if the conversion has multiple steps.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: " ec = Encoding::Converter.new(&quot;ISO-8859-1&quot;, &quot;EUC-JP&quot;) # ISO-8859-1 -&gt; UTF-8 -&gt; EUC-JP\n begin\n   ec.convert(&quot;\\xa0&quot;) # NO-BREAK SPACE, which is available in UTF-8 but not in EUC-JP.\n rescue Encoding::UndefinedConversionError\n   p $!.source_encoding              #=&gt; #&lt;Encoding:UTF-8&gt;\n   p $!.destination_encoding         #=&gt; #&lt;Encoding:EUC-JP&gt;\n   p $!.source_encoding_name         #=&gt; &quot;UTF-8&quot;\n   p $!.destination_encoding_name    #=&gt; &quot;EUC-JP&quot;\n end\n"
+full_name: Encoding::UndefinedConversionError#source_encoding
+is_singleton: false
+name: source_encoding
+params: |
+  ecerr.source_encoding              -> encoding
+
+visibility: public

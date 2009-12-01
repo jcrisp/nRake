@@ -1,0 +1,15 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+constants: []
+
+full_name: RSS::Maker::XMLStyleSheets
+includes: []
+
+instance_methods: []
+
+name: XMLStyleSheets
+superclass: RSS::Maker::Base

@@ -1,0 +1,29 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: "[]"
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Builtin collection: !pairs"
+constants: []
+
+full_name: YAML::Pairs
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: "[]"
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: "[]="
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: has_key?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: is_complex_yaml?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: to_yaml
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: yaml_initialize
+name: Pairs
+superclass: "::Array"

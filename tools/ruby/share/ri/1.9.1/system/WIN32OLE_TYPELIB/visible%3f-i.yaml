@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns true if the type library information is not hidden. If wLibFlags of TLIBATTR is 0 or LIBFLAG_FRESTRICTED or LIBFLAG_FHIDDEN, the method returns false, otherwise, returns true. If the method fails to access the TLIBATTR information, then WIN32OLERuntimeError is raised.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   tlib = WIN32OLE_TYPELIB.new('Microsoft Excel 9.0 Object Library')\n   tlib.visible? # =&gt; true\n"
+full_name: WIN32OLE_TYPELIB#visible?
+is_singleton: false
+name: visible?
+params: |
+  WIN32OLE_TYPELIB#visible? 
+
+visibility: public

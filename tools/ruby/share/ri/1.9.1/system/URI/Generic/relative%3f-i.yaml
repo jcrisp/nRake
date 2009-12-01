@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Checks if URI is relative
+full_name: URI::Generic#relative?
+is_singleton: false
+name: relative?
+params: ()
+visibility: public

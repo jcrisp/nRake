@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Try to convert <em>obj</em> into a String, using to_str method. Returns converted regexp or nil if <em>obj</em> cannot be converted for any reason.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   String.try_convert(&quot;str&quot;)     # =&gt; str\n   String.try_convert(/re/)      # =&gt; nil\n"
+full_name: String::try_convert
+is_singleton: true
+name: try_convert
+params: |
+  String.try_convert(obj) -> string or nil
+
+visibility: public

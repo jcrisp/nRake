@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns true if two objects are not-equal, otherwise false.
+full_name: BasicObject#!=
+is_singleton: false
+name: "!="
+params: |
+  obj != other        => true or false
+
+visibility: public

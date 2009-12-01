@@ -1,0 +1,40 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: open
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: A class for managing temporary files. This library is written to be thread safe.
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: MAX_TRY
+  value: "10"
+full_name: Tempfile
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: close
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: close!
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: delete
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: length
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: make_tmpname
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: open
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: path
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: size
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: unlink
+name: Tempfile
+superclass: DelegateClass(File)

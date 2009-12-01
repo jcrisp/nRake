@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Removes a directory <tt>dir</tt> and its contents recursively. This method ignores StandardError if <tt>force</tt> is true.
+full_name: FileUtils::remove_dir
+is_singleton: true
+name: remove_dir
+params: (path, force = false)
+visibility: public

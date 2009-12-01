@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Create the directory <tt>path</tt> in the uploader root path.
+full_name: Rake::FtpUploader#makedirs
+is_singleton: false
+name: makedirs
+params: (path)
+visibility: public

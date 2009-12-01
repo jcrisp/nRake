@@ -1,0 +1,21 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "call-seq:"
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   Fiber.current() -&gt; fiber\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the current fiber. You need to <tt>require 'fiber'</tt> before using this method. If you are not running in the context of a fiber this method will return the root fiber.
+constants: []
+
+full_name: FiberError
+includes: []
+
+instance_methods: []
+
+name: FiberError
+superclass: StandardError

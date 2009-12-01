@@ -1,0 +1,20 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: A FileTask is a task that includes time based dependencies. If any of a FileTask's prerequisites have a timestamp that is later than the file represented by this task, then the file must be rebuilt (using the supplied actions).
+constants: []
+
+full_name: Rake::FileTask
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: needed?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: timestamp
+name: FileTask
+superclass: Rake::Task

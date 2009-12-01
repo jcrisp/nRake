@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the Base64-decoded version of <tt>str</tt>. This method complies with RFC 4648. ArgumentError is raised if <tt>str</tt> is incorrectly padded or contains non-alphabet characters. Note that CR or LF are also rejected.
+full_name: Base64#strict_decode64
+is_singleton: false
+name: strict_decode64
+params: (str)
+visibility: public

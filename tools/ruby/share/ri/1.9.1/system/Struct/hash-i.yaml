@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Return a hash value based on this struct's contents.
+full_name: Struct#hash
+is_singleton: false
+name: hash
+params: |
+  struct.hash   => fixnum
+
+visibility: public

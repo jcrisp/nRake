@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Defines a named attribute for this module, where the name is <em>symbol.</em><tt>id2name</tt>, creating an instance variable (<tt>@name</tt>) and a corresponding access method to read it. Also creates a method called <tt>name=</tt> to set the attribute.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   module Mod\n     attr_accessor(:one, :two)\n   end\n   Mod.instance_methods.sort   #=&gt; [:one, :one=, :two, :two=]\n"
+full_name: Module#attr_accessor
+is_singleton: false
+name: attr_accessor
+params: |
+  attr_accessor(symbol, ...)    => nil
+
+visibility: public

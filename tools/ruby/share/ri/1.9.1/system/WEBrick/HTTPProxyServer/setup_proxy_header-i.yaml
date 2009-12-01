@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: WEBrick::HTTPProxyServer#setup_proxy_header
+is_singleton: false
+name: setup_proxy_header
+params: (req, res)
+visibility: private

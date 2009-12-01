@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Boolean negate.
+full_name: BasicObject#!
+is_singleton: false
+name: "!"
+params: |
+  !obj    => true or false
+
+visibility: public

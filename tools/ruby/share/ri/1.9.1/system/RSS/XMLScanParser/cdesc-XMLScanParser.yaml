@@ -1,0 +1,17 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: listener
+comment: 
+constants: []
+
+full_name: RSS::XMLScanParser
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: _parse
+name: XMLScanParser
+superclass: RSS::BaseParser

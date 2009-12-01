@@ -1,0 +1,17 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Same as a regular task, but the immediate prerequisites are done in parallel using Ruby threads.
+constants: []
+
+full_name: Rake::MultiTask
+includes: []
+
+instance_methods: []
+
+name: MultiTask
+superclass: Rake::Task

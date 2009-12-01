@@ -1,0 +1,11 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: 
+- !ruby/object:RDoc::RI::AliasName 
+  name: value=
+block_params: 
+comment: 
+full_name: RSS::ITunesItemModel::ITunesDuration#content=
+is_singleton: false
+name: content=
+params: (value)
+visibility: public

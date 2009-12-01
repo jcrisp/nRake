@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Pre-compiles parsers and stores them by name for access during reads.
+full_name: CSV#init_parsers
+is_singleton: false
+name: init_parsers
+params: (options)
+visibility: private

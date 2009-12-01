@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the key for a given value. If not found, returns <tt>nil</tt>.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   h = { &quot;a&quot; =&gt; 100, &quot;b&quot; =&gt; 200 }\n   h.key(200)   #=&gt; &quot;b&quot;\n   h.key(999)   #=&gt; nil\n"
+full_name: Hash#key
+is_singleton: false
+name: key
+params: |
+  hsh.key(value)    => key
+
+visibility: public

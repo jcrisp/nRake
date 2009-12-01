@@ -1,0 +1,18 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Repeatedly executes the block.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   loop do\n     print &quot;Input: &quot;\n     line = gets\n     break if !line or line =~ /^qQ/\n     # ...\n   end\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: StopIteration raised in the block breaks the loop.
+full_name: Kernel#loop
+is_singleton: false
+name: loop
+params: |
+  loop {|| block }
+
+visibility: public

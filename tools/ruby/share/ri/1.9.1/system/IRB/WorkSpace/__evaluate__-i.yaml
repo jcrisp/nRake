@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Alias for #evaluate"
+full_name: IRB::WorkSpace#__evaluate__
+is_singleton: false
+name: __evaluate__
+params: (context, statements, file = nil, line = nil)
+visibility: public

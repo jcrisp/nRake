@@ -1,0 +1,201 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: 
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  name: accept
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  name: accept_charset
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  name: accept_encoding
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  name: accept_language
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  name: addr
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  name: attributes
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  name: cipher
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  name: client_cert
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: Header and entity body
+  name: cookies
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: Header and entity body
+  name: header
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  name: http_version
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  name: keep_alive
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: Request-URI
+  name: path
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  name: path_info
+  rw: RW
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  name: peeraddr
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  name: query_string
+  rw: RW
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: Header and entity body
+  name: raw_header
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: Request line
+  name: request_line
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  name: request_method
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  name: request_time
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: Request-URI
+  name: request_uri
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  name: script_name
+  rw: RW
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  name: server_cert
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  name: unparsed_uri
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: Misc
+  name: user
+  rw: RW
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: BODY_CONTAINABLE_METHODS
+  value: "[ \"POST\", \"PUT\" ]"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: PrivateNetworkRegexp
+  value: /       ^unknown$|       ^((::ffff:)?127.0.0.1|::1)$|       ^(::ffff:)?(10|172\.(1[6-9]|2[0-9]|3[01])|192\.168)\.     /ixo
+full_name: WEBrick::HTTPRequest
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: "[]"
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: _read_data
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: body
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: content_length
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: content_type
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: each
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: fixup
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: host
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: keep_alive?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: meta_vars
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: meta_vars
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: orig_meta_vars
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: orig_parse
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: orig_parse_uri
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: parse
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: parse
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: parse_query
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: parse_uri
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: parse_uri
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: port
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: query
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: read_body
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: read_chunk_size
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: read_chunked
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: read_data
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: read_header
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: read_line
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: read_request_line
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: remote_ip
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: server_name
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: setup_forwarded_info
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: ssl?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: to_s
+name: HTTPRequest
+superclass: Object

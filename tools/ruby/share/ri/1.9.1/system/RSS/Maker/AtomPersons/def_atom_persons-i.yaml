@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: RSS::Maker::AtomPersons#def_atom_persons
+is_singleton: false
+name: def_atom_persons
+params: (klass, name, maker_name, plural=nil)
+visibility: public

@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: Net::HTTP#sspi_auth
+is_singleton: false
+name: sspi_auth
+params: (req)
+visibility: private

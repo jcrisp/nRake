@@ -1,0 +1,39 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "OpenStruct allows you to create data objects and set arbitrary attributes. For example:"
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  require 'ostruct'\n\n  record = OpenStruct.new\n  record.name    = &quot;John Smith&quot;\n  record.age     = 70\n  record.pension = 300\n\n  puts record.name     # -&gt; &quot;John Smith&quot;\n  puts record.address  # -&gt; nil\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: It is like a hash with a different way to access the data. In fact, it is implemented with a hash, and you can initialize it with one.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  hash = { &quot;country&quot; =&gt; &quot;Australia&quot;, :population =&gt; 20_000_000 }\n  data = OpenStruct.new(hash)\n\n  p data        # -&gt; &lt;OpenStruct country=&quot;Australia&quot; population=20000000&gt;\n"
+constants: []
+
+full_name: OpenStruct
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: ==
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: delete_field
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: initialize_copy
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: inspect
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: marshal_dump
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: marshal_load
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new_ostruct_member
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: to_s
+name: OpenStruct
+superclass: Object

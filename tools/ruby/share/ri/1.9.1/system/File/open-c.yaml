@@ -1,0 +1,17 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: With no associated block, <tt>open</tt> is a synonym for <tt>File.new</tt>. If the optional code block is given, it will be passed <em>file</em> as an argument, and the File object will automatically be closed when the block terminates. In this instance, <tt>File.open</tt> returns the value of the block.
+full_name: File::open
+is_singleton: true
+name: open
+params: |
+  File.open(filename, mode="r" [, opt])                 => file
+  File.open(filename [, mode [, perm]] [, opt])         => file
+  File.open(filename, mode="r" [, opt]) {|file| block } => obj
+  File.open(filename [, mode [, perm]] [, opt]) {|file| block } => obj
+
+visibility: public

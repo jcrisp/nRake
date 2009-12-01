@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns <tt>nil</tt> if headers will not be used, <tt>true</tt> if they will but have not yet been read, or the actual headers after they have been read. See CSV::new for details.
+full_name: CSV#headers
+is_singleton: false
+name: headers
+params: ()
+visibility: public

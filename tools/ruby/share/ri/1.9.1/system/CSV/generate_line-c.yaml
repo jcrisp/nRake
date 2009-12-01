@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: This method is a shortcut for converting a single row (Array) into a CSV String.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The <tt>options</tt> parameter can be anthing CSV::new() understands. This method understands an additional <tt>:encoding</tt> parameter to set the base Encoding for the output. This method will try to guess your Encoding from the first non-<tt>nil</tt> field in <tt>row</tt>, if possible, but you may need to use this parameter as a backup plan.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The <tt>:row_sep</tt> <tt>option</tt> defaults to <tt>$INPUT_RECORD_SEPARATOR</tt> (<tt>$/</tt>) when calling this method.
+full_name: CSV::generate_line
+is_singleton: true
+name: generate_line
+params: (row, options = Hash.new)
+visibility: public

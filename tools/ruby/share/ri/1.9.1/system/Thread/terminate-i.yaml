@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Terminates <em>thr</em> and schedules another thread to be run. If this thread is already marked to be killed, <tt>exit</tt> returns the <tt>Thread</tt>. If this is the main thread, or the last thread, exits the process.
+full_name: Thread#terminate
+is_singleton: false
+name: terminate
+params: |
+  thr.exit        => thr or nil
+  thr.kill        => thr or nil
+  thr.terminate   => thr or nil
+
+visibility: public

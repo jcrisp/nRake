@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: disconnects OLE server. If this method called, then the WIN32OLE_EVENT object does not receive the OLE server event any more. This method is trial implementation.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "    ie = WIN32OLE.new('InternetExplorer.Application')\n    ev = WIN32OLE_EVENT.new(ie)\n    ev.on_event() {...}\n       ...\n    ev.unadvise\n"
+full_name: WIN32OLE_EVENT#unadvise
+is_singleton: false
+name: unadvise
+params: |
+  WIN32OLE_EVENT#unadvise -> nil
+
+visibility: public

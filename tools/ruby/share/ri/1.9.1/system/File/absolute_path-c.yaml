@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Converts a pathname to an absolute pathname. Relative paths are referenced from the current working directory of the process unless <em>dir_string</em> is given, in which case it will be used as the starting point. If the given pathname starts with a ``<tt>~</tt>'' it is NOT expanded, it is treated as a normal directory name.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   File.absolute_path(&quot;~oracle/bin&quot;)       #=&gt; &quot;&lt;relative_path&gt;/~oracle/bin&quot;\n"
+full_name: File::absolute_path
+is_singleton: true
+name: absolute_path
+params: |
+  File.absolute_path(file_name [, dir_string] ) -> abs_file_name
+
+visibility: public

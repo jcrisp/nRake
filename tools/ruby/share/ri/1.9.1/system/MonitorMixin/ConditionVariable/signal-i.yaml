@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: MonitorMixin::ConditionVariable#signal
+is_singleton: false
+name: signal
+params: ()
+visibility: public

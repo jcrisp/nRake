@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Return <tt>true</tt> if <em>time</em> and <em>other_time</em> are both <tt>Time</tt> objects with the same seconds and fractional seconds.
+full_name: Time#eql?
+is_singleton: false
+name: eql?
+params: |
+  time.eql?(other_time)
+
+visibility: public

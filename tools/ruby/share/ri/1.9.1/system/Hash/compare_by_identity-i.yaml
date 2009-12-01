@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Makes <em>hsh</em> to compare its keys by their identity, i.e. it will consider exact same objects as same keys.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   h1 = { &quot;a&quot; =&gt; 100, &quot;b&quot; =&gt; 200, :c =&gt; &quot;c&quot; }\n   h1[&quot;a&quot;]        #=&gt; 100\n   h1.compare_by_identity\n   h1.compare_by_identity? #=&gt; true\n   h1[&quot;a&quot;]        #=&gt; nil  # different objects.\n   h1[:c]         #=&gt; &quot;c&quot;  # same symbols are all same.\n"
+full_name: Hash#compare_by_identity
+is_singleton: false
+name: compare_by_identity
+params: |
+  hsh.compare_by_identity => hsh
+
+visibility: public

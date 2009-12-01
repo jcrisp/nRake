@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: Net::POP3::certs
+is_singleton: true
+name: certs
+params: ()
+visibility: public

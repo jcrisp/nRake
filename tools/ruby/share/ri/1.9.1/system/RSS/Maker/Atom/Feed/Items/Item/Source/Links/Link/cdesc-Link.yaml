@@ -1,0 +1,17 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: not_set_name
+comment: 
+constants: []
+
+full_name: RSS::Maker::Atom::Feed::Items::Item::Source::Links::Link
+includes: 
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: AtomLink
+instance_methods: []
+
+name: Link
+superclass: LinkBase

@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns an array of the names of global variables.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   global_variables.grep /std/   #=&gt; [:$stdin, :$stdout, :$stderr]\n"
+full_name: Kernel#global_variables
+is_singleton: false
+name: global_variables
+params: |
+  global_variables    => array
+
+visibility: public

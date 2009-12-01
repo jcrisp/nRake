@@ -1,0 +1,41 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: This formatter uses HTML.
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: ATTR_MAP
+  value: "{     BOLD   => \"b>\",     ITALIC => \"i>\",     CODE   => \"tt>\"   }"
+full_name: RDoc::RI::HtmlFormatter
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: blankline
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: bold_print
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: break_to_newline
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: display_heading
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: display_list
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: display_verbatim_flow_item
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: draw_line
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: escape
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: tag
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: update_attributes
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: write_attribute_text
+name: HtmlFormatter
+superclass: RDoc::RI::AttributeFormatter

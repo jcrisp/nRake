@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: (year)
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Parses <tt>date</tt> using Date._strptime and converts it to a Time object.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "If a block is given, the year described in <tt>date</tt> is converted by the block. For example:"
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "    Time.strptime(...) {|y| y &lt; 100 ? (y &gt;= 69 ? y + 1900 : y + 2000) : y}\n"
+full_name: Time::strptime
+is_singleton: true
+name: strptime
+params: (date, format, now=self.now) {|year| ...}
+visibility: public

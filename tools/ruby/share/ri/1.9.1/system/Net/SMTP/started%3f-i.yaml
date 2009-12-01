@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: <tt>true</tt> if the SMTP session has been started.
+full_name: Net::SMTP#started?
+is_singleton: false
+name: started?
+params: ()
+visibility: public

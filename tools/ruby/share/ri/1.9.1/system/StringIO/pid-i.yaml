@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns <tt>nil</tt>. Just for compatibility to IO.
+full_name: StringIO#pid
+is_singleton: false
+name: pid
+params: " strio.pid -> nil "
+visibility: public

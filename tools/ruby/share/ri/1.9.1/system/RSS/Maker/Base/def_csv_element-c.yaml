@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: RSS::Maker::Base::def_csv_element
+is_singleton: true
+name: def_csv_element
+params: (name, type=nil)
+visibility: public

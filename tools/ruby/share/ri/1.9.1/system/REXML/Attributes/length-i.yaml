@@ -1,0 +1,15 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: 
+- !ruby/object:RDoc::RI::AliasName 
+  name: size
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the number of attributes the owning Element contains.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: " doc = Document &quot;&lt;a x='1' y='2' foo:x='3'/&gt;&quot;\n doc.root.attributes.length        #-&gt; 3\n"
+full_name: REXML::Attributes#length
+is_singleton: false
+name: length
+params: ()
+visibility: public

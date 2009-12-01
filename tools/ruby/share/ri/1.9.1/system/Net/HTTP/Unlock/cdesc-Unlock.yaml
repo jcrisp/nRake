@@ -1,0 +1,26 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: METHOD
+  value: "'UNLOCK'"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: REQUEST_HAS_BODY
+  value: "true"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: RESPONSE_HAS_BODY
+  value: "true"
+full_name: Net::HTTP::Unlock
+includes: []
+
+instance_methods: []
+
+name: Unlock
+superclass: Net::HTTPRequest

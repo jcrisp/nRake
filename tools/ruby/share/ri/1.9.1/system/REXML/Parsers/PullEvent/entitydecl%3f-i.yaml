@@ -1,0 +1,20 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Due to the wonders of DTDs, an entity declaration can be just about anything. There's no way to normalize it; you'll have to interpret the content yourself. However, the following is true:"
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: "If the entity declaration is an internal entity: [ String name, String value ]"
+  type: :BULLET
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Content: [ String text ]"
+full_name: REXML::Parsers::PullEvent#entitydecl?
+is_singleton: false
+name: entitydecl?
+params: ()
+visibility: public

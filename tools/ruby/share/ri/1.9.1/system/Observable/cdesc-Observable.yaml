@@ -1,0 +1,29 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Implements the Observable design pattern as a mixin so that other objects can be notified of changes in state. See observer.rb for details and an example.
+constants: []
+
+full_name: Observable
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: add_observer
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: changed
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: changed?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: count_observers
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: delete_observer
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: delete_observers
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: notify_observers
+name: Observable

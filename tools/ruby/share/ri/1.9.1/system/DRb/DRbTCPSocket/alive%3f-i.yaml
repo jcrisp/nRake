@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Check to see if this connection is alive.
+full_name: DRb::DRbTCPSocket#alive?
+is_singleton: false
+name: alive?
+params: ()
+visibility: public

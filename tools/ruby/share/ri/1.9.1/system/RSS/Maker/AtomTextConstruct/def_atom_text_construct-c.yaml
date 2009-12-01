@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: RSS::Maker::AtomTextConstruct::def_atom_text_construct
+is_singleton: true
+name: def_atom_text_construct
+params: (klass, name, maker_name, klass_name=nil, atom_klass_name=nil)
+visibility: public

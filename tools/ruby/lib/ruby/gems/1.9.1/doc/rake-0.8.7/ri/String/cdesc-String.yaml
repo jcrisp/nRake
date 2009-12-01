@@ -1,0 +1,26 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: User defined methods to be added to String.
+constants: []
+
+full_name: String
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: ext
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: pathmap
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: pathmap_explode
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: pathmap_partial
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: pathmap_replace
+name: String
+superclass: Object

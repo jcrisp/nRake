@@ -1,0 +1,15 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+constants: []
+
+full_name: ERB::Compiler::SimpleScanner2
+includes: []
+
+instance_methods: []
+
+name: SimpleScanner2
+superclass: ERB::Compiler::Scanner

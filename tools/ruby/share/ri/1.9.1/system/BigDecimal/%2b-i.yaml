@@ -1,0 +1,24 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Add the specified value.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: e.g.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  c = a.add(b,n)\n  c = a + b\n"
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "digits:"
+    :body: If specified and less than the number of significant digits of the result, the result is rounded to that number of digits, according to BigDecimal.mode.
+  type: :NOTE
+full_name: BigDecimal#+
+is_singleton: false
+name: +
+params: |
+  add(value, digits)
+
+visibility: public

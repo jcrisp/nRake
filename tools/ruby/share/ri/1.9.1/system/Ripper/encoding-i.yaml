@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Return encoding of the source.
+full_name: Ripper#encoding
+is_singleton: false
+name: encoding
+params: |
+  ripper#encoding   -> encoding
+
+visibility: public

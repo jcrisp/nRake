@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns a network byte ordered string form of the IP address.
+full_name: IPAddr#hton
+is_singleton: false
+name: hton
+params: ()
+visibility: public

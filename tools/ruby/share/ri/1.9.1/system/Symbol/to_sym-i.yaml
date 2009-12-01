@@ -1,0 +1,15 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: In general, <tt>to_sym</tt> returns the <tt>Symbol</tt> corresponding to an object. As <em>sym</em> is already a symbol, <tt>self</tt> is returned in this case.
+full_name: Symbol#to_sym
+is_singleton: false
+name: to_sym
+params: |
+  sym.to_sym   => sym
+  sym.intern   => sym
+
+visibility: public

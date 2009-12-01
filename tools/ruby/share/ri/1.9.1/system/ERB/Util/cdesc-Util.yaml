@@ -1,0 +1,30 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: h
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: html_escape
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: u
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: url_encode
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: A utility module for conversion routines, often handy in HTML generation.
+constants: []
+
+full_name: ERB::Util
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: h
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: html_escape
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: u
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: url_encode
+name: Util

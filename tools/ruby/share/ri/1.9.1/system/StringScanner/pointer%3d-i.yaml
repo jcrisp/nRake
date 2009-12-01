@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Modify the scan pointer.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  s = StringScanner.new('test string')\n  s.pos = 7            # -&gt; 7\n  s.rest               # -&gt; &quot;ring&quot;\n"
+full_name: StringScanner#pointer=
+is_singleton: false
+name: pointer=
+params: " pos=(n)\n"
+visibility: public

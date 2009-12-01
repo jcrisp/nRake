@@ -1,0 +1,18 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: setup_argv
+comment: 
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: TEST_UNIT_IMPLEMENTATION
+  value: "'test/unit compatibility layer using minitest'"
+full_name: Test::Unit
+includes: []
+
+instance_methods: []
+
+name: Unit

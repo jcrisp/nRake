@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Gets the IP address of <tt>name</tt> from the hosts file.
+full_name: Resolv::Hosts#getaddress
+is_singleton: false
+name: getaddress
+params: (name)
+visibility: public

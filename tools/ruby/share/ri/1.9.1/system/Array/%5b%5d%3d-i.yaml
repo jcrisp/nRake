@@ -1,0 +1,18 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Element Assignment---Sets the element at <em>index</em>, or replaces a subarray starting at <em>start</em> and continuing for <em>length</em> elements, or replaces a subarray specified by <em>range</em>. If indices are greater than the current capacity of the array, the array grows automatically. A negative indices will count backward from the end of the array. Inserts elements if <em>length</em> is zero. An <tt>IndexError</tt> is raised if a negative index points past the beginning of the array. See also <tt>Array#push</tt>, and <tt>Array#unshift</tt>.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   a = Array.new\n   a[4] = &quot;4&quot;;                 #=&gt; [nil, nil, nil, nil, &quot;4&quot;]\n   a[0, 3] = [ 'a', 'b', 'c' ] #=&gt; [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, nil, &quot;4&quot;]\n   a[1..2] = [ 1, 2 ]          #=&gt; [&quot;a&quot;, 1, 2, nil, &quot;4&quot;]\n   a[0, 2] = &quot;?&quot;               #=&gt; [&quot;?&quot;, 2, nil, &quot;4&quot;]\n   a[0..2] = &quot;A&quot;               #=&gt; [&quot;A&quot;, &quot;4&quot;]\n   a[-1]   = &quot;Z&quot;               #=&gt; [&quot;A&quot;, &quot;Z&quot;]\n   a[1..-1] = nil              #=&gt; [&quot;A&quot;, nil]\n   a[1..-1] = []               #=&gt; [&quot;A&quot;]\n"
+full_name: Array#[]=
+is_singleton: false
+name: "[]="
+params: |
+  array[index]         = obj                     ->  obj
+  array[start, length] = obj or an_array or nil  ->  obj or an_array or nil
+  array[range]         = obj or an_array or nil  ->  obj or an_array or nil
+
+visibility: public

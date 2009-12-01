@@ -1,0 +1,96 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: 
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The heading that should be displayed before listing attributes.
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: If not supplied, this defaults to &quot;Attributes&quot;.
+  name: attribute_list_heading
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The contents of the stylesheet that should be used for the central frame (for the class and file pages).
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: This must be specified in the Hash passed to the constructor.
+  name: central_css
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The heading that should be displayed before listing classes and modules.
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: If not supplied, this defaults to &quot;Classes and Modules&quot;.
+  name: class_and_module_list_heading
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The contents of the stylesheet that should be used for the index pages.
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: This must be specified in the Hash passed to the constructor.
+  name: index_css
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The heading that should be displayed before listing methods.
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: If not supplied, this defaults to &quot;Methods&quot;.
+  name: method_list_heading
+  rw: R
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "This class generates Kilmer-style templates. Right now, rdoc is shipped with two such templates:"
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: kilmer
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: hefss
+  type: :BULLET
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Kilmer-style templates use frames. The left side of the page has three frames stacked on top of each other: one lists files, one lists classes, and one lists methods. If source code is not inlined, an additional frame runs across the bottom of the page and will be used to display method source code. The central (and largest frame) display class and file pages."
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The constructor of this class accepts a Hash containing stylistic attributes. Then, a get_BLAH instance method of this class returns a value for the template's BLAH constant. get_BODY, for instance, returns the value of the template's BODY constant.
+constants: []
+
+full_name: RDoc::Generator::HTML::KilmerFactory
+includes: 
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: RDoc::Generator::HTML::Common
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: get_BLANK
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: get_BODY
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: get_CLASS_INDEX
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: get_CLASS_PAGE
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: get_FILE_INDEX
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: get_FILE_PAGE
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: get_FR_INDEX_BODY
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: get_INDEX
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: get_METHOD_INDEX
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: get_METHOD_LIST
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: get_SRC_PAGE
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: get_STYLE
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: write_extra_pages
+name: KilmerFactory
+superclass: Object

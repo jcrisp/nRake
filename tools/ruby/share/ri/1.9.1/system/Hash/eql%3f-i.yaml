@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns <tt>true</tt> if <em>hash</em> and <em>other</em> are both hashes with the same content.
+full_name: Hash#eql?
+is_singleton: false
+name: eql?
+params: |
+  hash.eql?(other)  -> true or false
+
+visibility: public

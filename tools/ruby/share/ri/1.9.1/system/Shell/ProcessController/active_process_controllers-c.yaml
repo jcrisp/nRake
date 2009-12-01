@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: Shell::ProcessController::active_process_controllers
+is_singleton: true
+name: active_process_controllers
+params: ()
+visibility: public

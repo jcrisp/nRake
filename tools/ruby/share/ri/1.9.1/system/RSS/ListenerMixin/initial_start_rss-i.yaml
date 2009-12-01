@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: RSS::ListenerMixin#initial_start_rss
+is_singleton: false
+name: initial_start_rss
+params: (tag_name, prefix, attrs, ns)
+visibility: private

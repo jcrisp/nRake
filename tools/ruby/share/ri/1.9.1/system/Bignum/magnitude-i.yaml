@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the absolute value of <em>big</em>.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   -1234567890987654321.abs   #=&gt; 1234567890987654321\n"
+full_name: Bignum#magnitude
+is_singleton: false
+name: magnitude
+params: |
+  big.abs -> aBignum
+
+visibility: public

@@ -1,0 +1,31 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: change_privilege
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: eid
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: grant_privilege
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: re_exchange
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: re_exchangeable?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: rid
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: sid_available?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: switch
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The <tt>Process::UID</tt> module contains a collection of module functions which can be used to portably get, set, and switch the current process's real, effective, and saved user IDs.
+constants: []
+
+full_name: Process::UID
+includes: []
+
+instance_methods: []
+
+name: UID

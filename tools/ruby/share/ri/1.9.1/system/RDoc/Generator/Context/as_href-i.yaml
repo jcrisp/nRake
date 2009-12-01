@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns a reference to outselves to be used as an href= the form depends on whether we're all in one file or in multiple files
+full_name: RDoc::Generator::Context#as_href
+is_singleton: false
+name: as_href
+params: (from_path)
+visibility: public

@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Not documented
+full_name: Module#method_undefined
+is_singleton: false
+name: method_undefined
+params: (p1)
+visibility: public

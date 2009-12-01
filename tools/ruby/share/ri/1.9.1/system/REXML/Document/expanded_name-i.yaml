@@ -1,0 +1,13 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: 
+- !ruby/object:RDoc::RI::AliasName 
+  name: name
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: According to the XML spec, a root node has no expanded name
+full_name: REXML::Document#expanded_name
+is_singleton: false
+name: expanded_name
+params: ()
+visibility: public

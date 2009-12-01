@@ -1,0 +1,17 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Indicates that the DNS response was unable to be decoded.
+constants: []
+
+full_name: Resolv::DNS::DecodeError
+includes: []
+
+instance_methods: []
+
+name: DecodeError
+superclass: StandardError

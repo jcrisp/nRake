@@ -1,0 +1,17 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns an enumerator that gives each byte in the string. If a block is given, it iterates over each byte in the string.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   &quot;hello&quot;.bytes.to_a        #=&gt; [104, 101, 108, 108, 111]\n"
+full_name: String#bytes
+is_singleton: false
+name: bytes
+params: |
+  str.bytes   => anEnumerator
+  str.bytes {|fixnum| block }    => str
+
+visibility: public

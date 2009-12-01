@@ -1,0 +1,45 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: 
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  name: dev
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  name: filename
+  rw: R
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: SiD
+  value: 24 * 60 * 60
+full_name: Logger::LogDevice
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: add_log_header
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: check_shift_log
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: close
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: create_logfile
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: eod
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: open_logfile
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: previous_period_end
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: shift_log_age
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: shift_log_period
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: write
+name: LogDevice
+superclass: Object

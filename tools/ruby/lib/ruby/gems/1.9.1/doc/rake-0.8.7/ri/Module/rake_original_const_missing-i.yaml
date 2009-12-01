@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Alias for #const_missing"
+full_name: Module#rake_original_const_missing
+is_singleton: false
+name: rake_original_const_missing
+params: (const_name)
+visibility: public

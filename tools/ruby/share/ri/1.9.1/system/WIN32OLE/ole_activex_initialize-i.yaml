@@ -1,0 +1,20 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Initialize WIN32OLE object(ActiveX Control) by calling IPersistMemory::InitNew.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Before calling OLE method, some kind of the ActiveX controls created with MFC should be initialized by calling IPersistXXX::InitNew.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "If and only if you received the exception &quot;HRESULT error code: 0x8000ffff catastrophic failure&quot;, try this method before invoking any ole_method."
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   obj = WIN32OLE.new(&quot;ProgID_or_GUID_of_ActiveX_Control&quot;)\n   obj.ole_activex_initialize\n   obj.method(...)\n"
+full_name: WIN32OLE#ole_activex_initialize
+is_singleton: false
+name: ole_activex_initialize
+params: |
+  WIN32OLE#ole_activex_initialize() -> Qnil
+
+visibility: public

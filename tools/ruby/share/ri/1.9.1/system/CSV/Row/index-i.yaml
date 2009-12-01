@@ -1,0 +1,15 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: This method will return the index of a field with the provided <tt>header</tt>. The <tt>offset</tt> can be used to locate duplicate header names, as described in CSV::Row.field().
+full_name: CSV::Row#index
+is_singleton: false
+name: index
+params: |
+  index( header )
+  index( header, offset )
+
+visibility: public

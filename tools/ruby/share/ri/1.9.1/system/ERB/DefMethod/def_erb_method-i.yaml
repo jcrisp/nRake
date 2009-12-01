@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: define <em>methodname</em> as instance method of current module, using ERB object or eRuby file
+full_name: ERB::DefMethod#def_erb_method
+is_singleton: false
+name: def_erb_method
+params: (methodname, erb_or_fname)
+visibility: private

@@ -1,0 +1,21 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: incompatible_argument_styles
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: pattern
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Switch that takes no arguments.
+constants: []
+
+full_name: OptionParser::NoArgument
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: parse
+name: NoArgument
+superclass: self

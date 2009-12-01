@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: Net::IMAP::DigestMD5Authenticator::new
+is_singleton: true
+name: new
+params: (user, password, authname = nil)
+visibility: public

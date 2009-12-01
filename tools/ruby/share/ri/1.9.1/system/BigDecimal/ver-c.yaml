@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the BigDecimal version number.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Ruby 1.8.0 returns 1.0.0. Ruby 1.8.1 thru 1.8.3 return 1.0.1.
+full_name: BigDecimal::ver
+is_singleton: true
+name: ver
+params: ()
+visibility: public

@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Check that the files on the command line exist
+full_name: RDoc::Options#check_files
+is_singleton: false
+name: check_files
+params: ()
+visibility: private

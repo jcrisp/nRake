@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Resets the digest to the initial state and returns self.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: This method is overridden by each implementation subclass.
+full_name: Digest::Instance#reset
+is_singleton: false
+name: reset
+params: |
+  digest_obj.reset -> digest_obj
+
+visibility: public

@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Alias for #initialize"
+full_name: TCPSocket#original_resolv_initialize
+is_singleton: false
+name: original_resolv_initialize
+params: (host, serv, *rest)
+visibility: public

@@ -1,0 +1,20 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+constants: []
+
+full_name: REXML::Validation::Optional
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: expected
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: matches?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: next
+name: Optional
+superclass: REXML::Validation::State

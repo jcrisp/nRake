@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the Encoding object that represents the encoding of the file. If io is write mode and no encoding is specified, returns <tt>nil</tt>.
+full_name: IO#external_encoding
+is_singleton: false
+name: external_encoding
+params: |
+  io.external_encoding   => encoding
+
+visibility: public

@@ -1,0 +1,29 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: <tt>ThreadGroup</tt> provides a means of keeping track of a number of threads as a group. A <tt>Thread</tt> can belong to only one <tt>ThreadGroup</tt> at a time; adding a thread to a new group will remove it from any previous group.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Newly created threads belong to the same group as the thread from which they were created.
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: Default
+  value: th->thgroup
+full_name: ThreadGroup
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: add
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: enclose
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: enclosed?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: list
+name: ThreadGroup
+superclass: Object

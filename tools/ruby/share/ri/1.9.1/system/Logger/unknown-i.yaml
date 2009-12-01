@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Log an <tt>UNKNOWN</tt> message. This will be printed no matter what the logger level.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "See #info for more information."
+full_name: Logger#unknown
+is_singleton: false
+name: unknown
+params: (progname = nil, &block)
+visibility: public

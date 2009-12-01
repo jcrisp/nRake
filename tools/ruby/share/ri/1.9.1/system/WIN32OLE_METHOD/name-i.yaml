@@ -1,0 +1,19 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: 
+- !ruby/object:RDoc::RI::AliasName 
+  name: to_s
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: call-seq
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   WIN32OLE_METHOD#name\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the name of the method.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   tobj = WIN32OLE_TYPE.new('Microsoft Excel 9.0 Object Library', 'Workbook')\n   method = WIN32OLE_METHOD.new(tobj, 'SaveAs')\n   puts method.name # =&gt; SaveAs\n"
+full_name: WIN32OLE_METHOD#name
+is_singleton: false
+name: name
+params: ()
+visibility: public

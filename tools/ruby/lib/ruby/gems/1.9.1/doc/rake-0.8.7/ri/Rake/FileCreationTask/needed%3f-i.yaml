@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Is this file task needed? Yes if it doesn't exist.
+full_name: Rake::FileCreationTask#needed?
+is_singleton: false
+name: needed?
+params: ()
+visibility: public

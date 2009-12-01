@@ -1,0 +1,41 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: HTTPSession
+  value: HTTP
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: class aliases
+  name: POP
+  value: POP3
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: POPSession
+  value: POP3
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: POP3Session
+  value: POP3
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: class aliases
+  name: APOPSession
+  value: APOP
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: SMTPSession
+  value: SMTP
+full_name: Net
+includes: []
+
+instance_methods: []
+
+name: Net

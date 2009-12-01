@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns OLE variant type.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   obj = WIN32OLE_VARIANT.new(&quot;string&quot;)\n   obj.vartype # =&gt; WIN32OLE::VARIANT::VT_BSTR\n"
+full_name: WIN32OLE_VARIANT#vartype
+is_singleton: false
+name: vartype
+params: |
+  WIN32OLE_VARIANT.vartype #=> OLE variant type.
+
+visibility: public

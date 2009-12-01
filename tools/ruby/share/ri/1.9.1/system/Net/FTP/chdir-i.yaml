@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Changes the (remote) directory.
+full_name: Net::FTP#chdir
+is_singleton: false
+name: chdir
+params: (dirname)
+visibility: public

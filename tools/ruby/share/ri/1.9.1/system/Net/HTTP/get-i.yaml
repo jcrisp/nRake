@@ -1,0 +1,24 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: +body_segment+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Gets data from <tt>path</tt> on the connected-to host. <tt>initheader</tt> must be a Hash like { 'Accept' =&gt; '<b>/</b>', ... }, and it defaults to an empty hash. If <tt>initheader</tt> doesn't have the key 'accept-encoding', then a value of &quot;gzip;q=1.0,deflate;q=0.6,identity;q=0.3&quot; is used, so that gzip compression is used in preference to deflate compression, which is used in preference to no compression. Ruby doesn't have libraries to support the compress (Lempel-Ziv) compression, so that is not supported. The intent of this is to reduce bandwidth by default. If this routine sets up compression, then it does the decompression also, removing the header as well to prevent confusion. Otherwise it leaves the body as it found it.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: In version 1.1 (ruby 1.6), this method returns a pair of objects, a Net::HTTPResponse object and the entity body string. In version 1.2 (ruby 1.8), this method returns a Net::HTTPResponse object.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: If called with a block, yields each fragment of the entity body in turn as a string as it is read from the socket. Note that in this case, the returned response object will <b>not</b> contain a (meaningful) body.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: <tt>dest</tt> argument is obsolete. It still works but you must not use it.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: In version 1.1, this method might raise an exception for 3xx (redirect). In this case you can get a HTTPResponse object by &quot;anException.response&quot;.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: In version 1.2, this method never raises exception.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "    # version 1.1 (bundled with Ruby 1.6)\n    response, body = http.get('/index.html')\n\n    # version 1.2 (bundled with Ruby 1.8 or later)\n    response = http.get('/index.html')\n\n    # using block\n    File.open('result.txt', 'w') {|f|\n      http.get('/~foo/') do |str|\n        f.write str\n      end\n    }\n"
+full_name: Net::HTTP#get
+is_singleton: false
+name: get
+params: (path, initheader = {}, dest = nil) {|+body_segment+| ...}
+visibility: public

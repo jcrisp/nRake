@@ -1,0 +1,17 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: hexencode
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: This module provides a framework for message digest libraries.
+constants: []
+
+full_name: Digest
+includes: []
+
+instance_methods: []
+
+name: Digest

@@ -1,0 +1,17 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Updates the digest using a given <em>string</em> and returns self.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The update() method and the left-shift operator are overridden by each implementation subclass. (One should be an alias for the other)
+full_name: Digest::Instance#update
+is_singleton: false
+name: update
+params: |
+  digest_obj.update(string) -> digest_obj
+  digest_obj << string -> digest_obj
+
+visibility: public

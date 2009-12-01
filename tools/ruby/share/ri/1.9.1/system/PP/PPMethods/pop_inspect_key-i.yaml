@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: PP::PPMethods#pop_inspect_key
+is_singleton: false
+name: pop_inspect_key
+params: (id)
+visibility: public

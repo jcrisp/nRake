@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Is <tt>uri</tt> the URI for the current local server?
+full_name: DRb::here?
+is_singleton: true
+name: here?
+params: (uri)
+visibility: public

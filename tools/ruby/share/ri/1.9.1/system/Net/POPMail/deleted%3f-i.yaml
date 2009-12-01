@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: True if the mail has been deleted.
+full_name: Net::POPMail#deleted?
+is_singleton: false
+name: deleted?
+params: ()
+visibility: public

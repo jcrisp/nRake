@@ -1,0 +1,19 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: 
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  name: response
+  rw: R
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: HTTP exception class. You must use its subclasses.
+constants: []
+
+full_name: Net::HTTPExceptions
+includes: []
+
+instance_methods: []
+
+name: HTTPExceptions

@@ -1,0 +1,59 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: 
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: Time in seconds that a secondary name server is to use the data before refreshing from the primary name server.
+  name: expire
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The minimum number of seconds to be used for TTL values in RRs.
+  name: minimum
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: Name of the host where the master zone file for this zone resides.
+  name: mname
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: How often, in seconds, a secondary name server is to check for updates from the primary name server.
+  name: refresh
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: How often, in seconds, a secondary name server is to retry after a failure to check for a refresh.
+  name: retry
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The person responsible for this domain name.
+  name: rname
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The version number of the zone file.
+  name: serial
+  rw: R
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Start Of Authority resource.
+constants: []
+
+full_name: Resolv::DNS::Resource::SOA
+includes: []
+
+instance_methods: []
+
+name: SOA
+superclass: Resolv::DNS::Resource

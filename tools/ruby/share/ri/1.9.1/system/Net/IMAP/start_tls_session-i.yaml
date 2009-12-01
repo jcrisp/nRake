@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: Net::IMAP#start_tls_session
+is_singleton: false
+name: start_tls_session
+params: (params = {})
+visibility: private

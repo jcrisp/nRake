@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: Shell::ProcessController::block_output_synchronize
+is_singleton: true
+name: block_output_synchronize
+params: (&b)
+visibility: public

@@ -1,0 +1,31 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Net::IMAP::BodyTypeText represents TEXT body structures of messages.
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 4
+  :text: "Fields:"
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "lines:"
+    :body: Returns the size of the body in text lines.
+  type: :NOTE
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: And Net::IMAP::BodyTypeText has all fields of Net::IMAP::BodyTypeBasic.
+constants: []
+
+full_name: Net::IMAP::BodyTypeText
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: media_subtype
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: multipart?
+name: BodyTypeText
+superclass: Struct.new(:media_type, :subtype,                                     :param, :content_id,                                     :description, :encoding, :size,                                     :lines,                                     :md5, :disposition, :language,                                     :extension)

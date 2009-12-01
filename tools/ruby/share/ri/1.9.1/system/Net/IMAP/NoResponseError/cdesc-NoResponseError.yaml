@@ -1,0 +1,17 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Error raised upon a &quot;NO&quot; response from the server, indicating that the client command could not be completed successfully.
+constants: []
+
+full_name: Net::IMAP::NoResponseError
+includes: []
+
+instance_methods: []
+
+name: NoResponseError
+superclass: Net::IMAP::ResponseError

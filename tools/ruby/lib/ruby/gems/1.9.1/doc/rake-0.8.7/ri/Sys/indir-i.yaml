@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: ""
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Make <tt>dir</tt> the current working directory for the duration of executing the given block.
+full_name: Sys#indir
+is_singleton: false
+name: indir
+params: (dir) {|| ...}
+visibility: public

@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns whether input encoding is EUC-JP or not.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: <b>Note</b> don't expect this return value is MatchData.
+full_name: Kconv#iseuc
+is_singleton: false
+name: iseuc
+params: |
+  Kconv.iseuc(str)   => true or false
+
+visibility: private

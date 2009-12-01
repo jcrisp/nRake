@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Reverses <em>str</em> in place.
+full_name: String#reverse!
+is_singleton: false
+name: reverse!
+params: |
+  str.reverse!   => str
+
+visibility: public

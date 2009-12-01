@@ -1,0 +1,17 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: not_set_name
+comment: 
+constants: []
+
+full_name: RSS::Maker::Atom::Feed::Channel::Generator
+includes: 
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: AtomGenerator
+instance_methods: []
+
+name: Generator
+superclass: GeneratorBase

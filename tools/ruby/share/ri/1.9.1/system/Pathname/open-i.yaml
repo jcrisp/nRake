@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: file
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: See <tt>File.open</tt>. Opens the file for reading or writing.
+full_name: Pathname#open
+is_singleton: false
+name: open
+params: (*args) {|file| ...}
+visibility: public

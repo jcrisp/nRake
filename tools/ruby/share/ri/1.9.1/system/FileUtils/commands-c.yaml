@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns an Array of method names which have any options.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  p FileUtils.commands  #=&gt; [&quot;chmod&quot;, &quot;cp&quot;, &quot;cp_r&quot;, &quot;install&quot;, ...]\n"
+full_name: FileUtils::commands
+is_singleton: true
+name: commands
+params: ()
+visibility: private

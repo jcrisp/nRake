@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Inherited from Encoding Overridden to support optimized en/decoding
+full_name: REXML::Source#encoding=
+is_singleton: false
+name: encoding=
+params: (enc)
+visibility: public

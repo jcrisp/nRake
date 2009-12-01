@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Reads at least <tt>bytes</tt> from <tt>@io</tt>, but will read up 10 bytes ahead if needed to ensure the data read is valid in the ecoding of that data. This should ensure that it is safe to use regular expressions on the read data, unless it is actually a broken encoding. The read data will be returned in <tt>@encoding</tt>.
+full_name: CSV#read_to_char
+is_singleton: false
+name: read_to_char
+params: (bytes)
+visibility: private

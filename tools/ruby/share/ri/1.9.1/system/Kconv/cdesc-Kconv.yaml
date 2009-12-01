@@ -1,0 +1,131 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: guess
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: iseuc
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: isjis
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: issjis
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: isutf8
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: kconv
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: toeuc
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: tojis
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: tolocale
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: tosjis
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: toutf16
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: toutf32
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: toutf8
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Kanji Converter for Ruby.
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: Auto-Detect
+  name: AUTO
+  value: NKF::AUTO
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: ISO-2022-JP
+  name: JIS
+  value: NKF::JIS
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: EUC-JP
+  name: EUC
+  value: NKF::EUC
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: Shift_JIS
+  name: SJIS
+  value: NKF::SJIS
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: BINARY
+  name: BINARY
+  value: NKF::BINARY
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: NOCONV
+  name: NOCONV
+  value: NKF::NOCONV
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: ASCII
+  name: ASCII
+  value: NKF::ASCII
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: UTF-8
+  name: UTF8
+  value: NKF::UTF8
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: UTF-16
+  name: UTF16
+  value: NKF::UTF16
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: UTF-32
+  name: UTF32
+  value: NKF::UTF32
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: UNKNOWN
+  name: UNKNOWN
+  value: NKF::UNKNOWN
+full_name: Kconv
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: guess
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: iseuc
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: isjis
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: issjis
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: isutf8
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: kconv
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: toeuc
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: tojis
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: tolocale
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: tosjis
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: toutf16
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: toutf32
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: toutf8
+name: Kconv

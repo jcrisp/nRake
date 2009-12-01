@@ -1,0 +1,44 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: 
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  name: num_classes
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  name: num_files
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  name: num_methods
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  name: num_modules
+  rw: R
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Simple stats collector
+constants: []
+
+full_name: RDoc::Stats
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: add_alias
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: add_class
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: add_file
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: add_method
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: add_module
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: print
+name: Stats
+superclass: Object

@@ -1,0 +1,18 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the offset in seconds between the timezone of <em>time</em> and UTC.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   t = Time.gm(2000,1,1,20,15,1)   #=&gt; 2000-01-01 20:15:01 UTC\n   t.gmt_offset                    #=&gt; 0\n   l = t.getlocal                  #=&gt; 2000-01-01 14:15:01 -0600\n   l.gmt_offset                    #=&gt; -21600\n"
+full_name: Time#utc_offset
+is_singleton: false
+name: utc_offset
+params: |
+  time.gmt_offset => fixnum
+  time.gmtoff     => fixnum
+  time.utc_offset => fixnum
+
+visibility: public

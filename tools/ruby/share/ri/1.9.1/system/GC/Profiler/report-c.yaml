@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: GC::Profiler.result display
+full_name: GC::Profiler::report
+is_singleton: true
+name: report
+params: |
+  GC::Profiler.report
+
+visibility: public

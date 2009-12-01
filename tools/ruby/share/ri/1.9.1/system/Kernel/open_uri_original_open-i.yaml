@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Alias for #open"
+full_name: Kernel#open_uri_original_open
+is_singleton: false
+name: open_uri_original_open
+params: (...)
+visibility: private

@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: (fn)
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Perform a block with each file matching a set of wildcards.
+full_name: Sys#for_files
+is_singleton: false
+name: for_files
+params: (*wildcards) {|fn| ...}
+visibility: public

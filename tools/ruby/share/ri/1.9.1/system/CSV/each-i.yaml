@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: row
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Yields each row of the data source in turn.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Support for Enumerable.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The data source must be open for reading.
+full_name: CSV#each
+is_singleton: false
+name: each
+params: () {|row| ...}
+visibility: public

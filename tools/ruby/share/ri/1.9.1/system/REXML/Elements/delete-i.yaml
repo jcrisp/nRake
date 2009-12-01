@@ -1,0 +1,23 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Deletes a child Element
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "element:"
+    :body: Either an Element, which is removed directly; an xpath, where the first matching child is removed; or an Integer, where the n'th Element is removed.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "Returns:"
+    :body: the removed child
+  type: :NOTE
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: " doc = Document.new '&lt;a&gt;&lt;b/&gt;&lt;c/&gt;&lt;c id=&quot;1&quot;/&gt;&lt;/a&gt;'\n b = doc.root.elements[1]\n doc.root.elements.delete b           #-&gt; &lt;a&gt;&lt;c/&gt;&lt;c id=&quot;1&quot;/&gt;&lt;/a&gt;\n doc.elements.delete(&quot;a/c[@id='1']&quot;)  #-&gt; &lt;a&gt;&lt;c/&gt;&lt;/a&gt;\n doc.root.elements.delete 1           #-&gt; &lt;a/&gt;\n"
+full_name: REXML::Elements#delete
+is_singleton: false
+name: delete
+params: (element)
+visibility: public

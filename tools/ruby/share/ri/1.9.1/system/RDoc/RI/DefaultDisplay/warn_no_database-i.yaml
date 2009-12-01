@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Displays a message that describes how to build RI data.
+full_name: RDoc::RI::DefaultDisplay#warn_no_database
+is_singleton: false
+name: warn_no_database
+params: ()
+visibility: public

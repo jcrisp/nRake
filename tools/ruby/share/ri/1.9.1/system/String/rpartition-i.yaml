@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Searches <em>sep</em> in the string from the end of the string, and returns the part before it, the <em>sep</em>, and the part after it. If <em>sep</em> is not found, returns two empty strings and <em>str</em>.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   &quot;hello&quot;.rpartition(&quot;l&quot;)         #=&gt; [&quot;hel&quot;, &quot;l&quot;, &quot;o&quot;]\n   &quot;hello&quot;.rpartition(&quot;x&quot;)         #=&gt; [&quot;&quot;, &quot;&quot;, &quot;hello&quot;]\n"
+full_name: String#rpartition
+is_singleton: false
+name: rpartition
+params: |
+  str.rpartition(sep)            => [head, sep, tail]
+
+visibility: public

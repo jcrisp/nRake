@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Adds a new row to the bottom end of this table. You can provide an Array, which will be converted to a CSV::Row (inheriting the table's headers()), or a CSV::Row.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: This method returns the table for chaining.
+full_name: CSV::Table#<<
+is_singleton: false
+name: "<<"
+params: (row_or_array)
+visibility: public

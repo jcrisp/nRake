@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns true if the fiber can still be resumed (or transferred to). After finishing execution of the fiber block this method will always return false.
+full_name: Fiber#alive?
+is_singleton: false
+name: alive?
+params: |
+  fiber.alive? -> true or false
+
+visibility: public

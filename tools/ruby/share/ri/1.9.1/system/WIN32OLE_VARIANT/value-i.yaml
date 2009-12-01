@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns Ruby object value from OLE variant.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   obj = WIN32OLE_VARIANT.new(1, WIN32OLE::VARIANT::VT_BSTR)\n   obj.value # =&gt; &quot;1&quot; (not Fixnum object, but String object &quot;1&quot;)\n"
+full_name: WIN32OLE_VARIANT#value
+is_singleton: false
+name: value
+params: |
+  WIN32OLE_VARIANT.value #=> Ruby object.
+
+visibility: public

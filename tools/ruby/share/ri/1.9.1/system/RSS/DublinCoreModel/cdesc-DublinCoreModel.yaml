@@ -1,0 +1,29 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: TEXT_ELEMENTS
+  value: "{       \"title\" => nil,       \"description\" => nil,       \"creator\" => nil,       \"subject\" => nil,       \"publisher\" => nil,       \"contributor\" => nil,       \"type\" => nil,       \"format\" => nil,       \"identifier\" => nil,       \"source\" => nil,       \"language\" => nil,       \"relation\" => nil,       \"coverage\" => nil,       \"rights\" => \"rights_list\"     }"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: DATE_ELEMENTS
+  value: "{       \"date\" => \"w3cdtf\",     }"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: ELEMENT_NAME_INFOS
+  value: DublinCoreModel::TEXT_ELEMENTS.to_a
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: ELEMENTS
+  value: TEXT_ELEMENTS.keys + DATE_ELEMENTS.keys
+full_name: RSS::DublinCoreModel
+includes: []
+
+instance_methods: []
+
+name: DublinCoreModel

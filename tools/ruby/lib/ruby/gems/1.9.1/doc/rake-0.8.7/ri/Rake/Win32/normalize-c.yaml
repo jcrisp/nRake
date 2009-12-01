@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Normalize a win32 path so that the slashes are all forward slashes.
+full_name: Rake::Win32::normalize
+is_singleton: true
+name: normalize
+params: (path)
+visibility: public

@@ -1,0 +1,67 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "<tt>FileTest</tt> implements file test operations similar to those used in <tt>File::Stat</tt>. It exists as a standalone module, and its methods are also insinuated into the <tt>File</tt> class. (Note that this is not done by inclusion: the interpreter cheats)."
+constants: []
+
+full_name: FileTest
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: blockdev?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: chardev?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: directory?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: executable?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: executable_real?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: exist?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: exists?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: file?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: grpowned?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: identical?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: owned?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: pipe?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: readable?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: readable_real?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: setgid?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: setuid?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: size
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: size?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: socket?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: sticky?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: symlink?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: world_readable?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: world_writable?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: writable?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: writable_real?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: zero?
+name: FileTest

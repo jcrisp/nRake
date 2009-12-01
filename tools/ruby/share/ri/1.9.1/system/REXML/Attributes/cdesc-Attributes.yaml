@@ -1,0 +1,47 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: A class that defines the set of Attributes of an Element and provides operations for accessing elements in that set.
+constants: []
+
+full_name: REXML::Attributes
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: "<<"
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: "[]"
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: "[]="
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: add
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: delete
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: delete_all
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: each
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: each_attribute
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: get_attribute
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: get_attribute_ns
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: length
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: namespaces
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: prefixes
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: size
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: to_a
+name: Attributes
+superclass: Hash

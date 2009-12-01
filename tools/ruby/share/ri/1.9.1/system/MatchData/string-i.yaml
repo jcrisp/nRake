@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns a frozen copy of the string passed in to <tt>match</tt>.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   m = /(.)(.)(\\d+)(\\d)/.match(&quot;THX1138.&quot;)\n   m.string   #=&gt; &quot;THX1138.&quot;\n"
+full_name: MatchData#string
+is_singleton: false
+name: string
+params: |
+  mtch.string   => str
+
+visibility: public

@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Computes the arc sine of <em>x</em>. Returns -{PI/2} .. {PI/2}.
+full_name: Math::asin
+is_singleton: true
+name: asin
+params: |
+  Math.asin(x)    => float
+
+visibility: public

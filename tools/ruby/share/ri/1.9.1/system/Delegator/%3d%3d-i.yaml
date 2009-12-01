@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns true if two objects are considered same.
+full_name: Delegator#==
+is_singleton: false
+name: ==
+params: (obj)
+visibility: public

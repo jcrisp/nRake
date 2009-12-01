@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Internal method used to provide marshalling support. See the Marshal module.
+full_name: BigDecimal::_load
+is_singleton: true
+name: _load
+params: (p1)
+visibility: public

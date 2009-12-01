@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Opens or reopens the file with mode &quot;r+&quot;.
+full_name: Tempfile#open
+is_singleton: false
+name: open
+params: ()
+visibility: public

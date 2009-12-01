@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: mes if iterator?
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "%pwd, %cwd -&gt; @pwd"
+full_name: Shell::CommandProcessor#notify
+is_singleton: false
+name: notify
+params: (*opts, &block) {|mes if iterator?| ...}
+visibility: public

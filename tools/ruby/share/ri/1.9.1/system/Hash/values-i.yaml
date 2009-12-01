@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns a new array populated with the values from <em>hsh</em>. See also <tt>Hash#keys</tt>.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   h = { &quot;a&quot; =&gt; 100, &quot;b&quot; =&gt; 200, &quot;c&quot; =&gt; 300 }\n   h.values   #=&gt; [100, 200, 300]\n"
+full_name: Hash#values
+is_singleton: false
+name: values
+params: |
+  hsh.values    => array
+
+visibility: public

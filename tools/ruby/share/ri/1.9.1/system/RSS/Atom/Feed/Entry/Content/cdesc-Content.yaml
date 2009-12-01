@@ -1,0 +1,51 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: 
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  name: xml
+  rw: W
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: xml_getter
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: xml_setter
+comment: 
+constants: []
+
+full_name: RSS::Atom::Feed::Entry::Content
+includes: 
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: CommonModel
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: atom_validate
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: empty_content?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: have_xml_content?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: inline_html?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: inline_other?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: inline_other_base64?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: inline_other_text?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: inline_other_xml?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: inline_text?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: inline_xhtml?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: mime_split
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: need_base64_encode?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: out_of_line?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: xhtml
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: xml
+name: Content
+superclass: RSS::Element

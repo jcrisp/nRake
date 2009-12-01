@@ -1,0 +1,28 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: 
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  name: exitstatus
+  rw: R
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Exit status class for times the system just gives us a nil.
+constants: []
+
+full_name: Rake::PseudoStatus
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: ">>"
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: exited?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: stopped?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: to_i
+name: PseudoStatus
+superclass: Object

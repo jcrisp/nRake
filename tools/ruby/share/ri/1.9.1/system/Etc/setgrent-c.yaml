@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Resets the process of reading the /etc/group file, so that the next call to getgrent will return the first entry again.
+full_name: Etc::setgrent
+is_singleton: true
+name: setgrent
+params: ()
+visibility: public

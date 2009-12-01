@@ -1,0 +1,40 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the sign of the value.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns a positive value if &gt; 0, a negative value if &lt; 0, and a zero if == 0.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "The specific value returned indicates the type and sign of the BigDecimal, as follows:"
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "BigDecimal::SIGN_NaN:"
+    :body: value is Not a Number
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "BigDecimal::SIGN_POSITIVE_ZERO:"
+    :body: value is +0
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "BigDecimal::SIGN_NEGATIVE_ZERO:"
+    :body: value is -0
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "BigDecimal::SIGN_POSITIVE_INFINITE:"
+    :body: value is +infinity
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "BigDecimal::SIGN_NEGATIVE_INFINITE:"
+    :body: value is -infinity
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "BigDecimal::SIGN_POSITIVE_FINITE:"
+    :body: value is positive
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "BigDecimal::SIGN_NEGATIVE_FINITE:"
+    :body: value is negative
+  type: :NOTE
+full_name: BigDecimal#sign
+is_singleton: false
+name: sign
+params: ()
+visibility: public

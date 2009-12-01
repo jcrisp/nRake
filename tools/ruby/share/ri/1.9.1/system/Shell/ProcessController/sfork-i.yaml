@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: ""
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: simple fork
+full_name: Shell::ProcessController#sfork
+is_singleton: false
+name: sfork
+params: (command, &block) {|| ...}
+visibility: public

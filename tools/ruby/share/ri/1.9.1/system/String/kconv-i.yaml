@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Convert <tt>self</tt> to out_code. <tt>out_code</tt> and <tt>in_code</tt> are given as constants of Kconv.
+full_name: String#kconv
+is_singleton: false
+name: kconv
+params: |
+  String#kconv(to_enc, from_enc)
+
+visibility: public

@@ -1,0 +1,27 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: In-memory session storage class.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Implements session storage as a global in-memory hash. Session data will only persist for as long as the ruby interpreter instance does.
+constants: []
+
+full_name: CGI::Session::MemoryStore
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: close
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: delete
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: restore
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: update
+name: MemoryStore
+superclass: Object

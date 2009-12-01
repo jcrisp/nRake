@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: RSS::Maker::RSS09::Channel::SkipHours::Hour#required_variable_names
+is_singleton: false
+name: required_variable_names
+params: ()
+visibility: private

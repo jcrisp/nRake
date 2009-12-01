@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Traverses <em>enum</em> in reverse order.
+full_name: Enumerable#reverse_each
+is_singleton: false
+name: reverse_each
+params: |
+  enum.reverse_each {|item| block } 
+
+visibility: public

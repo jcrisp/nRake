@@ -1,0 +1,13 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: 
+- !ruby/object:RDoc::RI::AliasName 
+  name: synchronize
+block_params: ""
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Enters exclusive section and executes the block. Leaves the exclusive section automatically when the block exits. See example under <tt>MonitorMixin</tt>.
+full_name: MonitorMixin#mon_synchronize
+is_singleton: false
+name: mon_synchronize
+params: () {|| ...}
+visibility: public

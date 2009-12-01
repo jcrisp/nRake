@@ -1,0 +1,32 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Create a new FileStore instance.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: This constructor is used internally by CGI::Session. The user does not generally need to call it directly.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: <tt>session</tt> is the session for which this instance is being created. The session id must only contain alphanumeric characters; automatically generated session ids observe this requirement.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "<tt>option</tt> is a hash of options for the initializer. The following options are recognised:"
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "tmpdir:"
+    :body: the directory to use for storing the FileStore file. Defaults to Dir::tmpdir (generally &quot;/tmp&quot; on Unix systems).
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "prefix:"
+    :body: the prefix to add to the session id when generating the filename for this session's FileStore file. Defaults to &quot;cgi_sid_&quot;.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "suffix:"
+    :body: the prefix to add to the session id when generating the filename for this session's FileStore file. Defaults to the empty string.
+  type: :NOTE
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: This session's FileStore file will be created if it does not exist, or opened if it does.
+full_name: CGI::Session::FileStore::new
+is_singleton: true
+name: new
+params: (session, option={})
+visibility: public

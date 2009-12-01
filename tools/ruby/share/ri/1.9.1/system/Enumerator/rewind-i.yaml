@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Rewinds the enumeration sequence by the next method.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: If the enclosed object responds to a &quot;rewind&quot; method, it is called.
+full_name: Enumerator#rewind
+is_singleton: false
+name: rewind
+params: |
+  e.rewind   => e
+
+visibility: public

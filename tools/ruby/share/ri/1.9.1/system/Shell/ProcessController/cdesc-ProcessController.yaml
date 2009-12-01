@@ -1,0 +1,63 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: 
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  name: shell
+  rw: R
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: activate
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: active_process_controllers
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: block_output_synchronize
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: each_active_object
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: inactivate
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: wait_to_finish_all_process_controllers
+comment: 
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: for shell-command complete finish at this process exit.
+  name: USING_AT_EXIT_WHEN_PROCESS_EXIT
+  value: "true"
+full_name: Shell::ProcessController
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: active_job?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: active_jobs
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: active_jobs_exist?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: add_schedule
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: jobs
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: jobs_exist?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: kill_job
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: sfork
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: start_job
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: terminate_job
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: wait_all_jobs_execution
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: waiting_job?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: waiting_jobs
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: waiting_jobs_exist?
+name: ProcessController
+superclass: Object

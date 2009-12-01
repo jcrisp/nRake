@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: If <em>file_name</em> is writable by others, returns an integer representing the file permission bits of <em>file_name</em>. Returns <tt>nil</tt> otherwise. The meaning of the bits is platform dependent; on Unix systems, see <tt>stat(2)</tt>.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   File.world_writable?(&quot;/tmp&quot;)                  #=&gt; 511\n   m = File.world_writable?(&quot;/tmp&quot;)\n   sprintf(&quot;%o&quot;, m)                              #=&gt; &quot;777&quot;\n"
+full_name: FileTest#world_writable?
+is_singleton: false
+name: world_writable?
+params: |
+  File.world_writable?(file_name)   => fixnum or nil
+
+visibility: public

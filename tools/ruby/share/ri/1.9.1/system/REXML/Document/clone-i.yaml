@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Should be obvious
+full_name: REXML::Document#clone
+is_singleton: false
+name: clone
+params: ()
+visibility: public

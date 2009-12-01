@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Translates <em>str</em> in place, using the same rules as <tt>String#tr</tt>. Returns <em>str</em>, or <tt>nil</tt> if no changes were made.
+full_name: String#tr!
+is_singleton: false
+name: tr!
+params: |
+  str.tr!(from_str, to_str)   => str or nil
+
+visibility: public

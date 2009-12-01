@@ -1,0 +1,33 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: required_prefix
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: required_uri
+comment: 
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: Bag
+  value: "::RSS::RDF::Bag"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: Bag
+  value: args[0]
+full_name: RSS::TaxonomyTopicsModel::TaxonomyTopics
+includes: 
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: RSS10
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: full_name
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: maker_target
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: resources
+name: TaxonomyTopics
+superclass: RSS::Element

@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: RSS::Element#xmled_content
+is_singleton: false
+name: xmled_content
+params: ()
+visibility: private

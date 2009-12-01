@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Return the fractional part of the number.
+full_name: BigDecimal#frac
+is_singleton: false
+name: frac
+params: ()
+visibility: public

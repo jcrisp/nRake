@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: See <tt>FileTest.world_writable?</tt>.
+full_name: Pathname#world_writable?
+is_singleton: false
+name: world_writable?
+params: ()
+visibility: public

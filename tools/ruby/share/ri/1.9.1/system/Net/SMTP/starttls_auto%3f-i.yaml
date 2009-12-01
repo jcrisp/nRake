@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: true if this object uses STARTTLS when server advertises STARTTLS.
+full_name: Net::SMTP#starttls_auto?
+is_singleton: false
+name: starttls_auto?
+params: ()
+visibility: public

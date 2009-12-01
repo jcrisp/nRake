@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: This doesn't yet handle encodings
+full_name: REXML::Child#bytes
+is_singleton: false
+name: bytes
+params: ()
+visibility: public

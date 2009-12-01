@@ -1,0 +1,17 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns two elements array which contains the minimum and the maximum value in the enumerable. The first form assumes all objects implement <tt>Comparable</tt>; the second uses the block to return <em>a &lt;=&gt; b</em>.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   a = %w(albatross dog horse)\n   a.minmax                                  #=&gt; [&quot;albatross&quot;, &quot;horse&quot;]\n   a.minmax {|a,b| a.length &lt;=&gt; b.length }   #=&gt; [&quot;dog&quot;, &quot;albatross&quot;]\n"
+full_name: Enumerable#minmax
+is_singleton: false
+name: minmax
+params: |
+  enum.minmax                   => [min,max]
+  enum.minmax {|a,b| block }    => [min,max]
+
+visibility: public

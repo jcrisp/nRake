@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Sets transliterate flag.
+full_name: Iconv#transliterate=
+is_singleton: false
+name: transliterate=
+params: " cd.transliterate = flag\n"
+visibility: public

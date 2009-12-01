@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: PStore#save_data_with_fast_strategy
+is_singleton: false
+name: save_data_with_fast_strategy
+params: (data, file)
+visibility: private

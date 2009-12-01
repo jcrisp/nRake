@@ -1,0 +1,17 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The error thrown when the parser encounters illegal CSV formatting.
+constants: []
+
+full_name: CSV::MalformedCSVError
+includes: []
+
+instance_methods: []
+
+name: MalformedCSVError
+superclass: RuntimeError

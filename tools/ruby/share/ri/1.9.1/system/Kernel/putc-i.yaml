@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Equivalent to:"
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  $stdout.putc(int)\n"
+full_name: Kernel#putc
+is_singleton: false
+name: putc
+params: |
+  putc(int)   => int
+
+visibility: public

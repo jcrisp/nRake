@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Display the list of <tt>methods</tt>.
+full_name: RDoc::RI::DefaultDisplay#display_method_list
+is_singleton: false
+name: display_method_list
+params: (methods)
+visibility: public

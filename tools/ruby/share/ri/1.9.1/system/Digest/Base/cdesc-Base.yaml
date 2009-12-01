@@ -1,0 +1,17 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: This abstract class provides a common interface to message digest implementation classes written in C.
+constants: []
+
+full_name: Digest::Base
+includes: []
+
+instance_methods: []
+
+name: Base
+superclass: Digest::Class

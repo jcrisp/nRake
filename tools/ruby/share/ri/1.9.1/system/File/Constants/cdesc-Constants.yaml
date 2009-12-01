@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: this is IO's method
+constants: []
+
+full_name: File::Constants
+includes: []
+
+instance_methods: []
+
+name: Constants

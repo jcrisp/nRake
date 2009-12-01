@@ -1,0 +1,31 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Creates a time based on given values, interpreted as UTC (GMT). The year must be specified. Other values default to the minimum value for that field (and may be <tt>nil</tt> or omitted). Months may be specified by numbers from 1 to 12, or by the three-letter English month names. Hours are specified on a 24-hour clock (0..23). Raises an <tt>ArgumentError</tt> if any values are out of range. Will also accept ten arguments in the order output by <tt>Time#to_a</tt>. <em>sec_with_frac</em> and <em>usec_with_frac</em> can have a fractional part.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   Time.utc(2000,&quot;jan&quot;,1,20,15,1)  #=&gt; 2000-01-01 20:15:01 UTC\n   Time.gm(2000,&quot;jan&quot;,1,20,15,1)   #=&gt; 2000-01-01 20:15:01 UTC\n"
+full_name: Time::gm
+is_singleton: true
+name: gm
+params: |
+  Time.utc(year) => time
+  Time.utc(year, month) => time
+  Time.utc(year, month, day) => time
+  Time.utc(year, month, day, hour) => time
+  Time.utc(year, month, day, hour, min) => time
+  Time.utc(year, month, day, hour, min, sec_with_frac) => time
+  Time.utc(year, month, day, hour, min, sec, usec_with_frac) => time
+  Time.utc(sec, min, hour, day, month, year, wday, yday, isdst, tz) => time
+  Time.gm(year) => time
+  Time.gm(year, month) => time
+  Time.gm(year, month, day) => time
+  Time.gm(year, month, day, hour) => time
+  Time.gm(year, month, day, hour, min) => time
+  Time.gm(year, month, day, hour, min, sec_with_frac) => time
+  Time.gm(year, month, day, hour, min, sec, usec_with_frac) => time
+  Time.gm(sec, min, hour, day, month, year, wday, yday, isdst, tz) => time
+
+visibility: public

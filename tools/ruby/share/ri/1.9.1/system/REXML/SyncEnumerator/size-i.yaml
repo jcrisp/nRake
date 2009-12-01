@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the number of enumerated Enumerable objects, i.e. the size of each row.
+full_name: REXML::SyncEnumerator#size
+is_singleton: false
+name: size
+params: ()
+visibility: public

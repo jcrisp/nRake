@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the destination encoding name as a string.
+full_name: Encoding::UndefinedConversionError#destination_encoding_name
+is_singleton: false
+name: destination_encoding_name
+params: |
+  ecerr.destination_encoding_name         -> string
+
+visibility: public

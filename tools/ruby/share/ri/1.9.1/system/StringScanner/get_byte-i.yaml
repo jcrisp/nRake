@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Scans one byte and returns it. This method is not multibyte character sensitive. See also: #getch."
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  s = StringScanner.new('ab')\n  s.get_byte         # =&gt; &quot;a&quot;\n  s.get_byte         # =&gt; &quot;b&quot;\n  s.get_byte         # =&gt; nil\n\n  $KCODE = 'EUC'\n  s = StringScanner.new(&quot;\\244\\242&quot;)\n  s.get_byte         # =&gt; &quot;\\244&quot;\n  s.get_byte         # =&gt; &quot;\\242&quot;\n  s.get_byte         # =&gt; nil\n"
+full_name: StringScanner#get_byte
+is_singleton: false
+name: get_byte
+params: ()
+visibility: public

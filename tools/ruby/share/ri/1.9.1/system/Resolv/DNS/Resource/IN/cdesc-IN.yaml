@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: module IN contains ARPA Internet specific RRs.
+constants: []
+
+full_name: Resolv::DNS::Resource::IN
+includes: []
+
+instance_methods: []
+
+name: IN

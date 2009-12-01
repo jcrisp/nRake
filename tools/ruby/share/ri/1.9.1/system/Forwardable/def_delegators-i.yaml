@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Alias for #def_instance_delegators"
+full_name: Forwardable#def_delegators
+is_singleton: false
+name: def_delegators
+params: (accessor, *methods)
+visibility: public

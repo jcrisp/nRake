@@ -1,0 +1,28 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "primitive_errinfo returns important information regarding the last error as a 5-element array:"
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  [result, enc1, enc2, error_bytes, readagain_bytes]\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: result is the last result of primitive_convert.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Other elements are only meaningful when result is :invalid_byte_sequence, :incomplete_input or :undefined_conversion.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "enc1 and enc2 indicate a conversion step as a pair of strings. For example, a converter from EUC-JP to ISO-8859-1 converts a string as follows: EUC-JP -&gt; UTF-8 -&gt; ISO-8859-1. So [enc1, enc2] is either [&quot;EUC-JP&quot;, &quot;UTF-8&quot;] or [&quot;UTF-8&quot;, &quot;ISO-8859-1&quot;]."
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: error_bytes and readagain_bytes indicate the byte sequences which caused the error. error_bytes is discarded portion. readagain_bytes is buffered portion which is read again on next conversion.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Example:"
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  # \\xff is invalid as EUC-JP.\n  ec = Encoding::Converter.new(&quot;EUC-JP&quot;, &quot;Shift_JIS&quot;)\n  ec.primitive_convert(src=&quot;\\xff&quot;, dst=&quot;&quot;, nil, 10)\n  p ec.primitive_errinfo\n  #=&gt; [:invalid_byte_sequence, &quot;EUC-JP&quot;, &quot;UTF-8&quot;, &quot;\\xFF&quot;, &quot;&quot;]\n\n  # HIRAGANA LETTER A (\\xa4\\xa2 in EUC-JP) is not representable in ISO-8859-1.\n  # Since this error is occur in UTF-8 to ISO-8859-1 conversion,\n  # error_bytes is HIRAGANA LETTER A in UTF-8 (\\xE3\\x81\\x82).\n  ec = Encoding::Converter.new(&quot;EUC-JP&quot;, &quot;ISO-8859-1&quot;)\n  ec.primitive_convert(src=&quot;\\xa4\\xa2&quot;, dst=&quot;&quot;, nil, 10)\n  p ec.primitive_errinfo\n  #=&gt; [:undefined_conversion, &quot;UTF-8&quot;, &quot;ISO-8859-1&quot;, &quot;\\xE3\\x81\\x82&quot;, &quot;&quot;]\n\n  # partial character is invalid\n  ec = Encoding::Converter.new(&quot;EUC-JP&quot;, &quot;ISO-8859-1&quot;)\n  ec.primitive_convert(src=&quot;\\xa4&quot;, dst=&quot;&quot;, nil, 10)\n  p ec.primitive_errinfo\n  #=&gt; [:incomplete_input, &quot;EUC-JP&quot;, &quot;UTF-8&quot;, &quot;\\xA4&quot;, &quot;&quot;]\n\n  # Encoding::Converter::PARTIAL_INPUT prevents invalid errors by\n  # partial characters.\n  ec = Encoding::Converter.new(&quot;EUC-JP&quot;, &quot;ISO-8859-1&quot;)\n  ec.primitive_convert(src=&quot;\\xa4&quot;, dst=&quot;&quot;, nil, 10, Encoding::Converter::PARTIAL_INPUT)\n  p ec.primitive_errinfo\n  #=&gt; [:source_buffer_empty, nil, nil, nil, nil]\n\n  # \\xd8\\x00\\x00@ is invalid as UTF-16BE because\n  # no low surrogate after high surrogate (\\xd8\\x00).\n  # It is detected by 3rd byte (\\00) which is part of next character.\n  # So the high surrogate (\\xd8\\x00) is discarded and\n  # the 3rd byte is read again later.\n  # Since the byte is buffered in ec, it is dropped from src.\n  ec = Encoding::Converter.new(&quot;UTF-16BE&quot;, &quot;UTF-8&quot;)\n  ec.primitive_convert(src=&quot;\\xd8\\x00\\x00@&quot;, dst=&quot;&quot;, nil, 10)\n  p ec.primitive_errinfo\n  #=&gt; [:invalid_byte_sequence, &quot;UTF-16BE&quot;, &quot;UTF-8&quot;, &quot;\\xD8\\x00&quot;, &quot;\\x00&quot;]\n  p src\n  #=&gt; &quot;@&quot;\n\n  # Similar to UTF-16BE, \\x00\\xd8@\\x00 is invalid as UTF-16LE.\n  # The problem is detected by 4th byte.\n  ec = Encoding::Converter.new(&quot;UTF-16LE&quot;, &quot;UTF-8&quot;)\n  ec.primitive_convert(src=&quot;\\x00\\xd8@\\x00&quot;, dst=&quot;&quot;, nil, 10)\n  p ec.primitive_errinfo\n  #=&gt; [:invalid_byte_sequence, &quot;UTF-16LE&quot;, &quot;UTF-8&quot;, &quot;\\x00\\xD8&quot;, &quot;@\\x00&quot;]\n  p src\n  #=&gt; &quot;&quot;\n"
+full_name: Encoding::Converter#primitive_errinfo
+is_singleton: false
+name: primitive_errinfo
+params: |
+  ec.primitive_errinfo -> array
+
+visibility: public

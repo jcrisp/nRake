@@ -1,0 +1,17 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Turn off floating point exceptions for overflow, etc.
+constants: []
+
+full_name: ZeroDivisionError
+includes: []
+
+instance_methods: []
+
+name: ZeroDivisionError
+superclass: StandardError

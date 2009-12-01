@@ -1,0 +1,15 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: 
+- !ruby/object:RDoc::RI::AliasName 
+  name: values_at
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: This method accepts any number of arguments which can be headers, indices, Ranges of either, or two-element Arrays containing a header and offset. Each argument will be replaced with a field lookup as described in CSV::Row.field().
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: If called with no arguments, all fields are returned.
+full_name: CSV::Row#fields
+is_singleton: false
+name: fields
+params: (*headers_and_or_indices)
+visibility: public

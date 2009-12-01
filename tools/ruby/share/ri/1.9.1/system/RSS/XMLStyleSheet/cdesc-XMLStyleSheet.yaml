@@ -1,0 +1,36 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: 
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  name: do_validate
+  rw: RW
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: ATTRIBUTES
+  value: "%w(href type title media charset alternate)"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: GUESS_TABLE
+  value: "{       \"xsl\" => \"text/xsl\",       \"css\" => \"text/css\",     }"
+full_name: RSS::XMLStyleSheet
+includes: 
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: Utils
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: alternate=
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: guess_type
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: href=
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: setup_maker
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: to_s
+name: XMLStyleSheet
+superclass: Object

@@ -1,0 +1,22 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Rake extensions to Module.
+constants: []
+
+full_name: Module
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: const_missing
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: rake_extension
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: rake_original_const_missing
+name: Module
+superclass: Object

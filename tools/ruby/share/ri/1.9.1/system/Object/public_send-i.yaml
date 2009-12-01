@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Invokes the method identified by <em>symbol</em>, passing it any arguments specified. Unlike send, public_send calls public methods only.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   1.public_send(:puts, &quot;hello&quot;)  # causes NoMethodError\n"
+full_name: Object#public_send
+is_singleton: false
+name: public_send
+params: |
+  obj.public_send(symbol [, args...])  => obj
+
+visibility: public

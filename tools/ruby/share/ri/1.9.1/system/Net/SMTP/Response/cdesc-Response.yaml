@@ -1,0 +1,38 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: 
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  name: status
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  name: string
+  rw: R
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: parse
+comment: 
+constants: []
+
+full_name: Net::SMTP::Response
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: capabilities
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: continue?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: cram_md5_challenge
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: exception_class
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: message
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: status_type_char
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: success?
+name: Response
+superclass: Object

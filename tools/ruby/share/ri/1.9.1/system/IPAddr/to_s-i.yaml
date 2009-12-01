@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns a string containing the IP address representation.
+full_name: IPAddr#to_s
+is_singleton: false
+name: to_s
+params: ()
+visibility: public

@@ -1,0 +1,26 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Return the smallest integer greater than or equal to the value, as a BigDecimal.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: BigDecimal('3.14159').ceil -&gt; 4
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: BigDecimal('-9.1').ceil -&gt; -9
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: If n is specified and positive, the fractional part of the result has no more than that many digits.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: If n is specified and negative, at least that many digits to the left of the decimal point will be 0 in the result.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: BigDecimal('3.14159').ceil(3) -&gt; 3.142
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: BigDecimal('13345.234').ceil(-2) -&gt; 13400.0
+full_name: BigDecimal#ceil
+is_singleton: false
+name: ceil
+params: |
+  ceil(n)
+
+visibility: public

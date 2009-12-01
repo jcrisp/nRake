@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Escapes all possible entities
+full_name: REXML::Text::normalize
+is_singleton: true
+name: normalize
+params: ( input, doctype=nil, entity_filter=nil )
+visibility: public

@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the hex-encoded hash value of a given <em>string</em>. This is almost equivalent to Digest.hexencode(Digest::Class.new(*parameters).digest(string)).
+full_name: Digest::Class::hexdigest
+is_singleton: true
+name: hexdigest
+params: |
+  Digest::Class.hexdigest(string[, ...]) -> hash_string
+
+visibility: public

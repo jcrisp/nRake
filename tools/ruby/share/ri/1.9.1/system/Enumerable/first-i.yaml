@@ -1,0 +1,15 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the first element, or the first <tt>n</tt> elements, of the enumerable. If the enumerable is empty, the first form returns <tt>nil</tt>, and the second form returns an empty array.
+full_name: Enumerable#first
+is_singleton: false
+name: first
+params: |
+  enum.first      -> obj or nil
+  enum.first(n)   -> an_array
+
+visibility: public

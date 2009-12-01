@@ -1,0 +1,41 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+constants: []
+
+full_name: YAML::BaseEmitter
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: binary_base64
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: double
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: fold
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: indent
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: indent!
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: indent_text
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: map
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: node_text
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: options
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: options=
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: seq
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: seq_map_shortcut
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: simple
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: single
+name: BaseEmitter

@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Contains all discovered TupleSpaces except for the primary.
+full_name: Rinda::RingFinger::to_a
+is_singleton: true
+name: to_a
+params: ()
+visibility: public

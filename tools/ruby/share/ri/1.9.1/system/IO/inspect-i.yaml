@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Return a string describing this IO object.
+full_name: IO#inspect
+is_singleton: false
+name: inspect
+params: |
+  ios.inspect   => string
+
+visibility: public

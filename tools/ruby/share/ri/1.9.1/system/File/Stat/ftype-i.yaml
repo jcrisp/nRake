@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Identifies the type of <em>stat</em>. The return string is one of: ``<tt>file</tt>'', ``<tt>directory</tt>'', ``<tt>characterSpecial</tt>'', ``<tt>blockSpecial</tt>'', ``<tt>fifo</tt>'', ``<tt>link</tt>'', ``<tt>socket</tt>'', or ``<tt>unknown</tt>''."
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   File.stat(&quot;/dev/tty&quot;).ftype   #=&gt; &quot;characterSpecial&quot;\n"
+full_name: File::Stat#ftype
+is_singleton: false
+name: ftype
+params: |
+  stat.ftype   => string
+
+visibility: public

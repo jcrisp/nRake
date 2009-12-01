@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Defines the callback of event. If you want modify argument in callback, you could use this method instead of WIN32OLE_EVENT#on_event.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  ie = WIN32OLE.new('InternetExplorer.Application')\n  ev = WIN32OLE_EVENT.new(ie)\n  ev.on_event_with_outargs('BeforeNavigate2') {|*args|\n    args.last[6] = true\n  }\n"
+full_name: WIN32OLE_EVENT#on_event_with_outargs
+is_singleton: false
+name: on_event_with_outargs
+params: |
+  WIN32OLE_EVENT#on_event_with_outargs([event]){...}
+
+visibility: public

@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Write a message to standard out if $verbose is enabled.
+full_name: Sys#log
+is_singleton: false
+name: log
+params: (msg)
+visibility: public

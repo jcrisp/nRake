@@ -1,0 +1,56 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Sys provides a number of file manipulation tools for the convenience of writing Rakefiles. All commands in this module will announce their activity on standard output if the $verbose flag is set ($verbose = true is the default). You can control this by globally setting $verbose or by using the <tt>verbose</tt> and <tt>quiet</tt> methods.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Sys has been deprecated in favor of the FileUtils module available in Ruby 1.8.
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: RUBY
+  value: Config::CONFIG['ruby_install_name']
+full_name: Sys
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: copy
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: copy_files
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: delete
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: delete_all
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: for_files
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: indir
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: install
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: link
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: link_files
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: log
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: makedirs
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: quiet
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: ruby
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: run
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: split_all
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: symlink
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: symlink_files
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: verbose
+name: Sys

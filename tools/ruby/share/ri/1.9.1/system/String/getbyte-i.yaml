@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: returns the <em>index</em>th byte as an integer.
+full_name: String#getbyte
+is_singleton: false
+name: getbyte
+params: |
+  str.getbyte(index)          => 0 .. 255
+
+visibility: public

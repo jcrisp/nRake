@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Alias for #setup_maker_element"
+full_name: RSS::Rss::Channel::Item#_setup_maker_element
+is_singleton: false
+name: _setup_maker_element
+params: (item)
+visibility: private

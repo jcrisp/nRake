@@ -1,0 +1,19 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: generic?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: yaml_new
+comment: 
+constants: []
+
+full_name: Complex
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: to_yaml
+name: Complex
+superclass: Numeric

@@ -1,0 +1,21 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Tidy up the blank lines:"
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: change Blank/ListEnd into ListEnd/Blank
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: remove blank lines at the front
+  type: :BULLET
+full_name: RDoc::Markup::LineCollection#tidy_blank_lines
+is_singleton: false
+name: tidy_blank_lines
+params: ()
+visibility: private

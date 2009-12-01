@@ -1,0 +1,25 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+constants: []
+
+full_name: IRB::StdioInputMethod
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: encoding
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: eof?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: gets
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: line
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: readable_atfer_eof?
+name: StdioInputMethod
+superclass: IRB::InputMethod

@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the discarded bytes when Encoding::InvalidByteSequenceError occurs.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: " ec = Encoding::Converter.new(&quot;EUC-JP&quot;, &quot;ISO-8859-1&quot;)\n begin\n   ec.convert(&quot;abc\\xA1\\xFFdef&quot;)\n rescue Encoding::InvalidByteSequenceError\n   p $!      #=&gt; #&lt;Encoding::InvalidByteSequenceError: &quot;\\xA1&quot; followed by &quot;\\xFF&quot; on EUC-JP&gt;\n   puts $!.error_bytes.dump          #=&gt; &quot;\\xA1&quot;\n   puts $!.readagain_bytes.dump      #=&gt; &quot;\\xFF&quot;\n end\n"
+full_name: Encoding::InvalidByteSequenceError#error_bytes
+is_singleton: false
+name: error_bytes
+params: |
+  ecerr.error_bytes         -> string
+
+visibility: public

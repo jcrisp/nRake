@@ -1,0 +1,108 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: 
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The name of the application (typically 'rake')
+  name: name
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The original directory where rake was invoked.
+  name: original_dir
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: Name of the actual rakefile used.
+  name: rakefile
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: List of the top level task names (task names from the command line).
+  name: top_level_tasks
+  rw: R
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Rake main application object. When invoking <tt>rake</tt> from the command line, a Rake::Application object is created and run.
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: DEFAULT_RAKEFILES
+  value: "['rakefile', 'Rakefile', 'rakefile.rb', 'Rakefile.rb'].freeze"
+full_name: Rake::Application
+includes: 
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: TaskManager
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: add_import
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: add_loader
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: collect_tasks
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: const_warning
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: display_prerequisites
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: display_tasks_and_comments
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: dynamic_width
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: dynamic_width_stty
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: dynamic_width_tput
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: find_rakefile_location
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: handle_options
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: have_rakefile
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: init
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: invoke_task
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: load_imports
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: load_rakefile
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: options
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: parse_task_string
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: rake_require
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: rakefile_location
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: run
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: standard_exception_handling
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: standard_rake_options
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: system_dir
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: terminal_width
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: top_level
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: truncate
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: truncate_output?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: tty_output=
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: tty_output?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: unix?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: windows?
+name: Application
+superclass: Object

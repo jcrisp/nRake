@@ -1,0 +1,17 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+constants: []
+
+full_name: WEBrick::HTTPAuth::ProxyDigestAuth
+includes: 
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: ProxyAuthenticator
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: check_uri
+name: ProxyDigestAuth
+superclass: WEBrick::HTTPAuth::DigestAuth

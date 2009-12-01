@@ -1,0 +1,21 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Makefile loader to be used with the import file loader.
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: SPACE_MARK
+  value: "\"__&NBSP;__\""
+full_name: Rake::MakefileLoader
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: load
+name: MakefileLoader
+superclass: Object

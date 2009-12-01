@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: True if we are outputting to TTY, false otherwise
+full_name: Rake::Application#tty_output?
+is_singleton: false
+name: tty_output?
+params: ()
+visibility: public

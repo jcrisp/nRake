@@ -1,0 +1,35 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+constants: []
+
+full_name: RSS::Maker::ItemsBase::ItemBase::ContentBase
+includes: 
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: AtomTextConstructBase::EnsureXMLContent
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: inline_html?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: inline_other?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: inline_other_base64?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: inline_other_text?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: inline_other_xml?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: inline_text?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: inline_xhtml?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: out_of_line?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: xml=
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: xml_content=
+name: ContentBase
+superclass: RSS::Maker::Base

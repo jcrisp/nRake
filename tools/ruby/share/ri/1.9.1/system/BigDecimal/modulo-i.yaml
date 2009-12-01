@@ -1,0 +1,15 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the modulus from dividing by b. See divmod.
+full_name: BigDecimal#modulo
+is_singleton: false
+name: modulo
+params: |
+  a % b
+  a.modulo(b)
+
+visibility: public

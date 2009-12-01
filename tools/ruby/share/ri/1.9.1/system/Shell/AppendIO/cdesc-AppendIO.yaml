@@ -1,0 +1,23 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: class Sort &lt; Cat
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  def initialize(sh, *filenames)\n    super\n  end\n\n  def each(rs = nil)\n    ary = []\n    super{|l|       ary.push l}\n    for l in ary.sort!\n    yield l\n    end\n  end\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: end
+constants: []
+
+full_name: Shell::AppendIO
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: input=
+name: AppendIO
+superclass: Shell::BuiltInCommand

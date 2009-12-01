@@ -1,0 +1,19 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+constants: []
+
+full_name: WEBrick::HTTPAuth
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: _basic_auth
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: basic_auth
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: proxy_basic_auth
+name: HTTPAuth

@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Just initializes all instance variables.
+full_name: List::new
+is_singleton: true
+name: new
+params: ()
+visibility: public

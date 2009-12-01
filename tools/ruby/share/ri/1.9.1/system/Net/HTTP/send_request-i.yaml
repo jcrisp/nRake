@@ -1,0 +1,18 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Sends an HTTP request to the HTTP server. This method also sends DATA string if DATA is given.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns a HTTPResponse object.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: This method never raises Net::* exceptions.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   response = http.send_request('GET', '/index.html')\n   puts response.body\n"
+full_name: Net::HTTP#send_request
+is_singleton: false
+name: send_request
+params: (name, path, data = nil, header = nil)
+visibility: public

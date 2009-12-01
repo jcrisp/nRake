@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: Rinda::TupleBag#each_entry
+is_singleton: false
+name: each_entry
+params: (&blk)
+visibility: private

@@ -1,0 +1,37 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: exception
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: yaml_new
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Descendants of class <tt>Exception</tt> are used to communicate between <tt>raise</tt> methods and <tt>rescue</tt> statements in <tt>begin/end</tt> blocks. <tt>Exception</tt> objects carry information about the exception---its type (the exception's class name), an optional descriptive string, and optional traceback information. Programs may subclass <tt>Exception</tt> to add additional information.
+constants: []
+
+full_name: Exception
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: ==
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: backtrace
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: exception
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: inspect
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: message
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: set_backtrace
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: to_s
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: to_yaml
+name: Exception
+superclass: Object

@@ -1,0 +1,13 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: 
+- !ruby/object:RDoc::RI::AliasName 
+  name: getdir
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the current remote directory.
+full_name: Net::FTP#pwd
+is_singleton: false
+name: pwd
+params: ()
+visibility: public

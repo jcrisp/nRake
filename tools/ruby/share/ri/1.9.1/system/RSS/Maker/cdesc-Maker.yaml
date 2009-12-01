@@ -1,0 +1,26 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: add_maker
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: make
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: maker
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: makers
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: versions
+comment: 
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: MAKERS
+  value: "{}"
+full_name: RSS::Maker
+includes: []
+
+instance_methods: []
+
+name: Maker

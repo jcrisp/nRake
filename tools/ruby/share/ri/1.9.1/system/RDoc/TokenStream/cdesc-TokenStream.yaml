@@ -1,0 +1,25 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: A TokenStream is a list of tokens, gathered during the parse of some entity (say a method). Entities populate these streams by being registered with the lexer. Any class can collect tokens by including TokenStream. From the outside, you use such an object by calling the start_collecting_tokens method, followed by calls to add_token and pop_token.
+constants: []
+
+full_name: RDoc::TokenStream
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: add_token
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: add_tokens
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: pop_token
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: start_collecting_tokens
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: token_stream
+name: TokenStream

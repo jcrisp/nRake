@@ -1,0 +1,15 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+constants: []
+
+full_name: TailGroup
+includes: []
+
+instance_methods: []
+
+name: TailGroup
+superclass: Test::Unit::TestCase

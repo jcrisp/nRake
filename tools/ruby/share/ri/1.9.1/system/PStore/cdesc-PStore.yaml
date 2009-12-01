@@ -1,0 +1,109 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: 
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: Whether PStore should do its best to prevent file corruptions, even when under unlikely-to-occur error conditions such as out-of-space conditions and other unusual OS filesystem errors. Setting this flag comes at the price in the form of a performance loss.
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: "This flag only has effect on platforms on which file renames are atomic (e.g. all POSIX platforms: Linux, MacOS X, FreeBSD, etc). The default value is false."
+  name: ultra_safe
+  rw: RW
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: PStore implements a file based persistence mechanism based on a Hash. User code can store hierarchies of Ruby objects (values) into the data store file by name (keys). An object hierarchy may be just a single object. User code may later read values back from the data store or even update data, as needed.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The transactional behavior ensures that any changes succeed or fail together. This can be used to ensure that the data store is not left in a transitory state, where some values were updated but others were not.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Behind the scenes, Ruby objects are stored to the data store file with Marshal. That carries the usual limitations. Proc objects cannot be marshalled, for example.
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 2
+  :text: "Usage example:"
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: " require &quot;pstore&quot;\n\n # a mock wiki object...\n class WikiPage\n   def initialize( page_name, author, contents )\n     @page_name = page_name\n     @revisions = Array.new\n\n     add_revision(author, contents)\n   end\n\n   attr_reader :page_name\n\n   def add_revision( author, contents )\n     @revisions &lt;&lt; { :created  =&gt; Time.now,\n                     :author   =&gt; author,\n                     :contents =&gt; contents }\n   end\n\n   def wiki_page_references\n     [@page_name] + @revisions.last[:contents].scan(/\\b(?:[A-Z]+[a-z]+){2,}/)\n   end\n\n   # ...\n end\n\n # create a new page...\n home_page = WikiPage.new( &quot;HomePage&quot;, &quot;James Edward Gray II&quot;,\n                           &quot;A page about the JoysOfDocumentation...&quot; )\n\n # then we want to update page data and the index together, or not at all...\n wiki = PStore.new(&quot;wiki_pages.pstore&quot;)\n wiki.transaction do  # begin transaction; do all of this or none of it\n   # store page...\n   wiki[home_page.page_name] = home_page\n   # ensure that an index has been created...\n   wiki[:wiki_index] ||= Array.new\n   # update wiki index...\n   wiki[:wiki_index].push(*home_page.wiki_page_references)\n end                   # commit changes to wiki data store file\n\n ### Some time later... ###\n\n # read wiki data...\n wiki.transaction(true) do  # begin read-only transaction, no changes allowed\n   wiki.roots.each do |data_root_name|\n     p data_root_name\n     p wiki[data_root_name]\n   end\n end\n"
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 2
+  :text: Transaction modes
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: By default, file integrity is only ensured as long as the operating system (and the underlying hardware) doesn't raise any unexpected I/O errors. If an I/O error occurs while PStore is writing to its file, then the file will become corrupted.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: You can prevent this by setting <em>pstore.ultra_safe = true</em>. However, this results in a minor performance loss, and only works on platforms that support atomic file renames. Please consult the documentation for <tt>ultra_safe</tt> for details.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Needless to say, if you're storing valuable data with PStore, then you should backup the PStore files from time to time.
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: RDWR_ACCESS
+  value: File::RDWR | File::CREAT | binmode
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: RD_ACCESS
+  value: File::RDONLY | binmode
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: WR_ACCESS
+  value: File::WRONLY | File::CREAT | File::TRUNC | binmode
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: Constant for relieving Ruby's garbage collector.
+  name: EMPTY_STRING
+  value: "\"\""
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: EMPTY_MARSHAL_DATA
+  value: Marshal.dump({})
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: EMPTY_MARSHAL_CHECKSUM
+  value: Digest::MD5.digest(EMPTY_MARSHAL_DATA)
+full_name: PStore
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: "[]"
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: "[]="
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: abort
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: commit
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: delete
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: empty_marshal_checksum
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: empty_marshal_data
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: fetch
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: in_transaction
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: in_transaction_wr
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: load_data
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: marshal_dump_supports_canonical_option?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: on_windows?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: open_and_lock_file
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: path
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: root?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: roots
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: save_data
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: save_data_with_atomic_file_rename_strategy
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: save_data_with_fast_strategy
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: transaction
+name: PStore
+superclass: Object

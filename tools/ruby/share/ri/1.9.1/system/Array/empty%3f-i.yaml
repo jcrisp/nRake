@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns <tt>true</tt> if <em>self</em> array contains no elements.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   [].empty?   #=&gt; true\n"
+full_name: Array#empty?
+is_singleton: false
+name: empty?
+params: |
+  array.empty?   -> true or false
+
+visibility: public

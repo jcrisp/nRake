@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Kouhei fixed this
+full_name: REXML::Functions::substring_before
+is_singleton: true
+name: substring_before
+params: ( string, test )
+visibility: public

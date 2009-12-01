@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: MonitorMixin#mon_check_owner
+is_singleton: false
+name: mon_check_owner
+params: ()
+visibility: private

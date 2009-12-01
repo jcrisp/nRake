@@ -1,0 +1,46 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: A class which provides filtering of children for Elements, and XPath search support. You are expected to only encounter this class as the <tt>element.elements</tt> object. Therefore, you are <em>not</em> expected to instantiate this yourself.
+constants: []
+
+full_name: REXML::Elements
+includes: 
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: Enumerable
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: "<<"
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: "[]"
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: "[]="
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: add
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: collect
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: delete
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: delete_all
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: each
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: empty?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: index
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: inject
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: literalize
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: size
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: to_a
+name: Elements
+superclass: Object

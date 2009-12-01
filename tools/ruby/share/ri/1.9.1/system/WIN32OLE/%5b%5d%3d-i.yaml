@@ -1,0 +1,20 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Sets the value to WIN32OLE object specified by a1, a2, ...
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   dict = WIN32OLE.new('Scripting.Dictionary')\n   dict.add('ruby', 'RUBY')\n   dict['ruby'] = 'Ruby'\n   puts dict['ruby'] # =&gt; 'Ruby'\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Remark: You can not use this method to set the property value."
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   excel = WIN32OLE.new('Excel.Application')\n   # excel['Visible'] = true # This is error !!!\n   excel.Visible = true # You should to use this style to set the property.\n"
+full_name: WIN32OLE#[]=
+is_singleton: false
+name: "[]="
+params: |
+  WIN32OLE[a1, a2, ...]=val 
+
+visibility: public

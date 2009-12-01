@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: filename
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Iterates over each component of the path.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  Pathname.new(&quot;/usr/bin/ruby&quot;).each_filename {|filename| ... }\n    # yields &quot;usr&quot;, &quot;bin&quot;, and &quot;ruby&quot;.\n"
+full_name: Pathname#each_filename
+is_singleton: false
+name: each_filename
+params: ( {|filename| ...}
+visibility: public

@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Set yydebug.
+full_name: Ripper#yydebug=
+is_singleton: false
+name: yydebug=
+params: |
+  ripper.yydebug = flag
+
+visibility: public

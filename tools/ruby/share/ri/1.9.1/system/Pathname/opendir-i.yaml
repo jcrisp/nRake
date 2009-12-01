@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: dir
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: See <tt>Dir.open</tt>.
+full_name: Pathname#opendir
+is_singleton: false
+name: opendir
+params: () {|dir| ...}
+visibility: public

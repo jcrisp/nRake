@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Clear the existing prerequisites and actions of a rake task.
+full_name: Rake::Task#clear
+is_singleton: false
+name: clear
+params: ()
+visibility: public

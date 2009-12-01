@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Return a new time object, one second later than <tt>time</tt>.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "    t = Time.now       #=&gt; 2007-11-19 08:23:57 -0600\n    t.succ             #=&gt; 2007-11-19 08:23:58 -0600\n"
+full_name: Time#succ
+is_singleton: false
+name: succ
+params: |
+  time.succ   => new_time
+
+visibility: public

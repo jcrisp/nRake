@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Replaces the contents and taintedness of <em>str</em> with the corresponding values in <em>other_str</em>.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   s = &quot;hello&quot;         #=&gt; &quot;hello&quot;\n   s.replace &quot;world&quot;   #=&gt; &quot;world&quot;\n"
+full_name: String#initialize_copy
+is_singleton: false
+name: initialize_copy
+params: |
+  str.replace(other_str)   => str
+
+visibility: public

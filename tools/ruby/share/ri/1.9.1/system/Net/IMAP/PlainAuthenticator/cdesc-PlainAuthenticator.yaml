@@ -1,0 +1,19 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Authenticator for the &quot;PLAIN&quot; authentication type. See #authenticate()."
+constants: []
+
+full_name: Net::IMAP::PlainAuthenticator
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: process
+name: PlainAuthenticator
+superclass: Object

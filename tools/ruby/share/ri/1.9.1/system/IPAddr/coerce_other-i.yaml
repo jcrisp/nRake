@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: IPAddr#coerce_other
+is_singleton: false
+name: coerce_other
+params: (other)
+visibility: private

@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the name of the encoding.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  Encoding::UTF_8.name       =&gt; &quot;UTF-8&quot;\n"
+full_name: Encoding#to_s
+is_singleton: false
+name: to_s
+params: |
+  enc.name => string
+
+visibility: public

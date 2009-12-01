@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Duplication support for the object returned by __getobj__.
+full_name: Delegator#dup
+is_singleton: false
+name: dup
+params: ()
+visibility: public

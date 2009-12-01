@@ -1,0 +1,19 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: See IO#each.
+full_name: StringIO#lines
+is_singleton: false
+name: lines
+params: |
+  strio.each(sep=$/) {|line| block }         -> strio
+  strio.each(limit) {|line| block }          -> strio
+  strio.each(sep, limit) {|line| block }     -> strio
+  strio.each_line(sep=$/) {|line| block }    -> strio
+  strio.each_line(limit) {|line| block }     -> strio
+  strio.each_line(sep,limit) {|line| block } -> strio
+
+visibility: public

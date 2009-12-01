@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Alias for #new"
+full_name: Net::HTTP::newobj
+is_singleton: true
+name: newobj
+params: (address, port = nil, p_addr = nil, p_port = nil, p_user = nil, p_pass = nil)
+visibility: public

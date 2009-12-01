@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: CommandProcessor#expand_path(path)
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "    path:     String\n    return: String\n  returns the absolute path for &lt;path&gt;\n"
+full_name: Shell::CommandProcessor#expand_path
+is_singleton: false
+name: expand_path
+params: (path)
+visibility: public

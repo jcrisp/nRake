@@ -1,0 +1,30 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Specifies a character to be appended on completion. Nothing will be appended if an empty string (&quot;&quot;) or nil is specified.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "For example:"
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  require &quot;readline&quot;\n\n  Readline.readline(&quot;&gt; &quot;, true)\n  Readline.completion_append_character = &quot; &quot;\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Result:"
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  &gt;\n  Input &quot;/var/li&quot;.\n\n  &gt; /var/li\n  Press TAB key.\n\n  &gt; /var/lib\n  Completes &quot;b&quot; and appends &quot; &quot;. So, you can continuously input &quot;/usr&quot;.\n\n  &gt; /var/lib /usr\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "NOTE: Only one character can be specified. When &quot;string&quot; is specified, sets only &quot;s&quot; that is the first."
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  require &quot;readline&quot;\n\n  Readline.completion_append_character = &quot;string&quot;\n  p Readline.completion_append_character # =&gt; &quot;s&quot;\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Raises NotImplementedError if the using readline library does not support.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Raises SecurityError exception if $SAFE is 4.
+full_name: Readline::completion_append_character=
+is_singleton: true
+name: completion_append_character=
+params: |
+  Readline.completion_append_character = char
+
+visibility: public

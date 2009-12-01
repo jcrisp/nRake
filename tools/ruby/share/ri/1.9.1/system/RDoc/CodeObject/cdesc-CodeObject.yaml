@@ -1,0 +1,82 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: 
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: Access the code object's comment
+  name: comment
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: do we document ourselves and our children
+  name: document_children
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: do we document ourselves?
+  name: document_self
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: are we done documenting (ie, did we come across a :enddoc:)?
+  name: done_documenting
+  rw: RW
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: Do we <em>force</em> documentation, even is we wouldn't normally show the entity
+  name: force_documentation
+  rw: RW
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  name: parent
+  rw: RW
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: Which section are we in
+  name: section
+  rw: RW
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: We are the model of the code, but we know that at some point we will be worked on by viewers. By implementing the Viewable protocol, viewers can associated themselves with these objects.
+  name: viewer
+  rw: RW
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: attr_overridable
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: We contain the common stuff for contexts (which are containers) and other elements (methods, attributes and so on)
+constants: []
+
+full_name: RDoc::CodeObject
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: comment=
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: document_children=
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: document_self=
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: parent_file_name
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: parent_name
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: remove_classes_and_modules
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: remove_methods_etc
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: start_doc
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: stop_doc
+name: CodeObject
+superclass: Object

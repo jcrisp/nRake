@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns a <tt>Time</tt> object initialized to the current system time. <b>Note:</b> The object created will be created using the resolution available on your system clock, and so may include fractional seconds.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   a = Time.new      #=&gt; 2007-11-19 07:50:02 -0600\n   b = Time.new      #=&gt; 2007-11-19 07:50:02 -0600\n   a == b            #=&gt; false\n   &quot;%.6f&quot; % a.to_f   #=&gt; &quot;1195480202.282373&quot;\n   &quot;%.6f&quot; % b.to_f   #=&gt; &quot;1195480202.283415&quot;\n"
+full_name: Time::new
+is_singleton: true
+name: new
+params: |
+  Time.new -> time
+
+visibility: public

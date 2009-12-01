@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: create a pathname object.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: This method is available since 1.8.5.
+full_name: Kernel#Pathname
+is_singleton: false
+name: Pathname
+params: (path)
+visibility: private

@@ -1,0 +1,34 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: <tt>WIN32OLE_VARIABLE</tt> objects represent OLE variable information.
+constants: []
+
+full_name: WIN32OLE_VARIABLE
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: inspect
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: name
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: ole_type
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: ole_type_detail
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: to_s
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: value
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: variable_kind
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: varkind
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: visible?
+name: WIN32OLE_VARIABLE
+superclass: Object

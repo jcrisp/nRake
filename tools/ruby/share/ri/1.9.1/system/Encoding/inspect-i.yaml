@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns a string which represents the encoding for programmers.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  Encoding::UTF_8.inspect       #=&gt; &quot;#&lt;Encoding:UTF-8&gt;&quot;\n  Encoding::ISO_2022_JP.inspect #=&gt; &quot;#&lt;Encoding:ISO-2022-JP (dummy)&gt;&quot;\n"
+full_name: Encoding#inspect
+is_singleton: false
+name: inspect
+params: |
+  enc.inspect => string
+
+visibility: public

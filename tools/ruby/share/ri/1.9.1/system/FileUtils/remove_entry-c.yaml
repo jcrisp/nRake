@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: This method removes a file system entry <tt>path</tt>. <tt>path</tt> might be a regular file, a directory, or something. If <tt>path</tt> is a directory, remove it recursively.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "See also #remove_entry_secure."
+full_name: FileUtils::remove_entry
+is_singleton: true
+name: remove_entry
+params: (path, force = false)
+visibility: public

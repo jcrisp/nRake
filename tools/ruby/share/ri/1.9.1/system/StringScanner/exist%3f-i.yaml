@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Looks <em>ahead</em> to see if the <tt>pattern</tt> exists <em>anywhere</em> in the string, without advancing the scan pointer. This predicates whether a #scan_until will return a value."
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  s = StringScanner.new('test string')\n  s.exist? /s/            # -&gt; 3\n  s.scan /test/           # -&gt; &quot;test&quot;\n  s.exist? /s/            # -&gt; 2\n  s.exist? /e/            # -&gt; nil\n"
+full_name: StringScanner#exist?
+is_singleton: false
+name: exist?
+params: " exist?(pattern)\n"
+visibility: public

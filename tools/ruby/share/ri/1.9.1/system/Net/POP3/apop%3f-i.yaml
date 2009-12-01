@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Does this instance use APOP authentication?
+full_name: Net::POP3#apop?
+is_singleton: false
+name: apop?
+params: ()
+visibility: public

@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns an array of filenames in the remote directory.
+full_name: Net::FTP#nlst
+is_singleton: false
+name: nlst
+params: (dir = nil)
+visibility: public

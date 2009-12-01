@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Create the tasks defined by this task lib.
+full_name: Rake::TestTask#define
+is_singleton: false
+name: define
+params: ()
+visibility: public

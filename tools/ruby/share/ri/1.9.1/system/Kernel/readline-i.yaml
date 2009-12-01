@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Equivalent to <tt>Kernel::gets</tt>, except <tt>readline</tt> raises <tt>EOFError</tt> at end of file.
+full_name: Kernel#readline
+is_singleton: false
+name: readline
+params: |
+  readline(sep=$/)     => string
+  readline(limit)      => string
+  readline(sep, limit) => string
+
+visibility: public

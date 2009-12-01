@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: This method converts from a Hash to an OpenStructHash.
+full_name: RDoc::RI::Driver::OpenStructHash::convert
+is_singleton: true
+name: convert
+params: (object)
+visibility: public

@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Equivalent to <tt>Proc.new</tt>.
+full_name: Kernel#proc
+is_singleton: false
+name: proc
+params: |
+  proc   { |...| block }  => a_proc
+
+visibility: public

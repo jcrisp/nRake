@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The main loop performed by a DRbServer's internal thread.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Accepts a connection from a client, and starts up its own thread to handle it. This thread loops, receiving requests from the client, invoking them on a local object, and returning responses, until the client closes the connection or a local method call fails.
+full_name: DRb::DRbServer#main_loop
+is_singleton: false
+name: main_loop
+params: ()
+visibility: private

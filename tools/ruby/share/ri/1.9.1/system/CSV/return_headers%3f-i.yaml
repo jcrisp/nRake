@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns <tt>true</tt> if headers will be returned as a row of results. See CSV::new for details.
+full_name: CSV#return_headers?
+is_singleton: false
+name: return_headers?
+params: ()
+visibility: public

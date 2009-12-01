@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the method invoke kind.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  tobj = WIN32OLE_TYPE.new('Microsoft Excel 9.0 Object Library', 'Workbooks')\n  method = WIN32OLE_METHOD.new(tobj, 'Add')\n  puts method.invkind # =&gt; 1\n"
+full_name: WIN32OLE_METHOD#invkind
+is_singleton: false
+name: invkind
+params: |
+  WIN32OLE_MTHOD#invkind
+
+visibility: public

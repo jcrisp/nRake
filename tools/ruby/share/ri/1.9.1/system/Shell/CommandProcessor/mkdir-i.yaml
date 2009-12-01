@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Dir related methods
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Shell#mkdir Shell#rmdir
+full_name: Shell::CommandProcessor#mkdir
+is_singleton: false
+name: mkdir
+params: (*path)
+visibility: public

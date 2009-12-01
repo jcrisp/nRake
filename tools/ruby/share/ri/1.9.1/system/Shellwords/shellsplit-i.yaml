@@ -1,0 +1,21 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: 
+- !ruby/object:RDoc::RI::AliasName 
+  name: shellwords
+- !ruby/object:RDoc::RI::AliasName 
+  name: split
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Splits a string into an array of tokens in the same way the UNIX Bourne shell does.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  argv = Shellwords.split('here are &quot;two words&quot;')\n  argv #=&gt; [&quot;here&quot;, &quot;are&quot;, &quot;two words&quot;]\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: +String#shellsplit+ is a shorthand for this function.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  argv = 'here are &quot;two words&quot;'.shellsplit\n  argv #=&gt; [&quot;here&quot;, &quot;are&quot;, &quot;two words&quot;]\n"
+full_name: Shellwords#shellsplit
+is_singleton: false
+name: shellsplit
+params: (line)
+visibility: private

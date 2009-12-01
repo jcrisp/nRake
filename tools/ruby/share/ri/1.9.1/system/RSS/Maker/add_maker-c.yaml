@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: RSS::Maker::add_maker
+is_singleton: true
+name: add_maker
+params: (version, normalized_version, maker)
+visibility: public

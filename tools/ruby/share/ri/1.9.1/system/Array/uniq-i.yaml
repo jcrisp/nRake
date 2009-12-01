@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns a new array by removing duplicate values in <em>self</em>.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   a = [ &quot;a&quot;, &quot;a&quot;, &quot;b&quot;, &quot;b&quot;, &quot;c&quot; ]\n   a.uniq   #=&gt; [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;]\n"
+full_name: Array#uniq
+is_singleton: false
+name: uniq
+params: |
+  array.uniq   -> an_array
+
+visibility: public

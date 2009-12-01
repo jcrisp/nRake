@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the last modification time of the (remote) file. If <tt>local</tt> is <tt>true</tt>, it is returned as a local time, otherwise it's a UTC time.
+full_name: Net::FTP#mtime
+is_singleton: false
+name: mtime
+params: (filename, local = false)
+visibility: public

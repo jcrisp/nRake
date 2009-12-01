@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Extract the class and method name parts from <tt>name</tt> like Foo::Bar#baz
+full_name: RDoc::RI::Driver#parse_name
+is_singleton: false
+name: parse_name
+params: (name)
+visibility: public

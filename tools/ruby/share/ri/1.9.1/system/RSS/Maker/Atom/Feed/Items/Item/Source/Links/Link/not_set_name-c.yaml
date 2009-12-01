@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: RSS::Maker::Atom::Feed::Items::Item::Source::Links::Link::not_set_name
+is_singleton: true
+name: not_set_name
+params: ()
+visibility: public

@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Convert an object reference id to an object.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: This implementation looks up the reference id in the local object space and returns the object it refers to.
+full_name: DRb::DRbIdConv#to_obj
+is_singleton: false
+name: to_obj
+params: (ref)
+visibility: public

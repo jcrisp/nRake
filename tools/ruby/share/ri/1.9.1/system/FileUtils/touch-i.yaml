@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Options: noop verbose"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Updates modification time (mtime) and access time (atime) of file(s) in <tt>list</tt>. Files are created if they don't exist.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  FileUtils.touch 'timestamp'\n  FileUtils.touch Dir.glob('*.c');  system 'make'\n"
+full_name: FileUtils#touch
+is_singleton: false
+name: touch
+params: (list, options = {})
+visibility: private

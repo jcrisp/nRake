@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: updates GC profile mode. start profiler for GC.
+full_name: GC::Profiler::enable
+is_singleton: true
+name: enable
+params: |
+  GC::Profiler.enable          => nil
+
+visibility: public

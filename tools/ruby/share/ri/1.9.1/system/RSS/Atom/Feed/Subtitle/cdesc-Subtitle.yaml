@@ -1,0 +1,18 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+constants: []
+
+full_name: RSS::Atom::Feed::Subtitle
+includes: 
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: CommonModel
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: TextConstruct
+instance_methods: []
+
+name: Subtitle
+superclass: RSS::Element

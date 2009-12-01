@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Remove all files matching <tt>wildcard</tt>. If a matching file is a directory, it must be empty to be removed. used <tt>delete_all</tt> to recursively delete directories.
+full_name: Sys#delete
+is_singleton: false
+name: delete
+params: (*wildcards)
+visibility: public

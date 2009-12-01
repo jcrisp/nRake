@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "A shortcut for appending multiple fields. Equivalent to:"
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  args.each { |arg| csv_row &lt;&lt; arg }\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: This method returns the row for chaining.
+full_name: CSV::Row#push
+is_singleton: false
+name: push
+params: (*args)
+visibility: public

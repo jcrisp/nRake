@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the current fiber. You need to <tt>require 'fiber'</tt> before using this method. If you are not running in the context of a fiber this method will return the root fiber.
+full_name: Fiber::current
+is_singleton: true
+name: current
+params: |
+  Fiber.current() -> fiber
+
+visibility: public

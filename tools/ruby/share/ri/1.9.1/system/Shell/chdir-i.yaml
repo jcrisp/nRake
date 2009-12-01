@@ -1,0 +1,13 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: 
+- !ruby/object:RDoc::RI::AliasName 
+  name: cd
+block_params: ""
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: If called as iterator, it restores the current directory when the block ends.
+full_name: Shell#chdir
+is_singleton: false
+name: chdir
+params: (path = nil, verbose = @verbose) {|| ...}
+visibility: public

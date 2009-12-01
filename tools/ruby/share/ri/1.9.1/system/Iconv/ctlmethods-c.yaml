@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns available iconvctl() method list.
+full_name: Iconv::ctlmethods
+is_singleton: true
+name: ctlmethods
+params: " Iconv.ctlmethods => array\n"
+visibility: public

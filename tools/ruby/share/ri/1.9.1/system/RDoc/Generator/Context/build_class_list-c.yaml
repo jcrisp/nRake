@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: RDoc::Generator::Context::build_class_list
+is_singleton: true
+name: build_class_list
+params: (classes, options, from, html_file, class_dir)
+visibility: public

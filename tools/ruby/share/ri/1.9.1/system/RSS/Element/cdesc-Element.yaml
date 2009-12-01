@@ -1,0 +1,164 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: 
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  name: do_validate
+  rw: RW
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  name: parent
+  rw: RW
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: add_have_children_element
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: add_need_initialize_variable
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: add_plural_form
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: add_to_element_method
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: content_setup
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: def_corresponded_attr_reader
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: def_corresponded_attr_writer
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: get_attributes
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: have_children_elements
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: have_content?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: inherited
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: inherited_base
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: install_get_attribute
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: install_model
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: install_must_call_validator
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: install_ns
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: models
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: must_call_validators
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: need_initialize_variables
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: need_parent?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: plural_forms
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: required_prefix
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: required_uri
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: tag_name
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: to_element_methods
+comment: 
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: INDENT
+  value: "\"  \""
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: MUST_CALL_VALIDATORS
+  value: "{}"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: MODELS
+  value: "[]"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: GET_ATTRIBUTES
+  value: "[]"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: HAVE_CHILDREN_ELEMENTS
+  value: "[]"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: TO_ELEMENT_METHODS
+  value: "[]"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: NEED_INITIALIZE_VARIABLES
+  value: "[]"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: PLURAL_FORMS
+  value: "{}"
+full_name: RSS::Element
+includes: 
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: Utils
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: SetupMaker
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: __validate
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: _attrs
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: _tags
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: _validate
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: calc_indent
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: children
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: collect_attrs
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: content_is_set?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: convert
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: converter=
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: empty_content?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: full_name
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: have_required_elements?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: have_xml_content?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: initialize_have_children_elements
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: initialize_variables
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: make_start_tag
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: need_base64_encode?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: set_next_element
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: tag
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: tag_filter
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: tag_name
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: tag_name_with_prefix
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: to_s
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: valid?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: validate
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: validate_attribute
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: validate_for_stream
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: xmled_content
+name: Element
+superclass: Object

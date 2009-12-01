@@ -1,0 +1,28 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+constants: []
+
+full_name: WEBrick::HTTPAuth::Htdigest
+includes: 
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: UserDB
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: delete_passwd
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: each
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: flush
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: get_passwd
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: reload
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: set_passwd
+name: Htdigest
+superclass: Object

@@ -1,0 +1,37 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: 
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  name: uri
+  rw: RW
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: command
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: command=
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+constants: []
+
+full_name: DRb::ExtServManager
+includes: 
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: DRbUndumped
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: MonitorMixin
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: invoke_service
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: invoke_service_command
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: invoke_thread
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: regist
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: service
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: unregist
+name: ExtServManager
+superclass: Object

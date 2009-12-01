@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+constants: []
+
+full_name: RSS::Maker::ChannelBase::AuthorsBase::AuthorBase
+includes: 
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: AtomPersonConstructBase
+instance_methods: []
+
+name: AuthorBase
+superclass: RSS::Maker::Base

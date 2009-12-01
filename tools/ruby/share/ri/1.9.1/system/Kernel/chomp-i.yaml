@@ -1,0 +1,15 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Equivalent to <tt>$_ = $_.chomp(<em>string</em>)</tt>. See <tt>String#chomp</tt>. Available only when -p/-n command line option specified.
+full_name: Kernel#chomp
+is_singleton: false
+name: chomp
+params: |
+  chomp            => $_
+  chomp(string)    => $_
+
+visibility: public

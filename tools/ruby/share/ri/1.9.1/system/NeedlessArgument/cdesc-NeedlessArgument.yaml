@@ -1,0 +1,17 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Raises when there is an argument for a switch which takes no argument.
+constants: []
+
+full_name: NeedlessArgument
+includes: []
+
+instance_methods: []
+
+name: NeedlessArgument
+superclass: ParseError

@@ -1,0 +1,102 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: break_points
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: context
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: debug_thread_info
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: display
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: get_thread
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: interrupt
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: make_thread_list
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: resume
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: set_last_thread
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: set_trace
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: stdout
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: stdout=
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: suspend
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: thread_list
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: thread_list_all
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: waiting
+comment: 
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: MUTEX
+  value: Mutex.new
+full_name: DEBUGGER__
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: break_points
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: check_break_points
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: context
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: debug_command
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: debug_eval
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: debug_funcname
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: debug_method_info
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: debug_print_help
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: debug_silent_eval
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: debug_variable_info
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: display
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: display_expression
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: display_expressions
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: display_frames
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: display_list
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: excn_handle
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: format_frame
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: frame_set_pos
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: line_at
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: set_last_thread
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: set_trace
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: set_trace_all
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: stdout
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: thnum
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: trace?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: trace_func
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: var_list
+name: DEBUGGER__
+superclass: Object

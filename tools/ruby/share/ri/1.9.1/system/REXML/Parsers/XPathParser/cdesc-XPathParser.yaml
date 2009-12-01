@@ -1,0 +1,112 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: You don't want to use this class. Really. Use XPath, which is a wrapper for this class. Believe me. You don't want to poke around in here. There is strange, dark magic at work in this code. Beware. Go back! Go back while you still can!
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: LITERAL
+  value: /^'([^']*)'|^"([^"]*)"/u
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: RelativeLocationPath
+  - !ruby/struct:RDoc::Markup::Flow::VERB 
+    :body: "  |                                                    Step\n    | (AXIS_NAME '::' | '@' | '')                     AxisSpecifier\n      NodeTest\n        Predicate\n    | '.' | '..'                                      AbbreviatedStep\n  |  RelativeLocationPath '/' Step\n  | RelativeLocationPath '//' Step\n"
+  name: AXIS
+  value: /^(ancestor|ancestor-or-self|attribute|child|descendant|descendant-or-self|following|following-sibling|namespace|parent|preceding|preceding-sibling|self)::/
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::VERB 
+    :body: " Returns a 1-1 map of the nodeset\n The contents of the resulting array are either:\n   true/false, if a positive match\n   String, if a name match\n"
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: NodeTest
+  - !ruby/struct:RDoc::Markup::Flow::VERB 
+    :body: "  | ('*' | NCNAME ':' '*' | QNAME)                NameTest\n  | NODE_TYPE '(' ')'                              NodeType\n  | PI '(' LITERAL ')'                            PI\n    | '[' expr ']'                                Predicate\n"
+  name: NCNAMETEST
+  value: /^(#{NCNAME_STR}):\*/u
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: QNAME
+  value: Namespace::NAMESPLIT
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: NODE_TYPE
+  value: /^(comment|text|node)\(\s*\)/m
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: PI
+  value: /^processing-instruction\(/
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: "| VARIABLE_REFERENCE | '(' expr ')' | LITERAL | NUMBER | FunctionCall"
+  name: VARIABLE_REFERENCE
+  value: /^\$(#{NAME_STR})/u
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: NUMBER
+  value: /^(\d*\.?\d+)/
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: NT
+  value: /^comment|text|processing-instruction|node$/
+full_name: REXML::Parsers::XPathParser
+includes: 
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: XMLTokens
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: AdditiveExpr
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: AndExpr
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: EqualityExpr
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: FilterExpr
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: FunctionCall
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: LocationPath
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: MultiplicativeExpr
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: NodeTest
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: OrExpr
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: PathExpr
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: Predicate
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: PrimaryExpr
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: RelationalExpr
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: RelativeLocationPath
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: UnaryExpr
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: UnionExpr
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: abbreviate
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: expand
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: get_group
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: namespaces=
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: parse
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: parse_args
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: predicate
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: predicate_to_string
+name: XPathParser
+superclass: Object

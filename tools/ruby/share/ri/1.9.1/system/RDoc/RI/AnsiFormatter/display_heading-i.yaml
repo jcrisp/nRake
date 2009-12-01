@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: RDoc::RI::AnsiFormatter#display_heading
+is_singleton: false
+name: display_heading
+params: (text, level, indent)
+visibility: public

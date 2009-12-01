@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns <tt>true</tt> if <em>str</em> has a length of zero.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   &quot;hello&quot;.empty?   #=&gt; false\n   &quot;&quot;.empty?        #=&gt; true\n"
+full_name: String#empty?
+is_singleton: false
+name: empty?
+params: |
+  str.empty?   => true or false
+
+visibility: public

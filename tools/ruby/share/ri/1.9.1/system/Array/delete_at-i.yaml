@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Deletes the element at the specified index, returning that element, or <tt>nil</tt> if the index is out of range. See also <tt>Array#slice!</tt>.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   a = %w( ant bat cat dog )\n   a.delete_at(2)    #=&gt; &quot;cat&quot;\n   a                 #=&gt; [&quot;ant&quot;, &quot;bat&quot;, &quot;dog&quot;]\n   a.delete_at(99)   #=&gt; nil\n"
+full_name: Array#delete_at
+is_singleton: false
+name: delete_at
+params: |
+  array.delete_at(index)  -> obj or nil
+
+visibility: public

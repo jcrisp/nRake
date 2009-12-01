@@ -1,0 +1,17 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns a new array that is a one-dimensional flattening of this array (recursively). That is, for every element that is an array, extract its elements into the new array. If the optional <em>level</em> argument determines the level of recursion to flatten.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   s = [ 1, 2, 3 ]           #=&gt; [1, 2, 3]\n   t = [ 4, 5, 6, [7, 8] ]   #=&gt; [4, 5, 6, [7, 8]]\n   a = [ s, t, 9, 10 ]       #=&gt; [[1, 2, 3], [4, 5, 6, [7, 8]], 9, 10]\n   a.flatten                 #=&gt; [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\n   a = [ 1, 2, [3, [4, 5] ] ]\n   a.flatten(1)              #=&gt; [1, 2, 3, [4, 5]]\n"
+full_name: Array#flatten
+is_singleton: false
+name: flatten
+params: |
+  array.flatten -> an_array
+  array.flatten(level) -> an_array
+
+visibility: public

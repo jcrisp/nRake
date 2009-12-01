@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Create a new Ripper object. <em>src</em> must be a String, an IO, or an Object which has #gets method."
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: This method does not starts parsing. See also Ripper#parse and Ripper.parse.
+full_name: Ripper::new
+is_singleton: true
+name: new
+params: |
+  Ripper.new(src, filename="(ripper)", lineno=1) -> ripper
+
+visibility: public

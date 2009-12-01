@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: Fixnum::Bignum::Math::sqrt
+is_singleton: true
+name: sqrt
+params: (a)
+visibility: public

@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Quick sequence
+full_name: YAML::BaseEmitter#seq
+is_singleton: false
+name: seq
+params: ( type, &e )
+visibility: public

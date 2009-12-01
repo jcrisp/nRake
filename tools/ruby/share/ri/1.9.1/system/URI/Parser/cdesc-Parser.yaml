@@ -1,0 +1,43 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: 
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  name: pattern
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  name: regexp
+  rw: R
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+constants: []
+
+full_name: URI::Parser
+includes: 
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: REGEXP
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: escape
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: extract
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: initialize_pattern
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: initialize_regexp
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: inspect
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: join
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: make_regexp
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: parse
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: split
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: unescape
+name: Parser
+superclass: Object

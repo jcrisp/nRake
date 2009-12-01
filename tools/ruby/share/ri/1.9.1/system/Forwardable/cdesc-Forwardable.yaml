@@ -1,0 +1,38 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "The Forwardable module provides delegation of specified methods to a designated object, using the methods #def_delegator and #def_delegators."
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "For example, say you have a class RecordCollection which contains an array <tt>@records</tt>. You could provide the lookup method #record_number(), which simply calls #[] on the <tt>@records</tt> array, like this:"
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  class RecordCollection\n    extend Forwardable\n    def_delegator :@records, :[], :record_number\n  end\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Further, if you wish to provide the methods #size, #&lt;&lt;, and #map, all of which delegate to @records, this is how you can do it:"
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  class RecordCollection\n    # extend Forwardable, but we did that above\n    def_delegators :@records, :size, :&lt;&lt;, :map\n  end\n  f = Foo.new\n  f.printf ...\n  f.gets\n  f.content_at(1)\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Also see the example at forwardable.rb.
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: FORWARDABLE_VERSION
+  value: "\"1.0.0\""
+full_name: Forwardable
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: def_delegator
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: def_delegators
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: def_instance_delegator
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: def_instance_delegators
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: delegate
+name: Forwardable

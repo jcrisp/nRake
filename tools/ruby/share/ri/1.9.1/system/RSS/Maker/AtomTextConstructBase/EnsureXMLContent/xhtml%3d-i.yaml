@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: RSS::Maker::AtomTextConstructBase::EnsureXMLContent#xhtml=
+is_singleton: false
+name: xhtml=
+params: (content)
+visibility: public

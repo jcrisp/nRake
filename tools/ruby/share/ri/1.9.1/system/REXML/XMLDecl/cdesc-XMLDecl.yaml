@@ -1,0 +1,76 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: 
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  name: standalone
+  rw: RW
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  name: version
+  rw: RW
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  name: writeencoding
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  name: writethis
+  rw: R
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: default
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: NEEDS DOCUMENTATION
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: DEFAULT_VERSION
+  value: "\"1.0\";"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: DEFAULT_ENCODING
+  value: "\"UTF-8\";"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: DEFAULT_STANDALONE
+  value: "\"no\";"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: START
+  value: "'<\\?xml';"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: STOP
+  value: "'\\?>';"
+full_name: REXML::XMLDecl
+includes: 
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: Encoding
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: ==
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: clone
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: content
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: dowrite
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: encoding=
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: inspect
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: node_type
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: nowrite
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: old_enc=
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: write
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: xmldecl
+name: XMLDecl
+superclass: REXML::Child

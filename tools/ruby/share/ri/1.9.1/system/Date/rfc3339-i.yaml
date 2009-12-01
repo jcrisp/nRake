@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: Date#rfc3339
+is_singleton: false
+name: rfc3339
+params: ()
+visibility: public

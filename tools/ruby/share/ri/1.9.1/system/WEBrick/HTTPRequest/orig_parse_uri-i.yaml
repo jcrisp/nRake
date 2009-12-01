@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Alias for #parse_uri"
+full_name: WEBrick::HTTPRequest#orig_parse_uri
+is_singleton: false
+name: orig_parse_uri
+params: (str, scheme="http")
+visibility: public

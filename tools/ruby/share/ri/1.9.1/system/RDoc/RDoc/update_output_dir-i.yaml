@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Update the flag file in an output directory.
+full_name: RDoc::RDoc#update_output_dir
+is_singleton: false
+name: update_output_dir
+params: (op_dir, time)
+visibility: public

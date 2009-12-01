@@ -1,0 +1,21 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Deletes all attributes matching a name. Namespaces are significant.
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "name:"
+    :body: A String; all attributes that match this path will be removed
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "Returns:"
+    :body: an Array of the Attributes that were removed
+  type: :NOTE
+full_name: REXML::Attributes#delete_all
+is_singleton: false
+name: delete_all
+params: ( name )
+visibility: public

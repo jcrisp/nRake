@@ -1,0 +1,17 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Indicates a failure to resolve a name or address.
+constants: []
+
+full_name: Resolv::ResolvError
+includes: []
+
+instance_methods: []
+
+name: ResolvError
+superclass: StandardError

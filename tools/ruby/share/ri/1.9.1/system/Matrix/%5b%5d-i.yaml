@@ -1,0 +1,15 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: 
+- !ruby/object:RDoc::RI::AliasName 
+  name: element
+- !ruby/object:RDoc::RI::AliasName 
+  name: component
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Returns element (<tt>i</tt>,<tt>j</tt>) of the matrix. That is: row <tt>i</tt>, column <tt>j</tt>."
+full_name: Matrix#[]
+is_singleton: false
+name: "[]"
+params: (i, j)
+visibility: public

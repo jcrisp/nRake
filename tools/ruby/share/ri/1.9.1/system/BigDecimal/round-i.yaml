@@ -1,0 +1,28 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Round to the nearest 1 (by default), returning the result as a BigDecimal.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: BigDecimal('3.14159').round -&gt; 3
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: BigDecimal('8.7').round -&gt; 9
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: If n is specified and positive, the fractional part of the result has no more than that many digits.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: If n is specified and negative, at least that many digits to the left of the decimal point will be 0 in the result.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: BigDecimal('3.14159').round(3) -&gt; 3.142
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: BigDecimal('13345.234').round(-2) -&gt; 13300.0
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The value of the optional mode argument can be used to determine how rounding is performed; see BigDecimal.mode.
+full_name: BigDecimal#round
+is_singleton: false
+name: round
+params: |
+  round(n,mode)
+
+visibility: public

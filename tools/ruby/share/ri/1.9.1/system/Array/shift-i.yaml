@@ -1,0 +1,19 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the first element of <em>self</em> and removes it (shifting all other elements down by one). Returns <tt>nil</tt> if the array is empty.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: If a number <em>n</em> is given, returns an array of the first n elements (or less) just like <tt>array.slice!(0, n)</tt> does.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   args = [ &quot;-m&quot;, &quot;-q&quot;, &quot;filename&quot; ]\n   args.shift     #=&gt; &quot;-m&quot;\n   args           #=&gt; [&quot;-q&quot;, &quot;filename&quot;]\n\n   args = [ &quot;-m&quot;, &quot;-q&quot;, &quot;filename&quot; ]\n   args.shift(2)  #=&gt; [&quot;-m&quot;, &quot;-q&quot;]\n   args           #=&gt; [&quot;filename&quot;]\n"
+full_name: Array#shift
+is_singleton: false
+name: shift
+params: |
+  array.shift    -> obj or nil
+  array.shift(n) -> array
+
+visibility: public

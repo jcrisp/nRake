@@ -1,0 +1,26 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: START
+  value: "\"<!ATTLIST\""
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: START_RE
+  value: /^\s*#{START}/um
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: PATTERN_RE
+  value: /\s*(#{START}.*?>)/um
+full_name: REXML::DTD::AttlistDecl
+includes: []
+
+instance_methods: []
+
+name: AttlistDecl
+superclass: REXML::Child

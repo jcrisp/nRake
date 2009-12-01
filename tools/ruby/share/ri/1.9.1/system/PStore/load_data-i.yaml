@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Load the given PStore file. If <tt>read_only</tt> is true, the unmarshalled Hash will be returned. If <tt>read_only</tt> is false, a 3-tuple will be returned: the unmarshalled Hash, an MD5 checksum of the data, and the size of the data."
+full_name: PStore#load_data
+is_singleton: false
+name: load_data
+params: (file, read_only)
+visibility: private

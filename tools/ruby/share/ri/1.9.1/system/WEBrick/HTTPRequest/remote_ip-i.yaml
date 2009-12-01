@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: WEBrick::HTTPRequest#remote_ip
+is_singleton: false
+name: remote_ip
+params: ()
+visibility: public

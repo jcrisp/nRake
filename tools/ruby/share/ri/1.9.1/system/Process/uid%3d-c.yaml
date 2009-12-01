@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Sets the (integer) user ID for this process. Not available on all platforms.
+full_name: Process::uid=
+is_singleton: true
+name: uid=
+params: |
+  Process.uid= integer   => numeric
+
+visibility: public

@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Multiplies the vector by <tt>x</tt>, where <tt>x</tt> is a number or another vector.
+full_name: Vector#*
+is_singleton: false
+name: "*"
+params: (x)
+visibility: public

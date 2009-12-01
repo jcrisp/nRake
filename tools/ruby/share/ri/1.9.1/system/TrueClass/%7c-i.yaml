@@ -1,0 +1,20 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Or---Returns <tt>true</tt>. As <em>anObject</em> is an argument to a method call, it is always evaluated; there is no short-circuit evaluation in this case.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   true |  puts(&quot;or&quot;)\n   true || puts(&quot;logical or&quot;)\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: <em>produces:</em>
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   or\n"
+full_name: TrueClass#|
+is_singleton: false
+name: "|"
+params: |
+  true | obj   => true
+
+visibility: public

@@ -1,0 +1,308 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: "[]"
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: column_vector
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: columns
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: diagonal
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: identity
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: row_vector
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: rows
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: scalar
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: zero
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The <tt>Matrix</tt> class represents a mathematical matrix, and provides methods for creating special-case matrices (zero, identity, diagonal, singular, vector), operating on them arithmetically and algebraically, and determining their mathematical properties (trace, rank, inverse, determinant).
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Note that although matrices should theoretically be rectangular, this is not enforced by the class.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Also note that the determinant of integer matrices may be incorrectly calculated unless you also <tt>require 'mathn'</tt>. This may be fixed in the future.
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 2
+  :text: Method Catalogue
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "To create a matrix:"
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: <tt> Matrix[*rows] </tt>
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: <tt> Matrix.[](*rows) </tt>
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: <tt> Matrix.rows(rows, copy = true) </tt>
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: <tt> Matrix.columns(columns) </tt>
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: <tt> Matrix.diagonal(*values) </tt>
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: <tt> Matrix.scalar(n, value) </tt>
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: <tt> Matrix.scalar(n, value) </tt>
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: <tt> Matrix.identity(n) </tt>
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: <tt> Matrix.unit(n) </tt>
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: <tt> Matrix.I(n) </tt>
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: <tt> Matrix.zero(n) </tt>
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: <tt> Matrix.row_vector(row) </tt>
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: <tt> Matrix.column_vector(column) </tt>
+  type: :BULLET
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "To access Matrix elements/columns/rows/submatrices/properties:"
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: <tt> [](i, j) </tt>
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: "<tt> #row_size </tt>"
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: "<tt> #column_size </tt>"
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: "<tt> #row(i) </tt>"
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: "<tt> #column(j) </tt>"
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: "<tt> #collect </tt>"
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: "<tt> #map </tt>"
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: "<tt> #minor(*param) </tt>"
+  type: :BULLET
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Properties of a matrix:"
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: "<tt> #regular? </tt>"
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: "<tt> #singular? </tt>"
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: "<tt> #square? </tt>"
+  type: :BULLET
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Matrix arithmetic:"
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: <tt> *(m) </tt>
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: <tt> +(m) </tt>
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: <tt> -(m) </tt>
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: "<tt> #/(m) </tt>"
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: "<tt> #inverse </tt>"
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: "<tt> #inv </tt>"
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: <tt> ** </tt>
+  type: :BULLET
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Matrix functions:"
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: "<tt> #determinant </tt>"
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: "<tt> #det </tt>"
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: "<tt> #rank </tt>"
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: "<tt> #trace </tt>"
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: "<tt> #tr </tt>"
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: "<tt> #transpose </tt>"
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: "<tt> #t </tt>"
+  type: :BULLET
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Conversion to other data types:"
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: "<tt> #coerce(other) </tt>"
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: "<tt> #row_vectors </tt>"
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: "<tt> #column_vectors </tt>"
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: "<tt> #to_a </tt>"
+  type: :BULLET
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "String representations:"
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: "<tt> #to_s </tt>"
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: "<tt> #inspect </tt>"
+  type: :BULLET
+constants: []
+
+full_name: Matrix
+includes: 
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: ExceptionForMatrix
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: "*"
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: "**"
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: +
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: "-"
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: /
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: ==
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: "[]"
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: "[]="
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: clone
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: coerce
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: collect
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: column
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: column_size
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: column_vectors
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: compare_by_row_vectors
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: component
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: det
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: det_e
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: determinant
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: determinant_e
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: element
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: elements_to_f
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: elements_to_i
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: elements_to_r
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: eql?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: hash
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: init_rows
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: inspect
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: inv
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: inverse
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: inverse_from
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: map
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: minor
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: rank
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: rank_e
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: regular?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: row
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: row_size
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: row_vectors
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: set_component
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: set_element
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: singular?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: square?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: t
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: to_a
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: to_s
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: tr
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: trace
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: transpose
+name: Matrix
+superclass: Object

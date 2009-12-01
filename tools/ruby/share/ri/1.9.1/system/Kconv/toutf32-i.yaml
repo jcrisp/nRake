@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Convert <tt>str</tt> to UTF-32
+full_name: Kconv#toutf32
+is_singleton: false
+name: toutf32
+params: |
+  Kconv.toutf32(str)   => string
+
+visibility: private

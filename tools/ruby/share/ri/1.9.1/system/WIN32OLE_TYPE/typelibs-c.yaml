@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns array of type libraries. This method will be OBSOLETE. Use WIN32OLE_TYPELIB.typelibs.collect{|t| t.name} instead.
+full_name: WIN32OLE_TYPE::typelibs
+is_singleton: true
+name: typelibs
+params: |
+  WIN32OLE_TYPE.typelibs
+
+visibility: public

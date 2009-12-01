@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Manually sets the current line number to the given value. <tt>$.</tt> is updated only on the next read.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   f = File.new(&quot;testfile&quot;)\n   f.gets                     #=&gt; &quot;This is line one\\n&quot;\n   $.                         #=&gt; 1\n   f.lineno = 1000\n   f.lineno                   #=&gt; 1000\n   $.                         #=&gt; 1         # lineno of last read\n   f.gets                     #=&gt; &quot;This is line two\\n&quot;\n   $.                         #=&gt; 1001      # lineno of last read\n"
+full_name: IO#lineno=
+is_singleton: false
+name: lineno=
+params: |
+  ios.lineno = integer    => integer
+
+visibility: public

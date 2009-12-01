@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns non-nil if input available without blocking, or nil.
+full_name: IO#ready?
+is_singleton: false
+name: ready?
+params: |
+  io.ready? -> true, false or nil
+
+visibility: public

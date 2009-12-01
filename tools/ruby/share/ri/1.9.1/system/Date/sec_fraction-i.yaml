@@ -1,0 +1,13 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: 
+- !ruby/object:RDoc::RI::AliasName 
+  name: second_fraction
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Get the fraction-of-a-second of this date.
+full_name: Date#sec_fraction
+is_singleton: false
+name: sec_fraction
+params: ()
+visibility: private

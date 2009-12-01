@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Pattern Match---Overridden by descendents (notably <tt>Regexp</tt> and <tt>String</tt>) to provide meaningful pattern-match semantics.
+full_name: Object#=~
+is_singleton: false
+name: =~
+params: |
+  obj =~ other  => nil
+
+visibility: public

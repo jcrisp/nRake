@@ -1,0 +1,19 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+constants: []
+
+full_name: DRb::TimerIdConv
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: to_id
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: to_obj
+name: TimerIdConv
+superclass: DRb::DRbIdConv

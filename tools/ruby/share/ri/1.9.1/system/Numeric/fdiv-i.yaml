@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns float division.
+full_name: Numeric#fdiv
+is_singleton: false
+name: fdiv
+params: |
+  num.fdiv(numeric)    =>   float
+
+visibility: public

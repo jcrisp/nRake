@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Calculate the dynamic width of the
+full_name: Rake::Application#dynamic_width
+is_singleton: false
+name: dynamic_width
+params: ()
+visibility: public

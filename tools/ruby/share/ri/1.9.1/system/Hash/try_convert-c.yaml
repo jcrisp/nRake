@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Try to convert <em>obj</em> into a hash, using to_hash method. Returns converted hash or nil if <em>obj</em> cannot be converted for any reason.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   Hash.try_convert({1=&gt;2})   # =&gt; {1=&gt;2}\n   Hash.try_convert(&quot;1=&gt;2&quot;)   # =&gt; nil\n"
+full_name: Hash::try_convert
+is_singleton: true
+name: try_convert
+params: |
+  Hash.try_convert(obj) -> hash or nil
+
+visibility: public

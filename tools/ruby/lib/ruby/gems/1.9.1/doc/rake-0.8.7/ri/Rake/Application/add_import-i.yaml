@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Add a file to the list of files to be imported.
+full_name: Rake::Application#add_import
+is_singleton: false
+name: add_import
+params: (fn)
+visibility: public

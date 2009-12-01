@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: For backward compatibility
+full_name: RSS::Element#calc_indent
+is_singleton: false
+name: calc_indent
+params: ()
+visibility: private

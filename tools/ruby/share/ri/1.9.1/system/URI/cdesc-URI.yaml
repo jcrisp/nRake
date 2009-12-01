@@ -1,0 +1,65 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: extract
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: join
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: parse
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: regexp
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: scheme_list
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: split
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 1
+  :text: uri/common.rb
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "Author:"
+    :body: Akira Yamada &lt;akira@ruby-lang.org&gt;
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "Revision:"
+    :body: "$Id: common.rb 22760 2009-03-04 09:21:12Z yugui $"
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "License:"
+    :body: You can redistribute it and/or modify it under the same term as Ruby.
+  type: :NOTE
+- !ruby/struct:RDoc::Markup::Flow::RULE 
+  :width: 1
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: URI support for Ruby
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "Author:"
+    :body: Akira Yamada &lt;akira@ruby-lang.org&gt;
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "Documentation:"
+    :body: Akira Yamada &lt;akira@ruby-lang.org&gt;, Dmitry V. Sabanin &lt;sdmitry@lrn.ru&gt;
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "License:"
+    :body: Copyright (c) 2001 akira yamada &lt;akira@ruby-lang.org&gt; You can redistribute it and/or modify it under the same term as Ruby.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "Revision:"
+    :body: "$Id: uri.rb 13772 2007-10-25 00:53:34Z akira $"
+  type: :NOTE
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: See URI for documentation
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: DEFAULT_PARSER
+  value: Parser.new
+full_name: URI
+includes: 
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: REGEXP
+instance_methods: []
+
+name: URI

@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Warn about deprecated use of top level constant names.
+full_name: Rake::Application#const_warning
+is_singleton: false
+name: const_warning
+params: (const_name)
+visibility: public

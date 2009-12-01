@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Alias for #each_name"
+full_name: Net::HTTPHeader#each_key
+is_singleton: false
+name: each_key
+params: ()
+visibility: public

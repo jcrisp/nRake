@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns <em>arg</em> as an <tt>Array</tt>. First tries to call <em>arg</em><tt>.to_ary</tt>, then <em>arg</em><tt>.to_a</tt>.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   Array(1..5)   #=&gt; [1, 2, 3, 4, 5]\n"
+full_name: Kernel#Array
+is_singleton: false
+name: Array
+params: |
+  Array(arg)    => array
+
+visibility: public

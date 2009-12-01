@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the square root of the value.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: If n is specified, returns at least that many significant digits.
+full_name: BigDecimal#sqrt
+is_singleton: false
+name: sqrt
+params: |
+  sqrt(n)
+
+visibility: public

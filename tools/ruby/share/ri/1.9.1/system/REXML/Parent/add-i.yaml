@@ -1,0 +1,11 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: 
+- !ruby/object:RDoc::RI::AliasName 
+  name: push
+block_params: 
+comment: 
+full_name: REXML::Parent#add
+is_singleton: false
+name: add
+params: ( object )
+visibility: public

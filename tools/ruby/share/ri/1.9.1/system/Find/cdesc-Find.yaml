@@ -1,0 +1,26 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: find
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: prune
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The <tt>Find</tt> module supports the top-down traversal of a set of file paths.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "For example, to total the size of all files under your home directory, ignoring anything in a &quot;dot&quot; directory (e.g. $HOME/.ssh):"
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  require 'find'\n\n  total_size = 0\n\n  Find.find(ENV[&quot;HOME&quot;]) do |path|\n    if FileTest.directory?(path)\n      if File.basename(path)[0] == ?.\n        Find.prune       # Don't look any further into this directory.\n      else\n        next\n      end\n    else\n      total_size += FileTest.size(path)\n    end\n  end\n"
+constants: []
+
+full_name: Find
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: find
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: prune
+name: Find

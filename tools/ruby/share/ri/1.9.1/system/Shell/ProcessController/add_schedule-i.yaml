@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: schedule a command
+full_name: Shell::ProcessController#add_schedule
+is_singleton: false
+name: add_schedule
+params: (command)
+visibility: public

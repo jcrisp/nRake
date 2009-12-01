@@ -1,0 +1,18 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Creates a new ipaddr object either from a human readable IP address representation in string, or from a packed in_addr value followed by an address family.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "In the former case, the following are the valid formats that will be recognized: &quot;address&quot;, &quot;address/prefixlen&quot; and &quot;address/mask&quot;, where IPv6 address may be enclosed in square brackets (`[' and `]'). If a prefixlen or a mask is specified, it returns a masked IP address. Although the address family is determined automatically from a specified string, you can specify one explicitly by the optional second argument."
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Otherwise an IP addess is generated from a packed in_addr value and an address family.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The IPAddr class defines many methods and operators, and some of those, such as &amp;, |, include? and ==, accept a string, or a packed in_addr value instead of an IPAddr object.
+full_name: IPAddr::new
+is_singleton: true
+name: new
+params: (addr = '::', family = Socket::AF_UNSPEC)
+visibility: public

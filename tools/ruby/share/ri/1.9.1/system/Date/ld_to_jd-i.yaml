@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Convert a count of the number of days since the adoption of the Gregorian Calendar (in Italy) to a Julian Day Number.
+full_name: Date#ld_to_jd
+is_singleton: false
+name: ld_to_jd
+params: (ld)
+visibility: public

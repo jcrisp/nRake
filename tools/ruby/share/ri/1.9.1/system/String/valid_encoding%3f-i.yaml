@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns true for a string which encoded correctly.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  &quot;\\xc2\\xa1&quot;.force_encoding(&quot;UTF-8&quot;).valid_encoding? =&gt; true\n  &quot;\\xc2&quot;.force_encoding(&quot;UTF-8&quot;).valid_encoding? =&gt; false\n  &quot;\\x80&quot;.force_encoding(&quot;UTF-8&quot;).valid_encoding? =&gt; false\n"
+full_name: String#valid_encoding?
+is_singleton: false
+name: valid_encoding?
+params: |
+  str.valid_encoding?  => true or false
+
+visibility: public

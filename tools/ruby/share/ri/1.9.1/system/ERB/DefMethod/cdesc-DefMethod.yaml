@@ -1,0 +1,33 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: def_erb_method
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Utility module to define eRuby script as instance method.
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 3
+  :text: Example
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "example.rhtml:"
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  &lt;% for item in @items %&gt;\n  <b>&lt;%= item %&gt;</b>\n  &lt;% end %&gt;\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "example.rb:"
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  require 'erb'\n  class MyClass\n    extend ERB::DefMethod\n    def_erb_method('render()', 'example.rhtml')\n    def initialize(items)\n      @items = items\n    end\n  end\n  print MyClass.new([10,20,30]).render()\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "result:"
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  <b>10</b>\n\n  <b>20</b>\n\n  <b>30</b>\n"
+constants: []
+
+full_name: ERB::DefMethod
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: def_erb_method
+name: DefMethod

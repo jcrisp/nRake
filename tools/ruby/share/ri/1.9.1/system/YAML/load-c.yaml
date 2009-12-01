@@ -1,0 +1,18 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Load a document from the current <em>io</em> stream.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  File.open( 'animals.yaml' ) { |yf| YAML::load( yf ) }\n     #=&gt; ['badger', 'elephant', 'tiger']\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Can also load from a string.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  YAML.load( &quot;--- :locked&quot; )\n     #=&gt; :locked\n"
+full_name: YAML::load
+is_singleton: true
+name: load
+params: ( io )
+visibility: public

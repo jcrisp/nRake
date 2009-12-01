@@ -1,0 +1,61 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Sets the resource limit of the process. <em>cur_limit</em> means current (soft) limit and <em>max_limit</em> means maximum (hard) limit.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: If <em>max_limit</em> is not given, <em>cur_limit</em> is used.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: <em>resource</em> indicates the kind of resource to limit. It should be a symbol such as <tt>:CORE</tt>, a string such as <tt>&quot;CORE&quot;</tt> or a constant such as <tt>Process::RLIMIT_CORE</tt>. The available resources are OS dependent. Ruby may support following resources.
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: CORE
+    :body: core size (bytes) (SUSv3)
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: CPU
+    :body: CPU time (seconds) (SUSv3)
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: DATA
+    :body: data segment (bytes) (SUSv3)
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: FSIZE
+    :body: file size (bytes) (SUSv3)
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: NOFILE
+    :body: file descriptors (number) (SUSv3)
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: STACK
+    :body: stack size (bytes) (SUSv3)
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: AS
+    :body: total available memory (bytes) (SUSv3, NetBSD, FreeBSD, OpenBSD but 4.4BSD-Lite)
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: MEMLOCK
+    :body: total size for mlock(2) (bytes) (4.4BSD, GNU/Linux)
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: NPROC
+    :body: number of processes for the user (number) (4.4BSD, GNU/Linux)
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: RSS
+    :body: resident memory size (bytes) (4.2BSD, GNU/Linux)
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: SBSIZE
+    :body: all socket buffers (bytes) (NetBSD, FreeBSD)
+  type: :LABELED
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: <em>cur_limit</em> and <em>max_limit</em> may be <tt>:INFINITY</tt>, <tt>&quot;INFINITY&quot;</tt> or <tt>Process::RLIM_INFINITY</tt>, which means that the resource is not limited. They may be <tt>Process::RLIM_SAVED_MAX</tt>, <tt>Process::RLIM_SAVED_CUR</tt> and corresponding symbols and strings too. See system setrlimit(2) manual for details.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The following example raise the soft limit of core size to the hard limit to try to make core dump possible.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  Process.setrlimit(:CORE, Process.getrlimit(:CORE)[1])\n"
+full_name: Process::setrlimit
+is_singleton: true
+name: setrlimit
+params: |
+  Process.setrlimit(resource, cur_limit, max_limit)        => nil
+  Process.setrlimit(resource, cur_limit)                   => nil
+
+visibility: public

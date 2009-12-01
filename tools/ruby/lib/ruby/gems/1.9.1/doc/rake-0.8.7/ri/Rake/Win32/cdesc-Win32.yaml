@@ -1,0 +1,21 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: normalize
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: rake_system
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: windows?
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Win 32 interface methods for Rake. Windows specific functionality will be placed here to collect that knowledge in one spot.
+constants: []
+
+full_name: Rake::Win32
+includes: []
+
+instance_methods: []
+
+name: Win32

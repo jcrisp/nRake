@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns compression level.
+full_name: Zlib::GzipFile#level
+is_singleton: false
+name: level
+params: ()
+visibility: public

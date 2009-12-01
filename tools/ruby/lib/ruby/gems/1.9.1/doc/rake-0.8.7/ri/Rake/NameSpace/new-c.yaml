@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Create a namespace lookup object using the given task manager and the list of scopes.
+full_name: Rake::NameSpace::new
+is_singleton: true
+name: new
+params: (task_manager, scope_list)
+visibility: public

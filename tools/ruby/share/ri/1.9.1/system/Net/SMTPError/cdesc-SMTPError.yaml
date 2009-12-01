@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Module mixed in to all SMTP error classes
+constants: []
+
+full_name: Net::SMTPError
+includes: []
+
+instance_methods: []
+
+name: SMTPError

@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Deletes a file on the server.
+full_name: Net::FTP#delete
+is_singleton: false
+name: delete
+params: (filename)
+visibility: public

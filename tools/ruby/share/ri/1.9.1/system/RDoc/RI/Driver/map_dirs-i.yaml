@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: File.join(dir, file_name) }
+comment: 
+full_name: RDoc::RI::Driver#map_dirs
+is_singleton: false
+name: map_dirs
+params: (file_name) {|File.join(dir, file_name) }| ...}
+visibility: public

@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: \s*(((([&quot;']).*?\5)|[^\/'&quot;&gt;]*)*?)(\/)?&gt;/um, true)
+full_name: REXML::DTD::ElementDecl::new
+is_singleton: true
+name: new
+params: (match)
+visibility: public

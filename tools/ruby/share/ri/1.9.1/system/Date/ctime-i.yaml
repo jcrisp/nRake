@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Alias for #asctime"
+full_name: Date#ctime
+is_singleton: false
+name: ctime
+params: ()
+visibility: public

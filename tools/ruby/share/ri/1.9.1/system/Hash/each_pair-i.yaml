@@ -1,0 +1,21 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Calls <em>block</em> once for each key in <em>hsh</em>, passing the key-value pair as parameters.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   h = { &quot;a&quot; =&gt; 100, &quot;b&quot; =&gt; 200 }\n   h.each {|key, value| puts &quot;#{key} is #{value}&quot; }\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: <em>produces:</em>
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   a is 100\n   b is 200\n"
+full_name: Hash#each_pair
+is_singleton: false
+name: each_pair
+params: |
+  hsh.each {| key, value | block } -> hsh
+  hsh.each_pair {| key, value | block } -> hsh
+
+visibility: public

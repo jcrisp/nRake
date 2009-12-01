@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Adds the given object to the set and returns self. If the object is already in the set, returns nil.
+full_name: Set#add?
+is_singleton: false
+name: add?
+params: (o)
+visibility: public
