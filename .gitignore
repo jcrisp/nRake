@@ -1,1 +1,7 @@
 build
+*.resharper*
+_ReSharper*
+*.cache
+*.swp
+**/bin/**/*
+**/obj/**/*
