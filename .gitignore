@@ -4,4 +4,4 @@ _ReSharper*
 *.cache
 *.swp
 **/bin/**/*
-**/obj/**/*
+*/**/obj/**/*

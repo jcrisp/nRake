@@ -9,6 +9,8 @@ namespace PlaceholderApp
 	{
 		static void Main(string[] args)
 		{
+			Console.WriteLine(new Greeter().Greeting);
+			Console.Read();
 		}
 	}
 }
