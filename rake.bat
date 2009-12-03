@@ -1,5 +1,5 @@
 @echo off
-set OLD_PATH=%PATH%
+setlocal enableextensions
 set PATH=%PATH%;%CD%\tools\ruby\bin
 tools\ruby\bin\rake %*
-set PATH=%OLD_PATH%
+endlocal
