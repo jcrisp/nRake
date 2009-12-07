@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Enables SSH agent forwarding on the given channel. The forwarded agent will remain active even after the channel closes--the channel is only used as the transport for enabling the forwarded connection. You should never need to call this directly--it is called automatically the first time a session channel is opened, when the connection was created with :forward_agent set to true:"
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "   Net::SSH.start(&quot;remote.host&quot;, &quot;me&quot;, :forwrd_agent =&gt; true) do |ssh|\n     ssh.open_channel do |ch|\n       # agent will be automatically forwarded by this point\n     end\n     ssh.loop\n   end\n"
+full_name: Net::SSH::Service::Forward#agent
+is_singleton: false
+name: agent
+params: (channel)
+visibility: public

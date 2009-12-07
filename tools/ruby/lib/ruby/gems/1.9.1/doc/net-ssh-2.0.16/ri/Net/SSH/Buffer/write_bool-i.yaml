@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Writes each argument to the buffer as a (C-style) boolean, with 1 meaning true, and 0 meaning false. Does not alter the read position. Returns the buffer object.
+full_name: Net::SSH::Buffer#write_bool
+is_singleton: false
+name: write_bool
+params: (*b)
+visibility: public

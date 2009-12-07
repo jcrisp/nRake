@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Formats, constructs, and sends an SFTP packet of the given type and with the given data. This does not block, but merely enqueues the packet for sending and returns.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "You should probably use the operation methods, rather than building and sending the packet directly. (See #open, #close, etc.)"
+full_name: Net::SFTP::Session#send_packet
+is_singleton: false
+name: send_packet
+params: (type, *args)
+visibility: public

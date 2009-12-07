@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Closes any the compressor and/or decompressor objects that have been instantiated.
+full_name: Net::SSH::Transport::State#cleanup
+is_singleton: false
+name: cleanup
+params: ()
+visibility: public

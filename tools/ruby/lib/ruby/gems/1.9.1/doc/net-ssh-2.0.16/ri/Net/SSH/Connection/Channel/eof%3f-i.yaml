@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Returns true if the local end of the channel has declared that no more data is forthcoming (see #eof!). Trying to send data via #send_data when this is true will result in an exception being raised."
+full_name: Net::SSH::Connection::Channel#eof?
+is_singleton: false
+name: eof?
+params: ()
+visibility: public

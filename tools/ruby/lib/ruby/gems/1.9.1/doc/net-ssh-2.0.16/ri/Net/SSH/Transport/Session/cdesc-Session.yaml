@@ -1,0 +1,100 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: 
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The Algorithms instance used to perform key exchanges.
+  name: algorithms
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The host to connect to, as given to the constructor.
+  name: host
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The host-key verifier object used to verify host keys, to ensure that the connection is not being spoofed.
+  name: host_key_verifier
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The hash of options that were given to the object at initialization.
+  name: options
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The port number to connect to, as given in the options to the constructor. If no port number was given, this will default to DEFAULT_PORT.
+  name: port
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The ServerVersion instance that encapsulates the negotiated protocol version.
+  name: server_version
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The underlying socket object being used to communicate with the remote host.
+  name: socket
+  rw: R
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The transport layer represents the lowest level of the SSH protocol, and implements basic message exchanging and protocol initialization. It will never be instantiated directly (unless you really know what you're about), but will instead be created for you automatically when you create a new SSH session via Net::SSH.start.
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The standard port for the SSH protocol.
+  name: DEFAULT_PORT
+  value: "22"
+full_name: Net::SSH::Transport::Session
+includes: 
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: Constants
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: Loggable
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: close
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: closed?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: configure_client
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: configure_server
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: enqueue_message
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: hint
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: host_as_string
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: next_message
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: peer
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: poll_message
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: push
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: rekey!
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: rekey_as_needed
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: send_message
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: service_request
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: shutdown!
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: wait
+name: Session
+superclass: Object

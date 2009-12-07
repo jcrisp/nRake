@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Attempts to negotiate the SSH agent protocol version. Raises an error if the version could not be negotiated successfully.
+full_name: Net::SSH::Authentication::Agent#negotiate!
+is_singleton: false
+name: negotiate!
+params: ()
+visibility: public

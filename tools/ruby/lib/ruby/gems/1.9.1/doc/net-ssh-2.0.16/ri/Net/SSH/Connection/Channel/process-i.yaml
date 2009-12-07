@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "If an #on_process handler has been set up, this will cause it to be invoked (passing the channel itself as an argument). It also causes all pending output to be enqueued as CHANNEL_DATA packets (see #enqueue_pending_output)."
+full_name: Net::SSH::Connection::Channel#process
+is_singleton: false
+name: process
+params: ()
+visibility: public

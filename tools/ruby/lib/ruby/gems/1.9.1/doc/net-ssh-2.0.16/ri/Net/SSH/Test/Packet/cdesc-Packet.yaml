@@ -1,0 +1,30 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: This is an abstract class, not to be instantiated directly, subclassed by Net::SSH::Test::LocalPacket and Net::SSH::Test::RemotePacket. It implements functionality common to those subclasses.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: These packets are not true packets, in that they don't represent what was actually sent between the hosst; rather, they represent what was expected to be sent, as dictated by the script (Net::SSH::Test::Script). Thus, though they are defined with data elements, these data elements are used to either validate data that was sent by the local host (Net::SSH::Test::LocalPacket) or to mimic the sending of data by the remote host (Net::SSH::Test::RemotePacket).
+constants: []
+
+full_name: Net::SSH::Test::Packet
+includes: 
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: Net::SSH::Transport::Constants
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: Net::SSH::Connection::Constants
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: instantiate!
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: local?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: remote?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: types
+name: Packet
+superclass: Object

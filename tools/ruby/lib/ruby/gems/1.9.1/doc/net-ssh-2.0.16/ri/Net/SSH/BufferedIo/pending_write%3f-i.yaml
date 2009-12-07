@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns <tt>true</tt> if there is data waiting in the output buffer, and <tt>false</tt> otherwise.
+full_name: Net::SSH::BufferedIo#pending_write?
+is_singleton: false
+name: pending_write?
+params: ()
+visibility: public

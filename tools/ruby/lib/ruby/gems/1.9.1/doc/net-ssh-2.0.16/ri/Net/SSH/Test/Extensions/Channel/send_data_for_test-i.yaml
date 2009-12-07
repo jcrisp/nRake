@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The testing version of Net::SSH::Connection::Channel#send_data. Calls the original implementation, and then immediately enqueues the data for output so that scripted sends are properly interpreted as discrete (rather than concatenated) data packets.
+full_name: Net::SSH::Test::Extensions::Channel#send_data_for_test
+is_singleton: false
+name: send_data_for_test
+params: (data)
+visibility: public

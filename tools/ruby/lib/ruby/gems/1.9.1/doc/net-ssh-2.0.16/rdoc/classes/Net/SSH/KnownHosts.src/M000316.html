@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>add (Net::SSH::KnownHosts)</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="../../../.././rdoc-style.css" type="text/css" media="screen" />
+</head>
+<body class="standalone-code">
+  <pre>    <span class="ruby-comment cmt"># File lib/net/ssh/known_hosts.rb, line 52</span>
+52:       <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">add</span>(<span class="ruby-identifier">host</span>, <span class="ruby-identifier">key</span>, <span class="ruby-identifier">options</span>={})
+53:         <span class="ruby-identifier">hostfiles</span>(<span class="ruby-identifier">options</span>, <span class="ruby-identifier">:user</span>).<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">file</span><span class="ruby-operator">|</span>
+54:           <span class="ruby-keyword kw">begin</span>
+55:             <span class="ruby-constant">KnownHosts</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">file</span>).<span class="ruby-identifier">add</span>(<span class="ruby-identifier">host</span>, <span class="ruby-identifier">key</span>)
+56:             <span class="ruby-keyword kw">return</span>
+57:           <span class="ruby-keyword kw">rescue</span> <span class="ruby-constant">SystemCallError</span>
+58:             <span class="ruby-comment cmt"># try the next hostfile</span>
+59:           <span class="ruby-keyword kw">end</span>
+60:         <span class="ruby-keyword kw">end</span>
+61:       <span class="ruby-keyword kw">end</span></pre>
+</body>
+</html>

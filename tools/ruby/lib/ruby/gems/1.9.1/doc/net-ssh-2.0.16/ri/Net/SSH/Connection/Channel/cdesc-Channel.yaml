@@ -1,0 +1,154 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: 
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The underlying Net::SSH::Connection::Session instance that supports this channel.
+  name: connection
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The local id for this channel, assigned by the Net::SSH::Connection::Session instance.
+  name: local_id
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The maximum packet size that the local host can receive.
+  name: local_maximum_packet_size
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The maximum amount of data that the local end of this channel can receive. This is a total, not per-packet.
+  name: local_maximum_window_size
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: This is the remaining window size on the local end of this channel. When this reaches zero, no more data can be received.
+  name: local_window_size
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: "A hash of properties for this channel. These can be used to store state information about this channel. See also #[] and #[]=."
+  name: properties
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The remote id for this channel, assigned by the remote host.
+  name: remote_id
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The maximum packet size that the remote host can receive.
+  name: remote_maximum_packet_size
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The maximum amount of data that the remote end of this channel can receive. This is a total, not per-packet.
+  name: remote_maximum_window_size
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: This is the remaining window size on the remote end of this channel. When this reaches zero, no more data can be sent.
+  name: remote_window_size
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The type of this channel, usually &quot;session&quot;.
+  name: type
+  rw: R
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The channel abstraction. Multiple &quot;channels&quot; can be multiplexed onto a single SSH channel, each operating independently and seemingly in parallel. This class represents a single such channel. Most operations performed with the Net::SSH library will involve using one or more channels.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Channels are intended to be used asynchronously. You request that one be opened (via Connection::Session#open_channel), and when it is opened, your callback is invoked. Then, you set various other callbacks on the newly opened channel, which are called in response to the corresponding events. Programming with Net::SSH works best if you think of your programs as state machines. Complex programs are best implemented as objects that wrap a channel. See Net::SCP and Net::SFTP for examples of how complex state machines can be built on top of the SSH protocol.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  ssh.open_channel do |channel|\n    channel.exec(&quot;/invoke/some/command&quot;) do |ch, success|\n      abort &quot;could not execute command&quot; unless success\n\n      channel.on_data do |ch, data|\n        puts &quot;got stdout: #{data}&quot;\n        channel.send_data &quot;something for stdin\\n&quot;\n      end\n\n      channel.on_extended_data do |ch, type, data|\n        puts &quot;got stderr: #{data}&quot;\n      end\n\n      channel.on_close do |ch|\n        puts &quot;channel is closing!&quot;\n      end\n    end\n  end\n\n  ssh.loop\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Channels also have a basic hash-like interface, that allows programs to store arbitrary state information on a channel object. This helps simplify the writing of state machines, especially when you may be juggling multiple open channels at the same time.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Note that data sent across SSH channels are governed by maximum packet sizes and maximum window sizes. These details are managed internally by Net::SSH::Connection::Channel, so you may remain blissfully ignorant if you so desire, but you can always inspect the current maximums, as well as the remaining window size, using the reader attributes for those values.
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: "A hash of the valid PTY options (see #request_pty)."
+  name: VALID_PTY_OPTIONS
+  value: "{ :term        => \"xterm\",                           :chars_wide  => 80,                           :chars_high  => 24,                           :pixels_wide => 640,                           :pixels_high => 480,                           :modes       => {} }"
+full_name: Net::SSH::Connection::Channel
+includes: 
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: Constants
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: Loggable
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: "[]"
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: "[]="
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: active?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: close
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: closing?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: do_close
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: do_eof
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: do_extended_data
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: do_failure
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: do_open_failed
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: do_success
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: env
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: eof!
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: eof?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: exec
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: on_close
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: on_data
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: on_eof
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: on_extended_data
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: on_open_failed
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: on_process
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: on_request
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: process
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: request_pty
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: send_channel_request
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: send_data
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: subsystem
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: wait
+name: Channel
+superclass: Object

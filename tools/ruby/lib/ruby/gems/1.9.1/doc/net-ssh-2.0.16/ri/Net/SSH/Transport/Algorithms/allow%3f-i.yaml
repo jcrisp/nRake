@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns true if no exchange is pending, and otherwise returns true or false depending on whether the given packet is of a type that is allowed during a key exchange.
+full_name: Net::SSH::Transport::Algorithms#allow?
+is_singleton: false
+name: allow?
+params: (packet)
+visibility: public

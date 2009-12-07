@@ -1,0 +1,19 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>agent (Net::SSH::Authentication::KeyManager)</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="../../../../.././rdoc-style.css" type="text/css" media="screen" />
+</head>
+<body class="standalone-code">
+  <pre>     <span class="ruby-comment cmt"># File lib/net/ssh/authentication/key_manager.rb, line 182</span>
+182:         <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">agent</span>
+183:           <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">unless</span> <span class="ruby-identifier">use_agent?</span>
+184:           <span class="ruby-ivar">@agent</span> <span class="ruby-operator">||=</span> <span class="ruby-constant">Agent</span>.<span class="ruby-identifier">connect</span>(<span class="ruby-identifier">logger</span>)
+185:         <span class="ruby-keyword kw">rescue</span> <span class="ruby-constant">AgentNotAvailable</span>
+186:           <span class="ruby-ivar">@use_agent</span> = <span class="ruby-keyword kw">false</span>
+187:           <span class="ruby-keyword kw">nil</span>
+188:         <span class="ruby-keyword kw">end</span></pre>
+</body>
+</html>

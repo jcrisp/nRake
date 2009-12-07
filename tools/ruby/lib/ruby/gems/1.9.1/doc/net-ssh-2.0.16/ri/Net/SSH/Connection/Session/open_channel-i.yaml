@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Requests that a new channel be opened. By default, the channel will be of type &quot;session&quot;, but if you know what you're doing you can select any of the channel types supported by the SSH protocol. The <tt>extra</tt> parameters must be even in number and conform to the same format as described for Net::SSH::Buffer.from. If a callback is given, it will be invoked when the server confirms that the channel opened successfully. The sole parameter for the callback is the channel object itself.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "In general, you'll use #open_channel without any arguments; the only time you'd want to set the channel type or pass additional initialization data is if you were implementing an SSH extension."
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  channel = ssh.open_channel do |ch|\n    ch.exec &quot;grep something /some/files&quot; do |ch, success|\n      ...\n    end\n  end\n\n  channel.wait\n"
+full_name: Net::SSH::Connection::Session#open_channel
+is_singleton: false
+name: open_channel
+params: (type="session", *extra, &on_confirm)
+visibility: public

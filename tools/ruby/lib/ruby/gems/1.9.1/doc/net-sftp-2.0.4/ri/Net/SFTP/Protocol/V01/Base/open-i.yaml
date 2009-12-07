@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Sends a FXP_OPEN packet to the server and returns the packet identifier. The <tt>flags</tt> parameter is either an integer (in which case it must be a combination of the IO constants) or a string (in which case it must be one of the mode strings that IO::open accepts). The <tt>options</tt> parameter is a hash that is used to construct a new Attribute object, to pass as part of the FXP_OPEN request.
+full_name: Net::SFTP::Protocol::V01::Base#open
+is_singleton: false
+name: open
+params: (path, flags, options)
+visibility: public

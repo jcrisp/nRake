@@ -1,0 +1,19 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: Maps the supported key-exchange algorithms as named by the SSH protocol to their corresponding implementors.
+  name: MAP
+  value: "{       'diffie-hellman-group-exchange-sha1' => DiffieHellmanGroupExchangeSHA1,       'diffie-hellman-group1-sha1'         => DiffieHellmanGroup1SHA1     }"
+full_name: Net::SSH::Transport::Kex
+includes: []
+
+instance_methods: []
+
+name: Kex

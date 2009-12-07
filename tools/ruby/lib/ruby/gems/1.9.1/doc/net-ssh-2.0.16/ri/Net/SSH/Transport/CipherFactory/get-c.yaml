@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Retrieves a new instance of the named algorithm. The new instance will be initialized using an iv and key generated from the given iv, key, shared, hash and digester values. Additionally, the cipher will be put into encryption or decryption mode, based on the value of the <tt>encrypt</tt> parameter.
+full_name: Net::SSH::Transport::CipherFactory::get
+is_singleton: true
+name: get
+params: (name, options={})
+visibility: public

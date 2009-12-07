@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>process (Net::SSH::Test::LocalPacket)</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="../../../../.././rdoc-style.css" type="text/css" media="screen" />
+</head>
+<body class="standalone-code">
+  <pre>    <span class="ruby-comment cmt"># File lib/net/ssh/test/local_packet.rb, line 31</span>
+31:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">process</span>(<span class="ruby-identifier">packet</span>)
+32:       <span class="ruby-ivar">@init</span>.<span class="ruby-identifier">call</span>(<span class="ruby-constant">Net</span><span class="ruby-operator">::</span><span class="ruby-constant">SSH</span><span class="ruby-operator">::</span><span class="ruby-constant">Packet</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">packet</span>.<span class="ruby-identifier">to_s</span>)) <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@init</span>
+33:       <span class="ruby-identifier">type</span> = <span class="ruby-identifier">packet</span>.<span class="ruby-identifier">read_byte</span>
+34:       <span class="ruby-identifier">raise</span> <span class="ruby-node">&quot;expected #{@type}, but got #{type}&quot;</span> <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@type</span> <span class="ruby-operator">!=</span> <span class="ruby-identifier">type</span>
+35: 
+36:       <span class="ruby-ivar">@data</span>.<span class="ruby-identifier">zip</span>(<span class="ruby-identifier">types</span>).<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">expected</span>, <span class="ruby-identifier">type</span><span class="ruby-operator">|</span>
+37:         <span class="ruby-identifier">type</span> <span class="ruby-operator">||=</span> <span class="ruby-keyword kw">case</span> <span class="ruby-identifier">expected</span>
+38:           <span class="ruby-keyword kw">when</span> <span class="ruby-keyword kw">nil</span> <span class="ruby-keyword kw">then</span> <span class="ruby-keyword kw">break</span>
+39:           <span class="ruby-keyword kw">when</span> <span class="ruby-constant">Numeric</span> <span class="ruby-keyword kw">then</span> <span class="ruby-identifier">:long</span>
+40:           <span class="ruby-keyword kw">when</span> <span class="ruby-constant">String</span> <span class="ruby-keyword kw">then</span> <span class="ruby-identifier">:string</span>
+41:           <span class="ruby-keyword kw">when</span> <span class="ruby-constant">TrueClass</span>, <span class="ruby-constant">FalseClass</span> <span class="ruby-keyword kw">then</span> <span class="ruby-identifier">:bool</span>
+42:           <span class="ruby-keyword kw">end</span>
+43: 
+44:         <span class="ruby-identifier">actual</span> = <span class="ruby-identifier">packet</span>.<span class="ruby-identifier">send</span>(<span class="ruby-node">&quot;read_#{type}&quot;</span>)
+45:         <span class="ruby-keyword kw">next</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">expected</span>.<span class="ruby-identifier">nil?</span>
+46:         <span class="ruby-identifier">raise</span> <span class="ruby-node">&quot;expected #{type} #{expected.inspect} but got #{actual.inspect}&quot;</span> <span class="ruby-keyword kw">unless</span> <span class="ruby-identifier">expected</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">actual</span>
+47:       <span class="ruby-keyword kw">end</span>
+48:     <span class="ruby-keyword kw">end</span></pre>
+</body>
+</html>

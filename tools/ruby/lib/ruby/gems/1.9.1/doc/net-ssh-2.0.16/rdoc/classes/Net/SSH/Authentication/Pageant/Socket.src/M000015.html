@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>send_query (Net::SSH::Authentication::Pageant::Socket)</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="../../../../../.././rdoc-style.css" type="text/css" media="screen" />
+</head>
+<body class="standalone-code">
+  <pre>     <span class="ruby-comment cmt"># File lib/net/ssh/authentication/pageant.rb, line 111</span>
+111:       <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">send_query</span>(<span class="ruby-identifier">query</span>)
+112:         <span class="ruby-identifier">res</span> = <span class="ruby-keyword kw">nil</span>
+113:         <span class="ruby-identifier">filemap</span> = <span class="ruby-value">0</span>
+114:         <span class="ruby-identifier">ptr</span> = <span class="ruby-keyword kw">nil</span>
+115:         <span class="ruby-identifier">id</span> = <span class="ruby-constant">DL</span><span class="ruby-operator">::</span><span class="ruby-constant">PtrData</span>.<span class="ruby-identifier">malloc</span>(<span class="ruby-constant">DL</span>.<span class="ruby-identifier">sizeof</span>(<span class="ruby-value str">&quot;L&quot;</span>))
+116: 
+117:         <span class="ruby-identifier">mapname</span> = <span class="ruby-value str">&quot;PageantRequest%08x\000&quot;</span> <span class="ruby-operator">%</span> <span class="ruby-constant">Win</span>.<span class="ruby-identifier">getCurrentThreadId</span>()
+118:         <span class="ruby-identifier">filemap</span> = <span class="ruby-constant">Win</span>.<span class="ruby-identifier">createFileMapping</span>(<span class="ruby-constant">Win</span><span class="ruby-operator">::</span><span class="ruby-constant">INVALID_HANDLE_VALUE</span>, 
+119:                                         <span class="ruby-constant">Win</span><span class="ruby-operator">::</span><span class="ruby-constant">NULL</span>,
+120:                                         <span class="ruby-constant">Win</span><span class="ruby-operator">::</span><span class="ruby-constant">PAGE_READWRITE</span>, <span class="ruby-value">0</span>, 
+121:                                         <span class="ruby-constant">AGENT_MAX_MSGLEN</span>, <span class="ruby-identifier">mapname</span>)
+122:         <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">filemap</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+123:           <span class="ruby-identifier">raise</span> <span class="ruby-constant">Net</span><span class="ruby-operator">::</span><span class="ruby-constant">SSH</span><span class="ruby-operator">::</span><span class="ruby-constant">Exception</span>,
+124:             <span class="ruby-value str">&quot;Creation of file mapping failed&quot;</span>
+125:         <span class="ruby-keyword kw">end</span>
+126: 
+127:         <span class="ruby-identifier">ptr</span> = <span class="ruby-constant">Win</span>.<span class="ruby-identifier">mapViewOfFile</span>(<span class="ruby-identifier">filemap</span>, <span class="ruby-constant">Win</span><span class="ruby-operator">::</span><span class="ruby-constant">FILE_MAP_WRITE</span>, <span class="ruby-value">0</span>, <span class="ruby-value">0</span>, 
+128:                                 <span class="ruby-constant">AGENT_MAX_MSGLEN</span>)
+129: 
+130:         <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">ptr</span>.<span class="ruby-identifier">nil?</span> <span class="ruby-operator">||</span> <span class="ruby-identifier">ptr</span>.<span class="ruby-identifier">null?</span>
+131:           <span class="ruby-identifier">raise</span> <span class="ruby-constant">Net</span><span class="ruby-operator">::</span><span class="ruby-constant">SSH</span><span class="ruby-operator">::</span><span class="ruby-constant">Exception</span>, <span class="ruby-value str">&quot;Mapping of file failed&quot;</span>
+132:         <span class="ruby-keyword kw">end</span>
+133: 
+134:         <span class="ruby-identifier">ptr</span>[<span class="ruby-value">0</span>] = <span class="ruby-identifier">query</span>
+135:         
+136:         <span class="ruby-identifier">cds</span> = [<span class="ruby-constant">AGENT_COPYDATA_ID</span>, <span class="ruby-identifier">mapname</span>.<span class="ruby-identifier">size</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span>, <span class="ruby-identifier">mapname</span>].
+137:           <span class="ruby-identifier">pack</span>(<span class="ruby-value str">&quot;LLp&quot;</span>).<span class="ruby-identifier">to_ptr</span>
+138:         <span class="ruby-identifier">succ</span> = <span class="ruby-constant">Win</span>.<span class="ruby-identifier">sendMessageTimeout</span>(<span class="ruby-ivar">@win</span>, <span class="ruby-constant">Win</span><span class="ruby-operator">::</span><span class="ruby-constant">WM_COPYDATA</span>, <span class="ruby-constant">Win</span><span class="ruby-operator">::</span><span class="ruby-constant">NULL</span>,
+139:           <span class="ruby-identifier">cds</span>, <span class="ruby-constant">Win</span><span class="ruby-operator">::</span><span class="ruby-constant">SMTO_NORMAL</span>, <span class="ruby-value">5000</span>, <span class="ruby-identifier">id</span>)
+140: 
+141:         <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">succ</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">0</span>
+142:           <span class="ruby-identifier">retlen</span> = <span class="ruby-value">4</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">ptr</span>.<span class="ruby-identifier">to_s</span>(<span class="ruby-value">4</span>).<span class="ruby-identifier">unpack</span>(<span class="ruby-value str">&quot;N&quot;</span>)[<span class="ruby-value">0</span>]
+143:           <span class="ruby-identifier">res</span> = <span class="ruby-identifier">ptr</span>.<span class="ruby-identifier">to_s</span>(<span class="ruby-identifier">retlen</span>)
+144:         <span class="ruby-keyword kw">end</span>        
+145: 
+146:         <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">res</span>
+147:       <span class="ruby-keyword kw">ensure</span>
+148:         <span class="ruby-constant">Win</span>.<span class="ruby-identifier">unmapViewOfFile</span>(<span class="ruby-identifier">ptr</span>) <span class="ruby-keyword kw">unless</span> <span class="ruby-identifier">ptr</span>.<span class="ruby-identifier">nil?</span> <span class="ruby-operator">||</span> <span class="ruby-identifier">ptr</span>.<span class="ruby-identifier">null?</span>
+149:         <span class="ruby-constant">Win</span>.<span class="ruby-identifier">closeHandle</span>(<span class="ruby-identifier">filemap</span>) <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">filemap</span> <span class="ruby-operator">!=</span> <span class="ruby-value">0</span>
+150:       <span class="ruby-keyword kw">end</span></pre>
+</body>
+</html>

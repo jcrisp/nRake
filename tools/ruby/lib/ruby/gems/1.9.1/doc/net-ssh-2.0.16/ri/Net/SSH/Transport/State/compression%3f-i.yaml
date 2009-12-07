@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns true if data compression/decompression is enabled. This will return true if :standard compression is selected, or if :delayed compression is selected and the :authenticated hint has been received by the socket.
+full_name: Net::SSH::Transport::State#compression?
+is_singleton: false
+name: compression?
+params: ()
+visibility: public

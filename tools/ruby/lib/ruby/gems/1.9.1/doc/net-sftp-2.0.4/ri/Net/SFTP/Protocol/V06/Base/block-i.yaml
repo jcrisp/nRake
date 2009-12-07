@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Sends a FXP_BLOCK packet to the server to request that a byte-range lock be obtained on the given <tt>handle</tt>, for the given byte <tt>offset</tt> and <tt>length</tt>. The <tt>mask</tt> parameter is a bitfield indicating what kind of lock to acquire, and must be a combination of one or more of the Net::SFTP::Constants::LockTypes constants.
+full_name: Net::SFTP::Protocol::V06::Base#block
+is_singleton: false
+name: block
+params: (handle, offset, length, mask)
+visibility: public

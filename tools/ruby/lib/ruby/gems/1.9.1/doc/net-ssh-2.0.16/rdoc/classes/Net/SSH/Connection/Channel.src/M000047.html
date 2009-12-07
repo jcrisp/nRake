@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>new (Net::SSH::Connection::Channel)</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="../../../../.././rdoc-style.css" type="text/css" media="screen" />
+</head>
+<body class="standalone-code">
+  <pre>     <span class="ruby-comment cmt"># File lib/net/ssh/connection/channel.rb, line 110</span>
+110:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">connection</span>, <span class="ruby-identifier">type</span>, <span class="ruby-identifier">local_id</span>, <span class="ruby-operator">&amp;</span><span class="ruby-identifier">on_confirm_open</span>)
+111:       <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">logger</span> = <span class="ruby-identifier">connection</span>.<span class="ruby-identifier">logger</span>
+112: 
+113:       <span class="ruby-ivar">@connection</span> = <span class="ruby-identifier">connection</span>
+114:       <span class="ruby-ivar">@type</span>       = <span class="ruby-identifier">type</span>
+115:       <span class="ruby-ivar">@local_id</span>   = <span class="ruby-identifier">local_id</span>
+116: 
+117:       <span class="ruby-ivar">@local_maximum_packet_size</span> = <span class="ruby-value">0x10000</span>
+118:       <span class="ruby-ivar">@local_window_size</span> = <span class="ruby-ivar">@local_maximum_window_size</span> = <span class="ruby-value">0x20000</span>
+119: 
+120:       <span class="ruby-ivar">@on_confirm_open</span> = <span class="ruby-identifier">on_confirm_open</span>
+121: 
+122:       <span class="ruby-ivar">@output</span> = <span class="ruby-constant">Buffer</span>.<span class="ruby-identifier">new</span>
+123: 
+124:       <span class="ruby-ivar">@properties</span> = {}
+125: 
+126:       <span class="ruby-ivar">@pending_requests</span> = []
+127:       <span class="ruby-ivar">@on_open_failed</span> = <span class="ruby-ivar">@on_data</span> = <span class="ruby-ivar">@on_extended_data</span> = <span class="ruby-ivar">@on_process</span> = <span class="ruby-ivar">@on_close</span> = <span class="ruby-ivar">@on_eof</span> = <span class="ruby-keyword kw">nil</span>
+128:       <span class="ruby-ivar">@on_request</span> = {}
+129:       <span class="ruby-ivar">@closing</span> = <span class="ruby-ivar">@eof</span> = <span class="ruby-keyword kw">false</span>
+130:     <span class="ruby-keyword kw">end</span></pre>
+</body>
+</html>

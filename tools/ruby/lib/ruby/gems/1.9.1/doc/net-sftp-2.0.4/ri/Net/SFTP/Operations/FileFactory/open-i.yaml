@@ -1,0 +1,19 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: file
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Attempt to open a file on the remote server. The <tt>flags</tt> parameter accepts the same values as the standard Ruby ::File#open method. The <tt>mode</tt> parameter must be an integer describing the permissions to use if a new file is being created.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: If a block is given, the new Operations::File instance will be yielded to it, and closed automatically when the block terminates. Otherwise the object will be returned, and it is the caller's responsibility to close the file.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  sftp.file.open(&quot;/tmp/names.txt&quot;, &quot;w&quot;) do |f|\n    # ...\n  end\n"
+full_name: Net::SFTP::Operations::FileFactory#open
+is_singleton: false
+name: open
+params: |
+  open(name, flags="r", mode=nil) -> file
+  open(name, flags="r", mode=nil) { |file| ... }
+
+visibility: public

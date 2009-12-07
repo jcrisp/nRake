@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Reads the next string from the buffer, and returns a new Buffer object that wraps it.
+full_name: Net::SSH::Buffer#read_buffer
+is_singleton: false
+name: read_buffer
+params: ()
+visibility: public

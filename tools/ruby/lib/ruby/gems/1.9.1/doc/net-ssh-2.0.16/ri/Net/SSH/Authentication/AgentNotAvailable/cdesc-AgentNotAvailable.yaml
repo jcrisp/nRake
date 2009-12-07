@@ -1,0 +1,17 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: An exception for indicating that the SSH agent is not available.
+constants: []
+
+full_name: Net::SSH::Authentication::AgentNotAvailable
+includes: []
+
+instance_methods: []
+
+name: AgentNotAvailable
+superclass: Net::SSH::Authentication::AgentError

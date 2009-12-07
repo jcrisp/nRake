@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Writes each argument to the buffer as a byte. Does not alter the read position. Returns the buffer object.
+full_name: Net::SSH::Buffer#write_byte
+is_singleton: false
+name: write_byte
+params: (*n)
+visibility: public

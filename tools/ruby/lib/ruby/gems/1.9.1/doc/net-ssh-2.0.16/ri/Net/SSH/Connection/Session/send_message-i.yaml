@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Enqueues a message to be sent to the server as soon as the socket is available for writing. Most programs will never need to call this, but if you are implementing an extension to the SSH protocol, or if you need to send a packet that Net::SSH does not directly support, you can use this to send it.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: " ssh.send_message(Buffer.from(:byte, REQUEST_SUCCESS).to_s)\n"
+full_name: Net::SSH::Connection::Session#send_message
+is_singleton: false
+name: send_message
+params: (message)
+visibility: public

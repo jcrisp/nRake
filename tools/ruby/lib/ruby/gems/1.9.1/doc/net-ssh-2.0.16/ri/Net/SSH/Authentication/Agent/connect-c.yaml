@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Instantiates a new agent object, connects to a running SSH agent, negotiates the agent protocol version, and returns the agent object.
+full_name: Net::SSH::Authentication::Agent::connect
+is_singleton: true
+name: connect
+params: (logger=nil)
+visibility: public

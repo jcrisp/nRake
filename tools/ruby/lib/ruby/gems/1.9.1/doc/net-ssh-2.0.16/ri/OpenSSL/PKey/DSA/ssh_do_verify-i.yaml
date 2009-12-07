@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Verifies the given signature matches the given data.
+full_name: OpenSSL::PKey::DSA#ssh_do_verify
+is_singleton: false
+name: ssh_do_verify
+params: (sig, data)
+visibility: public

@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "This is called internally as part of #process. It loops over the given arrays of reader IO's and writer IO's, processing them as needed, and then calls Net::SSH::Transport::Session#rekey_as_needed to allow the transport layer to rekey. Then returns true."
+full_name: Net::SSH::Connection::Session#postprocess
+is_singleton: false
+name: postprocess
+params: (readers, writers)
+visibility: public

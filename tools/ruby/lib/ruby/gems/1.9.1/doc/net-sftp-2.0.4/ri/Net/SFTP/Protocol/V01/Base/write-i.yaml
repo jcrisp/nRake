@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Sends a FXP_WRITE packet to the server, requesting that <tt>data</tt> (a string), be written to the file identified by <tt>handle</tt>, starting at <tt>offset</tt> bytes from the beginning of the file. The handle must be one that was returned via a FXP_HANDLE packet. Returns the new packet id.
+full_name: Net::SFTP::Protocol::V01::Base#write
+is_singleton: false
+name: write
+params: (handle, offset, data)
+visibility: public

@@ -1,0 +1,38 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: 
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  name: host
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  name: port
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The Net::SSH::Test::Script object in use by this socket. This is the canonical script instance that should be used for any test depending on this socket instance.
+  name: script
+  rw: R
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: A mock socket implementation for use in testing. It implements the minimum necessary interface for interacting with the rest of the Net::SSH::Test system.
+constants: []
+
+full_name: Net::SSH::Test::Socket
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: getpeername
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: open
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: recv
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: write
+name: Socket
+superclass: StringIO

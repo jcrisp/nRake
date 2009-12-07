@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Returns true if the channel is currently closing, but not actually closed. A channel is closing when, for instance, #close has been invoked, but the server has not yet responded with a CHANNEL_CLOSE packet of its own."
+full_name: Net::SSH::Connection::Channel#closing?
+is_singleton: false
+name: closing?
+params: ()
+visibility: public

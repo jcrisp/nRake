@@ -1,0 +1,54 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: 
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The client state object, which encapsulates the algorithms used to build packets to send to the server.
+  name: client
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The map of &quot;hints&quot; that can be used to modify the behavior of the packet stream. For instance, when authentication succeeds, an &quot;authenticated&quot; hint is set, which is used to determine whether or not to compress the data when using the &quot;delayed&quot; compression algorithm.
+  name: hints
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The server state object, which encapsulates the algorithms used to interpret packets coming from the server.
+  name: server
+  rw: R
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: extended
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: A module that builds additional functionality onto the Net::SSH::BufferedIo module. It adds SSH encryption, compression, and packet validation, as per the SSH2 protocol. It also adds an abstraction for polling packets, to allow for both blocking and non-blocking reads.
+constants: []
+
+full_name: Net::SSH::Transport::PacketStream
+includes: 
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: BufferedIo
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: available_for_read?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: cleanup
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: client_name
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: enqueue_packet
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: if_needs_rekey?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: initialize_ssh
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: next_packet
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: peer_ip
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: poll_next_packet
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: send_packet
+name: PacketStream

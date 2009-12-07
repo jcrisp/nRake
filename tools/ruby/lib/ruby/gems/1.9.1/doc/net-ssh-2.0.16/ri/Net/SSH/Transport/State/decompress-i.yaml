@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Deompresses the data. If no compression is in effect, this will just return the data unmodified, otherwise it uses #decompressor to decompress the data."
+full_name: Net::SSH::Transport::State#decompress
+is_singleton: false
+name: decompress
+params: (data)
+visibility: public

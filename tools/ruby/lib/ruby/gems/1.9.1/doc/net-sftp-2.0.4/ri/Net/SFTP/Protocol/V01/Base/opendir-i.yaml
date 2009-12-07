@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Sends a FXP_OPENDIR packet to the server, to request a handle for manipulating the directory at the given remote <tt>path</tt>.
+full_name: Net::SFTP::Protocol::V01::Base#opendir
+is_singleton: false
+name: opendir
+params: (path)
+visibility: public

@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the name of the host that was given to the transport layer to connect to.
+full_name: Net::SSH::Connection::Session#host
+is_singleton: false
+name: host
+params: ()
+visibility: public

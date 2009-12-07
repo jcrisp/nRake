@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Does nothing. Returns self.
+full_name: Net::SSH::Transport::IdentityCipher::reset
+is_singleton: true
+name: reset
+params: ()
+visibility: public

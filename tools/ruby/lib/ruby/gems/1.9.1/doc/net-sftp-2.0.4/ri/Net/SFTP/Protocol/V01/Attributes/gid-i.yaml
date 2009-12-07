@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the group-id of the group that owns the file, or <tt>nil</tt> if that information is not available. If a :group key exists, but not a :gid key, the Etc module will be used to reverse lookup the id from the name. This might fail on some systems (e.g., Windows).
+full_name: Net::SFTP::Protocol::V01::Attributes#gid
+is_singleton: false
+name: gid
+params: ()
+visibility: public

@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: Net::SSH::Compat::io_select
+is_singleton: true
+name: io_select
+params: (*params)
+visibility: public

@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Requests that a remote forwarded port be cancelled. The remote forwarded port on the remote host, bound to the given address on the remote host, will be terminated, but not immediately. This method returns immediately after queueing the request to be sent to the server. If for some reason the port cannot be cancelled, an exception will be raised (asynchronously).
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "If you want to know when the connection has been cancelled, it will no longer be present in the #active_remotes list. If you want to block until the port is no longer active, you could do something like this:"
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  ssh.forward.cancel_remote(1234, &quot;0.0.0.0&quot;)\n  ssh.loop { ssh.forward.active_remotes.include?([1234, &quot;0.0.0.0&quot;]) }\n"
+full_name: Net::SSH::Service::Forward#cancel_remote
+is_singleton: false
+name: cancel_remote
+params: (port, host="127.0.0.1")
+visibility: public

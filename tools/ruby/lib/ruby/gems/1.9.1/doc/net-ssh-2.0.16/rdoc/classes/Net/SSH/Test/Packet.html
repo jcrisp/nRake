@@ -1,0 +1,312 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Class: Net::SSH::Test::Packet [Net::SSH: a pure-Ruby implementation of the SSH2 client protocol.]</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <link rel="stylesheet" href="../../../.././rdoc-style.css" type="text/css" media="screen" />
+  <script type="text/javascript">
+  // <![CDATA[
+
+  function popupCode( url ) {
+    window.open(url, "Code", "resizable=yes,scrollbars=yes,toolbar=no,status=no,height=150,width=400")
+  }
+
+  function toggleCode( id ) {
+    if ( document.getElementById )
+      elem = document.getElementById( id );
+    else if ( document.all )
+      elem = eval( "document.all." + id );
+    else
+      return false;
+
+    elemStyle = elem.style;
+
+    if ( elemStyle.display != "block" ) {
+      elemStyle.display = "block"
+    } else {
+      elemStyle.display = "none"
+    }
+
+    return true;
+  }
+
+  // Make codeblocks hidden by default
+  document.writeln( "<style type=\"text/css\">div.method-source-code { display: none }<\/style>" )
+
+  // ]]>
+  </script>
+
+</head>
+<body>
+
+
+    <div id="classHeader">
+        <table class="header-table">
+        <tr class="top-aligned-row">
+          <td><strong>Class</strong></td>
+          <td class="class-name-in-header">Net::SSH::Test::Packet</td>
+        </tr>
+        <tr class="top-aligned-row">
+            <td><strong>In:</strong></td>
+            <td>
+
+
+                <a href="../../../../files/lib/net/ssh/test/packet_rb.html">
+
+                lib/net/ssh/test/packet.rb
+
+                </a>
+
+
+        <br />
+
+            </td>
+        </tr>
+
+
+        <tr class="top-aligned-row">
+            <td><strong>Parent:</strong></td>
+            <td>
+
+                Object
+
+            </td>
+        </tr>
+
+        </table>
+    </div>
+  <!-- banner header -->
+
+  <div id="bodyContent">
+
+  <div id="contextContent">
+
+    <div id="description">
+      <p>
+This is an abstract class, not to be instantiated directly, subclassed by
+<a href="LocalPacket.html">Net::SSH::Test::LocalPacket</a> and <a
+href="RemotePacket.html">Net::SSH::Test::RemotePacket</a>. It implements
+functionality common to those subclasses.
+</p>
+<p>
+These packets are not true packets, in that they don&#8217;t represent what
+was actually sent between the hosst; rather, they represent what was
+expected to be sent, as dictated by the script (<a
+href="Script.html">Net::SSH::Test::Script</a>). Thus, though they are
+defined with data elements, these data elements are used to either validate
+data that was sent by the local host (<a
+href="LocalPacket.html">Net::SSH::Test::LocalPacket</a>) or to mimic the
+sending of data by the remote host (<a
+href="RemotePacket.html">Net::SSH::Test::RemotePacket</a>).
+</p>
+
+    </div>
+
+   </div>
+
+
+    <div id="method-list">
+      <h3 class="section-bar">Methods</h3>
+
+      <div class="name-list">
+
+        <a href="#M000159">instantiate!</a>&nbsp;&nbsp;
+
+        <a href="#M000158">local?</a>&nbsp;&nbsp;
+
+        <a href="#M000156">new</a>&nbsp;&nbsp;
+
+        <a href="#M000157">remote?</a>&nbsp;&nbsp;
+
+        <a href="#M000160">types</a>&nbsp;&nbsp;
+
+      </div>
+    </div>
+
+  </div>
+
+    <!-- if includes -->
+
+    <div id="includes">
+      <h3 class="section-bar">Included Modules</h3>
+
+      <div id="includes-list">
+
+        <span class="include-name"><a href="../Transport/Constants.html">Net::SSH::Transport::Constants</a></span>
+
+        <span class="include-name"><a href="../Connection/Constants.html">Net::SSH::Connection::Constants</a></span>
+
+      </div>
+    </div>
+
+    <div id="section">
+
+
+
+
+    <!-- if method_list -->
+
+    <div id="methods">
+
+      <h3 class="section-bar">Public Class methods</h3>
+
+
+      <div id="method-M000156" class="method-detail">
+        <a name="M000156"></a>
+
+        <div class="method-heading">
+
+          <a href="Packet.src/M000156.html" target="Code" class="method-signature"
+            onclick="popupCode('Packet.src/M000156.html');return false;">
+
+          <span class="method-name">new</span><span class="method-args">(type, *args)</span>
+
+          </a>
+
+        </div>
+
+        <div class="method-description">
+
+          <p>
+Ceate a new packet of the given <tt>type</tt>, and with <tt>args</tt> being
+a list of data elements in the order expected for packets of the given
+<tt>type</tt> (see <a href="Packet.html#M000160">types</a>).
+</p>
+
+        </div>
+      </div>
+
+
+      <h3 class="section-bar">Public Instance methods</h3>
+
+
+      <div id="method-M000159" class="method-detail">
+        <a name="M000159"></a>
+
+        <div class="method-heading">
+
+          <a href="Packet.src/M000159.html" target="Code" class="method-signature"
+            onclick="popupCode('Packet.src/M000159.html');return false;">
+
+          <span class="method-name">instantiate!</span><span class="method-args">()</span>
+
+          </a>
+
+        </div>
+
+        <div class="method-description">
+
+          <p>
+Instantiates the packets data elements. When the packet was first defined,
+some elements may not have been fully realized, and were described as Proc
+objects rather than atomic types. This invokes those Proc objects and
+replaces them with their returned values. This allows for values like <a
+href="Channel.html#M000140">Net::SSH::Test::Channel#remote_id</a> to be
+used in scripts before the remote_id is known (since it is only known after
+a channel has been confirmed open).
+</p>
+
+        </div>
+      </div>
+
+
+      <div id="method-M000158" class="method-detail">
+        <a name="M000158"></a>
+
+        <div class="method-heading">
+
+          <a href="Packet.src/M000158.html" target="Code" class="method-signature"
+            onclick="popupCode('Packet.src/M000158.html');return false;">
+
+          <span class="method-name">local?</span><span class="method-args">()</span>
+
+          </a>
+
+        </div>
+
+        <div class="method-description">
+
+          <p>
+The default for <tt>local?</tt> is false. Subclasses should override as
+necessary.
+</p>
+
+        </div>
+      </div>
+
+
+      <div id="method-M000157" class="method-detail">
+        <a name="M000157"></a>
+
+        <div class="method-heading">
+
+          <a href="Packet.src/M000157.html" target="Code" class="method-signature"
+            onclick="popupCode('Packet.src/M000157.html');return false;">
+
+          <span class="method-name">remote?</span><span class="method-args">()</span>
+
+          </a>
+
+        </div>
+
+        <div class="method-description">
+
+          <p>
+The default for <tt>remote?</tt> is false. Subclasses should override as
+necessary.
+</p>
+
+        </div>
+      </div>
+
+
+      <div id="method-M000160" class="method-detail">
+        <a name="M000160"></a>
+
+        <div class="method-heading">
+
+          <a href="Packet.src/M000160.html" target="Code" class="method-signature"
+            onclick="popupCode('Packet.src/M000160.html');return false;">
+
+          <span class="method-name">types</span><span class="method-args">()</span>
+
+          </a>
+
+        </div>
+
+        <div class="method-description">
+
+          <p>
+Returns an array of symbols describing the data elements for packets of the
+same type as this packet. These types are used to either validate sent
+packets (<a href="LocalPacket.html">Net::SSH::Test::LocalPacket</a>) or
+build received packets (<a
+href="RemotePacket.html">Net::SSH::Test::RemotePacket</a>).
+</p>
+<p>
+Not all packet types are defined here. As new packet types are required
+(e.g., a unit test needs to test that the remote host sent a packet that is
+not implemented here), the description of that packet should be added.
+Unsupported packet types will otherwise raise an exception.
+</p>
+
+        </div>
+      </div>
+
+
+
+    </div>
+
+
+
+
+  </div>
+
+<div id="validator-badges">
+  <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+</div>
+
+</body>
+</html>

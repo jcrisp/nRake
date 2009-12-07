@@ -1,0 +1,31 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Starts listening for connections on the local host, and forwards them to the specified remote host/port via the SSH connection. This method accepts either three or four arguments. When four arguments are given, they are:"
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: the local address to bind to
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: the local port to listen on
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: the remote host to forward connections to
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: the port on the remote host to connect to
+  type: :BULLET
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: If three arguments are given, it is as if the local bind address is &quot;127.0.0.1&quot;, and the rest are applied as above.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  ssh.forward.local(1234, &quot;www.capify.org&quot;, 80)\n  ssh.forward.local(&quot;0.0.0.0&quot;, 1234, &quot;www.capify.org&quot;, 80)\n"
+full_name: Net::SSH::Service::Forward#local
+is_singleton: false
+name: local
+params: (*args)
+visibility: public

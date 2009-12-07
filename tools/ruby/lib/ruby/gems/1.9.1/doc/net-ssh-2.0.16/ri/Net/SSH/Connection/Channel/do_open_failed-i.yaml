@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Invoked when the server failed to open the channel. If an #on_open_failed callback was specified, it will be invoked with the channel, reason code, and description as arguments. Otherwise, a ChannelOpenFailed exception will be raised."
+full_name: Net::SSH::Connection::Channel#do_open_failed
+is_singleton: false
+name: do_open_failed
+params: (reason_code, description)
+visibility: public

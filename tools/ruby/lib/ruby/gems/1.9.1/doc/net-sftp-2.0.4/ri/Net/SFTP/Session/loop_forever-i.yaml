@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Alias for #loop"
+full_name: Net::SFTP::Session#loop_forever
+is_singleton: false
+name: loop_forever
+params: (&block)
+visibility: public

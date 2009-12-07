@@ -1,0 +1,31 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "This module may be used in unit tests, for when you want to test that your SSH state machines are really doing what you expect they are doing. You will typically include this module in your unit test class, and then build a &quot;story&quot; of expected sends and receives:"
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  require 'test/unit'\n  require 'net/ssh/test'\n\n  class MyTest &lt; Test::Unit::TestCase\n    include Net::SSH::Test\n\n    def test_exec_via_channel_works\n      story do |session|\n        channel = session.opens_channel\n        channel.sends_exec &quot;ls&quot;\n        channel.gets_data &quot;result of ls&quot;\n        channel.gets_close\n        channel.sends_close\n      end\n\n      assert_scripted do\n        result = nil\n\n        connection.open_channel do |ch|\n          ch.exec(&quot;ls&quot;) do |success|\n            ch.on_data { |c, data| result = data }\n            ch.on_close { |c| c.close }\n          end\n        end\n\n        connection.loop\n        assert_equal &quot;result of ls&quot;, result\n      end\n    end\n  end\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: See Net::SSH::Test::Channel and Net::SSH::Test::Script for more options.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Note that the Net::SSH::Test system is rather finicky yet, and can be kind of frustrating to get working. Any suggestions for improvement will be welcome!
+constants: []
+
+full_name: Net::SSH::Test
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: assert_scripted
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: connection
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: socket
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: story
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: transport
+name: Test

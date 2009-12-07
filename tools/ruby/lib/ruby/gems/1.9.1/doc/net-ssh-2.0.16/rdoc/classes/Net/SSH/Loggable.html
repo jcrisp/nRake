@@ -1,0 +1,296 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Module: Net::SSH::Loggable [Net::SSH: a pure-Ruby implementation of the SSH2 client protocol.]</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <link rel="stylesheet" href="../../.././rdoc-style.css" type="text/css" media="screen" />
+  <script type="text/javascript">
+  // <![CDATA[
+
+  function popupCode( url ) {
+    window.open(url, "Code", "resizable=yes,scrollbars=yes,toolbar=no,status=no,height=150,width=400")
+  }
+
+  function toggleCode( id ) {
+    if ( document.getElementById )
+      elem = document.getElementById( id );
+    else if ( document.all )
+      elem = eval( "document.all." + id );
+    else
+      return false;
+
+    elemStyle = elem.style;
+
+    if ( elemStyle.display != "block" ) {
+      elemStyle.display = "block"
+    } else {
+      elemStyle.display = "none"
+    }
+
+    return true;
+  }
+
+  // Make codeblocks hidden by default
+  document.writeln( "<style type=\"text/css\">div.method-source-code { display: none }<\/style>" )
+
+  // ]]>
+  </script>
+
+</head>
+<body>
+
+
+    <div id="classHeader">
+        <table class="header-table">
+        <tr class="top-aligned-row">
+          <td><strong>Module</strong></td>
+          <td class="class-name-in-header">Net::SSH::Loggable</td>
+        </tr>
+        <tr class="top-aligned-row">
+            <td><strong>In:</strong></td>
+            <td>
+
+
+                <a href="../../../files/lib/net/ssh/loggable_rb.html">
+
+                lib/net/ssh/loggable.rb
+
+                </a>
+
+
+        <br />
+
+            </td>
+        </tr>
+
+
+        </table>
+    </div>
+  <!-- banner header -->
+
+  <div id="bodyContent">
+
+  <div id="contextContent">
+
+    <div id="description">
+      <p>
+A simple module to make logging easier to deal with. It assumes that the
+logger instance (if not nil) quacks like a Logger object (in Ruby&#8217;s
+standard library). Although used primarily internally by <a
+href="../SSH.html">Net::SSH</a>, it can easily be used to add Net::SSH-like
+logging to your own programs.
+</p>
+<pre>
+  class MyClass
+    include Net::SSH::Loggable
+  end
+
+  Net::SSH.start(...) do |ssh|
+    obj = MyClass.new
+    obj.logger = ssh.logger
+    ...
+  end
+</pre>
+
+    </div>
+
+   </div>
+
+
+    <div id="method-list">
+      <h3 class="section-bar">Methods</h3>
+
+      <div class="name-list">
+
+        <a href="#M000101">debug</a>&nbsp;&nbsp;
+
+        <a href="#M000104">error</a>&nbsp;&nbsp;
+
+        <a href="#M000105">fatal</a>&nbsp;&nbsp;
+
+        <a href="#M000102">info</a>&nbsp;&nbsp;
+
+        <a href="#M000103">lwarn</a>&nbsp;&nbsp;
+
+      </div>
+    </div>
+
+  </div>
+
+    <!-- if includes -->
+
+    <div id="section">
+
+
+
+    <div id="attribute-list">
+      <h3 class="section-bar">Attributes</h3>
+
+      <div class="name-list">
+        <table>
+
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">logger</td>
+
+          <td class="context-item-value">&nbsp;[RW]&nbsp;</td>
+
+          <td class="context-item-desc">
+The logger instance that will be used to log messages. If nil, nothing will
+be logged.
+
+</td>
+        </tr>
+
+        </table>
+      </div>
+    </div>
+
+
+    <!-- if method_list -->
+
+    <div id="methods">
+
+      <h3 class="section-bar">Public Instance methods</h3>
+
+
+      <div id="method-M000101" class="method-detail">
+        <a name="M000101"></a>
+
+        <div class="method-heading">
+
+          <a href="Loggable.src/M000101.html" target="Code" class="method-signature"
+            onclick="popupCode('Loggable.src/M000101.html');return false;">
+
+          <span class="method-name">debug</span><span class="method-args">() {|| ...}</span>
+
+          </a>
+
+        </div>
+
+        <div class="method-description">
+
+          <p>
+Displays the result of yielding if the log level is Logger::DEBUG or
+greater.
+</p>
+
+        </div>
+      </div>
+
+
+      <div id="method-M000104" class="method-detail">
+        <a name="M000104"></a>
+
+        <div class="method-heading">
+
+          <a href="Loggable.src/M000104.html" target="Code" class="method-signature"
+            onclick="popupCode('Loggable.src/M000104.html');return false;">
+
+          <span class="method-name">error</span><span class="method-args">() {|| ...}</span>
+
+          </a>
+
+        </div>
+
+        <div class="method-description">
+
+          <p>
+Displays the result of yielding if the log level is Logger:ERROR or
+greater.
+</p>
+
+        </div>
+      </div>
+
+
+      <div id="method-M000105" class="method-detail">
+        <a name="M000105"></a>
+
+        <div class="method-heading">
+
+          <a href="Loggable.src/M000105.html" target="Code" class="method-signature"
+            onclick="popupCode('Loggable.src/M000105.html');return false;">
+
+          <span class="method-name">fatal</span><span class="method-args">() {|| ...}</span>
+
+          </a>
+
+        </div>
+
+        <div class="method-description">
+
+          <p>
+Displays the result of yielding if the log level is Logger::FATAL or
+greater.
+</p>
+
+        </div>
+      </div>
+
+
+      <div id="method-M000102" class="method-detail">
+        <a name="M000102"></a>
+
+        <div class="method-heading">
+
+          <a href="Loggable.src/M000102.html" target="Code" class="method-signature"
+            onclick="popupCode('Loggable.src/M000102.html');return false;">
+
+          <span class="method-name">info</span><span class="method-args">() {|| ...}</span>
+
+          </a>
+
+        </div>
+
+        <div class="method-description">
+
+          <p>
+Displays the result of yielding if the log level is Logger::INFO or
+greater.
+</p>
+
+        </div>
+      </div>
+
+
+      <div id="method-M000103" class="method-detail">
+        <a name="M000103"></a>
+
+        <div class="method-heading">
+
+          <a href="Loggable.src/M000103.html" target="Code" class="method-signature"
+            onclick="popupCode('Loggable.src/M000103.html');return false;">
+
+          <span class="method-name">lwarn</span><span class="method-args">() {|| ...}</span>
+
+          </a>
+
+        </div>
+
+        <div class="method-description">
+
+          <p>
+Displays the result of yielding if the log level is Logger::WARN or
+greater. (Called lwarn to avoid shadowing with Kernel#warn.)
+</p>
+
+        </div>
+      </div>
+
+
+
+    </div>
+
+
+
+
+  </div>
+
+<div id="validator-badges">
+  <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+</div>
+
+</body>
+</html>

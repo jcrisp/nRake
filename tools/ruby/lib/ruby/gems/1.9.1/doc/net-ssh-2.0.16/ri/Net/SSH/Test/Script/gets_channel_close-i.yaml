@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Scripts the reception of a channel close packet from the remote host by the given Net::SSH::Test::Channel <tt>channel</tt>. This will typically be called via Net::SSH::Test::Channel#gets_close.
+full_name: Net::SSH::Test::Script#gets_channel_close
+is_singleton: false
+name: gets_channel_close
+params: (channel)
+visibility: public

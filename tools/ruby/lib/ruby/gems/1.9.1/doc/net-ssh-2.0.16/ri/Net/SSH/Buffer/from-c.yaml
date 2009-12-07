@@ -1,0 +1,45 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: This is a convenience method for creating and populating a new buffer from a single command. The arguments must be even in length, with the first of each pair of arguments being a symbol naming the type of the data that follows. If the type is :raw, the value is written directly to the hash.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  b = Buffer.from(:byte, 1, :string, &quot;hello&quot;, :raw, &quot;\\1\\2\\3\\4&quot;)\n  #-&gt; &quot;\\1\\0\\0\\0\\5hello\\1\\2\\3\\4&quot;\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "The supported data types are:"
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: ":raw =&gt; write the next value verbatim (#write)"
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: ":int64 =&gt; write an 8-byte integer (#write_int64)"
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: ":long =&gt; write a 4-byte integer (#write_long)"
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: ":byte =&gt; write a single byte (#write_byte)"
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: ":string =&gt; write a 4-byte length followed by character data (#write_string)"
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: ":bool =&gt; write a single byte, interpreted as a boolean (#write_bool)"
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: ":bignum =&gt; write an SSH-encoded bignum (#write_bignum)"
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: ":key =&gt; write an SSH-encoded key value (#write_key)"
+  type: :BULLET
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Any of these, except for :raw, accepts an Array argument, to make it easier to write multiple values of the same type in a briefer manner.
+full_name: Net::SSH::Buffer::from
+is_singleton: true
+name: from
+params: (*args)
+visibility: public

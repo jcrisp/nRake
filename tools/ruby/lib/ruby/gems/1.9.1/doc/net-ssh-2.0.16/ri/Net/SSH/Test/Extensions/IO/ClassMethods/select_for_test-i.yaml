@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The testing version of ::IO.select. Assumes that all readers, writers, and errors arrays are either nil, or contain only objects that mix in Net::SSH::Test::Extensions::BufferedIo.
+full_name: Net::SSH::Test::Extensions::IO::ClassMethods#select_for_test
+is_singleton: false
+name: select_for_test
+params: (readers=nil, writers=nil, errors=nil, wait=nil)
+visibility: public

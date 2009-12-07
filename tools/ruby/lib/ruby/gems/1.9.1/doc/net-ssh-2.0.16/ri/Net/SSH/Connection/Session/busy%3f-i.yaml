@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns <tt>true</tt> if there are any channels currently active on this session. By default, this will not include &quot;invisible&quot; channels (such as those created by forwarding ports and such), but if you pass a <tt>true</tt> value for <tt>include_invisible</tt>, then those will be counted.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: This can be useful for determining whether the event loop should continue to be run.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  ssh.loop { ssh.busy? }\n"
+full_name: Net::SSH::Connection::Session#busy?
+is_singleton: false
+name: busy?
+params: (include_invisible=false)
+visibility: public

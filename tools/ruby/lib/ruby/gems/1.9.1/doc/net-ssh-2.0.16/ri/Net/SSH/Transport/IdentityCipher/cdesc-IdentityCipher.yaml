@@ -1,0 +1,34 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: block_size
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: decrypt
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: encrypt
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: final
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: iv=
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: iv_len
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: name
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: reset
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: update
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: A cipher that does nothing but pass the data through, unchanged. This keeps things in the code nice and clean when a cipher has not yet been determined (i.e., during key exchange).
+constants: []
+
+full_name: Net::SSH::Transport::IdentityCipher
+includes: []
+
+instance_methods: []
+
+name: IdentityCipher
+superclass: Object

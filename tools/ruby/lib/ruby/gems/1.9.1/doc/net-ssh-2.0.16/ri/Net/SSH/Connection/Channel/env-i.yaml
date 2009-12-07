@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Syntactic sugar for setting an environment variable in the remote process' environment. Note that for security reasons, the server may refuse to set certain environment variables, or all, at the server's discretion. If you are connecting to an OpenSSH server, you will need to update the AcceptEnv setting in the sshd_config to include the environment variables you want to send.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  channel.env &quot;PATH&quot;, &quot;/usr/local/bin&quot;\n"
+full_name: Net::SSH::Connection::Channel#env
+is_singleton: false
+name: env
+params: (variable_name, variable_value, &block)
+visibility: public

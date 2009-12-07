@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the value of property with the given <tt>key</tt>. If <tt>key</tt> is not a symbol, it will be converted to a symbol before lookup.
+full_name: Net::SFTP::Request#[]
+is_singleton: false
+name: "[]"
+params: (key)
+visibility: public

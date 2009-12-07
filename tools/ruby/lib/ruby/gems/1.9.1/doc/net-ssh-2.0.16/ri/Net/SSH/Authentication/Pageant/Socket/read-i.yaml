@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Reads <tt>n</tt> bytes from the cached result of the last query. If <tt>n</tt> is <tt>nil</tt>, returns all remaining data from the last query.
+full_name: Net::SSH::Authentication::Pageant::Socket#read
+is_singleton: false
+name: read
+params: (n = nil)
+visibility: public

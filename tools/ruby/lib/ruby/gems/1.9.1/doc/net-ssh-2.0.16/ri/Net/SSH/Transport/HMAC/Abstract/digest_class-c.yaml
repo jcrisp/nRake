@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: Net::SSH::Transport::HMAC::Abstract::digest_class
+is_singleton: true
+name: digest_class
+params: (*v)
+visibility: public

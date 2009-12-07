@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Sign the given data, using the corresponding private key of the given identity. If the identity was originally obtained from an ssh-agent, then the ssh-agent will be used to sign the data, otherwise the private key for the identity will be loaded from disk (if it hasn't been loaded already) and will then be used to sign the data.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Regardless of the identity's origin or who does the signing, this will always return the signature in an SSH2-specified &quot;signature blob&quot; format.
+full_name: Net::SSH::Authentication::KeyManager#sign
+is_singleton: false
+name: sign
+params: (identity, data)
+visibility: public

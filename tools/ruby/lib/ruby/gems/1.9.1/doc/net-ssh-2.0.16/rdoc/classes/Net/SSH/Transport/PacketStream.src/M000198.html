@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>client_name (Net::SSH::Transport::PacketStream)</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="../../../../.././rdoc-style.css" type="text/css" media="screen" />
+</head>
+<body class="standalone-code">
+  <pre>    <span class="ruby-comment cmt"># File lib/net/ssh/transport/packet_stream.rb, line 39</span>
+39:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">client_name</span>
+40:       <span class="ruby-ivar">@client_name</span> <span class="ruby-operator">||=</span> <span class="ruby-keyword kw">begin</span>
+41:         <span class="ruby-identifier">sockaddr</span> = <span class="ruby-identifier">getsockname</span>
+42:         <span class="ruby-keyword kw">begin</span>
+43:           <span class="ruby-constant">Socket</span>.<span class="ruby-identifier">getnameinfo</span>(<span class="ruby-identifier">sockaddr</span>, <span class="ruby-constant">Socket</span><span class="ruby-operator">::</span><span class="ruby-constant">NI_NAMEREQD</span>).<span class="ruby-identifier">first</span>
+44:         <span class="ruby-keyword kw">rescue</span>
+45:           <span class="ruby-keyword kw">begin</span>
+46:             <span class="ruby-constant">Socket</span>.<span class="ruby-identifier">getnameinfo</span>(<span class="ruby-identifier">sockaddr</span>).<span class="ruby-identifier">first</span>
+47:           <span class="ruby-keyword kw">rescue</span>
+48:             <span class="ruby-keyword kw">begin</span>
+49:               <span class="ruby-constant">Socket</span>.<span class="ruby-identifier">gethostbyname</span>(<span class="ruby-constant">Socket</span>.<span class="ruby-identifier">gethostname</span>).<span class="ruby-identifier">first</span>
+50:             <span class="ruby-keyword kw">rescue</span>
+51:               <span class="ruby-identifier">lwarn</span> { <span class="ruby-value str">&quot;the client ipaddr/name could not be determined&quot;</span> }
+52:               <span class="ruby-value str">&quot;unknown&quot;</span>
+53:             <span class="ruby-keyword kw">end</span>
+54:           <span class="ruby-keyword kw">end</span>
+55:         <span class="ruby-keyword kw">end</span>
+56:       <span class="ruby-keyword kw">end</span>
+57:     <span class="ruby-keyword kw">end</span></pre>
+</body>
+</html>

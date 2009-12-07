@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>load (Net::SSH::Config)</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="../../../.././rdoc-style.css" type="text/css" media="screen" />
+</head>
+<body class="standalone-code">
+  <pre>     <span class="ruby-comment cmt"># File lib/net/ssh/config.rb, line 58</span>
+ 58:       <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">load</span>(<span class="ruby-identifier">file</span>, <span class="ruby-identifier">host</span>, <span class="ruby-identifier">settings</span>={})
+ 59:         <span class="ruby-identifier">file</span> = <span class="ruby-constant">File</span>.<span class="ruby-identifier">expand_path</span>(<span class="ruby-identifier">file</span>)
+ 60:         <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">settings</span> <span class="ruby-keyword kw">unless</span> <span class="ruby-constant">File</span>.<span class="ruby-identifier">readable?</span>(<span class="ruby-identifier">file</span>)
+ 61:         
+ 62:         <span class="ruby-identifier">matched_host</span> = <span class="ruby-keyword kw">nil</span>
+ 63:         <span class="ruby-identifier">multi_host</span> = []
+ 64:         <span class="ruby-constant">IO</span>.<span class="ruby-identifier">foreach</span>(<span class="ruby-identifier">file</span>) <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">line</span><span class="ruby-operator">|</span>
+ 65:           <span class="ruby-keyword kw">next</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">line</span> <span class="ruby-operator">=~</span> <span class="ruby-regexp re">/^\s*(?:#.*)?$/</span>
+ 66:           
+ 67:           <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">line</span> <span class="ruby-operator">=~</span> <span class="ruby-regexp re">/^\s*(\S+)\s*=(.*)$/</span>
+ 68:             <span class="ruby-identifier">key</span>, <span class="ruby-identifier">value</span> = <span class="ruby-identifier">$1</span>, <span class="ruby-identifier">$2</span>
+ 69:           <span class="ruby-keyword kw">else</span>
+ 70:             <span class="ruby-identifier">key</span>, <span class="ruby-identifier">value</span> = <span class="ruby-identifier">line</span>.<span class="ruby-identifier">strip</span>.<span class="ruby-identifier">split</span>(<span class="ruby-regexp re">/\s+/</span>, <span class="ruby-value">2</span>)
+ 71:           <span class="ruby-keyword kw">end</span>
+ 72: 
+ 73:           <span class="ruby-comment cmt"># silently ignore malformed entries</span>
+ 74:           <span class="ruby-keyword kw">next</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">value</span>.<span class="ruby-identifier">nil?</span>
+ 75: 
+ 76:           <span class="ruby-identifier">key</span>.<span class="ruby-identifier">downcase!</span>
+ 77:           <span class="ruby-identifier">value</span> = <span class="ruby-identifier">$1</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">value</span> <span class="ruby-operator">=~</span> <span class="ruby-regexp re">/^&quot;(.*)&quot;$/</span>
+ 78: 
+ 79:           <span class="ruby-identifier">value</span> = <span class="ruby-keyword kw">case</span> <span class="ruby-identifier">value</span>.<span class="ruby-identifier">strip</span>
+ 80:             <span class="ruby-keyword kw">when</span> <span class="ruby-regexp re">/^\d+$/</span> <span class="ruby-keyword kw">then</span> <span class="ruby-identifier">value</span>.<span class="ruby-identifier">to_i</span>
+ 81:             <span class="ruby-keyword kw">when</span> <span class="ruby-regexp re">/^no$/i</span> <span class="ruby-keyword kw">then</span> <span class="ruby-keyword kw">false</span>
+ 82:             <span class="ruby-keyword kw">when</span> <span class="ruby-regexp re">/^yes$/i</span> <span class="ruby-keyword kw">then</span> <span class="ruby-keyword kw">true</span>
+ 83:             <span class="ruby-keyword kw">else</span> <span class="ruby-identifier">value</span>
+ 84:             <span class="ruby-keyword kw">end</span>
+ 85: 
+ 86:           <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">key</span> <span class="ruby-operator">==</span> <span class="ruby-value str">'host'</span>
+ 87:             <span class="ruby-comment cmt"># Support &quot;Host host1 host2 hostN&quot;.</span>
+ 88:             <span class="ruby-comment cmt"># See http://github.com/net-ssh/net-ssh/issues#issue/6</span>
+ 89:             <span class="ruby-identifier">multi_host</span> = <span class="ruby-identifier">value</span>.<span class="ruby-identifier">split</span>(<span class="ruby-regexp re">/\s+/</span>)
+ 90:             <span class="ruby-identifier">matched_host</span> = <span class="ruby-identifier">multi_host</span>.<span class="ruby-identifier">select</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">h</span><span class="ruby-operator">|</span> <span class="ruby-identifier">host</span> <span class="ruby-operator">=~</span> <span class="ruby-identifier">pattern2regex</span>(<span class="ruby-identifier">h</span>) }.<span class="ruby-identifier">first</span>
+ 91:           <span class="ruby-keyword kw">elsif</span> <span class="ruby-operator">!</span><span class="ruby-identifier">matched_host</span>.<span class="ruby-identifier">nil?</span>
+ 92:             <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">key</span> <span class="ruby-operator">==</span> <span class="ruby-value str">'identityfile'</span>
+ 93:               <span class="ruby-identifier">settings</span>[<span class="ruby-identifier">key</span>] <span class="ruby-operator">||=</span> []
+ 94:               <span class="ruby-identifier">settings</span>[<span class="ruby-identifier">key</span>] <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">value</span>
+ 95:             <span class="ruby-keyword kw">else</span>
+ 96:               <span class="ruby-identifier">settings</span>[<span class="ruby-identifier">key</span>] = <span class="ruby-identifier">value</span> <span class="ruby-keyword kw">unless</span> <span class="ruby-identifier">settings</span>.<span class="ruby-identifier">key?</span>(<span class="ruby-identifier">key</span>)
+ 97:             <span class="ruby-keyword kw">end</span>
+ 98:           <span class="ruby-keyword kw">end</span>
+ 99:         <span class="ruby-keyword kw">end</span>
+100:         
+101:         <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">settings</span>
+102:       <span class="ruby-keyword kw">end</span></pre>
+</body>
+</html>

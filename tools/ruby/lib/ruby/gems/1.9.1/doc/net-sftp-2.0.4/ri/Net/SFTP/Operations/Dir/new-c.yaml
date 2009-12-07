@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Create a new instance on top of the given SFTP session instance.
+full_name: Net::SFTP::Operations::Dir::new
+is_singleton: true
+name: new
+params: (sftp)
+visibility: public

@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Attempts to authenticate the given user, in preparation for the next service request. Returns true if an authentication method succeeds in authenticating the user, and false otherwise.
+full_name: Net::SSH::Authentication::Session#authenticate
+is_singleton: false
+name: authenticate
+params: (next_service, username, password=nil)
+visibility: public

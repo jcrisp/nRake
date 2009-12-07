@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The testing version of Net::SSH::Transport::PacketStream#enqueued_packet. Simply calls Net::SSH::Test::Script#process on the packet.
+full_name: Net::SSH::Test::Extensions::PacketStream#test_enqueue_packet
+is_singleton: false
+name: test_enqueue_packet
+params: (payload)
+visibility: public

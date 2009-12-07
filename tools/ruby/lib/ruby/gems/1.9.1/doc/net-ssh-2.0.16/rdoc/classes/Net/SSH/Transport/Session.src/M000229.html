@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>new (Net::SSH::Transport::Session)</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="../../../../.././rdoc-style.css" type="text/css" media="screen" />
+</head>
+<body class="standalone-code">
+  <pre>    <span class="ruby-comment cmt"># File lib/net/ssh/transport/session.rb, line 56</span>
+56:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">host</span>, <span class="ruby-identifier">options</span>={})
+57:       <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">logger</span> = <span class="ruby-identifier">options</span>[<span class="ruby-identifier">:logger</span>]
+58: 
+59:       <span class="ruby-ivar">@host</span> = <span class="ruby-identifier">host</span>
+60:       <span class="ruby-ivar">@port</span> = <span class="ruby-identifier">options</span>[<span class="ruby-identifier">:port</span>] <span class="ruby-operator">||</span> <span class="ruby-constant">DEFAULT_PORT</span>
+61:       <span class="ruby-ivar">@options</span> = <span class="ruby-identifier">options</span>
+62: 
+63:       <span class="ruby-identifier">debug</span> { <span class="ruby-node">&quot;establishing connection to #{@host}:#{@port}&quot;</span> }
+64:       <span class="ruby-identifier">factory</span> = <span class="ruby-identifier">options</span>[<span class="ruby-identifier">:proxy</span>] <span class="ruby-operator">||</span> <span class="ruby-constant">TCPSocket</span>
+65:       <span class="ruby-ivar">@socket</span> = <span class="ruby-identifier">timeout</span>(<span class="ruby-identifier">options</span>[<span class="ruby-identifier">:timeout</span>] <span class="ruby-operator">||</span> <span class="ruby-value">0</span>) { <span class="ruby-identifier">factory</span>.<span class="ruby-identifier">open</span>(<span class="ruby-ivar">@host</span>, <span class="ruby-ivar">@port</span>) }
+66:       <span class="ruby-ivar">@socket</span>.<span class="ruby-identifier">extend</span>(<span class="ruby-constant">PacketStream</span>)
+67:       <span class="ruby-ivar">@socket</span>.<span class="ruby-identifier">logger</span> = <span class="ruby-ivar">@logger</span>
+68: 
+69:       <span class="ruby-identifier">debug</span> { <span class="ruby-value str">&quot;connection established&quot;</span> }
+70: 
+71:       <span class="ruby-ivar">@queue</span> = []
+72: 
+73:       <span class="ruby-ivar">@host_key_verifier</span> = <span class="ruby-identifier">select_host_key_verifier</span>(<span class="ruby-identifier">options</span>[<span class="ruby-identifier">:paranoid</span>])
+74: 
+75:       <span class="ruby-ivar">@server_version</span> = <span class="ruby-constant">ServerVersion</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">socket</span>, <span class="ruby-identifier">logger</span>)
+76: 
+77:       <span class="ruby-ivar">@algorithms</span> = <span class="ruby-constant">Algorithms</span>.<span class="ruby-identifier">new</span>(<span class="ruby-keyword kw">self</span>, <span class="ruby-identifier">options</span>)
+78:       <span class="ruby-identifier">wait</span> { <span class="ruby-identifier">algorithms</span>.<span class="ruby-identifier">initialized?</span> }
+79:     <span class="ruby-keyword kw">end</span></pre>
+</body>
+</html>

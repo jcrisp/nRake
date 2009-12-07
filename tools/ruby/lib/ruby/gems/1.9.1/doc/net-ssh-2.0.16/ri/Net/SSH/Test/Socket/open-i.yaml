@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Allows the socket to also mimic a socket factory, simply returning <tt>self</tt>.
+full_name: Net::SSH::Test::Socket#open
+is_singleton: false
+name: open
+params: (host, port)
+visibility: public

@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Compares the contents of the two buffers, returning <tt>true</tt> only if they are identical in size and content.
+full_name: Net::SSH::Buffer#==
+is_singleton: false
+name: ==
+params: (buffer)
+visibility: public

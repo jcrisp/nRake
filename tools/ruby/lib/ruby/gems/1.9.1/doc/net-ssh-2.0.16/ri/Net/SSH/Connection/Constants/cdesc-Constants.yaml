@@ -1,0 +1,71 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Definitions of constants that are specific to the connection layer of the SSH protocol.
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: ""
+  name: GLOBAL_REQUEST
+  value: "80"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: REQUEST_SUCCESS
+  value: "81"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: REQUEST_FAILURE
+  value: "82"
+- !ruby/object:RDoc::RI::Constant 
+  comment: ""
+  name: CHANNEL_OPEN
+  value: "90"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: CHANNEL_OPEN_CONFIRMATION
+  value: "91"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: CHANNEL_OPEN_FAILURE
+  value: "92"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: CHANNEL_WINDOW_ADJUST
+  value: "93"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: CHANNEL_DATA
+  value: "94"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: CHANNEL_EXTENDED_DATA
+  value: "95"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: CHANNEL_EOF
+  value: "96"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: CHANNEL_CLOSE
+  value: "97"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: CHANNEL_REQUEST
+  value: "98"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: CHANNEL_SUCCESS
+  value: "99"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: CHANNEL_FAILURE
+  value: "100"
+full_name: Net::SSH::Connection::Constants
+includes: []
+
+instance_methods: []
+
+name: Constants

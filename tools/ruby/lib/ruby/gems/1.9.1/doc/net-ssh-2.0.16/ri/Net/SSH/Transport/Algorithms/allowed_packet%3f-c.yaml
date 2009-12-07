@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns true if the given packet can be processed during a key-exchange.
+full_name: Net::SSH::Transport::Algorithms::allowed_packet?
+is_singleton: true
+name: allowed_packet?
+params: (packet)
+visibility: public

@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Override the default message format, to include the code and description.
+full_name: Net::SFTP::StatusException#message
+is_singleton: false
+name: message
+params: ()
+visibility: public

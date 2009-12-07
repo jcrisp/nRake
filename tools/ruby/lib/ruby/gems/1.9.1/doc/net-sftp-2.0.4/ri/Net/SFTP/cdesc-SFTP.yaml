@@ -1,0 +1,27 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: start
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: start
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Net::SFTP is a pure-Ruby module for programmatically interacting with a remote host via the SFTP protocol (that's SFTP as in &quot;Secure File Transfer Protocol&quot; produced by the Secure Shell Working Group, not &quot;Secure FTP&quot; and certainly not &quot;Simple FTP&quot;).
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: See Net::SFTP#start for an introduction to the library. Also, see Net::SFTP::Session for further documentation.
+- !ruby/struct:RDoc::Markup::Flow::RULE 
+  :width: 1
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Net::SFTP is a pure-Ruby module for programmatically interacting with a remote host via the SFTP protocol (that's SFTP as in &quot;Secure File Transfer Protocol&quot; produced by the Secure Shell Working Group, not &quot;Secure FTP&quot; and certainly not &quot;Simple FTP&quot;).
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: See Net::SFTP#start for an introduction to the library. Also, see Net::SFTP::Session for further documentation.
+constants: []
+
+full_name: Net::SFTP
+includes: []
+
+instance_methods: []
+
+name: SFTP

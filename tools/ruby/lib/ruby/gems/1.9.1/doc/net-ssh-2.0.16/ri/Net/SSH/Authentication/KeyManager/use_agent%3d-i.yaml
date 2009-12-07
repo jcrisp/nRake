@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Toggles whether the ssh-agent will be used or not. If true, an attempt will be made to use the ssh-agent. If false, any existing connection to an agent is closed and the agent will not be used.
+full_name: Net::SSH::Authentication::KeyManager#use_agent=
+is_singleton: false
+name: use_agent=
+params: (use_agent)
+visibility: public

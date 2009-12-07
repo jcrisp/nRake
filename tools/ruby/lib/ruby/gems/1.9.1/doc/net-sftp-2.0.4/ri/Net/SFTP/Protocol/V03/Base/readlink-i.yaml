@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Sends a FXP_READLINK packet to the server to request that the target of the given symlink on the remote host (<tt>path</tt>) be returned.
+full_name: Net::SFTP::Protocol::V03::Base#readlink
+is_singleton: false
+name: readlink
+params: (path)
+visibility: public

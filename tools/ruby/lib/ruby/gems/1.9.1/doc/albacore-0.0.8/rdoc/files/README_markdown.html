@@ -1,0 +1,269 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>File: README.markdown [RDoc Documentation]</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <link rel="stylesheet" href=".././rdoc-style.css" type="text/css" media="screen" />
+  <script type="text/javascript">
+  // <![CDATA[
+
+  function popupCode( url ) {
+    window.open(url, "Code", "resizable=yes,scrollbars=yes,toolbar=no,status=no,height=150,width=400")
+  }
+
+  function toggleCode( id ) {
+    if ( document.getElementById )
+      elem = document.getElementById( id );
+    else if ( document.all )
+      elem = eval( "document.all." + id );
+    else
+      return false;
+
+    elemStyle = elem.style;
+
+    if ( elemStyle.display != "block" ) {
+      elemStyle.display = "block"
+    } else {
+      elemStyle.display = "none"
+    }
+
+    return true;
+  }
+
+  // Make codeblocks hidden by default
+  document.writeln( "<style type=\"text/css\">div.method-source-code { display: none }<\/style>" )
+
+  // ]]>
+  </script>
+
+</head>
+<body>
+
+
+  <div id="fileHeader">
+    <h1>README.markdown</h1>
+    <table class="header-table">
+    <tr class="top-aligned-row">
+      <td><strong>Path:</strong></td>
+      <td>README.markdown
+
+      </td>
+    </tr>
+    <tr class="top-aligned-row">
+      <td><strong>Last Update:</strong></td>
+      <td>2009-12-04 15:11:39 +1000</td>
+    </tr>
+    </table>
+  </div>
+  <!-- banner header -->
+
+  <div id="bodyContent">
+
+  <div id="contextContent">
+
+    <div id="description">
+      <p>
+# Welcome to the <a href="../classes/Albacore.html">Albacore</a> project.
+</p>
+<p>
+<a href="../classes/Albacore.html">Albacore</a> is intended to be a
+professional quality suite of Rake tasks to help automate the process of
+building a .NET based system. All tasks are built using a test-first
+approach through rspec, and all tests are included in the <a
+href="../classes/Albacore.html">Albacore</a> gem.
+</p>
+<p>
+## How To Install <a href="../classes/Albacore.html">Albacore</a> From
+Gemcutter Gems:
+</p>
+<p>
+If you would like to install the current, stable release of <a
+href="../classes/Albacore.html">Albacore</a>, you can do so easily through
+the Gemcutter gem server. Follow these simple instructions and you will be
+good to go.
+</p>
+<p>
+**Step 1:** Setup Gemcutter as a gem source
+</p>
+<p>
+> gem source -a <a href="http://gemcutter.org">gemcutter.org</a>
+</p>
+<p>
+(note: you only need to do this once for any given computer that is going
+to install gems from gemcutter.)
+</p>
+<p>
+**Step 2:** Install the <a href="../classes/Albacore.html">Albacore</a> gem
+</p>
+<p>
+> gem install albacore
+</p>
+<p>
+(note: as of v0.0.7, the &#8220;albacore&#8221; gem is spelled with a
+lowercase &#8220;a&#8221;.)
+</p>
+<p>
+## How To Manually Build And Install The <a
+href="../classes/Albacore.html">Albacore</a> Gem
+</p>
+<p>
+If you would like to install the latest source code for <a
+href="../classes/Albacore.html">Albacore</a>, and get all the new features
+and functionality (possibly in an unstable form), you can manually build
+and install the <a href="../classes/Albacore.html">Albacore</a> gem. Follow
+these simple instructions and you will be good to go.
+</p>
+<p>
+**Step 1:** Clone <a href="../classes/Albacore.html">Albacore</a>
+</p>
+<p>
+Use your Github account to fork <a
+href="../classes/Albacore.html">Albacore</a>, or clone it directly from my
+public clone URL.
+</p>
+<p>
+> git clone git://github.com/derickbailey/Albacore.git <a
+href="../classes/Albacore.html">Albacore</a>
+</p>
+<p>
+**Step 2:** Build the gem
+</p>
+<p>
+In your local clone of <a href="../classes/Albacore.html">Albacore</a>, use
+the jeweler rake tasks to build the latest version of the <a
+href="../classes/Albacore.html">Albacore</a> code into a gem.
+</p>
+<p>
+> rake jeweler:gemspec > > rake jeweler:build
+</p>
+<p>
+this will produce an &#8216;albacore-#.#.#.gem&#8217; file in the
+&#8216;pkg&#8217; folder, where &#8217;#.#.#&#8217; is the version number.
+For example &#8216;albacore-0.0.7.gem&#8217;.
+</p>
+<p>
+**Step 3:** Install the gem
+</p>
+<p>
+After building the gem, you can install it from your local file system.
+</p>
+<p>
+> gem install -l pkg/albacore-#.#.#.gem
+</p>
+<p>
+where &#8217;#.#.#&#8217; is the version number of the gem. For example
+&#8216;albacore-0.0.7.gem&#8216;
+</p>
+<p>
+## How To Use <a href="../classes/Albacore.html">Albacore</a>
+</p>
+<p>
+After installing <a href="../classes/Albacore.html">Albacore</a>, you only
+need to
+</p>
+<pre>
+    require 'albacore'
+</pre>
+<p>
+in your rakefile. This will allow you to use the tasks that <a
+href="../classes/Albacore.html">Albacore</a> includes.
+</p>
+<pre>
+    desc &quot;Run a sample build using the MSBuildTask&quot;
+    msbuildtask do |msb|
+        msb.properties = {:configuration =&gt; :Debug}
+        msb.targets [:Clean, :Build]
+        msb.solution = &quot;spec/support/TestSolution/TestSolution.sln&quot;
+    end
+</pre>
+<p>
+Beyond the simple example, check out the [<a
+href="../classes/Albacore.html">Albacore</a> Wiki](<a
+href="http://wiki.github.com/derickbailey/Albacore">wiki.github.com/derickbailey/Albacore</a>)
+for detailed instructions on how to use the built in tasks and their
+options.
+</p>
+<p>
+## How To Contribute, Collaborate, Communicate
+</p>
+<p>
+If you&#8217;d like to get involved with the <a
+href="../classes/Albacore.html">Albacore</a> framework, we have a
+discussion group over at google: **[AlbacoreDev](<a
+href="http://groups.google.com/group/albacoredev">groups.google.com/group/albacoredev</a>)**
+</p>
+<p>
+Anyone can fork the main repository and submit patches, as well. And
+lastly, the [wiki](<a
+href="http://wiki.github.com/derickbailey/Albacore">wiki.github.com/derickbailey/Albacore</a>)
+and [issues list](<a
+href="http://github.com/derickbailey/Albacore/issues">github.com/derickbailey/Albacore/issues</a>)
+are also open for additions, edits, and discussion.
+</p>
+<p>
+## Contributors
+</p>
+<p>
+Many thanks for contributions to <a
+href="../classes/Albacore.html">Albacore</a> are due:
+</p>
+<ul>
+<li>[Ben Hall](<a href="http://github.com/benhall">github.com/benhall</a>):
+SSH, SFTP, <a href="../classes/ZipDirectory.html">ZipDirectory</a>, Rename,
+YAML auto config, Wiki pages, and other great additions
+
+</li>
+<li>[Steven Harman] (<a
+href="http://github.com/stevenharman">github.com/stevenharman</a>): Finding
+some wicked bugs, patching nunit test runner, and working on the nant task
+
+</li>
+<li>[Brian Donahue] (<a
+href="http://github.com/briandonahue">github.com/briandonahue</a>):
+Inspiration and initial code for the <a
+href="../classes/ExpandTemplates.html">ExpandTemplates</a> task
+
+</li>
+<li>[Sean Biefeld](<a
+href="http://github.com/seanbiefeld">github.com/seanbiefeld</a>): <a
+href="../classes/MSpecTestRunner.html">MSpecTestRunner</a> for <a
+href="../classes/NCoverConsole.html">NCoverConsole</a>
+
+</li>
+<li>[Kevin Colyar](<a
+href="http://github.com/kevincolyar">github.com/kevincolyar</a>): Testing
+and updating of <a href="../classes/MSBuild.html">MSBuild</a> to work with
+Cygwin
+
+</li>
+</ul>
+
+    </div>
+
+   </div>
+
+
+  </div>
+
+    <!-- if includes -->
+
+    <div id="section">
+
+
+
+
+    <!-- if method_list -->
+
+
+
+
+  </div>
+
+<div id="validator-badges">
+  <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+</div>
+
+</body>
+</html>

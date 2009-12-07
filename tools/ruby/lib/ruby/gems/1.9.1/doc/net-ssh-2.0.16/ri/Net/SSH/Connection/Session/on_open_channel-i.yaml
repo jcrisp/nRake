@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Registers a handler to be invoked when the server wants to open a channel on the client. The callback receives the connection object, the new channel object, and the packet itself as arguments, and should raise ChannelOpenFailed if it is unable to open the channel for some reason. Otherwise, the channel will be opened and a confirmation message sent to the server.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: This is used by the Net::SSH::Service::Forward service to open a channel when a remote forwarded port receives a connection. However, you are welcome to register handlers for other channel types, as needed.
+full_name: Net::SSH::Connection::Session#on_open_channel
+is_singleton: false
+name: on_open_channel
+params: (type, &block)
+visibility: public

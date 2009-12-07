@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns true if the pointer is at the end of the buffer. Subsequent reads will return nil, in this case.
+full_name: Net::SSH::Buffer#eof?
+is_singleton: false
+name: eof?
+params: ()
+visibility: public

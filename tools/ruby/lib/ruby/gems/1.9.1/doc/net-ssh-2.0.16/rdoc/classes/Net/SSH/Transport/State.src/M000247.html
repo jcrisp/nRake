@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>new (Net::SSH::Transport::State)</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="../../../../.././rdoc-style.css" type="text/css" media="screen" />
+</head>
+<body class="standalone-code">
+  <pre>    <span class="ruby-comment cmt"># File lib/net/ssh/transport/state.rb, line 57</span>
+57:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">socket</span>, <span class="ruby-identifier">role</span>)
+58:       <span class="ruby-ivar">@socket</span> = <span class="ruby-identifier">socket</span>
+59:       <span class="ruby-ivar">@role</span> = <span class="ruby-identifier">role</span>
+60:       <span class="ruby-ivar">@sequence_number</span> = <span class="ruby-ivar">@packets</span> = <span class="ruby-ivar">@blocks</span> = <span class="ruby-value">0</span>
+61:       <span class="ruby-ivar">@cipher</span> = <span class="ruby-constant">CipherFactory</span>.<span class="ruby-identifier">get</span>(<span class="ruby-value str">&quot;none&quot;</span>)
+62:       <span class="ruby-ivar">@block_size</span> = <span class="ruby-value">8</span>
+63:       <span class="ruby-ivar">@hmac</span> = <span class="ruby-constant">HMAC</span>.<span class="ruby-identifier">get</span>(<span class="ruby-value str">&quot;none&quot;</span>)
+64:       <span class="ruby-ivar">@compression</span> = <span class="ruby-keyword kw">nil</span>
+65:       <span class="ruby-ivar">@compressor</span> = <span class="ruby-ivar">@decompressor</span> = <span class="ruby-keyword kw">nil</span>
+66:       <span class="ruby-ivar">@next_iv</span> = <span class="ruby-value str">&quot;&quot;</span>
+67:     <span class="ruby-keyword kw">end</span></pre>
+</body>
+</html>

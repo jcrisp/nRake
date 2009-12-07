@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Retrieves a custom property from this instance. This can be used to store additional state in applications that must manage multiple SSH connections.
+full_name: Net::SSH::Connection::Session#[]
+is_singleton: false
+name: "[]"
+params: (key)
+visibility: public

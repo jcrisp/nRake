@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Return an array of all identities (public keys) known to the agent. Each key returned is augmented with a <tt>comment</tt> property which is set to the comment returned by the agent for that key.
+full_name: Net::SSH::Authentication::Agent#identities
+is_singleton: false
+name: identities
+params: ()
+visibility: public

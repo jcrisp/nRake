@@ -1,0 +1,488 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Module: Net::SFTP::Protocol [Net-sftp]</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <link rel="stylesheet" href="../../.././rdoc-style.css" type="text/css" media="screen" />
+  <script type="text/javascript">
+  // <![CDATA[
+
+  function popupCode( url ) {
+    window.open(url, "Code", "resizable=yes,scrollbars=yes,toolbar=no,status=no,height=150,width=400")
+  }
+
+  function toggleCode( id ) {
+    if ( document.getElementById )
+      elem = document.getElementById( id );
+    else if ( document.all )
+      elem = eval( "document.all." + id );
+    else
+      return false;
+
+    elemStyle = elem.style;
+
+    if ( elemStyle.display != "block" ) {
+      elemStyle.display = "block"
+    } else {
+      elemStyle.display = "none"
+    }
+
+    return true;
+  }
+
+  // Make codeblocks hidden by default
+  document.writeln( "<style type=\"text/css\">div.method-source-code { display: none }<\/style>" )
+
+  // ]]>
+  </script>
+
+</head>
+<body>
+
+
+    <div id="classHeader">
+        <table class="header-table">
+        <tr class="top-aligned-row">
+          <td><strong>Module</strong></td>
+          <td class="class-name-in-header">Net::SFTP::Protocol</td>
+        </tr>
+        <tr class="top-aligned-row">
+            <td><strong>In:</strong></td>
+            <td>
+
+
+                <a href="../../../files/lib/net/sftp/protocol/01/attributes_rb.html">
+
+                lib/net/sftp/protocol/01/attributes.rb
+
+                </a>
+
+
+        <br />
+
+
+                <a href="../../../files/lib/net/sftp/protocol/01/base_rb.html">
+
+                lib/net/sftp/protocol/01/base.rb
+
+                </a>
+
+
+        <br />
+
+
+                <a href="../../../files/lib/net/sftp/protocol/01/name_rb.html">
+
+                lib/net/sftp/protocol/01/name.rb
+
+                </a>
+
+
+        <br />
+
+
+                <a href="../../../files/lib/net/sftp/protocol/02/base_rb.html">
+
+                lib/net/sftp/protocol/02/base.rb
+
+                </a>
+
+
+        <br />
+
+
+                <a href="../../../files/lib/net/sftp/protocol/03/base_rb.html">
+
+                lib/net/sftp/protocol/03/base.rb
+
+                </a>
+
+
+        <br />
+
+
+                <a href="../../../files/lib/net/sftp/protocol/04/attributes_rb.html">
+
+                lib/net/sftp/protocol/04/attributes.rb
+
+                </a>
+
+
+        <br />
+
+
+                <a href="../../../files/lib/net/sftp/protocol/04/base_rb.html">
+
+                lib/net/sftp/protocol/04/base.rb
+
+                </a>
+
+
+        <br />
+
+
+                <a href="../../../files/lib/net/sftp/protocol/04/name_rb.html">
+
+                lib/net/sftp/protocol/04/name.rb
+
+                </a>
+
+
+        <br />
+
+
+                <a href="../../../files/lib/net/sftp/protocol/05/base_rb.html">
+
+                lib/net/sftp/protocol/05/base.rb
+
+                </a>
+
+
+        <br />
+
+
+                <a href="../../../files/lib/net/sftp/protocol/06/attributes_rb.html">
+
+                lib/net/sftp/protocol/06/attributes.rb
+
+                </a>
+
+
+        <br />
+
+
+                <a href="../../../files/lib/net/sftp/protocol/06/base_rb.html">
+
+                lib/net/sftp/protocol/06/base.rb
+
+                </a>
+
+
+        <br />
+
+
+                <a href="../../../files/lib/net/sftp/protocol/base_rb.html">
+
+                lib/net/sftp/protocol/base.rb
+
+                </a>
+
+
+        <br />
+
+
+                <a href="../../../files/lib/net/sftp/protocol_rb.html">
+
+                lib/net/sftp/protocol.rb
+
+                </a>
+
+
+        <br />
+
+
+                <a href="../../../files/lib/net/sftp/protocol/01/attributes_rb.html">
+
+                lib/net/sftp/protocol/01/attributes.rb
+
+                </a>
+
+
+        <br />
+
+
+                <a href="../../../files/lib/net/sftp/protocol/01/base_rb.html">
+
+                lib/net/sftp/protocol/01/base.rb
+
+                </a>
+
+
+        <br />
+
+
+                <a href="../../../files/lib/net/sftp/protocol/01/name_rb.html">
+
+                lib/net/sftp/protocol/01/name.rb
+
+                </a>
+
+
+        <br />
+
+
+                <a href="../../../files/lib/net/sftp/protocol/02/base_rb.html">
+
+                lib/net/sftp/protocol/02/base.rb
+
+                </a>
+
+
+        <br />
+
+
+                <a href="../../../files/lib/net/sftp/protocol/03/base_rb.html">
+
+                lib/net/sftp/protocol/03/base.rb
+
+                </a>
+
+
+        <br />
+
+
+                <a href="../../../files/lib/net/sftp/protocol/04/attributes_rb.html">
+
+                lib/net/sftp/protocol/04/attributes.rb
+
+                </a>
+
+
+        <br />
+
+
+                <a href="../../../files/lib/net/sftp/protocol/04/base_rb.html">
+
+                lib/net/sftp/protocol/04/base.rb
+
+                </a>
+
+
+        <br />
+
+
+                <a href="../../../files/lib/net/sftp/protocol/04/name_rb.html">
+
+                lib/net/sftp/protocol/04/name.rb
+
+                </a>
+
+
+        <br />
+
+
+                <a href="../../../files/lib/net/sftp/protocol/05/base_rb.html">
+
+                lib/net/sftp/protocol/05/base.rb
+
+                </a>
+
+
+        <br />
+
+
+                <a href="../../../files/lib/net/sftp/protocol/06/attributes_rb.html">
+
+                lib/net/sftp/protocol/06/attributes.rb
+
+                </a>
+
+
+        <br />
+
+
+                <a href="../../../files/lib/net/sftp/protocol/06/base_rb.html">
+
+                lib/net/sftp/protocol/06/base.rb
+
+                </a>
+
+
+        <br />
+
+
+                <a href="../../../files/lib/net/sftp/protocol/base_rb.html">
+
+                lib/net/sftp/protocol/base.rb
+
+                </a>
+
+
+        <br />
+
+
+                <a href="../../../files/lib/net/sftp/protocol_rb.html">
+
+                lib/net/sftp/protocol.rb
+
+                </a>
+
+
+        <br />
+
+            </td>
+        </tr>
+
+
+        </table>
+    </div>
+  <!-- banner header -->
+
+  <div id="bodyContent">
+
+  <div id="contextContent">
+
+    <div id="description">
+      <p>
+The <a href="Protocol.html">Protocol</a> module contains the definitions
+for all supported <a href="../SFTP.html">SFTP</a> protocol versions.
+</p>
+<hr size="1"></hr><p>
+The <a href="Protocol.html">Protocol</a> module contains the definitions
+for all supported <a href="../SFTP.html">SFTP</a> protocol versions.
+</p>
+
+    </div>
+
+   </div>
+
+
+    <div id="method-list">
+      <h3 class="section-bar">Methods</h3>
+
+      <div class="name-list">
+
+        <a href="#M000067">load</a>&nbsp;&nbsp;
+
+        <a href="#M000068">load</a>&nbsp;&nbsp;
+
+      </div>
+    </div>
+
+  </div>
+
+    <!-- if includes -->
+
+    <div id="section">
+
+    <div id="class-list">
+      <h3 class="section-bar">Classes and Modules</h3>
+
+      Module <a href="Protocol/V01.html" class="link">Net::SFTP::Protocol::V01</a><br />
+Module <a href="Protocol/V02.html" class="link">Net::SFTP::Protocol::V02</a><br />
+Module <a href="Protocol/V03.html" class="link">Net::SFTP::Protocol::V03</a><br />
+Module <a href="Protocol/V04.html" class="link">Net::SFTP::Protocol::V04</a><br />
+Module <a href="Protocol/V05.html" class="link">Net::SFTP::Protocol::V05</a><br />
+Module <a href="Protocol/V06.html" class="link">Net::SFTP::Protocol::V06</a><br />
+Class <a href="Protocol/Base.html" class="link">Net::SFTP::Protocol::Base</a><br />
+
+    </div>
+
+
+
+
+    <!-- if method_list -->
+
+    <div id="methods">
+
+      <h3 class="section-bar">Public Class methods</h3>
+
+
+      <div id="method-M000067" class="method-detail">
+        <a name="M000067"></a>
+
+        <div class="method-heading">
+
+          <a href="#M000067" class="method-signature">
+
+          <span class="method-name">load</span><span class="method-args">(session, version)</span>
+
+          </a>
+
+        </div>
+
+        <div class="method-description">
+
+          <p>
+Instantiates and returns a new protocol driver instance for the given
+protocol version. <tt>session</tt> must be a valid <a
+href="../SFTP.html">SFTP</a> session object, and <tt>version</tt> must be
+an integer. If an unsupported version is given, an exception will be
+raised.
+</p>
+
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000067-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000067-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/net/sftp/protocol.rb, line 18</span>
+18:     <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">load</span>(<span class="ruby-identifier">session</span>, <span class="ruby-identifier">version</span>)
+19:       <span class="ruby-keyword kw">case</span> <span class="ruby-identifier">version</span>
+20:       <span class="ruby-keyword kw">when</span> <span class="ruby-value">1</span> <span class="ruby-keyword kw">then</span> <span class="ruby-constant">V01</span><span class="ruby-operator">::</span><span class="ruby-constant">Base</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">session</span>)
+21:       <span class="ruby-keyword kw">when</span> <span class="ruby-value">2</span> <span class="ruby-keyword kw">then</span> <span class="ruby-constant">V02</span><span class="ruby-operator">::</span><span class="ruby-constant">Base</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">session</span>)
+22:       <span class="ruby-keyword kw">when</span> <span class="ruby-value">3</span> <span class="ruby-keyword kw">then</span> <span class="ruby-constant">V03</span><span class="ruby-operator">::</span><span class="ruby-constant">Base</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">session</span>)
+23:       <span class="ruby-keyword kw">when</span> <span class="ruby-value">4</span> <span class="ruby-keyword kw">then</span> <span class="ruby-constant">V04</span><span class="ruby-operator">::</span><span class="ruby-constant">Base</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">session</span>)
+24:       <span class="ruby-keyword kw">when</span> <span class="ruby-value">5</span> <span class="ruby-keyword kw">then</span> <span class="ruby-constant">V05</span><span class="ruby-operator">::</span><span class="ruby-constant">Base</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">session</span>)
+25:       <span class="ruby-keyword kw">when</span> <span class="ruby-value">6</span> <span class="ruby-keyword kw">then</span> <span class="ruby-constant">V06</span><span class="ruby-operator">::</span><span class="ruby-constant">Base</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">session</span>)
+26:       <span class="ruby-keyword kw">else</span> <span class="ruby-identifier">raise</span> <span class="ruby-constant">NotImplementedError</span>, <span class="ruby-node">&quot;unsupported SFTP version #{version.inspect}&quot;</span>
+27:       <span class="ruby-keyword kw">end</span>
+28:     <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
+
+        </div>
+      </div>
+
+
+      <div id="method-M000068" class="method-detail">
+        <a name="M000068"></a>
+
+        <div class="method-heading">
+
+          <a href="#M000068" class="method-signature">
+
+          <span class="method-name">load</span><span class="method-args">(session, version)</span>
+
+          </a>
+
+        </div>
+
+        <div class="method-description">
+
+          <p>
+Instantiates and returns a new protocol driver instance for the given
+protocol version. <tt>session</tt> must be a valid <a
+href="../SFTP.html">SFTP</a> session object, and <tt>version</tt> must be
+an integer. If an unsupported version is given, an exception will be
+raised.
+</p>
+
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000068-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000068-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/net/sftp/protocol.rb, line 18</span>
+18:     <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">load</span>(<span class="ruby-identifier">session</span>, <span class="ruby-identifier">version</span>)
+19:       <span class="ruby-keyword kw">case</span> <span class="ruby-identifier">version</span>
+20:       <span class="ruby-keyword kw">when</span> <span class="ruby-value">1</span> <span class="ruby-keyword kw">then</span> <span class="ruby-constant">V01</span><span class="ruby-operator">::</span><span class="ruby-constant">Base</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">session</span>)
+21:       <span class="ruby-keyword kw">when</span> <span class="ruby-value">2</span> <span class="ruby-keyword kw">then</span> <span class="ruby-constant">V02</span><span class="ruby-operator">::</span><span class="ruby-constant">Base</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">session</span>)
+22:       <span class="ruby-keyword kw">when</span> <span class="ruby-value">3</span> <span class="ruby-keyword kw">then</span> <span class="ruby-constant">V03</span><span class="ruby-operator">::</span><span class="ruby-constant">Base</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">session</span>)
+23:       <span class="ruby-keyword kw">when</span> <span class="ruby-value">4</span> <span class="ruby-keyword kw">then</span> <span class="ruby-constant">V04</span><span class="ruby-operator">::</span><span class="ruby-constant">Base</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">session</span>)
+24:       <span class="ruby-keyword kw">when</span> <span class="ruby-value">5</span> <span class="ruby-keyword kw">then</span> <span class="ruby-constant">V05</span><span class="ruby-operator">::</span><span class="ruby-constant">Base</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">session</span>)
+25:       <span class="ruby-keyword kw">when</span> <span class="ruby-value">6</span> <span class="ruby-keyword kw">then</span> <span class="ruby-constant">V06</span><span class="ruby-operator">::</span><span class="ruby-constant">Base</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">session</span>)
+26:       <span class="ruby-keyword kw">else</span> <span class="ruby-identifier">raise</span> <span class="ruby-constant">NotImplementedError</span>, <span class="ruby-node">&quot;unsupported SFTP version #{version.inspect}&quot;</span>
+27:       <span class="ruby-keyword kw">end</span>
+28:     <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
+
+        </div>
+      </div>
+
+
+
+    </div>
+
+
+
+
+  </div>
+
+<div id="validator-badges">
+  <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+</div>
+
+</body>
+</html>

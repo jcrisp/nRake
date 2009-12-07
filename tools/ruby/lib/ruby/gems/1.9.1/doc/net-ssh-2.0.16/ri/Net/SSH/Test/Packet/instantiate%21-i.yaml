@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Instantiates the packets data elements. When the packet was first defined, some elements may not have been fully realized, and were described as Proc objects rather than atomic types. This invokes those Proc objects and replaces them with their returned values. This allows for values like Net::SSH::Test::Channel#remote_id to be used in scripts before the remote_id is known (since it is only known after a channel has been confirmed open).
+full_name: Net::SSH::Test::Packet#instantiate!
+is_singleton: false
+name: instantiate!
+params: ()
+visibility: public

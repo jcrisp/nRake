@@ -1,0 +1,266 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Class: Net::SSH::Proxy::HTTP [Net::SSH: a pure-Ruby implementation of the SSH2 client protocol.]</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <link rel="stylesheet" href="../../../.././rdoc-style.css" type="text/css" media="screen" />
+  <script type="text/javascript">
+  // <![CDATA[
+
+  function popupCode( url ) {
+    window.open(url, "Code", "resizable=yes,scrollbars=yes,toolbar=no,status=no,height=150,width=400")
+  }
+
+  function toggleCode( id ) {
+    if ( document.getElementById )
+      elem = document.getElementById( id );
+    else if ( document.all )
+      elem = eval( "document.all." + id );
+    else
+      return false;
+
+    elemStyle = elem.style;
+
+    if ( elemStyle.display != "block" ) {
+      elemStyle.display = "block"
+    } else {
+      elemStyle.display = "none"
+    }
+
+    return true;
+  }
+
+  // Make codeblocks hidden by default
+  document.writeln( "<style type=\"text/css\">div.method-source-code { display: none }<\/style>" )
+
+  // ]]>
+  </script>
+
+</head>
+<body>
+
+
+    <div id="classHeader">
+        <table class="header-table">
+        <tr class="top-aligned-row">
+          <td><strong>Class</strong></td>
+          <td class="class-name-in-header">Net::SSH::Proxy::HTTP</td>
+        </tr>
+        <tr class="top-aligned-row">
+            <td><strong>In:</strong></td>
+            <td>
+
+
+                <a href="../../../../files/lib/net/ssh/proxy/http_rb.html">
+
+                lib/net/ssh/proxy/http.rb
+
+                </a>
+
+
+        <br />
+
+            </td>
+        </tr>
+
+
+        <tr class="top-aligned-row">
+            <td><strong>Parent:</strong></td>
+            <td>
+
+                Object
+
+            </td>
+        </tr>
+
+        </table>
+    </div>
+  <!-- banner header -->
+
+  <div id="bodyContent">
+
+  <div id="contextContent">
+
+    <div id="description">
+      <p>
+An implementation of an <a href="HTTP.html">HTTP</a> proxy. To use it,
+instantiate it, then pass the instantiated object via the :proxy key to <a
+href="../../SSH.html#M000002">Net::SSH.start</a>:
+</p>
+<pre>
+  require 'net/ssh/proxy/http'
+
+  proxy = Net::SSH::Proxy::HTTP.new('proxy.host', proxy_port)
+  Net::SSH.start('host', 'user', :proxy =&gt; proxy) do |ssh|
+    ...
+  end
+</pre>
+<p>
+If the proxy requires authentication, you can pass :user and :password to
+the proxy&#8217;s constructor:
+</p>
+<pre>
+  proxy = Net::SSH::Proxy::HTTP.new('proxy.host', proxy_port,
+     :user =&gt; &quot;user&quot;, :password =&gt; &quot;password&quot;)
+</pre>
+<p>
+Note that <a href="HTTP.html">HTTP</a> digest authentication is not
+supported; Basic only at this point.
+</p>
+
+    </div>
+
+   </div>
+
+
+    <div id="method-list">
+      <h3 class="section-bar">Methods</h3>
+
+      <div class="name-list">
+
+        <a href="#M000111">new</a>&nbsp;&nbsp;
+
+        <a href="#M000112">open</a>&nbsp;&nbsp;
+
+      </div>
+    </div>
+
+  </div>
+
+    <!-- if includes -->
+
+    <div id="section">
+
+
+
+    <div id="attribute-list">
+      <h3 class="section-bar">Attributes</h3>
+
+      <div class="name-list">
+        <table>
+
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">options</td>
+
+          <td class="context-item-value">&nbsp;[R]&nbsp;</td>
+
+          <td class="context-item-desc">
+The map of additional options that were given to the object at
+initialization.
+
+</td>
+        </tr>
+
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">proxy_host</td>
+
+          <td class="context-item-value">&nbsp;[R]&nbsp;</td>
+
+          <td class="context-item-desc">
+The hostname or IP address of the <a href="HTTP.html">HTTP</a> proxy.
+
+</td>
+        </tr>
+
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">proxy_port</td>
+
+          <td class="context-item-value">&nbsp;[R]&nbsp;</td>
+
+          <td class="context-item-desc">
+The port number of the proxy.
+
+</td>
+        </tr>
+
+        </table>
+      </div>
+    </div>
+
+
+    <!-- if method_list -->
+
+    <div id="methods">
+
+      <h3 class="section-bar">Public Class methods</h3>
+
+
+      <div id="method-M000111" class="method-detail">
+        <a name="M000111"></a>
+
+        <div class="method-heading">
+
+          <a href="HTTP.src/M000111.html" target="Code" class="method-signature"
+            onclick="popupCode('HTTP.src/M000111.html');return false;">
+
+          <span class="method-name">new</span><span class="method-args">(proxy_host, proxy_port=80, options={})</span>
+
+          </a>
+
+        </div>
+
+        <div class="method-description">
+
+          <p>
+Create a new socket factory that tunnels via the given host and port. The
+<tt>options</tt> parameter is a hash of additional settings that can be
+used to tweak this proxy connection. Specifically, the following options
+are supported:
+</p>
+<ul>
+<li>:user => the user name to use when authenticating to the proxy
+
+</li>
+<li>:password => the password to use when authenticating
+
+</li>
+</ul>
+
+        </div>
+      </div>
+
+
+      <h3 class="section-bar">Public Instance methods</h3>
+
+
+      <div id="method-M000112" class="method-detail">
+        <a name="M000112"></a>
+
+        <div class="method-heading">
+
+          <a href="HTTP.src/M000112.html" target="Code" class="method-signature"
+            onclick="popupCode('HTTP.src/M000112.html');return false;">
+
+          <span class="method-name">open</span><span class="method-args">(host, port)</span>
+
+          </a>
+
+        </div>
+
+        <div class="method-description">
+
+          <p>
+Return a new socket connected to the given host and port via the proxy that
+was requested when the socket factory was instantiated.
+</p>
+
+        </div>
+      </div>
+
+
+
+    </div>
+
+
+
+
+  </div>
+
+<div id="validator-badges">
+  <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+</div>
+
+</body>
+</html>

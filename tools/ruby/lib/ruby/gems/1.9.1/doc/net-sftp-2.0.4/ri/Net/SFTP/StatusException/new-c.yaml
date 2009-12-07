@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Create a new status exception that reports the given code and description.
+full_name: Net::SFTP::StatusException::new
+is_singleton: true
+name: new
+params: (response, text=nil)
+visibility: public

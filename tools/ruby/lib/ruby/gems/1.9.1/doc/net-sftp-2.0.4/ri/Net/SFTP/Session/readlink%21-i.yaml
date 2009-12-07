@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Identical to #readlink, but blocks until the server responds. It will raise a StatusException if the request was unsuccessful. Otherwise, it will return the Name object for the path that the symlink targets."
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  item = sftp.readlink!(&quot;/path/to/symlink&quot;)\n"
+full_name: Net::SFTP::Session#readlink!
+is_singleton: false
+name: readlink!
+params: (path, &callback)
+visibility: public

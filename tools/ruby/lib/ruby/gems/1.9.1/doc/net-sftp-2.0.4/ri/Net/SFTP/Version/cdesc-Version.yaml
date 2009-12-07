@@ -1,0 +1,64 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Describes the current version of the Net::SFTP library.
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: MAJOR
+  value: "2"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: MINOR
+  value: "0"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: TINY
+  value: "4"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The current version, as a Version instance
+  name: CURRENT
+  value: new(MAJOR, MINOR, TINY)
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The current version, as a String instance
+  name: STRING
+  value: CURRENT.to_s
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: MAJOR
+  value: "2"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: MINOR
+  value: "0"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: TINY
+  value: "4"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The current version, as a Version instance
+  name: CURRENT
+  value: new(MAJOR, MINOR, TINY)
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The current version, as a String instance
+  name: STRING
+  value: CURRENT.to_s
+full_name: Net::SFTP::Version
+includes: []
+
+instance_methods: []
+
+name: Version
+superclass: Net::SSH::Version

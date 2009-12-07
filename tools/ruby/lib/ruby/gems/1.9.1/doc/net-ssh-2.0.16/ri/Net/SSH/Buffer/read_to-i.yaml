@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Reads all data up to and including the given pattern, which may be a String, Fixnum, or Regexp and is interpreted exactly as String#index does. Returns nil if nothing matches. Increments the position to point immediately after the pattern, if it does match. Returns all data up to and including the text that matched the pattern.
+full_name: Net::SSH::Buffer#read_to
+is_singleton: false
+name: read_to
+params: (pattern)
+visibility: public

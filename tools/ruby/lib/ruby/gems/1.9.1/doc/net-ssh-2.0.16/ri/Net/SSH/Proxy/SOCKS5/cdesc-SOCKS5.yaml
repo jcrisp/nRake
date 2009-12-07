@@ -1,0 +1,85 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: 
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The map of options given at initialization
+  name: options
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The proxy's host name or IP address
+  name: proxy_host
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The proxy's port number
+  name: proxy_port
+  rw: R
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "An implementation of a SOCKS5 proxy. To use it, instantiate it, then pass the instantiated object via the :proxy key to Net::SSH.start:"
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  require 'net/ssh/proxy/socks5'\n\n  proxy = Net::SSH::Proxy::SOCKS5.new('proxy.host', proxy_port,\n    :user =&gt; 'user', :password =&gt; &quot;password&quot;)\n  Net::SSH.start('host', 'user', :proxy =&gt; proxy) do |ssh|\n    ...\n  end\n"
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The SOCKS protocol version used by this class
+  name: VERSION
+  value: "5"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The SOCKS authentication type for requests without authentication
+  name: METHOD_NO_AUTH
+  value: "0"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The SOCKS authentication type for requests via username/password
+  name: METHOD_PASSWD
+  value: "2"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The SOCKS authentication type for when there are no supported authentication methods.
+  name: METHOD_NONE
+  value: "0xFF"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The SOCKS packet type for requesting a proxy connection.
+  name: CMD_CONNECT
+  value: "1"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The SOCKS address type for connections via IP address.
+  name: ATYP_IPV4
+  value: "1"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The SOCKS address type for connections via domain name.
+  name: ATYP_DOMAIN
+  value: "3"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The SOCKS response code for a successful operation.
+  name: SUCCESS
+  value: "0"
+full_name: Net::SSH::Proxy::SOCKS5
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: open
+name: SOCKS5
+superclass: Object

@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Identical to #unblock, but blocks until the server responds. It will raise a StatusException if the request was unsuccessful. Otherwise, it will return the Response object for the request."
+full_name: Net::SFTP::Session#unblock!
+is_singleton: false
+name: unblock!
+params: (handle, offset, length, &callback)
+visibility: public

@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Clear all knowledge of any loaded user keys. This also clears the list of default identity files that are to be loaded, thus making it appropriate to use if a client wishes to NOT use the default identity files.
+full_name: Net::SSH::Authentication::KeyManager#clear!
+is_singleton: false
+name: clear!
+params: ()
+visibility: public

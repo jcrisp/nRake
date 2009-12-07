@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>ssh_do_sign (OpenSSL::PKey::DSA)</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="../../../.././rdoc-style.css" type="text/css" media="screen" />
+</head>
+<body class="standalone-code">
+  <pre>     <span class="ruby-comment cmt"># File lib/net/ssh/transport/openssl.rb, line 108</span>
+108:       <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">ssh_do_sign</span>(<span class="ruby-identifier">data</span>)
+109:         <span class="ruby-identifier">sig</span> = <span class="ruby-identifier">sign</span>( <span class="ruby-constant">OpenSSL</span><span class="ruby-operator">::</span><span class="ruby-constant">Digest</span><span class="ruby-operator">::</span><span class="ruby-constant">DSS1</span>.<span class="ruby-identifier">new</span>, <span class="ruby-identifier">data</span>)
+110:         <span class="ruby-identifier">a1sig</span> = <span class="ruby-constant">OpenSSL</span><span class="ruby-operator">::</span><span class="ruby-constant">ASN1</span>.<span class="ruby-identifier">decode</span>( <span class="ruby-identifier">sig</span> )
+111: 
+112:         <span class="ruby-identifier">sig_r</span> = <span class="ruby-identifier">a1sig</span>.<span class="ruby-identifier">value</span>[<span class="ruby-value">0</span>].<span class="ruby-identifier">value</span>.<span class="ruby-identifier">to_s</span>(<span class="ruby-value">2</span>)
+113:         <span class="ruby-identifier">sig_s</span> = <span class="ruby-identifier">a1sig</span>.<span class="ruby-identifier">value</span>[<span class="ruby-value">1</span>].<span class="ruby-identifier">value</span>.<span class="ruby-identifier">to_s</span>(<span class="ruby-value">2</span>)
+114: 
+115:         <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">sig_r</span>.<span class="ruby-identifier">length</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">20</span> <span class="ruby-operator">||</span> <span class="ruby-identifier">sig_s</span>.<span class="ruby-identifier">length</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">20</span>
+116:           <span class="ruby-identifier">raise</span> <span class="ruby-constant">OpenSSL</span><span class="ruby-operator">::</span><span class="ruby-constant">PKey</span><span class="ruby-operator">::</span><span class="ruby-constant">DSAError</span>, <span class="ruby-value str">&quot;bad sig size&quot;</span>
+117:         <span class="ruby-keyword kw">end</span>
+118: 
+119:         <span class="ruby-identifier">sig_r</span> = <span class="ruby-value str">&quot;\0&quot;</span> <span class="ruby-operator">*</span> ( <span class="ruby-value">20</span> <span class="ruby-operator">-</span> <span class="ruby-identifier">sig_r</span>.<span class="ruby-identifier">length</span> ) <span class="ruby-operator">+</span> <span class="ruby-identifier">sig_r</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">sig_r</span>.<span class="ruby-identifier">length</span> <span class="ruby-operator">&lt;</span> <span class="ruby-value">20</span>
+120:         <span class="ruby-identifier">sig_s</span> = <span class="ruby-value str">&quot;\0&quot;</span> <span class="ruby-operator">*</span> ( <span class="ruby-value">20</span> <span class="ruby-operator">-</span> <span class="ruby-identifier">sig_s</span>.<span class="ruby-identifier">length</span> ) <span class="ruby-operator">+</span> <span class="ruby-identifier">sig_s</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">sig_s</span>.<span class="ruby-identifier">length</span> <span class="ruby-operator">&lt;</span> <span class="ruby-value">20</span>
+121: 
+122:         <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">sig_r</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">sig_s</span>
+123:       <span class="ruby-keyword kw">end</span></pre>
+</body>
+</html>

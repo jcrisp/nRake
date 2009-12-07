@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Converts this version object to a string, where each of the three version components are joined by the '.' character. E.g., 2.0.0.
+full_name: Net::SSH::Version#to_s
+is_singleton: false
+name: to_s
+params: ()
+visibility: public

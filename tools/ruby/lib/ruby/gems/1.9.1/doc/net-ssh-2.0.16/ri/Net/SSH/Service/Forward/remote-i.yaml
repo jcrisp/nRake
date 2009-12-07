@@ -1,0 +1,19 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: 
+- !ruby/object:RDoc::RI::AliasName 
+  name: remote_to
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Requests that all connections on the given remote-port be forwarded via the local host to the given port/host. The last argument describes the bind address on the remote host, and defaults to 127.0.0.1.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: This method will return immediately, but the port will not actually be forwarded immediately. If the remote server is not able to begin the listener for this request, an exception will be raised asynchronously.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "If you want to know when the connection is active, it will show up in the #active_remotes list. If you want to block until the port is active, you could do something like this:"
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  ssh.forward.remote(80, &quot;www.google.com&quot;, 1234, &quot;0.0.0.0&quot;)\n  ssh.loop { !ssh.forward.active_remotes.include?([1234, &quot;0.0.0.0&quot;]) }\n"
+full_name: Net::SSH::Service::Forward#remote
+is_singleton: false
+name: remote
+params: (port, host, remote_port, remote_host="127.0.0.1")
+visibility: public

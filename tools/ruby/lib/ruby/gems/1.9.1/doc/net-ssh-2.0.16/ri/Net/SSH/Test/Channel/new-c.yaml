@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Creates a new Test::Channel instance on top of the given <tt>script</tt> (which must be a Net::SSH::Test::Script instance).
+full_name: Net::SSH::Test::Channel::new
+is_singleton: true
+name: new
+params: (script)
+visibility: public

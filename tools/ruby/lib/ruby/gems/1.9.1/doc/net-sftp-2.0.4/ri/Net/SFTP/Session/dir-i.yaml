@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns a Net::SFTP::Operations::Dir instance, which can be used to conveniently iterate over and search directories on the remote server.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: " sftp.dir.glob(&quot;/base/path&quot;, &quot;<b>/*</b>/*.rb&quot;) do |entry|\n   p entry.name\n end\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: See Net::SFTP::Operations::Dir for a more detailed discussion of how to use this.
+full_name: Net::SFTP::Session#dir
+is_singleton: false
+name: dir
+params: ()
+visibility: public

@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Invokes the #on_extended_data callback when the server sends extended data to the channel. This will reduce the available window size on the local end. The callback is invoked with the channel, type, and data."
+full_name: Net::SSH::Connection::Channel#do_extended_data
+is_singleton: false
+name: do_extended_data
+params: (type, data)
+visibility: public

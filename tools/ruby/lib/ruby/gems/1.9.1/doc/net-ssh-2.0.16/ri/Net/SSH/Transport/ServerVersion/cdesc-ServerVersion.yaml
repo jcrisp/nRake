@@ -1,0 +1,37 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: 
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: Any header text sent by the server prior to sending the version.
+  name: header
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The version string reported by the server.
+  name: version
+  rw: R
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Negotiates the SSH protocol version and trades information about server and client. This is never used directly--it is always called by the transport layer as part of the initialization process of the transport layer.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Note that this class also encapsulates the negotiated version, and acts as the authoritative reference for any queries regarding the version in effect.
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The SSH version string as reported by Net::SSH
+  name: PROTO_VERSION
+  value: "\"SSH-2.0-Ruby/Net::SSH_#{Net::SSH::Version::CURRENT} #{RUBY_PLATFORM}\""
+full_name: Net::SSH::Transport::ServerVersion
+includes: 
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: Loggable
+instance_methods: []
+
+name: ServerVersion
+superclass: Object

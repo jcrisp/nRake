@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Sets the given property to the given name. This allows Upload instances to store their own state when used as part of a state machine.
+full_name: Net::SFTP::Operations::Upload#[]=
+is_singleton: false
+name: "[]="
+params: (name, value)
+visibility: public

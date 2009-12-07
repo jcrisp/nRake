@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns <tt>true</tt> if the argument refers to a directory on the remote host.
+full_name: Net::SFTP::Operations::FileFactory#directory?
+is_singleton: false
+name: directory?
+params: (path)
+visibility: public

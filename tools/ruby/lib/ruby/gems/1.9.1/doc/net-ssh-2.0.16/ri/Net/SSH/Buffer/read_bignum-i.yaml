@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Read a bignum (OpenSSL::BN) from the buffer, in SSH2 format. It is essentially just a string, which is reinterpreted to be a bignum in binary format.
+full_name: Net::SSH::Buffer#read_bignum
+is_singleton: false
+name: read_bignum
+params: ()
+visibility: public

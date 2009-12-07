@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Sends data to the channel's remote endpoint. This usually has the effect of sending the given string to the remote process' stdin stream. Note that it does not immediately send the data across the channel, but instead merely appends the given data to the channel's output buffer, preparatory to being packaged up and sent out the next time the connection is accepting data. (A connection might not be accepting data if, for instance, it has filled its data window and has not yet been resized by the remote end-point.)
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "This will raise an exception if the channel has previously declared that no more data will be sent (see #eof!)."
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  channel.send_data(&quot;the password\\n&quot;)\n"
+full_name: Net::SSH::Connection::Channel#send_data
+is_singleton: false
+name: send_data
+params: (data)
+visibility: public

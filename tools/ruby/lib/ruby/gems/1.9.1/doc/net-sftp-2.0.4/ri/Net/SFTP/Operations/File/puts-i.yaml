@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Writes each argument to the stream, appending a newline to any item that does not already end in a newline. Array arguments are flattened.
+full_name: Net::SFTP::Operations::File#puts
+is_singleton: false
+name: puts
+params: (*items)
+visibility: public

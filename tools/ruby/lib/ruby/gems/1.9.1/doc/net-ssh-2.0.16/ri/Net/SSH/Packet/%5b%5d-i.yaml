@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Access one of the auto-parsed fields by name. Raises an error if no element by the given name exists.
+full_name: Net::SSH::Packet#[]
+is_singleton: false
+name: "[]"
+params: (name)
+visibility: public

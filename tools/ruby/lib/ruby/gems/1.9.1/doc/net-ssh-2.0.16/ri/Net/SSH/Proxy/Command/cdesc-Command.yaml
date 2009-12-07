@@ -1,0 +1,32 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: 
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The command line for the session
+  name: command_line
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The command line template
+  name: command_line_template
+  rw: R
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "An implementation of a command proxy. To use it, instantiate it, then pass the instantiated object via the :proxy key to Net::SSH.start:"
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  require 'net/ssh/proxy/command'\n\n  proxy = Net::SSH::Proxy::Command.new('ssh relay nc %h %p')\n  Net::SSH.start('host', 'user', :proxy =&gt; proxy) do |ssh|\n    ...\n  end\n"
+constants: []
+
+full_name: Net::SSH::Proxy::Command
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: open
+name: Command
+superclass: Object

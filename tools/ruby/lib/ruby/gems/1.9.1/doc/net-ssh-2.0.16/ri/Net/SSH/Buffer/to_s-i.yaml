@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns a copy of the buffer's content.
+full_name: Net::SSH::Buffer#to_s
+is_singleton: false
+name: to_s
+params: ()
+visibility: public

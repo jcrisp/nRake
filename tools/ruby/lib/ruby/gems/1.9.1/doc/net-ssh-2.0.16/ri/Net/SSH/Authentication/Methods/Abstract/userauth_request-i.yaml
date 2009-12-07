@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Creates a new USERAUTH_REQUEST packet. The extra arguments on the end must be either boolean values or strings, and are tacked onto the end of the packet. The new packet is returned, ready for sending.
+full_name: Net::SSH::Authentication::Methods::Abstract#userauth_request
+is_singleton: false
+name: userauth_request
+params: (username, next_service, auth_method, *others)
+visibility: public

@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>new (Net::SSH::Authentication::Pageant::Socket)</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="../../../../../.././rdoc-style.css" type="text/css" media="screen" />
+</head>
+<body class="standalone-code">
+  <pre>    <span class="ruby-comment cmt"># File lib/net/ssh/authentication/pageant.rb, line 89</span>
+89:       <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">initialize</span>
+90:         <span class="ruby-ivar">@win</span> = <span class="ruby-constant">Win</span>.<span class="ruby-identifier">findWindow</span>(<span class="ruby-value str">&quot;Pageant&quot;</span>, <span class="ruby-value str">&quot;Pageant&quot;</span>)
+91: 
+92:         <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@win</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+93:           <span class="ruby-identifier">raise</span> <span class="ruby-constant">Net</span><span class="ruby-operator">::</span><span class="ruby-constant">SSH</span><span class="ruby-operator">::</span><span class="ruby-constant">Exception</span>,
+94:             <span class="ruby-value str">&quot;pageant process not running&quot;</span>
+95:         <span class="ruby-keyword kw">end</span>
+96: 
+97:         <span class="ruby-ivar">@res</span> = <span class="ruby-keyword kw">nil</span>
+98:         <span class="ruby-ivar">@pos</span> = <span class="ruby-value">0</span>
+99:       <span class="ruby-keyword kw">end</span></pre>
+</body>
+</html>

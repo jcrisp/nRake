@@ -1,0 +1,61 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: 
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The list of user key data that will be examined
+  name: key_data
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The list of user key files that will be examined
+  name: key_files
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The map of loaded identities
+  name: known_identities
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The map of options that were passed to the key-manager
+  name: options
+  rw: R
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: This class encapsulates all operations done by clients on a user's private keys. In practice, the client should never need a reference to a private key; instead, they grab a list of &quot;identities&quot; (public keys) that are available from the KeyManager, and then use the KeyManager to do various private key operations using those identities.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The KeyManager also uses the Agent class to encapsulate the ssh-agent. Thus, from a client's perspective it is completely hidden whether an identity comes from the ssh-agent or from a file on disk.
+constants: []
+
+full_name: Net::SSH::Authentication::KeyManager
+includes: 
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: Loggable
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: add
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: add_key_data
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: agent
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: clear!
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: each_identity
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: finish
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: sign
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: use_agent=
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: use_agent?
+name: KeyManager
+superclass: Object

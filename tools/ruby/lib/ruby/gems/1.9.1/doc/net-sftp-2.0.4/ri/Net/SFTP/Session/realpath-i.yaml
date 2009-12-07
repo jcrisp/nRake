@@ -1,0 +1,17 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Tries to canonicalize the given path, turning any given path into an absolute path. This is primarily useful for converting a path with &quot;..&quot; or &quot;.&quot; segments into an identical path without those segments. The answer will be in the response's :names attribute, as a one-element array.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  request = sftp.realpath(&quot;/path/../to/../directory&quot;).wait\n  puts request[:names].first.name\n"
+full_name: Net::SFTP::Session#realpath
+is_singleton: false
+name: realpath
+params: |
+  realpath(path) -> request
+  realpath(path) { |response| ... } -> request
+
+visibility: public

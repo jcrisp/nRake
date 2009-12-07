@@ -1,0 +1,41 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: 
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The underlying connection service instance that the port-forwarding services employ.
+  name: session
+  rw: R
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "This class implements various port forwarding services for use by Net::SSH clients. The Forward class should never need to be instantiated directly; instead, it should be accessed via the singleton instance returned by Connection::Session#forward:"
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  ssh.forward.local(1234, &quot;www.capify.org&quot;, 80)\n"
+constants: []
+
+full_name: Net::SSH::Service::Forward
+includes: 
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: Loggable
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: active_locals
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: active_remotes
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: agent
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: cancel_local
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: cancel_remote
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: local
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: remote
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: remote_to
+name: Forward
+superclass: Object

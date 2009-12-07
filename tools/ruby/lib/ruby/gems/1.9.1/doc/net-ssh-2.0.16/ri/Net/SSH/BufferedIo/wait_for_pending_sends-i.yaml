@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Calls #send_pending repeatedly, if necessary, blocking until the output buffer is empty."
+full_name: Net::SSH::BufferedIo#wait_for_pending_sends
+is_singleton: false
+name: wait_for_pending_sends
+params: ()
+visibility: public

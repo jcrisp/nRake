@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Packages the given query string and sends it to the pageant process via the Windows messaging subsystem. The result is cached, to be returned piece-wise when #read is called."
+full_name: Net::SSH::Authentication::Pageant::Socket#send_query
+is_singleton: false
+name: send_query
+params: (query)
+visibility: public

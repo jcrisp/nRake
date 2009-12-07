@@ -1,0 +1,17 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: This exception is raised when authentication fails (whether it be public key authentication, password authentication, or whatever).
+constants: []
+
+full_name: Net::SSH::AuthenticationFailed
+includes: []
+
+instance_methods: []
+
+name: AuthenticationFailed
+superclass: Net::SSH::Exception

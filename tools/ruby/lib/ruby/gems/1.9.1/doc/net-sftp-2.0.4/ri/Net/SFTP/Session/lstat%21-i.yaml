@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Identical to the #lstat method, but blocks until the server responds. It will raise a StatusException if the request was unsuccessful. Otherwise, it will return the attribute object describing the path."
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  puts sftp.lstat!(&quot;/path/to/file&quot;).permissions\n"
+full_name: Net::SFTP::Session#lstat!
+is_singleton: false
+name: lstat!
+params: (path, flags=nil, &callback)
+visibility: public

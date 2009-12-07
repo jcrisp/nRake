@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Requests a rekey operation, and blocks until the operation completes. If a rekey is already pending, this returns immediately, having no effect.
+full_name: Net::SSH::Transport::Session#rekey!
+is_singleton: false
+name: rekey!
+params: ()
+visibility: public

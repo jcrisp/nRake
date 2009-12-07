@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns true if the algorithms have been negotiated at all.
+full_name: Net::SSH::Transport::Algorithms#initialized?
+is_singleton: false
+name: initialized?
+params: ()
+visibility: public

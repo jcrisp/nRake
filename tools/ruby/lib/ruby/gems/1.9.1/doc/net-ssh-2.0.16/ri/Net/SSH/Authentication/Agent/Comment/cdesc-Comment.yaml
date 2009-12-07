@@ -1,0 +1,19 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: 
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  name: comment
+  rw: RW
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: A simple module for extending keys, to allow comments to be specified for them.
+constants: []
+
+full_name: Net::SSH::Authentication::Agent::Comment
+includes: []
+
+instance_methods: []
+
+name: Comment

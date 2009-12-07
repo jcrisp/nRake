@@ -1,0 +1,84 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: 
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The underlying socket being used to communicate with the SSH agent.
+  name: socket
+  rw: R
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: connect
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: This class implements a simple client for the ssh-agent protocol. It does not implement any specific protocol, but instead copies the behavior of the ssh-agent functions in the OpenSSH library (3.8).
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: This means that although it behaves like a SSH1 client, it also has some SSH2 functionality (like signing data).
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: SSH2_AGENT_REQUEST_VERSION
+  value: "1"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: SSH2_AGENT_REQUEST_IDENTITIES
+  value: "11"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: SSH2_AGENT_IDENTITIES_ANSWER
+  value: "12"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: SSH2_AGENT_SIGN_REQUEST
+  value: "13"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: SSH2_AGENT_SIGN_RESPONSE
+  value: "14"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: SSH2_AGENT_FAILURE
+  value: "30"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: SSH2_AGENT_VERSION_RESPONSE
+  value: "103"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: SSH_COM_AGENT2_FAILURE
+  value: "102"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: SSH_AGENT_REQUEST_RSA_IDENTITIES
+  value: "1"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: SSH_AGENT_RSA_IDENTITIES_ANSWER1
+  value: "2"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: SSH_AGENT_RSA_IDENTITIES_ANSWER2
+  value: "5"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: SSH_AGENT_FAILURE
+  value: "5"
+full_name: Net::SSH::Authentication::Agent
+includes: 
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: Loggable
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: close
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: connect!
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: identities
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: negotiate!
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: sign
+name: Agent
+superclass: Object

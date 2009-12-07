@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Create a new Version object with the given components.
+full_name: Net::SSH::Version::new
+is_singleton: true
+name: new
+params: (major, minor, tiny)
+visibility: public

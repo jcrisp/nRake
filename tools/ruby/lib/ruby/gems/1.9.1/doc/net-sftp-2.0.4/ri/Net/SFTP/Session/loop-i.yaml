@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Runs the SSH event loop while the given block returns true. This lets you set up a state machine and then &quot;fire it off&quot;. If you do not specify a block, the event loop will run for as long as there are any pending SFTP requests. This makes it easy to do thing like this:"
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  sftp.remove(&quot;/path/to/file&quot;)\n  sftp.loop\n"
+full_name: Net::SFTP::Session#loop
+is_singleton: false
+name: loop
+params: (&block)
+visibility: public

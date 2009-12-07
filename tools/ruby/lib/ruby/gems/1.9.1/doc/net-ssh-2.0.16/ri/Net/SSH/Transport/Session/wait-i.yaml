@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: ""
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Waits (blocks) until the given block returns true. If no block is given, this just waits long enough to see if there are any pending packets. Any packets read are enqueued (see #push)."
+full_name: Net::SSH::Transport::Session#wait
+is_singleton: false
+name: wait
+params: () {|| ...}
+visibility: public

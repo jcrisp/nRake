@@ -1,0 +1,17 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Attempts to open a directory on the remote host for reading. Once the handle is obtained, directory entries may be retrieved using the #readdir method. The method returns immediately with a Request object. If a block is given, it will be invoked when the server responds."
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  sftp.opendir(&quot;/path/to/directory&quot;) do |response|\n    raise &quot;fail!&quot; unless response.ok?\n    sftp.close(response[:handle])\n  end\n  sftp.loop\n"
+full_name: Net::SFTP::Session#opendir
+is_singleton: false
+name: opendir
+params: |
+  opendir(path) -> request
+  opendir(path) { |response| ... } -> request
+
+visibility: public

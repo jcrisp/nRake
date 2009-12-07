@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Read a single byte and convert it into a boolean, using 'C' rules (i.e., zero is false, non-zero is true).
+full_name: Net::SSH::Buffer#read_bool
+is_singleton: false
+name: read_bool
+params: ()
+visibility: public

@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Parses the given FXP_ATTRS packet and returns a hash with one key, :attrs, which references an Attributes object.
+full_name: Net::SFTP::Protocol::V01::Base#parse_attrs_packet
+is_singleton: false
+name: parse_attrs_packet
+params: (packet)
+visibility: public

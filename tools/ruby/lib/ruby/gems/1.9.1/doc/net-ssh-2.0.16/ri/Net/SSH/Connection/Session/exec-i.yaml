@@ -1,0 +1,18 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "A convenience method for executing a command and interacting with it. If no block is given, all output is printed via $stdout and $stderr. Otherwise, the block is called for each data and extended data packet, with three arguments: the channel object, a symbol indicating the data type (:stdout or :stderr), and the data (as a string)."
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Note that this method returns immediately, and requires an event loop (see Session#loop) in order for the command to actually execute.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "This is effectively identical to calling #open_channel, and then Net::SSH::Connection::Channel#exec, and then setting up the channel callbacks. However, for most uses, this will be sufficient."
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  ssh.exec &quot;grep something /some/files&quot; do |ch, stream, data|\n    if stream == :stderr\n      puts &quot;ERROR: #{data}&quot;\n    else\n      puts data\n    end\n  end\n"
+full_name: Net::SSH::Connection::Session#exec
+is_singleton: false
+name: exec
+params: (command, &block)
+visibility: public

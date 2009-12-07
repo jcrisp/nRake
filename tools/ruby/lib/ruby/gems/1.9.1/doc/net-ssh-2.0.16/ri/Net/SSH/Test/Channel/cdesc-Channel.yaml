@@ -1,0 +1,60 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: 
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: Sets the local-id of this channel object (the id assigned by the client).
+  name: local_id
+  rw: W
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: Sets the remote-id of this channel object (the id assigned by the mock-server).
+  name: remote_id
+  rw: W
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The Net::SSH::Test::Script instance employed by this mock channel.
+  name: script
+  rw: R
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: A mock channel, used for scripting actions in tests. It wraps a Net::SSH::Test::Script instance, and delegates to it for the most part. This class has little real functionality on its own, but rather acts as a convenience for scripting channel-related activity for later comparison in a unit test.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  story do |session|\n    channel = session.opens_channel\n    channel.sends_exec &quot;ls&quot;\n    channel.gets_data &quot;result of ls&quot;\n    channel.gets_close\n    channel.sends_close\n  end\n"
+constants: []
+
+full_name: Net::SSH::Test::Channel
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: gets_close
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: gets_data
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: gets_eof
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: gets_exit_status
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: inject_remote_delay!
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: local_id
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: remote_id
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: sends_close
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: sends_data
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: sends_eof
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: sends_exec
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: sends_subsystem
+name: Channel
+superclass: Object

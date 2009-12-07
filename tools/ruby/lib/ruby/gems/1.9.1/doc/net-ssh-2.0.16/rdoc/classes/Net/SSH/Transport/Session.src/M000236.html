@@ -1,0 +1,16 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>rekey_as_needed (Net::SSH::Transport::Session)</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="../../../../.././rdoc-style.css" type="text/css" media="screen" />
+</head>
+<body class="standalone-code">
+  <pre>     <span class="ruby-comment cmt"># File lib/net/ssh/transport/session.rb, line 135</span>
+135:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">rekey_as_needed</span>
+136:       <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">algorithms</span>.<span class="ruby-identifier">pending?</span>
+137:       <span class="ruby-identifier">socket</span>.<span class="ruby-identifier">if_needs_rekey?</span> { <span class="ruby-identifier">rekey!</span> }
+138:     <span class="ruby-keyword kw">end</span></pre>
+</body>
+</html>

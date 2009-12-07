@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Extend the default Net::SSH::Test::Packet constructor to also accept an optional block, which is used to finalize the initialization of the packet when #process is first called."
+full_name: Net::SSH::Test::LocalPacket::new
+is_singleton: true
+name: new
+params: (type, *args, &block)
+visibility: public

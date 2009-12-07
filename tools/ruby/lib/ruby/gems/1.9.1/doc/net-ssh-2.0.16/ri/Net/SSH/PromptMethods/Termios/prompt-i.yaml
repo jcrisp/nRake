@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Displays the prompt to $stdout. If <tt>echo</tt> is false, the Termios library will be used to disable keystroke echoing for the duration of this method.
+full_name: Net::SSH::PromptMethods::Termios#prompt
+is_singleton: false
+name: prompt
+params: (prompt, echo=true)
+visibility: public

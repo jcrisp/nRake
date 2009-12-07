@@ -1,0 +1,98 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: 
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The SFTP file handle object that this object wraps
+  name: handle
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The SFTP file handle object that this object wraps
+  name: handle
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The current position within the remote file
+  name: pos
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The current position within the remote file
+  name: pos
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: A reference to the Net::SFTP::Session instance that drives this wrapper
+  name: sftp
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: A reference to the Net::SFTP::Session instance that drives this wrapper
+  name: sftp
+  rw: R
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: A wrapper around an SFTP file handle, that exposes an IO-like interface for interacting with the remote file. All operations are synchronous (blocking), making this a very convenient way to deal with remote files.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "A wrapper is usually created via the Net::SFTP::Session#file factory:"
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  file = sftp.file.open(&quot;/path/to/remote&quot;)\n  puts file.gets\n  file.close\n"
+constants: []
+
+full_name: Net::SFTP::Operations::File
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: close
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: close
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: eof?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: eof?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: gets
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: gets
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: pos=
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: pos=
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: print
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: print
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: puts
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: puts
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: read
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: read
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: readline
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: readline
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: stat
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: stat
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: write
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: write
+name: File
+superclass: Object

@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Writes each argument to the buffer as a bignum (SSH2-style). No checking is done to ensure that the arguments are, in fact, bignums. Does not alter the read position. Returns the buffer object.
+full_name: Net::SSH::Buffer#write_bignum
+is_singleton: false
+name: write_bignum
+params: (*n)
+visibility: public

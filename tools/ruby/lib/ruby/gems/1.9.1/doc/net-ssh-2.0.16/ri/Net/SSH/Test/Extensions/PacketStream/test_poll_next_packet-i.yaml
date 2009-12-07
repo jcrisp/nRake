@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The testing version of Net::SSH::Transport::PacketStream#poll_next_packet. Reads the next available packet from the IO object and returns it.
+full_name: Net::SSH::Test::Extensions::PacketStream#test_poll_next_packet
+is_singleton: false
+name: test_poll_next_packet
+params: ()
+visibility: public

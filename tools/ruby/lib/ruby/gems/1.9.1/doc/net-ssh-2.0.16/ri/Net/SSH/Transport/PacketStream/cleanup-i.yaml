@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Performs any pending cleanup necessary on the IO and its associated state objects. (See State#cleanup).
+full_name: Net::SSH::Transport::PacketStream#cleanup
+is_singleton: false
+name: cleanup
+params: ()
+visibility: public

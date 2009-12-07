@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Alias for #remote"
+full_name: Net::SSH::Service::Forward#remote_to
+is_singleton: false
+name: remote_to
+params: (port, host, remote_port, remote_host="127.0.0.1")
+visibility: public

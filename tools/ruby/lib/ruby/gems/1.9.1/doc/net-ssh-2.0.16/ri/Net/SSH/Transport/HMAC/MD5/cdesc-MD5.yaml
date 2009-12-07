@@ -1,0 +1,17 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The MD5 HMAC algorithm.
+constants: []
+
+full_name: Net::SSH::Transport::HMAC::MD5
+includes: []
+
+instance_methods: []
+
+name: MD5
+superclass: Net::SSH::Transport::HMAC::Abstract

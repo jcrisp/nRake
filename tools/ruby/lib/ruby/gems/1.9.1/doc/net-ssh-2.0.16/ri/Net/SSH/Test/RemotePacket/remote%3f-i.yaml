@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns <tt>true</tt>; this is a remote packet.
+full_name: Net::SSH::Test::RemotePacket#remote?
+is_singleton: false
+name: remote?
+params: ()
+visibility: public

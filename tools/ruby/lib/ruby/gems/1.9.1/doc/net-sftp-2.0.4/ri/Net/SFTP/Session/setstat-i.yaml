@@ -1,0 +1,21 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: This method may be used to set file metadata (such as permissions, or user/group information) on a remote file. The exact metadata that may be tweaked is dependent on the SFTP protocol version in use, but in general you may set at least the permissions, user, and group. (See Protocol::V01::Attributes, Protocol::V04::Attributes, and Protocol::V06::Attributes for the full lists of attributes that may be set for the different protocols.)
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The <tt>attrs</tt> parameter is a hash, where the keys are symbols identifying the attributes to set.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The method returns immediately with a Request object. If a block is given, it will be invoked when the server responds.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  request = sftp.setstat(&quot;/path/to/file&quot;, :permissions =&gt; 0644)\n  request.wait\n  puts &quot;success: #{request.response.ok?}&quot;\n"
+full_name: Net::SFTP::Session#setstat
+is_singleton: false
+name: setstat
+params: |
+  setstat(path, attrs) -> request
+  setstat(path, attrs) { |response| ... } -> request
+
+visibility: public

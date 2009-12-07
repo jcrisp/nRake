@@ -1,0 +1,88 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: 
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The map of options that were used to initialize this instance.
+  name: options
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: "The collection of custom properties for this instance. (See #[] and #[]=)."
+  name: properties
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The underlying transport layer abstraction (see Net::SSH::Transport::Session).
+  name: transport
+  rw: R
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "A session class representing the connection service running on top of the SSH transport layer. It manages the creation of channels (see #open_channel), and the dispatching of messages to the various channels. It also encapsulates the SSH event loop (via #loop and #process), and serves as a central point-of-reference for all SSH-related services (e.g. port forwarding, SFTP, SCP, etc.)."
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: You will rarely (if ever) need to instantiate this class directly; rather, you'll almost always use Net::SSH.start to initialize a new network connection, authenticate a user, and return a new connection session, all in one call.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  Net::SSH.start(&quot;localhost&quot;, &quot;user&quot;) do |ssh|\n    # 'ssh' is an instance of Net::SSH::Connection::Session\n    ssh.exec! &quot;/etc/init.d/some_process start&quot;\n  end\n"
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: MAP
+  value: Constants.constants.inject({}) do |memo, name|         value = const_get(name)         next unless Integer === value         memo[value] = name.downcase.to_sym
+full_name: Net::SSH::Connection::Session
+includes: 
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: Constants
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: Loggable
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: "[]"
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: "[]="
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: busy?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: close
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: closed?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: exec
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: exec!
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: forward
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: host
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: listen_to
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: loop
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: loop_forever
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: on_global_request
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: on_open_channel
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: open_channel
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: postprocess
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: preprocess
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: process
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: send_global_request
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: send_message
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: shutdown!
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: stop_listening_to
+name: Session
+superclass: Object

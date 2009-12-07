@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Fetch an OpenSSL key instance by its SSH name. It will be a new, empty key of the given type.
+full_name: Net::SSH::KeyFactory::get
+is_singleton: true
+name: get
+params: (name)
+visibility: public

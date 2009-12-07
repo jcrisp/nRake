@@ -1,0 +1,51 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The Net::SFTP::Session#block operation, implemented in version 6 of the protocol, understands these constants for the <tt>mask</tt> parameter.
+- !ruby/struct:RDoc::Markup::Flow::RULE 
+  :width: 1
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The Net::SFTP::Session#block operation, implemented in version 6 of the protocol, understands these constants for the <tt>mask</tt> parameter.
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: READ
+  value: OpenFlags::FV5::READ_LOCK
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: WRITE
+  value: OpenFlags::FV5::WRITE_LOCK
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: DELETE
+  value: OpenFlags::FV5::DELETE_LOCK
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: ADVISORY
+  value: OpenFlags::FV6::ADVISORY_LOCK
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: READ
+  value: OpenFlags::FV5::READ_LOCK
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: WRITE
+  value: OpenFlags::FV5::WRITE_LOCK
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: DELETE
+  value: OpenFlags::FV5::DELETE_LOCK
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: ADVISORY
+  value: OpenFlags::FV6::ADVISORY_LOCK
+full_name: Net::SFTP::Constants::LockTypes
+includes: []
+
+instance_methods: []
+
+name: LockTypes

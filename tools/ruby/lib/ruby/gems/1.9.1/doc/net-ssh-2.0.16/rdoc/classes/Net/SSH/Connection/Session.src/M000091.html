@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>exec (Net::SSH::Connection::Session)</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="../../../../.././rdoc-style.css" type="text/css" media="screen" />
+</head>
+<body class="standalone-code">
+  <pre>     <span class="ruby-comment cmt"># File lib/net/ssh/connection/session.rb, line 319</span>
+319:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">exec</span>(<span class="ruby-identifier">command</span>, <span class="ruby-operator">&amp;</span><span class="ruby-identifier">block</span>)
+320:       <span class="ruby-identifier">open_channel</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">channel</span><span class="ruby-operator">|</span>
+321:         <span class="ruby-identifier">channel</span>.<span class="ruby-identifier">exec</span>(<span class="ruby-identifier">command</span>) <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">ch</span>, <span class="ruby-identifier">success</span><span class="ruby-operator">|</span>
+322:           <span class="ruby-identifier">raise</span> <span class="ruby-node">&quot;could not execute command: #{command.inspect}&quot;</span> <span class="ruby-keyword kw">unless</span> <span class="ruby-identifier">success</span>
+323:           
+324:           <span class="ruby-identifier">channel</span>.<span class="ruby-identifier">on_data</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">ch2</span>, <span class="ruby-identifier">data</span><span class="ruby-operator">|</span>
+325:             <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">block</span>
+326:               <span class="ruby-identifier">block</span>.<span class="ruby-identifier">call</span>(<span class="ruby-identifier">ch2</span>, <span class="ruby-identifier">:stdout</span>, <span class="ruby-identifier">data</span>)
+327:             <span class="ruby-keyword kw">else</span>
+328:               <span class="ruby-identifier">$stdout</span>.<span class="ruby-identifier">print</span>(<span class="ruby-identifier">data</span>)
+329:             <span class="ruby-keyword kw">end</span>
+330:           <span class="ruby-keyword kw">end</span>
+331: 
+332:           <span class="ruby-identifier">channel</span>.<span class="ruby-identifier">on_extended_data</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">ch2</span>, <span class="ruby-identifier">type</span>, <span class="ruby-identifier">data</span><span class="ruby-operator">|</span>
+333:             <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">block</span>
+334:               <span class="ruby-identifier">block</span>.<span class="ruby-identifier">call</span>(<span class="ruby-identifier">ch2</span>, <span class="ruby-identifier">:stderr</span>, <span class="ruby-identifier">data</span>)
+335:             <span class="ruby-keyword kw">else</span>
+336:               <span class="ruby-identifier">$stderr</span>.<span class="ruby-identifier">print</span>(<span class="ruby-identifier">data</span>)
+337:             <span class="ruby-keyword kw">end</span>
+338:           <span class="ruby-keyword kw">end</span>
+339:         <span class="ruby-keyword kw">end</span>
+340:       <span class="ruby-keyword kw">end</span>
+341:     <span class="ruby-keyword kw">end</span></pre>
+</body>
+</html>

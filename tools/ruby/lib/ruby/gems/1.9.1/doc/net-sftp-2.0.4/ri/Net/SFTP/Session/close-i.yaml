@@ -1,0 +1,17 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Closes an open handle, whether obtained via #open, or #opendir. Returns immediately with a Request object. If a block is given, it will be invoked when the server responds."
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  sftp.open(&quot;/path/to/file&quot;) do |response|\n    raise &quot;fail!&quot; unless response.ok?\n    sftp.close(response[:handle])\n  end\n  sftp.loop\n"
+full_name: Net::SFTP::Session#close
+is_singleton: false
+name: close
+params: |
+  close(handle) -> request
+  close(handle) { |response| ... } -> request
+
+visibility: public

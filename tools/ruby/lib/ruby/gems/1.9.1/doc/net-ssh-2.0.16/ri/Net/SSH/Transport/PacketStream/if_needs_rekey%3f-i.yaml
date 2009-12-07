@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: ""
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: If the IO object requires a rekey operation (as indicated by either its client or server state objects, see State#needs_rekey?), this will yield. Otherwise, this does nothing.
+full_name: Net::SSH::Transport::PacketStream#if_needs_rekey?
+is_singleton: false
+name: if_needs_rekey?
+params: () {|| ...}
+visibility: public

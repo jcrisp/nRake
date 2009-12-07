@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Does nothing. Returns nil.
+full_name: Net::SSH::Transport::IdentityCipher::iv=
+is_singleton: true
+name: iv=
+params: (v)
+visibility: public

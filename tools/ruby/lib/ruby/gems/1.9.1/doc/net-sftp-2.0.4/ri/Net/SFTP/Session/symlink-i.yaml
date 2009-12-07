@@ -1,0 +1,17 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Attempts to create a symlink to <tt>path</tt> at <tt>target</tt>. This operation is only available in protocol versions 3, 4, and 5, but the Net::SFTP library mimics the symlink behavior in protocol version 6 using the #link method, so it is safe to use this method in protocol version 6."
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  sftp.symlink(&quot;/path/to/file&quot;, &quot;/path/to/symlink&quot;).wait\n"
+full_name: Net::SFTP::Session#symlink
+is_singleton: false
+name: symlink
+params: |
+  symlink(path, target) -> request
+  symlink(path, target) { |response| ... } -> request
+
+visibility: public

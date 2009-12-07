@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: Net::SSH::Transport::HMAC::Abstract#key_length
+is_singleton: false
+name: key_length
+params: ()
+visibility: public

@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Resets the pointer to the start of the buffer. Subsequent reads will begin at position 0.
+full_name: Net::SSH::Buffer#reset!
+is_singleton: false
+name: reset!
+params: ()
+visibility: public

@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Blocks until a new packet is available to be read, and returns that packet. See #poll_message."
+full_name: Net::SSH::Transport::Session#next_message
+is_singleton: false
+name: next_message
+params: ()
+visibility: public

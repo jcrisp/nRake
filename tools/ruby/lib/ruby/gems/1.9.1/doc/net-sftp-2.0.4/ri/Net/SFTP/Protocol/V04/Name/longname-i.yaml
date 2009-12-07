@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns a string representing this file, in a format similar to that used by the unix &quot;ls&quot; utility.
+full_name: Net::SFTP::Protocol::V04::Name#longname
+is_singleton: false
+name: longname
+params: ()
+visibility: public

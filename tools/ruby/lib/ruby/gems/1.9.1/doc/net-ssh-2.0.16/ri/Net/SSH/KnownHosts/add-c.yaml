@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Looks in all user known host files (see KnownHosts.hostfiles) and tries to add an entry for the given host and key to the first file it is able to.
+full_name: Net::SSH::KnownHosts::add
+is_singleton: true
+name: add
+params: (host, key, options={})
+visibility: public

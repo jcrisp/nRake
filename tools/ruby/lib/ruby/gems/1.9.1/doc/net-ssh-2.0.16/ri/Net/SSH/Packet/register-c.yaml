@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Register a new packet type that should be recognized and auto-parsed by Net::SSH::Packet. Note that any packet type that is not preregistered will not be autoparsed.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The <tt>pairs</tt> parameter must be either empty, or an array of two-element tuples, where the first element of each tuple is the name of the field, and the second is the type.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  register DISCONNECT, [:reason_code, :long], [:description, :string], [:language, :string]\n"
+full_name: Net::SSH::Packet::register
+is_singleton: true
+name: register
+params: (type, *pairs)
+visibility: public

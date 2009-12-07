@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Writes the given data to the stream, incrementing the file position and returning the number of bytes written.
+full_name: Net::SFTP::Operations::File#write
+is_singleton: false
+name: write
+params: (data)
+visibility: public

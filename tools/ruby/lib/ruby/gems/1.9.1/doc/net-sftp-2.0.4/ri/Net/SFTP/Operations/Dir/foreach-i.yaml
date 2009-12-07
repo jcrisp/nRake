@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: entry
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Calls the block once for each entry in the named directory on the remote server. Yields a Name object to the block, rather than merely the name of the entry.
+full_name: Net::SFTP::Operations::Dir#foreach
+is_singleton: false
+name: foreach
+params: (path) {|entry| ...}
+visibility: public

@@ -1,0 +1,95 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: 
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The numeric code, one of the FX_* constants
+  name: code
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The numeric code, one of the FX_* constants
+  name: code
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: A hash of request-specific data, such as a file handle or attribute information
+  name: data
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: A hash of request-specific data, such as a file handle or attribute information
+  name: data
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The textual message for this response (possibly blank)
+  name: message
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The textual message for this response (possibly blank)
+  name: message
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The request object that this object is in response to
+  name: request
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The request object that this object is in response to
+  name: request
+  rw: R
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Encapsulates a response from the remote server, to a specific client request. Response objects are passed as parameters to callbacks when you are performing asynchronous operations; when you call Net::SFTP::Request#wait, you can get the corresponding response object via Net::SFTP::Request#response.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  sftp.open(&quot;/path/to/file&quot;) do |response|\n    p response.ok?\n    p response[:handle]\n  end\n\n  sftp.loop\n"
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: MAP
+  value: constants.inject({}) do |memo, name|       next memo unless name =~ /^FX_(.*)/       memo[const_get(name)] = $1.downcase.tr("_", " ")
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: MAP
+  value: constants.inject({}) do |memo, name|       next memo unless name =~ /^FX_(.*)/       memo[const_get(name)] = $1.downcase.tr("_", " ")
+full_name: Net::SFTP::Response
+includes: 
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: Net::SFTP::Constants::StatusCodes
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: Net::SFTP::Constants::StatusCodes
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: "[]"
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: "[]"
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: eof?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: eof?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: ok?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: ok?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: to_s
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: to_s
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: to_str
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: to_str
+name: Response
+superclass: Object

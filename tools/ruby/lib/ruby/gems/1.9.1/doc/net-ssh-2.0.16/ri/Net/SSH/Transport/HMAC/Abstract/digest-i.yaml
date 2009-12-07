@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Compute the HMAC digest for the given data string.
+full_name: Net::SSH::Transport::HMAC::Abstract#digest
+is_singleton: false
+name: digest
+params: (data)
+visibility: public

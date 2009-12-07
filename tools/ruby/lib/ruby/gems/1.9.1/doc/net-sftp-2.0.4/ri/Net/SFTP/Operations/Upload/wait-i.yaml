@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Blocks until the upload has completed.
+full_name: Net::SFTP::Operations::Upload#wait
+is_singleton: false
+name: wait
+params: ()
+visibility: public

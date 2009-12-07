@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "The fsetstat method is identical to the #setstat method, with the exception that it takes a <tt>handle</tt> as the first parameter, such as would be obtained via the #open or #opendir methods. (See the #setstat method for full documentation.)"
+full_name: Net::SFTP::Session#fsetstat
+is_singleton: false
+name: fsetstat
+params: (handle, attrs, &callback)
+visibility: public

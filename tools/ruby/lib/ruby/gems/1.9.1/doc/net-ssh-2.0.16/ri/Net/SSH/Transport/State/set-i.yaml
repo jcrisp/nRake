@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: A convenience method for quickly setting multiple values in a single command.
+full_name: Net::SSH::Transport::State#set
+is_singleton: false
+name: set
+params: (values)
+visibility: public

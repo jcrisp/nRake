@@ -1,0 +1,29 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Perform the key-exchange for the given session, with the given data. This method will return a hash consisting of the following keys:"
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: ":session_id"
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: ":server_key"
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: ":shared_secret"
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: ":hashing_algorithm"
+  type: :BULLET
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The caller is expected to be able to understand how to use these deliverables.
+full_name: Net::SSH::Transport::Kex::DiffieHellmanGroup1SHA1#exchange_keys
+is_singleton: false
+name: exchange_keys
+params: ()
+visibility: public

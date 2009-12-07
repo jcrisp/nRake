@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the empty string.
+full_name: Net::SSH::Transport::IdentityCipher::final
+is_singleton: true
+name: final
+params: ()
+visibility: public

@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>open (Net::SSH::Proxy::HTTP)</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="../../../../.././rdoc-style.css" type="text/css" media="screen" />
+</head>
+<body class="standalone-code">
+  <pre>    <span class="ruby-comment cmt"># File lib/net/ssh/proxy/http.rb, line 51</span>
+51:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">open</span>(<span class="ruby-identifier">host</span>, <span class="ruby-identifier">port</span>)
+52:       <span class="ruby-identifier">socket</span> = <span class="ruby-constant">TCPSocket</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">proxy_host</span>, <span class="ruby-identifier">proxy_port</span>)
+53:       <span class="ruby-identifier">socket</span>.<span class="ruby-identifier">write</span> <span class="ruby-node">&quot;CONNECT #{host}:#{port} HTTP/1.0\r\n&quot;</span>
+54: 
+55:       <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">options</span>[<span class="ruby-identifier">:user</span>]
+56:         <span class="ruby-identifier">credentials</span> = [<span class="ruby-node">&quot;#{options[:user]}:#{options[:password]}&quot;</span>].<span class="ruby-identifier">pack</span>(<span class="ruby-value str">&quot;m*&quot;</span>).<span class="ruby-identifier">gsub</span>(<span class="ruby-regexp re">/\s/</span>, <span class="ruby-value str">&quot;&quot;</span>)
+57:         <span class="ruby-identifier">socket</span>.<span class="ruby-identifier">write</span> <span class="ruby-node">&quot;Proxy-Authorization: Basic #{credentials}\r\n&quot;</span>
+58:       <span class="ruby-keyword kw">end</span>
+59: 
+60:       <span class="ruby-identifier">socket</span>.<span class="ruby-identifier">write</span> <span class="ruby-value str">&quot;\r\n&quot;</span>
+61: 
+62:       <span class="ruby-identifier">resp</span> = <span class="ruby-identifier">parse_response</span>(<span class="ruby-identifier">socket</span>)
+63: 
+64:       <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">socket</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">resp</span>[<span class="ruby-identifier">:code</span>] <span class="ruby-operator">==</span> <span class="ruby-value">200</span>
+65: 
+66:       <span class="ruby-identifier">socket</span>.<span class="ruby-identifier">close</span>
+67:       <span class="ruby-identifier">raise</span> <span class="ruby-constant">ConnectError</span>, <span class="ruby-identifier">resp</span>.<span class="ruby-identifier">inspect</span>
+68:     <span class="ruby-keyword kw">end</span></pre>
+</body>
+</html>

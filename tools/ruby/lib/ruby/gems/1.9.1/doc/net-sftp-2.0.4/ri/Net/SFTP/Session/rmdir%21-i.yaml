@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Identical to #rmdir, but blocks until the server responds. It will raise a StatusException if the request was unsuccessful. Otherwise, it will return the Response object for the request."
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  sftp.rmdir!(&quot;/path/to/directory&quot;)\n"
+full_name: Net::SFTP::Session#rmdir!
+is_singleton: false
+name: rmdir!
+params: (path, &callback)
+visibility: public

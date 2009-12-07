@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Scripts the sending of a channel data packet. <tt>channel</tt> must be a Net::SSH::Test::Channel object, and <tt>data</tt> is the (string) data to expect will be sent.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: This will typically be called via Net::SSH::Test::Channel#sends_data.
+full_name: Net::SSH::Test::Script#sends_channel_data
+is_singleton: false
+name: sends_channel_data
+params: (channel, data)
+visibility: public

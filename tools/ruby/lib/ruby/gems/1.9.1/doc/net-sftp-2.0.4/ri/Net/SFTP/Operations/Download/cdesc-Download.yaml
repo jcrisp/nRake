@@ -1,0 +1,181 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: 
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The destination of the download (the name of a file or directory on the local server, or an IO object)
+  name: local
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The destination of the download (the name of a file or directory on the local server, or an IO object)
+  name: local
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The hash of options that was given to this Download instance.
+  name: options
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The hash of options that was given to this Download instance.
+  name: options
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The properties hash for this object
+  name: properties
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The properties hash for this object
+  name: properties
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The source of the download (the name of a file or directory on the remote server)
+  name: remote
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The source of the download (the name of a file or directory on the remote server)
+  name: remote
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The SFTP session instance that drives this download.
+  name: sftp
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The SFTP session instance that drives this download.
+  name: sftp
+  rw: R
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: A general purpose downloader module for Net::SFTP. It can download files into IO objects, or directly to files on the local file system. It can even download entire directory trees via SFTP, and provides a flexible progress reporting mechanism.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "To download a single file from the remote server, simply specify both the remote and local paths:"
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  downloader = sftp.download(&quot;/path/to/remote.txt&quot;, &quot;/path/to/local.txt&quot;)\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "By default, this operates asynchronously, so if you want to block until the download finishes, you can use the 'bang' variant:"
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  sftp.download!(&quot;/path/to/remote.txt&quot;, &quot;/path/to/local.txt&quot;)\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Or, if you have multiple downloads that you want to run in parallel, you can employ the #wait method of the returned object:"
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  dls = %w(file1 file2 file3).map { |f| sftp.download(&quot;remote/#{f}&quot;, f) }\n  dls.each { |d| d.wait }\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "To download an entire directory tree, recursively, simply specify :recursive =&gt; true:"
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  sftp.download!(&quot;/path/to/remotedir&quot;, &quot;/path/to/local&quot;, :recursive =&gt; true)\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: This will download &quot;/path/to/remotedir&quot;, it's contents, it's subdirectories, and their contents, recursively, to &quot;/path/to/local&quot; on the local host. (If you specify :recursive =&gt; true and the source is not a directory, you'll get an error!)
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "If you want to pull the contents of a file on the remote server, and store the data in memory rather than immediately to disk, you can pass an IO object as the destination:"
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  require 'stringio'\n  io = StringIO.new\n  sftp.download!(&quot;/path/to/remote&quot;, io)\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: This will only work for single-file downloads. Trying to do so with :recursive =&gt; true will cause an error.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "The following options are supported:"
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: <tt>:progress</tt> - either a block or an object to act as a progress callback. See the discussion of &quot;progress monitoring&quot; below.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: <tt>:requests</tt> - the number of pending SFTP requests to allow at any given time. When downloading an entire directory tree recursively, this will default to 16. Setting this higher might improve throughput. Reducing it will reduce throughput.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: <tt>:read_size</tt> - the maximum number of bytes to read at a time from the source. Increasing this value might improve throughput. It defaults to 32,000 bytes.
+  type: :BULLET
+- !ruby/struct:RDoc::Markup::Flow::H 
+  :level: 2
+  :text: Progress Monitoring
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Sometimes it is desirable to track the progress of a download. There are two ways to do this: either using a callback block, or a special custom object."
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Using a block it's pretty straightforward:"
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  sftp.download!(&quot;remote&quot;, &quot;local&quot;) do |event, downloader, *args|\n    case event\n    when :open then\n      # args[0] : file metadata\n      puts &quot;starting download: #{args[0].remote} -&gt; #{args[0].local} (#{args[0].size} bytes}&quot;\n    when :get then\n      # args[0] : file metadata\n      # args[1] : byte offset in remote file\n      # args[2] : data that was received\n      puts &quot;writing #{args[2].length} bytes to #{args[0].local} starting at #{args[1]}&quot;\n    when :close then\n      # args[0] : file metadata\n      puts &quot;finished with #{args[0].remote}&quot;\n    when :mkdir then\n      # args[0] : local path name\n      puts &quot;creating directory #{args[0]}&quot;\n    when :finish then\n      puts &quot;all done!&quot;\n  end\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "However, for more complex implementations (e.g., GUI interfaces and such) a block can become cumbersome. In those cases, you can create custom handler objects that respond to certain methods, and then pass your handler to the downloader:"
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  class CustomHandler\n    def on_open(downloader, file)\n      puts &quot;starting download: #{file.remote} -&gt; #{file.local} (#{file.size} bytes)&quot;\n    end\n\n    def on_get(downloader, file, offset, data)\n      puts &quot;writing #{data.length} bytes to #{file.local} starting at #{offset}&quot;\n    end\n\n    def on_close(downloader, file)\n      puts &quot;finished with #{file.remote}&quot;\n    end\n\n    def on_mkdir(downloader, path)\n      puts &quot;creating directory #{path}&quot;\n    end\n\n    def on_finish(downloader)\n      puts &quot;all done!&quot;\n    end\n  end\n\n  sftp.download!(&quot;remote&quot;, &quot;local&quot;, :progress =&gt; CustomHandler.new)\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: If you omit any of those methods, the progress updates for those missing events will be ignored. You can create a catchall method named &quot;call&quot; for those, instead.
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: A simple struct for encapsulating information about a single remote file or directory that needs to be downloaded.
+  name: Entry
+  value: Struct.new(:remote, :local, :directory, :size, :handle, :offset, :sink)
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The default read size.
+  name: DEFAULT_READ_SIZE
+  value: 32_000
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: A simple struct for encapsulating information about a single remote file or directory that needs to be downloaded.
+  name: Entry
+  value: Struct.new(:remote, :local, :directory, :size, :handle, :offset, :sink)
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The default read size.
+  name: DEFAULT_READ_SIZE
+  value: 32_000
+full_name: Net::SFTP::Operations::Download
+includes: 
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: Net::SSH::Loggable
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: Net::SSH::Loggable
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: "[]"
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: "[]"
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: "[]="
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: "[]="
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: abort!
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: abort!
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: active?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: active?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: recursive?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: recursive?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: wait
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: wait
+name: Download
+superclass: Object

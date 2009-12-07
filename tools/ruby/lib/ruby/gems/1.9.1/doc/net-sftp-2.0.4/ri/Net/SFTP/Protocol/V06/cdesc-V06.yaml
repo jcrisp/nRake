@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+constants: []
+
+full_name: Net::SFTP::Protocol::V06
+includes: []
+
+instance_methods: []
+
+name: V06

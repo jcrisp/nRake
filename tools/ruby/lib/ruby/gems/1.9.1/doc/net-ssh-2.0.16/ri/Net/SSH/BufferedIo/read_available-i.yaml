@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Read up to <tt>length</tt> bytes from the input buffer. If <tt>length</tt> is nil, all available data is read from the buffer. (See #available.)"
+full_name: Net::SSH::BufferedIo#read_available
+is_singleton: false
+name: read_available
+params: (length=nil)
+visibility: public

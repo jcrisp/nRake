@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Identical to #readdir, but blocks until the server responds. It will raise a StatusException if the request was unsuccessful. Otherwise, it will return nil if there were no more names to read, or an array of name entries."
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  while (entries = sftp.readdir!(handle)) do\n    entries.each { |entry| puts(entry.name) }\n  end\n"
+full_name: Net::SFTP::Session#readdir!
+is_singleton: false
+name: readdir!
+params: (handle, &callback)
+visibility: public

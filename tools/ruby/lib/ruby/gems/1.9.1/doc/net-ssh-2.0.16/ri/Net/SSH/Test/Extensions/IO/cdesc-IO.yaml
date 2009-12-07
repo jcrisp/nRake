@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: An extension to the built-in ::IO class. Simply redefines IO.select so that it can be scripted in Net::SSH unit tests.
+constants: []
+
+full_name: Net::SSH::Test::Extensions::IO
+includes: []
+
+instance_methods: []
+
+name: IO

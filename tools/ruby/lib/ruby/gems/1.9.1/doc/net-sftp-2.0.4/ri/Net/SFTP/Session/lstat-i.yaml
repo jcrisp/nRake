@@ -1,0 +1,19 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "This method is identical to the #stat method, with the exception that it will not follow symbolic links (thus allowing you to stat the link itself, rather than what it refers to). The <tt>flags</tt> parameter is not used in SFTP protocol versions prior to 4, and will be ignored in those versions of the protocol that do not use it. For those that do, however, you may provide hints as to which file proprties you wish to query (e.g., if all you want is permissions, you could pass the Net::SFTP::Protocol::V04::Attributes::F_PERMISSIONS flag as the value for the <tt>flags</tt> parameter)."
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The method returns immediately with a Request object. If a block is given, it will be invoked when the server responds. The :attrs property of the response will contain an Attributes instance appropriate for the the protocol version (see Protocol::V01::Attributes, Protocol::V04::Attributes, and Protocol::V06::Attributes).
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  request = sftp.lstat(&quot;/path/to/file&quot;) do |response|\n    raise &quot;fail!&quot; unless response.ok?\n    puts &quot;permissions: %04o&quot; % response[:attrs].permissions\n  end\n  request.wait\n"
+full_name: Net::SFTP::Session#lstat
+is_singleton: false
+name: lstat
+params: |
+  lstat(path, flags=nil) -> request
+  lstat(path, flags=nil) { |response| ... } -> request
+
+visibility: public

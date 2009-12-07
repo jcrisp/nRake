@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>authenticate (Net::SSH::Authentication::Methods::Hostbased)</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="../../../../../.././rdoc-style.css" type="text/css" media="screen" />
+</head>
+<body class="standalone-code">
+  <pre>    <span class="ruby-comment cmt"># File lib/net/ssh/authentication/methods/hostbased.rb, line 14</span>
+14:           <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">authenticate</span>(<span class="ruby-identifier">next_service</span>, <span class="ruby-identifier">username</span>, <span class="ruby-identifier">password</span>=<span class="ruby-keyword kw">nil</span>)
+15:             <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">false</span> <span class="ruby-keyword kw">unless</span> <span class="ruby-identifier">key_manager</span>
+16: 
+17:             <span class="ruby-identifier">key_manager</span>.<span class="ruby-identifier">each_identity</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">identity</span><span class="ruby-operator">|</span>
+18:               <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">true</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">authenticate_with</span>(<span class="ruby-identifier">identity</span>, <span class="ruby-identifier">next_service</span>,
+19:                 <span class="ruby-identifier">username</span>, <span class="ruby-identifier">key_manager</span>)
+20:             <span class="ruby-keyword kw">end</span>
+21: 
+22:             <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">false</span>
+23:           <span class="ruby-keyword kw">end</span></pre>
+</body>
+</html>

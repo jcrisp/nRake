@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Instantiates a new downloader process on top of the given SFTP session. <tt>local</tt> is either an IO object that should receive the data, or a string identifying the target file or directory on the local host. <tt>remote</tt> is a string identifying the location on the remote host that the download should source.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "This will return immediately, and requires that the SSH event loop be run in order to effect the download. (See #wait.)"
+full_name: Net::SFTP::Operations::Download::new
+is_singleton: true
+name: new
+params: (sftp, local, remote, options={}, &progress)
+visibility: public

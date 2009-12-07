@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Tells the remote end of the channel that no more data is forthcoming from this end of the channel. The remote end may still send data.
+full_name: Net::SSH::Connection::Channel#eof!
+is_singleton: false
+name: eof!
+params: ()
+visibility: public

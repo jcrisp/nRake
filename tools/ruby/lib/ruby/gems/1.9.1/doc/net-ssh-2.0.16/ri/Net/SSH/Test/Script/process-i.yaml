@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Compare the given packet against the next event in the list. If there is no next event, an exception will be raised. This is called by Net::SSH::Test::Extensions::PacketStream#test_enqueue_packet.
+full_name: Net::SSH::Test::Script#process
+is_singleton: false
+name: process
+params: (packet)
+visibility: public

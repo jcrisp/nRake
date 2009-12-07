@@ -1,0 +1,17 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Creates the named directory on the remote server. If an attribute hash is given, it must map to the set of attributes supported by the version of the SFTP protocol in use. (See Protocol::V01::Attributes, Protocol::V04::Attributes, and Protocol::V06::Attributes.)
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  sftp.mkdir(&quot;/path/to/directory&quot;, :permissions =&gt; 0550).wait\n"
+full_name: Net::SFTP::Session#mkdir
+is_singleton: false
+name: mkdir
+params: |
+  mkdir(path, attrs={}) -> request
+  mkdir(path, attrs={}) { |response| ... } -> request
+
+visibility: public

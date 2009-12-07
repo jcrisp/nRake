@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Sends a FXP_SYMLINK packet to the server to request that a symlink at the given <tt>path</tt> be created, pointing at <tt>target</tt>..
+full_name: Net::SFTP::Protocol::V03::Base#symlink
+is_singleton: false
+name: symlink
+params: (path, target)
+visibility: public

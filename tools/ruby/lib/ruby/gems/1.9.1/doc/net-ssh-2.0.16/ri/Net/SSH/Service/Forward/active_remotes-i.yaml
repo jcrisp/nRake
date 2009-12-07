@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns all active forwarded remote ports. The returned value is an array of two-element tuples, where the first element is the port on the remote host and the second is the bind address.
+full_name: Net::SSH::Service::Forward#active_remotes
+is_singleton: false
+name: active_remotes
+params: ()
+visibility: public

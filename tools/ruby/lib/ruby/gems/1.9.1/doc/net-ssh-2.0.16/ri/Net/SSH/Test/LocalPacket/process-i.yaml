@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Called by Net::SSH::Test::Extensions::PacketStream#test_enqueue_packet to mimic remote processing of a locally-sent packet. It compares the packet it was given with the contents of this LocalPacket's data, to see if what was sent matches what was scripted. If it differs in any way, an exception is raised.
+full_name: Net::SSH::Test::LocalPacket#process
+is_singleton: false
+name: process
+params: (packet)
+visibility: public

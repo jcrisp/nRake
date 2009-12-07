@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>idle! (Net::SSH::Test::Extensions::PacketStream)</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="../../../../../.././rdoc-style.css" type="text/css" media="screen" />
+</head>
+<body class="standalone-code">
+  <pre>    <span class="ruby-comment cmt"># File lib/net/ssh/test/extensions.rb, line 56</span>
+56:       <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">idle!</span>
+57:         <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">false</span> <span class="ruby-keyword kw">unless</span> <span class="ruby-identifier">script</span>.<span class="ruby-identifier">next</span>(<span class="ruby-identifier">:first</span>)
+58: 
+59:         <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">script</span>.<span class="ruby-identifier">next</span>(<span class="ruby-identifier">:first</span>).<span class="ruby-identifier">remote?</span>
+60:           <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">string</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">script</span>.<span class="ruby-identifier">next</span>.<span class="ruby-identifier">to_s</span>
+61:           <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">pos</span> = <span class="ruby-identifier">pos</span>
+62:         <span class="ruby-keyword kw">end</span>
+63: 
+64:         <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">true</span>
+65:       <span class="ruby-keyword kw">end</span></pre>
+</body>
+</html>

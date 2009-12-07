@@ -1,0 +1,17 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The base exception class for the SFTP system.
+constants: []
+
+full_name: Net::SFTP::Exception
+includes: []
+
+instance_methods: []
+
+name: Exception
+superclass: RuntimeError

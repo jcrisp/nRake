@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Same as the #connect method, but blocks until the SFTP connection has been fully initialized."
+full_name: Net::SFTP::Session#connect!
+is_singleton: false
+name: connect!
+params: (&block)
+visibility: public

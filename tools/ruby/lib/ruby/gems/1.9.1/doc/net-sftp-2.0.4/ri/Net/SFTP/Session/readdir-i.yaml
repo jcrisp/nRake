@@ -1,0 +1,19 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Reads a set of entries from the given directory handle (which must have been obtained via #opendir). If the response is EOF, then there are no more entries in the directory. Otherwise, the entries will be in the :names property of the response:"
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  loop do\n    request = sftp.readdir(handle).wait\n    break if request.response.eof?\n    raise &quot;fail!&quot; unless request.response.ok?\n    request.response[:names].each do |entry|\n       puts entry.name\n    end\n  end\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: See also Protocol::V01::Name and Protocol::V04::Name for the specific properties of each individual entry (which vary based on the SFTP protocol version in use).
+full_name: Net::SFTP::Session#readdir
+is_singleton: false
+name: readdir
+params: |
+  readdir(handle) -> request
+  raeddir(handle) { |response| ... } -> request
+
+visibility: public

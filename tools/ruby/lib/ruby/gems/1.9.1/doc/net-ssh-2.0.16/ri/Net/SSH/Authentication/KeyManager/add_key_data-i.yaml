@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Add the given key_file to the list of keys that will be used.
+full_name: Net::SSH::Authentication::KeyManager#add_key_data
+is_singleton: false
+name: add_key_data
+params: (key_data_)
+visibility: public

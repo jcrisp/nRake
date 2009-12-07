@@ -1,0 +1,88 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: default_files
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: for
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: load
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: translate
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The Net::SSH::Config class is used to parse OpenSSH configuration files, and translates that syntax into the configuration syntax that Net::SSH understands. This lets Net::SSH scripts read their configuration (to some extent) from OpenSSH configuration files (~/.ssh/config, /etc/ssh_config, and so forth).
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Only a subset of OpenSSH configuration options are understood:"
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: Ciphers =&gt; maps to the :encryption option
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: Compression =&gt; :compression
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: CompressionLevel =&gt; :compression_level
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: ConnectTimeout =&gt; maps to the :timeout option
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: ForwardAgent =&gt; :forward_agent
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: GlobalKnownHostsFile =&gt; :global_known_hosts_file
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: HostBasedAuthentication =&gt; maps to the :auth_methods option
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: HostKeyAlgorithms =&gt; maps to :host_key option
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: HostKeyAlias =&gt; :host_key_alias
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: HostName =&gt; :host_name
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: IdentityFile =&gt; maps to the :keys option
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: Macs =&gt; maps to the :hmac option
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: PasswordAuthentication =&gt; maps to the :auth_methods option
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: Port =&gt; :port
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: PreferredAuthentications =&gt; maps to the :auth_methods option
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: ProxyCommand =&gt; maps to the :proxy option
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: RekeyLimit =&gt; :rekey_limit
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: User =&gt; :user
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: UserKnownHostsFile =&gt; :user_known_hosts_file
+  type: :BULLET
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Note that you will never need to use this class directly--you can control whether the OpenSSH configuration files are read by passing the :config option to Net::SSH.start. (They are, by default.)
+constants: []
+
+full_name: Net::SSH::Config
+includes: []
+
+instance_methods: []
+
+name: Config
+superclass: Object

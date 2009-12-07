@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Sends a new channel request with the given name. The extra <tt>data</tt> parameter must either be empty, or consist of an even number of arguments. See Net::SSH::Buffer.from for a description of their format. If a block is given, it is registered as a callback for a pending request, and the packet will be flagged so that the server knows a reply is required. If no block is given, the server will send no response to this request. Responses, where required, will cause the callback to be invoked with the channel as the first argument, and either true or false as the second, depending on whether the request succeeded or not. The meaning of &quot;success&quot; and &quot;failure&quot; in this context is dependent on the specific request that was sent.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  channel.send_channel_request &quot;shell&quot; do |ch, success|\n    if success\n      puts &quot;user shell started successfully&quot;\n    else\n      puts &quot;could not start user shell&quot;\n    end\n  end\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Most channel requests you'll want to send are already wrapped in more convenient helper methods (see #exec and #subsystem)."
+full_name: Net::SSH::Connection::Channel#send_channel_request
+is_singleton: false
+name: send_channel_request
+params: (request_name, *data, &callback)
+visibility: public

@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Sends a FXP_SETSTAT packet to the server, to update the attributes for the file at the given remote <tt>path</tt> (a string). The <tt>attrs</tt> parameter is a hash that defines the attributes to set.
+full_name: Net::SFTP::Protocol::V01::Base#setstat
+is_singleton: false
+name: setstat
+params: (path, attrs)
+visibility: public

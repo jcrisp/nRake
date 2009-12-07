@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The compressor object to use when compressing data. This takes into account the desired compression level.
+full_name: Net::SSH::Transport::State#compressor
+is_singleton: false
+name: compressor
+params: ()
+visibility: public

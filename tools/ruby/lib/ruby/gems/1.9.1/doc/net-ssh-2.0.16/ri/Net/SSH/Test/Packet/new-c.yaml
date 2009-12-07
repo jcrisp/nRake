@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Ceate a new packet of the given <tt>type</tt>, and with <tt>args</tt> being a list of data elements in the order expected for packets of the given <tt>type</tt> (see #types)."
+full_name: Net::SSH::Test::Packet::new
+is_singleton: true
+name: new
+params: (type, *args)
+visibility: public

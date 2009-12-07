@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>to_ssh (OpenSSL::BN)</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="../../.././rdoc-style.css" type="text/css" media="screen" />
+</head>
+<body class="standalone-code">
+  <pre>    <span class="ruby-comment cmt"># File lib/net/ssh/transport/openssl.rb, line 13</span>
+13:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">to_ssh</span>
+14:       <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">zero?</span>
+15:         <span class="ruby-keyword kw">return</span> [<span class="ruby-value">0</span>].<span class="ruby-identifier">pack</span>(<span class="ruby-value str">&quot;N&quot;</span>)
+16:       <span class="ruby-keyword kw">else</span>
+17:         <span class="ruby-identifier">buf</span> = <span class="ruby-identifier">to_s</span>(<span class="ruby-value">2</span>)
+18:         <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">buf</span>.<span class="ruby-identifier">getbyte</span>(<span class="ruby-value">0</span>)[<span class="ruby-value">7</span>] <span class="ruby-operator">==</span> <span class="ruby-value">1</span>
+19:           <span class="ruby-keyword kw">return</span> [<span class="ruby-identifier">buf</span>.<span class="ruby-identifier">length</span><span class="ruby-operator">+</span><span class="ruby-value">1</span>, <span class="ruby-value">0</span>, <span class="ruby-identifier">buf</span>].<span class="ruby-identifier">pack</span>(<span class="ruby-value str">&quot;NCA*&quot;</span>)
+20:         <span class="ruby-keyword kw">else</span>
+21:           <span class="ruby-keyword kw">return</span> [<span class="ruby-identifier">buf</span>.<span class="ruby-identifier">length</span>, <span class="ruby-identifier">buf</span>].<span class="ruby-identifier">pack</span>(<span class="ruby-value str">&quot;NA*&quot;</span>)
+22:         <span class="ruby-keyword kw">end</span>
+23:       <span class="ruby-keyword kw">end</span>
+24:     <span class="ruby-keyword kw">end</span></pre>
+</body>
+</html>

@@ -1,0 +1,124 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: 
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The hash of algorithms preferred by the client, which will be told to the server during algorithm negotiation.
+  name: algorithms
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The type of compression to use to compress packets being sent by the client.
+  name: compression_client
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The type of compression to use to decompress packets arriving from the server.
+  name: compression_server
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The type of the cipher to use to encrypt packets sent from the client to the server.
+  name: encryption_client
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The type of the cipher to use to decrypt packets arriving from the server.
+  name: encryption_server
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The type of HMAC to use to sign packets sent by the client.
+  name: hmac_client
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The type of HMAC to use to validate packets arriving from the server.
+  name: hmac_server
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The type of host key that will be used for this session.
+  name: host_key
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The kex algorithm to use settled on between the client and server.
+  name: kex
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The language that will be used in messages sent by the client.
+  name: language_client
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The language that will be used in messages sent from the server.
+  name: language_server
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The hash of options used to initialize this object
+  name: options
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The underlying transport layer session that supports this object
+  name: session
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The session-id for this session, as decided during the initial key exchange.
+  name: session_id
+  rw: R
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: allowed_packet?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Implements the higher-level logic behind an SSH key-exchange. It handles both the initial exchange, as well as subsequent re-exchanges (as needed). It also encapsulates the negotiation of the algorithms, and provides a single point of access to the negotiated algorithms.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: You will never instantiate or reference this directly. It is used internally by the transport layer.
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: Define the default algorithms, in order of preference, supported by Net::SSH.
+  name: ALGORITHMS
+  value: "{       :host_key    => %w(ssh-rsa ssh-dss),       :kex         => %w(diffie-hellman-group-exchange-sha1                          diffie-hellman-group1-sha1),       :encryption  => %w(aes128-cbc 3des-cbc blowfish-cbc cast128-cbc                          aes192-cbc aes256-cbc rijndael-cbc@lysator.liu.se                          idea-cbc none arcfour128 arcfour256),       :hmac        => %w(hmac-sha1 hmac-md5 hmac-sha1-96 hmac-md5-96 none),       :compression => %w(none zlib@openssh.com zlib),       :language    => %w()      }"
+full_name: Net::SSH::Transport::Algorithms
+includes: 
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: Constants
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: Loggable
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: "[]"
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: accept_kexinit
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: allow?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: initialized?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: pending?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: rekey!
+name: Algorithms
+superclass: Object

@@ -1,0 +1,17 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The SHA1 HMAC algorithm. This has a mac and key length of 20, and uses the SHA1 digest algorithm.
+constants: []
+
+full_name: Net::SSH::Transport::HMAC::SHA1
+includes: []
+
+instance_methods: []
+
+name: SHA1
+superclass: Net::SSH::Transport::HMAC::Abstract

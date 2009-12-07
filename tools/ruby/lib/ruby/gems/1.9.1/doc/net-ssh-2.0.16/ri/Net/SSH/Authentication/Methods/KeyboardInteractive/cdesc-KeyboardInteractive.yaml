@@ -1,0 +1,26 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Implements the &quot;keyboard-interactive&quot; SSH authentication method.
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: USERAUTH_INFO_REQUEST
+  value: "60"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: USERAUTH_INFO_RESPONSE
+  value: "61"
+full_name: Net::SSH::Authentication::Methods::KeyboardInteractive
+includes: 
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: Prompt
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: authenticate
+name: KeyboardInteractive
+superclass: Net::SSH::Authentication::Methods::Abstract

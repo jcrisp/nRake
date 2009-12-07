@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Creates a new instance of the testing key-exchange algorithm with the given arguments.
+full_name: Net::SSH::Test::Kex::new
+is_singleton: true
+name: new
+params: (algorithms, connection, data)
+visibility: public

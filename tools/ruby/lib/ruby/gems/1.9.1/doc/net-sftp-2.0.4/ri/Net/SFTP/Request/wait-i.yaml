@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Waits (blocks) until the server responds to this packet. If prior SFTP packets were also pending, they will be processed as well (since SFTP packets are processed in the order in which they are received by the server). Returns the request object itself.
+full_name: Net::SFTP::Request#wait
+is_singleton: false
+name: wait
+params: ()
+visibility: public

@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>postprocess (Net::SSH::Connection::Session)</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="../../../../.././rdoc-style.css" type="text/css" media="screen" />
+</head>
+<body class="standalone-code">
+  <pre>     <span class="ruby-comment cmt"># File lib/net/ssh/connection/session.rb, line 223</span>
+223:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">postprocess</span>(<span class="ruby-identifier">readers</span>, <span class="ruby-identifier">writers</span>)
+224:       <span class="ruby-constant">Array</span>(<span class="ruby-identifier">readers</span>).<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">reader</span><span class="ruby-operator">|</span>
+225:         <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">listeners</span>[<span class="ruby-identifier">reader</span>]
+226:           <span class="ruby-identifier">listeners</span>[<span class="ruby-identifier">reader</span>].<span class="ruby-identifier">call</span>(<span class="ruby-identifier">reader</span>)
+227:         <span class="ruby-keyword kw">else</span>
+228:           <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">reader</span>.<span class="ruby-identifier">fill</span>.<span class="ruby-identifier">zero?</span>
+229:             <span class="ruby-identifier">reader</span>.<span class="ruby-identifier">close</span>
+230:             <span class="ruby-identifier">stop_listening_to</span>(<span class="ruby-identifier">reader</span>)
+231:           <span class="ruby-keyword kw">end</span>
+232:         <span class="ruby-keyword kw">end</span>
+233:       <span class="ruby-keyword kw">end</span>
+234: 
+235:       <span class="ruby-constant">Array</span>(<span class="ruby-identifier">writers</span>).<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">writer</span><span class="ruby-operator">|</span>
+236:         <span class="ruby-identifier">writer</span>.<span class="ruby-identifier">send_pending</span>
+237:       <span class="ruby-keyword kw">end</span>
+238: 
+239:       <span class="ruby-identifier">transport</span>.<span class="ruby-identifier">rekey_as_needed</span>
+240: 
+241:       <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">true</span>
+242:     <span class="ruby-keyword kw">end</span></pre>
+</body>
+</html>

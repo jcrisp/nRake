@@ -1,0 +1,51 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Access control entry types, used from version 4 of the protocol, onward. See Net::SFTP::Protocol::V04::Attributes::ACL.
+- !ruby/struct:RDoc::Markup::Flow::RULE 
+  :width: 1
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Access control entry types, used from version 4 of the protocol, onward. See Net::SFTP::Protocol::V04::Attributes::ACL.
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: ACCESS_ALLOWED
+  value: "0x00000000"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: ACCESS_DENIED
+  value: "0x00000001"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: SYSTEM_AUDIT
+  value: "0x00000002"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: SYSTEM_ALARM
+  value: "0x00000003"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: ACCESS_ALLOWED
+  value: "0x00000000"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: ACCESS_DENIED
+  value: "0x00000001"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: SYSTEM_AUDIT
+  value: "0x00000002"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: SYSTEM_ALARM
+  value: "0x00000003"
+full_name: Net::SFTP::Constants::ACE::Type
+includes: []
+
+instance_methods: []
+
+name: Type

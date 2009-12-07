@@ -1,0 +1,223 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!--
+
+    Classes [Net::SSH: a pure-Ruby implementation of the SSH2 client protocol.]
+
+  -->
+<head>
+  <title>Classes [Net::SSH: a pure-Ruby implementation of the SSH2 client protocol.]</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="rdoc-style.css" type="text/css" />
+  <base target="docwin" />
+</head>
+<body>
+<div class="index">
+  <h1 class="section-bar">Classes</h1>
+  <div id="index-entries">
+
+    <a href="classes/Net.html">Net</a><br />
+
+    <a href="classes/Net/SSH.html">Net::SSH</a><br />
+
+    <a href="classes/Net/SSH/Authentication.html">Net::SSH::Authentication</a><br />
+
+    <a href="classes/Net/SSH/Authentication/Agent.html">Net::SSH::Authentication::Agent</a><br />
+
+    <a href="classes/Net/SSH/Authentication/Agent/Comment.html">Net::SSH::Authentication::Agent::Comment</a><br />
+
+    <a href="classes/Net/SSH/Authentication/AgentError.html">Net::SSH::Authentication::AgentError</a><br />
+
+    <a href="classes/Net/SSH/Authentication/AgentNotAvailable.html">Net::SSH::Authentication::AgentNotAvailable</a><br />
+
+    <a href="classes/Net/SSH/Authentication/Constants.html">Net::SSH::Authentication::Constants</a><br />
+
+    <a href="classes/Net/SSH/Authentication/KeyManager.html">Net::SSH::Authentication::KeyManager</a><br />
+
+    <a href="classes/Net/SSH/Authentication/KeyManagerError.html">Net::SSH::Authentication::KeyManagerError</a><br />
+
+    <a href="classes/Net/SSH/Authentication/Methods.html">Net::SSH::Authentication::Methods</a><br />
+
+    <a href="classes/Net/SSH/Authentication/Methods/Abstract.html">Net::SSH::Authentication::Methods::Abstract</a><br />
+
+    <a href="classes/Net/SSH/Authentication/Methods/Hostbased.html">Net::SSH::Authentication::Methods::Hostbased</a><br />
+
+    <a href="classes/Net/SSH/Authentication/Methods/KeyboardInteractive.html">Net::SSH::Authentication::Methods::KeyboardInteractive</a><br />
+
+    <a href="classes/Net/SSH/Authentication/Methods/Password.html">Net::SSH::Authentication::Methods::Password</a><br />
+
+    <a href="classes/Net/SSH/Authentication/Methods/Publickey.html">Net::SSH::Authentication::Methods::Publickey</a><br />
+
+    <a href="classes/Net/SSH/Authentication/Pageant.html">Net::SSH::Authentication::Pageant</a><br />
+
+    <a href="classes/Net/SSH/Authentication/Pageant/Socket.html">Net::SSH::Authentication::Pageant::Socket</a><br />
+
+    <a href="classes/Net/SSH/Authentication/Pageant/Win.html">Net::SSH::Authentication::Pageant::Win</a><br />
+
+    <a href="classes/Net/SSH/Authentication/Session.html">Net::SSH::Authentication::Session</a><br />
+
+    <a href="classes/Net/SSH/AuthenticationFailed.html">Net::SSH::AuthenticationFailed</a><br />
+
+    <a href="classes/Net/SSH/Buffer.html">Net::SSH::Buffer</a><br />
+
+    <a href="classes/Net/SSH/BufferedIo.html">Net::SSH::BufferedIo</a><br />
+
+    <a href="classes/Net/SSH/ChannelOpenFailed.html">Net::SSH::ChannelOpenFailed</a><br />
+
+    <a href="classes/Net/SSH/ChannelRequestFailed.html">Net::SSH::ChannelRequestFailed</a><br />
+
+    <a href="classes/Net/SSH/Compat.html">Net::SSH::Compat</a><br />
+
+    <a href="classes/Net/SSH/Config.html">Net::SSH::Config</a><br />
+
+    <a href="classes/Net/SSH/Connection.html">Net::SSH::Connection</a><br />
+
+    <a href="classes/Net/SSH/Connection/Channel.html">Net::SSH::Connection::Channel</a><br />
+
+    <a href="classes/Net/SSH/Connection/Constants.html">Net::SSH::Connection::Constants</a><br />
+
+    <a href="classes/Net/SSH/Connection/Session.html">Net::SSH::Connection::Session</a><br />
+
+    <a href="classes/Net/SSH/Connection/Session/NilChannel.html">Net::SSH::Connection::Session::NilChannel</a><br />
+
+    <a href="classes/Net/SSH/Connection/Term.html">Net::SSH::Connection::Term</a><br />
+
+    <a href="classes/Net/SSH/Disconnect.html">Net::SSH::Disconnect</a><br />
+
+    <a href="classes/Net/SSH/Exception.html">Net::SSH::Exception</a><br />
+
+    <a href="classes/Net/SSH/HostKeyMismatch.html">Net::SSH::HostKeyMismatch</a><br />
+
+    <a href="classes/Net/SSH/KeyFactory.html">Net::SSH::KeyFactory</a><br />
+
+    <a href="classes/Net/SSH/KnownHosts.html">Net::SSH::KnownHosts</a><br />
+
+    <a href="classes/Net/SSH/Loggable.html">Net::SSH::Loggable</a><br />
+
+    <a href="classes/Net/SSH/Packet.html">Net::SSH::Packet</a><br />
+
+    <a href="classes/Net/SSH/PromptMethods.html">Net::SSH::PromptMethods</a><br />
+
+    <a href="classes/Net/SSH/PromptMethods/Clear.html">Net::SSH::PromptMethods::Clear</a><br />
+
+    <a href="classes/Net/SSH/PromptMethods/Highline.html">Net::SSH::PromptMethods::Highline</a><br />
+
+    <a href="classes/Net/SSH/PromptMethods/Termios.html">Net::SSH::PromptMethods::Termios</a><br />
+
+    <a href="classes/Net/SSH/Proxy.html">Net::SSH::Proxy</a><br />
+
+    <a href="classes/Net/SSH/Proxy/Command.html">Net::SSH::Proxy::Command</a><br />
+
+    <a href="classes/Net/SSH/Proxy/ConnectError.html">Net::SSH::Proxy::ConnectError</a><br />
+
+    <a href="classes/Net/SSH/Proxy/Error.html">Net::SSH::Proxy::Error</a><br />
+
+    <a href="classes/Net/SSH/Proxy/HTTP.html">Net::SSH::Proxy::HTTP</a><br />
+
+    <a href="classes/Net/SSH/Proxy/SOCKS4.html">Net::SSH::Proxy::SOCKS4</a><br />
+
+    <a href="classes/Net/SSH/Proxy/SOCKS5.html">Net::SSH::Proxy::SOCKS5</a><br />
+
+    <a href="classes/Net/SSH/Proxy/UnauthorizedError.html">Net::SSH::Proxy::UnauthorizedError</a><br />
+
+    <a href="classes/Net/SSH/Service.html">Net::SSH::Service</a><br />
+
+    <a href="classes/Net/SSH/Service/Forward.html">Net::SSH::Service::Forward</a><br />
+
+    <a href="classes/Net/SSH/Test.html">Net::SSH::Test</a><br />
+
+    <a href="classes/Net/SSH/Test/Channel.html">Net::SSH::Test::Channel</a><br />
+
+    <a href="classes/Net/SSH/Test/Extensions.html">Net::SSH::Test::Extensions</a><br />
+
+    <a href="classes/Net/SSH/Test/Extensions/BufferedIo.html">Net::SSH::Test::Extensions::BufferedIo</a><br />
+
+    <a href="classes/Net/SSH/Test/Extensions/Channel.html">Net::SSH::Test::Extensions::Channel</a><br />
+
+    <a href="classes/Net/SSH/Test/Extensions/IO.html">Net::SSH::Test::Extensions::IO</a><br />
+
+    <a href="classes/Net/SSH/Test/Extensions/IO/ClassMethods.html">Net::SSH::Test::Extensions::IO::ClassMethods</a><br />
+
+    <a href="classes/Net/SSH/Test/Extensions/PacketStream.html">Net::SSH::Test::Extensions::PacketStream</a><br />
+
+    <a href="classes/Net/SSH/Test/Kex.html">Net::SSH::Test::Kex</a><br />
+
+    <a href="classes/Net/SSH/Test/LocalPacket.html">Net::SSH::Test::LocalPacket</a><br />
+
+    <a href="classes/Net/SSH/Test/Packet.html">Net::SSH::Test::Packet</a><br />
+
+    <a href="classes/Net/SSH/Test/RemotePacket.html">Net::SSH::Test::RemotePacket</a><br />
+
+    <a href="classes/Net/SSH/Test/Script.html">Net::SSH::Test::Script</a><br />
+
+    <a href="classes/Net/SSH/Test/Socket.html">Net::SSH::Test::Socket</a><br />
+
+    <a href="classes/Net/SSH/Transport.html">Net::SSH::Transport</a><br />
+
+    <a href="classes/Net/SSH/Transport/Algorithms.html">Net::SSH::Transport::Algorithms</a><br />
+
+    <a href="classes/Net/SSH/Transport/CipherFactory.html">Net::SSH::Transport::CipherFactory</a><br />
+
+    <a href="classes/Net/SSH/Transport/Constants.html">Net::SSH::Transport::Constants</a><br />
+
+    <a href="classes/Net/SSH/Transport/HMAC.html">Net::SSH::Transport::HMAC</a><br />
+
+    <a href="classes/Net/SSH/Transport/HMAC/Abstract.html">Net::SSH::Transport::HMAC::Abstract</a><br />
+
+    <a href="classes/Net/SSH/Transport/HMAC/MD5.html">Net::SSH::Transport::HMAC::MD5</a><br />
+
+    <a href="classes/Net/SSH/Transport/HMAC/MD5_96.html">Net::SSH::Transport::HMAC::MD5_96</a><br />
+
+    <a href="classes/Net/SSH/Transport/HMAC/None.html">Net::SSH::Transport::HMAC::None</a><br />
+
+    <a href="classes/Net/SSH/Transport/HMAC/SHA1.html">Net::SSH::Transport::HMAC::SHA1</a><br />
+
+    <a href="classes/Net/SSH/Transport/HMAC/SHA1_96.html">Net::SSH::Transport::HMAC::SHA1_96</a><br />
+
+    <a href="classes/Net/SSH/Transport/IdentityCipher.html">Net::SSH::Transport::IdentityCipher</a><br />
+
+    <a href="classes/Net/SSH/Transport/Kex.html">Net::SSH::Transport::Kex</a><br />
+
+    <a href="classes/Net/SSH/Transport/Kex/DiffieHellmanGroup1SHA1.html">Net::SSH::Transport::Kex::DiffieHellmanGroup1SHA1</a><br />
+
+    <a href="classes/Net/SSH/Transport/Kex/DiffieHellmanGroupExchangeSHA1.html">Net::SSH::Transport::Kex::DiffieHellmanGroupExchangeSHA1</a><br />
+
+    <a href="classes/Net/SSH/Transport/PacketStream.html">Net::SSH::Transport::PacketStream</a><br />
+
+    <a href="classes/Net/SSH/Transport/ServerVersion.html">Net::SSH::Transport::ServerVersion</a><br />
+
+    <a href="classes/Net/SSH/Transport/Session.html">Net::SSH::Transport::Session</a><br />
+
+    <a href="classes/Net/SSH/Transport/State.html">Net::SSH::Transport::State</a><br />
+
+    <a href="classes/Net/SSH/Verifiers.html">Net::SSH::Verifiers</a><br />
+
+    <a href="classes/Net/SSH/Verifiers/Lenient.html">Net::SSH::Verifiers::Lenient</a><br />
+
+    <a href="classes/Net/SSH/Verifiers/Null.html">Net::SSH::Verifiers::Null</a><br />
+
+    <a href="classes/Net/SSH/Verifiers/Strict.html">Net::SSH::Verifiers::Strict</a><br />
+
+    <a href="classes/Net/SSH/Version.html">Net::SSH::Version</a><br />
+
+    <a href="classes/OpenSSL.html">OpenSSL</a><br />
+
+    <a href="classes/OpenSSL/BN.html">OpenSSL::BN</a><br />
+
+    <a href="classes/OpenSSL/PKey.html">OpenSSL::PKey</a><br />
+
+    <a href="classes/OpenSSL/PKey/DH.html">OpenSSL::PKey::DH</a><br />
+
+    <a href="classes/OpenSSL/PKey/DSA.html">OpenSSL::PKey::DSA</a><br />
+
+    <a href="classes/OpenSSL/PKey/PKey.html">OpenSSL::PKey::PKey</a><br />
+
+    <a href="classes/OpenSSL/PKey/RSA.html">OpenSSL::PKey::RSA</a><br />
+
+    <a href="classes/String.html">String</a><br />
+
+  </div>
+</div>
+</body>
+</html>

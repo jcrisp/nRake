@@ -1,0 +1,638 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Module: Net [Net::SSH: a pure-Ruby implementation of the SSH2 client protocol.]</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <link rel="stylesheet" href=".././rdoc-style.css" type="text/css" media="screen" />
+  <script type="text/javascript">
+  // <![CDATA[
+
+  function popupCode( url ) {
+    window.open(url, "Code", "resizable=yes,scrollbars=yes,toolbar=no,status=no,height=150,width=400")
+  }
+
+  function toggleCode( id ) {
+    if ( document.getElementById )
+      elem = document.getElementById( id );
+    else if ( document.all )
+      elem = eval( "document.all." + id );
+    else
+      return false;
+
+    elemStyle = elem.style;
+
+    if ( elemStyle.display != "block" ) {
+      elemStyle.display = "block"
+    } else {
+      elemStyle.display = "none"
+    }
+
+    return true;
+  }
+
+  // Make codeblocks hidden by default
+  document.writeln( "<style type=\"text/css\">div.method-source-code { display: none }<\/style>" )
+
+  // ]]>
+  </script>
+
+</head>
+<body>
+
+
+    <div id="classHeader">
+        <table class="header-table">
+        <tr class="top-aligned-row">
+          <td><strong>Module</strong></td>
+          <td class="class-name-in-header">Net</td>
+        </tr>
+        <tr class="top-aligned-row">
+            <td><strong>In:</strong></td>
+            <td>
+
+
+                <a href="../files/lib/net/ssh/authentication/agent_rb.html">
+
+                lib/net/ssh/authentication/agent.rb
+
+                </a>
+
+
+        <br />
+
+
+                <a href="../files/lib/net/ssh/authentication/constants_rb.html">
+
+                lib/net/ssh/authentication/constants.rb
+
+                </a>
+
+
+        <br />
+
+
+                <a href="../files/lib/net/ssh/authentication/key_manager_rb.html">
+
+                lib/net/ssh/authentication/key_manager.rb
+
+                </a>
+
+
+        <br />
+
+
+                <a href="../files/lib/net/ssh/authentication/methods/abstract_rb.html">
+
+                lib/net/ssh/authentication/methods/abstract.rb
+
+                </a>
+
+
+        <br />
+
+
+                <a href="../files/lib/net/ssh/authentication/methods/hostbased_rb.html">
+
+                lib/net/ssh/authentication/methods/hostbased.rb
+
+                </a>
+
+
+        <br />
+
+
+                <a href="../files/lib/net/ssh/authentication/methods/keyboard_interactive_rb.html">
+
+                lib/net/ssh/authentication/methods/keyboard_interactive.rb
+
+                </a>
+
+
+        <br />
+
+
+                <a href="../files/lib/net/ssh/authentication/methods/password_rb.html">
+
+                lib/net/ssh/authentication/methods/password.rb
+
+                </a>
+
+
+        <br />
+
+
+                <a href="../files/lib/net/ssh/authentication/methods/publickey_rb.html">
+
+                lib/net/ssh/authentication/methods/publickey.rb
+
+                </a>
+
+
+        <br />
+
+
+                <a href="../files/lib/net/ssh/authentication/pageant_rb.html">
+
+                lib/net/ssh/authentication/pageant.rb
+
+                </a>
+
+
+        <br />
+
+
+                <a href="../files/lib/net/ssh/authentication/session_rb.html">
+
+                lib/net/ssh/authentication/session.rb
+
+                </a>
+
+
+        <br />
+
+
+                <a href="../files/lib/net/ssh/buffer_rb.html">
+
+                lib/net/ssh/buffer.rb
+
+                </a>
+
+
+        <br />
+
+
+                <a href="../files/lib/net/ssh/buffered_io_rb.html">
+
+                lib/net/ssh/buffered_io.rb
+
+                </a>
+
+
+        <br />
+
+
+                <a href="../files/lib/net/ssh/config_rb.html">
+
+                lib/net/ssh/config.rb
+
+                </a>
+
+
+        <br />
+
+
+                <a href="../files/lib/net/ssh/connection/channel_rb.html">
+
+                lib/net/ssh/connection/channel.rb
+
+                </a>
+
+
+        <br />
+
+
+                <a href="../files/lib/net/ssh/connection/constants_rb.html">
+
+                lib/net/ssh/connection/constants.rb
+
+                </a>
+
+
+        <br />
+
+
+                <a href="../files/lib/net/ssh/connection/session_rb.html">
+
+                lib/net/ssh/connection/session.rb
+
+                </a>
+
+
+        <br />
+
+
+                <a href="../files/lib/net/ssh/connection/term_rb.html">
+
+                lib/net/ssh/connection/term.rb
+
+                </a>
+
+
+        <br />
+
+
+                <a href="../files/lib/net/ssh/errors_rb.html">
+
+                lib/net/ssh/errors.rb
+
+                </a>
+
+
+        <br />
+
+
+                <a href="../files/lib/net/ssh/key_factory_rb.html">
+
+                lib/net/ssh/key_factory.rb
+
+                </a>
+
+
+        <br />
+
+
+                <a href="../files/lib/net/ssh/known_hosts_rb.html">
+
+                lib/net/ssh/known_hosts.rb
+
+                </a>
+
+
+        <br />
+
+
+                <a href="../files/lib/net/ssh/loggable_rb.html">
+
+                lib/net/ssh/loggable.rb
+
+                </a>
+
+
+        <br />
+
+
+                <a href="../files/lib/net/ssh/packet_rb.html">
+
+                lib/net/ssh/packet.rb
+
+                </a>
+
+
+        <br />
+
+
+                <a href="../files/lib/net/ssh/prompt_rb.html">
+
+                lib/net/ssh/prompt.rb
+
+                </a>
+
+
+        <br />
+
+
+                <a href="../files/lib/net/ssh/proxy/command_rb.html">
+
+                lib/net/ssh/proxy/command.rb
+
+                </a>
+
+
+        <br />
+
+
+                <a href="../files/lib/net/ssh/proxy/errors_rb.html">
+
+                lib/net/ssh/proxy/errors.rb
+
+                </a>
+
+
+        <br />
+
+
+                <a href="../files/lib/net/ssh/proxy/http_rb.html">
+
+                lib/net/ssh/proxy/http.rb
+
+                </a>
+
+
+        <br />
+
+
+                <a href="../files/lib/net/ssh/proxy/socks4_rb.html">
+
+                lib/net/ssh/proxy/socks4.rb
+
+                </a>
+
+
+        <br />
+
+
+                <a href="../files/lib/net/ssh/proxy/socks5_rb.html">
+
+                lib/net/ssh/proxy/socks5.rb
+
+                </a>
+
+
+        <br />
+
+
+                <a href="../files/lib/net/ssh/ruby_compat_rb.html">
+
+                lib/net/ssh/ruby_compat.rb
+
+                </a>
+
+
+        <br />
+
+
+                <a href="../files/lib/net/ssh/service/forward_rb.html">
+
+                lib/net/ssh/service/forward.rb
+
+                </a>
+
+
+        <br />
+
+
+                <a href="../files/lib/net/ssh/test/channel_rb.html">
+
+                lib/net/ssh/test/channel.rb
+
+                </a>
+
+
+        <br />
+
+
+                <a href="../files/lib/net/ssh/test/extensions_rb.html">
+
+                lib/net/ssh/test/extensions.rb
+
+                </a>
+
+
+        <br />
+
+
+                <a href="../files/lib/net/ssh/test/kex_rb.html">
+
+                lib/net/ssh/test/kex.rb
+
+                </a>
+
+
+        <br />
+
+
+                <a href="../files/lib/net/ssh/test/local_packet_rb.html">
+
+                lib/net/ssh/test/local_packet.rb
+
+                </a>
+
+
+        <br />
+
+
+                <a href="../files/lib/net/ssh/test/packet_rb.html">
+
+                lib/net/ssh/test/packet.rb
+
+                </a>
+
+
+        <br />
+
+
+                <a href="../files/lib/net/ssh/test/remote_packet_rb.html">
+
+                lib/net/ssh/test/remote_packet.rb
+
+                </a>
+
+
+        <br />
+
+
+                <a href="../files/lib/net/ssh/test/script_rb.html">
+
+                lib/net/ssh/test/script.rb
+
+                </a>
+
+
+        <br />
+
+
+                <a href="../files/lib/net/ssh/test/socket_rb.html">
+
+                lib/net/ssh/test/socket.rb
+
+                </a>
+
+
+        <br />
+
+
+                <a href="../files/lib/net/ssh/test_rb.html">
+
+                lib/net/ssh/test.rb
+
+                </a>
+
+
+        <br />
+
+
+                <a href="../files/lib/net/ssh/transport/algorithms_rb.html">
+
+                lib/net/ssh/transport/algorithms.rb
+
+                </a>
+
+
+        <br />
+
+
+                <a href="../files/lib/net/ssh/transport/cipher_factory_rb.html">
+
+                lib/net/ssh/transport/cipher_factory.rb
+
+                </a>
+
+
+        <br />
+
+
+                <a href="../files/lib/net/ssh/transport/constants_rb.html">
+
+                lib/net/ssh/transport/constants.rb
+
+                </a>
+
+
+        <br />
+
+
+                <a href="../files/lib/net/ssh/transport/hmac/abstract_rb.html">
+
+                lib/net/ssh/transport/hmac/abstract.rb
+
+                </a>
+
+
+        <br />
+
+
+                <a href="../files/lib/net/ssh/transport/identity_cipher_rb.html">
+
+                lib/net/ssh/transport/identity_cipher.rb
+
+                </a>
+
+
+        <br />
+
+
+                <a href="../files/lib/net/ssh/transport/kex/diffie_hellman_group1_sha1_rb.html">
+
+                lib/net/ssh/transport/kex/diffie_hellman_group1_sha1.rb
+
+                </a>
+
+
+        <br />
+
+
+                <a href="../files/lib/net/ssh/transport/packet_stream_rb.html">
+
+                lib/net/ssh/transport/packet_stream.rb
+
+                </a>
+
+
+        <br />
+
+
+                <a href="../files/lib/net/ssh/transport/server_version_rb.html">
+
+                lib/net/ssh/transport/server_version.rb
+
+                </a>
+
+
+        <br />
+
+
+                <a href="../files/lib/net/ssh/transport/session_rb.html">
+
+                lib/net/ssh/transport/session.rb
+
+                </a>
+
+
+        <br />
+
+
+                <a href="../files/lib/net/ssh/transport/state_rb.html">
+
+                lib/net/ssh/transport/state.rb
+
+                </a>
+
+
+        <br />
+
+
+                <a href="../files/lib/net/ssh/verifiers/lenient_rb.html">
+
+                lib/net/ssh/verifiers/lenient.rb
+
+                </a>
+
+
+        <br />
+
+
+                <a href="../files/lib/net/ssh/verifiers/null_rb.html">
+
+                lib/net/ssh/verifiers/null.rb
+
+                </a>
+
+
+        <br />
+
+
+                <a href="../files/lib/net/ssh/verifiers/strict_rb.html">
+
+                lib/net/ssh/verifiers/strict.rb
+
+                </a>
+
+
+        <br />
+
+
+                <a href="../files/lib/net/ssh/version_rb.html">
+
+                lib/net/ssh/version.rb
+
+                </a>
+
+
+        <br />
+
+
+                <a href="../files/lib/net/ssh_rb.html">
+
+                lib/net/ssh.rb
+
+                </a>
+
+
+        <br />
+
+            </td>
+        </tr>
+
+
+        </table>
+    </div>
+  <!-- banner header -->
+
+  <div id="bodyContent">
+
+  <div id="contextContent">
+
+   </div>
+
+
+  </div>
+
+    <!-- if includes -->
+
+    <div id="section">
+
+    <div id="class-list">
+      <h3 class="section-bar">Classes and Modules</h3>
+
+      Module <a href="Net/SSH.html" class="link">Net::SSH</a><br />
+
+    </div>
+
+
+
+
+    <!-- if method_list -->
+
+
+
+
+  </div>
+
+<div id="validator-badges">
+  <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+</div>
+
+</body>
+</html>

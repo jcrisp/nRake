@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Sends a FXP_UNBLOCK packet to the server to request that a previously acquired byte-range lock be released on the given <tt>handle</tt>, for the given byte <tt>offset</tt> and <tt>length</tt>. The <tt>handle</tt>, <tt>offset</tt>, and <tt>length</tt> must all exactly match the parameters that were given when the lock was originally acquired (see #block)."
+full_name: Net::SFTP::Protocol::V06::Base#unblock
+is_singleton: false
+name: unblock
+params: (handle, offset, length)
+visibility: public

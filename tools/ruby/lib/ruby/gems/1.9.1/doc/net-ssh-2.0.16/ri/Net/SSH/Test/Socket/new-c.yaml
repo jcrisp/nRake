@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Create a new test socket. This will also instantiate a new Net::SSH::Test::Script and seed it with the necessary events to power the initialization of the connection.
+full_name: Net::SSH::Test::Socket::new
+is_singleton: true
+name: new
+params: ()
+visibility: public

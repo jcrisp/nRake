@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: ""
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Displays the result of yielding if the log level is Logger:ERROR or greater.
+full_name: Net::SSH::Loggable#error
+is_singleton: false
+name: error
+params: () {|| ...}
+visibility: public

@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>cleanup (Net::SSH::Transport::State)</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="../../../../.././rdoc-style.css" type="text/css" media="screen" />
+</head>
+<body class="standalone-code">
+  <pre>     <span class="ruby-comment cmt"># File lib/net/ssh/transport/state.rb, line 167</span>
+167:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">cleanup</span>
+168:       <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@compressor</span>
+169:         <span class="ruby-ivar">@compressor</span>.<span class="ruby-identifier">finish</span> <span class="ruby-keyword kw">if</span> <span class="ruby-operator">!</span><span class="ruby-ivar">@compressor</span>.<span class="ruby-identifier">finished?</span>
+170:         <span class="ruby-ivar">@compressor</span>.<span class="ruby-identifier">close</span>
+171:       <span class="ruby-keyword kw">end</span>
+172: 
+173:       <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@decompressor</span>
+174:         <span class="ruby-comment cmt"># we call reset here so that we don't get warnings when we try to</span>
+175:         <span class="ruby-comment cmt"># close the decompressor</span>
+176:         <span class="ruby-ivar">@decompressor</span>.<span class="ruby-identifier">reset</span>
+177:         <span class="ruby-ivar">@decompressor</span>.<span class="ruby-identifier">close</span>
+178:       <span class="ruby-keyword kw">end</span>
+179: 
+180:       <span class="ruby-ivar">@compressor</span> = <span class="ruby-ivar">@decompressor</span> = <span class="ruby-keyword kw">nil</span>
+181:     <span class="ruby-keyword kw">end</span></pre>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>new (Net::SSH::Authentication::Session)</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="../../../../.././rdoc-style.css" type="text/css" media="screen" />
+</head>
+<body class="standalone-code">
+  <pre>    <span class="ruby-comment cmt"># File lib/net/ssh/authentication/session.rb, line 36</span>
+36:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">transport</span>, <span class="ruby-identifier">options</span>={})
+37:       <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">logger</span> = <span class="ruby-identifier">transport</span>.<span class="ruby-identifier">logger</span>
+38:       <span class="ruby-ivar">@transport</span> = <span class="ruby-identifier">transport</span>
+39: 
+40:       <span class="ruby-ivar">@auth_methods</span> = <span class="ruby-identifier">options</span>[<span class="ruby-identifier">:auth_methods</span>] <span class="ruby-operator">||</span> <span class="ruby-node">%w(publickey hostbased password keyboard-interactive)</span>
+41:       <span class="ruby-ivar">@options</span> = <span class="ruby-identifier">options</span>
+42: 
+43:       <span class="ruby-ivar">@allowed_auth_methods</span> = <span class="ruby-ivar">@auth_methods</span>
+44:     <span class="ruby-keyword kw">end</span></pre>
+</body>
+</html>

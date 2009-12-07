@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>send_channel_request (Net::SSH::Connection::Channel)</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="../../../../.././rdoc-style.css" type="text/css" media="screen" />
+</head>
+<body class="standalone-code">
+  <pre>     <span class="ruby-comment cmt"># File lib/net/ssh/connection/channel.rb, line 463</span>
+463:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">send_channel_request</span>(<span class="ruby-identifier">request_name</span>, <span class="ruby-operator">*</span><span class="ruby-identifier">data</span>, <span class="ruby-operator">&amp;</span><span class="ruby-identifier">callback</span>)
+464:       <span class="ruby-identifier">info</span> { <span class="ruby-node">&quot;sending channel request #{request_name.inspect}&quot;</span> }
+465:       <span class="ruby-identifier">msg</span> = <span class="ruby-constant">Buffer</span>.<span class="ruby-identifier">from</span>(<span class="ruby-identifier">:byte</span>, <span class="ruby-constant">CHANNEL_REQUEST</span>,
+466:         <span class="ruby-identifier">:long</span>, <span class="ruby-identifier">remote_id</span>, <span class="ruby-identifier">:string</span>, <span class="ruby-identifier">request_name</span>,
+467:         <span class="ruby-identifier">:bool</span>, <span class="ruby-operator">!</span><span class="ruby-identifier">callback</span>.<span class="ruby-identifier">nil?</span>, <span class="ruby-operator">*</span><span class="ruby-identifier">data</span>)
+468:       <span class="ruby-identifier">connection</span>.<span class="ruby-identifier">send_message</span>(<span class="ruby-identifier">msg</span>)
+469:       <span class="ruby-identifier">pending_requests</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">callback</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">callback</span>
+470:     <span class="ruby-keyword kw">end</span></pre>
+</body>
+</html>

@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Alias to #read, but never returns nil (returns an empty string instead)."
+full_name: Net::SSH::Test::Socket#recv
+is_singleton: false
+name: recv
+params: (n)
+visibility: public

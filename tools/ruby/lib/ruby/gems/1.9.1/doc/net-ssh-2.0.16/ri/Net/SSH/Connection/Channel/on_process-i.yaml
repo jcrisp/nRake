@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Registers a callback to be invoked for each pass of the event loop for this channel. There are no guarantees on timeliness in the event loop, but it will be called roughly once for each packet received by the connection (not the channel). This callback is invoked with the channel as the sole argument.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Here's an example that accumulates the channel data into a variable on the channel itself, and displays individual lines in the input one at a time when the channel is processed:"
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  channel[:data] = &quot;&quot;\n\n  channel.on_data do |ch, data|\n    channel[:data] &lt;&lt; data\n  end\n\n  channel.on_process do |ch|\n    if channel[:data] =~ /^.*?\\n/\n      puts $&amp;\n      channel[:data] = $'\n    end\n  end\n"
+full_name: Net::SSH::Connection::Channel#on_process
+is_singleton: false
+name: on_process
+params: (&block)
+visibility: public

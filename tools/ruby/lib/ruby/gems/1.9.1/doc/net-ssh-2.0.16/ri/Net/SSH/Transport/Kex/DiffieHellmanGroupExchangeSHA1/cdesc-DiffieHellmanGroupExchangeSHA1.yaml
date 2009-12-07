@@ -1,0 +1,40 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: A key-exchange service implementing the &quot;diffie-hellman-group-exchange-sha1&quot; key-exchange algorithm.
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: MINIMUM_BITS
+  value: "1024"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: MAXIMUM_BITS
+  value: "8192"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: KEXDH_GEX_GROUP
+  value: "31"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: KEXDH_GEX_INIT
+  value: "32"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: KEXDH_GEX_REPLY
+  value: "33"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: KEXDH_GEX_REQUEST
+  value: "34"
+full_name: Net::SSH::Transport::Kex::DiffieHellmanGroupExchangeSHA1
+includes: []
+
+instance_methods: []
+
+name: DiffieHellmanGroupExchangeSHA1
+superclass: Net::SSH::Transport::Kex::DiffieHellmanGroup1SHA1

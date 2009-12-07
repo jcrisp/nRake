@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Performs an fstat operation on the handle and returns the attribute object (Net::SFTP::Protocol::V01::Attributes, Net::SFTP::Protool::V04::Attributes, or Net::SFTP::Protocol::V06::Attributes, depending on the SFTP protocol version in use).
+full_name: Net::SFTP::Operations::File#stat
+is_singleton: false
+name: stat
+params: ()
+visibility: public

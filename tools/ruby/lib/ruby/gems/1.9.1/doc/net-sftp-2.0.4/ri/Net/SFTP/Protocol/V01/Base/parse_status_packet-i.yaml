@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Parses the given FXP_STATUS packet and returns a hash with one key, :code, which references the status code returned by the server.
+full_name: Net::SFTP::Protocol::V01::Base#parse_status_packet
+is_singleton: false
+name: parse_status_packet
+params: (packet)
+visibility: public

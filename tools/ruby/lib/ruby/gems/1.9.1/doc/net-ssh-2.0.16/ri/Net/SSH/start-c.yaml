@@ -1,0 +1,103 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: connection
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The standard means of starting a new SSH connection. When used with a block, the connection will be closed when the block terminates, otherwise the connection will just be returned. The yielded (or returned) value will be an instance of Net::SSH::Connection::Session (q.v.). (See also Net::SSH::Connection::Channel and Net::SSH::Service::Forward.)
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  Net::SSH.start(&quot;host&quot;, &quot;user&quot;) do |ssh|\n    ssh.exec! &quot;cp /some/file /another/location&quot;\n    hostname = ssh.exec!(&quot;hostname&quot;)\n\n    ssh.open_channel do |ch|\n      ch.exec &quot;sudo -p 'sudo password: ' ls&quot; do |ch, success|\n        abort &quot;could not execute sudo ls&quot; unless success\n\n        ch.on_data do |ch, data|\n          print data\n          if data =~ /sudo password: /\n            ch.send_data(&quot;password\\n&quot;)\n          end\n        end\n      end\n    end\n\n    ssh.loop\n  end\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "This method accepts the following options (all are optional):"
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: ":auth_methods =&gt; an array of authentication methods to try"
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: ":compression =&gt; the compression algorithm to use, or <tt>true</tt> to use whatever is supported."
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: ":compression_level =&gt; the compression level to use when sending data"
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: ":config =&gt; set to <tt>true</tt> to load the default OpenSSH config files (~/.ssh/config, /etc/ssh_config), or to <tt>false</tt> to not load them, or to a file-name (or array of file-names) to load those specific configuration files. Defaults to <tt>true</tt>."
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: ":encryption =&gt; the encryption cipher (or ciphers) to use"
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: ":forward_agent =&gt; set to true if you want the SSH agent connection to be forwarded"
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: ":global_known_hosts_file =&gt; the location of the global known hosts file. Set to an array if you want to specify multiple global known hosts files. Defaults to %w(/etc/ssh/known_hosts /etc/ssh/known_hosts2)."
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: ":hmac =&gt; the hmac algorithm (or algorithms) to use"
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: ":host_key =&gt; the host key algorithm (or algorithms) to use"
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: ":host_key_alias =&gt; the host name to use when looking up or adding a host to a known_hosts dictionary file"
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: ":host_name =&gt; the real host name or IP to log into. This is used instead of the <tt>host</tt> parameter, and is primarily only useful when specified in an SSH configuration file. It lets you specify an &quot;alias&quot;, similarly to adding an entry in /etc/hosts but without needing to modify /etc/hosts."
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: ":kex =&gt; the key exchange algorithm (or algorithms) to use"
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: ":keys =&gt; an array of file names of private keys to use for publickey and hostbased authentication"
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: ":key_data =&gt; an array of strings, with each element of the array being a raw private key in PEM format."
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: ":logger =&gt; the logger instance to use when logging"
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: ":paranoid =&gt; either true, false, or :very, specifying how strict host-key verification should be"
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: ":passphrase =&gt; the passphrase to use when loading a private key (default is <tt>nil</tt>, for no passphrase)"
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: ":password =&gt; the password to use to login"
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: ":port =&gt; the port to use when connecting to the remote host"
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: ":properties =&gt; a hash of key/value pairs to add to the new connection's properties (see Net::SSH::Connection::Session#properties)"
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: ":proxy =&gt; a proxy instance (see Proxy) to use when connecting"
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: ":rekey_blocks_limit =&gt; the max number of blocks to process before rekeying"
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: ":rekey_limit =&gt; the max number of bytes to process before rekeying"
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: ":rekey_packet_limit =&gt; the max number of packets to process before rekeying"
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: ":timeout =&gt; how long to wait for the initial connection to be made"
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: ":user =&gt; the user name to log in as; this overrides the <tt>user</tt> parameter, and is primarily only useful when provided via an SSH configuration file."
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: ":user_known_hosts_file =&gt; the location of the user known hosts file. Set to an array to specify multiple user known hosts files. Defaults to %w(~/.ssh/known_hosts ~/.ssh/known_hosts2)."
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: ":verbose =&gt; how verbose to be (Logger verbosity constants, Logger::DEBUG is very verbose, Logger::FATAL is all but silent). Logger::FATAL is the default. The symbols :debug, :info, :warn, :error, and :fatal are also supported and are translated to the corresponding Logger constant."
+  type: :BULLET
+full_name: Net::SSH::start
+is_singleton: true
+name: start
+params: (host, user, options={}, &block) {|connection| ...}
+visibility: public

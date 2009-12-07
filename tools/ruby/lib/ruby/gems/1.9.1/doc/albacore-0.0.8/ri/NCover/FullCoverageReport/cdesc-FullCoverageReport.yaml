@@ -1,0 +1,23 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: 
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  name: output_path
+  rw: RW
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+constants: []
+
+full_name: NCover::FullCoverageReport
+includes: 
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: YAMLConfig
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: report_format
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: report_type
+name: FullCoverageReport
+superclass: Object

@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Search for all known keys for the given host, in every file given in the <tt>files</tt> array. Returns the list of keys.
+full_name: Net::SSH::KnownHosts::search_in
+is_singleton: true
+name: search_in
+params: (files, host)
+visibility: public

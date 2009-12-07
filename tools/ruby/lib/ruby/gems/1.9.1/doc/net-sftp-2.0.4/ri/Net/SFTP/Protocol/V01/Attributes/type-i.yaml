@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Inspects the permissions bits to determine what type of entity this attributes object represents. If will return one of the T_ constants.
+full_name: Net::SFTP::Protocol::V01::Attributes#type
+is_singleton: false
+name: type
+params: ()
+visibility: public

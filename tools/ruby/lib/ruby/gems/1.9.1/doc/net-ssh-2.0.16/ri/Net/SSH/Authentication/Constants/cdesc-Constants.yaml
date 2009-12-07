@@ -1,0 +1,43 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Describes the constants used by the Net::SSH::Authentication components of the Net::SSH library. Individual authentication method implemenations may define yet more constants that are specific to their implementation.
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: USERAUTH_REQUEST
+  value: "50"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: USERAUTH_FAILURE
+  value: "51"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: USERAUTH_SUCCESS
+  value: "52"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: USERAUTH_BANNER
+  value: "53"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: USERAUTH_PASSWD_CHANGEREQ
+  value: "60"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: USERAUTH_PK_OK
+  value: "60"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: USERAUTH_METHOD_RANGE
+  value: 60..79
+full_name: Net::SSH::Authentication::Constants
+includes: []
+
+instance_methods: []
+
+name: Constants

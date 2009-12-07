@@ -1,0 +1,29 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Renames the given file. This operation is only available in SFTP protocol versions two and higher. The <tt>flags</tt> parameter is ignored in versions prior to 5. In versions 5 and higher, the <tt>flags</tt> parameter can be used to specify how the rename should be performed (atomically, etc.).
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "The following flags are defined in protocol version 5:"
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: 0x0001 - overwrite an existing file if the new name specifies a file that already exists.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: 0x0002 - perform the rewrite atomically.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: 0x0004 - allow the server to perform the rename as it prefers.
+  type: :BULLET
+full_name: Net::SFTP::Session#rename
+is_singleton: false
+name: rename
+params: |
+  rename(name, new_name, flags=nil) -> request
+  rename(name, new_name, flags=nil) { |response| ... } -> request
+
+visibility: public

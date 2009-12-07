@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "A convenience method for accessing the list of preferred types for a specific algorithm (see #algorithms)."
+full_name: Net::SSH::Transport::Algorithms#[]
+is_singleton: false
+name: "[]"
+params: (key)
+visibility: public

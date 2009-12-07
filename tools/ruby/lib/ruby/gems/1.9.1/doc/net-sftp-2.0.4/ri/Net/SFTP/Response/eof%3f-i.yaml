@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns <tt>true</tt> if the status code is FX_EOF; <tt>false</tt> otherwise.
+full_name: Net::SFTP::Response#eof?
+is_singleton: false
+name: eof?
+params: ()
+visibility: public

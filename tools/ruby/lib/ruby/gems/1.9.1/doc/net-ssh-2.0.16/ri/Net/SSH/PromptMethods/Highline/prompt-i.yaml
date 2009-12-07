@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Uses Highline#ask to present a prompt and accept input. If <tt>echo</tt> is <tt>false</tt>, the characters entered by the user will not be echoed to the screen.
+full_name: Net::SSH::PromptMethods::Highline#prompt
+is_singleton: false
+name: prompt
+params: (prompt, echo=true)
+visibility: public

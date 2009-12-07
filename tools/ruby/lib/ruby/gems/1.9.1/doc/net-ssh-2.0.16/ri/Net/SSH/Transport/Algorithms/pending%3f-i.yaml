@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns <tt>true</tt> if a key-exchange is pending. This will be true from the moment either the client or server requests the key exchange, until the exchange completes. While an exchange is pending, only a limited number of packets are allowed, so event processing essentially stops during this period.
+full_name: Net::SSH::Transport::Algorithms#pending?
+is_singleton: false
+name: pending?
+params: ()
+visibility: public

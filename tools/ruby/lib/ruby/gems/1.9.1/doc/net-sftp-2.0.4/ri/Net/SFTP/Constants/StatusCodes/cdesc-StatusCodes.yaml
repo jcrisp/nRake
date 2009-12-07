@@ -1,0 +1,195 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: When an FXP_STATUS packet is received from the server, the <tt>code</tt> will be one of the following constants.
+- !ruby/struct:RDoc::Markup::Flow::RULE 
+  :width: 1
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: When an FXP_STATUS packet is received from the server, the <tt>code</tt> will be one of the following constants.
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: FX_OK
+  value: "0"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: FX_EOF
+  value: "1"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: FX_NO_SUCH_FILE
+  value: "2"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: FX_PERMISSION_DENIED
+  value: "3"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: FX_FAILURE
+  value: "4"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: FX_BAD_MESSAGE
+  value: "5"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: FX_NO_CONNECTION
+  value: "6"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: FX_CONNECTION_LOST
+  value: "7"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: FX_OP_UNSUPPORTED
+  value: "8"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: FX_INVALID_HANDLE
+  value: "9"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: FX_NO_SUCH_PATH
+  value: "10"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: FX_FILE_ALREADY_EXISTS
+  value: "11"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: FX_WRITE_PROTECT
+  value: "12"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: FX_NO_MEDIA
+  value: "13"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: FX_NO_SPACE_ON_FILESYSTEM
+  value: "14"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: FX_QUOTA_EXCEEDED
+  value: "15"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: FX_UNKNOWN_PRINCIPLE
+  value: "16"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: FX_LOCK_CONFlICT
+  value: "17"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: FX_DIR_NOT_EMPTY
+  value: "18"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: FX_NOT_A_DIRECTORY
+  value: "19"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: FX_INVALID_FILENAME
+  value: "20"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: FX_LINK_LOOP
+  value: "21"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: FX_OK
+  value: "0"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: FX_EOF
+  value: "1"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: FX_NO_SUCH_FILE
+  value: "2"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: FX_PERMISSION_DENIED
+  value: "3"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: FX_FAILURE
+  value: "4"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: FX_BAD_MESSAGE
+  value: "5"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: FX_NO_CONNECTION
+  value: "6"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: FX_CONNECTION_LOST
+  value: "7"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: FX_OP_UNSUPPORTED
+  value: "8"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: FX_INVALID_HANDLE
+  value: "9"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: FX_NO_SUCH_PATH
+  value: "10"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: FX_FILE_ALREADY_EXISTS
+  value: "11"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: FX_WRITE_PROTECT
+  value: "12"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: FX_NO_MEDIA
+  value: "13"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: FX_NO_SPACE_ON_FILESYSTEM
+  value: "14"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: FX_QUOTA_EXCEEDED
+  value: "15"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: FX_UNKNOWN_PRINCIPLE
+  value: "16"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: FX_LOCK_CONFlICT
+  value: "17"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: FX_DIR_NOT_EMPTY
+  value: "18"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: FX_NOT_A_DIRECTORY
+  value: "19"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: FX_INVALID_FILENAME
+  value: "20"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: FX_LINK_LOOP
+  value: "21"
+full_name: Net::SFTP::Constants::StatusCodes
+includes: []
+
+instance_methods: []
+
+name: StatusCodes

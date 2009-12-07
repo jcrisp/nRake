@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns true if there are any active requests or pending files or directories.
+full_name: Net::SFTP::Operations::Download#active?
+is_singleton: false
+name: active?
+params: ()
+visibility: public

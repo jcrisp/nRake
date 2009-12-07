@@ -1,0 +1,17 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: An extension to Net::SSH::Connection::Channel. Facilitates unit testing.
+constants: []
+
+full_name: Net::SSH::Test::Extensions::Channel
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: send_data_for_test
+name: Channel

@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: ""
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Displays the result of yielding if the log level is Logger::WARN or greater. (Called lwarn to avoid shadowing with Kernel#warn.)
+full_name: Net::SSH::Loggable#lwarn
+is_singleton: false
+name: lwarn
+params: () {|| ...}
+visibility: public

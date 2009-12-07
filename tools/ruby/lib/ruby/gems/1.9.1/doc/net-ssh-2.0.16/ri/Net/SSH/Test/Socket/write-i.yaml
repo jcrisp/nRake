@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: This doesn't actually do anything, since we don't really care what gets written.
+full_name: Net::SSH::Test::Socket#write
+is_singleton: false
+name: write
+params: (data)
+visibility: public

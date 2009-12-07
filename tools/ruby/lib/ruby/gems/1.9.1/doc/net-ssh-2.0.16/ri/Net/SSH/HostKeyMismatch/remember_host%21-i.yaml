@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Tell Net::SSH to record this host and key in the known hosts file, so that subsequent connections will remember them.
+full_name: Net::SSH::HostKeyMismatch#remember_host!
+is_singleton: false
+name: remember_host!
+params: ()
+visibility: public

@@ -1,0 +1,19 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>if_needs_rekey? (Net::SSH::Transport::PacketStream)</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="../../../../.././rdoc-style.css" type="text/css" media="screen" />
+</head>
+<body class="standalone-code">
+  <pre>     <span class="ruby-comment cmt"># File lib/net/ssh/transport/packet_stream.rb, line 163</span>
+163:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">if_needs_rekey?</span>
+164:       <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">client</span>.<span class="ruby-identifier">needs_rekey?</span> <span class="ruby-operator">||</span> <span class="ruby-identifier">server</span>.<span class="ruby-identifier">needs_rekey?</span>
+165:         <span class="ruby-keyword kw">yield</span>
+166:         <span class="ruby-identifier">client</span>.<span class="ruby-identifier">reset!</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">client</span>.<span class="ruby-identifier">needs_rekey?</span>
+167:         <span class="ruby-identifier">server</span>.<span class="ruby-identifier">reset!</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">server</span>.<span class="ruby-identifier">needs_rekey?</span>
+168:       <span class="ruby-keyword kw">end</span>
+169:     <span class="ruby-keyword kw">end</span></pre>
+</body>
+</html>

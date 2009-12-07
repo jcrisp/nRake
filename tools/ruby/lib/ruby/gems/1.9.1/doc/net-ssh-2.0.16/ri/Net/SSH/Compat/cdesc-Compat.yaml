@@ -1,0 +1,23 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: io_select
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: io_select
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: This class contains miscellaneous patches and workarounds for different ruby implementations.
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: SELECT_MUTEX
+  value: Mutex.new
+full_name: Net::SSH::Compat
+includes: []
+
+instance_methods: []
+
+name: Compat
+superclass: Object

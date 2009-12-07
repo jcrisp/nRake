@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Sets the key to the given value, truncating it so that it is the correct length.
+full_name: Net::SSH::Transport::HMAC::Abstract#key=
+is_singleton: false
+name: key=
+params: (value)
+visibility: public

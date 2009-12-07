@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Registers a callback to be invoked when extended data packets are received by the channel. The callback is called with the channel as the first argument, the data type (as an integer) as the second, and the data as the third. Extended data is almost exclusively used to send <tt>stderr</tt> data (<tt>type</tt> == 1). Other extended data types are not defined by the SSH protocol.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  channel.on_extended_data do |ch, type, data|\n    puts &quot;got stderr: #{data.inspect}&quot;\n  end\n"
+full_name: Net::SSH::Connection::Channel#on_extended_data
+is_singleton: false
+name: on_extended_data
+params: (&block)
+visibility: public

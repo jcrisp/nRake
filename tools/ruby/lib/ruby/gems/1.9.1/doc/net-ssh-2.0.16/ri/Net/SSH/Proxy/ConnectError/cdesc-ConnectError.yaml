@@ -1,0 +1,17 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Used for reporting proxy connection errors.
+constants: []
+
+full_name: Net::SSH::Proxy::ConnectError
+includes: []
+
+instance_methods: []
+
+name: ConnectError
+superclass: Net::SSH::Proxy::Error

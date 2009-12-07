@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Create a new instance of the DiffieHellmanGroup1SHA1 algorithm. The data is a Hash of symbols representing information required by this algorithm, which was acquired during earlier processing.
+full_name: Net::SSH::Transport::Kex::DiffieHellmanGroup1SHA1::new
+is_singleton: true
+name: new
+params: (algorithms, connection, data)
+visibility: public

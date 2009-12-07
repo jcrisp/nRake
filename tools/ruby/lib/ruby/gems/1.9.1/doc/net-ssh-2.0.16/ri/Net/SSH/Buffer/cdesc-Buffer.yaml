@@ -1,0 +1,96 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: 
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: exposes the raw content of the buffer
+  name: content
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: the current position of the pointer in the buffer
+  name: position
+  rw: RW
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: from
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Net::SSH::Buffer is a flexible class for building and parsing binary data packets. It provides a stream-like interface for sequentially reading data items from the buffer, as well as a useful helper method for building binary packets given a signature.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Writing to a buffer always appends to the end, regardless of where the read cursor is. Reading, on the other hand, always begins at the first byte of the buffer and increments the read cursor, with subsequent reads taking up where the last left off.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: As a consumer of the Net::SSH library, you will rarely come into contact with these buffer objects directly, but it could happen. Also, if you are ever implementing a protocol on top of SSH (e.g. SFTP), this buffer class can be quite handy.
+constants: []
+
+full_name: Net::SSH::Buffer
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: ==
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: append
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: available
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: clear!
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: consume!
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: empty?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: eof?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: length
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: read
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: read!
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: read_bignum
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: read_bool
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: read_buffer
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: read_byte
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: read_int64
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: read_key
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: read_keyblob
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: read_long
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: read_string
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: read_to
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: remainder_as_buffer
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: reset!
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: to_s
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: write
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: write_bignum
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: write_bool
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: write_byte
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: write_int64
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: write_key
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: write_long
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: write_string
+name: Buffer
+superclass: Object

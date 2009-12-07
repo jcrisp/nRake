@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns a two-element array containing the [ key-length, block-size ] for the named cipher algorithm. If the cipher algorithm is unknown, or is &quot;none&quot;, 0 is returned for both elements of the tuple.
+full_name: Net::SSH::Transport::CipherFactory::get_lengths
+is_singleton: true
+name: get_lengths
+params: (name)
+visibility: public

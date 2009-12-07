@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>ssh_do_verify (OpenSSL::PKey::DSA)</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="../../../.././rdoc-style.css" type="text/css" media="screen" />
+</head>
+<body class="standalone-code">
+  <pre>     <span class="ruby-comment cmt"># File lib/net/ssh/transport/openssl.rb, line 97</span>
+ 97:       <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">ssh_do_verify</span>(<span class="ruby-identifier">sig</span>, <span class="ruby-identifier">data</span>)
+ 98:         <span class="ruby-identifier">sig_r</span> = <span class="ruby-identifier">sig</span>[<span class="ruby-value">0</span>,<span class="ruby-value">20</span>].<span class="ruby-identifier">unpack</span>(<span class="ruby-value str">&quot;H*&quot;</span>)[<span class="ruby-value">0</span>].<span class="ruby-identifier">to_i</span>(<span class="ruby-value">16</span>)
+ 99:         <span class="ruby-identifier">sig_s</span> = <span class="ruby-identifier">sig</span>[<span class="ruby-value">20</span>,<span class="ruby-value">20</span>].<span class="ruby-identifier">unpack</span>(<span class="ruby-value str">&quot;H*&quot;</span>)[<span class="ruby-value">0</span>].<span class="ruby-identifier">to_i</span>(<span class="ruby-value">16</span>)
+100:         <span class="ruby-identifier">a1sig</span> = <span class="ruby-constant">OpenSSL</span><span class="ruby-operator">::</span><span class="ruby-constant">ASN1</span><span class="ruby-operator">::</span><span class="ruby-constant">Sequence</span>([
+101:            <span class="ruby-constant">OpenSSL</span><span class="ruby-operator">::</span><span class="ruby-constant">ASN1</span><span class="ruby-operator">::</span><span class="ruby-constant">Integer</span>(<span class="ruby-identifier">sig_r</span>),
+102:            <span class="ruby-constant">OpenSSL</span><span class="ruby-operator">::</span><span class="ruby-constant">ASN1</span><span class="ruby-operator">::</span><span class="ruby-constant">Integer</span>(<span class="ruby-identifier">sig_s</span>)
+103:         ])
+104:         <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">verify</span>(<span class="ruby-constant">OpenSSL</span><span class="ruby-operator">::</span><span class="ruby-constant">Digest</span><span class="ruby-operator">::</span><span class="ruby-constant">DSS1</span>.<span class="ruby-identifier">new</span>, <span class="ruby-identifier">a1sig</span>.<span class="ruby-identifier">to_der</span>, <span class="ruby-identifier">data</span>)
+105:       <span class="ruby-keyword kw">end</span></pre>
+</body>
+</html>

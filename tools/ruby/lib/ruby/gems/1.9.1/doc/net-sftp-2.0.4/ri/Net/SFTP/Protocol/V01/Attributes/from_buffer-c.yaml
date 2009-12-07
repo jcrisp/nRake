@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Parses the given buffer and returns an Attributes object compsed from the data extracted from it.
+full_name: Net::SFTP::Protocol::V01::Attributes::from_buffer
+is_singleton: true
+name: from_buffer
+params: (buffer)
+visibility: public

@@ -1,0 +1,19 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Attempts to create a link, either hard or symbolic. This operation is only available in SFTP protocol versions 6 and higher. If the <tt>symlink</tt> paramter is true, a symbolic link will be created, otherwise a hard link will be created. The link will be named <tt>new_link_path</tt>, and will point to the path <tt>existing_path</tt>.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  sftp.link(&quot;/path/to/symlink&quot;, &quot;/path/to/file&quot;, true).wait\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Note that #link is only available for SFTP protocol 6 and higher. You can use #symlink for protocols 3 and higher."
+full_name: Net::SFTP::Session#link
+is_singleton: false
+name: link
+params: |
+  link(new_link_path, existing_path, symlink=true) -> request
+  link(new_link_path, existing_path, symlink=true) { |response| ... } -> request
+
+visibility: public

@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: A default block size of 8 is required by the SSH2 protocol.
+full_name: Net::SSH::Transport::IdentityCipher::block_size
+is_singleton: true
+name: block_size
+params: ()
+visibility: public

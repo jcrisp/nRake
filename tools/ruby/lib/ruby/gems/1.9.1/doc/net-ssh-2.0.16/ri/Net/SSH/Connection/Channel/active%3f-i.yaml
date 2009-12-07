@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns true if the channel exists in the channel list of the session, and false otherwise. This can be used to determine whether a channel has been closed or not.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  ssh.loop { channel.active? }\n"
+full_name: Net::SSH::Connection::Channel#active?
+is_singleton: false
+name: active?
+params: ()
+visibility: public

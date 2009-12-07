@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: key
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Iterates over all available identities (public keys) known to this manager. As it finds one, it will then yield it to the caller. The origin of the identities may be from files on disk or from an ssh-agent. Note that identities from an ssh-agent are always listed first in the array, with other identities coming after.
+full_name: Net::SSH::Authentication::KeyManager#each_identity
+is_singleton: false
+name: each_identity
+params: () {|key| ...}
+visibility: public

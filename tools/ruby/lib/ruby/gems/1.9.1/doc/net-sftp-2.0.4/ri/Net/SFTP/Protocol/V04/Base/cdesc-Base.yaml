@@ -1,0 +1,59 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Wraps the low-level SFTP calls for version 4 of the SFTP protocol. Also implements the updated FXP_NAME packet parsing as mandated by v4 of the protocol.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: None of these protocol methods block--all of them return immediately, requiring the SSH event loop to be run while the server response is pending.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: You will almost certainly never need to use this driver directly. Please see Net::SFTP::Session for the recommended interface.
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: "The default flags used if the <tt>flags</tt> parameter is nil for any of the #stat, #lstat, or #fstat operations."
+  name: DEFAULT_FLAGS
+  value: Attributes::F_SIZE |                       Attributes::F_PERMISSIONS |                       Attributes::F_ACCESSTIME |                       Attributes::F_CREATETIME |                       Attributes::F_MODIFYTIME |                       Attributes::F_ACL |                       Attributes::F_OWNERGROUP |                       Attributes::F_SUBSECOND_TIMES |                       Attributes::F_EXTENDED
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: "The default flags used if the <tt>flags</tt> parameter is nil for any of the #stat, #lstat, or #fstat operations."
+  name: DEFAULT_FLAGS
+  value: Attributes::F_SIZE |                       Attributes::F_PERMISSIONS |                       Attributes::F_ACCESSTIME |                       Attributes::F_CREATETIME |                       Attributes::F_MODIFYTIME |                       Attributes::F_ACL |                       Attributes::F_OWNERGROUP |                       Attributes::F_SUBSECOND_TIMES |                       Attributes::F_EXTENDED
+full_name: Net::SFTP::Protocol::V04::Base
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: attribute_factory
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: attribute_factory
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: fstat
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: fstat
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: lstat
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: lstat
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: name_factory
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: name_factory
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: parse_name_packet
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: parse_name_packet
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: stat
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: stat
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: version
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: version
+name: Base
+superclass: V03::Base

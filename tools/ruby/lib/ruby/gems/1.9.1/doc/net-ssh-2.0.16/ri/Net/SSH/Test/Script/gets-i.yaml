@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: A convenience method for adding an arbitrary remote packet to the events list.
+full_name: Net::SSH::Test::Script#gets
+is_singleton: false
+name: gets
+params: (type, *args)
+visibility: public

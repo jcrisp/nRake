@@ -1,0 +1,23 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: load
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: load
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The Protocol module contains the definitions for all supported SFTP protocol versions.
+- !ruby/struct:RDoc::Markup::Flow::RULE 
+  :width: 1
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The Protocol module contains the definitions for all supported SFTP protocol versions.
+constants: []
+
+full_name: Net::SFTP::Protocol
+includes: []
+
+instance_methods: []
+
+name: Protocol

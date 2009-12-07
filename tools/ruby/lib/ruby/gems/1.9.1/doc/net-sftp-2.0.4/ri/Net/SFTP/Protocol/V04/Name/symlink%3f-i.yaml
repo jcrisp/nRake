@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns <tt>true</tt> if the item is a symlink.
+full_name: Net::SFTP::Protocol::V04::Name#symlink?
+is_singleton: false
+name: symlink?
+params: ()
+visibility: public

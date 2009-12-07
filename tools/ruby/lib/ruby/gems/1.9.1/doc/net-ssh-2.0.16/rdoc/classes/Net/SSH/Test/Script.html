@@ -1,0 +1,597 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Class: Net::SSH::Test::Script [Net::SSH: a pure-Ruby implementation of the SSH2 client protocol.]</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <link rel="stylesheet" href="../../../.././rdoc-style.css" type="text/css" media="screen" />
+  <script type="text/javascript">
+  // <![CDATA[
+
+  function popupCode( url ) {
+    window.open(url, "Code", "resizable=yes,scrollbars=yes,toolbar=no,status=no,height=150,width=400")
+  }
+
+  function toggleCode( id ) {
+    if ( document.getElementById )
+      elem = document.getElementById( id );
+    else if ( document.all )
+      elem = eval( "document.all." + id );
+    else
+      return false;
+
+    elemStyle = elem.style;
+
+    if ( elemStyle.display != "block" ) {
+      elemStyle.display = "block"
+    } else {
+      elemStyle.display = "none"
+    }
+
+    return true;
+  }
+
+  // Make codeblocks hidden by default
+  document.writeln( "<style type=\"text/css\">div.method-source-code { display: none }<\/style>" )
+
+  // ]]>
+  </script>
+
+</head>
+<body>
+
+
+    <div id="classHeader">
+        <table class="header-table">
+        <tr class="top-aligned-row">
+          <td><strong>Class</strong></td>
+          <td class="class-name-in-header">Net::SSH::Test::Script</td>
+        </tr>
+        <tr class="top-aligned-row">
+            <td><strong>In:</strong></td>
+            <td>
+
+
+                <a href="../../../../files/lib/net/ssh/test/script_rb.html">
+
+                lib/net/ssh/test/script.rb
+
+                </a>
+
+
+        <br />
+
+            </td>
+        </tr>
+
+
+        <tr class="top-aligned-row">
+            <td><strong>Parent:</strong></td>
+            <td>
+
+                Object
+
+            </td>
+        </tr>
+
+        </table>
+    </div>
+  <!-- banner header -->
+
+  <div id="bodyContent">
+
+  <div id="contextContent">
+
+    <div id="description">
+      <p>
+Represents a sequence of scripted events that identify the behavior that a
+test expects. Methods named &#8220;sends_*&#8221; create events for packets
+being sent from the local to the remote host, and methods named
+&#8220;gets_*&#8221; create events for packets being received by the local
+from the remote host.
+</p>
+<p>
+A reference to a script. is generally obtained in a unit test via the <a
+href="../Test.html#M000126">Net::SSH::Test#story</a> helper method:
+</p>
+<pre>
+  story do |script|
+    channel = script.opens_channel
+    ...
+  end
+</pre>
+
+    </div>
+
+   </div>
+
+
+    <div id="method-list">
+      <h3 class="section-bar">Methods</h3>
+
+      <div class="name-list">
+
+        <a href="#M000167">gets</a>&nbsp;&nbsp;
+
+        <a href="#M000175">gets_channel_close</a>&nbsp;&nbsp;
+
+        <a href="#M000172">gets_channel_data</a>&nbsp;&nbsp;
+
+        <a href="#M000174">gets_channel_eof</a>&nbsp;&nbsp;
+
+        <a href="#M000173">gets_channel_request</a>&nbsp;&nbsp;
+
+        <a href="#M000164">new</a>&nbsp;&nbsp;
+
+        <a href="#M000176">next</a>&nbsp;&nbsp;
+
+        <a href="#M000165">opens_channel</a>&nbsp;&nbsp;
+
+        <a href="#M000177">process</a>&nbsp;&nbsp;
+
+        <a href="#M000166">sends</a>&nbsp;&nbsp;
+
+        <a href="#M000171">sends_channel_close</a>&nbsp;&nbsp;
+
+        <a href="#M000169">sends_channel_data</a>&nbsp;&nbsp;
+
+        <a href="#M000170">sends_channel_eof</a>&nbsp;&nbsp;
+
+        <a href="#M000168">sends_channel_request</a>&nbsp;&nbsp;
+
+      </div>
+    </div>
+
+  </div>
+
+    <!-- if includes -->
+
+    <div id="section">
+
+
+
+    <div id="attribute-list">
+      <h3 class="section-bar">Attributes</h3>
+
+      <div class="name-list">
+        <table>
+
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">events</td>
+
+          <td class="context-item-value">&nbsp;[R]&nbsp;</td>
+
+          <td class="context-item-desc">
+The list of scripted events. These will be <a
+href="LocalPacket.html">Net::SSH::Test::LocalPacket</a> and <a
+href="RemotePacket.html">Net::SSH::Test::RemotePacket</a> instances.
+
+</td>
+        </tr>
+
+        </table>
+      </div>
+    </div>
+
+
+    <!-- if method_list -->
+
+    <div id="methods">
+
+      <h3 class="section-bar">Public Class methods</h3>
+
+
+      <div id="method-M000164" class="method-detail">
+        <a name="M000164"></a>
+
+        <div class="method-heading">
+
+          <a href="Script.src/M000164.html" target="Code" class="method-signature"
+            onclick="popupCode('Script.src/M000164.html');return false;">
+
+          <span class="method-name">new</span><span class="method-args">()</span>
+
+          </a>
+
+        </div>
+
+        <div class="method-description">
+
+          <p>
+Create a new, empty script.
+</p>
+
+        </div>
+      </div>
+
+
+      <h3 class="section-bar">Public Instance methods</h3>
+
+
+      <div id="method-M000167" class="method-detail">
+        <a name="M000167"></a>
+
+        <div class="method-heading">
+
+          <a href="Script.src/M000167.html" target="Code" class="method-signature"
+            onclick="popupCode('Script.src/M000167.html');return false;">
+
+          <span class="method-name">gets</span><span class="method-args">(type, *args)</span>
+
+          </a>
+
+        </div>
+
+        <div class="method-description">
+
+          <p>
+A convenience method for adding an arbitrary remote packet to the events
+list.
+</p>
+
+        </div>
+      </div>
+
+
+      <div id="method-M000175" class="method-detail">
+        <a name="M000175"></a>
+
+        <div class="method-heading">
+
+          <a href="Script.src/M000175.html" target="Code" class="method-signature"
+            onclick="popupCode('Script.src/M000175.html');return false;">
+
+          <span class="method-name">gets_channel_close</span><span class="method-args">(channel)</span>
+
+          </a>
+
+        </div>
+
+        <div class="method-description">
+
+          <p>
+Scripts the reception of a channel close packet from the remote host by the
+given <a href="Channel.html">Net::SSH::Test::Channel</a> <tt>channel</tt>.
+This will typically be called via <a
+href="Channel.html#M000150">Net::SSH::Test::Channel#gets_close</a>.
+</p>
+
+        </div>
+      </div>
+
+
+      <div id="method-M000172" class="method-detail">
+        <a name="M000172"></a>
+
+        <div class="method-heading">
+
+          <a href="Script.src/M000172.html" target="Code" class="method-signature"
+            onclick="popupCode('Script.src/M000172.html');return false;">
+
+          <span class="method-name">gets_channel_data</span><span class="method-args">(channel, data)</span>
+
+          </a>
+
+        </div>
+
+        <div class="method-description">
+
+          <p>
+Scripts the reception of a channel data packet from the remote host by the
+given <a href="Channel.html">Net::SSH::Test::Channel</a> <tt>channel</tt>.
+This will typically be called via <a
+href="Channel.html#M000147">Net::SSH::Test::Channel#gets_data</a>.
+</p>
+
+        </div>
+      </div>
+
+
+      <div id="method-M000174" class="method-detail">
+        <a name="M000174"></a>
+
+        <div class="method-heading">
+
+          <a href="Script.src/M000174.html" target="Code" class="method-signature"
+            onclick="popupCode('Script.src/M000174.html');return false;">
+
+          <span class="method-name">gets_channel_eof</span><span class="method-args">(channel)</span>
+
+          </a>
+
+        </div>
+
+        <div class="method-description">
+
+          <p>
+Scripts the reception of a channel EOF packet from the remote host by the
+given <a href="Channel.html">Net::SSH::Test::Channel</a> <tt>channel</tt>.
+This will typically be called via <a
+href="Channel.html#M000149">Net::SSH::Test::Channel#gets_eof</a>.
+</p>
+
+        </div>
+      </div>
+
+
+      <div id="method-M000173" class="method-detail">
+        <a name="M000173"></a>
+
+        <div class="method-heading">
+
+          <a href="Script.src/M000173.html" target="Code" class="method-signature"
+            onclick="popupCode('Script.src/M000173.html');return false;">
+
+          <span class="method-name">gets_channel_request</span><span class="method-args">(channel, request, reply, data)</span>
+
+          </a>
+
+        </div>
+
+        <div class="method-description">
+
+          <p>
+Scripts the reception of a channel request packet from the remote host by
+the given <a href="Channel.html">Net::SSH::Test::Channel</a>
+<tt>channel</tt>. This will typically be called via <a
+href="Channel.html#M000148">Net::SSH::Test::Channel#gets_exit_status</a>.
+</p>
+
+        </div>
+      </div>
+
+
+      <div id="method-M000176" class="method-detail">
+        <a name="M000176"></a>
+
+        <div class="method-heading">
+
+          <a href="Script.src/M000176.html" target="Code" class="method-signature"
+            onclick="popupCode('Script.src/M000176.html');return false;">
+
+          <span class="method-name">next</span><span class="method-args">(mode=:shift)</span>
+
+          </a>
+
+        </div>
+
+        <div class="method-description">
+
+          <p>
+By default, removes the next event in the list and returns it. However,
+this can also be used to non-destructively peek at the next event in the
+list, by passing :first as the argument.
+</p>
+<pre>
+  # remove the next event and return it
+  event = script.next
+
+  # peek at the next event
+  event = script.next(:first)
+</pre>
+
+        </div>
+      </div>
+
+
+      <div id="method-M000165" class="method-detail">
+        <a name="M000165"></a>
+
+        <div class="method-heading">
+
+          <a href="Script.src/M000165.html" target="Code" class="method-signature"
+            onclick="popupCode('Script.src/M000165.html');return false;">
+
+          <span class="method-name">opens_channel</span><span class="method-args">(confirm=true)</span>
+
+          </a>
+
+        </div>
+
+        <div class="method-description">
+
+          <p>
+Scripts the opening of a channel by adding a local packet sending the
+channel open request, and if <tt>confirm</tt> is true (the default), also
+adding a remote packet confirming the new channel.
+</p>
+<p>
+A new <a href="Channel.html">Net::SSH::Test::Channel</a> instance is
+returned, which can be used to script additional channel operations.
+</p>
+
+        </div>
+      </div>
+
+
+      <div id="method-M000177" class="method-detail">
+        <a name="M000177"></a>
+
+        <div class="method-heading">
+
+          <a href="Script.src/M000177.html" target="Code" class="method-signature"
+            onclick="popupCode('Script.src/M000177.html');return false;">
+
+          <span class="method-name">process</span><span class="method-args">(packet)</span>
+
+          </a>
+
+        </div>
+
+        <div class="method-description">
+
+          <p>
+Compare the given packet against the next event in the list. If there is no
+next event, an exception will be raised. This is called by <a
+href="Extensions/PacketStream.html#M000134">Net::SSH::Test::Extensions::PacketStream#test_enqueue_packet</a>.
+</p>
+
+        </div>
+      </div>
+
+
+      <div id="method-M000166" class="method-detail">
+        <a name="M000166"></a>
+
+        <div class="method-heading">
+
+          <a href="Script.src/M000166.html" target="Code" class="method-signature"
+            onclick="popupCode('Script.src/M000166.html');return false;">
+
+          <span class="method-name">sends</span><span class="method-args">(type, *args, &amp;block)</span>
+
+          </a>
+
+        </div>
+
+        <div class="method-description">
+
+          <p>
+A convenience method for adding an arbitrary local packet to the events
+list.
+</p>
+
+        </div>
+      </div>
+
+
+      <div id="method-M000171" class="method-detail">
+        <a name="M000171"></a>
+
+        <div class="method-heading">
+
+          <a href="Script.src/M000171.html" target="Code" class="method-signature"
+            onclick="popupCode('Script.src/M000171.html');return false;">
+
+          <span class="method-name">sends_channel_close</span><span class="method-args">(channel)</span>
+
+          </a>
+
+        </div>
+
+        <div class="method-description">
+
+          <p>
+Scripts the sending of a channel close packet from the given <a
+href="Channel.html">Net::SSH::Test::Channel</a> <tt>channel</tt>. This will
+typically be called via <a
+href="Channel.html#M000146">Net::SSH::Test::Channel#sends_close</a>.
+</p>
+
+        </div>
+      </div>
+
+
+      <div id="method-M000169" class="method-detail">
+        <a name="M000169"></a>
+
+        <div class="method-heading">
+
+          <a href="Script.src/M000169.html" target="Code" class="method-signature"
+            onclick="popupCode('Script.src/M000169.html');return false;">
+
+          <span class="method-name">sends_channel_data</span><span class="method-args">(channel, data)</span>
+
+          </a>
+
+        </div>
+
+        <div class="method-description">
+
+          <p>
+Scripts the sending of a channel data packet. <tt>channel</tt> must be a <a
+href="Channel.html">Net::SSH::Test::Channel</a> object, and <tt>data</tt>
+is the (string) data to expect will be sent.
+</p>
+<p>
+This will typically be called via <a
+href="Channel.html#M000144">Net::SSH::Test::Channel#sends_data</a>.
+</p>
+
+        </div>
+      </div>
+
+
+      <div id="method-M000170" class="method-detail">
+        <a name="M000170"></a>
+
+        <div class="method-heading">
+
+          <a href="Script.src/M000170.html" target="Code" class="method-signature"
+            onclick="popupCode('Script.src/M000170.html');return false;">
+
+          <span class="method-name">sends_channel_eof</span><span class="method-args">(channel)</span>
+
+          </a>
+
+        </div>
+
+        <div class="method-description">
+
+          <p>
+Scripts the sending of a channel EOF packet from the given <a
+href="Channel.html">Net::SSH::Test::Channel</a> <tt>channel</tt>. This will
+typically be called via <a
+href="Channel.html#M000145">Net::SSH::Test::Channel#sends_eof</a>.
+</p>
+
+        </div>
+      </div>
+
+
+      <div id="method-M000168" class="method-detail">
+        <a name="M000168"></a>
+
+        <div class="method-heading">
+
+          <a href="Script.src/M000168.html" target="Code" class="method-signature"
+            onclick="popupCode('Script.src/M000168.html');return false;">
+
+          <span class="method-name">sends_channel_request</span><span class="method-args">(channel, request, reply, data, success=true)</span>
+
+          </a>
+
+        </div>
+
+        <div class="method-description">
+
+          <p>
+Scripts the sending of a new channel request packet to the remote host.
+<tt>channel</tt> should be an instance of <a
+href="Channel.html">Net::SSH::Test::Channel</a>. <tt>request</tt> is a
+string naming the request type to send, <tt>reply</tt> is a boolean
+indicating whether a response to this packet is required , and
+<tt>data</tt> is any additional request-specific data that this packet
+should send. <tt>success</tt> indicates whether the response (if one is
+required) should be success or failure.
+</p>
+<p>
+If a reply is desired, a remote packet will also be queued,
+:channel_success if <tt>success</tt> is true, or :channel_failure if
+<tt>success</tt> is false.
+</p>
+<p>
+This will typically be called via <a
+href="Channel.html#M000142">Net::SSH::Test::Channel#sends_exec</a> or <a
+href="Channel.html#M000143">Net::SSH::Test::Channel#sends_subsystem</a>.
+</p>
+
+        </div>
+      </div>
+
+
+
+    </div>
+
+
+
+
+  </div>
+
+<div id="validator-badges">
+  <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+</div>
+
+</body>
+</html>

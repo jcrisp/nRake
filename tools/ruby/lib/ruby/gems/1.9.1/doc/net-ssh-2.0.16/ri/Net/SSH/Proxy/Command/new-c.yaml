@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Create a new socket factory that tunnels via a command executed with the user's shell, which is composed from the given command template. In the command template, `%h' will be substituted by the host name to connect and `%p' by the port.
+full_name: Net::SSH::Proxy::Command::new
+is_singleton: true
+name: new
+params: (command_line_template)
+visibility: public

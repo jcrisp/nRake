@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns a sockaddr struct for the port and host that were used when the socket was instantiated.
+full_name: Net::SSH::Test::Socket#getpeername
+is_singleton: false
+name: getpeername
+params: ()
+visibility: public

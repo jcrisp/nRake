@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Tries to read up to <tt>n</tt> bytes of data from the remote end, and appends the data to the input buffer. It returns the number of bytes read, or 0 if no data was available to be read.
+full_name: Net::SSH::BufferedIo#fill
+is_singleton: false
+name: fill
+params: (n=8192)
+visibility: public

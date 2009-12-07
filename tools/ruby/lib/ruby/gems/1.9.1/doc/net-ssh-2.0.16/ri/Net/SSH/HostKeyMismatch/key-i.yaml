@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the key itself, as reported by the remote host.
+full_name: Net::SSH::HostKeyMismatch#key
+is_singleton: false
+name: key
+params: ()
+visibility: public

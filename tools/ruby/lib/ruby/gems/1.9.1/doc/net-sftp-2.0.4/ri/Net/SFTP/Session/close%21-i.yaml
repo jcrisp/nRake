@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Identical to #close, but blocks until the server responds. It will raise a StatusException if the request was unsuccessful. Otherwise, it returns the Response object for this request."
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  sftp.close!(handle)\n"
+full_name: Net::SFTP::Session#close!
+is_singleton: false
+name: close!
+params: (handle, &callback)
+visibility: public

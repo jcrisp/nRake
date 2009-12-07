@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the local (client-assigned) id for this channel, or a Proc object that will return the local-id later if the local id has not yet been set. (See Net::SSH::Test::Packet#instantiate!.)
+full_name: Net::SSH::Test::Channel#local_id
+is_singleton: false
+name: local_id
+params: ()
+visibility: public

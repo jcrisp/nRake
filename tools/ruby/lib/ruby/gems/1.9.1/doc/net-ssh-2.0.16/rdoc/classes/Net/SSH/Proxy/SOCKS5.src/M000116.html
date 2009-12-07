@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>open (Net::SSH::Proxy::SOCKS5)</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="../../../../.././rdoc-style.css" type="text/css" media="screen" />
+</head>
+<body class="standalone-code">
+  <pre>     <span class="ruby-comment cmt"># File lib/net/ssh/proxy/socks5.rb, line 65</span>
+ 65:         <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">open</span>(<span class="ruby-identifier">host</span>, <span class="ruby-identifier">port</span>)
+ 66:           <span class="ruby-identifier">socket</span> = <span class="ruby-constant">TCPSocket</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">proxy_host</span>, <span class="ruby-identifier">proxy_port</span>)
+ 67: 
+ 68:           <span class="ruby-identifier">methods</span> = [<span class="ruby-constant">METHOD_NO_AUTH</span>]
+ 69:           <span class="ruby-identifier">methods</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-constant">METHOD_PASSWD</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">options</span>[<span class="ruby-identifier">:user</span>]
+ 70: 
+ 71:           <span class="ruby-identifier">packet</span> = [<span class="ruby-constant">VERSION</span>, <span class="ruby-identifier">methods</span>.<span class="ruby-identifier">size</span>, <span class="ruby-operator">*</span><span class="ruby-identifier">methods</span>].<span class="ruby-identifier">pack</span>(<span class="ruby-value str">&quot;C*&quot;</span>)
+ 72:           <span class="ruby-identifier">socket</span>.<span class="ruby-identifier">send</span> <span class="ruby-identifier">packet</span>, <span class="ruby-value">0</span>
+ 73: 
+ 74:           <span class="ruby-identifier">version</span>, <span class="ruby-identifier">method</span> = <span class="ruby-identifier">socket</span>.<span class="ruby-identifier">recv</span>(<span class="ruby-value">2</span>).<span class="ruby-identifier">unpack</span>(<span class="ruby-value str">&quot;CC&quot;</span>)
+ 75:           <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">version</span> <span class="ruby-operator">!=</span> <span class="ruby-constant">VERSION</span>
+ 76:             <span class="ruby-identifier">socket</span>.<span class="ruby-identifier">close</span>
+ 77:             <span class="ruby-identifier">raise</span> <span class="ruby-constant">Net</span><span class="ruby-operator">::</span><span class="ruby-constant">SSH</span><span class="ruby-operator">::</span><span class="ruby-constant">Proxy</span><span class="ruby-operator">::</span><span class="ruby-constant">Error</span>, <span class="ruby-node">&quot;invalid SOCKS version (#{version})&quot;</span>
+ 78:           <span class="ruby-keyword kw">end</span>
+ 79: 
+ 80:           <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">method</span> <span class="ruby-operator">==</span> <span class="ruby-constant">METHOD_NONE</span>
+ 81:             <span class="ruby-identifier">socket</span>.<span class="ruby-identifier">close</span>
+ 82:             <span class="ruby-identifier">raise</span> <span class="ruby-constant">Net</span><span class="ruby-operator">::</span><span class="ruby-constant">SSH</span><span class="ruby-operator">::</span><span class="ruby-constant">Proxy</span><span class="ruby-operator">::</span><span class="ruby-constant">Error</span>, <span class="ruby-value str">&quot;no supported authorization methods&quot;</span>
+ 83:           <span class="ruby-keyword kw">end</span>
+ 84: 
+ 85:           <span class="ruby-identifier">negotiate_password</span>(<span class="ruby-identifier">socket</span>) <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">method</span> <span class="ruby-operator">==</span> <span class="ruby-constant">METHOD_PASSWD</span>
+ 86: 
+ 87:           <span class="ruby-identifier">packet</span> = [<span class="ruby-constant">VERSION</span>, <span class="ruby-constant">CMD_CONNECT</span>, <span class="ruby-value">0</span>].<span class="ruby-identifier">pack</span>(<span class="ruby-value str">&quot;C*&quot;</span>)
+ 88: 
+ 89:           <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">host</span> <span class="ruby-operator">=~</span> <span class="ruby-regexp re">/^(\d+)\.(\d+)\.(\d+)\.(\d+)$/</span>
+ 90:             <span class="ruby-identifier">packet</span> <span class="ruby-operator">&lt;&lt;</span> [<span class="ruby-constant">ATYP_IPV4</span>, <span class="ruby-identifier">$1</span>.<span class="ruby-identifier">to_i</span>, <span class="ruby-identifier">$2</span>.<span class="ruby-identifier">to_i</span>, <span class="ruby-identifier">$3</span>.<span class="ruby-identifier">to_i</span>, <span class="ruby-identifier">$4</span>.<span class="ruby-identifier">to_i</span>].<span class="ruby-identifier">pack</span>(<span class="ruby-value str">&quot;C*&quot;</span>)
+ 91:           <span class="ruby-keyword kw">else</span>
+ 92:             <span class="ruby-identifier">packet</span> <span class="ruby-operator">&lt;&lt;</span> [<span class="ruby-constant">ATYP_DOMAIN</span>, <span class="ruby-identifier">host</span>.<span class="ruby-identifier">length</span>, <span class="ruby-identifier">host</span>].<span class="ruby-identifier">pack</span>(<span class="ruby-value str">&quot;CCA*&quot;</span>)
+ 93:           <span class="ruby-keyword kw">end</span>
+ 94: 
+ 95:           <span class="ruby-identifier">packet</span> <span class="ruby-operator">&lt;&lt;</span> [<span class="ruby-identifier">port</span>].<span class="ruby-identifier">pack</span>(<span class="ruby-value str">&quot;n&quot;</span>)
+ 96:           <span class="ruby-identifier">socket</span>.<span class="ruby-identifier">send</span> <span class="ruby-identifier">packet</span>, <span class="ruby-value">0</span>
+ 97:           
+ 98:           <span class="ruby-identifier">version</span>, <span class="ruby-identifier">reply</span>, = <span class="ruby-identifier">socket</span>.<span class="ruby-identifier">recv</span>(<span class="ruby-value">2</span>).<span class="ruby-identifier">unpack</span>(<span class="ruby-value str">&quot;C*&quot;</span>)
+ 99:           <span class="ruby-identifier">socket</span>.<span class="ruby-identifier">recv</span>(<span class="ruby-value">1</span>)
+100:           <span class="ruby-identifier">address_type</span> = <span class="ruby-identifier">socket</span>.<span class="ruby-identifier">recv</span>(<span class="ruby-value">1</span>).<span class="ruby-identifier">getbyte</span>(<span class="ruby-value">0</span>)
+101:           <span class="ruby-keyword kw">case</span> <span class="ruby-identifier">address_type</span>
+102:           <span class="ruby-keyword kw">when</span> <span class="ruby-value">1</span>
+103:             <span class="ruby-identifier">socket</span>.<span class="ruby-identifier">recv</span>(<span class="ruby-value">4</span>)  <span class="ruby-comment cmt"># get four bytes for IPv4 address</span>
+104:           <span class="ruby-keyword kw">when</span> <span class="ruby-value">3</span>
+105:             <span class="ruby-identifier">len</span> = <span class="ruby-identifier">socket</span>.<span class="ruby-identifier">recv</span>(<span class="ruby-value">1</span>).<span class="ruby-identifier">getbyte</span>(<span class="ruby-value">0</span>)
+106:             <span class="ruby-identifier">hostname</span> = <span class="ruby-identifier">socket</span>.<span class="ruby-identifier">recv</span>(<span class="ruby-identifier">len</span>)
+107:           <span class="ruby-keyword kw">when</span> <span class="ruby-value">4</span>
+108:             <span class="ruby-identifier">ipv6addr</span> <span class="ruby-identifier">hostname</span> = <span class="ruby-identifier">socket</span>.<span class="ruby-identifier">recv</span>(<span class="ruby-value">16</span>)
+109:           <span class="ruby-keyword kw">else</span>
+110:             <span class="ruby-identifier">socket</span>.<span class="ruby-identifier">close</span>
+111:             <span class="ruby-identifier">raise</span> <span class="ruby-constant">ConnectionError</span>, <span class="ruby-value str">&quot;Illegal response type&quot;</span>
+112:           <span class="ruby-keyword kw">end</span>
+113:           <span class="ruby-identifier">portnum</span> = <span class="ruby-identifier">socket</span>.<span class="ruby-identifier">recv</span>(<span class="ruby-value">2</span>)
+114:           
+115:           <span class="ruby-keyword kw">unless</span> <span class="ruby-identifier">reply</span> <span class="ruby-operator">==</span> <span class="ruby-constant">SUCCESS</span>
+116:             <span class="ruby-identifier">socket</span>.<span class="ruby-identifier">close</span>
+117:             <span class="ruby-identifier">raise</span> <span class="ruby-constant">ConnectError</span>, <span class="ruby-node">&quot;#{reply}&quot;</span>
+118:           <span class="ruby-keyword kw">end</span>
+119: 
+120:           <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">socket</span>
+121:         <span class="ruby-keyword kw">end</span></pre>
+</body>
+</html>

@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns a hash of the configuration options for the given host, as read from the SSH configuration file(s). If <tt>use_ssh_config</tt> is true (the default), this will load configuration from both ~/.ssh/config and /etc/ssh_config. If <tt>use_ssh_config</tt> is nil or false, nothing will be loaded (and an empty hash returned). Otherwise, <tt>use_ssh_config</tt> may be a file name (or array of file names) of SSH configuration file(s) to read.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: See Net::SSH::Config for the full description of all supported options.
+full_name: Net::SSH::configuration_for
+is_singleton: true
+name: configuration_for
+params: (host, use_ssh_config=true)
+visibility: public

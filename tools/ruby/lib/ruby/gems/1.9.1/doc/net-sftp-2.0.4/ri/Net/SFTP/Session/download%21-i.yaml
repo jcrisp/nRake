@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Identical to #download, but blocks until the download is complete. If <tt>local</tt> is omitted, downloads the file to an in-memory buffer and returns the result as a string; otherwise, returns the Net::SFTP::Operations::Download instance."
+full_name: Net::SFTP::Session#download!
+is_singleton: false
+name: download!
+params: (remote, local=nil, options={}, &block)
+visibility: public

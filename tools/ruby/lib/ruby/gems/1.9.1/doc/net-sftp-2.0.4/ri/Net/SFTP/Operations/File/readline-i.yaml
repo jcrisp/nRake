@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Same as #gets, but raises EOFError if EOF is encountered before any data could be read."
+full_name: Net::SFTP::Operations::File#readline
+is_singleton: false
+name: readline
+params: (sep_string=$/)
+visibility: public

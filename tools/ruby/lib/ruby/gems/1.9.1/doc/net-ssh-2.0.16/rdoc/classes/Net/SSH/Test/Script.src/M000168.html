@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>sends_channel_request (Net::SSH::Test::Script)</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="../../../../.././rdoc-style.css" type="text/css" media="screen" />
+</head>
+<body class="standalone-code">
+  <pre>    <span class="ruby-comment cmt"># File lib/net/ssh/test/script.rb, line 73</span>
+73:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">sends_channel_request</span>(<span class="ruby-identifier">channel</span>, <span class="ruby-identifier">request</span>, <span class="ruby-identifier">reply</span>, <span class="ruby-identifier">data</span>, <span class="ruby-identifier">success</span>=<span class="ruby-keyword kw">true</span>)
+74:       <span class="ruby-identifier">events</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-constant">LocalPacket</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">:channel_request</span>, <span class="ruby-identifier">channel</span>.<span class="ruby-identifier">remote_id</span>, <span class="ruby-identifier">request</span>, <span class="ruby-identifier">reply</span>, <span class="ruby-identifier">data</span>)
+75:       <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">reply</span>
+76:         <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">success</span>
+77:           <span class="ruby-identifier">events</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-constant">RemotePacket</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">:channel_success</span>, <span class="ruby-identifier">channel</span>.<span class="ruby-identifier">local_id</span>)
+78:         <span class="ruby-keyword kw">else</span>
+79:           <span class="ruby-identifier">events</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-constant">RemotePacket</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">:channel_failure</span>, <span class="ruby-identifier">channel</span>.<span class="ruby-identifier">local_id</span>)
+80:         <span class="ruby-keyword kw">end</span>
+81:       <span class="ruby-keyword kw">end</span>
+82:     <span class="ruby-keyword kw">end</span></pre>
+</body>
+</html>

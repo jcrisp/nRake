@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Identical to #opendir, but blocks until the server responds. It will raise a StatusException if the request was unsuccessful. Otherwise, it will return a handle to the given path."
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  handle = sftp.opendir!(&quot;/path/to/directory&quot;)\n"
+full_name: Net::SFTP::Session#opendir!
+is_singleton: false
+name: opendir!
+params: (path, &callback)
+visibility: public

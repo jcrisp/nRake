@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Tries to read the next packet. If there is insufficient data to read an entire packet, this returns immediately, otherwise the packet is read, post-processed according to the cipher, hmac, and compression algorithms specified in the server state object, and returned as a new Packet object.
+full_name: Net::SSH::Transport::PacketStream#poll_next_packet
+is_singleton: false
+name: poll_next_packet
+params: ()
+visibility: protected

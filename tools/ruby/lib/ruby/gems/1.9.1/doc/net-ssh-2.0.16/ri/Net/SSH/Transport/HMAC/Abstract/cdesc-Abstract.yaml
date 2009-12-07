@@ -1,0 +1,38 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: 
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The key in use for this instance.
+  name: key
+  rw: R
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: digest_class
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: key_length
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: mac_length
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The base class of all OpenSSL-based HMAC algorithm wrappers.
+constants: []
+
+full_name: Net::SSH::Transport::HMAC::Abstract
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: digest
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: digest_class
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: key=
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: key_length
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: mac_length
+name: Abstract
+superclass: Object

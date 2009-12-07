@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Read and return an SSH2-encoded string. The string starts with a long integer that describes the number of bytes remaining in the string. Returns nil if there are not enough bytes to satisfy the request.
+full_name: Net::SSH::Buffer#read_string
+is_singleton: false
+name: read_string
+params: ()
+visibility: public

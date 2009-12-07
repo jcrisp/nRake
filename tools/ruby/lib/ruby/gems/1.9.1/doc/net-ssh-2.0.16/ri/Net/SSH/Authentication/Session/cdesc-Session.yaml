@@ -1,0 +1,53 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: 
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: the list of authentication methods that are allowed
+  name: allowed_auth_methods
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: the list of authentication methods to try
+  name: auth_methods
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: a hash of options, given at construction time
+  name: options
+  rw: R
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: transport layer abstraction
+  name: transport
+  rw: R
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Represents an authentication session. It manages the authentication of a user over an established connection (the &quot;transport&quot; object, see Net::SSH::Transport::Session).
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The use of an authentication session to manage user authentication is internal to Net::SSH (specifically Net::SSH.start). Consumers of the Net::SSH library will never need to access this class directly.
+constants: []
+
+full_name: Net::SSH::Authentication::Session
+includes: 
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: Transport::Constants
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: Constants
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: Loggable
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: authenticate
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: expect_message
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: next_message
+name: Session
+superclass: Object

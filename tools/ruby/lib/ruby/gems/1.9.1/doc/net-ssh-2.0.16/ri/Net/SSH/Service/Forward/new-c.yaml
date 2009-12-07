@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Instantiates a new Forward service instance atop the given connection service session. This will register new channel open handlers to handle the specialized channels that the SSH port forwarding protocols employ.
+full_name: Net::SSH::Service::Forward::new
+is_singleton: true
+name: new
+params: (session)
+visibility: public

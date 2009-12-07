@@ -1,0 +1,67 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: These are the flags that are understood by versions 1-4 of the the open operation.
+- !ruby/struct:RDoc::Markup::Flow::RULE 
+  :width: 1
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: These are the flags that are understood by versions 1-4 of the the open operation.
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: READ
+  value: "0x00000001"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: WRITE
+  value: "0x00000002"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: APPEND
+  value: "0x00000004"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: CREAT
+  value: "0x00000008"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: TRUNC
+  value: "0x00000010"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: EXCL
+  value: "0x00000020"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: READ
+  value: "0x00000001"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: WRITE
+  value: "0x00000002"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: APPEND
+  value: "0x00000004"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: CREAT
+  value: "0x00000008"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: TRUNC
+  value: "0x00000010"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: EXCL
+  value: "0x00000020"
+full_name: Net::SFTP::Constants::OpenFlags::FV1
+includes: []
+
+instance_methods: []
+
+name: FV1

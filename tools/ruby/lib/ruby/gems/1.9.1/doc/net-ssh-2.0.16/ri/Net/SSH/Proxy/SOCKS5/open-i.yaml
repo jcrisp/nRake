@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Return a new socket connected to the given host and port via the proxy that was requested when the socket factory was instantiated.
+full_name: Net::SSH::Proxy::SOCKS5#open
+is_singleton: false
+name: open
+params: (host, port)
+visibility: public

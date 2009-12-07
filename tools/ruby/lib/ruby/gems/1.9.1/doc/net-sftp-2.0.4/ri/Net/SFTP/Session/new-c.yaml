@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Creates a new Net::SFTP instance atop the given Net::SSH connection. This will return immediately, before the SFTP connection has been properly initialized. Once the connection is ready, the given block will be called. If you want to block until the connection has been initialized, try this:"
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  sftp = Net::SFTP::Session.new(ssh)\n  sftp.loop { sftp.opening? }\n"
+full_name: Net::SFTP::Session::new
+is_singleton: true
+name: new
+params: (session, &block)
+visibility: public

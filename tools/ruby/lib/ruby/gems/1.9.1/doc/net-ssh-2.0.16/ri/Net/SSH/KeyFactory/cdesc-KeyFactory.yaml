@@ -1,0 +1,34 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: get
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: load_data_private_key
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: load_data_public_key
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: load_private_key
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: load_public_key
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: A factory class for returning new Key classes. It is used for obtaining OpenSSL key instances via their SSH names, and for loading both public and private keys. It used used primarily by Net::SSH itself, internally, and will rarely (if ever) be directly used by consumers of the library.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  klass = Net::SSH::KeyFactory.get(&quot;rsa&quot;)\n  assert klass.is_a?(OpenSSL::PKey::RSA)\n\n  key = Net::SSH::KeyFacory.load_public_key(&quot;~/.ssh/id_dsa.pub&quot;)\n"
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: Specifies the mapping of SSH names to OpenSSL key classes.
+  name: MAP
+  value: "{       \"dh\"  => OpenSSL::PKey::DH,       \"rsa\" => OpenSSL::PKey::RSA,       \"dsa\" => OpenSSL::PKey::DSA     }"
+full_name: Net::SSH::KeyFactory
+includes: 
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: Prompt
+instance_methods: []
+
+name: KeyFactory
+superclass: Object

@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Sends a FXP_READDIR packet to the server, to request a batch of directory name entries in the directory identified by <tt>handle</tt> (which must have been obtained via a FXP_OPENDIR request).
+full_name: Net::SFTP::Protocol::V01::Base#readdir
+is_singleton: false
+name: readdir
+params: (handle)
+visibility: public

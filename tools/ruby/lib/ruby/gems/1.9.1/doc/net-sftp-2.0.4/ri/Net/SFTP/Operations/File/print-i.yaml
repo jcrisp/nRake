@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Writes each argument to the stream. If +$+ is set, it will be written after all arguments have been written.
+full_name: Net::SFTP::Operations::File#print
+is_singleton: false
+name: print
+params: (*items)
+visibility: public

@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Initiates an upload from <tt>local</tt> to <tt>remote</tt>, asynchronously. This method will return a new Net::SFTP::Operations::Upload instance, and requires the event loop to be run in order for the upload to progress. See Net::SFTP::Operations::Upload for a full discussion of how this method can be used.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  uploader = sftp.upload(&quot;/local/path&quot;, &quot;/remote/path&quot;)\n  uploader.wait\n"
+full_name: Net::SFTP::Session#upload
+is_singleton: false
+name: upload
+params: (local, remote, options={}, &block)
+visibility: public

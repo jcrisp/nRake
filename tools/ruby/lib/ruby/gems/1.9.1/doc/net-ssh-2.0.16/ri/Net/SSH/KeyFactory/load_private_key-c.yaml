@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Loads a private key from a file. It will correctly determine whether the file describes an RSA or DSA key, and will load it appropriately. The new key is returned. If the key itself is encrypted (requiring a passphrase to use), the user will be prompted to enter their password unless passphrase works.
+full_name: Net::SSH::KeyFactory::load_private_key
+is_singleton: true
+name: load_private_key
+params: (filename, passphrase=nil)
+visibility: public

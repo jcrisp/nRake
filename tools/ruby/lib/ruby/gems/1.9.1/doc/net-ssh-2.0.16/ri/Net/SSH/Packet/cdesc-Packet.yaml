@@ -1,0 +1,35 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: 
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The (integer) type of this packet.
+  name: type
+  rw: R
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: register
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "A specialization of Buffer that knows the format of certain common packet types. It auto-parses those packet types, and allows them to be accessed via the #[] accessor."
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  data = some_channel_request_packet\n  packet = Net::SSH::Packet.new(data)\n\n  p packet.type #-&gt; 98 (CHANNEL_REQUEST)\n  p packet[:request]\n  p packet[:want_reply]\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: This is used exclusively internally by Net::SSH, and unless you're doing protocol-level manipulation or are extending Net::SSH in some way, you'll never need to use this class directly.
+constants: []
+
+full_name: Net::SSH::Packet
+includes: 
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: Transport::Constants
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: Authentication::Constants
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: Connection::Constants
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: "[]"
+name: Packet
+superclass: Net::SSH::Buffer

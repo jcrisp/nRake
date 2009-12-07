@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Retrieve the data item with the given <tt>key</tt>. The key is converted to a symbol before being used to lookup the value.
+full_name: Net::SFTP::Response#[]
+is_singleton: false
+name: "[]"
+params: (key)
+visibility: public

@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Alias for #to_s"
+full_name: Net::SFTP::Response#to_str
+is_singleton: false
+name: to_str
+params: ()
+visibility: public

@@ -1,0 +1,75 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Access control entry flags, used from version 4 of the protocol, onward. See Net::SFTP::Protocol::V04::Attributes::ACL.
+- !ruby/struct:RDoc::Markup::Flow::RULE 
+  :width: 1
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Access control entry flags, used from version 4 of the protocol, onward. See Net::SFTP::Protocol::V04::Attributes::ACL.
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: FILE_INHERIT
+  value: "0x00000001"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: DIRECTORY_INHERIT
+  value: "0x00000002"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: NO_PROPAGATE_INHERIT
+  value: "0x00000004"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: INHERIT_ONLY
+  value: "0x00000008"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: SUCCESSFUL_ACCESS
+  value: "0x00000010"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: FAILED_ACCESS
+  value: "0x00000020"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: IDENTIFIER_GROUP
+  value: "0x00000040"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: FILE_INHERIT
+  value: "0x00000001"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: DIRECTORY_INHERIT
+  value: "0x00000002"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: NO_PROPAGATE_INHERIT
+  value: "0x00000004"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: INHERIT_ONLY
+  value: "0x00000008"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: SUCCESSFUL_ACCESS
+  value: "0x00000010"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: FAILED_ACCESS
+  value: "0x00000020"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: IDENTIFIER_GROUP
+  value: "0x00000040"
+full_name: Net::SFTP::Constants::ACE::Flag
+includes: []
+
+instance_methods: []
+
+name: Flag

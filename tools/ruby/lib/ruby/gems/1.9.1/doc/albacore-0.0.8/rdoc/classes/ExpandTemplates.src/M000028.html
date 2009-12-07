@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>expand (ExpandTemplates)</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" href="../.././rdoc-style.css" type="text/css" media="screen" />
+</head>
+<body class="standalone-code">
+  <pre><span class="ruby-comment cmt"># File lib/albacore/expandtemplates.rb, line 15</span>
+        <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">expand</span>
+                <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@data_file</span>.<span class="ruby-identifier">nil?</span>
+                <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@expand_files</span>.<span class="ruby-identifier">empty?</span>
+                
+                <span class="ruby-identifier">config</span> = <span class="ruby-identifier">read_config</span>(<span class="ruby-ivar">@data_file</span>)
+                <span class="ruby-ivar">@expand_files</span>.<span class="ruby-identifier">each</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">template_file</span>, <span class="ruby-identifier">output_file</span><span class="ruby-operator">|</span> 
+                        <span class="ruby-identifier">file_config</span> = <span class="ruby-identifier">get_config_for_file</span> <span class="ruby-identifier">config</span>, <span class="ruby-identifier">template_file</span>
+                        <span class="ruby-identifier">expand_template</span> <span class="ruby-identifier">template_file</span>, <span class="ruby-identifier">output_file</span>, <span class="ruby-identifier">file_config</span>
+                }
+        <span class="ruby-keyword kw">end</span></pre>
+</body>
+</html>

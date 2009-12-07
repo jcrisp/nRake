@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Not implemented in version 1 of the SFTP protocol. Raises a NotImplementedError if called.
+full_name: Net::SFTP::Protocol::V01::Base#rename
+is_singleton: false
+name: rename
+params: (name, new_name, flags=nil)
+visibility: public

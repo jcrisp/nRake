@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Enqueues a packet to be sent, but does not immediately send the packet. The given payload is pre-processed according to the algorithms specified in the client state (compression, cipher, and hmac).
+full_name: Net::SSH::Transport::PacketStream#enqueue_packet
+is_singleton: false
+name: enqueue_packet
+params: (payload)
+visibility: public

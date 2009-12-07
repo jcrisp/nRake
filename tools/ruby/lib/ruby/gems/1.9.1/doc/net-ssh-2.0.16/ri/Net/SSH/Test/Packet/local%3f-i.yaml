@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The default for <tt>local?</tt> is false. Subclasses should override as necessary.
+full_name: Net::SSH::Test::Packet#local?
+is_singleton: false
+name: local?
+params: ()
+visibility: public

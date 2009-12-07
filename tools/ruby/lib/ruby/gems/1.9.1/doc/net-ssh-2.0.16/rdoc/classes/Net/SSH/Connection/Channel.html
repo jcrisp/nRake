@@ -1,0 +1,1364 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Class: Net::SSH::Connection::Channel [Net::SSH: a pure-Ruby implementation of the SSH2 client protocol.]</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <link rel="stylesheet" href="../../../.././rdoc-style.css" type="text/css" media="screen" />
+  <script type="text/javascript">
+  // <![CDATA[
+
+  function popupCode( url ) {
+    window.open(url, "Code", "resizable=yes,scrollbars=yes,toolbar=no,status=no,height=150,width=400")
+  }
+
+  function toggleCode( id ) {
+    if ( document.getElementById )
+      elem = document.getElementById( id );
+    else if ( document.all )
+      elem = eval( "document.all." + id );
+    else
+      return false;
+
+    elemStyle = elem.style;
+
+    if ( elemStyle.display != "block" ) {
+      elemStyle.display = "block"
+    } else {
+      elemStyle.display = "none"
+    }
+
+    return true;
+  }
+
+  // Make codeblocks hidden by default
+  document.writeln( "<style type=\"text/css\">div.method-source-code { display: none }<\/style>" )
+
+  // ]]>
+  </script>
+
+</head>
+<body>
+
+
+    <div id="classHeader">
+        <table class="header-table">
+        <tr class="top-aligned-row">
+          <td><strong>Class</strong></td>
+          <td class="class-name-in-header">Net::SSH::Connection::Channel</td>
+        </tr>
+        <tr class="top-aligned-row">
+            <td><strong>In:</strong></td>
+            <td>
+
+
+                <a href="../../../../files/lib/net/ssh/connection/channel_rb.html">
+
+                lib/net/ssh/connection/channel.rb
+
+                </a>
+
+
+        <br />
+
+            </td>
+        </tr>
+
+
+        <tr class="top-aligned-row">
+            <td><strong>Parent:</strong></td>
+            <td>
+
+                Object
+
+            </td>
+        </tr>
+
+        </table>
+    </div>
+  <!-- banner header -->
+
+  <div id="bodyContent">
+
+  <div id="contextContent">
+
+    <div id="description">
+      <p>
+The channel abstraction. Multiple &#8220;channels&#8221; can be multiplexed
+onto a single <a href="../../SSH.html">SSH</a> channel, each operating
+independently and seemingly in parallel. This class represents a single
+such channel. Most operations performed with the <a
+href="../../SSH.html">Net::SSH</a> library will involve using one or more
+channels.
+</p>
+<p>
+Channels are intended to be used asynchronously. You request that one be
+opened (via <a
+href="Session.html#M000090">Connection::Session#open_channel</a>), and when
+it is opened, your callback is invoked. Then, you set various other
+callbacks on the newly opened channel, which are called in response to the
+corresponding events. Programming with <a
+href="../../SSH.html">Net::SSH</a> works best if you think of your programs
+as state machines. Complex programs are best implemented as objects that
+wrap a channel. See Net::SCP and Net::SFTP for examples of how complex
+state machines can be built on top of the <a href="../../SSH.html">SSH</a>
+protocol.
+</p>
+<pre>
+  ssh.open_channel do |channel|
+    channel.exec(&quot;/invoke/some/command&quot;) do |ch, success|
+      abort &quot;could not execute command&quot; unless success
+
+      channel.on_data do |ch, data|
+        puts &quot;got stdout: #{data}&quot;
+        channel.send_data &quot;something for stdin\n&quot;
+      end
+
+      channel.on_extended_data do |ch, type, data|
+        puts &quot;got stderr: #{data}&quot;
+      end
+
+      channel.on_close do |ch|
+        puts &quot;channel is closing!&quot;
+      end
+    end
+  end
+
+  ssh.loop
+</pre>
+<p>
+Channels also have a basic hash-like interface, that allows programs to
+store arbitrary state information on a channel object. This helps simplify
+the writing of state machines, especially when you may be juggling multiple
+open channels at the same time.
+</p>
+<p>
+Note that data sent across <a href="../../SSH.html">SSH</a> channels are
+governed by maximum packet sizes and maximum window sizes. These details
+are managed internally by <a
+href="Channel.html">Net::SSH::Connection::Channel</a>, so you may remain
+blissfully ignorant if you so desire, but you can always inspect the
+current maximums, as well as the remaining window size, using the reader
+attributes for those values.
+</p>
+
+    </div>
+
+   </div>
+
+
+    <div id="method-list">
+      <h3 class="section-bar">Methods</h3>
+
+      <div class="name-list">
+
+        <a href="#M000048">[]</a>&nbsp;&nbsp;
+
+        <a href="#M000049">[]=</a>&nbsp;&nbsp;
+
+        <a href="#M000055">active?</a>&nbsp;&nbsp;
+
+        <a href="#M000058">close</a>&nbsp;&nbsp;
+
+        <a href="#M000057">closing?</a>&nbsp;&nbsp;
+
+        <a href="#M000073">do_close</a>&nbsp;&nbsp;
+
+        <a href="#M000072">do_eof</a>&nbsp;&nbsp;
+
+        <a href="#M000071">do_extended_data</a>&nbsp;&nbsp;
+
+        <a href="#M000074">do_failure</a>&nbsp;&nbsp;
+
+        <a href="#M000070">do_open_failed</a>&nbsp;&nbsp;
+
+        <a href="#M000075">do_success</a>&nbsp;&nbsp;
+
+        <a href="#M000052">env</a>&nbsp;&nbsp;
+
+        <a href="#M000060">eof!</a>&nbsp;&nbsp;
+
+        <a href="#M000059">eof?</a>&nbsp;&nbsp;
+
+        <a href="#M000050">exec</a>&nbsp;&nbsp;
+
+        <a href="#M000047">new</a>&nbsp;&nbsp;
+
+        <a href="#M000065">on_close</a>&nbsp;&nbsp;
+
+        <a href="#M000062">on_data</a>&nbsp;&nbsp;
+
+        <a href="#M000066">on_eof</a>&nbsp;&nbsp;
+
+        <a href="#M000063">on_extended_data</a>&nbsp;&nbsp;
+
+        <a href="#M000067">on_open_failed</a>&nbsp;&nbsp;
+
+        <a href="#M000064">on_process</a>&nbsp;&nbsp;
+
+        <a href="#M000068">on_request</a>&nbsp;&nbsp;
+
+        <a href="#M000061">process</a>&nbsp;&nbsp;
+
+        <a href="#M000053">request_pty</a>&nbsp;&nbsp;
+
+        <a href="#M000069">send_channel_request</a>&nbsp;&nbsp;
+
+        <a href="#M000054">send_data</a>&nbsp;&nbsp;
+
+        <a href="#M000051">subsystem</a>&nbsp;&nbsp;
+
+        <a href="#M000056">wait</a>&nbsp;&nbsp;
+
+      </div>
+    </div>
+
+  </div>
+
+    <!-- if includes -->
+
+    <div id="includes">
+      <h3 class="section-bar">Included Modules</h3>
+
+      <div id="includes-list">
+
+        <span class="include-name"><a href="Constants.html">Constants</a></span>
+
+        <span class="include-name"><a href="../Loggable.html">Loggable</a></span>
+
+      </div>
+    </div>
+
+    <div id="section">
+
+    <div id="constants-list">
+      <h3 class="section-bar">Constants</h3>
+
+      <div class="name-list">
+        <table summary="Constants">
+
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">VALID_PTY_OPTIONS</td>
+          <td>=</td>
+          <td class="context-item-value">{ :term        =&gt; &quot;xterm&quot;,                           :chars_wide  =&gt; 80,                           :chars_high  =&gt; 24,                           :pixels_wide =&gt; 640,                           :pixels_high =&gt; 480,                           :modes       =&gt; {} }</td>
+
+          <td>&nbsp;</td>
+          <td class="context-item-desc">
+A hash of the valid PTY options (see <a
+href="Channel.html#M000053">request_pty</a>).
+
+</td>
+
+        </tr>
+
+        </table>
+      </div>
+    </div>
+
+
+
+    <div id="attribute-list">
+      <h3 class="section-bar">Attributes</h3>
+
+      <div class="name-list">
+        <table>
+
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">connection</td>
+
+          <td class="context-item-value">&nbsp;[R]&nbsp;</td>
+
+          <td class="context-item-desc">
+The underlying <a href="Session.html">Net::SSH::Connection::Session</a>
+instance that supports this channel.
+
+</td>
+        </tr>
+
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">local_id</td>
+
+          <td class="context-item-value">&nbsp;[R]&nbsp;</td>
+
+          <td class="context-item-desc">
+The local id for this channel, assigned by the <a
+href="Session.html">Net::SSH::Connection::Session</a> instance.
+
+</td>
+        </tr>
+
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">local_maximum_packet_size</td>
+
+          <td class="context-item-value">&nbsp;[R]&nbsp;</td>
+
+          <td class="context-item-desc">
+The maximum packet size that the local host can receive.
+
+</td>
+        </tr>
+
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">local_maximum_window_size</td>
+
+          <td class="context-item-value">&nbsp;[R]&nbsp;</td>
+
+          <td class="context-item-desc">
+The maximum amount of data that the local end of this channel can receive.
+This is a total, not per-packet.
+
+</td>
+        </tr>
+
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">local_window_size</td>
+
+          <td class="context-item-value">&nbsp;[R]&nbsp;</td>
+
+          <td class="context-item-desc">
+This is the remaining window size on the local end of this channel. When
+this reaches zero, no more data can be received.
+
+</td>
+        </tr>
+
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">properties</td>
+
+          <td class="context-item-value">&nbsp;[R]&nbsp;</td>
+
+          <td class="context-item-desc">
+A hash of properties for this channel. These can be used to store state
+information about this channel. See also #[] and #[]=.
+
+</td>
+        </tr>
+
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">remote_id</td>
+
+          <td class="context-item-value">&nbsp;[R]&nbsp;</td>
+
+          <td class="context-item-desc">
+The remote id for this channel, assigned by the remote host.
+
+</td>
+        </tr>
+
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">remote_maximum_packet_size</td>
+
+          <td class="context-item-value">&nbsp;[R]&nbsp;</td>
+
+          <td class="context-item-desc">
+The maximum packet size that the remote host can receive.
+
+</td>
+        </tr>
+
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">remote_maximum_window_size</td>
+
+          <td class="context-item-value">&nbsp;[R]&nbsp;</td>
+
+          <td class="context-item-desc">
+The maximum amount of data that the remote end of this channel can receive.
+This is a total, not per-packet.
+
+</td>
+        </tr>
+
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">remote_window_size</td>
+
+          <td class="context-item-value">&nbsp;[R]&nbsp;</td>
+
+          <td class="context-item-desc">
+This is the remaining window size on the remote end of this channel. When
+this reaches zero, no more data can be sent.
+
+</td>
+        </tr>
+
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">type</td>
+
+          <td class="context-item-value">&nbsp;[R]&nbsp;</td>
+
+          <td class="context-item-desc">
+The type of this channel, usually &#8220;session&#8221;.
+
+</td>
+        </tr>
+
+        </table>
+      </div>
+    </div>
+
+
+    <!-- if method_list -->
+
+    <div id="methods">
+
+      <h3 class="section-bar">Public Class methods</h3>
+
+
+      <div id="method-M000047" class="method-detail">
+        <a name="M000047"></a>
+
+        <div class="method-heading">
+
+          <a href="Channel.src/M000047.html" target="Code" class="method-signature"
+            onclick="popupCode('Channel.src/M000047.html');return false;">
+
+          <span class="method-name">new</span><span class="method-args">(connection, type, local_id, &amp;on_confirm_open)</span>
+
+          </a>
+
+        </div>
+
+        <div class="method-description">
+
+          <p>
+Instantiates a new channel on the given connection, of the given type, and
+with the given id. If a block is given, it will be remembered until the
+channel is confirmed open by the server, and will be invoked at that time
+(see do_open_confirmation).
+</p>
+<p>
+This also sets the default maximum packet size and maximum window size.
+</p>
+
+        </div>
+      </div>
+
+
+      <h3 class="section-bar">Public Instance methods</h3>
+
+
+      <div id="method-M000048" class="method-detail">
+        <a name="M000048"></a>
+
+        <div class="method-heading">
+
+          <a href="Channel.src/M000048.html" target="Code" class="method-signature"
+            onclick="popupCode('Channel.src/M000048.html');return false;">
+
+          <span class="method-name">[]</span><span class="method-args">(name)</span>
+
+          </a>
+
+        </div>
+
+        <div class="method-description">
+
+          <p>
+A shortcut for accessing properties of the channel (see properties).
+</p>
+
+        </div>
+      </div>
+
+
+      <div id="method-M000049" class="method-detail">
+        <a name="M000049"></a>
+
+        <div class="method-heading">
+
+          <a href="Channel.src/M000049.html" target="Code" class="method-signature"
+            onclick="popupCode('Channel.src/M000049.html');return false;">
+
+          <span class="method-name">[]=</span><span class="method-args">(name, value)</span>
+
+          </a>
+
+        </div>
+
+        <div class="method-description">
+
+          <p>
+A shortcut for setting properties of the channel (see properties).
+</p>
+
+        </div>
+      </div>
+
+
+      <div id="method-M000055" class="method-detail">
+        <a name="M000055"></a>
+
+        <div class="method-heading">
+
+          <a href="Channel.src/M000055.html" target="Code" class="method-signature"
+            onclick="popupCode('Channel.src/M000055.html');return false;">
+
+          <span class="method-name">active?</span><span class="method-args">()</span>
+
+          </a>
+
+        </div>
+
+        <div class="method-description">
+
+          <p>
+Returns true if the channel exists in the channel list of the session, and
+false otherwise. This can be used to determine whether a channel has been
+closed or not.
+</p>
+<pre>
+  ssh.loop { channel.active? }
+</pre>
+
+        </div>
+      </div>
+
+
+      <div id="method-M000058" class="method-detail">
+        <a name="M000058"></a>
+
+        <div class="method-heading">
+
+          <a href="Channel.src/M000058.html" target="Code" class="method-signature"
+            onclick="popupCode('Channel.src/M000058.html');return false;">
+
+          <span class="method-name">close</span><span class="method-args">()</span>
+
+          </a>
+
+        </div>
+
+        <div class="method-description">
+
+          <p>
+Requests that the channel be closed. If the channel is already closing,
+this does nothing, nor does it do anything if the channel has not yet been
+confirmed open (see do_open_confirmation). Otherwise, it sends a
+CHANNEL_CLOSE message and marks the channel as closing.
+</p>
+
+        </div>
+      </div>
+
+
+      <div id="method-M000057" class="method-detail">
+        <a name="M000057"></a>
+
+        <div class="method-heading">
+
+          <a href="Channel.src/M000057.html" target="Code" class="method-signature"
+            onclick="popupCode('Channel.src/M000057.html');return false;">
+
+          <span class="method-name">closing?</span><span class="method-args">()</span>
+
+          </a>
+
+        </div>
+
+        <div class="method-description">
+
+          <p>
+Returns true if the channel is currently closing, but not actually closed.
+A channel is closing when, for instance, <a
+href="Channel.html#M000058">close</a> has been invoked, but the server has
+not yet responded with a CHANNEL_CLOSE packet of its own.
+</p>
+
+        </div>
+      </div>
+
+
+      <div id="method-M000073" class="method-detail">
+        <a name="M000073"></a>
+
+        <div class="method-heading">
+
+          <a href="Channel.src/M000073.html" target="Code" class="method-signature"
+            onclick="popupCode('Channel.src/M000073.html');return false;">
+
+          <span class="method-name">do_close</span><span class="method-args">()</span>
+
+          </a>
+
+        </div>
+
+        <div class="method-description">
+
+          <p>
+Invokes the <a href="Channel.html#M000065">on_close</a> callback when the
+server closes a channel. The channel is the only argument.
+</p>
+
+        </div>
+      </div>
+
+
+      <div id="method-M000072" class="method-detail">
+        <a name="M000072"></a>
+
+        <div class="method-heading">
+
+          <a href="Channel.src/M000072.html" target="Code" class="method-signature"
+            onclick="popupCode('Channel.src/M000072.html');return false;">
+
+          <span class="method-name">do_eof</span><span class="method-args">()</span>
+
+          </a>
+
+        </div>
+
+        <div class="method-description">
+
+          <p>
+Invokes the <a href="Channel.html#M000066">on_eof</a> callback when the
+server indicates that no further data is forthcoming. The callback is
+invoked with the channel as the argument.
+</p>
+
+        </div>
+      </div>
+
+
+      <div id="method-M000071" class="method-detail">
+        <a name="M000071"></a>
+
+        <div class="method-heading">
+
+          <a href="Channel.src/M000071.html" target="Code" class="method-signature"
+            onclick="popupCode('Channel.src/M000071.html');return false;">
+
+          <span class="method-name">do_extended_data</span><span class="method-args">(type, data)</span>
+
+          </a>
+
+        </div>
+
+        <div class="method-description">
+
+          <p>
+Invokes the <a href="Channel.html#M000063">on_extended_data</a> callback
+when the server sends extended data to the channel. This will reduce the
+available window size on the local end. The callback is invoked with the
+channel, type, and data.
+</p>
+
+        </div>
+      </div>
+
+
+      <div id="method-M000074" class="method-detail">
+        <a name="M000074"></a>
+
+        <div class="method-heading">
+
+          <a href="Channel.src/M000074.html" target="Code" class="method-signature"
+            onclick="popupCode('Channel.src/M000074.html');return false;">
+
+          <span class="method-name">do_failure</span><span class="method-args">()</span>
+
+          </a>
+
+        </div>
+
+        <div class="method-description">
+
+          <p>
+Invokes the next pending request callback with <tt>false</tt> as the second
+argument.
+</p>
+
+        </div>
+      </div>
+
+
+      <div id="method-M000070" class="method-detail">
+        <a name="M000070"></a>
+
+        <div class="method-heading">
+
+          <a href="Channel.src/M000070.html" target="Code" class="method-signature"
+            onclick="popupCode('Channel.src/M000070.html');return false;">
+
+          <span class="method-name">do_open_failed</span><span class="method-args">(reason_code, description)</span>
+
+          </a>
+
+        </div>
+
+        <div class="method-description">
+
+          <p>
+Invoked when the server failed to open the channel. If an <a
+href="Channel.html#M000067">on_open_failed</a> callback was specified, it
+will be invoked with the channel, reason code, and description as
+arguments. Otherwise, a <a
+href="../ChannelOpenFailed.html">ChannelOpenFailed</a> exception will be
+raised.
+</p>
+
+        </div>
+      </div>
+
+
+      <div id="method-M000075" class="method-detail">
+        <a name="M000075"></a>
+
+        <div class="method-heading">
+
+          <a href="Channel.src/M000075.html" target="Code" class="method-signature"
+            onclick="popupCode('Channel.src/M000075.html');return false;">
+
+          <span class="method-name">do_success</span><span class="method-args">()</span>
+
+          </a>
+
+        </div>
+
+        <div class="method-description">
+
+          <p>
+Invokes the next pending request callback with <tt>true</tt> as the second
+argument.
+</p>
+
+        </div>
+      </div>
+
+
+      <div id="method-M000052" class="method-detail">
+        <a name="M000052"></a>
+
+        <div class="method-heading">
+
+          <a href="Channel.src/M000052.html" target="Code" class="method-signature"
+            onclick="popupCode('Channel.src/M000052.html');return false;">
+
+          <span class="method-name">env</span><span class="method-args">(variable_name, variable_value, &amp;block)</span>
+
+          </a>
+
+        </div>
+
+        <div class="method-description">
+
+          <p>
+Syntactic sugar for setting an environment variable in the remote
+process&#8217; environment. Note that for security reasons, the server may
+refuse to set certain environment variables, or all, at the server&#8217;s
+discretion. If you are connecting to an OpenSSH server, you will need to
+update the AcceptEnv setting in the sshd_config to include the environment
+variables you want to send.
+</p>
+<pre>
+  channel.env &quot;PATH&quot;, &quot;/usr/local/bin&quot;
+</pre>
+
+        </div>
+      </div>
+
+
+      <div id="method-M000060" class="method-detail">
+        <a name="M000060"></a>
+
+        <div class="method-heading">
+
+          <a href="Channel.src/M000060.html" target="Code" class="method-signature"
+            onclick="popupCode('Channel.src/M000060.html');return false;">
+
+          <span class="method-name">eof!</span><span class="method-args">()</span>
+
+          </a>
+
+        </div>
+
+        <div class="method-description">
+
+          <p>
+Tells the remote end of the channel that no more data is forthcoming from
+this end of the channel. The remote end may still send data.
+</p>
+
+        </div>
+      </div>
+
+
+      <div id="method-M000059" class="method-detail">
+        <a name="M000059"></a>
+
+        <div class="method-heading">
+
+          <a href="Channel.src/M000059.html" target="Code" class="method-signature"
+            onclick="popupCode('Channel.src/M000059.html');return false;">
+
+          <span class="method-name">eof?</span><span class="method-args">()</span>
+
+          </a>
+
+        </div>
+
+        <div class="method-description">
+
+          <p>
+Returns true if the local end of the channel has declared that no more data
+is forthcoming (see <a href="Channel.html#M000060">eof!</a>). Trying to
+send data via <a href="Channel.html#M000054">send_data</a> when this is
+true will result in an exception being raised.
+</p>
+
+        </div>
+      </div>
+
+
+      <div id="method-M000050" class="method-detail">
+        <a name="M000050"></a>
+
+        <div class="method-heading">
+
+          <a href="Channel.src/M000050.html" target="Code" class="method-signature"
+            onclick="popupCode('Channel.src/M000050.html');return false;">
+
+          <span class="method-name">exec</span><span class="method-args">(command, &amp;block)</span>
+
+          </a>
+
+        </div>
+
+        <div class="method-description">
+
+          <p>
+Syntactic sugar for executing a command. Sends a channel request asking
+that the given command be invoked. If the block is given, it will be called
+when the server responds. The first parameter will be the channel, and the
+second will be true or false, indicating whether the request succeeded or
+not. In this case, success means that the command is being executed, not
+that it has completed, and failure means that the command altogether failed
+to be executed.
+</p>
+<pre>
+  channel.exec &quot;ls -l /home&quot; do |ch, success|
+    if success
+      puts &quot;command has begun executing...&quot;
+      # this is a good place to hang callbacks like #on_data...
+    else
+      puts &quot;alas! the command could not be invoked!&quot;
+    end
+  end
+</pre>
+
+        </div>
+      </div>
+
+
+      <div id="method-M000065" class="method-detail">
+        <a name="M000065"></a>
+
+        <div class="method-heading">
+
+          <a href="Channel.src/M000065.html" target="Code" class="method-signature"
+            onclick="popupCode('Channel.src/M000065.html');return false;">
+
+          <span class="method-name">on_close</span><span class="method-args">(&amp;block)</span>
+
+          </a>
+
+        </div>
+
+        <div class="method-description">
+
+          <p>
+Registers a callback to be invoked when the server acknowledges that a
+channel is closed. This is invoked with the channel as the sole argument.
+</p>
+<pre>
+  channel.on_close do |ch|
+    puts &quot;remote end is closing!&quot;
+  end
+</pre>
+
+        </div>
+      </div>
+
+
+      <div id="method-M000062" class="method-detail">
+        <a name="M000062"></a>
+
+        <div class="method-heading">
+
+          <a href="Channel.src/M000062.html" target="Code" class="method-signature"
+            onclick="popupCode('Channel.src/M000062.html');return false;">
+
+          <span class="method-name">on_data</span><span class="method-args">(&amp;block)</span>
+
+          </a>
+
+        </div>
+
+        <div class="method-description">
+
+          <p>
+Registers a callback to be invoked when data packets are received by the
+channel. The callback is called with the channel as the first argument, and
+the data as the second.
+</p>
+<pre>
+  channel.on_data do |ch, data|
+    puts &quot;got data: #{data.inspect}&quot;
+  end
+</pre>
+<p>
+Data received this way is typically the data written by the remote process
+to its <tt>stdout</tt> stream.
+</p>
+
+        </div>
+      </div>
+
+
+      <div id="method-M000066" class="method-detail">
+        <a name="M000066"></a>
+
+        <div class="method-heading">
+
+          <a href="Channel.src/M000066.html" target="Code" class="method-signature"
+            onclick="popupCode('Channel.src/M000066.html');return false;">
+
+          <span class="method-name">on_eof</span><span class="method-args">(&amp;block)</span>
+
+          </a>
+
+        </div>
+
+        <div class="method-description">
+
+          <p>
+Registers a callback to be invoked when the server indicates that no more
+data will be sent to the channel (although the channel can still send data
+to the server). The channel is the sole argument to the callback.
+</p>
+<pre>
+  channel.on_eof do |ch|
+    puts &quot;remote end is done sending data&quot;
+  end
+</pre>
+
+        </div>
+      </div>
+
+
+      <div id="method-M000063" class="method-detail">
+        <a name="M000063"></a>
+
+        <div class="method-heading">
+
+          <a href="Channel.src/M000063.html" target="Code" class="method-signature"
+            onclick="popupCode('Channel.src/M000063.html');return false;">
+
+          <span class="method-name">on_extended_data</span><span class="method-args">(&amp;block)</span>
+
+          </a>
+
+        </div>
+
+        <div class="method-description">
+
+          <p>
+Registers a callback to be invoked when extended data packets are received
+by the channel. The callback is called with the channel as the first
+argument, the data type (as an integer) as the second, and the data as the
+third. Extended data is almost exclusively used to send <tt>stderr</tt>
+data (<tt>type</tt> == 1). Other extended data types are not defined by the
+<a href="../../SSH.html">SSH</a> protocol.
+</p>
+<pre>
+  channel.on_extended_data do |ch, type, data|
+    puts &quot;got stderr: #{data.inspect}&quot;
+  end
+</pre>
+
+        </div>
+      </div>
+
+
+      <div id="method-M000067" class="method-detail">
+        <a name="M000067"></a>
+
+        <div class="method-heading">
+
+          <a href="Channel.src/M000067.html" target="Code" class="method-signature"
+            onclick="popupCode('Channel.src/M000067.html');return false;">
+
+          <span class="method-name">on_open_failed</span><span class="method-args">(&amp;block)</span>
+
+          </a>
+
+        </div>
+
+        <div class="method-description">
+
+          <p>
+Registers a callback to be invoked when the server was unable to open the
+requested channel. The channel itself will be passed to the block, along
+with the integer &#8220;reason code&#8221; for the failure, and a textual
+description of the failure from the server.
+</p>
+<pre>
+  channel = session.open_channel do |ch|
+    # ..
+  end
+
+  channel.on_open_failed { |ch, code, desc| ... }
+</pre>
+
+        </div>
+      </div>
+
+
+      <div id="method-M000064" class="method-detail">
+        <a name="M000064"></a>
+
+        <div class="method-heading">
+
+          <a href="Channel.src/M000064.html" target="Code" class="method-signature"
+            onclick="popupCode('Channel.src/M000064.html');return false;">
+
+          <span class="method-name">on_process</span><span class="method-args">(&amp;block)</span>
+
+          </a>
+
+        </div>
+
+        <div class="method-description">
+
+          <p>
+Registers a callback to be invoked for each pass of the event loop for this
+channel. There are no guarantees on timeliness in the event loop, but it
+will be called roughly once for each packet received by the connection (not
+the channel). This callback is invoked with the channel as the sole
+argument.
+</p>
+<p>
+Here&#8217;s an example that accumulates the channel data into a variable
+on the channel itself, and displays individual lines in the input one at a
+time when the channel is processed:
+</p>
+<pre>
+  channel[:data] = &quot;&quot;
+
+  channel.on_data do |ch, data|
+    channel[:data] &lt;&lt; data
+  end
+
+  channel.on_process do |ch|
+    if channel[:data] =~ /^.*?\n/
+      puts $&amp;
+      channel[:data] = $'
+    end
+  end
+</pre>
+
+        </div>
+      </div>
+
+
+      <div id="method-M000068" class="method-detail">
+        <a name="M000068"></a>
+
+        <div class="method-heading">
+
+          <a href="Channel.src/M000068.html" target="Code" class="method-signature"
+            onclick="popupCode('Channel.src/M000068.html');return false;">
+
+          <span class="method-name">on_request</span><span class="method-args">(type, &amp;block)</span>
+
+          </a>
+
+        </div>
+
+        <div class="method-description">
+
+          <p>
+Registers a callback to be invoked when a channel request of the given type
+is received. The callback will receive the channel as the first argument,
+and the associated (unparsed) data as the second. The data will be a <a
+href="../Buffer.html">Net::SSH::Buffer</a> that you will need to parse,
+yourself, according to the kind of request you are watching.
+</p>
+<p>
+By default, if the request wants a reply, <a
+href="../../SSH.html">Net::SSH</a> will send a CHANNEL_SUCCESS response for
+any request that was handled by a registered callback, and CHANNEL_FAILURE
+for any that wasn&#8217;t, but if you want your registered callback to
+result in a CHANNEL_FAILURE response, just raise <a
+href="../ChannelRequestFailed.html">Net::SSH::ChannelRequestFailed</a>.
+</p>
+<p>
+Some common channel requests that your programs might want to listen for
+are:
+</p>
+<ul>
+<li>&#8220;exit-status&#8221; : the exit status of the remote process will be
+reported as a long integer in the data buffer, which you can grab via
+data.read_long.
+
+</li>
+<li>&#8220;exit-signal&#8221; : if the remote process died as a result of a
+signal being sent to it, the signal will be reported as a string in the
+data, via data.read_string. (Not all <a href="../../SSH.html">SSH</a>
+servers support this channel request type.)
+
+<p>
+channel.on_request &#8220;exit-status&#8221; do |ch, data|
+</p>
+<pre>
+  puts &quot;process terminated with exit status: #{data.read_long}&quot;
+</pre>
+<p>
+end
+</p>
+</li>
+</ul>
+
+        </div>
+      </div>
+
+
+      <div id="method-M000061" class="method-detail">
+        <a name="M000061"></a>
+
+        <div class="method-heading">
+
+          <a href="Channel.src/M000061.html" target="Code" class="method-signature"
+            onclick="popupCode('Channel.src/M000061.html');return false;">
+
+          <span class="method-name">process</span><span class="method-args">()</span>
+
+          </a>
+
+        </div>
+
+        <div class="method-description">
+
+          <p>
+If an <a href="Channel.html#M000064">on_process</a> handler has been set
+up, this will cause it to be invoked (passing the channel itself as an
+argument). It also causes all pending output to be enqueued as CHANNEL_DATA
+packets (see enqueue_pending_output).
+</p>
+
+        </div>
+      </div>
+
+
+      <div id="method-M000053" class="method-detail">
+        <a name="M000053"></a>
+
+        <div class="method-heading">
+
+          <a href="Channel.src/M000053.html" target="Code" class="method-signature"
+            onclick="popupCode('Channel.src/M000053.html');return false;">
+
+          <span class="method-name">request_pty</span><span class="method-args">(opts={}, &amp;block)</span>
+
+          </a>
+
+        </div>
+
+        <div class="method-description">
+
+          <p>
+Requests that a pseudo-tty (or &#8220;pty&#8221;) be made available for
+this channel. This is useful when you want to invoke and interact with some
+kind of screen-based program (e.g., vim, or some menuing system).
+</p>
+<p>
+Note, that without a pty some programs (e.g. sudo, or subversion) on some
+systems, will not be able to run interactively, and will error instead of
+prompt if they ever need some user interaction.
+</p>
+<p>
+Note, too, that when a pty is requested, user&#8217;s shell configuration
+scripts (.bashrc and such) are not run by default, whereas they are run
+when a pty is not present.
+</p>
+<pre>
+  channel.request_pty do |ch, success|
+    if success
+      puts &quot;pty successfully obtained&quot;
+    else
+      puts &quot;could not obtain pty&quot;
+    end
+  end
+</pre>
+
+        </div>
+      </div>
+
+
+      <div id="method-M000069" class="method-detail">
+        <a name="M000069"></a>
+
+        <div class="method-heading">
+
+          <a href="Channel.src/M000069.html" target="Code" class="method-signature"
+            onclick="popupCode('Channel.src/M000069.html');return false;">
+
+          <span class="method-name">send_channel_request</span><span class="method-args">(request_name, *data, &amp;callback)</span>
+
+          </a>
+
+        </div>
+
+        <div class="method-description">
+
+          <p>
+Sends a new channel request with the given name. The extra <tt>data</tt>
+parameter must either be empty, or consist of an even number of arguments.
+See <a href="../Buffer.html#M000263">Net::SSH::Buffer.from</a> for a
+description of their format. If a block is given, it is registered as a
+callback for a pending request, and the packet will be flagged so that the
+server knows a reply is required. If no block is given, the server will
+send no response to this request. Responses, where required, will cause the
+callback to be invoked with the channel as the first argument, and either
+true or false as the second, depending on whether the request succeeded or
+not. The meaning of &#8220;success&#8221; and &#8220;failure&#8221; in this
+context is dependent on the specific request that was sent.
+</p>
+<pre>
+  channel.send_channel_request &quot;shell&quot; do |ch, success|
+    if success
+      puts &quot;user shell started successfully&quot;
+    else
+      puts &quot;could not start user shell&quot;
+    end
+  end
+</pre>
+<p>
+Most channel requests you&#8217;ll want to send are already wrapped in more
+convenient helper methods (see <a href="Channel.html#M000050">exec</a> and
+<a href="Channel.html#M000051">subsystem</a>).
+</p>
+
+        </div>
+      </div>
+
+
+      <div id="method-M000054" class="method-detail">
+        <a name="M000054"></a>
+
+        <div class="method-heading">
+
+          <a href="Channel.src/M000054.html" target="Code" class="method-signature"
+            onclick="popupCode('Channel.src/M000054.html');return false;">
+
+          <span class="method-name">send_data</span><span class="method-args">(data)</span>
+
+          </a>
+
+        </div>
+
+        <div class="method-description">
+
+          <p>
+Sends data to the channel&#8217;s remote endpoint. This usually has the
+effect of sending the given string to the remote process&#8217; stdin
+stream. Note that it does not immediately send the data across the channel,
+but instead merely appends the given data to the channel&#8217;s output
+buffer, preparatory to being packaged up and sent out the next time the
+connection is accepting data. (A connection might not be accepting data if,
+for instance, it has filled its data window and has not yet been resized by
+the remote end-point.)
+</p>
+<p>
+This will raise an exception if the channel has previously declared that no
+more data will be sent (see <a href="Channel.html#M000060">eof!</a>).
+</p>
+<pre>
+  channel.send_data(&quot;the password\n&quot;)
+</pre>
+
+        </div>
+      </div>
+
+
+      <div id="method-M000051" class="method-detail">
+        <a name="M000051"></a>
+
+        <div class="method-heading">
+
+          <a href="Channel.src/M000051.html" target="Code" class="method-signature"
+            onclick="popupCode('Channel.src/M000051.html');return false;">
+
+          <span class="method-name">subsystem</span><span class="method-args">(subsystem, &amp;block)</span>
+
+          </a>
+
+        </div>
+
+        <div class="method-description">
+
+          <p>
+Syntactic sugar for requesting that a subsystem be started. Subsystems are
+a way for other protocols (like SFTP) to be run, using <a
+href="../../SSH.html">SSH</a> as the transport. Generally, you&#8217;ll
+never need to call this directly unless you are the implementor of
+something that consumes an <a href="../../SSH.html">SSH</a> subsystem, like
+SFTP.
+</p>
+<pre>
+  channel.subsystem(&quot;sftp&quot;) do |ch, success|
+    if success
+      puts &quot;subsystem successfully started&quot;
+    else
+      puts &quot;subsystem could not be started&quot;
+    end
+  end
+</pre>
+
+        </div>
+      </div>
+
+
+      <div id="method-M000056" class="method-detail">
+        <a name="M000056"></a>
+
+        <div class="method-heading">
+
+          <a href="Channel.src/M000056.html" target="Code" class="method-signature"
+            onclick="popupCode('Channel.src/M000056.html');return false;">
+
+          <span class="method-name">wait</span><span class="method-args">()</span>
+
+          </a>
+
+        </div>
+
+        <div class="method-description">
+
+          <p>
+Runs the <a href="../../SSH.html">SSH</a> event loop until the channel is
+no longer active. This is handy for blocking while you wait for some
+channel to finish.
+</p>
+<pre>
+  channel.exec(&quot;grep ...&quot;) { ... }
+  channel.wait
+</pre>
+
+        </div>
+      </div>
+
+
+
+    </div>
+
+
+
+
+  </div>
+
+<div id="validator-badges">
+  <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+</div>
+
+</body>
+</html>

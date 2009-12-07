@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Identical to #read, but blocks until the server responds. It will raise a StatusException if the request was unsuccessful. If the end of the file was reached, <tt>nil</tt> will be returned. Otherwise, it returns the data that was read, as a String."
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  data = sftp.read!(handle, 0, 1024)\n"
+full_name: Net::SFTP::Session#read!
+is_singleton: false
+name: read!
+params: (handle, offset, length, &callback)
+visibility: public

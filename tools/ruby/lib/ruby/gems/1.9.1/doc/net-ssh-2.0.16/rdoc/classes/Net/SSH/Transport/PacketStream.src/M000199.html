@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>peer_ip (Net::SSH::Transport::PacketStream)</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="../../../../.././rdoc-style.css" type="text/css" media="screen" />
+</head>
+<body class="standalone-code">
+  <pre>    <span class="ruby-comment cmt"># File lib/net/ssh/transport/packet_stream.rb, line 61</span>
+61:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">peer_ip</span>
+62:       <span class="ruby-ivar">@peer_ip</span> <span class="ruby-operator">||=</span>
+63:         <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">respond_to?</span>(<span class="ruby-identifier">:getpeername</span>)
+64:           <span class="ruby-identifier">addr</span> = <span class="ruby-identifier">getpeername</span>
+65:           <span class="ruby-constant">Socket</span>.<span class="ruby-identifier">getnameinfo</span>(<span class="ruby-identifier">addr</span>, <span class="ruby-constant">Socket</span><span class="ruby-operator">::</span><span class="ruby-constant">NI_NUMERICHOST</span> <span class="ruby-operator">|</span> <span class="ruby-constant">Socket</span><span class="ruby-operator">::</span><span class="ruby-constant">NI_NUMERICSERV</span>).<span class="ruby-identifier">first</span>
+66:         <span class="ruby-keyword kw">else</span>
+67:           <span class="ruby-value str">&quot;&lt;no hostip for proxy command&gt;&quot;</span>
+68:         <span class="ruby-keyword kw">end</span>
+69:     <span class="ruby-keyword kw">end</span></pre>
+</body>
+</html>

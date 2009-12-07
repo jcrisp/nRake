@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Parses the given FXP_DATA packet and returns a hash with one key, :data, which references the data returned in the packet.
+full_name: Net::SFTP::Protocol::V01::Base#parse_data_packet
+is_singleton: false
+name: parse_data_packet
+params: (packet)
+visibility: public

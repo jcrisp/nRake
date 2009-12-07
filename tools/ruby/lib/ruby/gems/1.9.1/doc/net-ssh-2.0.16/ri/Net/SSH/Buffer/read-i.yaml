@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Reads and returns the next <tt>count</tt> bytes from the buffer, starting from the read position. If <tt>count</tt> is <tt>nil</tt>, this will return all remaining text in the buffer. This method will increment the pointer.
+full_name: Net::SSH::Buffer#read
+is_singleton: false
+name: read
+params: (count=nil)
+visibility: public

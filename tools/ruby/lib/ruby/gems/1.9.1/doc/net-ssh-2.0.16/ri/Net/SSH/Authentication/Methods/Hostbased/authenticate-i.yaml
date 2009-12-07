@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Attempts to perform host-based authorization of the user by trying all known keys.
+full_name: Net::SSH::Authentication::Methods::Hostbased#authenticate
+is_singleton: false
+name: authenticate
+params: (next_service, username, password=nil)
+visibility: public

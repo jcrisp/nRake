@@ -1,0 +1,17 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: This exception is primarily used internally, but if you have a channel request handler (see Net::SSH::Connection::Channel#on_request) that you want to fail in such a way that the server knows it failed, you can raise this exception in the handler and Net::SSH will translate that into a &quot;channel failure&quot; message.
+constants: []
+
+full_name: Net::SSH::ChannelRequestFailed
+includes: []
+
+instance_methods: []
+
+name: ChannelRequestFailed
+superclass: Net::SSH::Exception

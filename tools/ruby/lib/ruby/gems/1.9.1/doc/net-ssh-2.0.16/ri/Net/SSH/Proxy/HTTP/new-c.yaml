@@ -1,0 +1,21 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Create a new socket factory that tunnels via the given host and port. The <tt>options</tt> parameter is a hash of additional settings that can be used to tweak this proxy connection. Specifically, the following options are supported:"
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: ":user =&gt; the user name to use when authenticating to the proxy"
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: ":password =&gt; the password to use when authenticating"
+  type: :BULLET
+full_name: Net::SSH::Proxy::HTTP::new
+is_singleton: true
+name: new
+params: (proxy_host, proxy_port=80, options={})
+visibility: public

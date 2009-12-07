@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "Sends a FXP_STAT packet to the server, requesting a FXP_ATTR response for the file at the given remote <tt>path</tt> (a string). The <tt>flags</tt> parameter is ignored in this version of the protocol. #stat will follow symbolic links; see #lstat for a version that will not."
+full_name: Net::SFTP::Protocol::V01::Base#stat
+is_singleton: false
+name: stat
+params: (path, flags=nil)
+visibility: public

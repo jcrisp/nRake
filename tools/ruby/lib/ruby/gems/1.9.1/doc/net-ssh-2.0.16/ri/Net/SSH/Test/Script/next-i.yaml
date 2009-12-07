@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: By default, removes the next event in the list and returns it. However, this can also be used to non-destructively peek at the next event in the list, by passing :first as the argument.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  # remove the next event and return it\n  event = script.next\n\n  # peek at the next event\n  event = script.next(:first)\n"
+full_name: Net::SSH::Test::Script#next
+is_singleton: false
+name: next
+params: (mode=:shift)
+visibility: public

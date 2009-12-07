@@ -1,0 +1,226 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: 
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The array of access control entries for this item.
+  name: acl
+  rw: RW
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The array of access control entries for this item.
+  name: acl
+  rw: RW
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The nanosecond component of the access time.
+  name: atime_nseconds
+  rw: RW
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The nanosecond component of the access time.
+  name: atime_nseconds
+  rw: RW
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The creation time of the remote item, in seconds since the epoch.
+  name: createtime
+  rw: RW
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The creation time of the remote item, in seconds since the epoch.
+  name: createtime
+  rw: RW
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The nanosecond component of the creation time.
+  name: createtime_nseconds
+  rw: RW
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The nanosecond component of the creation time.
+  name: createtime_nseconds
+  rw: RW
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The group of the item on the remote server, as a string.
+  name: group
+  rw: W
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The group of the item on the remote server, as a string.
+  name: group
+  rw: W
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The nanosecond component of the modification time.
+  name: mtime_nseconds
+  rw: RW
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The nanosecond component of the modification time.
+  name: mtime_nseconds
+  rw: RW
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The owner of the item on the remote server, as a string.
+  name: owner
+  rw: W
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The owner of the item on the remote server, as a string.
+  name: owner
+  rw: W
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The type of the item on the remote server. Must be one of the T_* constants.
+  name: type
+  rw: RW
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: The type of the item on the remote server. Must be one of the T_* constants.
+  name: type
+  rw: RW
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: A class representing the attributes of a file or directory on the server. It may be used to specify new attributes, or to query existing attributes. This particular class is specific to versions 4 and 5 of the SFTP protocol.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "To specify new attributes, just pass a hash as the argument to the constructor. The following keys are supported:"
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: ":type:: the type of the item (integer, one of the T_ constants)"
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: ":size:: the size of the item (integer)"
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: ":uid:: the user-id that owns the file (integer)"
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: ":gid:: the group-id that owns the file (integer)"
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: ":owner:: the name of the user that owns the file (string)"
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: ":group:: the name of the group that owns the file (string)"
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: ":permissions:: the permissions on the file (integer, e.g. 0755)"
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: ":atime:: the access time of the file (integer, seconds since epoch)"
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: ":atime_nseconds:: the nanosecond component of atime (integer)"
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: ":createtime:: the time at which the file was created (integer, seconds since epoch)"
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: ":createtime_nseconds:: the nanosecond component of createtime (integer)"
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: ":mtime:: the modification time of the file (integer, seconds since epoch)"
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: ":mtime_nseconds:: the nanosecond component of mtime (integer)"
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: ":acl:: an array of ACL entries for the item"
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    :label: "*"
+    :body: ":extended:: a hash of name/value pairs identifying extended info"
+  type: :BULLET
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Likewise, when the server sends an Attributes object, all of the above attributes are exposed as methods (though not all will be set with non-nil values from the server).
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: F_ACCESSTIME
+  value: "0x00000008"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: F_CREATETIME
+  value: "0x00000010"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: F_MODIFYTIME
+  value: "0x00000020"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: F_ACL
+  value: "0x00000040"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: F_OWNERGROUP
+  value: "0x00000080"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: F_SUBSECOND_TIMES
+  value: "0x00000100"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: A simple struct for representing a single entry in an Access Control List. (See Net::SFTP::Constants::ACE)
+  name: ACL
+  value: Struct.new(:type, :flag, :mask, :who)
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: F_ACCESSTIME
+  value: "0x00000008"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: F_CREATETIME
+  value: "0x00000010"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: F_MODIFYTIME
+  value: "0x00000020"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: F_ACL
+  value: "0x00000040"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: F_OWNERGROUP
+  value: "0x00000080"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: F_SUBSECOND_TIMES
+  value: "0x00000100"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: A simple struct for representing a single entry in an Access Control List. (See Net::SFTP::Constants::ACE)
+  name: ACL
+  value: Struct.new(:type, :flag, :mask, :who)
+full_name: Net::SFTP::Protocol::V04::Attributes
+includes: []
+
+instance_methods: []
+
+name: Attributes
+superclass: V01::Attributes

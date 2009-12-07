@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: "The fstat method is identical to the #stat and #lstat methods, with the exception that it takes a <tt>handle</tt> as the first parameter, such as would be obtained via the #open or #opendir methods. (See the #lstat method for full documentation)."
+full_name: Net::SFTP::Session#fstat
+is_singleton: false
+name: fstat
+params: (handle, flags=nil, &callback)
+visibility: public

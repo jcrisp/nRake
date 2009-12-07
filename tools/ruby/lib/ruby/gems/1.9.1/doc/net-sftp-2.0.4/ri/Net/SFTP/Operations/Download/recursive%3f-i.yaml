@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the value of the :recursive key in the options hash that was given when the object was instantiated.
+full_name: Net::SFTP::Operations::Download#recursive?
+is_singleton: false
+name: recursive?
+params: ()
+visibility: public

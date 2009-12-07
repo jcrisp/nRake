@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Creates a new buffer, initialized to the given content. The position is initialized to the beginning of the buffer.
+full_name: Net::SSH::Buffer::new
+is_singleton: true
+name: new
+params: (content="")
+visibility: public

@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Given a hash of OpenSSH configuration options, converts them into a hash of Net::SSH options. Unrecognized options are ignored. The <tt>settings</tt> hash must have Strings for keys, all downcased, and the returned hash will have Symbols for keys.
+full_name: Net::SSH::Config::translate
+is_singleton: true
+name: translate
+params: (settings)
+visibility: public

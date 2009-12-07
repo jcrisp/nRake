@@ -1,0 +1,41 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: The definition of the Windows methods and data structures used in communicating with the pageant process.
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    :body: From winbase.h, winnt.h
+  name: INVALID_HANDLE_VALUE
+  value: "-1"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: "NULL"
+  value: nil
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: PAGE_READWRITE
+  value: "0x0004"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: FILE_MAP_WRITE
+  value: "2"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: WM_COPYDATA
+  value: "74"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: SMTO_NORMAL
+  value: "0"
+full_name: Net::SSH::Authentication::Pageant::Win
+includes: []
+
+instance_methods: []
+
+name: Win

@@ -1,0 +1,14 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Scripts the sending of an &quot;exec&quot; channel request packet to the mock server. If <tt>reply</tt> is true, then the server is expected to reply to the request, otherwise no response to this request will be sent. If <tt>success</tt> is <tt>true</tt>, then the request will be successful, otherwise a failure will be scripted.
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  :body: "  channel.sends_exec &quot;ls -l&quot;\n"
+full_name: Net::SSH::Test::Channel#sends_exec
+is_singleton: false
+name: sends_exec
+params: (command, reply=true, success=true)
+visibility: public

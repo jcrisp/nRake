@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: Returns the type as a symbol, rather than an integer, for easier use in Ruby programs.
+full_name: Net::SFTP::Protocol::V01::Attributes#symbolic_type
+is_singleton: false
+name: symbolic_type
+params: ()
+visibility: public

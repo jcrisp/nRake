@@ -1,0 +1,17 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  :body: A trivial exception class for representing agent-specific errors.
+constants: []
+
+full_name: Net::SSH::Authentication::AgentError
+includes: []
+
+instance_methods: []
+
+name: AgentError
+superclass: Net::SSH::Exception
