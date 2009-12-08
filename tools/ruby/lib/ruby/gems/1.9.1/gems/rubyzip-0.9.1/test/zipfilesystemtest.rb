@@ -552,7 +552,7 @@ end
 class ZipFsFileMutatingTest < Test::Unit::TestCase
   TEST_ZIP = "zipWithDirs_copy.zip"
   def setup
-    File.copy("data/zipWithDirs.zip", TEST_ZIP)
+    FileUtils.copy("data/zipWithDirs.zip", TEST_ZIP)
   end
 
   def teardown
@@ -640,7 +640,7 @@ class ZipFsDirectoryTest < Test::Unit::TestCase
   TEST_ZIP = "zipWithDirs_copy.zip"
 
   def setup
-    File.copy("data/zipWithDirs.zip", TEST_ZIP)
+    FileUtils.copy("data/zipWithDirs.zip", TEST_ZIP)
   end
 
   def test_delete
@@ -757,8 +757,8 @@ class ZipFsDirectoryTest < Test::Unit::TestCase
       d.close
 
       zf.dir.open("dir1") {
-        |d|
-        assert_equal(["dir11", "file11", "file12"].sort, d.entries.sort)
+        |dir1|
+        assert_equal(["dir11", "file11", "file12"].sort, dir1.entries.sort)
       }
     }
   end

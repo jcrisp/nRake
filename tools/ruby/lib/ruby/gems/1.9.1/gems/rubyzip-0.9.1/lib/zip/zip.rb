@@ -1,7 +1,7 @@
 require 'delegate'
 require 'singleton'
 require 'tempfile'
-require 'ftools'
+require 'fileutils'
 require 'stringio'
 require 'zlib'
 require 'zip/stdrubyext'
@@ -849,7 +849,7 @@ module Zip
 	return
       elsif File.exists? destPath
 	if block_given? && yield(self, destPath)
-	  File.rm_f destPath
+	  FileUtils.rm_f destPath
 	else
 	  raise ZipDestinationFileExistsError,
 	    "Cannot create directory '#{destPath}'. "+
@@ -1566,7 +1566,7 @@ module Zip
       tmpFilename = tmpfile.path
       tmpfile.close
       if yield tmpFilename
-	File.move(tmpFilename, name)
+	FileUtils.move(tmpFilename, name)
       end
     end
     

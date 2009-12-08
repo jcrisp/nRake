@@ -1039,7 +1039,7 @@ class CommonZipFileFixture < RUNIT::TestCase
 
   def setup
     File.delete(EMPTY_FILENAME) if File.exists?(EMPTY_FILENAME)
-    File.copy(TestZipFile::TEST_ZIP2.zipName, TEST_ZIP.zipName)
+    FileUtils.copy(TestZipFile::TEST_ZIP2.zipName, TEST_ZIP.zipName)
   end
 end
 
@@ -1112,7 +1112,7 @@ class ZipFileTest < CommonZipFileFixture
   def test_remove
     entryToRemove, *remainingEntries = TEST_ZIP.entryNames
 
-    File.copy(TestZipFile::TEST_ZIP2.zipName, TEST_ZIP.zipName)
+    FileUtils.copy(TestZipFile::TEST_ZIP2.zipName, TEST_ZIP.zipName)
 
     zf = ZipFile.new(TEST_ZIP.zipName)
     assert(zf.entries.map { |e| e.name }.include?(entryToRemove))
@@ -1252,12 +1252,12 @@ class ZipFileTest < CommonZipFileFixture
   # can delete the file you used to add the entry to the zip file
   # with
   def test_commitUseZipEntry
-    File.copy(TestFiles::RANDOM_ASCII_FILE1, "okToDelete.txt")
+    FileUtils.copy(TestFiles::RANDOM_ASCII_FILE1, "okToDelete.txt")
     zf = ZipFile.open(TEST_ZIP.zipName)
     zf.add("okToDelete.txt", "okToDelete.txt")
     assertContains(zf, "okToDelete.txt")
     zf.commit
-    File.move("okToDelete.txt", "okToDeleteMoved.txt")
+    FileUtils.move("okToDelete.txt", "okToDeleteMoved.txt")
     assertContains(zf, "okToDelete.txt", "okToDeleteMoved.txt")
   end
 

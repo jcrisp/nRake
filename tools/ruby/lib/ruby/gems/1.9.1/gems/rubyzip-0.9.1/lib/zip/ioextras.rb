@@ -118,7 +118,10 @@ module IOExtras  #:nodoc:
 
 
     def print(*params)
-      self << params.to_s << $\.to_s
+      if params.size > 0
+        self << params.join($,.to_s)
+      end
+      self << $\.to_s
     end
 
     def printf(aFormatString, *params)

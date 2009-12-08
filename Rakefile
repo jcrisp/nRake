@@ -1,9 +1,11 @@
 require 'rake/clean'
+require 'rake/tasklib'
+require 'albacore'
 
-DOT_NET_PATH = "#{ENV["SystemRoot"]}/Microsoft.NET/Framework/v3.5"
 NUNIT_EXE = "tools/Nunit/bin/net-2.0/nunit-console.exe"
 SOLUTION_PATH = "." 
 OUTPUT_PATH = "build"
+
 CONFIG = ENV['CONFIG'] || "Debug"
  
 CLEAN.include(OUTPUT_PATH)
@@ -15,18 +17,17 @@ namespace :build do
   task :all => [:compile, :test]
       
   desc "Build solutions using MSBuild"
-  task :compile => [:clean] do
-    solutions = FileList["#{SOLUTION_PATH}/*.sln"]
-    solutions.each do |solution|
-      sh "#{DOT_NET_PATH}/msbuild.exe /p:Configuration=#{CONFIG} #{solution}"
-    end
+  msbuildtask :compile do |msb|
+    msb.properties = {:configuration => CONFIG}
+    msb.targets [:Clean, :Build]
+    msb.solution = FileList["#{SOLUTION_PATH}/*.sln"]
   end
-   
+
   desc "Runs tests with NUnit"
-  task :test => [:compile] do
-    tests = FileList["#{OUTPUT_PATH}/tests/**/*.Tests.dll"]
-    sh "#{NUNIT_EXE} #{tests} /nologo /xml=#{OUTPUT_PATH}/TestResults.xml"
+  nunittask :test=>[:compile] do |nunit|
+    nunit.path_to_command = NUNIT_EXE
+  	nunit.assemblies = FileList["#{OUTPUT_PATH}/tests/**/*.Tests.dll"]
   end
-  
+
 end
 

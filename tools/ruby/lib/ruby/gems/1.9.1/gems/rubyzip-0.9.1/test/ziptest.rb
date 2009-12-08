@@ -346,7 +346,7 @@ module AssertEntry
       if (expected != actual)
 	if ((expected && actual) && (expected.length > 400 || actual.length > 400))
 	  zipEntryFilename=entryName+".zipEntry"
-	  File.open(zipEntryFilename, "wb") { |file| file << actual }
+	  File.open(zipEntryFilename, "wb") { |entryfile| entryfile << actual }
 	  fail("File '#{filename}' is different from '#{zipEntryFilename}'")
 	else
 	  assert_equal(expected, actual)
@@ -653,12 +653,13 @@ end
 module Enumerable
   def compare_enumerables(otherEnumerable)
     otherAsArray = otherEnumerable.to_a
-    index=0
+    count=0
     each_with_index {
       |element, index|
+      count = index
       return false unless yield(element, otherAsArray[index])
     }
-    return index+1 == otherAsArray.size
+    return count+1 == otherAsArray.size
   end
 end
 
@@ -1016,7 +1017,7 @@ module CommonZipFileFixture
 
   def setup
     File.delete(EMPTY_FILENAME) if File.exists?(EMPTY_FILENAME)
-    File.copy(TestZipFile::TEST_ZIP2.zip_name, TEST_ZIP.zip_name)
+    FileUtils.copy(TestZipFile::TEST_ZIP2.zip_name, TEST_ZIP.zip_name)
   end
 end
 
@@ -1126,7 +1127,7 @@ class ZipFileTest < Test::Unit::TestCase
   def test_remove
     entryToRemove, *remainingEntries = TEST_ZIP.entry_names
 
-    File.copy(TestZipFile::TEST_ZIP2.zip_name, TEST_ZIP.zip_name)
+    FileUtils.copy(TestZipFile::TEST_ZIP2.zip_name, TEST_ZIP.zip_name)
 
     zf = ZipFile.new(TEST_ZIP.zip_name)
     assert(zf.entries.map { |e| e.name }.include?(entryToRemove))
@@ -1271,12 +1272,12 @@ class ZipFileTest < Test::Unit::TestCase
   # can delete the file you used to add the entry to the zip file
   # with
   def test_commitUseZipEntry
-    File.copy(TestFiles::RANDOM_ASCII_FILE1, "okToDelete.txt")
+    FileUtils.copy(TestFiles::RANDOM_ASCII_FILE1, "okToDelete.txt")
     zf = ZipFile.open(TEST_ZIP.zip_name)
     zf.add("okToDelete.txt", "okToDelete.txt")
     assert_contains(zf, "okToDelete.txt")
     zf.commit
-    File.move("okToDelete.txt", "okToDeleteMoved.txt")
+    FileUtils.move("okToDelete.txt", "okToDeleteMoved.txt")
     assert_contains(zf, "okToDelete.txt", "okToDeleteMoved.txt")
   end
 
