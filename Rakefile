@@ -7,6 +7,7 @@ SOLUTION_PATH = "."
 OUTPUT_PATH = "build"
 
 CONFIG = ENV['CONFIG'] || "Debug"
+ENVIRONMENT = ENV['ENVIRONMENT'] || "dev"
  
 CLEAN.include(OUTPUT_PATH)
 
@@ -22,6 +23,14 @@ namespace :build do
     msb.targets [:Clean, :Build]
     msb.solution = FileList["#{SOLUTION_PATH}/*.sln"]
   end
+  
+  desc "Generate config files for correct environment"
+  expandtemplatestask :config do |template|
+	  template.expand_files = {
+            "config/app.template.config" => "src/placeholderapp/app.config"}
+	  template.data_file = "config/environments/#{ENVIRONMENT}.yml"
+  end
+
 
   desc "Runs tests with NUnit"
   nunittask :test=>[:compile] do |nunit|
