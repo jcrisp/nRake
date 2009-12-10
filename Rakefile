@@ -15,7 +15,7 @@ task :default => "build:all"
  
 namespace :build do
   
-  task :all => [:compile, :test]
+  task :all => [:compile, :config, :test]
       
   desc "Build solutions using MSBuild"
   msbuildtask :compile do |msb|
@@ -24,13 +24,17 @@ namespace :build do
     msb.solution = FileList["#{SOLUTION_PATH}/*.sln"]
   end
   
-  desc "Generate config files for correct environment"
-  expandtemplatestask :config do |template|
-	  template.expand_files = {
-            "config/app.template.config" => "src/placeholderapp/app.config"}
-	  template.data_file = "config/environments/#{ENVIRONMENT}.yml"
+  desc "Generate app and web config files for correct environment"
+  task :config do
+    ["app", "web"].each do |config_type|
+      FileList["src/**/#{config_type}.config"].each do |file|
+        e = ExpandTemplates.new
+        e.data_file = "config/environments/#{ENVIRONMENT}.yml"
+        e.expand_files = {"config/#{config_type}.template.config" => file }
+        e.expand
+      end
+    end
   end
-
 
   desc "Runs tests with NUnit"
   nunittask :test=>[:compile] do |nunit|
