@@ -15,7 +15,7 @@ task :default => "build:all"
  
 namespace :build do
   
-  task :all => [:compile, :config, :test]
+  task :all => [:clean, :compile, :config, :test]
       
   desc "Build solutions using MSBuild"
   msbuildtask :compile do |msb|
