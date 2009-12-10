@@ -40,6 +40,7 @@ namespace :build do
   nunittask :test=>[:compile] do |nunit|
     nunit.path_to_command = NUNIT_EXE
   	nunit.assemblies = FileList["#{OUTPUT_PATH}/tests/**/*.Tests.dll"]
+    nunit.options << "/xml=#{OUTPUT_PATH}/TestResults.xml" << "/nologo"
   end
 
 end
