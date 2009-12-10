@@ -1,0 +1,3 @@
+@include: global.yml
+db_server: dev.company.com
+error_page_url: "http://company.com/dev_error"
