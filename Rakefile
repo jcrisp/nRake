@@ -18,7 +18,7 @@ namespace :build do
   task :all => [:clean, :compile, :config, :test]
       
   desc "Build solutions using MSBuild"
-  msbuildtask :compile do |msb|
+  msbuild :compile do |msb|
     msb.properties = {:configuration => CONFIG}
     msb.targets [:Clean, :Build]
     msb.solution = FileList["#{SOLUTION_PATH}/*.sln"]
@@ -37,7 +37,7 @@ namespace :build do
   end
 
   desc "Runs tests with NUnit"
-  nunittask :test=>[:compile] do |nunit|
+  nunit :test=>[:compile] do |nunit|
     nunit.path_to_command = NUNIT_EXE
     nunit.assemblies = FileList["#{OUTPUT_PATH}/tests/**/*.Tests.dll"]
     nunit.options << "/xml=#{OUTPUT_PATH}/TestResults.xml" << "/nologo"

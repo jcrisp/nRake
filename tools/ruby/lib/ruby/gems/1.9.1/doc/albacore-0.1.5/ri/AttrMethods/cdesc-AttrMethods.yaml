@@ -1,0 +1,17 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+constants: []
+
+full_name: AttrMethods
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: attr_array
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: attr_hash
+name: AttrMethods

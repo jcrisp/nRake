@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: MSBuild#build_path_to_command
+is_singleton: false
+name: build_path_to_command
+params: ()
+visibility: public

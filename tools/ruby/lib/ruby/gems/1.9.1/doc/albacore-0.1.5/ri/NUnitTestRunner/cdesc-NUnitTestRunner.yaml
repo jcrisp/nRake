@@ -1,0 +1,24 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+constants: []
+
+full_name: NUnitTestRunner
+includes: 
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: RunCommand
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: YAMLConfig
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: execute
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: get_command_line
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: get_command_parameters
+name: NUnitTestRunner
+superclass: Object

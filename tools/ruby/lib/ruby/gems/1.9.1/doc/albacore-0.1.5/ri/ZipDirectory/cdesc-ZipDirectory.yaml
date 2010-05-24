@@ -1,0 +1,47 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: 
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  name: flatten_zip
+  rw: RW
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  name: output_file
+  rw: RW
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  name: output_path
+  rw: RW
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+constants: []
+
+full_name: ZipDirectory
+includes: 
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: YAMLConfig
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: Failure
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: clean_directories_names
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: is_excluded
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: package
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: reject_file
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: remove
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: set_output_path
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: zip_additional
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: zip_directory
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: zip_name
+name: ZipDirectory
+superclass: Object

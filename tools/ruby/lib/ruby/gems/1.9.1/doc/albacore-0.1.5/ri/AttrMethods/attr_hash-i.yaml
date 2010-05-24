@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: AttrMethods#attr_hash
+is_singleton: false
+name: attr_hash
+params: (*names)
+visibility: public
