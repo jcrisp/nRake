@@ -1,14 +1,14 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlaceholderApp", "src\PlaceholderApp\PlaceholderApp.csproj", "{1E7161C2-CC73-47C4-8066-15FEB61F7FB6}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlaceholderApp.Tests", "src\PlaceholderApp.Tests\PlaceholderApp.Tests.csproj", "{17679DCD-0DD2-438D-B9C5-63FFFA039E59}"
-EndProject
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6D845BC2-6F8B-44DF-BA2B-BE18294D804C}"
 	ProjectSection(SolutionItems) = preProject
 		README = README
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlaceholderApp", "src\PlaceholderApp\PlaceholderApp.csproj", "{1E7161C2-CC73-47C4-8066-15FEB61F7FB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlaceholderApp.Tests", "src\PlaceholderApp.Tests\PlaceholderApp.Tests.csproj", "{17679DCD-0DD2-438D-B9C5-63FFFA039E59}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
