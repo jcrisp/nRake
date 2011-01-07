@@ -6,9 +6,9 @@ nRake provides a template C# .NET project with a standardised directory tree, a 
 
 h2. How to use
 * Choose your version:
-  * "nRake with Iron Ruby for .NET 4":https://github.com/jcrisp/nRake/tree/IronRuby4 (recommended)
-  * "nRake with Iron Ruby for .NET 2/3.5":https://github.com/jcrisp/nRake/tree/IronRuby2
-  * "nRake with bundled Ruby 1.9 (legacy)":https://github.com/jcrisp/nRake
+  ** "nRake with Iron Ruby for .NET 4":https://github.com/jcrisp/nRake/tree/IronRuby4 (recommended)
+  ** "nRake with Iron Ruby for .NET 2/3.5":https://github.com/jcrisp/nRake/tree/IronRuby2
+  ** "nRake with bundled Ruby 1.9 (legacy)":https://github.com/jcrisp/nRake
 * Git clone or Download nRake as a Zip 
 * Rename PlaceHolder app and tests to reflect your project
 * Run rake.bat in the root of the project, to make sure everything still builds
