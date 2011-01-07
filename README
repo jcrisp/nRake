@@ -1,0 +1,17 @@
+h2. Summary
+
+Fed up with XML based builds that are hard to maintain, refactor and extend? Rather than trying to fix this with more xml and community tasks, or re-invent the wheel, lets use rake. Rake is a mature build system developed by the ruby community which can be applied equally well in the .NET world.
+
+nRake provides a template C# .NET project with a standardised directory tree, a Rake build, templated app and web configs for different environments and Continuous Integration server sample config files.
+
+h2. How to use
+* Choose your version:
+  * "nRake with Iron Ruby for .NET 4":https://github.com/jcrisp/nRake/tree/IronRuby4 (recommended)
+  * "nRake with Iron Ruby for .NET 2/3.5":https://github.com/jcrisp/nRake/tree/IronRuby2
+  * "nRake with bundled Ruby 1.9 (legacy)":https://github.com/jcrisp/nRake
+* Git clone or Download nRake as a Zip 
+* Rename PlaceHolder app and tests to reflect your project
+* Run rake.bat in the root of the project, to make sure everything still builds
+* Start developing :-)
+
+Also nRake uses the "Albacore Gem":http://albacorebuild.net/ for .NET build tasks. Documentation on "Albacore tasks here":http://wiki.github.com/derickbailey/Albacore/
